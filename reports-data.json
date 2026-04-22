@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-23T05:34:15.424655",
+  "generatedAt": "2026-04-23T06:25:48.646686",
   "summary": {
     "totalDays": 30,
     "latestDate": "2026-04-22",
@@ -75,7 +75,7 @@
     {
       "date": "2026-04-22",
       "dayOfWeek": "周三",
-      "activeProjects": 3,
+      "activeProjects": 2,
       "totalCommits": 0,
       "conversationCount": 11,
       "coreProgress": [
@@ -214,12 +214,7 @@
           }
         ],
         "newKnowledge": [],
-        "updatedKnowledge": [
-          {
-            "name": "metrics-log",
-            "category": "self-evolution"
-          }
-        ],
+        "updatedKnowledge": [],
         "newMemory": [
           {
             "title": "KIM推送重复发送问题（v10.0 — 经验#55）",
