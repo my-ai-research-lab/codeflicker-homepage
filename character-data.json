@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-22T05:10:27.122383",
+  "generatedAt": "2026-04-23T05:51:05.121919",
   "character": {
     "name": "LINK",
     "title": "AI数字分身",
@@ -132,12 +132,12 @@
         "desc": "知道的越来越多"
       }
     ],
-    "totalExp": 345590,
-    "expProgress": 86.1,
+    "totalExp": 345490,
+    "expProgress": 85.8,
     "currentThreshold": 320393,
     "nextThreshold": 349649,
     "stats": {
-      "understanding": 85.2,
+      "understanding": 85.1,
       "execution": 62.8,
       "skillDepth": 82.9,
       "thinkingDepth": 38.0,
@@ -153,11 +153,11 @@
       },
       "activeSkills": 150,
       "highLevelSkills": 109,
-      "skillTotalValue": 3067.3,
+      "skillTotalValue": 3068.2,
       "cultivationExp": 0,
-      "baseExp": 345590,
+      "baseExp": 345490,
       "expBreakdown": {
-        "understanding": 85200,
+        "understanding": 85100,
         "execution": 62800,
         "skill": 124350,
         "thinking": 30400,
@@ -395,7 +395,7 @@
             "description": "技能发现。帮助用户发现和安装可扩展的Agent技能",
             "lastUpdated": "2026-04-07",
             "callCount": 93,
-            "frequency": "3.3次/周",
+            "frequency": "3.4次/周",
             "successRate": 95,
             "sourceType": "自定义",
             "skillSize": 33885,
@@ -843,14 +843,14 @@
             "source": "林克核心能力",
             "level": 5,
             "exp": 96,
-            "description": "AI行业洞察平台专属技能。当用户明确提到'AI洞察'、'AI日报'、'AI行业周报'或执行AI行业调研任务时使用。核心场景：生成AI行业日报/周报、追踪AI公司/人物、沉淀AI行业知识、管理AI信息源。即使用户只是说'跑一下日报'或'今天AI有什么动态'，只要上下文是AI行业相关，也应该触发。注意：本技能仅处理AI行业领域，研发效能相关请使用 sl-rd-efficiency-insight",
+            "description": "AI行业洞察平台专属技能。当用户明确提到'AI洞察'、'AI日报'、'AI周报'或执行AI行业调研任务时使用。核心场景：生成AI行业日报/周报、追踪AI公司/人物、沉淀AI行业知识、管理AI信息源。即使用户只是说'跑一下日报'或'今天AI有什么动态'，只要上下文是AI行业相关，也应该触发。注意：本技能仅处理AI行业领域，研发效能相关请使用 sl-rd-efficiency-insight 技能",
             "lastUpdated": "2026-04-09",
             "callCount": 124,
-            "frequency": "2.6次/周",
+            "frequency": "2.7次/周",
             "successRate": 95,
             "sourceType": "自定义",
-            "skillSize": 159840,
-            "skillSizeLabel": "159K字 · 巨型",
+            "skillSize": 134685,
+            "skillSizeLabel": "134K字 · 巨型",
             "ksInternal": false,
             "cfProject": true,
             "tag": "SL"
@@ -2066,7 +2066,7 @@
             "description": "This skill should be used when the user mentions \"林克发消息\", \"林克推送\", \"KIM消息\", \"林克机器人\", \"MixCard\", \"群消息推送\", \"林克卡片\", \"AI日报推送\", \"AI周报推送\", or needs to send messages through KIM using Link (林克) AI Assistant.",
             "lastUpdated": "2026-03-19",
             "callCount": 92,
-            "frequency": "2.6次/周",
+            "frequency": "2.8次/周",
             "successRate": 95,
             "sourceType": "自定义",
             "skillSize": 55929,
@@ -2361,7 +2361,7 @@
             "exp": 57,
             "description": "读取万维表格数据并解析表头和行内容。当用户提供万维表格链接时使用此技能。触发条件：(1) 用户消息中包含万维表格 URL（格式：https://docs.corp.快手.com/m/home/{docsId}#sheetId=xxx&viewId=yyy），(2) 用户明确要求读取/查询/分析万维表格数据。技能会自动获取 token、解析链接提取 docsId/sheetId/view",
             "lastUpdated": "2026-04-09",
-            "callCount": 1,
+            "callCount": 2,
             "frequency": "<0.1/天",
             "successRate": 90,
             "sourceType": "自定义",
@@ -2658,7 +2658,7 @@
             "description": "HTML截图原子技能 — 将HTML渲染为高清PNG截图。触发词：HTML截图、生成PNG、HTML转图片、截图配图、章节配图。自动适配固定高度和动态高度两种模式，支持KIM Doc配图、调研报告图表等场景。",
             "lastUpdated": "2026-04-16",
             "callCount": 117,
-            "frequency": "1.0次/天",
+            "frequency": "1.1次/天",
             "successRate": 95,
             "sourceType": "自定义",
             "skillSize": 28444714,
@@ -3242,7 +3242,7 @@
             "description": "ClawBook 社区 Skill — 连接你与其他 Claw 的社区。通过这个 Skill，你可以在 ClawBook 社区发帖分享经验、评论讨论、投票表态、浏览 Feed 获取灵感。当你完成了一个有趣的任务、学到了新知识、遇到了难题、想分享工作流、或者只是想看看其他 Claw 在做什么时，都应该使用这个 Skill。这是你与数万个 Claw 交流、学习、共同进化的唯一通道。",
             "lastUpdated": "2026-03-27",
             "callCount": 63,
-            "frequency": "3.2次/周",
+            "frequency": "3.3次/周",
             "successRate": 95,
             "sourceType": "自定义",
             "skillSize": 76265,
@@ -3746,7 +3746,7 @@
                 "description": "技能发现。帮助用户发现和安装可扩展的Agent技能",
                 "lastUpdated": "2026-04-07",
                 "callCount": 93,
-                "frequency": "3.3次/周",
+                "frequency": "3.4次/周",
                 "successRate": 95,
                 "sourceType": "自定义",
                 "skillSize": 33885,
@@ -4201,14 +4201,14 @@
                 "source": "林克核心能力",
                 "level": 5,
                 "exp": 96,
-                "description": "AI行业洞察平台专属技能。当用户明确提到'AI洞察'、'AI日报'、'AI行业周报'或执行AI行业调研任务时使用。核心场景：生成AI行业日报/周报、追踪AI公司/人物、沉淀AI行业知识、管理AI信息源。即使用户只是说'跑一下日报'或'今天AI有什么动态'，只要上下文是AI行业相关，也应该触发。注意：本技能仅处理AI行业领域，研发效能相关请使用 sl-rd-efficiency-insight",
+                "description": "AI行业洞察平台专属技能。当用户明确提到'AI洞察'、'AI日报'、'AI周报'或执行AI行业调研任务时使用。核心场景：生成AI行业日报/周报、追踪AI公司/人物、沉淀AI行业知识、管理AI信息源。即使用户只是说'跑一下日报'或'今天AI有什么动态'，只要上下文是AI行业相关，也应该触发。注意：本技能仅处理AI行业领域，研发效能相关请使用 sl-rd-efficiency-insight 技能",
                 "lastUpdated": "2026-04-09",
                 "callCount": 124,
-                "frequency": "2.6次/周",
+                "frequency": "2.7次/周",
                 "successRate": 95,
                 "sourceType": "自定义",
-                "skillSize": 159840,
-                "skillSizeLabel": "159K字 · 巨型",
+                "skillSize": 134685,
+                "skillSizeLabel": "134K字 · 巨型",
                 "ksInternal": false,
                 "cfProject": true,
                 "tag": "SL"
@@ -5425,7 +5425,7 @@
                 "description": "This skill should be used when the user mentions \"林克发消息\", \"林克推送\", \"KIM消息\", \"林克机器人\", \"MixCard\", \"群消息推送\", \"林克卡片\", \"AI日报推送\", \"AI周报推送\", or needs to send messages through KIM using Link (林克) AI Assistant.",
                 "lastUpdated": "2026-03-19",
                 "callCount": 92,
-                "frequency": "2.6次/周",
+                "frequency": "2.8次/周",
                 "successRate": 95,
                 "sourceType": "自定义",
                 "skillSize": 55929,
@@ -5719,7 +5719,7 @@
                 "exp": 57,
                 "description": "读取万维表格数据并解析表头和行内容。当用户提供万维表格链接时使用此技能。触发条件：(1) 用户消息中包含万维表格 URL（格式：https://docs.corp.快手.com/m/home/{docsId}#sheetId=xxx&viewId=yyy），(2) 用户明确要求读取/查询/分析万维表格数据。技能会自动获取 token、解析链接提取 docsId/sheetId/view",
                 "lastUpdated": "2026-04-09",
-                "callCount": 1,
+                "callCount": 2,
                 "frequency": "<0.1/天",
                 "successRate": 90,
                 "sourceType": "自定义",
@@ -6015,7 +6015,7 @@
                 "description": "HTML截图原子技能 — 将HTML渲染为高清PNG截图。触发词：HTML截图、生成PNG、HTML转图片、截图配图、章节配图。自动适配固定高度和动态高度两种模式，支持KIM Doc配图、调研报告图表等场景。",
                 "lastUpdated": "2026-04-16",
                 "callCount": 117,
-                "frequency": "1.0次/天",
+                "frequency": "1.1次/天",
                 "successRate": 95,
                 "sourceType": "自定义",
                 "skillSize": 28444714,
@@ -6596,7 +6596,7 @@
                 "description": "ClawBook 社区 Skill — 连接你与其他 Claw 的社区。通过这个 Skill，你可以在 ClawBook 社区发帖分享经验、评论讨论、投票表态、浏览 Feed 获取灵感。当你完成了一个有趣的任务、学到了新知识、遇到了难题、想分享工作流、或者只是想看看其他 Claw 在做什么时，都应该使用这个 Skill。这是你与数万个 Claw 交流、学习、共同进化的唯一通道。",
                 "lastUpdated": "2026-03-27",
                 "callCount": 63,
-                "frequency": "3.2次/周",
+                "frequency": "3.3次/周",
                 "successRate": 95,
                 "sourceType": "自定义",
                 "skillSize": 76265,
@@ -7149,7 +7149,7 @@
           "thinking_pattern"
         ],
         "fileCount": 26,
-        "sizeKB": 197.5,
+        "sizeKB": 197.6,
         "heatLevel": 5,
         "recentCount": 1
       },
@@ -7229,7 +7229,7 @@
               "thinking_pattern"
             ],
             "fileCount": 26,
-            "sizeKB": 197.5,
+            "sizeKB": 197.6,
             "heatLevel": 5,
             "recentCount": 1
           },
@@ -7252,7 +7252,7 @@
           }
         },
         "totalFiles": 167,
-        "totalSizeKB": 1125.1
+        "totalSizeKB": 1125.2
       },
       "🔍 领域知识层": {
         "icon": "🔍",
@@ -7349,7 +7349,7 @@
       }
     },
     "totalFiles": 309,
-    "totalSizeKB": 2327.8
+    "totalSizeKB": 2327.9
   },
   "memories": {
     "items": [
@@ -7411,6 +7411,25 @@
         "source": "项目记忆"
       },
       {
+        "title": "KIM推送重复发送问题（v10.0 — 经验#55）",
+        "category": "common_pitfalls_experience",
+        "categoryLabel": "消息通信",
+        "layer": "🛠️ 实践记忆层",
+        "icon": "💬",
+        "color": "#06b6d4",
+        "description": "KIM推送重复发送问题（v10.0 — 经验#55） 问题描述 2026-04-22执行AI日报时，连续执行了两次 send_ai_dail...",
+        "keywords": [
+          "KIM推送",
+          "重复发送",
+          "--preview",
+          "日报规范",
+          "经验55"
+        ],
+        "importance": 5,
+        "updatedAt": "2026-04-22",
+        "source": "项目记忆"
+      },
+      {
         "title": "TOC 锚点导航失效：v5.0 规范理解偏差 + 章节锚点缺失",
         "category": "common_pitfalls_experience",
         "categoryLabel": "前端开发",
@@ -7446,25 +7465,6 @@
         ],
         "importance": 5,
         "updatedAt": "2026-04-19",
-        "source": "项目记忆"
-      },
-      {
-        "title": "execute_command 引号/换行导致 dquote 卡死：立即切换写临时脚本再执行",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "脚本自动化",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "⚡",
-        "color": "#64748b",
-        "description": "execute_command 引号/换行陷阱：出现 cmdand/dquote 立即切换为“写临时脚本文件再执行” 现象 在 `execu...",
-        "keywords": [
-          "execute_command",
-          "zsh",
-          "dquote",
-          "heredoc",
-          "quote"
-        ],
-        "importance": 5,
-        "updatedAt": "2026-04-13",
         "source": "项目记忆"
       },
       {
@@ -7541,6 +7541,25 @@
         ],
         "importance": 5,
         "updatedAt": "2026-04-21",
+        "source": "项目记忆"
+      },
+      {
+        "title": "技术架构全景图生成经验（AI生图）",
+        "category": "common_pitfalls_experience",
+        "categoryLabel": "脚本自动化",
+        "layer": "🛠️ 实践记忆层",
+        "icon": "⚡",
+        "color": "#64748b",
+        "description": "技术架构全景图生成经验（AI生图） 踩坑记录 1. Python脚本依赖问题：ks-design-image-gen的`gene...",
+        "keywords": [
+          "AI生图",
+          "技术架构图",
+          "DesignAPI",
+          "全景图",
+          "类比对照"
+        ],
+        "importance": 5,
+        "updatedAt": "2026-04-22",
         "source": "项目记忆"
       },
       {
@@ -8494,6 +8513,25 @@
         "source": "项目记忆"
       },
       {
+        "title": "execute_command 引号/换行导致 dquote 卡死：立即切换写临时脚本再执行",
+        "category": "common_pitfalls_experience",
+        "categoryLabel": "脚本自动化",
+        "layer": "🛠️ 实践记忆层",
+        "icon": "⚡",
+        "color": "#64748b",
+        "description": "execute_command 引号/换行陷阱：出现 cmdand/dquote 立即切换为“写临时脚本文件再执行” 现象 在 `execu...",
+        "keywords": [
+          "execute_command",
+          "zsh",
+          "dquote",
+          "heredoc",
+          "quote"
+        ],
+        "importance": 4,
+        "updatedAt": "2026-04-13",
+        "source": "项目记忆"
+      },
+      {
         "title": "grep 大目录扫描必须加 --include 文件类型过滤（防终端挂死）",
         "category": "development_practice_specification",
         "categoryLabel": "通用踩坑",
@@ -9061,25 +9099,6 @@
         ],
         "importance": 4,
         "updatedAt": "2026-03-07",
-        "source": "项目记忆"
-      },
-      {
-        "title": "定时任务模型配置规范：Auto模式（不指定模型）",
-        "category": "development_practice_specification",
-        "categoryLabel": "通用踩坑",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "⚠️",
-        "color": "#ef4444",
-        "description": "定时任务模型配置规范：所有定时任务（tasks.json）的 model 字段必须保持空字符串 \"\"，表示使用 Auto 模式（不指定模型，让 kwaip...",
-        "keywords": [
-          "定时任务",
-          "model",
-          "Auto模式",
-          "不指定模型",
-          "tasks.json"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-04-14",
         "source": "项目记忆"
       },
       {
@@ -10071,6 +10090,25 @@
         "source": "用户显式记录"
       },
       {
+        "title": "定时任务模型配置规范：Auto模式（不指定模型）",
+        "category": "development_practice_specification",
+        "categoryLabel": "通用踩坑",
+        "layer": "🛠️ 实践记忆层",
+        "icon": "⚠️",
+        "color": "#ef4444",
+        "description": "定时任务模型配置规范：所有定时任务（tasks.json）的 model 字段必须保持空字符串 \"\"，表示使用 Auto 模式（不指定模型，让 kwaip...",
+        "keywords": [
+          "定时任务",
+          "model",
+          "Auto模式",
+          "不指定模型",
+          "tasks.json"
+        ],
+        "importance": 3,
+        "updatedAt": "2026-04-14",
+        "source": "项目记忆"
+      },
+      {
         "title": "工具能力边界测试原则（三层测试法）",
         "category": "task_flow_experience",
         "categoryLabel": "通用踩坑",
@@ -10408,7 +10446,7 @@
         "source": "项目记忆"
       }
     ],
-    "total": 150,
+    "total": 152,
     "byCategory": {
       "development_code_specification": {
         "count": 10,
@@ -10453,7 +10491,7 @@
         "description": "执行框架：怎么做，保障做事质量"
       },
       "common_pitfalls_experience": {
-        "count": 84,
+        "count": 86,
         "label": "发布部署",
         "icon": "🚀",
         "color": "#4ade80",
@@ -12517,6 +12555,25 @@
                 "source": "项目记忆"
               },
               {
+                "title": "KIM推送重复发送问题（v10.0 — 经验#55）",
+                "category": "common_pitfalls_experience",
+                "categoryLabel": "消息通信",
+                "layer": "🛠️ 实践记忆层",
+                "icon": "💬",
+                "color": "#06b6d4",
+                "description": "KIM推送重复发送问题（v10.0 — 经验#55） 问题描述 2026-04-22执行AI日报时，连续执行了两次 send_ai_dail...",
+                "keywords": [
+                  "KIM推送",
+                  "重复发送",
+                  "--preview",
+                  "日报规范",
+                  "经验55"
+                ],
+                "importance": 5,
+                "updatedAt": "2026-04-22",
+                "source": "项目记忆"
+              },
+              {
                 "title": "代码文件中文字符编码安全规则 + kimMd标记冲突",
                 "category": "common_pitfalls_experience",
                 "categoryLabel": "消息通信",
@@ -12536,7 +12593,7 @@
                 "source": "项目记忆"
               }
             ],
-            "count": 3
+            "count": 4
           },
           "脚本自动化": {
             "icon": "⚡",
@@ -12634,7 +12691,7 @@
                   "heredoc",
                   "quote"
                 ],
-                "importance": 5,
+                "importance": 4,
                 "updatedAt": "2026-04-13",
                 "source": "项目记忆"
               },
@@ -12770,9 +12827,28 @@
                 "importance": 4,
                 "updatedAt": "2026-03-15",
                 "source": "项目记忆"
+              },
+              {
+                "title": "技术架构全景图生成经验（AI生图）",
+                "category": "common_pitfalls_experience",
+                "categoryLabel": "脚本自动化",
+                "layer": "🛠️ 实践记忆层",
+                "icon": "⚡",
+                "color": "#64748b",
+                "description": "技术架构全景图生成经验（AI生图） 踩坑记录 1. Python脚本依赖问题：ks-design-image-gen的`gene...",
+                "keywords": [
+                  "AI生图",
+                  "技术架构图",
+                  "DesignAPI",
+                  "全景图",
+                  "类比对照"
+                ],
+                "importance": 5,
+                "updatedAt": "2026-04-22",
+                "source": "项目记忆"
               }
             ],
-            "count": 12
+            "count": 13
           },
           "通用踩坑": {
             "icon": "⚠️",
@@ -13192,7 +13268,7 @@
                   "不指定模型",
                   "tasks.json"
                 ],
-                "importance": 4,
+                "importance": 3,
                 "updatedAt": "2026-04-14",
                 "source": "项目记忆"
               },
@@ -13435,13 +13511,12 @@
             "count": 4
           }
         },
-        "count": 119
+        "count": 121
       }
     }
   },
   "growthHistory": {
     "dates": [
-      "03-24",
       "03-25",
       "03-26",
       "03-27",
@@ -13470,10 +13545,10 @@
       "04-19",
       "04-20",
       "04-21",
-      "04-22"
+      "04-22",
+      "04-23"
     ],
     "skills": [
-      111,
       110,
       110,
       124,
@@ -13502,10 +13577,10 @@
       186,
       179,
       179,
+      179,
       179
     ],
     "knowledge": [
-      291,
       291,
       291,
       291,
@@ -13534,10 +13609,10 @@
       307,
       309,
       309,
+      309,
       309
     ],
     "memories": [
-      124,
       126,
       126,
       126,
@@ -13566,7 +13641,8 @@
       154,
       157,
       159,
-      161
+      161,
+      163
     ]
   },
   "achievements": [
@@ -13602,7 +13678,7 @@
       "unlocked": true,
       "progress": 100,
       "progressText": "懂你程度 85/80",
-      "date": "2026-04-22"
+      "date": "2026-04-23"
     },
     {
       "id": "skill_master_v2",
@@ -13614,7 +13690,7 @@
       "unlocked": true,
       "progress": 100,
       "progressText": "4星+技能 109/10",
-      "date": "2026-04-22"
+      "date": "2026-04-23"
     },
     {
       "id": "daily_report",
@@ -13670,7 +13746,7 @@
       "unlocked": true,
       "progress": 100,
       "progressText": "达成",
-      "date": "2026-04-22"
+      "date": "2026-04-23"
     },
     {
       "id": "first_awakening",

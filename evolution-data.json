@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-22T05:10:33.828980",
+  "generatedAt": "2026-04-23T06:06:44.701470",
   "lastManualUpdate": "2026-03-04",
   "updateTrigger": "每日任务自动检查 / 能力解锁时手动更新",
   "evolution": {
@@ -1063,6 +1063,12 @@
         "type": "integration",
         "name": "KIM消息推送",
         "description": "KIM开放能力集成"
+      },
+      {
+        "date": "2026-04-22",
+        "type": "system_unlock",
+        "name": "AI持续洞察",
+        "description": "AI-Insight深度调研与追踪体系"
       }
     ]
   },
@@ -1072,6 +1078,6 @@
       "重大版本变化时需要更新 stages 中的当前阶段",
       "每日任务检查时自动对比是否有新的里程碑事件"
     ],
-    "lastAutoCheck": "2026-04-22"
+    "lastAutoCheck": "2026-04-23"
   }
 }
