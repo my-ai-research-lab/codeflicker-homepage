@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-23T06:26:15.402159",
+  "generatedAt": "2026-04-24T17:50:38.685235",
   "lastManualUpdate": "2026-03-04",
   "updateTrigger": "每日任务自动检查 / 能力解锁时手动更新",
   "evolution": {
@@ -1078,6 +1078,6 @@
       "重大版本变化时需要更新 stages 中的当前阶段",
       "每日任务检查时自动对比是否有新的里程碑事件"
     ],
-    "lastAutoCheck": "2026-04-23"
+    "lastAutoCheck": "2026-04-24"
   }
 }

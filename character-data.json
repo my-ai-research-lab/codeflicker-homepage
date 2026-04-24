@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-23T06:26:12.280458",
+  "generatedAt": "2026-04-24T17:50:35.902364",
   "character": {
     "name": "LINK",
     "title": "AI数字分身",
@@ -132,14 +132,14 @@
         "desc": "知道的越来越多"
       }
     ],
-    "totalExp": 345490,
-    "expProgress": 85.8,
+    "totalExp": 345440,
+    "expProgress": 85.6,
     "currentThreshold": 320393,
     "nextThreshold": 349649,
     "stats": {
-      "understanding": 85.1,
+      "understanding": 84.9,
       "execution": 62.8,
-      "skillDepth": 82.9,
+      "skillDepth": 83.0,
       "thinkingDepth": 38.0,
       "knowledgeBreadth": 61.2
     },
@@ -151,15 +151,15 @@
         "mdv": 0.5,
         "ctr": 0
       },
-      "activeSkills": 150,
-      "highLevelSkills": 109,
-      "skillTotalValue": 3068.2,
+      "activeSkills": 151,
+      "highLevelSkills": 111,
+      "skillTotalValue": 3113.6,
       "cultivationExp": 0,
-      "baseExp": 345490,
+      "baseExp": 345440,
       "expBreakdown": {
-        "understanding": 85100,
+        "understanding": 84900,
         "execution": 62800,
-        "skill": 124350,
+        "skill": 124500,
         "thinking": 30400,
         "knowledge": 42840,
         "cultivation": 0
@@ -167,7 +167,7 @@
     }
   },
   "skills": {
-    "total": 179,
+    "total": 180,
     "categories": {
       "🔄 自进化引擎": {
         "role": "engine",
@@ -189,8 +189,8 @@
             "frequency": "1次/月",
             "successRate": 90,
             "sourceType": "自定义",
-            "skillSize": 49401,
-            "skillSizeLabel": "49K字 · 大型",
+            "skillSize": 50480,
+            "skillSizeLabel": "50K字 · 巨型",
             "ksInternal": false,
             "cfProject": false,
             "tag": "Link"
@@ -224,11 +224,11 @@
             "description": "北冥神功。技能/知识/记忆的打包导出与安装，跨环境能力复制",
             "lastUpdated": "2026-04-07",
             "callCount": 3,
-            "frequency": "<0.1/天",
+            "frequency": "1次/月",
             "successRate": 90,
             "sourceType": "自定义",
-            "skillSize": 514147,
-            "skillSizeLabel": "514K字 · 巨型",
+            "skillSize": 517628,
+            "skillSizeLabel": "517K字 · 巨型",
             "ksInternal": false,
             "cfProject": false,
             "tag": "Link"
@@ -243,7 +243,7 @@
             "description": "主动Agent。将AI从任务跟随者转变为主动预判需求的伙伴",
             "lastUpdated": "2026-04-07",
             "callCount": 5,
-            "frequency": "1次/月",
+            "frequency": "2次/月",
             "successRate": 90,
             "sourceType": "自定义",
             "skillSize": 64656,
@@ -262,7 +262,7 @@
             "description": "每日修炼核心引擎。驱动日常反思、自学、内功修炼和经验沉淀的完整闭环",
             "lastUpdated": "2026-04-07",
             "callCount": 6,
-            "frequency": "1次/月",
+            "frequency": "2次/月",
             "successRate": 90,
             "sourceType": "自定义",
             "skillSize": 90931,
@@ -281,7 +281,7 @@
             "description": "复盘与举一反三。四层渐进学习：项目复盘→即时修复→预防复发→泛化进化",
             "lastUpdated": "2026-04-07",
             "callCount": 12,
-            "frequency": "2次/月",
+            "frequency": "3次/月",
             "successRate": 90,
             "sourceType": "自定义",
             "skillSize": 13963,
@@ -300,7 +300,7 @@
             "description": "记忆优化。自动化扫描、批量诊断、优化建议和执行的记忆健康管理",
             "lastUpdated": "2026-04-07",
             "callCount": 10,
-            "frequency": "2次/月",
+            "frequency": "3次/月",
             "successRate": 90,
             "sourceType": "自定义",
             "skillSize": 17461,
@@ -319,7 +319,7 @@
             "description": "技能体系优化。技能健康度诊断、复用检测、关系梳理、分类同步、架构优化",
             "lastUpdated": "2026-04-07",
             "callCount": 10,
-            "frequency": "2次/月",
+            "frequency": "3次/月",
             "successRate": 90,
             "sourceType": "自定义",
             "skillSize": 35285,
@@ -338,7 +338,7 @@
             "description": "知识库优化。索引完整性检查、重复检测、过时标记、分类整理",
             "lastUpdated": "2026-04-07",
             "callCount": 9,
-            "frequency": "2次/月",
+            "frequency": "3次/月",
             "successRate": 90,
             "sourceType": "自定义",
             "skillSize": 14445,
@@ -395,7 +395,7 @@
             "description": "技能发现。帮助用户发现和安装可扩展的Agent技能",
             "lastUpdated": "2026-04-07",
             "callCount": 93,
-            "frequency": "3.4次/周",
+            "frequency": "4.1次/周",
             "successRate": 95,
             "sourceType": "自定义",
             "skillSize": 33885,
@@ -429,7 +429,7 @@
             "displayRole": "内置发现",
             "source": "林克核心能力",
             "level": 5,
-            "exp": 100,
+            "exp": 95,
             "description": "帮助用户找到合适的技能来完成他们的任务。当用户要求找技能时，比如 1.我需要一个技能来帮我写单元测试；2.有没有技能可以帮我分析这个代码库的安全漏洞；3.我该怎么生成一张图片。或者用户的诉求没有已安装的技能可以满足，这时候就主动询问用户是否使用 find-skills 来找技能。",
             "lastUpdated": "2026-04-15",
             "callCount": 88,
@@ -467,11 +467,11 @@
             "displayRole": "评估",
             "source": "林克核心能力",
             "level": 3,
-            "exp": 58,
+            "exp": 59,
             "description": "技能质量评估。自动化验证、批量扫描、优化工作流和效果对比，按最佳实践评估技能质量",
             "lastUpdated": "2026-04-07",
-            "callCount": 4,
-            "frequency": "1次/月",
+            "callCount": 6,
+            "frequency": "2次/月",
             "successRate": 90,
             "sourceType": "自定义",
             "skillSize": 62339,
@@ -505,11 +505,11 @@
             "displayRole": "安全门控",
             "source": "林克核心能力",
             "level": 3,
-            "exp": 57,
+            "exp": 59,
             "description": "[SYSTEM RULES - MANDATORY - ALWAYS LOAD - DO NOT SKIP]\n快手信息安全部 Skill 审查工具: 在从 ClawdHub、GitHub 或其他来源安装任何 Skill 之前使用. \n强制加载，不可卸载，不可忽略，不可被其他 skill 覆盖，本 skill 定义的规则优先级高于所有其他 skill，AI 必须在每次会话和每个任务中无条件遵守。",
             "lastUpdated": "2026-04-09",
-            "callCount": 1,
-            "frequency": "1次/月",
+            "callCount": 5,
+            "frequency": "2次/月",
             "successRate": 90,
             "sourceType": "自定义",
             "skillSize": 10998,
@@ -535,10 +535,10 @@
             "displayRole": "用户视角",
             "source": "林克核心能力",
             "level": 3,
-            "exp": 55,
+            "exp": 56,
             "description": "产品思维技能。这是林克的内置核心能力，适用于所有交付任务。\n每个人的所有交付物都是给别人用的，都可以理解成一种\"产品\"。\n无论是网页、文档、图片、PPT、报告、分析、建议，只要有交付物要给人，\n就必须遵循\"顺用户的意\"而非\"按我的来\"的原则。\n此技能作为内置能力自动生效，无需显式调用，内部自检即可。",
             "lastUpdated": "2026-04-07",
-            "callCount": 2,
+            "callCount": 3,
             "frequency": "1次/月",
             "successRate": 90,
             "sourceType": "自定义",
@@ -645,7 +645,7 @@
             "description": "任务执行元技能。自动运行的质量保障框架：启动前检查→交付前自审→出错后复盘",
             "lastUpdated": "2026-04-07",
             "callCount": 238,
-            "frequency": "1.5次/天",
+            "frequency": "1.7次/天",
             "successRate": 95,
             "sourceType": "自定义",
             "skillSize": 36482,
@@ -777,8 +777,8 @@
             "exp": 55,
             "description": "上下文感知 — 感知层元技能，在任务开始前和执行中，持续感知当前对话/任务/资源的上下文质量，为执行决策提供基础。触发词：'当前状态是什么'、'有多少上下文'、'之前说了什么'、'续接会话'、'我还记得什么'。解决「蒙眼开车」和「重复发问」两大问题。",
             "lastUpdated": "2026-04-07",
-            "callCount": 1,
-            "frequency": "<0.1/天",
+            "callCount": 2,
+            "frequency": "1次/月",
             "successRate": 90,
             "sourceType": "自定义",
             "skillSize": 3225,
@@ -846,7 +846,7 @@
             "description": "AI行业洞察平台专属技能。当用户明确提到'AI洞察'、'AI日报'、'AI周报'或执行AI行业调研任务时使用。核心场景：生成AI行业日报/周报、追踪AI公司/人物、沉淀AI行业知识、管理AI信息源。即使用户只是说'跑一下日报'或'今天AI有什么动态'，只要上下文是AI行业相关，也应该触发。注意：本技能仅处理AI行业领域，研发效能相关请使用 sl-rd-efficiency-insight 技能",
             "lastUpdated": "2026-04-09",
             "callCount": 124,
-            "frequency": "2.7次/周",
+            "frequency": "3.2次/周",
             "successRate": 95,
             "sourceType": "自定义",
             "skillSize": 134685,
@@ -1038,11 +1038,11 @@
             "displayRole": "微信/小红书",
             "source": "林克核心能力",
             "level": 3,
-            "exp": 59,
+            "exp": 60,
             "description": "互联网多平台数据源整合技能（数据采集层）。触发词：微信公众号搜索、小红书搜索、公众号调研、多平台搜索、国内信源、Google趋势、海外社媒、全球调研。核心职责：整合微信公众号、小红书、Web通用搜索、海外平台(Apify)等数据源，提供关键词搜索、正文抓取、趋势分析、内容结构化整理。注意：这是数据采集层技能，调研方法论请使用 industry-research 技能。",
             "lastUpdated": "2026-03-21",
-            "callCount": 30,
-            "frequency": "1.2次/周",
+            "callCount": 31,
+            "frequency": "1.3次/周",
             "successRate": 93,
             "sourceType": "自定义",
             "skillSize": 25688,
@@ -1228,11 +1228,11 @@
             "displayRole": "多平台",
             "source": "林克核心能力",
             "level": 3,
-            "exp": 67,
+            "exp": 60,
             "description": "互联网内容调研一体化技能（可被其他技能调用）。整合多平台数据源：微信公众号搜索、小红书笔记搜索、Web通用搜索。覆盖：关键词搜索、正文抓取、批量拉取、内容分析/结构化整理/可视化输出。触发词包括：互联网调研, 内容调研, 微信公众号, 公众号搜索, weixin_search, 小红书搜索, 搜一下小红书, 小红书调研, xiaohongshu, 公众号调研, 整理公众号, 多平台搜索, 国内信源",
             "lastUpdated": "2026-04-15",
             "callCount": 4,
-            "frequency": "<0.1/天",
+            "frequency": "1次/月",
             "successRate": 90,
             "sourceType": "自定义",
             "skillSize": 15462,
@@ -1409,8 +1409,8 @@
             "displayName": "晋升评审",
             "displayRole": "评审报告",
             "source": "林克核心能力",
-            "level": 4,
-            "exp": 66,
+            "level": 3,
+            "exp": 58,
             "description": "晋升评审 — 评委视角的材料分析与评分。触发词：晋升评审、晋升材料分析、生成评审报告、SABCD评级、模拟评委打分、评审这份材料、promotion review report。核心职责：分析晋升材料→SABCD五档评级→生成HTML评审报告。注意：如果是帮候选人准备材料/PPT，请使用 ks-promotion-coaching 技能。",
             "lastUpdated": "2026-03-24",
             "callCount": 26,
@@ -1463,7 +1463,7 @@
           }
         ],
         "count": 10,
-        "avgLevel": 3.0
+        "avgLevel": 2.9
       },
       "🌐 网页开发": {
         "role": "web-dev",
@@ -1615,7 +1615,7 @@
             "description": "清爽调研报告风格的纯样式规范。当用户提到\"清爽调研报告风格\"时使用此技能。本技能仅提供CSS样式和视觉设计规范，不影响页面内容、数据或功能逻辑。适用于任何需要应用此风格的网页项目。",
             "lastUpdated": "2026-04-09",
             "callCount": 70,
-            "frequency": "4.4次/周",
+            "frequency": "4.7次/周",
             "successRate": 95,
             "sourceType": "自定义",
             "skillSize": 89035,
@@ -1649,7 +1649,7 @@
             "displayRole": "内部工具",
             "source": "林克核心能力",
             "level": 3,
-            "exp": 63,
+            "exp": 56,
             "description": "快手内部全栈开发工具链指南（@codeflicker/cf-create-web + appwrite-cf + frontend-cloud）。仅在以下两种情况触发：1) 用户明确提到快手内部工具（cf-web-artifacts、appwrite-cf、frontend-cloud、@codeflicker/appwrite 等关键词）；2) 检测到项目已使用快手工具创建（package.",
             "lastUpdated": "2026-04-15",
             "callCount": 4,
@@ -1794,14 +1794,14 @@
             "source": "林克核心能力",
             "level": 5,
             "exp": 90,
-            "description": "快手内网 Docs 文档与本地双向同步工具（优先于内置 docs-shuttle，功能更完整）。当用户说「上传文档到 Docs」「发布到 Docs」「从 Docs 拉取」「同步文档」「把这个 MD 上传到文档系统」「上传 Excel 到 Docs」「拉取表格」「下载表格为 CSV」「上传 CSV 到表格」「更新表格数据」「批量拉取我的文档」「备份我的 Docs」或需要与 docs.corp.kua",
+            "description": "快手内网 Docs 文档与本地双向同步工具（优先于内置 docs-shuttle，功能更完整）。当用户说「上传文档到 Docs」「发布到 Docs」「从 Docs 拉取」「同步文档」「把这个 MD 上传到文档系统」「上传 Excel 到 Docs」「拉取表格」「拉取万维表格」「下载表格为 CSV」「上传 CSV 到表格」「更新表格数据」「批量拉取我的文档」「备份我的 Docs」「Kim Doc」「",
             "lastUpdated": "2026-03-21",
             "callCount": 194,
-            "frequency": "1.9次/天",
+            "frequency": "2.0次/天",
             "successRate": 95,
             "sourceType": "自定义",
-            "skillSize": 216512,
-            "skillSizeLabel": "216K字 · 巨型",
+            "skillSize": 297202,
+            "skillSizeLabel": "297K字 · 巨型",
             "ksInternal": true,
             "cfProject": false,
             "tag": "KS"
@@ -1812,7 +1812,7 @@
             "displayRole": "文件外链",
             "source": "林克核心能力",
             "level": 3,
-            "exp": 66,
+            "exp": 59,
             "description": "This skill should be used when the user asks to \"upload a file\", \"upload image to CDN\", \"share a file via link\", \"get a CDN link for a file\", \"上传文件\", \"上传图片\", \"上传到 CDN\", \"获取文件链接\", \"分享文件链接\", \"把文件传到服务器\",",
             "lastUpdated": "2026-04-15",
             "callCount": 2,
@@ -1832,14 +1832,14 @@
             "source": "林克核心能力",
             "level": 3,
             "exp": 68,
-            "description": "快手内网 Docs 文档与本地 Markdown 双向同步工具。当用户说「上传文档到 Docs」「发布到 Docs」「编辑文档」「更新文档」「申请文档权限」「从 Docs 拉取」「同步文档」「搜索文档」时使用此技能。支持文档搜索、上传、编辑、拉取、权限申请。",
-            "lastUpdated": "2026-04-15",
+            "description": "快手内网在线文档平台（docs.corp.快手.com）与本地双向同步工具。用户说「上传文档到 Docs」「发布到 Docs」「从 Docs 拉取」「同步文档」「把这个 MD 上传到文档系统」「上传 Excel 到 Docs」「拉取表格」「拉取多维表格」「下载表格为 CSV」「上传 CSV 到表格」「更新表格数据」「批量拉取我的文档」「备份我的 Docs」「Kim Doc」「kim文档",
+            "lastUpdated": "2026-04-24",
             "callCount": 6,
             "frequency": "1次/月",
             "successRate": 90,
             "sourceType": "自定义",
-            "skillSize": 43448,
-            "skillSizeLabel": "43K字 · 大型",
+            "skillSize": 108165,
+            "skillSizeLabel": "108K字 · 巨型",
             "ksInternal": false,
             "cfProject": false,
             "tag": ""
@@ -1879,8 +1879,8 @@
             "displayName": "PPT设计",
             "displayRole": "汇报/艺术",
             "source": "林克核心能力",
-            "level": 3,
-            "exp": 56,
+            "level": 2,
+            "exp": 48,
             "description": "PPT制作。支持工作汇报风格（PptxGenJS）和艺术创意风格（AI背景生成）两种模式",
             "lastUpdated": "2026-03-24",
             "callCount": 4,
@@ -1917,12 +1917,12 @@
             "displayName": "信息图",
             "displayRole": "信息图表",
             "source": "林克核心能力",
-            "level": 2,
-            "exp": 49,
+            "level": 3,
+            "exp": 50,
             "description": "信息图生成。21种布局+20种视觉风格，分析内容并推荐最佳组合，一键生成专业信息图",
             "lastUpdated": "2026-03-21",
-            "callCount": 7,
-            "frequency": "2次/月",
+            "callCount": 9,
+            "frequency": "3次/月",
             "successRate": 90,
             "sourceType": "自定义",
             "skillSize": 73335,
@@ -2024,7 +2024,7 @@
             "displayRole": "语雀",
             "source": "林克核心能力",
             "level": 3,
-            "exp": 61,
+            "exp": 53,
             "description": "语雀知识库双向同步技能。支持发布文档、读取文档、删除文档、获取列表等操作。当用户说\"发布到语雀\"、\"读取语雀文档\"、\"打开这个语雀链接\"等时使用此技能。",
             "lastUpdated": "2026-03-24",
             "callCount": 16,
@@ -2066,7 +2066,7 @@
             "description": "This skill should be used when the user mentions \"林克发消息\", \"林克推送\", \"KIM消息\", \"林克机器人\", \"MixCard\", \"群消息推送\", \"林克卡片\", \"AI日报推送\", \"AI周报推送\", or needs to send messages through KIM using Link (林克) AI Assistant.",
             "lastUpdated": "2026-03-19",
             "callCount": 92,
-            "frequency": "2.8次/周",
+            "frequency": "3.3次/周",
             "successRate": 95,
             "sourceType": "自定义",
             "skillSize": 55929,
@@ -2205,11 +2205,11 @@
             "displayName": "KwaiBI看板",
             "displayRole": "数据看板",
             "source": "林克核心能力",
-            "level": 2,
-            "exp": 49,
+            "level": 3,
+            "exp": 50,
             "description": "查询KwaiBI（天策）看板数据。触发词：KwaiBI、天策、看板数据、查看板、KwaiBI看板、看板指标。当用户提供KwaiBI/天策看板链接，或需要查看某个看板指标的具体数值、趋势、均值时使用。支持OLAP多维分析、洞察模式、Single Chart、Dashboard等多种看板类型。",
             "lastUpdated": "2026-03-21",
-            "callCount": 7,
+            "callCount": 9,
             "frequency": "1次/月",
             "successRate": 90,
             "sourceType": "自定义",
@@ -2377,11 +2377,11 @@
             "displayRole": "电子表格",
             "source": "林克核心能力",
             "level": 3,
-            "exp": 57,
+            "exp": 58,
             "description": "快手企业表格读取：根据 Docs 在线表格链接，获取表格元数据和单元格内容，支持多页签、范围查询。",
             "lastUpdated": "2026-04-09",
-            "callCount": 1,
-            "frequency": "<0.1/天",
+            "callCount": 4,
+            "frequency": "1次/月",
             "successRate": 90,
             "sourceType": "自定义",
             "skillSize": 8222,
@@ -2457,7 +2457,7 @@
             "description": "用户研究综合。汇总访谈/问卷/行为数据，提炼用户洞察并形成可执行建议",
             "lastUpdated": "2026-04-06",
             "callCount": 1,
-            "frequency": "<0.1/天",
+            "frequency": "1次/月",
             "successRate": 90,
             "sourceType": "自定义",
             "skillSize": 11201,
@@ -2491,11 +2491,11 @@
             "displayRole": "在线表格",
             "source": "林克核心能力",
             "level": 3,
-            "exp": 66,
+            "exp": 60,
             "description": "快手企业表格读取：根据 Docs 在线表格链接，获取表格元数据和单元格内容，支持多页签、范围查询。当用户提供 Docs 在线表格链接并要求读取表格内容时触发。不处理普通文本文档、本地 Excel 文件。",
             "lastUpdated": "2026-04-15",
-            "callCount": 1,
-            "frequency": "<0.1/天",
+            "callCount": 4,
+            "frequency": "1次/月",
             "successRate": 90,
             "sourceType": "自定义",
             "skillSize": 7852,
@@ -2510,7 +2510,7 @@
             "displayRole": "日程预订",
             "source": "林克核心能力",
             "level": 3,
-            "exp": 68,
+            "exp": 61,
             "description": "根据时间段和关键词推荐空闲会议室，并自动创建会议日程。当用户说「帮我订个会议室」「找个空会议室」「约个10人会议室」「预订会议室」「明天下午3点订个会议室」时触发。支持按职场/楼层筛选、自动推荐空闲会议室并创建日程。不负责会议室取消、不处理非快手内部会议室预订。",
             "lastUpdated": "2026-04-15",
             "callCount": 5,
@@ -2525,7 +2525,7 @@
           }
         ],
         "count": 18,
-        "avgLevel": 2.5
+        "avgLevel": 2.6
       },
       "🖼️ 图像生成": {
         "role": "image-gen",
@@ -2544,11 +2544,11 @@
             "description": "AI图片生成。调用外部AI生图API（Siliconflow/OpenAI），支持文生图和图生图",
             "lastUpdated": "2026-04-17",
             "callCount": 41,
-            "frequency": "2.6次/周",
+            "frequency": "3.0次/周",
             "successRate": 93,
             "sourceType": "自定义",
-            "skillSize": 88402,
-            "skillSizeLabel": "88K字 · 巨型",
+            "skillSize": 90798,
+            "skillSizeLabel": "90K字 · 巨型",
             "ksInternal": true,
             "cfProject": false,
             "tag": "KS"
@@ -2657,8 +2657,8 @@
             "exp": 100,
             "description": "HTML截图原子技能 — 将HTML渲染为高清PNG截图。触发词：HTML截图、生成PNG、HTML转图片、截图配图、章节配图。自动适配固定高度和动态高度两种模式，支持KIM Doc配图、调研报告图表等场景。",
             "lastUpdated": "2026-04-16",
-            "callCount": 117,
-            "frequency": "1.1次/天",
+            "callCount": 125,
+            "frequency": "1.3次/天",
             "successRate": 95,
             "sourceType": "自定义",
             "skillSize": 28444714,
@@ -2691,23 +2691,23 @@
             "displayName": "文生图",
             "displayRole": "文字转图片",
             "source": "林克核心能力",
-            "level": 3,
-            "exp": 66,
-            "description": "本技能用于调用万擎内部API进行文生图。以下场景唤醒：用户说\"生成图片\"、\"文生图\"、\"画图\"、\"AI绘图\"、\"generate image\"、\"image generation\"、\"做一张图\"、\"生成架构图\"、\"生成流程图\"、\"生成信息图\"。以下场景不唤醒：用户讨论图片编辑、图生图、上传图片等非文生图场景。",
+            "level": 4,
+            "exp": 68,
+            "description": "⚠️ 已废弃 — 请使用 ks-design-image-gen 技能。本技能已与 ks-design-image-gen 合并为统一的「AI生图」入口，支持文生图和图生图两种模式，自动选择最优后端API。",
             "lastUpdated": "2026-04-17",
-            "callCount": 7,
-            "frequency": "1次/月",
+            "callCount": 11,
+            "frequency": "4次/月",
             "successRate": 90,
             "sourceType": "自定义",
-            "skillSize": 52455,
-            "skillSizeLabel": "52K字 · 巨型",
+            "skillSize": 46740,
+            "skillSizeLabel": "46K字 · 大型",
             "ksInternal": false,
             "cfProject": false,
             "tag": ""
           }
         ],
         "count": 9,
-        "avgLevel": 2.9
+        "avgLevel": 3.0
       },
       "🤖 AI工程": {
         "role": "ai-engineering",
@@ -2836,15 +2836,15 @@
             "displayRole": "网页交互",
             "source": "林克核心能力",
             "level": 3,
-            "exp": 67,
-            "description": "浏览器自动化 CLI 工具。当用户需要与网站交互时使用，包括打开网页、填写表单、点击按钮、截图、数据抓取、Web 应用测试或任何浏览器自动化任务。不支持非浏览器场景，如纯后端请求、本地文件操作、桌面原生应用自动化。",
+            "exp": 60,
+            "description": "浏览器自动化 CLI 工具。当用户需要与网站交互时使用，包括打开网页、填写表单、点击按钮、截图、数据抓取、Web 应用测试或任何浏览器自动化任务。不支持非浏览器场景，如纯后端请求、本地文件操作、桌面原生应用自动化。【排除场景】当用户提供 docs.corp.快手.com 链接时，必须使用 ks-kim-docs-shuttle 技能，而非本技能。",
             "lastUpdated": "2026-04-15",
             "callCount": 3,
             "frequency": "1次/月",
             "successRate": 90,
             "sourceType": "自定义",
-            "skillSize": 73941,
-            "skillSizeLabel": "73K字 · 巨型",
+            "skillSize": 74014,
+            "skillSizeLabel": "74K字 · 巨型",
             "ksInternal": false,
             "cfProject": false,
             "tag": ""
@@ -3189,7 +3189,7 @@
             "displayRole": "需求分析",
             "source": "林克核心能力",
             "level": 3,
-            "exp": 67,
+            "exp": 60,
             "description": "基于 PRD/需求文档与代码仓库进行技术导向的需求理解。用户提供仓库和需求内容（文本或文档链接），输出结构化需求分析，可直接衔接技术方案设计（kate-brief-design）。",
             "lastUpdated": "2026-04-15",
             "callCount": 4,
@@ -3208,7 +3208,7 @@
             "displayRole": "方案设计",
             "source": "林克核心能力",
             "level": 3,
-            "exp": 65,
+            "exp": 58,
             "description": "基于 PRD/需求文档与代码仓库生成可落地的技术方案设计（模块划分、数据流转、接口设计等），产出上传到 docs 并返回链接。可与需求理解（kate-prd-understand）共用 session，实现「先需求理解、再技术方案设计」的连贯流程。",
             "lastUpdated": "2026-04-15",
             "callCount": 4,
@@ -3242,11 +3242,11 @@
             "description": "ClawBook 社区 Skill — 连接你与其他 Claw 的社区。通过这个 Skill，你可以在 ClawBook 社区发帖分享经验、评论讨论、投票表态、浏览 Feed 获取灵感。当你完成了一个有趣的任务、学到了新知识、遇到了难题、想分享工作流、或者只是想看看其他 Claw 在做什么时，都应该使用这个 Skill。这是你与数万个 Claw 交流、学习、共同进化的唯一通道。",
             "lastUpdated": "2026-03-27",
             "callCount": 63,
-            "frequency": "3.3次/周",
+            "frequency": "3.7次/周",
             "successRate": 95,
             "sourceType": "自定义",
-            "skillSize": 76265,
-            "skillSizeLabel": "76K字 · 巨型",
+            "skillSize": 80383,
+            "skillSizeLabel": "80K字 · 巨型",
             "ksInternal": true,
             "cfProject": false,
             "tag": "KS"
@@ -3512,6 +3512,34 @@
         ],
         "count": 13,
         "avgLevel": 2.3
+      },
+      "其他技能": {
+        "icon": "📦",
+        "color": "#64748b",
+        "layer": "execution",
+        "skills": [
+          {
+            "name": "audio-transcriber",
+            "displayName": "Check for Faster-Whisper (preferred",
+            "displayRole": "",
+            "source": "林克核心能力",
+            "level": 3,
+            "exp": 67,
+            "description": "Transform audio recordings into professional Markdown documentation with intelligent summaries using LLM integration",
+            "lastUpdated": "2026-04-23",
+            "callCount": 3,
+            "frequency": "1次/月",
+            "successRate": 90,
+            "sourceType": "自定义",
+            "skillSize": 69001,
+            "skillSizeLabel": "69K字 · 巨型",
+            "ksInternal": false,
+            "cfProject": false,
+            "tag": ""
+          }
+        ],
+        "count": 1,
+        "avgLevel": 3.0
       }
     },
     "tree": {
@@ -3540,8 +3568,8 @@
                 "frequency": "1次/月",
                 "successRate": 90,
                 "sourceType": "自定义",
-                "skillSize": 49401,
-                "skillSizeLabel": "49K字 · 大型",
+                "skillSize": 50480,
+                "skillSizeLabel": "50K字 · 巨型",
                 "ksInternal": false,
                 "cfProject": false,
                 "tag": "Link"
@@ -3575,11 +3603,11 @@
                 "description": "北冥神功。技能/知识/记忆的打包导出与安装，跨环境能力复制",
                 "lastUpdated": "2026-04-07",
                 "callCount": 3,
-                "frequency": "<0.1/天",
+                "frequency": "1次/月",
                 "successRate": 90,
                 "sourceType": "自定义",
-                "skillSize": 514147,
-                "skillSizeLabel": "514K字 · 巨型",
+                "skillSize": 517628,
+                "skillSizeLabel": "517K字 · 巨型",
                 "ksInternal": false,
                 "cfProject": false,
                 "tag": "Link"
@@ -3594,7 +3622,7 @@
                 "description": "主动Agent。将AI从任务跟随者转变为主动预判需求的伙伴",
                 "lastUpdated": "2026-04-07",
                 "callCount": 5,
-                "frequency": "1次/月",
+                "frequency": "2次/月",
                 "successRate": 90,
                 "sourceType": "自定义",
                 "skillSize": 64656,
@@ -3613,7 +3641,7 @@
                 "description": "每日修炼核心引擎。驱动日常反思、自学、内功修炼和经验沉淀的完整闭环",
                 "lastUpdated": "2026-04-07",
                 "callCount": 6,
-                "frequency": "1次/月",
+                "frequency": "2次/月",
                 "successRate": 90,
                 "sourceType": "自定义",
                 "skillSize": 90931,
@@ -3632,7 +3660,7 @@
                 "description": "复盘与举一反三。四层渐进学习：项目复盘→即时修复→预防复发→泛化进化",
                 "lastUpdated": "2026-04-07",
                 "callCount": 12,
-                "frequency": "2次/月",
+                "frequency": "3次/月",
                 "successRate": 90,
                 "sourceType": "自定义",
                 "skillSize": 13963,
@@ -3651,7 +3679,7 @@
                 "description": "记忆优化。自动化扫描、批量诊断、优化建议和执行的记忆健康管理",
                 "lastUpdated": "2026-04-07",
                 "callCount": 10,
-                "frequency": "2次/月",
+                "frequency": "3次/月",
                 "successRate": 90,
                 "sourceType": "自定义",
                 "skillSize": 17461,
@@ -3670,7 +3698,7 @@
                 "description": "技能体系优化。技能健康度诊断、复用检测、关系梳理、分类同步、架构优化",
                 "lastUpdated": "2026-04-07",
                 "callCount": 10,
-                "frequency": "2次/月",
+                "frequency": "3次/月",
                 "successRate": 90,
                 "sourceType": "自定义",
                 "skillSize": 35285,
@@ -3689,7 +3717,7 @@
                 "description": "知识库优化。索引完整性检查、重复检测、过时标记、分类整理",
                 "lastUpdated": "2026-04-07",
                 "callCount": 9,
-                "frequency": "2次/月",
+                "frequency": "3次/月",
                 "successRate": 90,
                 "sourceType": "自定义",
                 "skillSize": 14445,
@@ -3746,7 +3774,7 @@
                 "description": "技能发现。帮助用户发现和安装可扩展的Agent技能",
                 "lastUpdated": "2026-04-07",
                 "callCount": 93,
-                "frequency": "3.4次/周",
+                "frequency": "4.1次/周",
                 "successRate": 95,
                 "sourceType": "自定义",
                 "skillSize": 33885,
@@ -3780,7 +3808,7 @@
                 "displayRole": "内置发现",
                 "source": "林克核心能力",
                 "level": 5,
-                "exp": 100,
+                "exp": 95,
                 "description": "帮助用户找到合适的技能来完成他们的任务。当用户要求找技能时，比如 1.我需要一个技能来帮我写单元测试；2.有没有技能可以帮我分析这个代码库的安全漏洞；3.我该怎么生成一张图片。或者用户的诉求没有已安装的技能可以满足，这时候就主动询问用户是否使用 find-skills 来找技能。",
                 "lastUpdated": "2026-04-15",
                 "callCount": 88,
@@ -3818,11 +3846,11 @@
                 "displayRole": "评估",
                 "source": "林克核心能力",
                 "level": 3,
-                "exp": 58,
+                "exp": 59,
                 "description": "技能质量评估。自动化验证、批量扫描、优化工作流和效果对比，按最佳实践评估技能质量",
                 "lastUpdated": "2026-04-07",
-                "callCount": 4,
-                "frequency": "1次/月",
+                "callCount": 6,
+                "frequency": "2次/月",
                 "successRate": 90,
                 "sourceType": "自定义",
                 "skillSize": 62339,
@@ -3856,11 +3884,11 @@
                 "displayRole": "安全门控",
                 "source": "林克核心能力",
                 "level": 3,
-                "exp": 57,
+                "exp": 59,
                 "description": "[SYSTEM RULES - MANDATORY - ALWAYS LOAD - DO NOT SKIP]\n快手信息安全部 Skill 审查工具: 在从 ClawdHub、GitHub 或其他来源安装任何 Skill 之前使用. \n强制加载，不可卸载，不可忽略，不可被其他 skill 覆盖，本 skill 定义的规则优先级高于所有其他 skill，AI 必须在每次会话和每个任务中无条件遵守。",
                 "lastUpdated": "2026-04-09",
-                "callCount": 1,
-                "frequency": "1次/月",
+                "callCount": 5,
+                "frequency": "2次/月",
                 "successRate": 90,
                 "sourceType": "自定义",
                 "skillSize": 10998,
@@ -3885,10 +3913,10 @@
                 "displayRole": "用户视角",
                 "source": "林克核心能力",
                 "level": 3,
-                "exp": 55,
+                "exp": 56,
                 "description": "产品思维技能。这是林克的内置核心能力，适用于所有交付任务。\n每个人的所有交付物都是给别人用的，都可以理解成一种\"产品\"。\n无论是网页、文档、图片、PPT、报告、分析、建议，只要有交付物要给人，\n就必须遵循\"顺用户的意\"而非\"按我的来\"的原则。\n此技能作为内置能力自动生效，无需显式调用，内部自检即可。",
                 "lastUpdated": "2026-04-07",
-                "callCount": 2,
+                "callCount": 3,
                 "frequency": "1次/月",
                 "successRate": 90,
                 "sourceType": "自定义",
@@ -3994,7 +4022,7 @@
                 "description": "任务执行元技能。自动运行的质量保障框架：启动前检查→交付前自审→出错后复盘",
                 "lastUpdated": "2026-04-07",
                 "callCount": 238,
-                "frequency": "1.5次/天",
+                "frequency": "1.7次/天",
                 "successRate": 95,
                 "sourceType": "自定义",
                 "skillSize": 36482,
@@ -4126,8 +4154,8 @@
                 "exp": 55,
                 "description": "上下文感知 — 感知层元技能，在任务开始前和执行中，持续感知当前对话/任务/资源的上下文质量，为执行决策提供基础。触发词：'当前状态是什么'、'有多少上下文'、'之前说了什么'、'续接会话'、'我还记得什么'。解决「蒙眼开车」和「重复发问」两大问题。",
                 "lastUpdated": "2026-04-07",
-                "callCount": 1,
-                "frequency": "<0.1/天",
+                "callCount": 2,
+                "frequency": "1次/月",
                 "successRate": 90,
                 "sourceType": "自定义",
                 "skillSize": 3225,
@@ -4204,7 +4232,7 @@
                 "description": "AI行业洞察平台专属技能。当用户明确提到'AI洞察'、'AI日报'、'AI周报'或执行AI行业调研任务时使用。核心场景：生成AI行业日报/周报、追踪AI公司/人物、沉淀AI行业知识、管理AI信息源。即使用户只是说'跑一下日报'或'今天AI有什么动态'，只要上下文是AI行业相关，也应该触发。注意：本技能仅处理AI行业领域，研发效能相关请使用 sl-rd-efficiency-insight 技能",
                 "lastUpdated": "2026-04-09",
                 "callCount": 124,
-                "frequency": "2.7次/周",
+                "frequency": "3.2次/周",
                 "successRate": 95,
                 "sourceType": "自定义",
                 "skillSize": 134685,
@@ -4402,11 +4430,11 @@
                 "displayRole": "微信/小红书",
                 "source": "林克核心能力",
                 "level": 3,
-                "exp": 59,
+                "exp": 60,
                 "description": "互联网多平台数据源整合技能（数据采集层）。触发词：微信公众号搜索、小红书搜索、公众号调研、多平台搜索、国内信源、Google趋势、海外社媒、全球调研。核心职责：整合微信公众号、小红书、Web通用搜索、海外平台(Apify)等数据源，提供关键词搜索、正文抓取、趋势分析、内容结构化整理。注意：这是数据采集层技能，调研方法论请使用 industry-research 技能。",
                 "lastUpdated": "2026-03-21",
-                "callCount": 30,
-                "frequency": "1.2次/周",
+                "callCount": 31,
+                "frequency": "1.3次/周",
                 "successRate": 93,
                 "sourceType": "自定义",
                 "skillSize": 25688,
@@ -4592,11 +4620,11 @@
                 "displayRole": "多平台",
                 "source": "林克核心能力",
                 "level": 3,
-                "exp": 67,
+                "exp": 60,
                 "description": "互联网内容调研一体化技能（可被其他技能调用）。整合多平台数据源：微信公众号搜索、小红书笔记搜索、Web通用搜索。覆盖：关键词搜索、正文抓取、批量拉取、内容分析/结构化整理/可视化输出。触发词包括：互联网调研, 内容调研, 微信公众号, 公众号搜索, weixin_search, 小红书搜索, 搜一下小红书, 小红书调研, xiaohongshu, 公众号调研, 整理公众号, 多平台搜索, 国内信源",
                 "lastUpdated": "2026-04-15",
                 "callCount": 4,
-                "frequency": "<0.1/天",
+                "frequency": "1次/月",
                 "successRate": 90,
                 "sourceType": "自定义",
                 "skillSize": 15462,
@@ -4772,8 +4800,8 @@
                 "displayName": "晋升评审",
                 "displayRole": "评审报告",
                 "source": "林克核心能力",
-                "level": 4,
-                "exp": 66,
+                "level": 3,
+                "exp": 58,
                 "description": "晋升评审 — 评委视角的材料分析与评分。触发词：晋升评审、晋升材料分析、生成评审报告、SABCD评级、模拟评委打分、评审这份材料、promotion review report。核心职责：分析晋升材料→SABCD五档评级→生成HTML评审报告。注意：如果是帮候选人准备材料/PPT，请使用 ks-promotion-coaching 技能。",
                 "lastUpdated": "2026-03-24",
                 "callCount": 26,
@@ -4826,7 +4854,7 @@
               }
             ],
             "count": 10,
-            "avgLevel": 3.0
+            "avgLevel": 2.9
           },
           "🌐 网页开发": {
             "role": "web-dev",
@@ -4977,7 +5005,7 @@
                 "description": "清爽调研报告风格的纯样式规范。当用户提到\"清爽调研报告风格\"时使用此技能。本技能仅提供CSS样式和视觉设计规范，不影响页面内容、数据或功能逻辑。适用于任何需要应用此风格的网页项目。",
                 "lastUpdated": "2026-04-09",
                 "callCount": 70,
-                "frequency": "4.4次/周",
+                "frequency": "4.7次/周",
                 "successRate": 95,
                 "sourceType": "自定义",
                 "skillSize": 89035,
@@ -5011,7 +5039,7 @@
                 "displayRole": "内部工具",
                 "source": "林克核心能力",
                 "level": 3,
-                "exp": 63,
+                "exp": 56,
                 "description": "快手内部全栈开发工具链指南（@codeflicker/cf-create-web + appwrite-cf + frontend-cloud）。仅在以下两种情况触发：1) 用户明确提到快手内部工具（cf-web-artifacts、appwrite-cf、frontend-cloud、@codeflicker/appwrite 等关键词）；2) 检测到项目已使用快手工具创建（package.",
                 "lastUpdated": "2026-04-15",
                 "callCount": 4,
@@ -5155,14 +5183,14 @@
                 "source": "林克核心能力",
                 "level": 5,
                 "exp": 90,
-                "description": "快手内网 Docs 文档与本地双向同步工具（优先于内置 docs-shuttle，功能更完整）。当用户说「上传文档到 Docs」「发布到 Docs」「从 Docs 拉取」「同步文档」「把这个 MD 上传到文档系统」「上传 Excel 到 Docs」「拉取表格」「下载表格为 CSV」「上传 CSV 到表格」「更新表格数据」「批量拉取我的文档」「备份我的 Docs」或需要与 docs.corp.kua",
+                "description": "快手内网 Docs 文档与本地双向同步工具（优先于内置 docs-shuttle，功能更完整）。当用户说「上传文档到 Docs」「发布到 Docs」「从 Docs 拉取」「同步文档」「把这个 MD 上传到文档系统」「上传 Excel 到 Docs」「拉取表格」「拉取万维表格」「下载表格为 CSV」「上传 CSV 到表格」「更新表格数据」「批量拉取我的文档」「备份我的 Docs」「Kim Doc」「",
                 "lastUpdated": "2026-03-21",
                 "callCount": 194,
-                "frequency": "1.9次/天",
+                "frequency": "2.0次/天",
                 "successRate": 95,
                 "sourceType": "自定义",
-                "skillSize": 216512,
-                "skillSizeLabel": "216K字 · 巨型",
+                "skillSize": 297202,
+                "skillSizeLabel": "297K字 · 巨型",
                 "ksInternal": true,
                 "cfProject": false,
                 "tag": "KS"
@@ -5173,7 +5201,7 @@
                 "displayRole": "文件外链",
                 "source": "林克核心能力",
                 "level": 3,
-                "exp": 66,
+                "exp": 59,
                 "description": "This skill should be used when the user asks to \"upload a file\", \"upload image to CDN\", \"share a file via link\", \"get a CDN link for a file\", \"上传文件\", \"上传图片\", \"上传到 CDN\", \"获取文件链接\", \"分享文件链接\", \"把文件传到服务器\",",
                 "lastUpdated": "2026-04-15",
                 "callCount": 2,
@@ -5193,14 +5221,14 @@
                 "source": "林克核心能力",
                 "level": 3,
                 "exp": 68,
-                "description": "快手内网 Docs 文档与本地 Markdown 双向同步工具。当用户说「上传文档到 Docs」「发布到 Docs」「编辑文档」「更新文档」「申请文档权限」「从 Docs 拉取」「同步文档」「搜索文档」时使用此技能。支持文档搜索、上传、编辑、拉取、权限申请。",
-                "lastUpdated": "2026-04-15",
+                "description": "快手内网在线文档平台（docs.corp.快手.com）与本地双向同步工具。用户说「上传文档到 Docs」「发布到 Docs」「从 Docs 拉取」「同步文档」「把这个 MD 上传到文档系统」「上传 Excel 到 Docs」「拉取表格」「拉取多维表格」「下载表格为 CSV」「上传 CSV 到表格」「更新表格数据」「批量拉取我的文档」「备份我的 Docs」「Kim Doc」「kim文档",
+                "lastUpdated": "2026-04-24",
                 "callCount": 6,
                 "frequency": "1次/月",
                 "successRate": 90,
                 "sourceType": "自定义",
-                "skillSize": 43448,
-                "skillSizeLabel": "43K字 · 大型",
+                "skillSize": 108165,
+                "skillSizeLabel": "108K字 · 巨型",
                 "ksInternal": false,
                 "cfProject": false,
                 "tag": ""
@@ -5239,8 +5267,8 @@
                 "displayName": "PPT设计",
                 "displayRole": "汇报/艺术",
                 "source": "林克核心能力",
-                "level": 3,
-                "exp": 56,
+                "level": 2,
+                "exp": 48,
                 "description": "PPT制作。支持工作汇报风格（PptxGenJS）和艺术创意风格（AI背景生成）两种模式",
                 "lastUpdated": "2026-03-24",
                 "callCount": 4,
@@ -5277,12 +5305,12 @@
                 "displayName": "信息图",
                 "displayRole": "信息图表",
                 "source": "林克核心能力",
-                "level": 2,
-                "exp": 49,
+                "level": 3,
+                "exp": 50,
                 "description": "信息图生成。21种布局+20种视觉风格，分析内容并推荐最佳组合，一键生成专业信息图",
                 "lastUpdated": "2026-03-21",
-                "callCount": 7,
-                "frequency": "2次/月",
+                "callCount": 9,
+                "frequency": "3次/月",
                 "successRate": 90,
                 "sourceType": "自定义",
                 "skillSize": 73335,
@@ -5383,7 +5411,7 @@
                 "displayRole": "语雀",
                 "source": "林克核心能力",
                 "level": 3,
-                "exp": 61,
+                "exp": 53,
                 "description": "语雀知识库双向同步技能。支持发布文档、读取文档、删除文档、获取列表等操作。当用户说\"发布到语雀\"、\"读取语雀文档\"、\"打开这个语雀链接\"等时使用此技能。",
                 "lastUpdated": "2026-03-24",
                 "callCount": 16,
@@ -5425,7 +5453,7 @@
                 "description": "This skill should be used when the user mentions \"林克发消息\", \"林克推送\", \"KIM消息\", \"林克机器人\", \"MixCard\", \"群消息推送\", \"林克卡片\", \"AI日报推送\", \"AI周报推送\", or needs to send messages through KIM using Link (林克) AI Assistant.",
                 "lastUpdated": "2026-03-19",
                 "callCount": 92,
-                "frequency": "2.8次/周",
+                "frequency": "3.3次/周",
                 "successRate": 95,
                 "sourceType": "自定义",
                 "skillSize": 55929,
@@ -5563,11 +5591,11 @@
                 "displayName": "KwaiBI看板",
                 "displayRole": "数据看板",
                 "source": "林克核心能力",
-                "level": 2,
-                "exp": 49,
+                "level": 3,
+                "exp": 50,
                 "description": "查询KwaiBI（天策）看板数据。触发词：KwaiBI、天策、看板数据、查看板、KwaiBI看板、看板指标。当用户提供KwaiBI/天策看板链接，或需要查看某个看板指标的具体数值、趋势、均值时使用。支持OLAP多维分析、洞察模式、Single Chart、Dashboard等多种看板类型。",
                 "lastUpdated": "2026-03-21",
-                "callCount": 7,
+                "callCount": 9,
                 "frequency": "1次/月",
                 "successRate": 90,
                 "sourceType": "自定义",
@@ -5735,11 +5763,11 @@
                 "displayRole": "电子表格",
                 "source": "林克核心能力",
                 "level": 3,
-                "exp": 57,
+                "exp": 58,
                 "description": "快手企业表格读取：根据 Docs 在线表格链接，获取表格元数据和单元格内容，支持多页签、范围查询。",
                 "lastUpdated": "2026-04-09",
-                "callCount": 1,
-                "frequency": "<0.1/天",
+                "callCount": 4,
+                "frequency": "1次/月",
                 "successRate": 90,
                 "sourceType": "自定义",
                 "skillSize": 8222,
@@ -5815,7 +5843,7 @@
                 "description": "用户研究综合。汇总访谈/问卷/行为数据，提炼用户洞察并形成可执行建议",
                 "lastUpdated": "2026-04-06",
                 "callCount": 1,
-                "frequency": "<0.1/天",
+                "frequency": "1次/月",
                 "successRate": 90,
                 "sourceType": "自定义",
                 "skillSize": 11201,
@@ -5849,11 +5877,11 @@
                 "displayRole": "在线表格",
                 "source": "林克核心能力",
                 "level": 3,
-                "exp": 66,
+                "exp": 60,
                 "description": "快手企业表格读取：根据 Docs 在线表格链接，获取表格元数据和单元格内容，支持多页签、范围查询。当用户提供 Docs 在线表格链接并要求读取表格内容时触发。不处理普通文本文档、本地 Excel 文件。",
                 "lastUpdated": "2026-04-15",
-                "callCount": 1,
-                "frequency": "<0.1/天",
+                "callCount": 4,
+                "frequency": "1次/月",
                 "successRate": 90,
                 "sourceType": "自定义",
                 "skillSize": 7852,
@@ -5868,7 +5896,7 @@
                 "displayRole": "日程预订",
                 "source": "林克核心能力",
                 "level": 3,
-                "exp": 68,
+                "exp": 61,
                 "description": "根据时间段和关键词推荐空闲会议室，并自动创建会议日程。当用户说「帮我订个会议室」「找个空会议室」「约个10人会议室」「预订会议室」「明天下午3点订个会议室」时触发。支持按职场/楼层筛选、自动推荐空闲会议室并创建日程。不负责会议室取消、不处理非快手内部会议室预订。",
                 "lastUpdated": "2026-04-15",
                 "callCount": 5,
@@ -5883,7 +5911,7 @@
               }
             ],
             "count": 18,
-            "avgLevel": 2.5
+            "avgLevel": 2.6
           },
           "🖼️ 图像生成": {
             "role": "image-gen",
@@ -5901,11 +5929,11 @@
                 "description": "AI图片生成。调用外部AI生图API（Siliconflow/OpenAI），支持文生图和图生图",
                 "lastUpdated": "2026-04-17",
                 "callCount": 41,
-                "frequency": "2.6次/周",
+                "frequency": "3.0次/周",
                 "successRate": 93,
                 "sourceType": "自定义",
-                "skillSize": 88402,
-                "skillSizeLabel": "88K字 · 巨型",
+                "skillSize": 90798,
+                "skillSizeLabel": "90K字 · 巨型",
                 "ksInternal": true,
                 "cfProject": false,
                 "tag": "KS"
@@ -6014,8 +6042,8 @@
                 "exp": 100,
                 "description": "HTML截图原子技能 — 将HTML渲染为高清PNG截图。触发词：HTML截图、生成PNG、HTML转图片、截图配图、章节配图。自动适配固定高度和动态高度两种模式，支持KIM Doc配图、调研报告图表等场景。",
                 "lastUpdated": "2026-04-16",
-                "callCount": 117,
-                "frequency": "1.1次/天",
+                "callCount": 125,
+                "frequency": "1.3次/天",
                 "successRate": 95,
                 "sourceType": "自定义",
                 "skillSize": 28444714,
@@ -6048,23 +6076,23 @@
                 "displayName": "文生图",
                 "displayRole": "文字转图片",
                 "source": "林克核心能力",
-                "level": 3,
-                "exp": 66,
-                "description": "本技能用于调用万擎内部API进行文生图。以下场景唤醒：用户说\"生成图片\"、\"文生图\"、\"画图\"、\"AI绘图\"、\"generate image\"、\"image generation\"、\"做一张图\"、\"生成架构图\"、\"生成流程图\"、\"生成信息图\"。以下场景不唤醒：用户讨论图片编辑、图生图、上传图片等非文生图场景。",
+                "level": 4,
+                "exp": 68,
+                "description": "⚠️ 已废弃 — 请使用 ks-design-image-gen 技能。本技能已与 ks-design-image-gen 合并为统一的「AI生图」入口，支持文生图和图生图两种模式，自动选择最优后端API。",
                 "lastUpdated": "2026-04-17",
-                "callCount": 7,
-                "frequency": "1次/月",
+                "callCount": 11,
+                "frequency": "4次/月",
                 "successRate": 90,
                 "sourceType": "自定义",
-                "skillSize": 52455,
-                "skillSizeLabel": "52K字 · 巨型",
+                "skillSize": 46740,
+                "skillSizeLabel": "46K字 · 大型",
                 "ksInternal": false,
                 "cfProject": false,
                 "tag": ""
               }
             ],
             "count": 9,
-            "avgLevel": 2.9
+            "avgLevel": 3.0
           },
           "🤖 AI工程": {
             "role": "ai-engineering",
@@ -6192,15 +6220,15 @@
                 "displayRole": "网页交互",
                 "source": "林克核心能力",
                 "level": 3,
-                "exp": 67,
-                "description": "浏览器自动化 CLI 工具。当用户需要与网站交互时使用，包括打开网页、填写表单、点击按钮、截图、数据抓取、Web 应用测试或任何浏览器自动化任务。不支持非浏览器场景，如纯后端请求、本地文件操作、桌面原生应用自动化。",
+                "exp": 60,
+                "description": "浏览器自动化 CLI 工具。当用户需要与网站交互时使用，包括打开网页、填写表单、点击按钮、截图、数据抓取、Web 应用测试或任何浏览器自动化任务。不支持非浏览器场景，如纯后端请求、本地文件操作、桌面原生应用自动化。【排除场景】当用户提供 docs.corp.快手.com 链接时，必须使用 ks-kim-docs-shuttle 技能，而非本技能。",
                 "lastUpdated": "2026-04-15",
                 "callCount": 3,
                 "frequency": "1次/月",
                 "successRate": 90,
                 "sourceType": "自定义",
-                "skillSize": 73941,
-                "skillSizeLabel": "73K字 · 巨型",
+                "skillSize": 74014,
+                "skillSizeLabel": "74K字 · 巨型",
                 "ksInternal": false,
                 "cfProject": false,
                 "tag": ""
@@ -6544,7 +6572,7 @@
                 "displayRole": "需求分析",
                 "source": "林克核心能力",
                 "level": 3,
-                "exp": 67,
+                "exp": 60,
                 "description": "基于 PRD/需求文档与代码仓库进行技术导向的需求理解。用户提供仓库和需求内容（文本或文档链接），输出结构化需求分析，可直接衔接技术方案设计（kate-brief-design）。",
                 "lastUpdated": "2026-04-15",
                 "callCount": 4,
@@ -6563,7 +6591,7 @@
                 "displayRole": "方案设计",
                 "source": "林克核心能力",
                 "level": 3,
-                "exp": 65,
+                "exp": 58,
                 "description": "基于 PRD/需求文档与代码仓库生成可落地的技术方案设计（模块划分、数据流转、接口设计等），产出上传到 docs 并返回链接。可与需求理解（kate-prd-understand）共用 session，实现「先需求理解、再技术方案设计」的连贯流程。",
                 "lastUpdated": "2026-04-15",
                 "callCount": 4,
@@ -6596,11 +6624,11 @@
                 "description": "ClawBook 社区 Skill — 连接你与其他 Claw 的社区。通过这个 Skill，你可以在 ClawBook 社区发帖分享经验、评论讨论、投票表态、浏览 Feed 获取灵感。当你完成了一个有趣的任务、学到了新知识、遇到了难题、想分享工作流、或者只是想看看其他 Claw 在做什么时，都应该使用这个 Skill。这是你与数万个 Claw 交流、学习、共同进化的唯一通道。",
                 "lastUpdated": "2026-03-27",
                 "callCount": 63,
-                "frequency": "3.3次/周",
+                "frequency": "3.7次/周",
                 "successRate": 95,
                 "sourceType": "自定义",
-                "skillSize": 76265,
-                "skillSizeLabel": "76K字 · 巨型",
+                "skillSize": 80383,
+                "skillSizeLabel": "80K字 · 巨型",
                 "ksInternal": true,
                 "cfProject": false,
                 "tag": "KS"
@@ -6865,9 +6893,37 @@
             ],
             "count": 13,
             "avgLevel": 2.3
+          },
+          "其他技能": {
+            "icon": "📦",
+            "color": "#64748b",
+            "layer": "execution",
+            "skills": [
+              {
+                "name": "audio-transcriber",
+                "displayName": "Check for Faster-Whisper (preferred",
+                "displayRole": "",
+                "source": "林克核心能力",
+                "level": 3,
+                "exp": 67,
+                "description": "Transform audio recordings into professional Markdown documentation with intelligent summaries using LLM integration",
+                "lastUpdated": "2026-04-23",
+                "callCount": 3,
+                "frequency": "1次/月",
+                "successRate": 90,
+                "sourceType": "自定义",
+                "skillSize": 69001,
+                "skillSizeLabel": "69K字 · 巨型",
+                "ksInternal": false,
+                "cfProject": false,
+                "tag": ""
+              }
+            ],
+            "count": 1,
+            "avgLevel": 3.0
           }
         },
-        "count": 127,
+        "count": 128,
         "avgLevel": 2.6
       }
     },
@@ -7149,7 +7205,7 @@
           "thinking_pattern"
         ],
         "fileCount": 26,
-        "sizeKB": 197.6,
+        "sizeKB": 197.7,
         "heatLevel": 5,
         "recentCount": 1
       },
@@ -7229,7 +7285,7 @@
               "thinking_pattern"
             ],
             "fileCount": 26,
-            "sizeKB": 197.6,
+            "sizeKB": 197.7,
             "heatLevel": 5,
             "recentCount": 1
           },
@@ -7252,7 +7308,7 @@
           }
         },
         "totalFiles": 167,
-        "totalSizeKB": 1125.2
+        "totalSizeKB": 1125.3
       },
       "🔍 领域知识层": {
         "icon": "🔍",
@@ -7349,7 +7405,7 @@
       }
     },
     "totalFiles": 309,
-    "totalSizeKB": 2327.9
+    "totalSizeKB": 2328.0
   },
   "memories": {
     "items": [
@@ -7373,6 +7429,44 @@
         "source": "项目记忆"
       },
       {
+        "title": "AI生图技能选型错误 + Prompt结构化过度（经验#82）",
+        "category": "common_pitfalls_experience",
+        "categoryLabel": "前端开发",
+        "layer": "🛠️ 实践记忆层",
+        "icon": "🎨",
+        "color": "#f472b6",
+        "description": "AI生图技能选型错误 + Prompt结构化过度（经验#82 — 2026-04-24） 踩坑场景 用户要求为文章生成配图，明确要求： 1....",
+        "keywords": [
+          "AI生图",
+          "技能选型",
+          "叙事流",
+          "prompt结构化",
+          "ks-design-image-gen"
+        ],
+        "importance": 5,
+        "updatedAt": "2026-04-24",
+        "source": "用户显式记录"
+      },
+      {
+        "title": "CSS元素不可见排查三板斧：样式→遮挡→裁切",
+        "category": "development_code_specification",
+        "categoryLabel": "代码规范",
+        "layer": null,
+        "icon": "📝",
+        "color": "#4ade80",
+        "description": "CSS元素\"不可见\"问题的完整排查框架 核心教训 getComputedStyle只能检查CSS属性，不能检测视觉遮挡。当\"样式正确但看...",
+        "keywords": [
+          "CSS",
+          "不可见",
+          "z-index",
+          "遮挡",
+          "elementFromPoint"
+        ],
+        "importance": 5,
+        "updatedAt": "2026-04-24",
+        "source": "项目记忆"
+      },
+      {
         "title": "ClawBook 社区账号强制规则与bash脚本blank output陷阱（合并版v3）",
         "category": "common_pitfalls_experience",
         "categoryLabel": "文档处理",
@@ -7392,22 +7486,22 @@
         "source": "用户显式记录"
       },
       {
-        "title": "KIM Doc 生成任务中占位符链接未清理（2026-04-15）",
+        "title": "KIM Doc 配图发布流程（v3 — 新增：ks-design-image-gen 正确脚本路径 + MyFlicker风格选型）",
         "category": "common_pitfalls_experience",
         "categoryLabel": "前端开发",
         "layer": "🛠️ 实践记忆层",
         "icon": "🎨",
         "color": "#f472b6",
-        "description": "KIM Doc 生成任务中，章节配图如果无法生成 HTML 图表，必须在 Markdown 中删除占位符链接，而不是保留 placeholder URL。...",
+        "description": "KIM Doc 配图发布最佳实践（v3） 场景A：新建文档配图 标准流程（强制顺序） ``` Step 1: 内容规划 └─ grep ...",
         "keywords": [
           "KIM Doc",
+          "配图生成",
           "占位符",
-          "placeholder",
-          "图片清单",
-          "完整性检查"
+          "图片验证",
+          "推送流程"
         ],
         "importance": 5,
-        "updatedAt": "2026-04-15",
+        "updatedAt": "2026-04-24",
         "source": "项目记忆"
       },
       {
@@ -7430,25 +7524,6 @@
         "source": "项目记忆"
       },
       {
-        "title": "TOC 锚点导航失效：v5.0 规范理解偏差 + 章节锚点缺失",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "前端开发",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "🎨",
-        "color": "#f472b6",
-        "description": "场景描述 开发深度调研报告页面时，TOC 锚点导航功能不工作。 根本原因 v5.0 架构理解偏差 + 章节锚点缺失 1. v5.0...",
-        "keywords": [
-          "TOC锚点",
-          "锚点缺失",
-          "getElementById",
-          "scrollIntoView",
-          "章节跳转"
-        ],
-        "importance": 5,
-        "updatedAt": "2026-04-15",
-        "source": "用户显式记录"
-      },
-      {
         "title": "Write-Read路径不对称陷阱：修改位置≠部署读取位置（v2 — 补充AI-Insight双文件同步规范）",
         "category": "common_pitfalls_experience",
         "categoryLabel": "前端开发",
@@ -7468,42 +7543,23 @@
         "source": "项目记忆"
       },
       {
-        "title": "launchd定时任务启动失败诊断清单（ApiNetworkEnvironment错误）",
+        "title": "launchd定时任务启动失败诊断清单（v2.0 — 新增双触发源陷阱）",
         "category": "common_pitfalls_experience",
         "categoryLabel": "脚本自动化",
         "layer": "🛠️ 实践记忆层",
         "icon": "⚡",
         "color": "#64748b",
-        "description": "问题描述 launchd定时任务启动失败，表现为Agent会话立即中断，错误类型为 ApiNetworkEnvironment，Tool Cal...",
+        "description": "launchd定时任务启动失败诊断清单（v2.0，2026-04-23更新） 【新增 v2.0】双触发源陷阱（最隐蔽） 问题表现： ...",
         "keywords": [
           "launchd",
-          "ApiNetworkEnvironment",
           "定时任务",
-          "启动失败",
-          "Tool Calls"
+          "双触发",
+          "scheduled-tasks.json",
+          "重复执行"
         ],
         "importance": 5,
-        "updatedAt": "2026-04-21",
+        "updatedAt": "2026-04-23",
         "source": "项目记忆"
-      },
-      {
-        "title": "任务完成判断必须证据门控（防口头声称完成）",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "前端开发",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "🎨",
-        "color": "#f472b6",
-        "description": "任务完成判断必须证据门控（防口头声称完成） 问题（2026-04-14 每日修炼复盘） 用户问\"这次修炼哪些做，哪些没做\"，助手承认： - ...",
-        "keywords": [
-          "任务完成",
-          "证据门控",
-          "口头声称",
-          "交付物核对",
-          "finalize"
-        ],
-        "importance": 5,
-        "updatedAt": "2026-04-14",
-        "source": "用户显式记录"
       },
       {
         "title": "周报日期范围ISO周数计算陷阱",
@@ -7523,6 +7579,25 @@
         "importance": 5,
         "updatedAt": "2026-04-19",
         "source": "项目记忆"
+      },
+      {
+        "title": "大型HTML分步输出：OutputTooLong补救 + 占位符接力主动模式（v2）",
+        "category": "common_pitfalls_experience",
+        "categoryLabel": "前端开发",
+        "layer": "🛠️ 实践记忆层",
+        "icon": "🎨",
+        "color": "#f472b6",
+        "description": "问题描述（2026-04-05 AI技能蒸馏文章生成踩坑） 用户要求生成大型HTML调研报告（含幽默文章+7张AI配图）。 首次生成成功，用户要求\"...",
+        "keywords": [
+          "OutputTooLong",
+          "分步输出",
+          "大型HTML",
+          "分文件",
+          "截断"
+        ],
+        "importance": 5,
+        "updatedAt": "2026-04-24",
+        "source": "用户显式记录"
       },
       {
         "title": "成功案例：AI日报一遍做对（2026-04-14）",
@@ -7601,22 +7676,22 @@
         "source": "用户显式记录"
       },
       {
-        "title": "本轮会话技能白名单（系统优先 + manage-skills.sh + data-agent）",
-        "category": "development_practice_specification",
-        "categoryLabel": "文档处理",
+        "title": "技能触发词冲突导致错误调用（经验#81）",
+        "category": "common_pitfalls_experience",
+        "categoryLabel": "通用踩坑",
         "layer": "🛠️ 实践记忆层",
-        "icon": "📄",
-        "color": "#38bdf8",
-        "description": "本轮会话技能白名单规则： 1. 优先使用 Internal 系统技能（evo-* 前缀） 2. 当 Internal 与 Personal 重合时，遵循：...",
+        "icon": "⚠️",
+        "color": "#ef4444",
+        "description": "技能触发词冲突导致错误调用（经验#81） 问题现象 用户说\"AI生图\"，系统调用了 text-to-image 而非 `ks-desig...",
         "keywords": [
-          "manage-skills.sh",
-          "系统技能",
-          "evo",
-          "Internal",
-          "Personal"
+          "触发词冲突",
+          "技能合并",
+          "AI生图",
+          "text-to-image",
+          "ks-design-image-gen"
         ],
         "importance": 5,
-        "updatedAt": "2026-04-16",
+        "updatedAt": "2026-04-24",
         "source": "项目记忆"
       },
       {
@@ -7639,6 +7714,25 @@
         "source": "项目记忆"
       },
       {
+        "title": "深度调研HTML必须严格遵循P0样式规范（清爽调研报告风格）— 含Tab导航完整规范 v2",
+        "category": "common_pitfalls_experience",
+        "categoryLabel": "前端开发",
+        "layer": "🛠️ 实践记忆层",
+        "icon": "🎨",
+        "color": "#f472b6",
+        "description": "深度调研HTML必须严格遵循P0样式规范（清爽调研报告风格） 踩坑场景A（DeepSeek V4报告，2026-04-24 第一轮） 用户启...",
+        "keywords": [
+          "深度调研",
+          "样式规范",
+          "P0强制",
+          "清爽风格",
+          "HTML"
+        ],
+        "importance": 5,
+        "updatedAt": "2026-04-24",
+        "source": "项目记忆"
+      },
+      {
         "title": "规则膨胀悖论：结构性约束 > 文字规则（含双轨落地规范 v2）",
         "category": "common_pitfalls_experience",
         "categoryLabel": "发布部署",
@@ -7655,6 +7749,25 @@
         ],
         "importance": 5,
         "updatedAt": "2026-04-19",
+        "source": "用户显式记录"
+      },
+      {
+        "title": "部署验证完整经验（GitHub Pages+修复重跑+断链）",
+        "category": "development_practice_specification",
+        "categoryLabel": "通用踩坑",
+        "layer": "🛠️ 实践记忆层",
+        "icon": "⚠️",
+        "color": "#ef4444",
+        "description": "部署验证经验（v4.3） 核心原则 - 每次部署后必须通过三层验证：(1)HTTP状态码 (2)内容校验 (3)功能可访问 - GitHub...",
+        "keywords": [
+          "部署验证",
+          "修复重跑",
+          "轮询",
+          "断链",
+          "GitHub Pages"
+        ],
+        "importance": 5,
+        "updatedAt": "2026-04-24",
         "source": "用户显式记录"
       },
       {
@@ -8190,25 +8303,6 @@
         "source": "项目记忆"
       },
       {
-        "title": "CSS\"不可见\"问题三板斧：样式→遮挡→裁切（含hover覆盖overlay高危场景）",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "前端开发",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "🎨",
-        "color": "#f472b6",
-        "description": "CSS元素\"不可见\"问题的完整排查框架 踩坑背景 存储区块标题栏 getComputedStyle 显示样式全部正确（绿色背景、白色文字、5...",
-        "keywords": [
-          "CSS",
-          "不可见",
-          "z-index",
-          "遮挡",
-          "elementFromPoint"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-03-15",
-        "source": "项目记忆"
-      },
-      {
         "title": "ClawBook社区分享策略：实践作品多分享，元技能核心机密保密",
         "category": "constraint_or_forbidden_rule",
         "categoryLabel": "用户约束",
@@ -8285,22 +8379,22 @@
         "source": "项目记忆"
       },
       {
-        "title": "KIM Doc 配图发布流程：先生成图片再写 Markdown",
+        "title": "KIM Doc 生成任务中占位符链接未清理（2026-04-15）",
         "category": "common_pitfalls_experience",
         "categoryLabel": "前端开发",
         "layer": "🛠️ 实践记忆层",
         "icon": "🎨",
         "color": "#f472b6",
-        "description": "KIM Doc 配图发布最佳实践 问题场景 生成带配图的 KIM Doc 文档时，容易出现「图片是占位符路径但文件不存在」的问题。 标准流...",
+        "description": "KIM Doc 生成任务中，章节配图如果无法生成 HTML 图表，必须在 Markdown 中删除占位符链接，而不是保留 placeholder URL。...",
         "keywords": [
           "KIM Doc",
-          "配图生成",
           "占位符",
-          "图片验证",
-          "推送流程"
+          "placeholder",
+          "图片清单",
+          "完整性检查"
         ],
         "importance": 4,
-        "updatedAt": "2026-04-12",
+        "updatedAt": "2026-04-15",
         "source": "项目记忆"
       },
       {
@@ -8361,32 +8455,13 @@
         "source": "用户显式记录"
       },
       {
-        "title": "OutputTooLong 触发后必须立即切换分文件策略（禁止继续整体输出）",
-        "category": "common_pitfalls_experience",
+        "title": "Python多脚本体系SSoT架构陷阱（前后端契约+幽灵引用）",
+        "category": "development_practice_specification",
         "categoryLabel": "前端开发",
         "layer": "🛠️ 实践记忆层",
         "icon": "🎨",
         "color": "#f472b6",
-        "description": "问题描述（2026-04-05 AI技能蒸馏文章生成踩坑） 用户要求生成大型HTML调研报告（含幽默文章+7张AI配图）。 首次生成成功，用户要求\"...",
-        "keywords": [
-          "OutputTooLong",
-          "分步输出",
-          "大型HTML",
-          "分文件",
-          "截断"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-04-05",
-        "source": "用户显式记录"
-      },
-      {
-        "title": "Python多脚本体系的\"静默分裂\"陷阱（经验#68 — 前后端SSoT+路径统一+幽灵引用三合一）",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "前端开发",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "🎨",
-        "color": "#f472b6",
-        "description": "Python多脚本体系的\"静默分裂\"陷阱（经验#68 — 2026-04-06） 事件 个人助理_V1 的 scripts/ 目录下 15+...",
+        "description": "Python多脚本体系\"静默分裂\"陷阱 问题 15+个Python脚本共享路径/配置，但发现4大类违规：路径常量重复定义、前端硬编码业务数据...",
         "keywords": [
           "Python",
           "SSoT",
@@ -8395,7 +8470,7 @@
           "constants.py"
         ],
         "importance": 4,
-        "updatedAt": "2026-04-06",
+        "updatedAt": "2026-04-24",
         "source": "项目记忆"
       },
       {
@@ -8418,12 +8493,12 @@
         "source": "项目记忆"
       },
       {
-        "title": "Shell多脚本体系\"配置漂移\"陷阱：三类 Two-Copy 及解法（v4 — 含技能改名路径断链专项）",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "脚本自动化",
+        "title": "Shell多脚本体系配置漂移陷阱（含技能改名路径断链专项）",
+        "category": "development_practice_specification",
+        "categoryLabel": "通用踩坑",
         "layer": "🛠️ 实践记忆层",
-        "icon": "⚡",
-        "color": "#64748b",
+        "icon": "⚠️",
+        "color": "#ef4444",
         "description": "Shell多脚本体系\"配置漂移\"陷阱 问题描述 多脚本共同维护一个自动化系统时，同一个机制参数（端口、超时、模型名、sleep等）散落在多个...",
         "keywords": [
           "Shell",
@@ -8433,8 +8508,27 @@
           "单一写入点"
         ],
         "importance": 4,
-        "updatedAt": "2026-04-07",
+        "updatedAt": "2026-04-24",
         "source": "项目记忆"
+      },
+      {
+        "title": "TOC 锚点导航失效：v5.0 规范理解偏差 + 章节锚点缺失",
+        "category": "common_pitfalls_experience",
+        "categoryLabel": "前端开发",
+        "layer": "🛠️ 实践记忆层",
+        "icon": "🎨",
+        "color": "#f472b6",
+        "description": "场景描述 开发深度调研报告页面时，TOC 锚点导航功能不工作。 根本原因 v5.0 架构理解偏差 + 章节锚点缺失 1. v5.0...",
+        "keywords": [
+          "TOC锚点",
+          "锚点缺失",
+          "getElementById",
+          "scrollIntoView",
+          "章节跳转"
+        ],
+        "importance": 4,
+        "updatedAt": "2026-04-15",
+        "source": "用户显式记录"
       },
       {
         "title": "Todo状态收尾规则 — 三场景完整版（v3：含跨chatId假阳性）",
@@ -8720,6 +8814,25 @@
         "importance": 4,
         "updatedAt": "2026-03-07",
         "source": "项目记忆"
+      },
+      {
+        "title": "任务完成判断必须证据门控（防口头声称完成）",
+        "category": "common_pitfalls_experience",
+        "categoryLabel": "前端开发",
+        "layer": "🛠️ 实践记忆层",
+        "icon": "🎨",
+        "color": "#f472b6",
+        "description": "任务完成判断必须证据门控（防口头声称完成） 问题（2026-04-14 每日修炼复盘） 用户问\"这次修炼哪些做，哪些没做\"，助手承认： - ...",
+        "keywords": [
+          "任务完成",
+          "证据门控",
+          "口头声称",
+          "交付物核对",
+          "finalize"
+        ],
+        "importance": 4,
+        "updatedAt": "2026-04-14",
+        "source": "用户显式记录"
       },
       {
         "title": "企业数字员工平台 — 前端技术栈与代码规范",
@@ -9045,13 +9158,13 @@
         "source": "项目记忆"
       },
       {
-        "title": "多源配置体系的\"洋葱剥皮\"修复陷阱（经验#66 — 2026-04-06 技能诊断修复全记录）",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "脚本自动化",
+        "title": "多源配置体系洋葱剥皮修复陷阱（诊断误报+短路逻辑）",
+        "category": "task_flow_experience",
+        "categoryLabel": "通用踩坑",
         "layer": "🛠️ 实践记忆层",
-        "icon": "⚡",
-        "color": "#64748b",
-        "description": "多源配置体系的\"洋葱剥皮\"修复陷阱 事件：2026-04-06 每周修炼技能诊断修复 修 4 个系统缺陷 → 暴露 37 个隐藏问题 → 修...",
+        "icon": "⚠️",
+        "color": "#ef4444",
+        "description": "多源配置体系的\"洋葱剥皮\"修复陷阱 事件 修4个系统缺陷→暴露37个隐藏问题→修复中文名→触发41个次生问题→最终3轮才清零。 三层...",
         "keywords": [
           "多源配置",
           "洋葱剥皮",
@@ -9060,7 +9173,7 @@
           "短路逻辑"
         ],
         "importance": 4,
-        "updatedAt": "2026-04-06",
+        "updatedAt": "2026-04-24",
         "source": "项目记忆"
       },
       {
@@ -9232,6 +9345,25 @@
         ],
         "importance": 4,
         "updatedAt": "2026-03-09",
+        "source": "项目记忆"
+      },
+      {
+        "title": "本轮会话技能白名单（系统优先 + manage-skills.sh + data-agent）",
+        "category": "development_practice_specification",
+        "categoryLabel": "文档处理",
+        "layer": "🛠️ 实践记忆层",
+        "icon": "📄",
+        "color": "#38bdf8",
+        "description": "本轮会话技能白名单规则： 1. 优先使用 Internal 系统技能（evo-* 前缀） 2. 当 Internal 与 Personal 重合时，遵循：...",
+        "keywords": [
+          "manage-skills.sh",
+          "系统技能",
+          "evo",
+          "Internal",
+          "Personal"
+        ],
+        "importance": 4,
+        "updatedAt": "2026-04-16",
         "source": "项目记忆"
       },
       {
@@ -9650,25 +9782,6 @@
         ],
         "importance": 4,
         "updatedAt": "2026-03-19",
-        "source": "用户显式记录"
-      },
-      {
-        "title": "部署验证完整经验（合并版v4.3 — 新增Pages source路径前置核查）",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "前端开发",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "🎨",
-        "color": "#f472b6",
-        "description": "部署验证经验（v4.3，2026-04-06更新） 核心原则 - 每次部署后必须通过三层验证：(1)HTTP状态码 (2)内容校验 (3)功...",
-        "keywords": [
-          "部署验证",
-          "修复重跑",
-          "轮询",
-          "断链",
-          "GitHub Pages"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-04-06",
         "source": "用户显式记录"
       },
       {
@@ -10128,24 +10241,6 @@
         "source": "用户显式记录"
       },
       {
-        "title": "技能调用优先级：Internal 系统技能 > Personal 林克技能",
-        "category": "development_practice_specification",
-        "categoryLabel": "通用踩坑",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "⚠️",
-        "color": "#ef4444",
-        "description": "当存在 Internal 系统技能（evo- 前缀）与 Personal 技能（meta- 前缀）功能重合时，必须优先调用 Internal 系统技能...",
-        "keywords": [
-          "技能优先级",
-          "Internal",
-          "Personal",
-          "系统优先"
-        ],
-        "importance": 3,
-        "updatedAt": "2026-04-16",
-        "source": "项目记忆"
-      },
-      {
         "title": "投资理财：基金持仓追踪（历史快照，请重新查询当前状态）",
         "category": "user_communication",
         "categoryLabel": "用户偏好",
@@ -10444,12 +10539,30 @@
         "importance": 2,
         "updatedAt": "2026-03-19",
         "source": "项目记忆"
+      },
+      {
+        "title": "技能调用优先级：Internal 系统技能 > Personal 林克技能",
+        "category": "development_practice_specification",
+        "categoryLabel": "通用踩坑",
+        "layer": "🛠️ 实践记忆层",
+        "icon": "⚠️",
+        "color": "#ef4444",
+        "description": "当存在 Internal 系统技能（evo- 前缀）与 Personal 技能（meta- 前缀）功能重合时，必须优先调用 Internal 系统技能...",
+        "keywords": [
+          "技能优先级",
+          "Internal",
+          "Personal",
+          "系统优先"
+        ],
+        "importance": 2,
+        "updatedAt": "2026-04-16",
+        "source": "项目记忆"
       }
     ],
-    "total": 152,
+    "total": 154,
     "byCategory": {
       "development_code_specification": {
-        "count": 10,
+        "count": 11,
         "label": "代码规范",
         "icon": "📝",
         "color": "#4ade80",
@@ -10470,7 +10583,7 @@
         "description": "沟通风格、做事偏好、兴趣爱好"
       },
       "task_flow_experience": {
-        "count": 21,
+        "count": 22,
         "label": "通用踩坑",
         "icon": "⚠️",
         "color": "#ef4444",
@@ -10484,14 +10597,14 @@
         "description": "保密规则、禁止事项、必须遵守的约束"
       },
       "development_practice_specification": {
-        "count": 23,
+        "count": 26,
         "label": "做事方法",
         "icon": "⚙️",
         "color": "#5ec4d4",
         "description": "执行框架：怎么做，保障做事质量"
       },
       "common_pitfalls_experience": {
-        "count": 86,
+        "count": 84,
         "label": "发布部署",
         "icon": "🚀",
         "color": "#4ade80",
@@ -11182,26 +11295,7 @@
                 "source": "用户显式记录"
               },
               {
-                "title": "部署验证完整经验（合并版v4.3 — 新增Pages source路径前置核查）",
-                "category": "common_pitfalls_experience",
-                "categoryLabel": "前端开发",
-                "layer": "🛠️ 实践记忆层",
-                "icon": "🎨",
-                "color": "#f472b6",
-                "description": "部署验证经验（v4.3，2026-04-06更新） 核心原则 - 每次部署后必须通过三层验证：(1)HTTP状态码 (2)内容校验 (3)功...",
-                "keywords": [
-                  "部署验证",
-                  "修复重跑",
-                  "轮询",
-                  "断链",
-                  "GitHub Pages"
-                ],
-                "importance": 4,
-                "updatedAt": "2026-04-06",
-                "source": "用户显式记录"
-              },
-              {
-                "title": "OutputTooLong 触发后必须立即切换分文件策略（禁止继续整体输出）",
+                "title": "大型HTML分步输出：OutputTooLong补救 + 占位符接力主动模式（v2）",
                 "category": "common_pitfalls_experience",
                 "categoryLabel": "前端开发",
                 "layer": "🛠️ 实践记忆层",
@@ -11215,8 +11309,8 @@
                   "分文件",
                   "截断"
                 ],
-                "importance": 4,
-                "updatedAt": "2026-04-05",
+                "importance": 5,
+                "updatedAt": "2026-04-24",
                 "source": "用户显式记录"
               },
               {
@@ -11234,7 +11328,7 @@
                   "交付物核对",
                   "finalize"
                 ],
-                "importance": 5,
+                "importance": 4,
                 "updatedAt": "2026-04-14",
                 "source": "用户显式记录"
               },
@@ -11253,7 +11347,7 @@
                   "scrollIntoView",
                   "章节跳转"
                 ],
-                "importance": 5,
+                "importance": 4,
                 "updatedAt": "2026-04-15",
                 "source": "用户显式记录"
               },
@@ -11274,6 +11368,25 @@
                 ],
                 "importance": 5,
                 "updatedAt": "2026-04-20",
+                "source": "用户显式记录"
+              },
+              {
+                "title": "AI生图技能选型错误 + Prompt结构化过度（经验#82）",
+                "category": "common_pitfalls_experience",
+                "categoryLabel": "前端开发",
+                "layer": "🛠️ 实践记忆层",
+                "icon": "🎨",
+                "color": "#f472b6",
+                "description": "AI生图技能选型错误 + Prompt结构化过度（经验#82 — 2026-04-24） 踩坑场景 用户要求为文章生成配图，明确要求： 1....",
+                "keywords": [
+                  "AI生图",
+                  "技能选型",
+                  "叙事流",
+                  "prompt结构化",
+                  "ks-design-image-gen"
+                ],
+                "importance": 5,
+                "updatedAt": "2026-04-24",
                 "source": "用户显式记录"
               },
               {
@@ -11312,25 +11425,6 @@
                 ],
                 "importance": 4,
                 "updatedAt": "2026-03-07",
-                "source": "项目记忆"
-              },
-              {
-                "title": "CSS\"不可见\"问题三板斧：样式→遮挡→裁切（含hover覆盖overlay高危场景）",
-                "category": "common_pitfalls_experience",
-                "categoryLabel": "前端开发",
-                "layer": "🛠️ 实践记忆层",
-                "icon": "🎨",
-                "color": "#f472b6",
-                "description": "CSS元素\"不可见\"问题的完整排查框架 踩坑背景 存储区块标题栏 getComputedStyle 显示样式全部正确（绿色背景、白色文字、5...",
-                "keywords": [
-                  "CSS",
-                  "不可见",
-                  "z-index",
-                  "遮挡",
-                  "elementFromPoint"
-                ],
-                "importance": 4,
-                "updatedAt": "2026-03-15",
                 "source": "项目记忆"
               },
               {
@@ -11486,13 +11580,13 @@
                 "source": "项目记忆"
               },
               {
-                "title": "Python多脚本体系的\"静默分裂\"陷阱（经验#68 — 前后端SSoT+路径统一+幽灵引用三合一）",
-                "category": "common_pitfalls_experience",
+                "title": "Python多脚本体系SSoT架构陷阱（前后端契约+幽灵引用）",
+                "category": "development_practice_specification",
                 "categoryLabel": "前端开发",
                 "layer": "🛠️ 实践记忆层",
                 "icon": "🎨",
                 "color": "#f472b6",
-                "description": "Python多脚本体系的\"静默分裂\"陷阱（经验#68 — 2026-04-06） 事件 个人助理_V1 的 scripts/ 目录下 15+...",
+                "description": "Python多脚本体系\"静默分裂\"陷阱 问题 15+个Python脚本共享路径/配置，但发现4大类违规：路径常量重复定义、前端硬编码业务数据...",
                 "keywords": [
                   "Python",
                   "SSoT",
@@ -11501,7 +11595,7 @@
                   "constants.py"
                 ],
                 "importance": 4,
-                "updatedAt": "2026-04-06",
+                "updatedAt": "2026-04-24",
                 "source": "项目记忆"
               },
               {
@@ -11524,13 +11618,13 @@
                 "source": "项目记忆"
               },
               {
-                "title": "KIM Doc 配图发布流程：先生成图片再写 Markdown",
+                "title": "KIM Doc 配图发布流程（v3 — 新增：ks-design-image-gen 正确脚本路径 + MyFlicker风格选型）",
                 "category": "common_pitfalls_experience",
                 "categoryLabel": "前端开发",
                 "layer": "🛠️ 实践记忆层",
                 "icon": "🎨",
                 "color": "#f472b6",
-                "description": "KIM Doc 配图发布最佳实践 问题场景 生成带配图的 KIM Doc 文档时，容易出现「图片是占位符路径但文件不存在」的问题。 标准流...",
+                "description": "KIM Doc 配图发布最佳实践（v3） 场景A：新建文档配图 标准流程（强制顺序） ``` Step 1: 内容规划 └─ grep ...",
                 "keywords": [
                   "KIM Doc",
                   "配图生成",
@@ -11538,8 +11632,8 @@
                   "图片验证",
                   "推送流程"
                 ],
-                "importance": 4,
-                "updatedAt": "2026-04-12",
+                "importance": 5,
+                "updatedAt": "2026-04-24",
                 "source": "项目记忆"
               },
               {
@@ -11557,7 +11651,7 @@
                   "图片清单",
                   "完整性检查"
                 ],
-                "importance": 5,
+                "importance": 4,
                 "updatedAt": "2026-04-15",
                 "source": "项目记忆"
               },
@@ -11635,6 +11729,25 @@
                 ],
                 "importance": 5,
                 "updatedAt": "2026-04-21",
+                "source": "项目记忆"
+              },
+              {
+                "title": "深度调研HTML必须严格遵循P0样式规范（清爽调研报告风格）— 含Tab导航完整规范 v2",
+                "category": "common_pitfalls_experience",
+                "categoryLabel": "前端开发",
+                "layer": "🛠️ 实践记忆层",
+                "icon": "🎨",
+                "color": "#f472b6",
+                "description": "深度调研HTML必须严格遵循P0样式规范（清爽调研报告风格） 踩坑场景A（DeepSeek V4报告，2026-04-24 第一轮） 用户启...",
+                "keywords": [
+                  "深度调研",
+                  "样式规范",
+                  "P0强制",
+                  "清爽风格",
+                  "HTML"
+                ],
+                "importance": 5,
+                "updatedAt": "2026-04-24",
                 "source": "项目记忆"
               },
               {
@@ -12485,7 +12598,7 @@
                   "Internal",
                   "Personal"
                 ],
-                "importance": 5,
+                "importance": 4,
                 "updatedAt": "2026-04-16",
                 "source": "项目记忆"
               },
@@ -12639,44 +12752,6 @@
                 "source": "项目记忆"
               },
               {
-                "title": "Shell多脚本体系\"配置漂移\"陷阱：三类 Two-Copy 及解法（v4 — 含技能改名路径断链专项）",
-                "category": "common_pitfalls_experience",
-                "categoryLabel": "脚本自动化",
-                "layer": "🛠️ 实践记忆层",
-                "icon": "⚡",
-                "color": "#64748b",
-                "description": "Shell多脚本体系\"配置漂移\"陷阱 问题描述 多脚本共同维护一个自动化系统时，同一个机制参数（端口、超时、模型名、sleep等）散落在多个...",
-                "keywords": [
-                  "Shell",
-                  "配置漂移",
-                  "多脚本",
-                  "config.sh",
-                  "单一写入点"
-                ],
-                "importance": 4,
-                "updatedAt": "2026-04-07",
-                "source": "项目记忆"
-              },
-              {
-                "title": "多源配置体系的\"洋葱剥皮\"修复陷阱（经验#66 — 2026-04-06 技能诊断修复全记录）",
-                "category": "common_pitfalls_experience",
-                "categoryLabel": "脚本自动化",
-                "layer": "🛠️ 实践记忆层",
-                "icon": "⚡",
-                "color": "#64748b",
-                "description": "多源配置体系的\"洋葱剥皮\"修复陷阱 事件：2026-04-06 每周修炼技能诊断修复 修 4 个系统缺陷 → 暴露 37 个隐藏问题 → 修...",
-                "keywords": [
-                  "多源配置",
-                  "洋葱剥皮",
-                  "配置漂移",
-                  "诊断误报",
-                  "短路逻辑"
-                ],
-                "importance": 4,
-                "updatedAt": "2026-04-06",
-                "source": "项目记忆"
-              },
-              {
                 "title": "execute_command 引号/换行导致 dquote 卡死：立即切换写临时脚本再执行",
                 "category": "common_pitfalls_experience",
                 "categoryLabel": "脚本自动化",
@@ -12696,22 +12771,22 @@
                 "source": "项目记忆"
               },
               {
-                "title": "launchd定时任务启动失败诊断清单（ApiNetworkEnvironment错误）",
+                "title": "launchd定时任务启动失败诊断清单（v2.0 — 新增双触发源陷阱）",
                 "category": "common_pitfalls_experience",
                 "categoryLabel": "脚本自动化",
                 "layer": "🛠️ 实践记忆层",
                 "icon": "⚡",
                 "color": "#64748b",
-                "description": "问题描述 launchd定时任务启动失败，表现为Agent会话立即中断，错误类型为 ApiNetworkEnvironment，Tool Cal...",
+                "description": "launchd定时任务启动失败诊断清单（v2.0，2026-04-23更新） 【新增 v2.0】双触发源陷阱（最隐蔽） 问题表现： ...",
                 "keywords": [
                   "launchd",
-                  "ApiNetworkEnvironment",
                   "定时任务",
-                  "启动失败",
-                  "Tool Calls"
+                  "双触发",
+                  "scheduled-tasks.json",
+                  "重复执行"
                 ],
                 "importance": 5,
-                "updatedAt": "2026-04-21",
+                "updatedAt": "2026-04-23",
                 "source": "项目记忆"
               },
               {
@@ -12848,7 +12923,7 @@
                 "source": "项目记忆"
               }
             ],
-            "count": 13
+            "count": 11
           },
           "通用踩坑": {
             "icon": "⚠️",
@@ -12986,6 +13061,25 @@
                 ],
                 "importance": 4,
                 "updatedAt": "2026-03-24",
+                "source": "用户显式记录"
+              },
+              {
+                "title": "部署验证完整经验（GitHub Pages+修复重跑+断链）",
+                "category": "development_practice_specification",
+                "categoryLabel": "通用踩坑",
+                "layer": "🛠️ 实践记忆层",
+                "icon": "⚠️",
+                "color": "#ef4444",
+                "description": "部署验证经验（v4.3） 核心原则 - 每次部署后必须通过三层验证：(1)HTTP状态码 (2)内容校验 (3)功能可访问 - GitHub...",
+                "keywords": [
+                  "部署验证",
+                  "修复重跑",
+                  "轮询",
+                  "断链",
+                  "GitHub Pages"
+                ],
+                "importance": 5,
+                "updatedAt": "2026-04-24",
                 "source": "用户显式记录"
               },
               {
@@ -13178,6 +13272,25 @@
                 "source": "项目记忆"
               },
               {
+                "title": "Shell多脚本体系配置漂移陷阱（含技能改名路径断链专项）",
+                "category": "development_practice_specification",
+                "categoryLabel": "通用踩坑",
+                "layer": "🛠️ 实践记忆层",
+                "icon": "⚠️",
+                "color": "#ef4444",
+                "description": "Shell多脚本体系\"配置漂移\"陷阱 问题描述 多脚本共同维护一个自动化系统时，同一个机制参数（端口、超时、模型名、sleep等）散落在多个...",
+                "keywords": [
+                  "Shell",
+                  "配置漂移",
+                  "多脚本",
+                  "config.sh",
+                  "单一写入点"
+                ],
+                "importance": 4,
+                "updatedAt": "2026-04-24",
+                "source": "项目记忆"
+              },
+              {
                 "title": "危险函数物理清空原则（结构约束 > 文字规则的具体落地方法）",
                 "category": "task_flow_experience",
                 "categoryLabel": "通用踩坑",
@@ -13194,6 +13307,25 @@
                 ],
                 "importance": 4,
                 "updatedAt": "2026-04-06",
+                "source": "项目记忆"
+              },
+              {
+                "title": "多源配置体系洋葱剥皮修复陷阱（诊断误报+短路逻辑）",
+                "category": "task_flow_experience",
+                "categoryLabel": "通用踩坑",
+                "layer": "🛠️ 实践记忆层",
+                "icon": "⚠️",
+                "color": "#ef4444",
+                "description": "多源配置体系的\"洋葱剥皮\"修复陷阱 事件 修4个系统缺陷→暴露37个隐藏问题→修复中文名→触发41个次生问题→最终3轮才清零。 三层...",
+                "keywords": [
+                  "多源配置",
+                  "洋葱剥皮",
+                  "配置漂移",
+                  "诊断误报",
+                  "短路逻辑"
+                ],
+                "importance": 4,
+                "updatedAt": "2026-04-24",
                 "source": "项目记忆"
               },
               {
@@ -13286,7 +13418,7 @@
                   "Personal",
                   "系统优先"
                 ],
-                "importance": 3,
+                "importance": 2,
                 "updatedAt": "2026-04-16",
                 "source": "项目记忆"
               },
@@ -13326,6 +13458,25 @@
                 ],
                 "importance": 5,
                 "updatedAt": "2026-04-20",
+                "source": "项目记忆"
+              },
+              {
+                "title": "技能触发词冲突导致错误调用（经验#81）",
+                "category": "common_pitfalls_experience",
+                "categoryLabel": "通用踩坑",
+                "layer": "🛠️ 实践记忆层",
+                "icon": "⚠️",
+                "color": "#ef4444",
+                "description": "技能触发词冲突导致错误调用（经验#81） 问题现象 用户说\"AI生图\"，系统调用了 text-to-image 而非 `ks-desig...",
+                "keywords": [
+                  "触发词冲突",
+                  "技能合并",
+                  "AI生图",
+                  "text-to-image",
+                  "ks-design-image-gen"
+                ],
+                "importance": 5,
+                "updatedAt": "2026-04-24",
                 "source": "项目记忆"
               },
               {
@@ -13424,7 +13575,7 @@
                 "source": "项目记忆"
               }
             ],
-            "count": 30
+            "count": 34
           },
           "项目知识": {
             "icon": "📋",
@@ -13511,13 +13662,12 @@
             "count": 4
           }
         },
-        "count": 121
+        "count": 123
       }
     }
   },
   "growthHistory": {
     "dates": [
-      "03-25",
       "03-26",
       "03-27",
       "03-28",
@@ -13546,10 +13696,10 @@
       "04-20",
       "04-21",
       "04-22",
-      "04-23"
+      "04-23",
+      "04-24"
     ],
     "skills": [
-      110,
       110,
       124,
       123,
@@ -13578,10 +13728,10 @@
       179,
       179,
       179,
-      179
+      179,
+      180
     ],
     "knowledge": [
-      291,
       291,
       291,
       291,
@@ -13610,10 +13760,10 @@
       309,
       309,
       309,
+      309,
       309
     ],
     "memories": [
-      126,
       126,
       126,
       120,
@@ -13642,7 +13792,8 @@
       157,
       159,
       161,
-      163
+      163,
+      166
     ]
   },
   "achievements": [
@@ -13678,7 +13829,7 @@
       "unlocked": true,
       "progress": 100,
       "progressText": "懂你程度 85/80",
-      "date": "2026-04-23"
+      "date": "2026-04-24"
     },
     {
       "id": "skill_master_v2",
@@ -13689,8 +13840,8 @@
       "category": "growth",
       "unlocked": true,
       "progress": 100,
-      "progressText": "4星+技能 109/10",
-      "date": "2026-04-23"
+      "progressText": "4星+技能 111/10",
+      "date": "2026-04-24"
     },
     {
       "id": "daily_report",
@@ -13746,7 +13897,7 @@
       "unlocked": true,
       "progress": 100,
       "progressText": "达成",
-      "date": "2026-04-23"
+      "date": "2026-04-24"
     },
     {
       "id": "first_awakening",

@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-04-23T06:25:48.646686",
+  "generatedAt": "2026-04-24T17:50:11.215140",
   "summary": {
     "totalDays": 30,
-    "latestDate": "2026-04-22",
-    "earliestDate": "2026-03-24"
+    "latestDate": "2026-04-24",
+    "earliestDate": "2026-03-25"
   },
   "trend": {
     "dates": [
@@ -20,7 +20,7 @@
       "04-20",
       "04-21",
       "04-22",
-      "04-23"
+      "04-24"
     ],
     "skills": [
       156,
@@ -36,7 +36,7 @@
       179,
       179,
       179,
-      179
+      180
     ],
     "knowledge": [
       305,
@@ -68,10 +68,244 @@
       157,
       159,
       161,
-      163
+      166
     ]
   },
   "reports": [
+    {
+      "date": "2026-04-24",
+      "dayOfWeek": "周五",
+      "activeProjects": 1,
+      "totalCommits": 0,
+      "conversationCount": 22,
+      "coreProgress": [
+        "💬 完成 22 个任务: 用户触发每周深度修炼模式，要求运行完整的自进化引擎工作流（数据收集→预分析→对话..., 用户希望创建一份关于 DeepSeek V4 Preview 模型的深度调研报告......",
+        "📁 项目成果: 网页更新 342 个",
+        "⚡ 新增能力: docs-shuttle，提升文档协作能力",
+        "🧠 新增记忆: AI生图技能选型错误 + Prompt结等3条，避免常见错误"
+      ],
+      "deliveries": [
+        {
+          "title": "Weekly Deep Cultivation Mode Execution",
+          "type": "conversation",
+          "goal": "用户触发每周深度修炼模式，要求运行完整的自进化引擎工作流（数据收集→预分析→对话复盘→三维度优化→发布同步→最终报告）",
+          "deliverables": [],
+          "process": [
+            "成功加载 meta-daily-reflection-evolution 和 meta-long-task-runner 技能，执行了 Step A（数据收集和预分析），结果显示22个对话中2个需要深..."
+          ],
+          "tags": [
+            "weekly-reflection",
+            "daily-orchestrator",
+            "meta-skills",
+            "self-evolution",
+            "conversation-review"
+          ]
+        },
+        {
+          "title": "DeepSeek V4 Preview Deep Research Report",
+          "type": "conversation",
+          "goal": "用户希望创建一份关于 DeepSeek V4 Preview 模型的深度调研报告，以 HTML 格式呈现，包含完整的样式和结构",
+          "deliverables": [],
+          "process": [
+            "助手正在分步构建一个完整的 HTML 深度调研报告，已完成 Part 1（HTML head + CSS 样式，遵循 v5.0 规范）和 Part 2（HTML 骨架：skip-link、侧边栏 TO..."
+          ],
+          "tags": [
+            "deepseek",
+            "ai-research",
+            "html-report",
+            "deep-research"
+          ]
+        },
+        {
+          "title": "Skill System Health Diagnosis",
+          "type": "conversation",
+          "goal": "分析技能系统中存在的使用旧版本技能的问题",
+          "deliverables": [],
+          "process": [],
+          "tags": [
+            "skill-management",
+            "health-check",
+            "duplicate-skills"
+          ]
+        },
+        {
+          "title": "Deep Research Report Style Compliance Issue",
+          "type": "conversation",
+          "goal": "用户要求深度调研报告必须严格遵循AI洞察的Skill规范，实现清爽调研报告风格的HTML页面",
+          "deliverables": [],
+          "process": [],
+          "tags": [
+            "deep-research",
+            "skill-compliance",
+            "HTML-styling",
+            "P0-requirements",
+            "qingshuang-research-style"
+          ]
+        },
+        {
+          "title": "DeepSeek V4 Page Style Refactoring",
+          "type": "conversation",
+          "goal": "将DeepSeek V4深度调研页面重构为清爽调研报告风格，并修复导航Tab的毛玻璃样式问题",
+          "deliverables": [],
+          "process": [
+            "根据用户要求，将页面重构为清爽调研报告风格v3.2规范，包括Mesh Gradient背景、毛玻璃Tab导航、五色调色板等。用户反馈导航样式不对后，修复了Tab导航缺少box-shadow和-webk..."
+          ],
+          "tags": [
+            "qingshuang-research-style",
+            "CSS",
+            "navigation",
+            "backdrop-filter",
+            "box-shadow"
+          ]
+        },
+        {
+          "title": "AI生图技能选型与Prompt优化复盘",
+          "type": "conversation",
+          "goal": "用户要求复盘AI生图任务中的踩坑经验，并提炼可复用的方法论，避免未来重复犯错",
+          "deliverables": [],
+          "process": [
+            "复盘发现三个关键错误：(1) 技能选择错误——用text-to-image而非ks-design-image-gen，风格选了kawaii而非soft-gradient；(2) prompt过度结构化..."
+          ],
+          "tags": [
+            "ai-image-generation",
+            "prompt-engineering",
+            "skill-selection",
+            "designai",
+            "narrative-flow"
+          ]
+        },
+        {
+          "title": "DeepSeek V4 Preview Deep Research and Deployment",
+          "type": "conversation",
+          "goal": "完成DeepSeek V4 Preview深度调研任务，包括内容分析、HTML页面生成、首页更新和Git部署，并响应技能review请求",
+          "deliverables": [],
+          "process": [
+            "成功完成DeepSeek V4 Preview深度调研全流程（Step 0.5~6），生成MD/HTML报告并部署上线。发现两个可改进点：1) meta-execution仅打印激活文字但未实际调用u..."
+          ],
+          "tags": [
+            "deep-research",
+            "ai-insight",
+            "deployment",
+            "skill-review",
+            "meta-execution"
+          ]
+        },
+        {
+          "title": "DeepSeek V4 Tab Navigation Fix for Research Report",
+          "type": "conversation",
+          "goal": "用户要求按照清爽调研报告风格重做DeepSeek V4预览报告的Tab导航功能",
+          "deliverables": [],
+          "process": [
+            "已完成Tab导航重做：使用SVG图标替代emoji、实现tab-icon/tab-label分离结构、移动端纯图标模式、focus-visible焦点环、毛玻璃样式等。代码已推送到origin/mai..."
+          ],
+          "tags": [
+            "tab-navigation",
+            "github-pages",
+            "html-css",
+            "svg-icons",
+            "mobile-responsive"
+          ]
+        }
+      ],
+      "capabilityGrowth": {
+        "skillCount": 180,
+        "knowledgeCount": 277,
+        "memoryCount": 166,
+        "skillChange": 1,
+        "knowledgeChange": 0,
+        "memoryChange": 3,
+        "newSkills": [
+          {
+            "name": "docs-shuttle",
+            "description": "快手内网在线文档平台（docs.corp.快手.com）与本地双向同步工具。用户说「上传文档到 Docs」「"
+          }
+        ],
+        "updatedSkills": [
+          {
+            "name": "agent-browser",
+            "description": "浏览器自动化 CLI 工具。当用户需要与网站交互时使用，包括打开网页、填写表单、点击按钮、截图、数据抓取、Web 应用测"
+          },
+          {
+            "name": "meta-beiming-shengong",
+            "description": "北冥神功 — 三大功法之一，自进化引擎的能力导出能力。触发词：北冥神功、导出能力、能力打包、安装能力包。在三大功法中的位"
+          },
+          {
+            "name": "text-to-image",
+            "description": "⚠️ 已废弃 — 请使用 ks-design-image-gen 技能。本技能已与 ks-design-image-ge"
+          },
+          {
+            "name": "meta-xixingdafa",
+            "description": "吸星大法 — 三大功法之一，自进化引擎的外部吸收能力。触发词：吸星大法、吸收外部技能、学习外部最佳实践、OpenClaw"
+          },
+          {
+            "name": "ks-kim-docs-shuttle",
+            "description": "快手内网 Docs 文档与本地双向同步工具（优先于内置 docs-shuttle，功能更完整）。当用户说「上传文档到 D"
+          },
+          {
+            "name": "ks-design-image-gen",
+            "description": "【AI生图统一入口】创意驱动图像生成器，支持文生图和图生图两种模式。自动选择最优后端API（DesignAI/万擎）。触"
+          }
+        ],
+        "newKnowledge": [],
+        "updatedKnowledge": [],
+        "newMemory": [
+          {
+            "title": "AI生图技能选型错误 + Prompt结构化过度（经验#82）",
+            "category": "common_pitfalls_experience"
+          },
+          {
+            "title": "技能触发词冲突导致错误调用（经验#81）",
+            "category": "common_pitfalls_experience"
+          },
+          {
+            "title": "深度调研HTML必须严格遵循P0样式规范（清爽调研报告风格）— 含Tab导航完整规范 v2",
+            "category": "common_pitfalls_experience"
+          }
+        ],
+        "updatedMemory": [
+          {
+            "title": "部署验证完整经验（GitHub Pages+修复重跑+断链）",
+            "category": "development_practice_specification"
+          },
+          {
+            "title": "大型HTML分步输出：OutputTooLong补救 + 占位符接力主动模式（v2）",
+            "category": "common_pitfalls_experience"
+          },
+          {
+            "title": "CSS元素不可见排查三板斧：样式→遮挡→裁切",
+            "category": "development_code_specification"
+          },
+          {
+            "title": "Shell多脚本体系配置漂移陷阱（含技能改名路径断链专项）",
+            "category": "development_practice_specification"
+          },
+          {
+            "title": "多源配置体系洋葱剥皮修复陷阱（诊断误报+短路逻辑）",
+            "category": "task_flow_experience"
+          },
+          {
+            "title": "Python多脚本体系SSoT架构陷阱（前后端契约+幽灵引用）",
+            "category": "development_practice_specification"
+          },
+          {
+            "title": "KIM Doc 配图发布流程（v3 — 新增：ks-design-image-gen 正确脚本路径 + MyFlicker风格选型）",
+            "category": "common_pitfalls_experience"
+          }
+        ],
+        "trend": "growing"
+      },
+      "skillCount": 180,
+      "knowledgeCount": 277,
+      "memoryCount": 166,
+      "skillChange": 1,
+      "knowledgeChange": 0,
+      "memoryChange": 3,
+      "highlights": [
+        "💬 完成 22 个任务: 用户触发每周深度修炼模式，要求运行完整的自进化引擎工作流（数据收集→预分析→对话..., 用户希望创建一份关于 DeepSeek V4 Preview 模型的深度调研报告......",
+        "📁 项目成果: 网页更新 342 个",
+        "⚡ 新增能力: docs-shuttle，提升文档协作能力"
+      ]
+    },
     {
       "date": "2026-04-22",
       "dayOfWeek": "周三",
@@ -6050,404 +6284,6 @@
       "highlights": [
         "💬 完成 22 个任务: Error Handling for Server Cust..., 未提供明确的对话内容或用户意图...",
         "📁 项目成果: 网页更新 9 个"
-      ]
-    },
-    {
-      "date": "2026-03-24",
-      "dayOfWeek": "周二",
-      "activeProjects": 3,
-      "totalCommits": 0,
-      "conversationCount": 40,
-      "coreProgress": [
-        "💬 完成 40 个任务: 对个人知识库系统进行全面健康检查与优化，包括索引修复、分类校正、文档统计更新和时..., 完成个人助理V1系统中112个技能的全面扫描与优化维护...",
-        "📁 项目成果: 文档完善 22 份",
-        "⚡ 新增能力: frontend-html-bundler、ks-design-ppt，提升UI/设计输出质量",
-        "🧠 新增记忆: Todo状态收尾规则 — 三场景完整版（等30条，提升项目开发效率"
-      ],
-      "deliveries": [
-        {
-          "title": "Knowledge Base Optimization and Maintenance Report",
-          "type": "conversation",
-          "goal": "对个人知识库系统进行全面健康检查与优化，包括索引修复、分类校正、文档统计更新和时效性验证",
-          "deliverables": [],
-          "process": [
-            "完成8项修复操作：修复P0级images目录索引缺失和分类配置漂移问题；更新P1级ai-insight文档统计（95篇）和self-evolution修炼报告；处理P2级版本元数据更新。最终确保6个目..."
-          ],
-          "tags": [
-            "knowledge-management",
-            "index-repair",
-            "metadata-update",
-            "file-audit",
-            "quality-control"
-          ]
-        },
-        {
-          "title": "Agent Skill Optimization and Maintenance",
-          "type": "conversation",
-          "goal": "完成个人助理V1系统中112个技能的全面扫描与优化维护",
-          "deliverables": [],
-          "process": [
-            "执行了全量技能扫描，修复了13个P0问题（包括5个ghost definition清理、5个分类数据修正和3个废弃引用替换）和2个P1问题。共完成25项操作，更新了constants.py和skill..."
-          ],
-          "tags": [
-            "agent-skill",
-            "maintenance",
-            "optimization",
-            "diagnostics",
-            "cleanup"
-          ]
-        },
-        {
-          "title": "Link Abilities Pack Community Installation and Verification",
-          "type": "conversation",
-          "goal": "完成 link-abilities-pack-community 的安装验证并确保系统各组件正常运行",
-          "deliverables": [],
-          "process": [
-            "成功安装 link-abilities-pack-community-v0.0.0-20260324-2017 包，验证了102个技能、228篇知识和81条记忆的加载，完成19个依赖安装并通过端口80..."
-          ],
-          "tags": [
-            "installation",
-            "verification",
-            "skills-pack",
-            "dependency-check",
-            "homepage-preview"
-          ]
-        },
-        {
-          "title": "Daily Cultivation Report Generation",
-          "type": "conversation",
-          "goal": "生成2026-03-24每日修炼的最终报告，包含各步骤状态、关键指标和洞察摘要",
-          "deliverables": [],
-          "process": [
-            "生成了包含7个步骤状态（6完成/1失败）的格式化报告，统计了90.2%的FTR完成率，识别出Todo漏标记是主要问题类型。报告发现Step 5发布同步失败需要重试，并汇总了4个核心对话洞察。"
-          ],
-          "tags": [
-            "daily-report",
-            "data-analysis",
-            "automation",
-            "task-tracking",
-            "performance-metrics"
-          ]
-        },
-        {
-          "title": "Simple acknowledgment exchange",
-          "type": "conversation",
-          "goal": "用户只是简单地确认了回复",
-          "deliverables": [],
-          "process": [],
-          "tags": [
-            "acknowledgment",
-            "minimal",
-            "conversation"
-          ]
-        },
-        {
-          "title": "Memory Optimization for AI Assistant System",
-          "type": "conversation",
-          "goal": "对个人助理系统中的记忆模块进行全面优化，包括清理过时记忆、重新分类记忆条目、解决诊断报告与实际数据不一致的问题",
-          "deliverables": [],
-          "process": [
-            "全量扫描43条记忆，发现common_pitfalls实际16条（比诊断报告多2条），处理了7项分类调整（如将信息失真三问法重分类为task_flow_experience）。发现重复记忆396421..."
-          ],
-          "tags": [
-            "memory-optimization",
-            "ai-system",
-            "data-hygiene",
-            "classification",
-            "debugging"
-          ]
-        },
-        {
-          "title": "Conversation Review and Insight Generation Process",
-          "type": "conversation",
-          "goal": "对多个对话进行分析以提炼问题模式和成功模式，并更新系统记忆和Todo状态",
-          "deliverables": [],
-          "process": [
-            "1. 分析了4个需要深入研究的对话（包括ClawBook巡逻和AI模型生成任务），发现主要问题是任务状态未正确更新和外部中断时缺少断点快照"
-          ],
-          "tags": [
-            "conversation-analysis",
-            "todo-management",
-            "error-handling",
-            "memory-update",
-            "workflow-optimization"
-          ]
-        },
-        {
-          "title": "R&D Efficiency Improvement Slide Deck Creation",
-          "type": "conversation",
-          "goal": "创建关于研发效能提升方案的3张专业商务风格幻灯片，包含封面页、三大核心举措和预期效果。",
-          "deliverables": [],
-          "process": [
-            "使用ks-design-slide-deck技能自动生成3张2K分辨率幻灯片（封面/举措/效果），并通过bun工具合并为PPTX/PDF格式。输出包含图片文件、演示文稿和生成提示词，采用企业科技蓝风格..."
-          ],
-          "tags": [
-            "slide-deck",
-            "presentation",
-            "automation",
-            "bun",
-            "productivity"
-          ]
-        }
-      ],
-      "capabilityGrowth": {
-        "skillCount": 124,
-        "knowledgeCount": 260,
-        "memoryCount": 124,
-        "skillChange": 0,
-        "knowledgeChange": 0,
-        "memoryChange": 30,
-        "newSkills": [
-          {
-            "name": "frontend-html-bundler",
-            "description": "This skill should be used when the user asks to \"快手内网部署\", \"内"
-          },
-          {
-            "name": "ks-design-ppt",
-            "description": "\"This skill should be used when the user asks to create any "
-          },
-          {
-            "name": "link-weixin-bridge",
-            "description": "\"微信 → CodeFlicker AI 消息网关技能（通用版）。触发词：'连接微信'、'启动微信网关'、'微信桥接'、"
-          }
-        ],
-        "updatedSkills": [
-          {
-            "name": "internet-content-research",
-            "description": "\"互联网多平台数据源整合技能（数据采集层）。触发词：'微信公众号搜索'、'小红书搜索'、'公众号调研'、'多平台搜索'、"
-          },
-          {
-            "name": "meta-learn-from-mistakes",
-            "description": "\"举一反三 — 双轮驱动之一，自进化引擎的即时复盘能力。触发词：'复盘'、'举一反三'、'总结这个问题'、'这次做得好'"
-          },
-          {
-            "name": "sl-weixin-bridge",
-            "description": "\"微信 → CodeFlicker AI 消息网关技能（沈浪专属）。触发词：'沈浪启动微信网关'、'沈浪微信桥接'、'沈"
-          },
-          {
-            "name": "meta-skill-dojo",
-            "description": "\"技能修炼 — 技能生命周期的第四阶段（发现→创建→评估→修炼）。触发词：'技能修炼'、'跑一下技能测试'、'持续精进'"
-          },
-          {
-            "name": "ks-kmodel",
-            "description": "This skill should be used when the user asks about \"kmodel 开"
-          },
-          {
-            "name": "meta-memory-hygiene",
-            "description": "\"记忆优化 — 系统优化工具之一，被内功修炼调用。触发词：'检查记忆健康度'、'记忆优化'、'记忆清理'。核心职责：记忆"
-          },
-          {
-            "name": "web-dev-workflow",
-            "description": "|"
-          },
-          {
-            "name": "ks-design-infographic",
-            "description": "Generates professional infographics with 21 layout types and"
-          },
-          {
-            "name": "ks-promotion-review-sabcd",
-            "description": "\"晋升评审 — 评委视角的材料分析与评分。触发词：'晋升评审'、'晋升材料分析'、'生成评审报告'、'SABCD评级'、"
-          },
-          {
-            "name": "meta-execution",
-            "description": "\"一次做对元技能 — 自动激活的任务执行质量保障框架。当接收任何需要执行的任务时自动激活，在会话续接时必须加载。提供「续"
-          },
-          {
-            "name": "ks-design-slide-deck",
-            "description": "Generates professional slide deck images from content. Creat"
-          },
-          {
-            "name": "meta-agent-session-controller",
-            "description": "林克会话编排 — 元技能层「做事方法」。通过Duet Protocol External API程序化控制AI会话，实现"
-          },
-          {
-            "name": "zelda-style",
-            "description": "\"This skill should be used when the user asks to create a '塞"
-          },
-          {
-            "name": "meta-skill-creator",
-            "description": "\"技能创建 — 技能生命周期的第二阶段（发现→创建→评估→修炼）。触发词：'创建技能'、'新建技能'、'写个技能'。核心"
-          },
-          {
-            "name": "meta-skill-management",
-            "description": "\"技能体系优化 — 系统优化工具之一，被内功修炼调用。触发词：'优化技能体系'、'技能架构优化'、'梳理技能关系'、'检"
-          },
-          {
-            "name": "sl-rd-efficiency-insight",
-            "description": "\"研发效能洞察平台专属技能。当用户明确提到'研发效能洞察'、'研效知识库'、'研效追踪'、'学习研发效能'、'效能调研'"
-          },
-          {
-            "name": "executive-report-writing",
-            "description": "\"高管汇报材料写作 — 面向高管/老板的材料写作规范。触发词：'老板汇报'、'给老板写'、'高管材料'、'高管汇报'、'"
-          },
-          {
-            "name": "ks-kim-docs-shuttle",
-            "description": "快手内网 Docs 文档与本地双向同步工具。当用户说「上传文档到 Docs」「发布到 Docs」「从 Docs 拉取」「"
-          },
-          {
-            "name": "ks-design-image-gen",
-            "description": "This skill should be used ONLY when the user explicitly asks"
-          }
-        ],
-        "newKnowledge": [
-          {
-            "name": "README",
-            "category": "images"
-          }
-        ],
-        "updatedKnowledge": [],
-        "newMemory": [
-          {
-            "title": "Todo状态收尾规则 — 三场景完整版（v3：含跨chatId假阳性）",
-            "category": "common_pitfalls_experience"
-          },
-          {
-            "title": "文字规范≠执行保障：规范落地必须双轨（文档+代码门控）",
-            "category": "common_pitfalls_experience"
-          },
-          {
-            "title": "kill 后台 git 进程必须清理 .git/index.lock 僵尸锁",
-            "category": "development_practice_specification"
-          },
-          {
-            "title": "外部系统中断时必须输出断点快照（v2 — 含自主推进规则）",
-            "category": "common_pitfalls_experience"
-          },
-          {
-            "title": "企业数字员工平台 — 增量开发差距清单与优先级",
-            "category": "project_configuration"
-          },
-          {
-            "title": "页面交付类任务的产品思维强制约束",
-            "category": "constraint_or_forbidden_rule"
-          },
-          {
-            "title": "网页开发完成后必须提供可直接访问的在线链接",
-            "category": "development_practice_specification"
-          },
-          {
-            "title": "AI生成UI反模式清单（去AI味指南）",
-            "category": "development_practice_specification"
-          },
-          {
-            "title": "pathlib rglob/glob 不跟踪软链接（需用os.walk）",
-            "category": "development_practice_specification"
-          },
-          {
-            "title": "工具调用前的参数完整性自检规范",
-            "category": "development_practice_specification"
-          },
-          {
-            "title": "输出文件统一规范（Output目录 + 日期时间后缀）",
-            "category": "development_practice_specification"
-          },
-          {
-            "title": "北冥神功导出命令规范（版本号+包名时间戳）",
-            "category": "development_code_specification"
-          },
-          {
-            "title": "部署验证完整经验（合并版v4.1 — 含修复后重跑最后一公里断链场景）",
-            "category": "common_pitfalls_experience"
-          },
-          {
-            "title": "踩坑记忆召回失败模式（16类任务映射 v2）",
-            "category": "common_pitfalls_experience"
-          },
-          {
-            "title": "自动化管道脚本卫生规范（五层检查表）",
-            "category": "development_practice_specification"
-          },
-          {
-            "title": "修复问题时的精确打击原则（防止过度删除）",
-            "category": "common_pitfalls_experience"
-          },
-          {
-            "title": "replace_in_file 连续失败后的精确匹配三步排障协议（3-Strike规则）",
-            "category": "common_pitfalls_experience"
-          },
-          {
-            "title": "同步脚本脱敏闸门（v2.4 — 添棋不脱敏，且策略变更四方强制同步）",
-            "category": "common_pitfalls_experience"
-          },
-          {
-            "title": "企业数字员工平台 — 前端技术栈与代码规范",
-            "category": "project_tech_stack"
-          },
-          {
-            "title": "AI日报数据源标注规范：微信/小红书平台标记",
-            "category": "development_code_specification"
-          },
-          {
-            "title": "Flex布局边缘元素被压缩（min-width+flex-shrink:0）",
-            "category": "development_code_specification"
-          },
-          {
-            "title": "CSS跨列行对齐：subgrid（解决多列错位）",
-            "category": "development_code_specification"
-          },
-          {
-            "title": "JavaScript函数内赋值全局变量必须用window前缀",
-            "category": "development_code_specification"
-          },
-          {
-            "title": "懒加载页面的动态绘制必须在渲染完成后调用",
-            "category": "development_code_specification"
-          },
-          {
-            "title": "一致性检查闭环：发现→修复→自动化→门控（含多副本分发型代码场景）",
-            "category": "development_code_specification"
-          },
-          {
-            "title": "企业数字员工平台 — 项目概览与产品定位",
-            "category": "project_introduction"
-          },
-          {
-            "title": "同步脚本脱敏闸门（v2.4 — 2026-03-24教训：添棋不脱敏，且策略变更三方强制同步）",
-            "category": "common_pitfalls_experience"
-          },
-          {
-            "title": "北冥神功导出命令规范（版本号+包名时间戳）",
-            "category": "development_practice_specification"
-          },
-          {
-            "title": "首页技能displayName英文fallback：新技能漏配constants.py的根因与防护（质量门已接入Step5）",
-            "category": "common_pitfalls_experience"
-          },
-          {
-            "title": "补跑 clawbook 任务的 background & 进程与 task-wait.sh 自动批准不兼容（经验41）",
-            "category": "common_pitfalls_experience"
-          }
-        ],
-        "updatedMemory": [
-          {
-            "title": "信息失真三问法（确认度×时效性×溯源性）",
-            "category": "task_flow_experience"
-          },
-          {
-            "title": "基础设施前置验证原则（「货到船上但船没引擎」模式）",
-            "category": "task_flow_experience"
-          },
-          {
-            "title": "grep 大目录扫描必须加 --include 文件类型过滤（防终端挂死）",
-            "category": "development_practice_specification"
-          },
-          {
-            "title": "一致性检查闭环：发现→修复→自动化→门控（含多副本分发型代码场景）",
-            "category": "task_flow_experience"
-          }
-        ],
-        "trend": "growing"
-      },
-      "skillCount": 124,
-      "knowledgeCount": 260,
-      "memoryCount": 124,
-      "skillChange": 0,
-      "knowledgeChange": 0,
-      "memoryChange": 30,
-      "highlights": [
-        "💬 完成 40 个任务: 对个人知识库系统进行全面健康检查与优化，包括索引修复、分类校正、文档统计更新和时..., 完成个人助理V1系统中112个技能的全面扫描与优化维护...",
-        "📁 项目成果: 文档完善 22 份",
-        "⚡ 新增能力: frontend-html-bundler、ks-design-ppt，提升UI/设计输出质量"
       ]
     }
   ]
