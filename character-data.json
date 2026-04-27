@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-27T08:19:59.138777",
+  "generatedAt": "2026-04-27T08:27:27.187196",
   "character": {
     "name": "LINK",
     "title": "AI数字分身",
@@ -132,8 +132,8 @@
         "desc": "知道的越来越多"
       }
     ],
-    "totalExp": 342790,
-    "expProgress": 76.6,
+    "totalExp": 345870,
+    "expProgress": 87.1,
     "currentThreshold": 320393,
     "nextThreshold": 349649,
     "stats": {
@@ -141,7 +141,7 @@
       "execution": 62.8,
       "skillDepth": 82.7,
       "thinkingDepth": 38.0,
-      "knowledgeBreadth": 61.2
+      "knowledgeBreadth": 65.6
     },
     "debug": {
       "metrics": {
@@ -155,13 +155,13 @@
       "highLevelSkills": 107,
       "skillTotalValue": 2898.5,
       "cultivationExp": 0,
-      "baseExp": 342790,
+      "baseExp": 345870,
       "expBreakdown": {
         "understanding": 82700,
         "execution": 62800,
         "skill": 124050,
         "thinking": 30400,
-        "knowledge": 42840,
+        "knowledge": 45919,
         "cultivation": 0
       }
     }
@@ -6885,10 +6885,10 @@
         "relatedMemories": [
           "thinking_pattern"
         ],
-        "fileCount": 132,
-        "sizeKB": 873.7,
+        "fileCount": 140,
+        "sizeKB": 886.7,
         "heatLevel": 5,
-        "recentCount": 0
+        "recentCount": 8
       },
       "ai-insight": {
         "name": "ai-insight",
@@ -6939,7 +6939,7 @@
           "thinking_pattern"
         ],
         "fileCount": 26,
-        "sizeKB": 197.5,
+        "sizeKB": 197.6,
         "heatLevel": 5,
         "recentCount": 2
       },
@@ -7000,10 +7000,10 @@
             "relatedMemories": [
               "thinking_pattern"
             ],
-            "fileCount": 132,
-            "sizeKB": 873.7,
+            "fileCount": 140,
+            "sizeKB": 886.7,
             "heatLevel": 5,
-            "recentCount": 0
+            "recentCount": 8
           },
           "self-evolution": {
             "name": "self-evolution",
@@ -7019,7 +7019,7 @@
               "thinking_pattern"
             ],
             "fileCount": 26,
-            "sizeKB": 197.5,
+            "sizeKB": 197.6,
             "heatLevel": 5,
             "recentCount": 2
           },
@@ -7041,8 +7041,8 @@
             "recentCount": 0
           }
         },
-        "totalFiles": 167,
-        "totalSizeKB": 1125.1
+        "totalFiles": 175,
+        "totalSizeKB": 1138.2
       },
       "🔍 领域知识层": {
         "icon": "🔍",
@@ -7138,8 +7138,8 @@
         "totalSizeKB": 1.1
       }
     },
-    "totalFiles": 310,
-    "totalSizeKB": 2328.5
+    "totalFiles": 318,
+    "totalSizeKB": 2341.7
   },
   "memories": {
     "items": [
@@ -13573,7 +13573,7 @@
       309,
       309,
       309,
-      310
+      318
     ],
     "memories": [
       126,
