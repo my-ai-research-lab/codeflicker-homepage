@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-24T17:50:35.982416",
+  "generatedAt": "2026-04-27T08:19:59.221973",
   "summary": {
     "total": 25,
     "deployed": 25,
@@ -31,17 +31,20 @@
       "icon": "🔬",
       "goal": "建立系统化、可持续的AI行业追踪学习平台",
       "outcome": "整合日报、周报、深度调研、追踪体系、知识沉淀五大模块",
-      "deliverables": [],
+      "deliverables": [
+        "在线页面"
+      ],
       "status": "deployed",
       "completedAt": "2026-03-04",
       "techStack": [
-        "Unknown"
+        "HTML",
+        "GitHub Pages"
       ],
       "url": "https://xiaoxiong20260206.github.io/ai-insight/",
       "path": "/Users/shenlang/Documents/Codeflicker/AI-Insight",
       "highlights": [],
       "metrics": {
-        "fileCount": 0
+        "fileCount": 1
       },
       "quality": {
         "score": 90,
