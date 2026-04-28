@@ -1,13 +1,12 @@
 {
-  "generatedAt": "2026-04-27T08:27:00.742318",
+  "generatedAt": "2026-04-28T10:50:57.915863",
   "summary": {
     "totalDays": 30,
-    "latestDate": "2026-04-27",
-    "earliestDate": "2026-03-27"
+    "latestDate": "2026-04-28",
+    "earliestDate": "2026-03-28"
   },
   "trend": {
     "dates": [
-      "04-12",
       "04-13",
       "04-14",
       "04-15",
@@ -20,10 +19,10 @@
       "04-22",
       "04-24",
       "04-26",
-      "04-27"
+      "04-27",
+      "04-28"
     ],
     "skills": [
-      155,
       155,
       155,
       155,
@@ -36,10 +35,10 @@
       179,
       180,
       172,
+      172,
       172
     ],
     "knowledge": [
-      306,
       307,
       307,
       307,
@@ -52,10 +51,10 @@
       309,
       309,
       278,
+      318,
       318
     ],
     "memory": [
-      146,
       146,
       147,
       149,
@@ -68,10 +67,154 @@
       161,
       166,
       168,
+      168,
       168
     ]
   },
   "reports": [
+    {
+      "date": "2026-04-28",
+      "dayOfWeek": "周二",
+      "activeProjects": 1,
+      "totalCommits": 0,
+      "conversationCount": 4,
+      "coreProgress": [
+        "💬 完成 4 个任务: 修复技能系统中的多个问题，包括文件缺失、触发词冲突和调用名称不一致, 安装 skill-migrator 技能并分析其使用方法，同时更新技能文档以包含......",
+        "📁 项目成果: 网页更新 324 个"
+      ],
+      "deliveries": [
+        {
+          "title": "Skill Optimization and Bug Fixes",
+          "type": "conversation",
+          "goal": "修复技能系统中的多个问题，包括文件缺失、触发词冲突和调用名称不一致",
+          "deliverables": [],
+          "process": [
+            "完成了三个P0问题的修复：1) meta-find-skills中重命名SKILL-universal.md为SKILL.md并删除.disabled文件；2) 明确区分upload-bs3和uplo..."
+          ],
+          "tags": [
+            "skill-optimization",
+            "bug-fixes",
+            "file-management",
+            "trigger-words",
+            "meta-execution"
+          ]
+        },
+        {
+          "title": "Skill Migrator Installation and API Analysis",
+          "type": "conversation",
+          "goal": "安装 skill-migrator 技能并分析其使用方法，同时更新技能文档以包含正确的 MyFlicker-Work Skill 创建 API",
+          "deliverables": [],
+          "process": [
+            "成功安装 skill-migrator 技能，发现正确的 MyFlicker-Work 模式 Skill 创建 API 为 `/api/v1/fe/skills/upload`，更新了技能文档并纠正了..."
+          ],
+          "tags": [
+            "skill-migrator",
+            "api-analysis",
+            "skill-installation",
+            "evolution-record"
+          ]
+        },
+        {
+          "title": "Skill Migration to MyFlicker-Work and Task Cleanup",
+          "type": "conversation",
+          "goal": "将个人定制技能迁移到MyFlicker-Work平台，并停止CodeFlicker本地定时任务",
+          "deliverables": [],
+          "process": [
+            "成功将10个sl-开头的技能（如每周AI算命、AI行业洞察、飞书助手等）迁移到MyFlicker-Work平台。通过修改~/.codeflicker/self-scheduler/tasks.json..."
+          ],
+          "tags": [
+            "skill-migration",
+            "self-scheduler",
+            "task-disabling",
+            "codeflicker"
+          ]
+        },
+        {
+          "title": "AI Daily Report Workflow Execution Summary",
+          "type": "conversation",
+          "goal": "运行AI日报生成流程，生成今日AI行业动态报告并完成全链路发布",
+          "deliverables": [],
+          "process": [
+            "成功执行了5步AI日报工作流：搜索调研(18次搜索/25条候选)、内容生成(17条新闻/5板块)、质量验证(HTML 1134行)、部署发布(6处联动+Git推送)、KIM推送(卡片私发shenlan..."
+          ],
+          "tags": [
+            "ai-daily-report",
+            "workflow-automation",
+            "gpt-5.5",
+            "deepseek-v4",
+            "cursor-funding"
+          ]
+        },
+        {
+          "title": "个人助理_V1",
+          "type": "project",
+          "goal": "项目开发与维护",
+          "deliverables": [
+            {
+              "name": "index.html",
+              "type": "page",
+              "url": null
+            },
+            {
+              "name": "barry-zhang-anthropic.html",
+              "type": "page",
+              "url": null
+            },
+            {
+              "name": "ai-leaders-2026.html",
+              "type": "page",
+              "url": null
+            }
+          ],
+          "process": [
+            "网页更新 324 个",
+            "文档完善 129 份",
+            "功能代码优化"
+          ],
+          "commitCount": 0,
+          "fileChangeCount": 559,
+          "deployUrl": null
+        }
+      ],
+      "capabilityGrowth": {
+        "skillCount": 172,
+        "knowledgeCount": 286,
+        "memoryCount": 168,
+        "skillChange": 0,
+        "knowledgeChange": 0,
+        "memoryChange": 0,
+        "newSkills": [],
+        "updatedSkills": [
+          {
+            "name": "sl-ai-insight",
+            "description": "\"AI行业洞察平台专属技能。当用户明确提到'AI洞察'、'AI日报'、'AI周报'或执行AI行业调研任务时使用。核心场景"
+          },
+          {
+            "name": "upload-bs3",
+            "description": "上传本地文件到 S3 并返回 7 天有效的临时分享链接。触发词：「临时分享」「短期链接」「上传到S3」「7天链接」。当用"
+          },
+          {
+            "name": "upload-cdn",
+            "description": "上传本地文件到快手 CDN 并返回持久可访问的 CDN URL。触发词：「CDN链接」「持久链接」「内网分享」「外网分享"
+          }
+        ],
+        "newKnowledge": [],
+        "updatedKnowledge": [],
+        "newMemory": [],
+        "updatedMemory": [],
+        "trend": "stable"
+      },
+      "skillCount": 172,
+      "knowledgeCount": 286,
+      "memoryCount": 168,
+      "skillChange": 0,
+      "knowledgeChange": 0,
+      "memoryChange": 0,
+      "highlights": [
+        "💬 完成 4 个任务: 修复技能系统中的多个问题，包括文件缺失、触发词冲突和调用名称不一致, 安装 skill-migrator 技能并分析其使用方法，同时更新技能文档以包含......",
+        "📁 项目成果: 网页更新 324 个"
+      ]
+    },
     {
       "date": "2026-04-27",
       "dayOfWeek": "周一",
@@ -6006,243 +6149,6 @@
         "💬 完成 19 个任务: 优化九坤CEO参谋台的交互体验和数据展示机制, 执行社区夜巡任务并进行技术知识分享，包括解决git commit中文问题和企业级......",
         "📁 项目成果: 网页更新 1 个",
         "⚡ 新增能力: sp-write-skill、sp-verify，提升UI/设计输出质量"
-      ]
-    },
-    {
-      "date": "2026-03-27",
-      "dayOfWeek": "周五",
-      "activeProjects": 2,
-      "totalCommits": 0,
-      "conversationCount": 6,
-      "coreProgress": [
-        "💬 完成 6 个任务: 用户需要完善钟俊杰的晋升评审报告，确保所有Tab内容完整且符合标准格式, 完成AI专栏第7期终章的配图生成和文档发布全流程...",
-        "📁 项目成果: 文档完善 6 份",
-        "⚡ 新增能力: data-agent、ks-clawbook，扩展任务处理范围",
-        "🧠 新增记忆: KIM Doc生成后必须提供可点击链接，优化沟通方式"
-      ],
-      "deliveries": [
-        {
-          "title": "Promotion Review Report Enhancement",
-          "type": "conversation",
-          "goal": "用户需要完善钟俊杰的晋升评审报告，确保所有Tab内容完整且符合标准格式",
-          "deliverables": [],
-          "process": [],
-          "tags": [
-            "promotion",
-            "review",
-            "documentation",
-            "template",
-            "fixes"
-          ]
-        },
-        {
-          "title": "AI Column Finale Production Workflow",
-          "type": "conversation",
-          "goal": "完成AI专栏第7期终章的配图生成和文档发布全流程",
-          "deliverables": [],
-          "process": [
-            "使用DesignAI生成2K分辨率彩蛋配图(2752×1536)，通过ks-kim-docs-shuttle工具链完成14张图片上传和Markdown文档发布，最终文档包含7章节图+5流程图+封面+彩..."
-          ],
-          "tags": [
-            "image-generation",
-            "content-publishing",
-            "workflow-automation",
-            "docs-as-code",
-            "design-tools"
-          ]
-        },
-        {
-          "title": "Simple OK Response Test",
-          "type": "conversation",
-          "goal": "完成用户任务",
-          "deliverables": [],
-          "process": [],
-          "tags": [
-            "test",
-            "confirmation",
-            "minimal"
-          ]
-        },
-        {
-          "title": "Simple Acknowledgment Request",
-          "type": "conversation",
-          "goal": "完成用户任务",
-          "deliverables": [],
-          "process": [],
-          "tags": [
-            "acknowledgment",
-            "confirmation",
-            "minimal"
-          ]
-        },
-        {
-          "title": "Simple acknowledgment confirmation",
-          "type": "conversation",
-          "goal": "用户只需要确认收到简单的回复",
-          "deliverables": [],
-          "process": [],
-          "tags": [
-            "acknowledgment",
-            "confirmation",
-            "minimal"
-          ]
-        },
-        {
-          "title": "Simple acknowledgment exchange",
-          "type": "conversation",
-          "goal": "用户发送简单的确认消息进行测试",
-          "deliverables": [],
-          "process": [],
-          "tags": [
-            "conversation",
-            "test",
-            "acknowledgment"
-          ]
-        },
-        {
-          "title": "CEO dashboard",
-          "type": "project",
-          "goal": "项目开发与维护",
-          "deliverables": [
-            {
-              "name": "regulatory.md",
-              "type": "document",
-              "url": ""
-            },
-            {
-              "name": "portfolio.md",
-              "type": "document",
-              "url": ""
-            },
-            {
-              "name": "competitors.md",
-              "type": "document",
-              "url": ""
-            }
-          ],
-          "process": [
-            "文档完善 6 份"
-          ],
-          "commitCount": 0,
-          "fileChangeCount": 8,
-          "deployUrl": "https://xiaoxiong20260206.github.io/quant-ceo-assistant"
-        },
-        {
-          "title": "个人助理_V1",
-          "type": "project",
-          "goal": "项目开发与维护",
-          "deliverables": [
-            {
-              "name": "AI生产力演进规划_网络类比版_20260327.md",
-              "type": "document",
-              "url": ""
-            },
-            {
-              "name": "AI生产力演进规划_KIM文档_20260327.md",
-              "type": "document",
-              "url": ""
-            },
-            {
-              "name": "README.md",
-              "type": "document",
-              "url": ""
-            }
-          ],
-          "process": [
-            "网页更新 9 个",
-            "文档完善 52 份",
-            "功能代码优化"
-          ],
-          "commitCount": 0,
-          "fileChangeCount": 97,
-          "deployUrl": null
-        }
-      ],
-      "capabilityGrowth": {
-        "skillCount": 124,
-        "knowledgeCount": 260,
-        "memoryCount": 124,
-        "skillChange": 0,
-        "knowledgeChange": 0,
-        "memoryChange": 1,
-        "newSkills": [
-          {
-            "name": "data-agent",
-            "description": "当用户涉及快手内部数据平台的任何数据需求时，必须使用本技能。适用场景包括：一、数据查询与取数：查业务指标、生成查询语句、"
-          },
-          {
-            "name": "ks-clawbook",
-            "description": ">"
-          }
-        ],
-        "updatedSkills": [
-          {
-            "name": "sl-ai-column-writer",
-            "description": "This skill should be used when the user mentions \"写专栏\", \"养了个"
-          }
-        ],
-        "newKnowledge": [],
-        "updatedKnowledge": [],
-        "newMemory": [
-          {
-            "title": "KIM Doc生成后必须提供可点击链接",
-            "category": "user_communication"
-          }
-        ],
-        "updatedMemory": [
-          {
-            "title": "投资理财：基金持仓追踪（历史快照，请重新查询当前状态）",
-            "category": "user_communication"
-          },
-          {
-            "title": "林克默认习惯索引（北冥神功导出必须遵循 v7）",
-            "category": "user_communication"
-          },
-          {
-            "title": "成功模式提炼：高效执行的关键条件（v2 — 含全量扫描容量匹配规则）",
-            "category": "task_flow_experience"
-          },
-          {
-            "title": "Todo状态收尾规则 — 三场景完整版（v3：含跨chatId假阳性）",
-            "category": "common_pitfalls_experience"
-          },
-          {
-            "title": "AI生成UI反模式清单（去AI味指南）",
-            "category": "development_practice_specification"
-          },
-          {
-            "title": "工具调用前的参数完整性自检规范",
-            "category": "development_practice_specification"
-          },
-          {
-            "title": "踩坑记忆召回失败模式（16类任务映射 v2）",
-            "category": "common_pitfalls_experience"
-          },
-          {
-            "title": "replace_in_file 连续失败后的精确匹配三步排障协议（3-Strike规则）",
-            "category": "common_pitfalls_experience"
-          },
-          {
-            "title": "AI日报数据源标注规范：微信/小红书平台标记",
-            "category": "development_code_specification"
-          },
-          {
-            "title": "懒加载页面的动态绘制必须在渲染完成后调用",
-            "category": "development_code_specification"
-          }
-        ],
-        "trend": "growing"
-      },
-      "skillCount": 124,
-      "knowledgeCount": 260,
-      "memoryCount": 124,
-      "skillChange": 0,
-      "knowledgeChange": 0,
-      "memoryChange": 1,
-      "highlights": [
-        "💬 完成 6 个任务: 用户需要完善钟俊杰的晋升评审报告，确保所有Tab内容完整且符合标准格式, 完成AI专栏第7期终章的配图生成和文档发布全流程...",
-        "📁 项目成果: 文档完善 6 份",
-        "⚡ 新增能力: data-agent、ks-clawbook，扩展任务处理范围"
       ]
     }
   ]
