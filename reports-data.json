@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-28T10:50:57.915863",
+  "generatedAt": "2026-04-29T11:07:22.227937",
   "summary": {
     "totalDays": 30,
     "latestDate": "2026-04-28",
@@ -7,8 +7,6 @@
   },
   "trend": {
     "dates": [
-      "04-13",
-      "04-14",
       "04-15",
       "04-16",
       "04-17",
@@ -17,14 +15,14 @@
       "04-20",
       "04-21",
       "04-22",
+      "04-23",
       "04-24",
       "04-26",
       "04-27",
-      "04-28"
+      "04-28",
+      "04-29"
     ],
     "skills": [
-      155,
-      155,
       155,
       184,
       185,
@@ -33,7 +31,9 @@
       179,
       179,
       179,
+      179,
       180,
+      172,
       172,
       172,
       172
@@ -44,19 +44,17 @@
       307,
       307,
       307,
-      307,
-      307,
+      309,
       309,
       309,
       309,
       309,
       278,
       318,
+      318,
       318
     ],
     "memory": [
-      146,
-      147,
       149,
       151,
       154,
@@ -65,7 +63,9 @@
       157,
       159,
       161,
+      163,
       166,
+      168,
       168,
       168,
       168
@@ -75,14 +75,74 @@
     {
       "date": "2026-04-28",
       "dayOfWeek": "周二",
-      "activeProjects": 1,
+      "activeProjects": 2,
       "totalCommits": 0,
-      "conversationCount": 4,
+      "conversationCount": 7,
       "coreProgress": [
-        "💬 完成 4 个任务: 修复技能系统中的多个问题，包括文件缺失、触发词冲突和调用名称不一致, 安装 skill-migrator 技能并分析其使用方法，同时更新技能文档以包含......",
-        "📁 项目成果: 网页更新 324 个"
+        "💬 完成 7 个任务: 将所有以sl开头的技能迁移到Work模式下，包括处理带脚本的技能打包和同步, 检查北冥神功技能包的外部版本中是否残留快手、沈浪等个人和公司内部信息...",
+        "📁 项目成果: 网页更新 33 个"
       ],
       "deliveries": [
+        {
+          "title": "Migration of sl- Skills to Work Mode",
+          "type": "conversation",
+          "goal": "将所有以sl开头的技能迁移到Work模式下，包括处理带脚本的技能打包和同步",
+          "deliverables": [],
+          "process": [
+            "成功迁移10个sl-技能：6个C类从市场安装，4个D类本地打包上传。关键处理包括将sl-ai-insight的30+外部脚本整合到skill目录，以及为sl-ai-column-writer创建精简版..."
+          ],
+          "tags": [
+            "skill-migration",
+            "Work-mode",
+            "script-packaging"
+          ]
+        },
+        {
+          "title": "北冥神功外部版技能包敏感信息检查",
+          "type": "conversation",
+          "goal": "检查北冥神功技能包的外部版本中是否残留快手、沈浪等个人和公司内部信息",
+          "deliverables": [],
+          "process": [
+            "通过 grep 搜索多个关键词（快手、沈浪、***等）检查了技能包文件，发现一处硬编码的 GitHub 用户名 `xiaoxiong20260206`（位于 `scripts/beiming_expo..."
+          ],
+          "tags": [
+            "security",
+            "code-review",
+            "sensitive-data",
+            "beiing-shengong"
+          ]
+        },
+        {
+          "title": "北冥神功外部版技能包敏感信息清理",
+          "type": "conversation",
+          "goal": "检查北冥神功的外部版技能包中是否还有快手、沈浪等个人和公司内部信息残留，并完成脱敏处理",
+          "deliverables": [],
+          "process": [
+            "通过 grep 命令检测到敏感信息残留后，修复了 `beiming_export.py:3404` 中的硬编码 GitHub 用户名，改为使用环境变量 `CODEFLICKER_GITHUB_USER..."
+          ],
+          "tags": [
+            "beiming-shengong",
+            "data-sanitization",
+            "sensitive-info",
+            "codeflicker",
+            "export"
+          ]
+        },
+        {
+          "title": "Weekly Cultivation System Status Report",
+          "type": "conversation",
+          "goal": "检查每日修炼系统的状态并生成最终报告",
+          "deliverables": [],
+          "process": [
+            "运行了 daily_orchestrator.py status 命令检查修炼状态，所有 5 个步骤已完成：数据收集、预分析、对话复盘、内功修炼（记忆/技能/知识优化）、发布同步。关键成果：FTR率1..."
+          ],
+          "tags": [
+            "cultivation-system",
+            "status-report",
+            "automation",
+            "optimization"
+          ]
+        },
         {
           "title": "Skill Optimization and Bug Fixes",
           "type": "conversation",
@@ -97,21 +157,6 @@
             "file-management",
             "trigger-words",
             "meta-execution"
-          ]
-        },
-        {
-          "title": "Skill Migrator Installation and API Analysis",
-          "type": "conversation",
-          "goal": "安装 skill-migrator 技能并分析其使用方法，同时更新技能文档以包含正确的 MyFlicker-Work Skill 创建 API",
-          "deliverables": [],
-          "process": [
-            "成功安装 skill-migrator 技能，发现正确的 MyFlicker-Work 模式 Skill 创建 API 为 `/api/v1/fe/skills/upload`，更新了技能文档并纠正了..."
-          ],
-          "tags": [
-            "skill-migrator",
-            "api-analysis",
-            "skill-installation",
-            "evolution-record"
           ]
         },
         {
@@ -151,28 +196,28 @@
           "goal": "项目开发与维护",
           "deliverables": [
             {
-              "name": "index.html",
-              "type": "page",
-              "url": null
+              "name": "CHANGELOG.md",
+              "type": "document",
+              "url": ""
             },
             {
-              "name": "barry-zhang-anthropic.html",
-              "type": "page",
-              "url": null
+              "name": "README.md",
+              "type": "document",
+              "url": ""
             },
             {
-              "name": "ai-leaders-2026.html",
-              "type": "page",
-              "url": null
+              "name": "install-guide.md",
+              "type": "document",
+              "url": ""
             }
           ],
           "process": [
-            "网页更新 324 个",
-            "文档完善 129 份",
+            "网页更新 33 个",
+            "文档完善 157 份",
             "功能代码优化"
           ],
           "commitCount": 0,
-          "fileChangeCount": 559,
+          "fileChangeCount": 425,
           "deployUrl": null
         }
       ],
@@ -190,6 +235,10 @@
             "description": "\"AI行业洞察平台专属技能。当用户明确提到'AI洞察'、'AI日报'、'AI周报'或执行AI行业调研任务时使用。核心场景"
           },
           {
+            "name": "baoyu-cover-image",
+            "description": "从 Markdown 文章生成高质量封面图。支持10种配色方案（暖色、冷色、暗色、大地色、鲜艳、柔和、复古、单色等）、7"
+          },
+          {
             "name": "upload-bs3",
             "description": "上传本地文件到 S3 并返回 7 天有效的临时分享链接。触发词：「临时分享」「短期链接」「上传到S3」「7天链接」。当用"
           },
@@ -199,7 +248,12 @@
           }
         ],
         "newKnowledge": [],
-        "updatedKnowledge": [],
+        "updatedKnowledge": [
+          {
+            "name": "metrics-log",
+            "category": "self-evolution"
+          }
+        ],
         "newMemory": [],
         "updatedMemory": [],
         "trend": "stable"
@@ -211,8 +265,8 @@
       "knowledgeChange": 0,
       "memoryChange": 0,
       "highlights": [
-        "💬 完成 4 个任务: 修复技能系统中的多个问题，包括文件缺失、触发词冲突和调用名称不一致, 安装 skill-migrator 技能并分析其使用方法，同时更新技能文档以包含......",
-        "📁 项目成果: 网页更新 324 个"
+        "💬 完成 7 个任务: 将所有以sl开头的技能迁移到Work模式下，包括处理带脚本的技能打包和同步, 检查北冥神功技能包的外部版本中是否残留快手、沈浪等个人和公司内部信息...",
+        "📁 项目成果: 网页更新 33 个"
       ]
     },
     {
