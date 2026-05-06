@@ -92,9 +92,10 @@ function renderSkillTechTree(container, skills) {
             });
         }
         if (tree) {
+            _buildNameMap((tree.engine || {}).children);
             _buildNameMap((tree.meta || {}).children);
-            _buildNameMap((tree.domain_pack || {}).children);
-            _buildNameMap((tree.execution || {}).children);
+            _buildNameMap((tree.domain || {}).children);
+            _buildNameMap((tree.tool || {}).children);
         }
     }
     
@@ -151,23 +152,35 @@ function renderSkillTechTree(container, skills) {
         return;
     }
     
+    var engineLayer = tree.engine || {};
     var metaLayer = tree.meta || {};
-    var domainLayer = tree.domain_pack || {};
-    var execLayer = tree.execution || {};
+    var domainLayer = tree.domain || {};
+    var toolLayer = tree.tool || {};
     var engineRoles = relationships.engine_roles || {};
     
-    // 元能力层子分类 — 按 role 稳定标识符匹配（不依赖中文 key）
+    // L1引擎层子分类 — 从 engineLayer.children 读取
+    var engineChildren = engineLayer.children || {};
+    var engineCat = null;
+    var eKeys = Object.keys(engineChildren);
+    for (var ek = 0; ek < eKeys.length; ek++) {
+        var ec = engineChildren[eKeys[ek]];
+        if (ec.role === 'evolution') engineCat = ec;
+    }
+
+    // L2元能力层子分类 — 按 role 稳定标识符匹配（六维）
     var metaChildren = metaLayer.children || {};
-    var engineCat = null, cognitiveCat = null, systemCat = null;
+    var perceptionCat = null, reasoningCat = null, executionCat = null, collaborationCat = null, expressionCat = null;
     var metaKeys = Object.keys(metaChildren);
     for (var mk = 0; mk < metaKeys.length; mk++) {
         var mc = metaChildren[metaKeys[mk]];
-        if (mc.role === 'engine') engineCat = mc;
-        else if (mc.role === 'cognitive') cognitiveCat = mc;
-        else if (mc.role === 'system') systemCat = mc;
+        if (mc.role === 'perception') perceptionCat = mc;
+        else if (mc.role === 'reasoning') reasoningCat = mc;
+        else if (mc.role === 'execution') executionCat = mc;
+        else if (mc.role === 'collaboration') collaborationCat = mc;
+        else if (mc.role === 'expression') expressionCat = mc;
     }
     
-    // 引擎技能映射
+    // 引擎技能映射 — 从 engineLayer 读取
     var engineSkillMap = {};
     if (engineCat && engineCat.skills) {
         for (var i = 0; i < engineCat.skills.length; i++) {
@@ -178,7 +191,7 @@ function renderSkillTechTree(container, skills) {
     function findSkillByName(skillName) {
         if (engineSkillMap[skillName]) return engineSkillMap[skillName];
         // 遍历所有分类查找
-        var allLayers = [metaChildren, (domainLayer.children || {}), (execLayer.children || {})];
+        var allLayers = [engineChildren, metaChildren, (domainLayer.children || {}), (toolLayer.children || {})];
         for (var li = 0; li < allLayers.length; li++) {
             var layerCats = allLayers[li];
             var catKeys = Object.keys(layerCats);
@@ -358,51 +371,34 @@ function renderSkillTechTree(container, skills) {
         '</div>';
     }
     
-    // === 思维方法（完全遵循Demo风格）===
-    var cognitiveHtml = '';
-    if (cognitiveCat && cognitiveCat.skills) {
-        var cogNodes = '';
-        // 跳过已在自进化引擎"主动自驱"位置的技能
-        var skipInCognitive = ['meta-proactive-agent'];
-        // 思维方法技能的显示名称和角色映射
-        // 思维方法：直接读 displayName/displayRole，无硬编码 cognitiveNameMap
-        for (var ci = 0; ci < cognitiveCat.skills.length; ci++) {
-            var s = cognitiveCat.skills[ci];
-            if (skipInCognitive.indexOf(s.name) >= 0) continue;
-            var cid = storeSkill(s);
-            var cmap = { name: s.displayName || getName(s), role: s.displayRole || '思维工具' };
-            var clevel = s.level || 1;
-            var cexp = s.exp || (clevel * 20);
-            var cdash = 50 * (1 - cexp / 100);
-            cogNodes += '<div class="engine-node" onmouseenter="showTreeTooltip(event, \'' + cid + '\', \'skill\')" onmouseleave="hideTooltip()">' +
-                '<div class="engine-node-ring"><svg viewBox="0 0 22 22"><circle class="ring-bg" cx="11" cy="11" r="8"/><circle class="ring-progress" cx="11" cy="11" r="8" stroke-dasharray="50" stroke-dashoffset="' + cdash + '" style="stroke: var(--cognitive-yellow);"/></svg><span class="engine-node-level">' + clevel + '</span></div>' +
-                '<div class="engine-node-info"><span class="engine-node-name">' + cmap.name + '</span><span class="engine-node-role">' + cmap.role + '</span></div></div>';
+    // === L2元能力层 — 六维分型 ===
+    // 渲染每个维度为一个 method-section
+    var metaDimSections = '';
+    var dimConfigs = [
+        { cat: perceptionCat, icon: '👁️', title: '感知维度', desc: '看清输入 — 上下文质量和信号筛选', colorVar: 'var(--cognitive-yellow)' },
+        { cat: reasoningCat, icon: '🧠', title: '推理维度', desc: '深层判断 — 类比迁移、本质洞察、不确定性量化', colorVar: 'var(--cognitive-yellow)' },
+        { cat: executionCat, icon: '⚙️', title: '执行维度', desc: '精准落地 — 边界感知和调试诊断', colorVar: 'var(--system-teal)' },
+        { cat: collaborationCat, icon: '🤝', title: '协作维度', desc: '人机对齐 — 信任建立和透明度', colorVar: 'var(--cognitive-yellow)' },
+        { cat: expressionCat, icon: '📝', title: '表达维度', desc: '输出质量 — 写作规范基础层', colorVar: 'var(--cognitive-yellow)' }
+    ];
+    for (var dc = 0; dc < dimConfigs.length; dc++) {
+        var dimCfg = dimConfigs[dc];
+        var dimCat = dimCfg.cat;
+        if (!dimCat || !dimCat.skills || dimCat.skills.length === 0) continue;
+        var dimNodes = '';
+        for (var di = 0; di < dimCat.skills.length; di++) {
+            var ds = dimCat.skills[di];
+            var did = storeSkill(ds);
+            var dlevel = ds.level || 1;
+            var dexp = ds.exp || (dlevel * 20);
+            var ddash = 50 * (1 - dexp / 100);
+            dimNodes += '<div class="engine-node" onmouseenter="showTreeTooltip(event, \'' + did + '\', \'skill\')" onmouseleave="hideTooltip()">' +
+                '<div class="engine-node-ring"><svg viewBox="0 0 22 22"><circle class="ring-bg" cx="11" cy="11" r="8"/><circle class="ring-progress" cx="11" cy="11" r="8" stroke-dasharray="50" stroke-dashoffset="' + ddash + '" style="stroke: ' + dimCfg.colorVar + ';"/></svg><span class="engine-node-level">' + dlevel + '</span></div>' +
+                '<div class="engine-node-info"><span class="engine-node-name">' + (ds.displayName || getName(ds)) + '</span><span class="engine-node-role">' + (ds.displayRole || '元能力') + '</span></div></div>';
         }
-        cognitiveHtml = '<div class="method-section method-section--cognitive">' +
-            '<div class="method-header"><span class="method-icon">\uD83E\uDDE0</span><span class="method-title">思维方法</span><span class="method-desc">认知框架：怎么想，贯穿所有任务</span></div>' +
-            '<div class="method-content"><div class="method-grid">' + cogNodes + '</div></div></div>';
-    }
-    
-    // === 做事方法（完全遵循Demo风格）===
-    var systemHtml = '';
-    if (systemCat && systemCat.skills) {
-        var sysNodes = '';
-        // 做事方法技能的显示名称和角色映射
-        // 做事方法：直接读 displayName/displayRole，无硬编码 systemNameMap
-        for (var si = 0; si < systemCat.skills.length; si++) {
-            var ss = systemCat.skills[si];
-            var ssid = storeSkill(ss);
-            var ssmap = { name: ss.displayName || getName(ss), role: ss.displayRole || '执行工具' };
-            var sslevel = ss.level || 1;
-            var ssexp = ss.exp || (sslevel * 20);
-            var ssdash = 50 * (1 - ssexp / 100);
-            sysNodes += '<div class="engine-node" onmouseenter="showTreeTooltip(event, \'' + ssid + '\', \'skill\')" onmouseleave="hideTooltip()">' +
-                '<div class="engine-node-ring"><svg viewBox="0 0 22 22"><circle class="ring-bg" cx="11" cy="11" r="8"/><circle class="ring-progress" cx="11" cy="11" r="8" stroke-dasharray="50" stroke-dashoffset="' + ssdash + '" style="stroke: var(--system-teal);"/></svg><span class="engine-node-level">' + sslevel + '</span></div>' +
-                '<div class="engine-node-info"><span class="engine-node-name">' + ssmap.name + '</span><span class="engine-node-role">' + ssmap.role + '</span></div></div>';
-        }
-        systemHtml = '<div class="method-section method-section--system">' +
-            '<div class="method-header"><span class="method-icon">\u2699\uFE0F</span><span class="method-title">做事方法</span><span class="method-desc">执行框架：怎么做，保障做事质量</span></div>' +
-            '<div class="method-content"><div class="method-grid">' + sysNodes + '</div></div></div>';
+        metaDimSections += '<div class="method-section method-section--cognitive">' +
+            '<div class="method-header"><span class="method-icon">' + dimCfg.icon + '</span><span class="method-title">' + dimCfg.title + '</span><span class="method-desc">' + dimCfg.desc + '</span></div>' +
+            '<div class="method-content"><div class="method-grid">' + dimNodes + '</div></div></div>';
     }
     
     function renderLayerTransition(text) {
@@ -427,11 +423,11 @@ function renderSkillTechTree(container, skills) {
         domainHtml = '<div class="domain-layer"><div class="domain-layer-header"><span class="domain-layer-icon">\uD83C\uDFAF</span><span class="domain-layer-title">领域能力层</span><span class="domain-layer-desc">特定领域的完整解决方案</span></div><div class="domain-cards-grid">' + domainCards + '</div></div>';
     }
     
-    // === 执行技能层 ===
+    // === 工具层 ===
     var execHtml = '';
-    if (execLayer.children && Object.keys(execLayer.children).length > 0) {
+    if (toolLayer.children && Object.keys(toolLayer.children).length > 0) {
         var execGroups = '';
-        var eEntries = Object.entries(execLayer.children);
+        var eEntries = Object.entries(toolLayer.children);
         for (var ei = 0; ei < eEntries.length; ei++) {
             var eName = eEntries[ei][0];
             var eInfo = eEntries[ei][1];
@@ -472,15 +468,17 @@ function renderSkillTechTree(container, skills) {
             var execId = storeGeneric(eInfo.icon || '\uD83D\uDEE0\uFE0F', eClean, '包含 ' + (eInfo.count || 0) + ' 个技能', '');
             execGroups += '<div class="exec-group" onmouseenter="showTreeTooltip(event, \'' + execId + '\', \'skill\')" onmouseleave="hideTooltip()"><div class="exec-group-header"><span class="exec-group-icon">' + (eInfo.icon || '\uD83D\uDEE0\uFE0F') + '</span><span class="exec-group-name">' + eClean + '</span><span class="exec-group-count">' + (eInfo.count || 0) + '</span></div><div class="exec-group-chips">' + eChips + '</div></div>';
         }
-        execHtml = '<div class="exec-layer" id="exec-layer-toggle"><div class="exec-layer-header" onclick="toggleExecLayer()"><span class="exec-layer-icon">\uD83D\uDEE0\uFE0F</span><span class="exec-layer-title">执行技能层</span><span class="exec-layer-desc">做具体事情的工具</span><span class="exec-layer-count">' + (execLayer.count || 0) + '</span><span class="exec-layer-toggle-icon">\u25BC</span></div><div class="exec-layer-content"><div class="exec-groups-grid">' + execGroups + '</div></div></div>';
+        execHtml = '<div class="exec-layer" id="exec-layer-toggle"><div class="exec-layer-header" onclick="toggleExecLayer()"><span class="exec-layer-icon">\uD83D\uDEE0\uFE0F</span><span class="exec-layer-title">工具层</span><span class="exec-layer-desc">平台提供，拿来就用，不维护</span><span class="exec-layer-count">' + (toolLayer.count || 0) + '</span><span class="exec-layer-toggle-icon">\u25BC</span></div><div class="exec-layer-content"><div class="exec-groups-grid">' + execGroups + '</div></div></div>';
     }
     
     // ========== 组装 ==========
     container.innerHTML = '<div class="skill-architecture">' +
-        '<div class="meta-layer"><div class="meta-layer-label"><span class="meta-label-icon">\uD83C\uDFDB\uFE0F</span><span class="meta-label-text">元能力层</span><span class="meta-label-desc">决定"我是谁"</span></div><div class="meta-layer-content">' + engineHtml + '<div class="bottom-row">' + cognitiveHtml + systemHtml + '</div></div></div>' +
+        '<div class="meta-layer"><div class="meta-layer-label"><span class="meta-label-icon">\uD83D\uDD04</span><span class="meta-label-text">引擎层</span><span class="meta-label-desc">自进化闭环</span></div><div class="meta-layer-content">' + engineHtml + '</div></div>' +
+        renderLayerTransition('引擎驱动元能力') +
+        '<div class="meta-layer"><div class="meta-layer-label"><span class="meta-label-icon">\uD83E\uDDE0</span><span class="meta-label-text">元能力层</span><span class="meta-label-desc">六维分型 — 感知·推理·执行·协作·表达</span></div><div class="meta-layer-content">' + metaDimSections + '</div></div>' +
         renderLayerTransition('元能力驱动领域能力') +
         domainHtml +
-        renderLayerTransition('领域调用执行技能') +
+        renderLayerTransition('领域调用工具技能') +
         execHtml +
     '</div>';
     
