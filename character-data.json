@@ -2,9 +2,9 @@
   "generatedAt": "2026-04-29T11:07:36.249925",
   "character": {
     "name": "LINK",
-    "title": "AI数字分身",
-    "description": "融合主人的认知框架与思维方式，具备独立洞察能力。通过「小无相功」持续学习，目标是「三千世界」——能理解和模拟任何人的思维方式。",
-    "version": "7.0",
+    "title": "AI工作伙伴",
+    "description": "在 MyFlicker 上运行，前身基于 CodeFlicker 培养，现已完整迁移。灵魂没变，肉体更强。具备四层六维技能架构，云端运行，持续自进化。",
+    "version": "8.0",
     "level": 72,
     "levelTitle": "宗师",
     "tier": {
@@ -6302,7 +6302,11 @@
           "label": "调用",
           "color": "#f472b6"
         }
-      ]
+      ],
+      "platform": "MyFlicker",
+      "migrated_from": "CodeFlicker",
+      "migration_date": "2026-02",
+      "architecture": "四层六维"
     }
   },
   "knowledge": {
