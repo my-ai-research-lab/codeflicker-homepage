@@ -2099,6 +2099,10 @@
     background: rgba(200, 220, 240, 0.08);
     box-shadow: 0 4px 12px rgba(200, 220, 240, 0.1);
 }
+/* P1.2: lifecycle ring-progress uses --node-color so JS inline vars override default */
+.engine-node--lifecycle .engine-node-ring svg .ring-progress {
+    stroke: var(--node-color, rgba(200, 220, 240, 0.6));
+}
 /* 生命周期连接器 */
 .lifecycle-connector {
     display: flex;
@@ -2149,6 +2153,78 @@
     pointer-events: none;
     overflow: visible;
 }
+
+/* ==================== L2 元能力层 子维度布局 ==================== */
+.subdim-block {
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(0, 212, 255, 0.1);
+    border-radius: 10px;
+    padding: 12px 14px 14px;
+    margin-bottom: 10px;
+}
+.subdim-block:last-child { margin-bottom: 0; }
+.subdim-header {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(0, 212, 255, 0.08);
+}
+.subdim-icon { font-size: 16px; }
+.subdim-title {
+    font-family: var(--font-title);
+    font-size: 13px;
+    font-weight: 700;
+    color: rgba(200, 220, 240, 0.85);
+    letter-spacing: 0.5px;
+}
+.subdim-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.subdim-arrow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 4px 0 8px;
+    gap: 2px;
+}
+.subdim-arrow-line { width: 1px; height: 16px; background: rgba(0, 212, 255, 0.25); }
+.subdim-arrow-tip { font-size: 10px; color: rgba(0, 212, 255, 0.4); }
+.subdim-arrow-label { font-size: 10px; color: rgba(200, 220, 240, 0.35); font-family: var(--font-mono); }
+.meta-bifurcated-layout {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 0;
+    align-items: start;
+}
+.meta-col { padding: 0 8px; }
+.meta-col-header {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 12px;
+    padding: 8px 12px;
+    background: rgba(0, 212, 255, 0.06);
+    border-radius: 8px;
+    border: 1px solid rgba(0, 212, 255, 0.1);
+}
+.meta-col-icon { font-size: 16px; }
+.meta-col-title { font-family: var(--font-title); font-size: 14px; font-weight: 700; color: var(--sheikah-blue-light); }
+.meta-col-desc { font-size: 11px; color: rgba(200, 220, 240, 0.45); margin-left: auto; font-family: var(--font-mono); }
+.meta-col-divider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 8px;
+    gap: 4px;
+    margin-top: 40px;
+}
+.meta-col-divider .divider-line { width: 1px; height: 30px; background: rgba(0, 212, 255, 0.15); }
+.meta-col-divider .divider-label { font-size: 14px; color: rgba(0, 212, 255, 0.3); font-weight: 700; }
 
 /* ==================== 响应式调整 ==================== */
 @media (max-width: 768px) {

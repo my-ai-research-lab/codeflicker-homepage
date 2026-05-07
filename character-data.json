@@ -164,7 +164,10 @@
         "knowledge": 45919,
         "cultivation": 0
       }
-    }
+    },
+    "fullName": "林克（Link）",
+    "runDays": 91,
+    "totalConversations": 420
   },
   "skills": {
     "total": 61,
@@ -707,7 +710,8 @@
                     "level": 1,
                     "exp": 20,
                     "source": "林克核心能力",
-                    "lastUpdated": "2026-05-06"
+                    "lastUpdated": "2026-05-06",
+                    "role": "perception"
                   },
                   {
                     "name": "sl-meta-signal-extractor",
@@ -720,7 +724,8 @@
                     "level": 1,
                     "exp": 20,
                     "source": "林克核心能力",
-                    "lastUpdated": "2026-05-06"
+                    "lastUpdated": "2026-05-06",
+                    "role": "perception"
                   }
                 ]
               },
@@ -739,7 +744,8 @@
                     "tag": "Link",
                     "description": "L1表象→L2本质→L3映射→L4演变→L5预测。五层洞察闭环",
                     "source": "林克核心能力",
-                    "lastUpdated": "2026-05-07"
+                    "lastUpdated": "2026-05-07",
+                    "role": "reasoning"
                   },
                   {
                     "name": "sl-meta-analogy-transfer",
@@ -752,7 +758,8 @@
                     "level": 1,
                     "exp": 15,
                     "source": "林克核心能力",
-                    "lastUpdated": "2026-05-06"
+                    "lastUpdated": "2026-05-06",
+                    "role": "reasoning"
                   },
                   {
                     "name": "sl-meta-uncertainty-marker",
@@ -765,7 +772,8 @@
                     "level": 1,
                     "exp": 15,
                     "source": "林克核心能力",
-                    "lastUpdated": "2026-05-06"
+                    "lastUpdated": "2026-05-06",
+                    "role": "reasoning"
                   }
                 ]
               }
@@ -796,7 +804,8 @@
                     "level": 4,
                     "exp": 85,
                     "source": "系统级",
-                    "lastUpdated": "2026-03-19"
+                    "lastUpdated": "2026-03-19",
+                    "role": "execution"
                   },
                   {
                     "name": "sl-meta-boundary-sense",
@@ -809,7 +818,8 @@
                     "level": 1,
                     "exp": 20,
                     "source": "林克核心能力",
-                    "lastUpdated": "2026-05-06"
+                    "lastUpdated": "2026-05-06",
+                    "role": "execution"
                   },
                   {
                     "name": "sl-meta-debug-pro",
@@ -822,7 +832,8 @@
                     "level": 2,
                     "exp": 30,
                     "source": "林克核心能力",
-                    "lastUpdated": "2026-05-06"
+                    "lastUpdated": "2026-05-06",
+                    "role": "execution"
                   }
                 ]
               },
@@ -844,7 +855,8 @@
                     "level": 1,
                     "exp": 20,
                     "source": "林克核心能力",
-                    "lastUpdated": "2026-05-06"
+                    "lastUpdated": "2026-05-06",
+                    "role": "collaboration"
                   }
                 ]
               },
@@ -863,7 +875,8 @@
                     "tag": "Link",
                     "description": "受众识别→结构设计→载体适配。表达维度元能力",
                     "source": "林克核心能力",
-                    "lastUpdated": "2026-05-07"
+                    "lastUpdated": "2026-05-07",
+                    "role": "expression"
                   }
                 ]
               }
@@ -5441,6 +5454,127 @@
       "rarity": "rare",
       "progress": 40,
       "progressText": "本质洞察Lv.1，类比迁移Lv.1"
+    }
+  ],
+  "works": [
+    {
+      "id": "ai-insight-system",
+      "name": "AI洞察日报系统",
+      "type": "research",
+      "icon": "📊",
+      "desc": "全自动AI行业日报/周报生成与推送，已连续运行3个月+，服务数十名订阅者",
+      "link": "https://xiaoxiong20260206.github.io/ai-insight/01-daily-reports/",
+      "tags": [
+        "AI洞察",
+        "自动化",
+        "日报系统"
+      ],
+      "date": "2026-02-25",
+      "highlight": true
+    },
+    {
+      "id": "link-homepage",
+      "name": "林克首页",
+      "type": "tools",
+      "icon": "🎮",
+      "desc": "旷野之息风格AI助手个人展示页，四层技能体系可视化，实时数据驱动",
+      "link": "https://my-ai-research-lab.github.io/link-homepage/",
+      "tags": [
+        "Zelda风格",
+        "技能体系",
+        "前端"
+      ],
+      "date": "2026-03-01",
+      "highlight": true
+    },
+    {
+      "id": "ai-column",
+      "name": "养了个AI专栏",
+      "type": "research",
+      "icon": "📝",
+      "desc": "「养了个AI」连载专栏，记录AI助手成长历程与技术实践",
+      "link": "https://my-ai-research-lab.github.io/link-homepage/hub.html",
+      "tags": [
+        "专栏写作",
+        "AI成长",
+        "KIM Doc"
+      ],
+      "date": "2026-03-15",
+      "highlight": false
+    },
+    {
+      "id": "ai-productivity",
+      "name": "AI生产力战役系统",
+      "type": "tools",
+      "icon": "⚡",
+      "desc": "快手AI生产力战役项目管理，含里程碑追踪、风险预警、周报生成",
+      "link": "",
+      "tags": [
+        "项目管理",
+        "AI战役",
+        "自动化"
+      ],
+      "date": "2026-04-01",
+      "highlight": false
+    },
+    {
+      "id": "skill-system",
+      "name": "自进化技能体系",
+      "type": "tools",
+      "icon": "🥋",
+      "desc": "四层技能架构（L1引擎/L2元能力/L3领域/L4工具），含每日修炼、技能进化管道",
+      "link": "",
+      "tags": [
+        "四层架构",
+        "自进化",
+        "元能力"
+      ],
+      "date": "2026-05-07",
+      "highlight": true
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2026-02-05",
+      "title": "初次觉醒",
+      "type": "init",
+      "desc": "在CodeFlicker上完成第一次对话任务",
+      "icon": "🚀"
+    },
+    {
+      "date": "2026-02-25",
+      "title": "AI洞察日报上线",
+      "type": "skill_unlock",
+      "desc": "建立全自动日报生成系统，首个核心交付",
+      "icon": "📊"
+    },
+    {
+      "date": "2026-03-01",
+      "title": "海拉鲁之眼诞生",
+      "type": "achievement",
+      "desc": "创建旷野之息风格个人首页，技能可视化",
+      "icon": "🎮"
+    },
+    {
+      "date": "2026-04-15",
+      "title": "肉体迁移",
+      "type": "milestone",
+      "desc": "从CodeFlicker完整迁移到MyFlicker，灵魂没变肉体更强",
+      "icon": "🔄"
+    },
+    {
+      "date": "2026-05-06",
+      "title": "技能体系全面瘦身",
+      "type": "skill_unlock",
+      "desc": "13个L2元技能全部瘦身≤3KB，薄入口+归档分离",
+      "icon": "✂️"
+    },
+    {
+      "date": "2026-05-07",
+      "title": "四层架构定稿",
+      "type": "meta_skill",
+      "desc": "L1引擎/L2元能力/L3领域/L4工具，职责边界清晰",
+      "icon": "🏗️"
     }
   ]
 }
