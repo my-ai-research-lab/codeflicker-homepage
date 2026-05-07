@@ -1175,16 +1175,16 @@
 }
 .kn-label-text {
     font-family: var(--font-title);
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 700;
     color: var(--kn-color, rgba(200, 220, 240, 0.9));
     text-shadow: 0 0 10px var(--kn-color, rgba(200,220,240,0.3));
 }
 .kn-label-desc {
-    font-size: 10px;
-    color: rgba(200, 220, 240, 0.45);
+    font-size: 12px;
+    color: rgba(200, 220, 240, 0.65);
     margin-left: 4px;
-    font-family: var(--font-mono);
+    font-family: var(--font-body);
 }
 .kn-label-align {
     margin-left: auto;
@@ -1208,8 +1208,8 @@
 /* 知识领域卡片网格 */
 .kn-cards-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 12px;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 14px;
 }
 
 /* 知识领域卡片 */
@@ -1255,7 +1255,7 @@
 }
 .kn-card-name {
     font-family: var(--font-title);
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 700;
     color: rgba(200, 220, 240, 0.95);
     white-space: nowrap;
@@ -1263,14 +1263,14 @@
     text-overflow: ellipsis;
 }
 .kn-card-meta {
-    font-size: 10px;
-    color: rgba(200, 220, 240, 0.5);
+    font-size: 12px;
+    color: rgba(200, 220, 240, 0.65);
     margin-top: 2px;
 }
 .kn-card-count {
     font-family: var(--font-mono);
     font-weight: 700;
-    font-size: 14px;
+    font-size: 16px;
     color: var(--kn-color, rgba(200, 220, 240, 0.8));
     text-shadow: 0 0 6px var(--kn-color, rgba(200,220,240,0.3));
 }
@@ -1371,27 +1371,27 @@
 }
 .mem-label-text {
     font-family: var(--font-title);
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 700;
     color: var(--mem-layer-color, rgba(200, 220, 240, 0.9));
     text-shadow: 0 0 10px var(--mem-layer-color, rgba(200,220,240,0.3));
 }
 .mem-label-desc {
-    font-size: 10px;
-    color: rgba(200, 220, 240, 0.45);
+    font-size: 12px;
+    color: rgba(200, 220, 240, 0.65);
     margin-left: 4px;
-    font-family: var(--font-mono);
+    font-family: var(--font-body);
 }
 .mem-label-align {
     margin-left: auto;
-    font-size: 9px;
-    color: rgba(200, 220, 240, 0.35);
+    font-size: 10px;
+    color: rgba(200, 220, 240, 0.45);
     font-family: var(--font-mono);
     letter-spacing: 0.3px;
 }
 .mem-label-count {
     font-family: var(--font-mono);
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 700;
     margin-left: 8px;
     color: var(--mem-layer-color, rgba(200, 220, 240, 0.8));
@@ -1404,8 +1404,8 @@
 /* 记忆分类卡片网格 */
 .mem-cards-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-    gap: 12px;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 14px;
 }
 
 /* 记忆分类卡片 */
@@ -1452,7 +1452,7 @@
 }
 .mem-cat-name {
     font-family: var(--font-title);
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 600;
     color: rgba(200, 220, 240, 0.9);
     flex: 1;
@@ -1507,9 +1507,11 @@
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
-.mem-item-icon { font-size: 11px; flex-shrink: 0; }
+.mem-item-icon { font-size: 14px; flex-shrink: 0; }
 .mem-item-title {
-    max-width: 150px;
+    font-size: 13px;
+    color: rgba(200, 220, 240, 0.85);
+    max-width: 180px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;

@@ -1794,23 +1794,6 @@
             "sizeKB": 467.6,
             "heatLevel": 5,
             "recentCount": 0
-          },
-          "promotion-standards": {
-            "name": "promotion-standards",
-            "displayName": "晋升标准库",
-            "icon": "🏅",
-            "color": "#f59e0b",
-            "description": "快手各通道技术晋升职级标准，供晋升评审技能引用",
-            "layerTag": "L2-domain",
-            "relatedSkills": [
-              "ks-promotion-review-sabcd",
-              "ks-promotion-coaching"
-            ],
-            "relatedMemories": [],
-            "fileCount": 9,
-            "sizeKB": 53.9,
-            "heatLevel": 3,
-            "recentCount": 0
           }
         },
         "totalFiles": 151,
@@ -1840,6 +1823,45 @@
             "sizeKB": 1.1,
             "heatLevel": 1,
             "recentCount": 0
+          },
+          "shell-patterns": {
+            "displayName": "Shell防御性编程",
+            "name": "shell-patterns",
+            "icon": "🖥️",
+            "fileCount": 5,
+            "sizeKB": 12,
+            "heatLevel": 4,
+            "description": "Shell脚本防御性编程模式与最佳实践",
+            "relatedSkills": [
+              "evo-meta-execution"
+            ],
+            "layerTag": "L3-execution"
+          },
+          "web-patterns": {
+            "displayName": "网页开发踩坑",
+            "name": "web-patterns",
+            "fileCount": 8,
+            "sizeKB": 18,
+            "heatLevel": 3,
+            "description": "前端开发常见问题与解决方案",
+            "relatedSkills": [
+              "sl-zelda-ui",
+              "website-builder"
+            ],
+            "layerTag": "L3-execution"
+          },
+          "ai-workflow": {
+            "displayName": "AI工作流规范",
+            "name": "ai-workflow",
+            "fileCount": 12,
+            "sizeKB": 25,
+            "heatLevel": 5,
+            "description": "AI日报/周报工作流、踩坑经验、P0红线",
+            "relatedSkills": [
+              "sl-ai-insight",
+              "sl-ai-column-writer"
+            ],
+            "layerTag": "L3-execution"
           }
         },
         "totalFiles": 1,
