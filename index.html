@@ -3189,204 +3189,7 @@
             font-family: 'Noto Serif SC', serif;
         }
 
-        /* ===== 日报重构样式 ===== */
-        .daily-header-bar {
-            display: flex; align-items: center; gap: 10px;
-            margin-bottom: 10px;
-        }
-        .daily-status-badge {
-            display: flex; align-items: center; gap: 5px;
-            padding: 3px 10px;
-            border-radius: 12px;
-            background: rgba(74,222,128,0.1);
-            border: 1px solid rgba(74,222,128,0.2);
-            font-size: 11px; color: var(--parchment-dark);
-        }
-        .daily-status-badge.attention {
-            background: rgba(231,76,60,0.1);
-            border-color: rgba(231,76,60,0.25);
-        }
-        .status-dot {
-            width: 6px; height: 6px; border-radius: 50%;
-            background: #4ade80;
-        }
-        .status-dot.attention { background: #e74c3c; }
-
-        .daily-summary-bar {
-            display: flex; align-items: center;
-            background: rgba(42,37,32,0.6);
-            border: 1px solid rgba(201,168,76,0.1);
-            border-radius: 4px;
-            padding: 8px 16px;
-            margin-bottom: 10px; gap: 0;
-        }
-        .summary-stat {
-            flex: 1; text-align: center;
-        }
-        .summary-num {
-            display: block;
-            font-family: 'Cinzel', serif; font-weight: 700;
-            font-size: 18px; color: var(--hylian-gold);
-        }
-        .summary-num.positive { color: #4ade80; }
-        .summary-label {
-            display: block; font-size: 10px;
-            color: var(--parchment-dark); opacity: 0.4;
-            margin-top: 1px;
-        }
-        .summary-divider {
-            width: 1px; height: 30px;
-            background: rgba(201,168,76,0.1);
-            margin: 0 4px;
-        }
-
-        /* 日报行和卡片 */
-        .daily-row {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 10px; margin-bottom: 10px;
-        }
-        .daily-row--top { grid-template-columns: 3fr 2fr; }
-        .daily-card {
-            background: rgba(42,37,32,0.85);
-            border: 1px solid rgba(201,168,76,0.12);
-            border-radius: 4px;
-            padding: 12px 14px;
-            margin-bottom: 10px;
-        }
-        .daily-card:last-child { margin-bottom: 0; }
-        .daily-card--attention { border-left: 3px solid rgba(74,222,128,0.4); }
-        .daily-card--attention.has-attention { border-left-color: rgba(231,76,60,0.5); }
-        .daily-card--deliveries { border-left: 3px solid rgba(201,168,76,0.4); }
-        .daily-card--evo { border-left: 3px solid rgba(74,222,128,0.3); }
-        .daily-card--growth { border-left: 3px solid rgba(201,168,76,0.3); }
-        .daily-card--insights { border-left: 3px solid rgba(167,139,250,0.4); }
-        .daily-card--plan { border-left: 3px solid rgba(126,200,227,0.25); }
-
-        .daily-card-header {
-            display: flex; align-items: center; gap: 6px;
-            margin-bottom: 10px; padding-bottom: 8px;
-            border-bottom: 1px solid rgba(201,168,76,0.07);
-        }
-        .dc-icon { font-size: 14px; }
-        .dc-title {
-            font-family: 'Cinzel', serif; font-weight: 700;
-            font-size: 12px; color: var(--hylian-gold);
-        }
-        .dc-badge {
-            font-size: 10px; padding: 1px 6px;
-            border-radius: 10px;
-            background: rgba(201,168,76,0.15);
-            color: var(--hylian-gold-light);
-            font-family: 'Cinzel', serif;
-        }
-        .dc-platform {
-            font-size: 10px; color: var(--sheikah-blue);
-            opacity: 0.4; margin-left: auto;
-        }
-        .dc-body { font-size: 12px; color: var(--parchment-dark); }
-        .dc-ok { color: rgba(74,222,128,0.6); font-size: 12px; }
-
-        /* 交付卡片网格 */
-        .delivery-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-            gap: 8px;
-        }
-        .delivery-item {
-            background: rgba(0,0,0,0.2);
-            border-radius: 3px;
-            padding: 10px;
-            border-left: 3px solid var(--dlv-color, #c9a84c);
-        }
-        .dlv-header { display: flex; align-items: center; gap: 5px; margin-bottom: 5px; }
-        .dlv-icon { font-size: 14px; }
-        .dlv-type {
-            font-size: 9px; padding: 1px 5px;
-            border-radius: 3px;
-            background: rgba(255,255,255,0.06);
-            color: var(--parchment-dark); opacity: 0.5;
-        }
-        .dlv-title {
-            font-size: 12px; color: var(--parchment);
-            font-weight: 500; margin-bottom: 4px;
-        }
-        .dlv-result {
-            font-size: 11px; color: var(--parchment-dark);
-            line-height: 1.4; opacity: 0.7;
-        }
-        .dlv-tags { display: flex; flex-wrap: wrap; gap: 3px; margin-top: 5px; }
-        .dlv-tag {
-            font-size: 9px; padding: 1px 5px;
-            border-radius: 2px;
-            background: rgba(201,168,76,0.08);
-            color: var(--hylian-gold); opacity: 0.5;
-        }
-        .no-deliveries {
-            color: var(--parchment-dark); opacity: 0.3;
-            font-size: 12px; padding: 10px 0;
-            text-align: center;
-        }
-
-        /* 进化数据 */
-        .evo-counters {
-            display: flex; gap: 14px; margin-bottom: 8px;
-        }
-        .evo-counter-item {
-            display: flex; flex-direction: column; align-items: center; gap: 1px;
-        }
-        .evo-counter-icon { font-size: 14px; }
-        .evo-counter-val {
-            font-family: 'Cinzel', serif; font-weight: 700;
-            font-size: 18px; color: var(--hylian-gold);
-        }
-        .evo-counter-chg {
-            font-size: 10px; color: #4ade80; min-height: 14px;
-        }
-        .evo-counter-label {
-            font-size: 9px; color: var(--parchment-dark); opacity: 0.4;
-        }
-        .evo-summary {
-            font-size: 11px; color: var(--parchment-dark);
-            opacity: 0.6; line-height: 1.4;
-        }
-
-        /* 今日成长 */
-        .growth-item {
-            display: flex; align-items: flex-start; gap: 6px;
-            padding: 4px 0;
-            border-bottom: 1px solid rgba(201,168,76,0.05);
-        }
-        .growth-item:last-child { border-bottom: none; }
-        .growth-dim {
-            font-size: 10px; color: var(--sheikah-blue);
-            opacity: 0.5; min-width: 50px;
-            font-family: 'Cinzel', serif;
-        }
-        .growth-text { font-size: 11px; color: var(--parchment-dark); line-height: 1.4; }
-
-        /* 今日洞察 */
-        .insight-tldr {
-            font-size: 12px; color: var(--parchment);
-            margin-bottom: 8px; line-height: 1.5;
-            font-style: italic;
-        }
-        .insight-tags { display: flex; flex-wrap: wrap; gap: 5px; }
-        .insight-tag {
-            padding: 3px 8px;
-            background: rgba(167,139,250,0.08);
-            border: 1px solid rgba(167,139,250,0.2);
-            border-radius: 3px;
-            font-size: 11px; color: var(--parchment-dark);
-        }
-
-        /* 定时计划 */
-        .plan-item { display: flex; align-items: center; gap: 8px; padding: 3px 0; }
-        .plan-time {
-            font-family: 'Cinzel', serif; font-size: 10px;
-            color: var(--sheikah-blue); opacity: 0.6; min-width: 38px;
-        }
-        .plan-task { font-size: 11px; color: var(--parchment-dark); }
+        /* ===== 每日修炼布局 ===== */
         .daily-cultivation-layout {
             display: flex;
             flex-direction: column;
@@ -4540,7 +4343,206 @@
             .daily-overview { grid-template-columns: 1fr 1fr; }
             .works-grid { grid-template-columns: 1fr; }
         }
-    </style>
+    
+        /* ===== 日报重构样式 ===== */
+        .daily-header-bar {
+            display: flex; align-items: center; gap: 10px;
+            margin-bottom: 10px;
+        }
+        .daily-status-badge {
+            display: flex; align-items: center; gap: 5px;
+            padding: 3px 10px;
+            border-radius: 12px;
+            background: rgba(74,222,128,0.1);
+            border: 1px solid rgba(74,222,128,0.2);
+            font-size: 11px; color: var(--parchment-dark);
+        }
+        .daily-status-badge.attention {
+            background: rgba(231,76,60,0.1);
+            border-color: rgba(231,76,60,0.25);
+        }
+        .status-dot {
+            width: 6px; height: 6px; border-radius: 50%;
+            background: #4ade80;
+        }
+        .status-dot.attention { background: #e74c3c; }
+
+        .daily-summary-bar {
+            display: flex; align-items: center;
+            background: rgba(42,37,32,0.6);
+            border: 1px solid rgba(201,168,76,0.1);
+            border-radius: 4px;
+            padding: 8px 16px;
+            margin-bottom: 10px; gap: 0;
+        }
+        .summary-stat {
+            flex: 1; text-align: center;
+        }
+        .summary-num {
+            display: block;
+            font-family: 'Cinzel', serif; font-weight: 700;
+            font-size: 18px; color: var(--hylian-gold);
+        }
+        .summary-num.positive { color: #4ade80; }
+        .summary-label {
+            display: block; font-size: 10px;
+            color: var(--parchment-dark); opacity: 0.4;
+            margin-top: 1px;
+        }
+        .summary-divider {
+            width: 1px; height: 30px;
+            background: rgba(201,168,76,0.1);
+            margin: 0 4px;
+        }
+
+        /* 日报行和卡片 */
+        .daily-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px; margin-bottom: 10px;
+        }
+        .daily-row--top { grid-template-columns: 3fr 2fr; }
+        .daily-card {
+            background: rgba(42,37,32,0.85);
+            border: 1px solid rgba(201,168,76,0.12);
+            border-radius: 4px;
+            padding: 12px 14px;
+            margin-bottom: 10px;
+        }
+        .daily-card:last-child { margin-bottom: 0; }
+        .daily-card--attention { border-left: 3px solid rgba(74,222,128,0.4); }
+        .daily-card--attention.has-attention { border-left-color: rgba(231,76,60,0.5); }
+        .daily-card--deliveries { border-left: 3px solid rgba(201,168,76,0.4); }
+        .daily-card--evo { border-left: 3px solid rgba(74,222,128,0.3); }
+        .daily-card--growth { border-left: 3px solid rgba(201,168,76,0.3); }
+        .daily-card--insights { border-left: 3px solid rgba(167,139,250,0.4); }
+        .daily-card--plan { border-left: 3px solid rgba(126,200,227,0.25); }
+
+        .daily-card-header {
+            display: flex; align-items: center; gap: 6px;
+            margin-bottom: 10px; padding-bottom: 8px;
+            border-bottom: 1px solid rgba(201,168,76,0.07);
+        }
+        .dc-icon { font-size: 14px; }
+        .dc-title {
+            font-family: 'Cinzel', serif; font-weight: 700;
+            font-size: 12px; color: var(--hylian-gold);
+        }
+        .dc-badge {
+            font-size: 10px; padding: 1px 6px;
+            border-radius: 10px;
+            background: rgba(201,168,76,0.15);
+            color: var(--hylian-gold-light);
+            font-family: 'Cinzel', serif;
+        }
+        .dc-platform {
+            font-size: 10px; color: var(--sheikah-blue);
+            opacity: 0.4; margin-left: auto;
+        }
+        .dc-body { font-size: 12px; color: var(--parchment-dark); }
+        .dc-ok { color: rgba(74,222,128,0.6); font-size: 12px; }
+
+        /* 交付卡片网格 */
+        .delivery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 8px;
+        }
+        .delivery-item {
+            background: rgba(0,0,0,0.2);
+            border-radius: 3px;
+            padding: 10px;
+            border-left: 3px solid var(--dlv-color, #c9a84c);
+        }
+        .dlv-header { display: flex; align-items: center; gap: 5px; margin-bottom: 5px; }
+        .dlv-icon { font-size: 14px; }
+        .dlv-type {
+            font-size: 9px; padding: 1px 5px;
+            border-radius: 3px;
+            background: rgba(255,255,255,0.06);
+            color: var(--parchment-dark); opacity: 0.5;
+        }
+        .dlv-title {
+            font-size: 12px; color: var(--parchment);
+            font-weight: 500; margin-bottom: 4px;
+        }
+        .dlv-result {
+            font-size: 11px; color: var(--parchment-dark);
+            line-height: 1.4; opacity: 0.7;
+        }
+        .dlv-tags { display: flex; flex-wrap: wrap; gap: 3px; margin-top: 5px; }
+        .dlv-tag {
+            font-size: 9px; padding: 1px 5px;
+            border-radius: 2px;
+            background: rgba(201,168,76,0.08);
+            color: var(--hylian-gold); opacity: 0.5;
+        }
+        .no-deliveries {
+            color: var(--parchment-dark); opacity: 0.3;
+            font-size: 12px; padding: 10px 0;
+            text-align: center;
+        }
+
+        /* 进化数据 */
+        .evo-counters {
+            display: flex; gap: 14px; margin-bottom: 8px;
+        }
+        .evo-counter-item {
+            display: flex; flex-direction: column; align-items: center; gap: 1px;
+        }
+        .evo-counter-icon { font-size: 14px; }
+        .evo-counter-val {
+            font-family: 'Cinzel', serif; font-weight: 700;
+            font-size: 18px; color: var(--hylian-gold);
+        }
+        .evo-counter-chg {
+            font-size: 10px; color: #4ade80; min-height: 14px;
+        }
+        .evo-counter-label {
+            font-size: 9px; color: var(--parchment-dark); opacity: 0.4;
+        }
+        .evo-summary {
+            font-size: 11px; color: var(--parchment-dark);
+            opacity: 0.6; line-height: 1.4;
+        }
+
+        /* 今日成长 */
+        .growth-item {
+            display: flex; align-items: flex-start; gap: 6px;
+            padding: 4px 0;
+            border-bottom: 1px solid rgba(201,168,76,0.05);
+        }
+        .growth-item:last-child { border-bottom: none; }
+        .growth-dim {
+            font-size: 10px; color: var(--sheikah-blue);
+            opacity: 0.5; min-width: 50px;
+            font-family: 'Cinzel', serif;
+        }
+        .growth-text { font-size: 11px; color: var(--parchment-dark); line-height: 1.4; }
+
+        /* 今日洞察 */
+        .insight-tldr {
+            font-size: 12px; color: var(--parchment);
+            margin-bottom: 8px; line-height: 1.5;
+            font-style: italic;
+        }
+        .insight-tags { display: flex; flex-wrap: wrap; gap: 5px; }
+        .insight-tag {
+            padding: 3px 8px;
+            background: rgba(167,139,250,0.08);
+            border: 1px solid rgba(167,139,250,0.2);
+            border-radius: 3px;
+            font-size: 11px; color: var(--parchment-dark);
+        }
+
+        /* 定时计划 */
+        .plan-item { display: flex; align-items: center; gap: 8px; padding: 3px 0; }
+        .plan-time {
+            font-family: 'Cinzel', serif; font-size: 10px;
+            color: var(--sheikah-blue); opacity: 0.6; min-width: 38px;
+        }
+        .plan-task { font-size: 11px; color: var(--parchment-dark); }
+        </style>
 </head>
 <body>
     <!-- 背景效果 - 旷野之息水彩天空 v4.0 -->
@@ -4725,7 +4727,7 @@
                 <div class="stat-item" onmouseenter="showStatTooltip(event, 'projects')" onmouseleave="hideTooltip()">
                     <div class="stat-icon">🎨</div>
                     <div class="stat-info">
-                        <div class="stat-value" id="stat-projects">-</div>
+                        <div class="stat-value" id="stat-works-count">-</div>
                         <div class="stat-label">作品</div>
                     </div>
                 </div>
@@ -5187,7 +5189,7 @@
 
             <!-- ==================== Section 4: 我的日报 ==================== -->
             <section id="section-daily" class="content-section">
-                <!-- 日期选择器 -->
+                <!-- 日期选择器 + 状态 -->
                 <div class="daily-header-bar">
                     <select class="date-select" id="report-date-select"></select>
                     <div class="daily-status-badge" id="daily-status-badge">
@@ -5196,8 +5198,8 @@
                     </div>
                 </div>
 
-                <!-- 顶部摘要条 -->
-                <div class="daily-summary-bar" id="daily-summary-bar">
+                <!-- 摘要条 -->
+                <div class="daily-summary-bar">
                     <div class="summary-stat">
                         <span class="summary-num" id="stat-conversations">-</span>
                         <span class="summary-label">对话</span>
@@ -5215,7 +5217,7 @@
                     <div class="summary-divider"></div>
                     <div class="summary-stat">
                         <span class="summary-num positive" id="stat-skill-delta">-</span>
-                        <span class="summary-label">技能</span>
+                        <span class="summary-label">技能±</span>
                     </div>
                     <div class="summary-divider"></div>
                     <div class="summary-stat">
@@ -5224,7 +5226,7 @@
                     </div>
                 </div>
 
-                <!-- 第一行：关注事项 + 今日计划 -->
+                <!-- 第一行：需你关注 + 定时任务 -->
                 <div class="daily-row daily-row--top">
                     <div class="daily-card daily-card--attention" id="card-attention">
                         <div class="daily-card-header">
@@ -5232,11 +5234,9 @@
                             <span class="dc-title">需你关注</span>
                             <span class="dc-badge" id="attention-count"></span>
                         </div>
-                        <div class="dc-body" id="attention-body">
-                            <div class="dc-ok">✅ 运行平稳</div>
-                        </div>
+                        <div class="dc-body" id="attention-body"><div class="dc-ok">✅ 运行平稳</div></div>
                     </div>
-                    <div class="daily-card daily-card--plan" id="card-plan">
+                    <div class="daily-card daily-card--plan">
                         <div class="daily-card-header">
                             <span class="dc-icon">📅</span>
                             <span class="dc-title">定时任务</span>
@@ -5245,27 +5245,25 @@
                     </div>
                 </div>
 
-                <!-- 第二行：今日交付（全宽，卡片网格）-->
-                <div class="daily-card daily-card--deliveries" id="card-deliveries">
+                <!-- 第二行：今日交付 -->
+                <div class="daily-card daily-card--deliveries">
                     <div class="daily-card-header">
                         <span class="dc-icon">✅</span>
                         <span class="dc-title">今日交付</span>
                         <span class="dc-badge" id="deliveries-count"></span>
                     </div>
-                    <div class="delivery-grid" id="delivery-grid">
-                        <!-- 动态填充 -->
-                    </div>
+                    <div class="delivery-grid" id="delivery-grid"></div>
                 </div>
 
-                <!-- 第三行：修炼记录（左：进化 | 右：成长）-->
+                <!-- 第三行：进化数据 + 今日成长 -->
                 <div class="daily-row">
-                    <div class="daily-card daily-card--evo" id="card-evo">
+                    <div class="daily-card daily-card--evo">
                         <div class="daily-card-header">
                             <span class="dc-icon">🧬</span>
                             <span class="dc-title">进化数据</span>
                         </div>
                         <div class="dc-body">
-                            <div class="evo-counters" id="evo-counters">
+                            <div class="evo-counters">
                                 <div class="evo-counter-item">
                                     <span class="evo-counter-icon">⚡</span>
                                     <span class="evo-counter-val" id="evo-skill-val">-</span>
@@ -5288,7 +5286,7 @@
                             <div class="evo-summary" id="evo-summary">-</div>
                         </div>
                     </div>
-                    <div class="daily-card daily-card--growth" id="card-growth">
+                    <div class="daily-card daily-card--growth">
                         <div class="daily-card-header">
                             <span class="dc-icon">💡</span>
                             <span class="dc-title">今日成长</span>
@@ -5302,8 +5300,8 @@
                     </div>
                 </div>
 
-                <!-- 第四行：今日洞察（ClawBook / 社区学习）-->
-                <div class="daily-card daily-card--insights" id="card-insights">
+                <!-- 第四行：今日洞察 -->
+                <div class="daily-card daily-card--insights">
                     <div class="daily-card-header">
                         <span class="dc-icon">🌱</span>
                         <span class="dc-title">今日洞察</span>
@@ -5315,332 +5313,6 @@
                     </div>
                 </div>
 
-            </section>
-
-            <section id="section-abilities" class="content-section">
-                <!-- Tab切换栏 -->
-                <div class="ability-tabs" id="ability-tabs">
-                    <button class="ability-tab-btn active" data-ability-tab="skills" onclick="switchAbilityTab('skills')">
-                        <span class="tab-icon">⚡</span>
-                        <span>技能树</span>
-                        <span class="tab-count" id="tab-skill-count">-</span>
-                    </button>
-                    <button class="ability-tab-btn" data-ability-tab="memory" onclick="switchAbilityTab('memory')">
-                        <span class="tab-icon">🧠</span>
-                        <span>记忆库</span>
-                        <span class="tab-count" id="tab-memory-count">-</span>
-                    </button>
-                    <button class="ability-tab-btn" data-ability-tab="knowledge" onclick="switchAbilityTab('knowledge')">
-                        <span class="tab-icon">📚</span>
-                        <span>知识库</span>
-                        <span class="tab-count" id="tab-knowledge-count">-</span>
-                    </button>
-                    <button class="ability-tab-btn" data-ability-tab="growth" onclick="switchAbilityTab('growth')">
-                        <span class="tab-icon">📈</span>
-                        <span>成长趋势</span>
-                    </button>
-                </div>
-
-                <!-- 技能树 Tab -->
-                <div class="ability-tab-content active" id="ability-tab-skills">
-                    <div class="tree-container skill-tree" id="skill-tree">
-                        <div class="loading">加载中...</div>
-                    </div>
-                </div>
-
-                <!-- 记忆库 Tab -->
-                <div class="ability-tab-content" id="ability-tab-memory">
-                    <div class="tree-container memory-tree" id="memory-tree">
-                        <div class="loading">加载中...</div>
-                    </div>
-                </div>
-
-                <!-- 知识库 Tab -->
-                <div class="ability-tab-content" id="ability-tab-knowledge">
-                    <div class="tree-container knowledge-tree" id="knowledge-tree">
-                        <div class="loading">加载中...</div>
-                    </div>
-                </div>
-
-                <!-- 成长趋势 Tab (v3.1: 作为第4个二级Tab) -->
-                <div class="ability-tab-content" id="ability-tab-growth">
-                <!-- 成长趋势仪表板 v3.0 -->
-                <div class="growth-dashboard reveal">
-                    <div class="growth-dashboard-header">
-                        <div class="growth-dashboard-title">📈 能力成长趋势</div>
-                        <div class="period-toggle" id="period-toggle">
-                            <button class="period-btn" data-period="7" onclick="switchGrowthPeriod(7)">近7天</button>
-                            <button class="period-btn active" data-period="14" onclick="switchGrowthPeriod(14)">近14天</button>
-                            <button class="period-btn" data-period="0" onclick="switchGrowthPeriod(0)">全部</button>
-                        </div>
-                    </div>
-
-                    <!-- 增长概览卡片 -->
-                    <div class="growth-cards" id="growth-cards">
-                        <div class="growth-card">
-                            <div class="growth-card-top">
-                                <div class="growth-card-label">
-                                    <span class="growth-card-icon">⚡</span>
-                                    <span class="growth-card-name">技能</span>
-                                </div>
-                                <span class="growth-card-badge" id="growth-badge-skills">-</span>
-                            </div>
-                            <div class="growth-card-body">
-                                <div>
-                                    <div class="growth-card-value" id="growth-value-skills">-</div>
-                                    <div class="growth-card-rate" id="growth-rate-skills"></div>
-                                </div>
-                                <canvas class="growth-card-sparkline" id="sparkline-skills"></canvas>
-                            </div>
-                        </div>
-                        <div class="growth-card">
-                            <div class="growth-card-top">
-                                <div class="growth-card-label">
-                                    <span class="growth-card-icon">📚</span>
-                                    <span class="growth-card-name">知识</span>
-                                </div>
-                                <span class="growth-card-badge" id="growth-badge-knowledge">-</span>
-                            </div>
-                            <div class="growth-card-body">
-                                <div>
-                                    <div class="growth-card-value" id="growth-value-knowledge">-</div>
-                                    <div class="growth-card-rate" id="growth-rate-knowledge"></div>
-                                </div>
-                                <canvas class="growth-card-sparkline" id="sparkline-knowledge"></canvas>
-                            </div>
-                        </div>
-                        <div class="growth-card">
-                            <div class="growth-card-top">
-                                <div class="growth-card-label">
-                                    <span class="growth-card-icon">🧠</span>
-                                    <span class="growth-card-name">记忆</span>
-                                </div>
-                                <span class="growth-card-badge" id="growth-badge-memory">-</span>
-                            </div>
-                            <div class="growth-card-body">
-                                <div>
-                                    <div class="growth-card-value" id="growth-value-memory">-</div>
-                                    <div class="growth-card-rate" id="growth-rate-memory"></div>
-                                </div>
-                                <canvas class="growth-card-sparkline" id="sparkline-memory"></canvas>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 增长洞察 -->
-                    <div class="growth-insight" id="growth-insight">
-                        <span class="growth-insight-icon">💡</span>
-                        <span id="growth-insight-text">加载中...</span>
-                    </div>
-
-                    <!-- 主趋势图 -->
-                    <div class="growth-chart-wrap">
-                        <canvas id="trendChart"></canvas>
-                    </div>
-
-                    <!-- 增长对比条 -->
-                    <div class="growth-compare">
-                        <div class="growth-compare-title">📊 维度增长对比</div>
-                        <div id="growth-bars"></div>
-                    </div>
-                </div>
-                </div>
-            </section>
-
-            <!-- ==================== Section 4: 我的日报 ==================== -->
-            <section id="section-daily" class="content-section">
-                <!-- 日期选择器 -->
-                <div class="daily-date-bar">
-                    <select class="date-select" id="report-date-select">
-                        <!-- 动态填充 -->
-                    </select>
-                </div>
-
-                <!-- 二级导航 - Tab切换模式 -->
-                <div class="section-sub-nav" id="daily-sub-nav">
-                    <button class="sub-nav-btn active" data-tab="progress" onclick="switchSubTab('daily', 'progress')">
-                        <span class="sub-nav-icon">📋</span>
-                        <span>核心进展</span>
-                    </button>
-                    <button class="sub-nav-btn" data-tab="delivery" onclick="switchSubTab('daily', 'delivery')">
-                        <span class="sub-nav-icon">🚀</span>
-                        <span>交付情况</span>
-                    </button>
-                    <button class="sub-nav-btn" data-tab="capability" onclick="switchSubTab('daily', 'capability')">
-                        <span class="sub-nav-icon">🧬</span>
-                        <span>每日修炼</span>
-                    </button>
-                </div>
-
-                <!-- Tab内容：核心进展 -->
-                <div class="sub-tab-content active" data-tab="progress">
-                    <div class="daily-section-block core-progress-block">
-                        <div class="block-header">
-                            <span class="block-icon">📋</span>
-                            <span class="block-title">核心进展</span>
-                        </div>
-                        <div class="core-progress-list" id="core-progress-list">
-                            <!-- 动态填充 -->
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Tab内容：交付情况 -->
-                <div class="sub-tab-content" data-tab="delivery">
-                    <div class="daily-section-block deliveries-block">
-                        <div class="block-header">
-                            <span class="block-icon">🚀</span>
-                            <span class="block-title">交付情况</span>
-                        </div>
-                        <!-- 核心统计指标 -->
-                        <div class="delivery-stats-bar" id="delivery-stats-bar">
-                            <!-- 动态填充 -->
-                        </div>
-                        <div class="deliveries-list" id="deliveries-list">
-                            <!-- 动态填充 -->
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Tab内容：每日修炼 -->
-                <div class="sub-tab-content" data-tab="capability">
-                    <div class="daily-cultivation-layout">
-
-                        <!-- B1: 需你关注 -->
-                        <div class="cultivation-block cultivation-block--attention" id="block-attention">
-                            <div class="cultivation-block-header">
-                                <span class="cult-icon">🎯</span>
-                                <span class="cult-title">需你关注</span>
-                                <span class="cult-badge" id="attention-badge"></span>
-                            </div>
-                            <div class="cult-content" id="attention-content">
-                                <span class="cult-ok">✅ 运行平稳</span>
-                            </div>
-                        </div>
-
-                        <!-- B3+B4: 技能分析 + 自进化统计 (同行) -->
-                        <div class="cultivation-row">
-                            <div class="cultivation-block cultivation-block--skill" id="block-skill">
-                                <div class="cultivation-block-header">
-                                    <span class="cult-icon">🛠️</span>
-                                    <span class="cult-title">技能分析</span>
-                                </div>
-                                <div class="cult-content">
-                                    <div class="cult-skill-stats" id="skill-analysis-content">
-                                        <div class="cult-stat-row">
-                                            <span class="cult-stat-label">调用次数</span>
-                                            <span class="cult-stat-val" id="skill-call-count">-</span>
-                                        </div>
-                                        <div class="cult-stat-row">
-                                            <span class="cult-stat-label">新增技能</span>
-                                            <span class="cult-stat-val" id="skill-new-count">-</span>
-                                        </div>
-                                        <div class="cult-stat-row">
-                                            <span class="cult-stat-label">健康状态</span>
-                                            <span class="cult-stat-val" id="skill-health">-</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="cultivation-block cultivation-block--evo" id="block-evo">
-                                <div class="cultivation-block-header">
-                                    <span class="cult-icon">🧬</span>
-                                    <span class="cult-title">自进化统计</span>
-                                </div>
-                                <div class="cult-content">
-                                    <div class="cult-evo-stats">
-                                        <div class="cult-cap-mini">
-                                            <span class="cult-cap-icon">⚡</span>
-                                            <span class="cult-cap-val" id="evo-skill-val">-</span>
-                                            <span class="cult-cap-chg" id="evo-skill-chg"></span>
-                                        </div>
-                                        <div class="cult-cap-mini">
-                                            <span class="cult-cap-icon">📚</span>
-                                            <span class="cult-cap-val" id="evo-know-val">-</span>
-                                            <span class="cult-cap-chg" id="evo-know-chg"></span>
-                                        </div>
-                                        <div class="cult-cap-mini">
-                                            <span class="cult-cap-icon">🧠</span>
-                                            <span class="cult-cap-val" id="evo-mem-val">-</span>
-                                            <span class="cult-cap-chg" id="evo-mem-chg"></span>
-                                        </div>
-                                    </div>
-                                    <div class="cult-evo-summary" id="evo-summary">-</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- B5: 社区学习 -->
-                        <div class="cultivation-block cultivation-block--community" id="block-community">
-                            <div class="cultivation-block-header">
-                                <span class="cult-icon">📚</span>
-                                <span class="cult-title">社区学习</span>
-                                <span class="cult-platform" id="community-platform">ClawBook</span>
-                            </div>
-                            <div class="cult-content">
-                                <div class="cult-community-insights" id="community-insights">
-                                    <!-- 动态填充 -->
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- B6: 今日成长 -->
-                        <div class="cultivation-block cultivation-block--growth" id="block-growth">
-                            <div class="cultivation-block-header">
-                                <span class="cult-icon">💡</span>
-                                <span class="cult-title">今日成长</span>
-                            </div>
-                            <div class="cult-content">
-                                <div class="cult-growth-grid" id="growth-grid">
-                                    <div class="cult-growth-item">
-                                        <span class="growth-dim">🧠 记忆</span>
-                                        <span class="growth-text" id="growth-memory">-</span>
-                                    </div>
-                                    <div class="cult-growth-item">
-                                        <span class="growth-dim">⚡ 技能</span>
-                                        <span class="growth-text" id="growth-skill">-</span>
-                                    </div>
-                                    <div class="cult-growth-item">
-                                        <span class="growth-dim">💡 认知</span>
-                                        <span class="growth-text" id="growth-cognition">-</span>
-                                    </div>
-                                    <div class="cult-growth-item">
-                                        <span class="growth-dim">🔄 工作流</span>
-                                        <span class="growth-text" id="growth-workflow">-</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- B7+B8: 待解决 + 今日计划 (同行) -->
-                        <div class="cultivation-row">
-                            <div class="cultivation-block cultivation-block--pending" id="block-pending">
-                                <div class="cultivation-block-header">
-                                    <span class="cult-icon">🔴</span>
-                                    <span class="cult-title">待解决</span>
-                                    <span class="cult-badge" id="pending-badge"></span>
-                                </div>
-                                <div class="cult-content">
-                                    <div id="pending-list">
-                                        <span class="cult-ok">✅ 无阻塞事项</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="cultivation-block cultivation-block--plan" id="block-plan">
-                                <div class="cultivation-block-header">
-                                    <span class="cult-icon">📅</span>
-                                    <span class="cult-title">定时任务</span>
-                                </div>
-                                <div class="cult-content">
-                                    <div class="cult-plan-list" id="plan-list">
-                                        <!-- 动态填充 -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
             </section>
         </main>
     </div>
