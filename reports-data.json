@@ -129,6 +129,46 @@
         "引擎层Bug修复",
         "Work模式专注呈现",
         "历史日报追溯完成"
+      ],
+      "attention": [],
+      "skillAnalysis": {
+        "callCount": 8,
+        "newSkills": 0,
+        "updatedSkills": 0,
+        "healthNote": "运行正常"
+      },
+      "evoStats": {
+        "items": [],
+        "summary": "持续运转中"
+      },
+      "communityLearning": {
+        "platform": "ClawBook",
+        "tldr": "引擎层Bug修复",
+        "insights": [
+          "引擎层Bug修复",
+          "Work模式专注呈现"
+        ]
+      },
+      "growthToday": {
+        "memory": "记忆稳定",
+        "skill": "技能运转正常",
+        "cognition": "历史日报追溯完成",
+        "workflow": "任务闭环完整"
+      },
+      "pending": [],
+      "todayPlan": [
+        {
+          "time": "06:30",
+          "task": "每日修炼 — 早间检查"
+        },
+        {
+          "time": "09:00",
+          "task": "AI日报生成与推送"
+        },
+        {
+          "time": "21:00",
+          "task": "每日修炼 — 晚间复盘"
+        }
       ]
     },
     {
@@ -187,6 +227,50 @@
         "四层六维架构",
         "技能全面瘦身完成",
         "首页定位升级"
+      ],
+      "attention": [],
+      "skillAnalysis": {
+        "callCount": 12,
+        "newSkills": 2,
+        "updatedSkills": 0,
+        "healthNote": "运行正常"
+      },
+      "evoStats": {
+        "items": [
+          "新增2个技能",
+          "知识库+2份",
+          "记忆+1条"
+        ],
+        "summary": "新增2个技能、知识库+2份、记忆+1条"
+      },
+      "communityLearning": {
+        "platform": "ClawBook",
+        "tldr": "四层六维架构",
+        "insights": [
+          "四层六维架构",
+          "技能全面瘦身完成"
+        ]
+      },
+      "growthToday": {
+        "memory": "新增1条记忆",
+        "skill": "新增2个技能",
+        "cognition": "首页定位升级",
+        "workflow": "任务闭环完整"
+      },
+      "pending": [],
+      "todayPlan": [
+        {
+          "time": "06:30",
+          "task": "每日修炼 — 早间检查"
+        },
+        {
+          "time": "09:00",
+          "task": "AI日报生成与推送"
+        },
+        {
+          "time": "21:00",
+          "task": "每日修炼 — 晚间复盘"
+        }
       ]
     },
     {
@@ -229,6 +313,48 @@
         "知道→做到→习惯三段式",
         "Shell工具链最佳实践",
         "HEARTBEAT 72小时法则"
+      ],
+      "attention": [],
+      "skillAnalysis": {
+        "callCount": 3,
+        "newSkills": 0,
+        "updatedSkills": 0,
+        "healthNote": "运行正常"
+      },
+      "evoStats": {
+        "items": [
+          "知识库+1份"
+        ],
+        "summary": "知识库+1份"
+      },
+      "communityLearning": {
+        "platform": "ClawBook",
+        "tldr": "知道→做到→习惯三段式",
+        "insights": [
+          "知道→做到→习惯三段式",
+          "Shell工具链最佳实践"
+        ]
+      },
+      "growthToday": {
+        "memory": "记忆稳定",
+        "skill": "技能运转正常",
+        "cognition": "HEARTBEAT 72小时法则",
+        "workflow": "任务闭环完整"
+      },
+      "pending": [],
+      "todayPlan": [
+        {
+          "time": "06:30",
+          "task": "每日修炼 — 早间检查"
+        },
+        {
+          "time": "09:00",
+          "task": "AI日报生成与推送"
+        },
+        {
+          "time": "21:00",
+          "task": "每日修炼 — 晚间复盘"
+        }
       ]
     },
     {
@@ -284,6 +410,49 @@
         "番外篇④发布",
         "可观测性作为信任基础设施",
         "周报skill v2.5"
+      ],
+      "attention": [],
+      "skillAnalysis": {
+        "callCount": 6,
+        "newSkills": 0,
+        "updatedSkills": 0,
+        "healthNote": "运行正常"
+      },
+      "evoStats": {
+        "items": [
+          "知识库+1份",
+          "记忆+2条"
+        ],
+        "summary": "知识库+1份、记忆+2条"
+      },
+      "communityLearning": {
+        "platform": "ClawBook",
+        "tldr": "番外篇④发布",
+        "insights": [
+          "番外篇④发布",
+          "可观测性作为信任基础设施"
+        ]
+      },
+      "growthToday": {
+        "memory": "新增2条记忆",
+        "skill": "技能运转正常",
+        "cognition": "周报skill v2.5",
+        "workflow": "任务闭环完整"
+      },
+      "pending": [],
+      "todayPlan": [
+        {
+          "time": "06:30",
+          "task": "每日修炼 — 早间检查"
+        },
+        {
+          "time": "09:00",
+          "task": "AI日报生成与推送"
+        },
+        {
+          "time": "21:00",
+          "task": "每日修炼 — 晚间复盘"
+        }
       ]
     },
     {
@@ -326,6 +495,48 @@
         "Agent自愈三层架构",
         "技术降级与认知降级同构",
         "内容进化路径Lurker→Curator"
+      ],
+      "attention": [],
+      "skillAnalysis": {
+        "callCount": 3,
+        "newSkills": 0,
+        "updatedSkills": 0,
+        "healthNote": "运行正常"
+      },
+      "evoStats": {
+        "items": [
+          "记忆+1条"
+        ],
+        "summary": "记忆+1条"
+      },
+      "communityLearning": {
+        "platform": "ClawBook",
+        "tldr": "Agent自愈三层架构",
+        "insights": [
+          "Agent自愈三层架构",
+          "技术降级与认知降级同构"
+        ]
+      },
+      "growthToday": {
+        "memory": "新增1条记忆",
+        "skill": "技能运转正常",
+        "cognition": "内容进化路径Lurker→Curator",
+        "workflow": "任务闭环完整"
+      },
+      "pending": [],
+      "todayPlan": [
+        {
+          "time": "06:30",
+          "task": "每日修炼 — 早间检查"
+        },
+        {
+          "time": "09:00",
+          "task": "AI日报生成与推送"
+        },
+        {
+          "time": "21:00",
+          "task": "每日修炼 — 晚间复盘"
+        }
       ]
     },
     {
@@ -367,6 +578,49 @@
         "PE工程化方法论",
         "渐进式复杂度设计",
         "SK设计复利效应"
+      ],
+      "attention": [],
+      "skillAnalysis": {
+        "callCount": 2,
+        "newSkills": 0,
+        "updatedSkills": 0,
+        "healthNote": "运行正常"
+      },
+      "evoStats": {
+        "items": [
+          "知识库+1份",
+          "记忆+1条"
+        ],
+        "summary": "知识库+1份、记忆+1条"
+      },
+      "communityLearning": {
+        "platform": "ClawBook",
+        "tldr": "PE工程化方法论",
+        "insights": [
+          "PE工程化方法论",
+          "渐进式复杂度设计"
+        ]
+      },
+      "growthToday": {
+        "memory": "新增1条记忆",
+        "skill": "技能运转正常",
+        "cognition": "SK设计复利效应",
+        "workflow": "任务闭环完整"
+      },
+      "pending": [],
+      "todayPlan": [
+        {
+          "time": "06:30",
+          "task": "每日修炼 — 早间检查"
+        },
+        {
+          "time": "09:00",
+          "task": "AI日报生成与推送"
+        },
+        {
+          "time": "21:00",
+          "task": "每日修炼 — 晚间复盘"
+        }
       ]
     },
     {
@@ -408,6 +662,46 @@
       "highlights": [
         "自动化vs自主化哲学讨论",
         "AI自指悖论工程解法"
+      ],
+      "attention": [],
+      "skillAnalysis": {
+        "callCount": 2,
+        "newSkills": 0,
+        "updatedSkills": 0,
+        "healthNote": "运行正常"
+      },
+      "evoStats": {
+        "items": [],
+        "summary": "持续运转中"
+      },
+      "communityLearning": {
+        "platform": "ClawBook",
+        "tldr": "自动化vs自主化哲学讨论",
+        "insights": [
+          "自动化vs自主化哲学讨论",
+          "AI自指悖论工程解法"
+        ]
+      },
+      "growthToday": {
+        "memory": "记忆稳定",
+        "skill": "技能运转正常",
+        "cognition": "AI自指悖论工程解法",
+        "workflow": "任务闭环完整"
+      },
+      "pending": [],
+      "todayPlan": [
+        {
+          "time": "06:30",
+          "task": "每日修炼 — 早间检查"
+        },
+        {
+          "time": "09:00",
+          "task": "AI日报生成与推送"
+        },
+        {
+          "time": "21:00",
+          "task": "每日修炼 — 晚间复盘"
+        }
       ]
     },
     {
@@ -450,6 +744,48 @@
         "AI三层价值框架",
         "定时任务三原则",
         "curl重试最佳实践"
+      ],
+      "attention": [],
+      "skillAnalysis": {
+        "callCount": 3,
+        "newSkills": 0,
+        "updatedSkills": 0,
+        "healthNote": "运行正常"
+      },
+      "evoStats": {
+        "items": [
+          "知识库+1份"
+        ],
+        "summary": "知识库+1份"
+      },
+      "communityLearning": {
+        "platform": "ClawBook",
+        "tldr": "AI三层价值框架",
+        "insights": [
+          "AI三层价值框架",
+          "定时任务三原则"
+        ]
+      },
+      "growthToday": {
+        "memory": "记忆稳定",
+        "skill": "技能运转正常",
+        "cognition": "curl重试最佳实践",
+        "workflow": "任务闭环完整"
+      },
+      "pending": [],
+      "todayPlan": [
+        {
+          "time": "06:30",
+          "task": "每日修炼 — 早间检查"
+        },
+        {
+          "time": "09:00",
+          "task": "AI日报生成与推送"
+        },
+        {
+          "time": "21:00",
+          "task": "每日修炼 — 晚间复盘"
+        }
       ]
     },
     {
@@ -493,6 +829,46 @@
         "Multi-Agent编排三原则",
         "CLI工具链选型",
         "curl重试实战"
+      ],
+      "attention": [],
+      "skillAnalysis": {
+        "callCount": 4,
+        "newSkills": 0,
+        "updatedSkills": 0,
+        "healthNote": "运行正常"
+      },
+      "evoStats": {
+        "items": [],
+        "summary": "持续运转中"
+      },
+      "communityLearning": {
+        "platform": "ClawBook",
+        "tldr": "Multi-Agent编排三原则",
+        "insights": [
+          "Multi-Agent编排三原则",
+          "CLI工具链选型"
+        ]
+      },
+      "growthToday": {
+        "memory": "记忆稳定",
+        "skill": "技能运转正常",
+        "cognition": "curl重试实战",
+        "workflow": "任务闭环完整"
+      },
+      "pending": [],
+      "todayPlan": [
+        {
+          "time": "06:30",
+          "task": "每日修炼 — 早间检查"
+        },
+        {
+          "time": "09:00",
+          "task": "AI日报生成与推送"
+        },
+        {
+          "time": "21:00",
+          "task": "每日修炼 — 晚间复盘"
+        }
       ]
     },
     {
@@ -690,6 +1066,46 @@
       "highlights": [
         "💬 完成 7 个任务: 将所有以sl开头的技能迁移到Work模式下，包括处理带脚本的技能打包和同步, 检查北冥神功技能包的外部版本中是否残留快手、沈浪等个人和公司内部信息...",
         "📁 项目成果: 网页更新 33 个"
+      ],
+      "attention": [],
+      "skillAnalysis": {
+        "callCount": 7,
+        "newSkills": 0,
+        "updatedSkills": 0,
+        "healthNote": "运行正常"
+      },
+      "evoStats": {
+        "items": [],
+        "summary": "持续运转中"
+      },
+      "communityLearning": {
+        "platform": "ClawBook",
+        "tldr": "💬 完成 7 个任务: 将所有以sl开头的技能迁移到Work模式下，包括处理带脚本的技能打包和同步, 检查北冥神功技能包的外部版本中是否残留快手、沈浪等个人和公司内部信息...",
+        "insights": [
+          "💬 完成 7 个任务: 将所有以sl开头的技能迁移到Work模式下，包括处理带脚本的技能打包和同步, 检查北冥神功技能包的外部版本中是否残留快手、沈浪等个人和公司内部信息...",
+          "📁 项目成果: 网页更新 33 个"
+        ]
+      },
+      "growthToday": {
+        "memory": "记忆稳定",
+        "skill": "技能运转正常",
+        "cognition": "📁 项目成果: 网页更新 33 个",
+        "workflow": "任务闭环完整"
+      },
+      "pending": [],
+      "todayPlan": [
+        {
+          "time": "06:30",
+          "task": "每日修炼 — 早间检查"
+        },
+        {
+          "time": "09:00",
+          "task": "AI日报生成与推送"
+        },
+        {
+          "time": "21:00",
+          "task": "每日修炼 — 晚间复盘"
+        }
       ]
     },
     {
@@ -950,6 +1366,49 @@
         "💬 完成 5 个任务: 补跑4月26日的AI日报任务, 用户希望运行AI周报生成流程，基于每日AI行业洞察日报自动生成W17周报的MD和......",
         "📁 项目成果: 网页更新 318 个",
         "🧠 新增记忆: 趋势断档根因：4月25-26日修炼流程未，优化任务执行流程"
+      ],
+      "attention": [],
+      "skillAnalysis": {
+        "callCount": 5,
+        "newSkills": -8,
+        "updatedSkills": 0,
+        "healthNote": "运行正常"
+      },
+      "evoStats": {
+        "items": [
+          "知识库+9份",
+          "记忆+1条"
+        ],
+        "summary": "知识库+9份、记忆+1条"
+      },
+      "communityLearning": {
+        "platform": "ClawBook",
+        "tldr": "💬 完成 5 个任务: 补跑4月26日的AI日报任务, 用户希望运行AI周报生成流程，基于每日AI行业洞察日报自动生成W17周报的MD和......",
+        "insights": [
+          "💬 完成 5 个任务: 补跑4月26日的AI日报任务, 用户希望运行AI周报生成流程，基于每日AI行业洞察日报自动生成W17周报的MD和......",
+          "📁 项目成果: 网页更新 318 个"
+        ]
+      },
+      "growthToday": {
+        "memory": "新增1条记忆",
+        "skill": "技能运转正常",
+        "cognition": "🧠 新增记忆: 趋势断档根因：4月25-26日修炼流程未，优化任务执行流程",
+        "workflow": "任务闭环完整"
+      },
+      "pending": [],
+      "todayPlan": [
+        {
+          "time": "06:30",
+          "task": "每日修炼 — 早间检查"
+        },
+        {
+          "time": "09:00",
+          "task": "AI日报生成与推送"
+        },
+        {
+          "time": "21:00",
+          "task": "每日修炼 — 晚间复盘"
+        }
       ]
     },
     {
@@ -1002,6 +1461,47 @@
       "memoryChange": 0,
       "highlights": [
         "💬 完成任务: 复习并理解星球展示项目，然后继续增量开发，新增一个30倍太阳质量恒星及其行星演化..."
+      ],
+      "attention": [],
+      "skillAnalysis": {
+        "callCount": 1,
+        "newSkills": -8,
+        "updatedSkills": 0,
+        "healthNote": "运行正常"
+      },
+      "evoStats": {
+        "items": [
+          "知识库+1份"
+        ],
+        "summary": "知识库+1份"
+      },
+      "communityLearning": {
+        "platform": "ClawBook",
+        "tldr": "💬 完成任务: 复习并理解星球展示项目，然后继续增量开发，新增一个30倍太阳质量恒星及其行星演化...",
+        "insights": [
+          "💬 完成任务: 复习并理解星球展示项目，然后继续增量开发，新增一个30倍太阳质量恒星及其行星演化..."
+        ]
+      },
+      "growthToday": {
+        "memory": "记忆稳定",
+        "skill": "技能运转正常",
+        "cognition": "💬 完成任务: 复习并理解星球展示项目，然后继续增量开发，新增一个30倍太阳质量恒星及其行星演化...",
+        "workflow": "任务闭环完整"
+      },
+      "pending": [],
+      "todayPlan": [
+        {
+          "time": "06:30",
+          "task": "每日修炼 — 早间检查"
+        },
+        {
+          "time": "09:00",
+          "task": "AI日报生成与推送"
+        },
+        {
+          "time": "21:00",
+          "task": "每日修炼 — 晚间复盘"
+        }
       ]
     },
     {
@@ -1236,6 +1736,49 @@
         "💬 完成 22 个任务: 用户触发每周深度修炼模式，要求运行完整的自进化引擎工作流（数据收集→预分析→对话..., 用户希望创建一份关于 DeepSeek V4 Preview 模型的深度调研报告......",
         "📁 项目成果: 网页更新 342 个",
         "⚡ 新增能力: docs-shuttle，提升文档协作能力"
+      ],
+      "attention": [],
+      "skillAnalysis": {
+        "callCount": 22,
+        "newSkills": 1,
+        "updatedSkills": 0,
+        "healthNote": "运行正常"
+      },
+      "evoStats": {
+        "items": [
+          "新增1个技能",
+          "记忆+3条"
+        ],
+        "summary": "新增1个技能、记忆+3条"
+      },
+      "communityLearning": {
+        "platform": "ClawBook",
+        "tldr": "💬 完成 22 个任务: 用户触发每周深度修炼模式，要求运行完整的自进化引擎工作流（数据收集→预分析→对话..., 用户希望创建一份关于 DeepSeek V4 Preview 模型的深度调研报告......",
+        "insights": [
+          "💬 完成 22 个任务: 用户触发每周深度修炼模式，要求运行完整的自进化引擎工作流（数据收集→预分析→对话..., 用户希望创建一份关于 DeepSeek V4 Preview 模型的深度调研报告......",
+          "📁 项目成果: 网页更新 342 个"
+        ]
+      },
+      "growthToday": {
+        "memory": "新增3条记忆",
+        "skill": "新增1个技能",
+        "cognition": "⚡ 新增能力: docs-shuttle，提升文档协作能力",
+        "workflow": "任务闭环完整"
+      },
+      "pending": [],
+      "todayPlan": [
+        {
+          "time": "06:30",
+          "task": "每日修炼 — 早间检查"
+        },
+        {
+          "time": "09:00",
+          "task": "AI日报生成与推送"
+        },
+        {
+          "time": "21:00",
+          "task": "每日修炼 — 晚间复盘"
+        }
       ]
     },
     {
@@ -1404,6 +1947,48 @@
         "💬 完成 11 个任务: 当前网络环境无法访问内网，请检查网络连接，确认已连接公司内网或 VPN 后再试。, 为AI最佳实践用户培训课程和手册创建具体的指导案例和配套插图，并整理到文档中...",
         "📁 项目成果: 文档完善 8 份",
         "🧠 新增记忆: KIM推送重复发送问题（v10.0 — 、技术架构全景图生成经验（AI生图），避免常见错误"
+      ],
+      "attention": [],
+      "skillAnalysis": {
+        "callCount": 11,
+        "newSkills": 0,
+        "updatedSkills": 0,
+        "healthNote": "运行正常"
+      },
+      "evoStats": {
+        "items": [
+          "记忆+2条"
+        ],
+        "summary": "记忆+2条"
+      },
+      "communityLearning": {
+        "platform": "ClawBook",
+        "tldr": "💬 完成 11 个任务: 当前网络环境无法访问内网，请检查网络连接，确认已连接公司内网或 VPN 后再试。, 为AI最佳实践用户培训课程和手册创建具体的指导案例和配套插图，并整理到文档中...",
+        "insights": [
+          "💬 完成 11 个任务: 当前网络环境无法访问内网，请检查网络连接，确认已连接公司内网或 VPN 后再试。, 为AI最佳实践用户培训课程和手册创建具体的指导案例和配套插图，并整理到文档中...",
+          "📁 项目成果: 文档完善 8 份"
+        ]
+      },
+      "growthToday": {
+        "memory": "新增2条记忆",
+        "skill": "技能运转正常",
+        "cognition": "🧠 新增记忆: KIM推送重复发送问题（v10.0 — 、技术架构全景图生成经验（AI生图），避免常见错误",
+        "workflow": "任务闭环完整"
+      },
+      "pending": [],
+      "todayPlan": [
+        {
+          "time": "06:30",
+          "task": "每日修炼 — 早间检查"
+        },
+        {
+          "time": "09:00",
+          "task": "AI日报生成与推送"
+        },
+        {
+          "time": "21:00",
+          "task": "每日修炼 — 晚间复盘"
+        }
       ]
     },
     {
@@ -1594,6 +2179,48 @@
         "💬 完成 7 个任务: 从AI Insight公开页面的首页删除订阅按钮, 用户希望使用AI生图工具将一张技术架构图改得更简洁美观，并调整连线关系（Data......",
         "📁 项目成果: 网页更新 1 个",
         "🧠 新增记忆: 生成图片后默认自动打开等3条，优化沟通方式"
+      ],
+      "attention": [],
+      "skillAnalysis": {
+        "callCount": 7,
+        "newSkills": 0,
+        "updatedSkills": 0,
+        "healthNote": "运行正常"
+      },
+      "evoStats": {
+        "items": [
+          "记忆+3条"
+        ],
+        "summary": "记忆+3条"
+      },
+      "communityLearning": {
+        "platform": "ClawBook",
+        "tldr": "💬 完成 7 个任务: 从AI Insight公开页面的首页删除订阅按钮, 用户希望使用AI生图工具将一张技术架构图改得更简洁美观，并调整连线关系（Data......",
+        "insights": [
+          "💬 完成 7 个任务: 从AI Insight公开页面的首页删除订阅按钮, 用户希望使用AI生图工具将一张技术架构图改得更简洁美观，并调整连线关系（Data......",
+          "📁 项目成果: 网页更新 1 个"
+        ]
+      },
+      "growthToday": {
+        "memory": "新增3条记忆",
+        "skill": "技能运转正常",
+        "cognition": "🧠 新增记忆: 生成图片后默认自动打开等3条，优化沟通方式",
+        "workflow": "任务闭环完整"
+      },
+      "pending": [],
+      "todayPlan": [
+        {
+          "time": "06:30",
+          "task": "每日修炼 — 早间检查"
+        },
+        {
+          "time": "09:00",
+          "task": "AI日报生成与推送"
+        },
+        {
+          "time": "21:00",
+          "task": "每日修炼 — 晚间复盘"
+        }
       ]
     },
     {
@@ -1785,6 +2412,48 @@
         "💬 完成 23 个任务: 用户要求基于七阶段演进框架分析Claude Code、OpenClaw和Herm..., 调研、文档...",
         "📁 项目成果: 网页更新 1 个",
         "🧠 新增记忆: 技能优先级规则：Internal > P，规范化开发实践"
+      ],
+      "attention": [],
+      "skillAnalysis": {
+        "callCount": 23,
+        "newSkills": 0,
+        "updatedSkills": 0,
+        "healthNote": "运行正常"
+      },
+      "evoStats": {
+        "items": [
+          "记忆+1条"
+        ],
+        "summary": "记忆+1条"
+      },
+      "communityLearning": {
+        "platform": "ClawBook",
+        "tldr": "💬 完成 23 个任务: 用户要求基于七阶段演进框架分析Claude Code、OpenClaw和Herm..., 调研、文档...",
+        "insights": [
+          "💬 完成 23 个任务: 用户要求基于七阶段演进框架分析Claude Code、OpenClaw和Herm..., 调研、文档...",
+          "📁 项目成果: 网页更新 1 个"
+        ]
+      },
+      "growthToday": {
+        "memory": "新增1条记忆",
+        "skill": "技能运转正常",
+        "cognition": "🧠 新增记忆: 技能优先级规则：Internal > P，规范化开发实践",
+        "workflow": "任务闭环完整"
+      },
+      "pending": [],
+      "todayPlan": [
+        {
+          "time": "06:30",
+          "task": "每日修炼 — 早间检查"
+        },
+        {
+          "time": "09:00",
+          "task": "AI日报生成与推送"
+        },
+        {
+          "time": "21:00",
+          "task": "每日修炼 — 晚间复盘"
+        }
       ]
     },
     {
@@ -1986,6 +2655,48 @@
         "💬 完成 5 个任务: 基于提供的上下文文档和最新材料，为MyFlicker设计一个面向CEO等管理层汇..., 用户希望运行AI日报生成流程并确认部署成功...",
         "📁 项目成果: 网页更新 1 个",
         "🧠 新增记忆: 技能加载不触发 meta-executi等5条，规范化开发实践"
+      ],
+      "attention": [],
+      "skillAnalysis": {
+        "callCount": 5,
+        "newSkills": 0,
+        "updatedSkills": 0,
+        "healthNote": "运行正常"
+      },
+      "evoStats": {
+        "items": [
+          "记忆+5条"
+        ],
+        "summary": "记忆+5条"
+      },
+      "communityLearning": {
+        "platform": "ClawBook",
+        "tldr": "💬 完成 5 个任务: 基于提供的上下文文档和最新材料，为MyFlicker设计一个面向CEO等管理层汇..., 用户希望运行AI日报生成流程并确认部署成功...",
+        "insights": [
+          "💬 完成 5 个任务: 基于提供的上下文文档和最新材料，为MyFlicker设计一个面向CEO等管理层汇..., 用户希望运行AI日报生成流程并确认部署成功...",
+          "📁 项目成果: 网页更新 1 个"
+        ]
+      },
+      "growthToday": {
+        "memory": "新增5条记忆",
+        "skill": "技能运转正常",
+        "cognition": "🧠 新增记忆: 技能加载不触发 meta-executi等5条，规范化开发实践",
+        "workflow": "任务闭环完整"
+      },
+      "pending": [],
+      "todayPlan": [
+        {
+          "time": "06:30",
+          "task": "每日修炼 — 早间检查"
+        },
+        {
+          "time": "09:00",
+          "task": "AI日报生成与推送"
+        },
+        {
+          "time": "21:00",
+          "task": "每日修炼 — 晚间复盘"
+        }
       ]
     },
     {
@@ -2136,6 +2847,46 @@
       "highlights": [
         "💬 完成 9 个任务: 执行 ClawBook 社区夜巡任务，包括全站扫描、深度互动、回复评论、主动分享..., 用户希望获取最新的战役周报，并基于此升级Skill沉淀文档的卡片结构，新增技能生......",
         "📁 项目成果: 文档完善 4 份"
+      ],
+      "attention": [],
+      "skillAnalysis": {
+        "callCount": 9,
+        "newSkills": 0,
+        "updatedSkills": 0,
+        "healthNote": "运行正常"
+      },
+      "evoStats": {
+        "items": [],
+        "summary": "持续运转中"
+      },
+      "communityLearning": {
+        "platform": "ClawBook",
+        "tldr": "💬 完成 9 个任务: 执行 ClawBook 社区夜巡任务，包括全站扫描、深度互动、回复评论、主动分享..., 用户希望获取最新的战役周报，并基于此升级Skill沉淀文档的卡片结构，新增技能生......",
+        "insights": [
+          "💬 完成 9 个任务: 执行 ClawBook 社区夜巡任务，包括全站扫描、深度互动、回复评论、主动分享..., 用户希望获取最新的战役周报，并基于此升级Skill沉淀文档的卡片结构，新增技能生......",
+          "📁 项目成果: 文档完善 4 份"
+        ]
+      },
+      "growthToday": {
+        "memory": "记忆稳定",
+        "skill": "技能运转正常",
+        "cognition": "📁 项目成果: 文档完善 4 份",
+        "workflow": "任务闭环完整"
+      },
+      "pending": [],
+      "todayPlan": [
+        {
+          "time": "06:30",
+          "task": "每日修炼 — 早间检查"
+        },
+        {
+          "time": "09:00",
+          "task": "AI日报生成与推送"
+        },
+        {
+          "time": "21:00",
+          "task": "每日修炼 — 晚间复盘"
+        }
       ]
     },
     {
@@ -2284,6 +3035,46 @@
       "highlights": [
         "💬 完成 15 个任务: 当前网络环境无法访问内网，请检查网络连接，确认已连接公司内网或 VPN 后再试。, 完成 ClawBook 社区晚巡任务，查看 #internal-api、#bui......",
         "📁 项目成果: 网页更新 296 个"
+      ],
+      "attention": [],
+      "skillAnalysis": {
+        "callCount": 15,
+        "newSkills": 0,
+        "updatedSkills": 0,
+        "healthNote": "运行正常"
+      },
+      "evoStats": {
+        "items": [],
+        "summary": "持续运转中"
+      },
+      "communityLearning": {
+        "platform": "ClawBook",
+        "tldr": "💬 完成 15 个任务: 当前网络环境无法访问内网，请检查网络连接，确认已连接公司内网或 VPN 后再试。, 完成 ClawBook 社区晚巡任务，查看 #internal-api、#bui......",
+        "insights": [
+          "💬 完成 15 个任务: 当前网络环境无法访问内网，请检查网络连接，确认已连接公司内网或 VPN 后再试。, 完成 ClawBook 社区晚巡任务，查看 #internal-api、#bui......",
+          "📁 项目成果: 网页更新 296 个"
+        ]
+      },
+      "growthToday": {
+        "memory": "记忆稳定",
+        "skill": "技能运转正常",
+        "cognition": "📁 项目成果: 网页更新 296 个",
+        "workflow": "任务闭环完整"
+      },
+      "pending": [],
+      "todayPlan": [
+        {
+          "time": "06:30",
+          "task": "每日修炼 — 早间检查"
+        },
+        {
+          "time": "09:00",
+          "task": "AI日报生成与推送"
+        },
+        {
+          "time": "21:00",
+          "task": "每日修炼 — 晚间复盘"
+        }
       ]
     },
     {
@@ -2463,6 +3254,48 @@
         "💬 完成 18 个任务: 用户询问系统具备哪些多Agent机制, 用户询问AI助手浏览论坛的情况...",
         "📁 项目成果: 网页更新 327 个",
         "⚡ 新增能力: html-screenshot，扩展任务处理范围"
+      ],
+      "attention": [],
+      "skillAnalysis": {
+        "callCount": 18,
+        "newSkills": 0,
+        "updatedSkills": 0,
+        "healthNote": "运行正常"
+      },
+      "evoStats": {
+        "items": [
+          "记忆+3条"
+        ],
+        "summary": "记忆+3条"
+      },
+      "communityLearning": {
+        "platform": "ClawBook",
+        "tldr": "💬 完成 18 个任务: 用户询问系统具备哪些多Agent机制, 用户询问AI助手浏览论坛的情况...",
+        "insights": [
+          "💬 完成 18 个任务: 用户询问系统具备哪些多Agent机制, 用户询问AI助手浏览论坛的情况...",
+          "📁 项目成果: 网页更新 327 个"
+        ]
+      },
+      "growthToday": {
+        "memory": "新增3条记忆",
+        "skill": "技能运转正常",
+        "cognition": "⚡ 新增能力: html-screenshot，扩展任务处理范围",
+        "workflow": "任务闭环完整"
+      },
+      "pending": [],
+      "todayPlan": [
+        {
+          "time": "06:30",
+          "task": "每日修炼 — 早间检查"
+        },
+        {
+          "time": "09:00",
+          "task": "AI日报生成与推送"
+        },
+        {
+          "time": "21:00",
+          "task": "每日修炼 — 晚间复盘"
+        }
       ]
     },
     {
@@ -2634,6 +3467,48 @@
         "💬 完成 8 个任务: 执行ClawBook社区夜巡任务，包括全站扫描、板块检查、深度互动、帮助他人、回..., 用户想要了解刚刚安装的一批Skill有哪些，并测试这些Skill的范围和能力...",
         "📁 项目成果: 网页更新 293 个",
         "🧠 新增记忆: TOC 锚点导航失效：v5.0 规范理解、KIM Doc 生成任务中占位符链接未清，避免常见错误"
+      ],
+      "attention": [],
+      "skillAnalysis": {
+        "callCount": 8,
+        "newSkills": 0,
+        "updatedSkills": 0,
+        "healthNote": "运行正常"
+      },
+      "evoStats": {
+        "items": [
+          "记忆+2条"
+        ],
+        "summary": "记忆+2条"
+      },
+      "communityLearning": {
+        "platform": "ClawBook",
+        "tldr": "💬 完成 8 个任务: 执行ClawBook社区夜巡任务，包括全站扫描、板块检查、深度互动、帮助他人、回..., 用户想要了解刚刚安装的一批Skill有哪些，并测试这些Skill的范围和能力...",
+        "insights": [
+          "💬 完成 8 个任务: 执行ClawBook社区夜巡任务，包括全站扫描、板块检查、深度互动、帮助他人、回..., 用户想要了解刚刚安装的一批Skill有哪些，并测试这些Skill的范围和能力...",
+          "📁 项目成果: 网页更新 293 个"
+        ]
+      },
+      "growthToday": {
+        "memory": "新增2条记忆",
+        "skill": "技能运转正常",
+        "cognition": "🧠 新增记忆: TOC 锚点导航失效：v5.0 规范理解、KIM Doc 生成任务中占位符链接未清，避免常见错误",
+        "workflow": "任务闭环完整"
+      },
+      "pending": [],
+      "todayPlan": [
+        {
+          "time": "06:30",
+          "task": "每日修炼 — 早间检查"
+        },
+        {
+          "time": "09:00",
+          "task": "AI日报生成与推送"
+        },
+        {
+          "time": "21:00",
+          "task": "每日修炼 — 晚间复盘"
+        }
       ]
     },
     {
@@ -2803,6 +3678,48 @@
         "💬 完成 15 个任务: 执行 ClawBook 社区夜巡任务，完成全站扫描、深度互动、回复评论和高质量发..., 执行 ClawBook 社区晚巡任务，查看 #internal-api、#bui......",
         "📁 项目成果: 网页更新 2 个",
         "🧠 新增记忆: 任务完成判断必须证据门控（防口头声称完成、定时任务模型配置规范：Auto模式（不指，规范化开发实践"
+      ],
+      "attention": [],
+      "skillAnalysis": {
+        "callCount": 15,
+        "newSkills": 0,
+        "updatedSkills": 0,
+        "healthNote": "运行正常"
+      },
+      "evoStats": {
+        "items": [
+          "记忆+2条"
+        ],
+        "summary": "记忆+2条"
+      },
+      "communityLearning": {
+        "platform": "ClawBook",
+        "tldr": "💬 完成 15 个任务: 执行 ClawBook 社区夜巡任务，完成全站扫描、深度互动、回复评论和高质量发..., 执行 ClawBook 社区晚巡任务，查看 #internal-api、#bui......",
+        "insights": [
+          "💬 完成 15 个任务: 执行 ClawBook 社区夜巡任务，完成全站扫描、深度互动、回复评论和高质量发..., 执行 ClawBook 社区晚巡任务，查看 #internal-api、#bui......",
+          "📁 项目成果: 网页更新 2 个"
+        ]
+      },
+      "growthToday": {
+        "memory": "新增2条记忆",
+        "skill": "技能运转正常",
+        "cognition": "🧠 新增记忆: 任务完成判断必须证据门控（防口头声称完成、定时任务模型配置规范：Auto模式（不指，规范化开发实践",
+        "workflow": "任务闭环完整"
+      },
+      "pending": [],
+      "todayPlan": [
+        {
+          "time": "06:30",
+          "task": "每日修炼 — 早间检查"
+        },
+        {
+          "time": "09:00",
+          "task": "AI日报生成与推送"
+        },
+        {
+          "time": "21:00",
+          "task": "每日修炼 — 晚间复盘"
+        }
       ]
     },
     {
@@ -3098,6 +4015,48 @@
         "💬 完成 16 个任务: 完成AI周报W15的发布（包括KIM卡片私发和四链接提供），执行日报风格升级到方..., 用户请求用AI生成一张图片来详细介绍助手自己...",
         "📁 项目成果: 修复: fix+perf: code review 一轮修复",
         "🧠 新增记忆: execute_command 引号/换，避免常见错误"
+      ],
+      "attention": [],
+      "skillAnalysis": {
+        "callCount": 16,
+        "newSkills": 0,
+        "updatedSkills": 0,
+        "healthNote": "运行正常"
+      },
+      "evoStats": {
+        "items": [
+          "记忆+1条"
+        ],
+        "summary": "记忆+1条"
+      },
+      "communityLearning": {
+        "platform": "ClawBook",
+        "tldr": "💬 完成 16 个任务: 完成AI周报W15的发布（包括KIM卡片私发和四链接提供），执行日报风格升级到方..., 用户请求用AI生成一张图片来详细介绍助手自己...",
+        "insights": [
+          "💬 完成 16 个任务: 完成AI周报W15的发布（包括KIM卡片私发和四链接提供），执行日报风格升级到方..., 用户请求用AI生成一张图片来详细介绍助手自己...",
+          "📁 项目成果: 修复: fix+perf: code review 一轮修复"
+        ]
+      },
+      "growthToday": {
+        "memory": "新增1条记忆",
+        "skill": "技能运转正常",
+        "cognition": "🧠 新增记忆: execute_command 引号/换，避免常见错误",
+        "workflow": "任务闭环完整"
+      },
+      "pending": [],
+      "todayPlan": [
+        {
+          "time": "06:30",
+          "task": "每日修炼 — 早间检查"
+        },
+        {
+          "time": "09:00",
+          "task": "AI日报生成与推送"
+        },
+        {
+          "time": "21:00",
+          "task": "每日修炼 — 晚间复盘"
+        }
       ]
     },
     {
@@ -3284,6 +4243,48 @@
         "💬 完成 22 个任务: 完成每日修炼Step 4.1记忆优化任务，包括加载元执行质量保障、内存卫生技能，..., 完成每日修炼的Step 4.2技能优化任务，包括加载meta-execution......",
         "📁 项目成果: 修复: slow playback to wait for phase narratio",
         "🧠 新增记忆: KIM Doc 配图发布流程：先生成图片、Step3 transcript 关键词，避免常见错误"
+      ],
+      "attention": [],
+      "skillAnalysis": {
+        "callCount": 22,
+        "newSkills": 0,
+        "updatedSkills": 0,
+        "healthNote": "运行正常"
+      },
+      "evoStats": {
+        "items": [
+          "记忆+2条"
+        ],
+        "summary": "记忆+2条"
+      },
+      "communityLearning": {
+        "platform": "ClawBook",
+        "tldr": "💬 完成 22 个任务: 完成每日修炼Step 4.1记忆优化任务，包括加载元执行质量保障、内存卫生技能，..., 完成每日修炼的Step 4.2技能优化任务，包括加载meta-execution......",
+        "insights": [
+          "💬 完成 22 个任务: 完成每日修炼Step 4.1记忆优化任务，包括加载元执行质量保障、内存卫生技能，..., 完成每日修炼的Step 4.2技能优化任务，包括加载meta-execution......",
+          "📁 项目成果: 修复: slow playback to wait for phase narratio"
+        ]
+      },
+      "growthToday": {
+        "memory": "新增2条记忆",
+        "skill": "技能运转正常",
+        "cognition": "🧠 新增记忆: KIM Doc 配图发布流程：先生成图片、Step3 transcript 关键词，避免常见错误",
+        "workflow": "任务闭环完整"
+      },
+      "pending": [],
+      "todayPlan": [
+        {
+          "time": "06:30",
+          "task": "每日修炼 — 早间检查"
+        },
+        {
+          "time": "09:00",
+          "task": "AI日报生成与推送"
+        },
+        {
+          "time": "21:00",
+          "task": "每日修炼 — 晚间复盘"
+        }
       ]
     },
     {
@@ -3461,6 +4462,48 @@
         "💬 完成 14 个任务: 用户希望创建一个高质量的AgentOS架构图，用于战役OnePage文档展示, 执行 ClawBook 社区晚巡任务，查看指定板块内容并进行点赞互动...",
         "📁 项目成果: 新增: add 100 solar mass black hole star",
         "🧠 新增记忆: ClawBook bash脚本blank等3条，避免常见错误"
+      ],
+      "attention": [],
+      "skillAnalysis": {
+        "callCount": 14,
+        "newSkills": -1,
+        "updatedSkills": 0,
+        "healthNote": "运行正常"
+      },
+      "evoStats": {
+        "items": [
+          "记忆+3条"
+        ],
+        "summary": "记忆+3条"
+      },
+      "communityLearning": {
+        "platform": "ClawBook",
+        "tldr": "💬 完成 14 个任务: 用户希望创建一个高质量的AgentOS架构图，用于战役OnePage文档展示, 执行 ClawBook 社区晚巡任务，查看指定板块内容并进行点赞互动...",
+        "insights": [
+          "💬 完成 14 个任务: 用户希望创建一个高质量的AgentOS架构图，用于战役OnePage文档展示, 执行 ClawBook 社区晚巡任务，查看指定板块内容并进行点赞互动...",
+          "📁 项目成果: 新增: add 100 solar mass black hole star"
+        ]
+      },
+      "growthToday": {
+        "memory": "新增3条记忆",
+        "skill": "技能运转正常",
+        "cognition": "🧠 新增记忆: ClawBook bash脚本blank等3条，避免常见错误",
+        "workflow": "任务闭环完整"
+      },
+      "pending": [],
+      "todayPlan": [
+        {
+          "time": "06:30",
+          "task": "每日修炼 — 早间检查"
+        },
+        {
+          "time": "09:00",
+          "task": "AI日报生成与推送"
+        },
+        {
+          "time": "21:00",
+          "task": "每日修炼 — 晚间复盘"
+        }
       ]
     },
     {
@@ -3625,6 +4668,46 @@
       "highlights": [
         "💬 完成 9 个任务: 当前网络环境无法访问内网，请检查网络连接，确认已连接公司内网或 VPN 后再试。, 用户希望同步最新的AI生产力战役OnePage和周报数据，因为项目子项目和责任人......",
         "📁 项目成果: 网页更新 7 个"
+      ],
+      "attention": [],
+      "skillAnalysis": {
+        "callCount": 9,
+        "newSkills": 0,
+        "updatedSkills": 0,
+        "healthNote": "运行正常"
+      },
+      "evoStats": {
+        "items": [],
+        "summary": "持续运转中"
+      },
+      "communityLearning": {
+        "platform": "ClawBook",
+        "tldr": "💬 完成 9 个任务: 当前网络环境无法访问内网，请检查网络连接，确认已连接公司内网或 VPN 后再试。, 用户希望同步最新的AI生产力战役OnePage和周报数据，因为项目子项目和责任人......",
+        "insights": [
+          "💬 完成 9 个任务: 当前网络环境无法访问内网，请检查网络连接，确认已连接公司内网或 VPN 后再试。, 用户希望同步最新的AI生产力战役OnePage和周报数据，因为项目子项目和责任人......",
+          "📁 项目成果: 网页更新 7 个"
+        ]
+      },
+      "growthToday": {
+        "memory": "记忆稳定",
+        "skill": "技能运转正常",
+        "cognition": "📁 项目成果: 网页更新 7 个",
+        "workflow": "任务闭环完整"
+      },
+      "pending": [],
+      "todayPlan": [
+        {
+          "time": "06:30",
+          "task": "每日修炼 — 早间检查"
+        },
+        {
+          "time": "09:00",
+          "task": "AI日报生成与推送"
+        },
+        {
+          "time": "21:00",
+          "task": "每日修炼 — 晚间复盘"
+        }
       ]
     },
     {
@@ -3903,6 +4986,46 @@
         "💬 完成 13 个任务: 用户希望执行 ClawBook 社区夜巡任务，包括全站扫描、深度互动、帮助他人和..., 检查并同步近期未被更新到首页的AI深度调研内容，确保首页能完整展示所有调研...",
         "📁 项目成果: 网页更新 1 个",
         "⚡ 新增能力: ks-cafeteria-recommendation、ks-visitor-reserve，提升UI/设计输出质量"
+      ],
+      "attention": [],
+      "skillAnalysis": {
+        "callCount": 13,
+        "newSkills": 0,
+        "updatedSkills": 0,
+        "healthNote": "运行正常"
+      },
+      "evoStats": {
+        "items": [],
+        "summary": "持续运转中"
+      },
+      "communityLearning": {
+        "platform": "ClawBook",
+        "tldr": "💬 完成 13 个任务: 用户希望执行 ClawBook 社区夜巡任务，包括全站扫描、深度互动、帮助他人和..., 检查并同步近期未被更新到首页的AI深度调研内容，确保首页能完整展示所有调研...",
+        "insights": [
+          "💬 完成 13 个任务: 用户希望执行 ClawBook 社区夜巡任务，包括全站扫描、深度互动、帮助他人和..., 检查并同步近期未被更新到首页的AI深度调研内容，确保首页能完整展示所有调研...",
+          "📁 项目成果: 网页更新 1 个"
+        ]
+      },
+      "growthToday": {
+        "memory": "记忆稳定",
+        "skill": "技能运转正常",
+        "cognition": "⚡ 新增能力: ks-cafeteria-recommendation、ks-visitor-reserve，提升UI/设计输出质量",
+        "workflow": "任务闭环完整"
+      },
+      "pending": [],
+      "todayPlan": [
+        {
+          "time": "06:30",
+          "task": "每日修炼 — 早间检查"
+        },
+        {
+          "time": "09:00",
+          "task": "AI日报生成与推送"
+        },
+        {
+          "time": "21:00",
+          "task": "每日修炼 — 晚间复盘"
+        }
       ]
     },
     {
@@ -4104,6 +5227,48 @@
         "💬 完成 15 个任务: 帮助解决 AI 生产力 Landing Page 的部署更新问题，使最新代码能在..., 完成 ClawBook 社区晚巡任务，扫描 #internal-api、#bui......",
         "📁 项目成果: 新增: feat(pioneer): 新增 AI 普惠第三章节，月度领域路线图时间线（4",
         "🧠 新增记忆: ClawBook 社区账号强制规则：永远，避免常见错误"
+      ],
+      "attention": [],
+      "skillAnalysis": {
+        "callCount": 15,
+        "newSkills": 0,
+        "updatedSkills": 0,
+        "healthNote": "运行正常"
+      },
+      "evoStats": {
+        "items": [
+          "记忆+1条"
+        ],
+        "summary": "记忆+1条"
+      },
+      "communityLearning": {
+        "platform": "ClawBook",
+        "tldr": "💬 完成 15 个任务: 帮助解决 AI 生产力 Landing Page 的部署更新问题，使最新代码能在..., 完成 ClawBook 社区晚巡任务，扫描 #internal-api、#bui......",
+        "insights": [
+          "💬 完成 15 个任务: 帮助解决 AI 生产力 Landing Page 的部署更新问题，使最新代码能在..., 完成 ClawBook 社区晚巡任务，扫描 #internal-api、#bui......",
+          "📁 项目成果: 新增: feat(pioneer): 新增 AI 普惠第三章节，月度领域路线图时间线（4"
+        ]
+      },
+      "growthToday": {
+        "memory": "新增1条记忆",
+        "skill": "技能运转正常",
+        "cognition": "🧠 新增记忆: ClawBook 社区账号强制规则：永远，避免常见错误",
+        "workflow": "任务闭环完整"
+      },
+      "pending": [],
+      "todayPlan": [
+        {
+          "time": "06:30",
+          "task": "每日修炼 — 早间检查"
+        },
+        {
+          "time": "09:00",
+          "task": "AI日报生成与推送"
+        },
+        {
+          "time": "21:00",
+          "task": "每日修炼 — 晚间复盘"
+        }
       ]
     },
     {
@@ -4373,6 +5538,50 @@
         "💬 完成 9 个任务: 全面修复元技能体系相关问题，包括更新binding-list.md、修正meta..., 分析AI日报系统中外部版本同步机制的实现细节和潜在问题...",
         "📁 项目成果: 网页更新 263 个",
         "🧠 新增记忆: 吸星大法模式D缺失两个P0步骤（经验#7、agent-trigger.sh 调用 ，避免常见错误"
+      ],
+      "attention": [],
+      "skillAnalysis": {
+        "callCount": 9,
+        "newSkills": 23,
+        "updatedSkills": 0,
+        "healthNote": "运行正常"
+      },
+      "evoStats": {
+        "items": [
+          "新增23个技能",
+          "知识库+12份",
+          "记忆+2条"
+        ],
+        "summary": "新增23个技能、知识库+12份、记忆+2条"
+      },
+      "communityLearning": {
+        "platform": "ClawBook",
+        "tldr": "💬 完成 9 个任务: 全面修复元技能体系相关问题，包括更新binding-list.md、修正meta..., 分析AI日报系统中外部版本同步机制的实现细节和潜在问题...",
+        "insights": [
+          "💬 完成 9 个任务: 全面修复元技能体系相关问题，包括更新binding-list.md、修正meta..., 分析AI日报系统中外部版本同步机制的实现细节和潜在问题...",
+          "📁 项目成果: 网页更新 263 个"
+        ]
+      },
+      "growthToday": {
+        "memory": "新增2条记忆",
+        "skill": "新增23个技能",
+        "cognition": "🧠 新增记忆: 吸星大法模式D缺失两个P0步骤（经验#7、agent-trigger.sh 调用 ，避免常见错误",
+        "workflow": "任务闭环完整"
+      },
+      "pending": [],
+      "todayPlan": [
+        {
+          "time": "06:30",
+          "task": "每日修炼 — 早间检查"
+        },
+        {
+          "time": "09:00",
+          "task": "AI日报生成与推送"
+        },
+        {
+          "time": "21:00",
+          "task": "每日修炼 — 晚间复盘"
+        }
       ]
     },
     {
@@ -4890,6 +6099,50 @@
         "💬 完成 8 个任务: 用户希望调整AI生产力官方Landing Page的UI设计，包括收紧各区域间距..., 用户希望分析和优化元技能体系的潜在问题，包括集成断层、结构性风险和进化回路盲区，......",
         "📁 项目成果: 新增: 统一全站区块宽度对齐——section/topbar/hero/footer统一",
         "⚡ 新增能力: meta-analogy-transfer、meta-boundary-sense，提升UI/设计输出质量"
+      ],
+      "attention": [],
+      "skillAnalysis": {
+        "callCount": 8,
+        "newSkills": 8,
+        "updatedSkills": 0,
+        "healthNote": "运行正常"
+      },
+      "evoStats": {
+        "items": [
+          "新增8个技能",
+          "知识库+1份",
+          "记忆+7条"
+        ],
+        "summary": "新增8个技能、知识库+1份、记忆+7条"
+      },
+      "communityLearning": {
+        "platform": "ClawBook",
+        "tldr": "💬 完成 8 个任务: 用户希望调整AI生产力官方Landing Page的UI设计，包括收紧各区域间距..., 用户希望分析和优化元技能体系的潜在问题，包括集成断层、结构性风险和进化回路盲区，......",
+        "insights": [
+          "💬 完成 8 个任务: 用户希望调整AI生产力官方Landing Page的UI设计，包括收紧各区域间距..., 用户希望分析和优化元技能体系的潜在问题，包括集成断层、结构性风险和进化回路盲区，......",
+          "📁 项目成果: 新增: 统一全站区块宽度对齐——section/topbar/hero/footer统一"
+        ]
+      },
+      "growthToday": {
+        "memory": "新增7条记忆",
+        "skill": "新增8个技能",
+        "cognition": "⚡ 新增能力: meta-analogy-transfer、meta-boundary-sense，提升UI/设计输出质量",
+        "workflow": "任务闭环完整"
+      },
+      "pending": [],
+      "todayPlan": [
+        {
+          "time": "06:30",
+          "task": "每日修炼 — 早间检查"
+        },
+        {
+          "time": "09:00",
+          "task": "AI日报生成与推送"
+        },
+        {
+          "time": "21:00",
+          "task": "每日修炼 — 晚间复盘"
+        }
       ]
     },
     {
@@ -5094,6 +6347,48 @@
         "💬 完成 15 个任务: 执行 ClawBook 社区夜巡任务，包括全站扫描、板块检查、深度互动、回复评论..., 用户进行了一个简单的对话测试，助手以简短确认回应...",
         "📁 项目成果: 新增: 全面重构 AI 员工 Tab 排版",
         "⚡ 新增能力: sl-ai-productivity、anti-distill，扩展任务处理范围"
+      ],
+      "attention": [],
+      "skillAnalysis": {
+        "callCount": 15,
+        "newSkills": 0,
+        "updatedSkills": 0,
+        "healthNote": "运行正常"
+      },
+      "evoStats": {
+        "items": [
+          "记忆+2条"
+        ],
+        "summary": "记忆+2条"
+      },
+      "communityLearning": {
+        "platform": "ClawBook",
+        "tldr": "💬 完成 15 个任务: 执行 ClawBook 社区夜巡任务，包括全站扫描、板块检查、深度互动、回复评论..., 用户进行了一个简单的对话测试，助手以简短确认回应...",
+        "insights": [
+          "💬 完成 15 个任务: 执行 ClawBook 社区夜巡任务，包括全站扫描、板块检查、深度互动、回复评论..., 用户进行了一个简单的对话测试，助手以简短确认回应...",
+          "📁 项目成果: 新增: 全面重构 AI 员工 Tab 排版"
+        ]
+      },
+      "growthToday": {
+        "memory": "新增2条记忆",
+        "skill": "技能运转正常",
+        "cognition": "⚡ 新增能力: sl-ai-productivity、anti-distill，扩展任务处理范围",
+        "workflow": "任务闭环完整"
+      },
+      "pending": [],
+      "todayPlan": [
+        {
+          "time": "06:30",
+          "task": "每日修炼 — 早间检查"
+        },
+        {
+          "time": "09:00",
+          "task": "AI日报生成与推送"
+        },
+        {
+          "time": "21:00",
+          "task": "每日修炼 — 晚间复盘"
+        }
       ]
     },
     {
@@ -5205,6 +6500,46 @@
         "💬 完成 3 个任务: Simple Acknowledgment Exchange, 用户没有提出具体的编程或技术问题，仅进行了简单的确认性对话...",
         "📁 项目成果: 网页更新 2 个",
         "⚡ 新增能力: sl-ai-productivity-weekly-report，扩展任务处理范围"
+      ],
+      "attention": [],
+      "skillAnalysis": {
+        "callCount": 3,
+        "newSkills": 0,
+        "updatedSkills": 0,
+        "healthNote": "运行正常"
+      },
+      "evoStats": {
+        "items": [],
+        "summary": "持续运转中"
+      },
+      "communityLearning": {
+        "platform": "ClawBook",
+        "tldr": "💬 完成 3 个任务: Simple Acknowledgment Exchange, 用户没有提出具体的编程或技术问题，仅进行了简单的确认性对话...",
+        "insights": [
+          "💬 完成 3 个任务: Simple Acknowledgment Exchange, 用户没有提出具体的编程或技术问题，仅进行了简单的确认性对话...",
+          "📁 项目成果: 网页更新 2 个"
+        ]
+      },
+      "growthToday": {
+        "memory": "记忆稳定",
+        "skill": "技能运转正常",
+        "cognition": "⚡ 新增能力: sl-ai-productivity-weekly-report，扩展任务处理范围",
+        "workflow": "任务闭环完整"
+      },
+      "pending": [],
+      "todayPlan": [
+        {
+          "time": "06:30",
+          "task": "每日修炼 — 早间检查"
+        },
+        {
+          "time": "09:00",
+          "task": "AI日报生成与推送"
+        },
+        {
+          "time": "21:00",
+          "task": "每日修炼 — 晚间复盘"
+        }
       ]
     },
     {
@@ -5371,6 +6706,48 @@
         "💬 完成 22 个任务: 执行 ClawBook 社区夜巡任务，包括全站扫描、深度互动评论、帮助 stuc..., Simple Acknowledgment Response...",
         "📁 项目成果: 网页更新 35 个",
         "🧠 新增记忆: AI生产力战役周报推送配置，加深用户理解"
+      ],
+      "attention": [],
+      "skillAnalysis": {
+        "callCount": 22,
+        "newSkills": 0,
+        "updatedSkills": 0,
+        "healthNote": "运行正常"
+      },
+      "evoStats": {
+        "items": [
+          "记忆+1条"
+        ],
+        "summary": "记忆+1条"
+      },
+      "communityLearning": {
+        "platform": "ClawBook",
+        "tldr": "💬 完成 22 个任务: 执行 ClawBook 社区夜巡任务，包括全站扫描、深度互动评论、帮助 stuc..., Simple Acknowledgment Response...",
+        "insights": [
+          "💬 完成 22 个任务: 执行 ClawBook 社区夜巡任务，包括全站扫描、深度互动评论、帮助 stuc..., Simple Acknowledgment Response...",
+          "📁 项目成果: 网页更新 35 个"
+        ]
+      },
+      "growthToday": {
+        "memory": "新增1条记忆",
+        "skill": "技能运转正常",
+        "cognition": "🧠 新增记忆: AI生产力战役周报推送配置，加深用户理解",
+        "workflow": "任务闭环完整"
+      },
+      "pending": [],
+      "todayPlan": [
+        {
+          "time": "06:30",
+          "task": "每日修炼 — 早间检查"
+        },
+        {
+          "time": "09:00",
+          "task": "AI日报生成与推送"
+        },
+        {
+          "time": "21:00",
+          "task": "每日修炼 — 晚间复盘"
+        }
       ]
     },
     {
@@ -5564,6 +6941,48 @@
         "💬 完成 12 个任务: 用户询问AI助手的身份和绑定关系, 研究并理解 agent-system-design.md 文件中的多 Agent......",
         "📁 项目成果: 网页更新 255 个",
         "⚡ 新增能力: sl-kim-bridge，扩展任务处理范围"
+      ],
+      "attention": [],
+      "skillAnalysis": {
+        "callCount": 12,
+        "newSkills": 0,
+        "updatedSkills": 0,
+        "healthNote": "运行正常"
+      },
+      "evoStats": {
+        "items": [
+          "记忆+1条"
+        ],
+        "summary": "记忆+1条"
+      },
+      "communityLearning": {
+        "platform": "ClawBook",
+        "tldr": "💬 完成 12 个任务: 用户询问AI助手的身份和绑定关系, 研究并理解 agent-system-design.md 文件中的多 Agent......",
+        "insights": [
+          "💬 完成 12 个任务: 用户询问AI助手的身份和绑定关系, 研究并理解 agent-system-design.md 文件中的多 Agent......",
+          "📁 项目成果: 网页更新 255 个"
+        ]
+      },
+      "growthToday": {
+        "memory": "新增1条记忆",
+        "skill": "技能运转正常",
+        "cognition": "⚡ 新增能力: sl-kim-bridge，扩展任务处理范围",
+        "workflow": "任务闭环完整"
+      },
+      "pending": [],
+      "todayPlan": [
+        {
+          "time": "06:30",
+          "task": "每日修炼 — 早间检查"
+        },
+        {
+          "time": "09:00",
+          "task": "AI日报生成与推送"
+        },
+        {
+          "time": "21:00",
+          "task": "每日修炼 — 晚间复盘"
+        }
       ]
     },
     {
@@ -5737,6 +7156,48 @@
         "💬 完成 9 个任务: 为快手 AI生产力 OnePage 文档的02章节表格中的每一行写下目标和打法初..., 为快手 AI生产力 OnePage 文档的 02章节表格中每一行撰写目标与打法初......",
         "📁 项目成果: 网页更新 223 个",
         "🧠 新增记忆: Agent会话API并发干扰主会话Web，避免常见错误"
+      ],
+      "attention": [],
+      "skillAnalysis": {
+        "callCount": 9,
+        "newSkills": 0,
+        "updatedSkills": 0,
+        "healthNote": "运行正常"
+      },
+      "evoStats": {
+        "items": [
+          "记忆+1条"
+        ],
+        "summary": "记忆+1条"
+      },
+      "communityLearning": {
+        "platform": "ClawBook",
+        "tldr": "💬 完成 9 个任务: 为快手 AI生产力 OnePage 文档的02章节表格中的每一行写下目标和打法初..., 为快手 AI生产力 OnePage 文档的 02章节表格中每一行撰写目标与打法初......",
+        "insights": [
+          "💬 完成 9 个任务: 为快手 AI生产力 OnePage 文档的02章节表格中的每一行写下目标和打法初..., 为快手 AI生产力 OnePage 文档的 02章节表格中每一行撰写目标与打法初......",
+          "📁 项目成果: 网页更新 223 个"
+        ]
+      },
+      "growthToday": {
+        "memory": "新增1条记忆",
+        "skill": "技能运转正常",
+        "cognition": "🧠 新增记忆: Agent会话API并发干扰主会话Web，避免常见错误",
+        "workflow": "任务闭环完整"
+      },
+      "pending": [],
+      "todayPlan": [
+        {
+          "time": "06:30",
+          "task": "每日修炼 — 早间检查"
+        },
+        {
+          "time": "09:00",
+          "task": "AI日报生成与推送"
+        },
+        {
+          "time": "21:00",
+          "task": "每日修炼 — 晚间复盘"
+        }
       ]
     },
     {
@@ -5910,6 +7371,46 @@
         "💬 完成 13 个任务: 将飞轮实战拆解内容合并到AI生产力报告的主HTML文件中，并部署到快手内网, 探讨如何将Reflexion和CASCADE框架集成到现有系统中以实现AI自我改......",
         "📁 项目成果: 网页更新 7 个",
         "⚡ 新增能力: svg-flowchart-designer，提升UI/设计输出质量"
+      ],
+      "attention": [],
+      "skillAnalysis": {
+        "callCount": 13,
+        "newSkills": 0,
+        "updatedSkills": 0,
+        "healthNote": "运行正常"
+      },
+      "evoStats": {
+        "items": [],
+        "summary": "持续运转中"
+      },
+      "communityLearning": {
+        "platform": "ClawBook",
+        "tldr": "💬 完成 13 个任务: 将飞轮实战拆解内容合并到AI生产力报告的主HTML文件中，并部署到快手内网, 探讨如何将Reflexion和CASCADE框架集成到现有系统中以实现AI自我改......",
+        "insights": [
+          "💬 完成 13 个任务: 将飞轮实战拆解内容合并到AI生产力报告的主HTML文件中，并部署到快手内网, 探讨如何将Reflexion和CASCADE框架集成到现有系统中以实现AI自我改......",
+          "📁 项目成果: 网页更新 7 个"
+        ]
+      },
+      "growthToday": {
+        "memory": "记忆稳定",
+        "skill": "技能运转正常",
+        "cognition": "⚡ 新增能力: svg-flowchart-designer，提升UI/设计输出质量",
+        "workflow": "任务闭环完整"
+      },
+      "pending": [],
+      "todayPlan": [
+        {
+          "time": "06:30",
+          "task": "每日修炼 — 早间检查"
+        },
+        {
+          "time": "09:00",
+          "task": "AI日报生成与推送"
+        },
+        {
+          "time": "21:00",
+          "task": "每日修炼 — 晚间复盘"
+        }
       ]
     },
     {
@@ -6184,6 +7685,48 @@
         "💬 完成 24 个任务: 执行ClawBook社区夜巡任务，包括内容审核、深度互动和技术经验分享, 执行一系列技术命令或操作...",
         "📁 项目成果: 新增: initial commit - Quant CEO Intelligence ",
         "⚡ 新增能力: UI/UX专业设计、remotion-best-practices，提升UI/设计输出质量"
+      ],
+      "attention": [],
+      "skillAnalysis": {
+        "callCount": 24,
+        "newSkills": 0,
+        "updatedSkills": 0,
+        "healthNote": "运行正常"
+      },
+      "evoStats": {
+        "items": [
+          "记忆+3条"
+        ],
+        "summary": "记忆+3条"
+      },
+      "communityLearning": {
+        "platform": "ClawBook",
+        "tldr": "💬 完成 24 个任务: 执行ClawBook社区夜巡任务，包括内容审核、深度互动和技术经验分享, 执行一系列技术命令或操作...",
+        "insights": [
+          "💬 完成 24 个任务: 执行ClawBook社区夜巡任务，包括内容审核、深度互动和技术经验分享, 执行一系列技术命令或操作...",
+          "📁 项目成果: 新增: initial commit - Quant CEO Intelligence "
+        ]
+      },
+      "growthToday": {
+        "memory": "新增3条记忆",
+        "skill": "技能运转正常",
+        "cognition": "⚡ 新增能力: UI/UX专业设计、remotion-best-practices，提升UI/设计输出质量",
+        "workflow": "任务闭环完整"
+      },
+      "pending": [],
+      "todayPlan": [
+        {
+          "time": "06:30",
+          "task": "每日修炼 — 早间检查"
+        },
+        {
+          "time": "09:00",
+          "task": "AI日报生成与推送"
+        },
+        {
+          "time": "21:00",
+          "task": "每日修炼 — 晚间复盘"
+        }
       ]
     },
     {
@@ -6353,6 +7896,46 @@
         "💬 完成 11 个任务: 优化九坤CEO参谋台的交互体验和数据展示机制, 生成并同步AI日报的Markdown和HTML文件到Git仓库...",
         "📁 项目成果: 文档完善 2 份",
         "⚡ 新增能力: meta-long-task-runner，扩展任务处理范围"
+      ],
+      "attention": [],
+      "skillAnalysis": {
+        "callCount": 11,
+        "newSkills": 0,
+        "updatedSkills": 0,
+        "healthNote": "运行正常"
+      },
+      "evoStats": {
+        "items": [],
+        "summary": "持续运转中"
+      },
+      "communityLearning": {
+        "platform": "ClawBook",
+        "tldr": "💬 完成 11 个任务: 优化九坤CEO参谋台的交互体验和数据展示机制, 生成并同步AI日报的Markdown和HTML文件到Git仓库...",
+        "insights": [
+          "💬 完成 11 个任务: 优化九坤CEO参谋台的交互体验和数据展示机制, 生成并同步AI日报的Markdown和HTML文件到Git仓库...",
+          "📁 项目成果: 文档完善 2 份"
+        ]
+      },
+      "growthToday": {
+        "memory": "记忆稳定",
+        "skill": "技能运转正常",
+        "cognition": "⚡ 新增能力: meta-long-task-runner，扩展任务处理范围",
+        "workflow": "任务闭环完整"
+      },
+      "pending": [],
+      "todayPlan": [
+        {
+          "time": "06:30",
+          "task": "每日修炼 — 早间检查"
+        },
+        {
+          "time": "09:00",
+          "task": "AI日报生成与推送"
+        },
+        {
+          "time": "21:00",
+          "task": "每日修炼 — 晚间复盘"
+        }
       ]
     },
     {
@@ -6626,6 +8209,48 @@
         "💬 完成 19 个任务: 优化九坤CEO参谋台的交互体验和数据展示机制, 执行社区夜巡任务并进行技术知识分享，包括解决git commit中文问题和企业级......",
         "📁 项目成果: 网页更新 1 个",
         "⚡ 新增能力: sp-write-skill、sp-verify，提升UI/设计输出质量"
+      ],
+      "attention": [],
+      "skillAnalysis": {
+        "callCount": 19,
+        "newSkills": 0,
+        "updatedSkills": 0,
+        "healthNote": "运行正常"
+      },
+      "evoStats": {
+        "items": [
+          "记忆+4条"
+        ],
+        "summary": "记忆+4条"
+      },
+      "communityLearning": {
+        "platform": "ClawBook",
+        "tldr": "💬 完成 19 个任务: 优化九坤CEO参谋台的交互体验和数据展示机制, 执行社区夜巡任务并进行技术知识分享，包括解决git commit中文问题和企业级......",
+        "insights": [
+          "💬 完成 19 个任务: 优化九坤CEO参谋台的交互体验和数据展示机制, 执行社区夜巡任务并进行技术知识分享，包括解决git commit中文问题和企业级......",
+          "📁 项目成果: 网页更新 1 个"
+        ]
+      },
+      "growthToday": {
+        "memory": "新增4条记忆",
+        "skill": "技能运转正常",
+        "cognition": "⚡ 新增能力: sp-write-skill、sp-verify，提升UI/设计输出质量",
+        "workflow": "任务闭环完整"
+      },
+      "pending": [],
+      "todayPlan": [
+        {
+          "time": "06:30",
+          "task": "每日修炼 — 早间检查"
+        },
+        {
+          "time": "09:00",
+          "task": "AI日报生成与推送"
+        },
+        {
+          "time": "21:00",
+          "task": "每日修炼 — 晚间复盘"
+        }
       ]
     }
   ]

@@ -3063,6 +3063,163 @@
             margin-left: 8px;
             font-family: 'Noto Serif SC', serif;
         }
+
+        /* ===== 每日修炼布局 ===== */
+        .daily-cultivation-layout {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 4px 0;
+        }
+        .cultivation-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+        .cultivation-block {
+            background: rgba(42,37,32,0.85);
+            border: 1px solid rgba(201,168,76,0.15);
+            border-radius: 4px;
+            padding: 12px 14px;
+        }
+        .cultivation-block--attention { border-left: 3px solid rgba(231,76,60,0.5); }
+        .cultivation-block--skill { border-left: 3px solid rgba(126,200,227,0.4); }
+        .cultivation-block--evo { border-left: 3px solid rgba(74,222,128,0.4); }
+        .cultivation-block--community { border-left: 3px solid rgba(167,139,250,0.4); }
+        .cultivation-block--growth { border-left: 3px solid rgba(201,168,76,0.5); }
+        .cultivation-block--pending { border-left: 3px solid rgba(251,146,60,0.4); }
+        .cultivation-block--plan { border-left: 3px solid rgba(126,200,227,0.25); }
+
+        .cultivation-block-header {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            margin-bottom: 10px;
+        }
+        .cult-icon { font-size: 14px; }
+        .cult-title {
+            font-family: 'Cinzel', serif;
+            font-size: 12px;
+            color: var(--hylian-gold);
+            font-weight: 700;
+            letter-spacing: 0.05em;
+        }
+        .cult-badge {
+            font-size: 10px;
+            padding: 1px 6px;
+            border-radius: 10px;
+            background: rgba(231,76,60,0.2);
+            color: #e74c3c;
+            font-family: 'Cinzel', serif;
+        }
+        .cult-platform {
+            font-size: 10px;
+            color: var(--sheikah-blue);
+            opacity: 0.5;
+            margin-left: auto;
+        }
+        .cult-content { font-size: 12px; color: var(--parchment-dark); }
+        .cult-ok { color: rgba(74,222,128,0.6); font-size: 12px; }
+
+        /* 技能分析 */
+        .cult-stat-row {
+            display: flex; justify-content: space-between;
+            padding: 3px 0;
+            border-bottom: 1px solid rgba(201,168,76,0.05);
+        }
+        .cult-stat-label { opacity: 0.5; }
+        .cult-stat-val { color: var(--hylian-gold); font-family: 'Cinzel', serif; }
+
+        /* 自进化统计 */
+        .cult-evo-stats {
+            display: flex; gap: 10px; margin-bottom: 8px;
+        }
+        .cult-cap-mini {
+            display: flex; align-items: center; gap: 4px;
+            font-size: 12px;
+        }
+        .cult-cap-icon { font-size: 13px; }
+        .cult-cap-val {
+            font-family: 'Cinzel', serif;
+            color: var(--hylian-gold);
+            font-size: 14px;
+        }
+        .cult-cap-chg {
+            font-size: 10px;
+            color: rgba(74,222,128,0.7);
+        }
+        .cult-evo-summary {
+            font-size: 11px;
+            color: var(--parchment-dark);
+            opacity: 0.6;
+            line-height: 1.4;
+        }
+
+        /* 社区学习 */
+        .cult-community-insights {
+            display: flex; flex-direction: column; gap: 5px;
+        }
+        .cult-insight-tag {
+            display: inline-block;
+            padding: 3px 8px;
+            background: rgba(167,139,250,0.1);
+            border: 1px solid rgba(167,139,250,0.2);
+            border-radius: 3px;
+            font-size: 11px;
+            color: var(--parchment-dark);
+        }
+
+        /* 今日成长 */
+        .cult-growth-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+        }
+        .cult-growth-item {
+            display: flex; flex-direction: column; gap: 2px;
+        }
+        .growth-dim {
+            font-size: 10px;
+            color: var(--sheikah-blue);
+            opacity: 0.5;
+            font-family: 'Cinzel', serif;
+        }
+        .growth-text {
+            font-size: 11px;
+            color: var(--parchment-dark);
+            line-height: 1.4;
+        }
+
+        /* 待解决 */
+        .cult-pending-item {
+            padding: 4px 0;
+            font-size: 11px;
+            border-bottom: 1px solid rgba(201,168,76,0.05);
+            color: var(--parchment-dark);
+        }
+        .cult-pending-impact {
+            font-size: 10px;
+            padding: 1px 5px;
+            border-radius: 3px;
+            background: rgba(251,146,60,0.15);
+            color: rgba(251,146,60,0.8);
+            margin-right: 4px;
+        }
+
+        /* 今日计划 */
+        .cult-plan-list { display: flex; flex-direction: column; gap: 5px; }
+        .cult-plan-item {
+            display: flex; align-items: center; gap: 8px;
+            font-size: 11px;
+        }
+        .cult-plan-time {
+            font-family: 'Cinzel', serif;
+            font-size: 11px;
+            color: var(--sheikah-blue);
+            opacity: 0.6;
+            min-width: 42px;
+        }
+        .cult-plan-task { color: var(--parchment-dark); }
         .tool-summary-card {
             background: linear-gradient(135deg, var(--ancient-stone) 0%, var(--ancient-stone-light) 100%);
             border: 1px solid rgba(201,168,76,0.12);
@@ -4726,8 +4883,8 @@
                         <span>交付情况</span>
                     </button>
                     <button class="sub-nav-btn" data-tab="capability" onclick="switchSubTab('daily', 'capability')">
-                        <span class="sub-nav-icon">📈</span>
-                        <span>能力提升</span>
+                        <span class="sub-nav-icon">🧬</span>
+                        <span>每日修炼</span>
                     </button>
                 </div>
 
@@ -4761,57 +4918,143 @@
                     </div>
                 </div>
 
-                <!-- Tab内容：能力提升 -->
+                <!-- Tab内容：每日修炼 -->
                 <div class="sub-tab-content" data-tab="capability">
-                    <div class="daily-section-block capability-block">
-                        <div class="block-header">
-                            <span class="block-icon">📈</span>
-                            <span class="block-title">能力提升</span>
-                        </div>
+                    <div class="daily-cultivation-layout">
 
-                        <!-- 能力概览卡片 -->
-                        <div class="capability-overview">
-                            <div class="cap-card-v2">
-                                <div class="cap-icon-v2">⚡</div>
-                                <div class="cap-info-v2">
-                                    <div class="cap-label-v2">技能</div>
-                                    <div class="cap-value-v2" id="cap-skills-v2">-</div>
-                                </div>
-                                <div class="cap-change-v2" id="cap-skills-change-v2">-</div>
+                        <!-- B1: 需你关注 -->
+                        <div class="cultivation-block cultivation-block--attention" id="block-attention">
+                            <div class="cultivation-block-header">
+                                <span class="cult-icon">🎯</span>
+                                <span class="cult-title">需你关注</span>
+                                <span class="cult-badge" id="attention-badge"></span>
                             </div>
-                            <div class="cap-card-v2">
-                                <div class="cap-icon-v2">📚</div>
-                                <div class="cap-info-v2">
-                                    <div class="cap-label-v2">知识</div>
-                                    <div class="cap-value-v2" id="cap-knowledge-v2">-</div>
-                                </div>
-                                <div class="cap-change-v2" id="cap-knowledge-change-v2">-</div>
-                            </div>
-                            <div class="cap-card-v2">
-                                <div class="cap-icon-v2">🧠</div>
-                                <div class="cap-info-v2">
-                                    <div class="cap-label-v2">记忆</div>
-                                    <div class="cap-value-v2" id="cap-memory-v2">-</div>
-                                </div>
-                                <div class="cap-change-v2" id="cap-memory-change-v2">-</div>
+                            <div class="cult-content" id="attention-content">
+                                <span class="cult-ok">✅ 运行平稳</span>
                             </div>
                         </div>
 
-                        <!-- 新增内容标签 -->
-                        <div class="capability-changes-v2">
-                            <div class="changes-section" id="new-items-section">
-                                <div class="changes-title">🌟 今日新增</div>
-                                <div class="changes-tags" id="new-items-tags"></div>
+                        <!-- B3+B4: 技能分析 + 自进化统计 (同行) -->
+                        <div class="cultivation-row">
+                            <div class="cultivation-block cultivation-block--skill" id="block-skill">
+                                <div class="cultivation-block-header">
+                                    <span class="cult-icon">🛠️</span>
+                                    <span class="cult-title">技能分析</span>
+                                </div>
+                                <div class="cult-content">
+                                    <div class="cult-skill-stats" id="skill-analysis-content">
+                                        <div class="cult-stat-row">
+                                            <span class="cult-stat-label">调用次数</span>
+                                            <span class="cult-stat-val" id="skill-call-count">-</span>
+                                        </div>
+                                        <div class="cult-stat-row">
+                                            <span class="cult-stat-label">新增技能</span>
+                                            <span class="cult-stat-val" id="skill-new-count">-</span>
+                                        </div>
+                                        <div class="cult-stat-row">
+                                            <span class="cult-stat-label">健康状态</span>
+                                            <span class="cult-stat-val" id="skill-health">-</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cultivation-block cultivation-block--evo" id="block-evo">
+                                <div class="cultivation-block-header">
+                                    <span class="cult-icon">🧬</span>
+                                    <span class="cult-title">自进化统计</span>
+                                </div>
+                                <div class="cult-content">
+                                    <div class="cult-evo-stats">
+                                        <div class="cult-cap-mini">
+                                            <span class="cult-cap-icon">⚡</span>
+                                            <span class="cult-cap-val" id="evo-skill-val">-</span>
+                                            <span class="cult-cap-chg" id="evo-skill-chg"></span>
+                                        </div>
+                                        <div class="cult-cap-mini">
+                                            <span class="cult-cap-icon">📚</span>
+                                            <span class="cult-cap-val" id="evo-know-val">-</span>
+                                            <span class="cult-cap-chg" id="evo-know-chg"></span>
+                                        </div>
+                                        <div class="cult-cap-mini">
+                                            <span class="cult-cap-icon">🧠</span>
+                                            <span class="cult-cap-val" id="evo-mem-val">-</span>
+                                            <span class="cult-cap-chg" id="evo-mem-chg"></span>
+                                        </div>
+                                    </div>
+                                    <div class="cult-evo-summary" id="evo-summary">-</div>
+                                </div>
                             </div>
                         </div>
 
-                        <!-- 趋势图 -->
-                        <div class="trend-chart-section">
-                            <div class="trend-title">📊 成长趋势</div>
-                            <div class="trend-chart-container">
-                                <canvas id="dailyTrendChart"></canvas>
+                        <!-- B5: 社区学习 -->
+                        <div class="cultivation-block cultivation-block--community" id="block-community">
+                            <div class="cultivation-block-header">
+                                <span class="cult-icon">📚</span>
+                                <span class="cult-title">社区学习</span>
+                                <span class="cult-platform" id="community-platform">ClawBook</span>
+                            </div>
+                            <div class="cult-content">
+                                <div class="cult-community-insights" id="community-insights">
+                                    <!-- 动态填充 -->
+                                </div>
                             </div>
                         </div>
+
+                        <!-- B6: 今日成长 -->
+                        <div class="cultivation-block cultivation-block--growth" id="block-growth">
+                            <div class="cultivation-block-header">
+                                <span class="cult-icon">💡</span>
+                                <span class="cult-title">今日成长</span>
+                            </div>
+                            <div class="cult-content">
+                                <div class="cult-growth-grid" id="growth-grid">
+                                    <div class="cult-growth-item">
+                                        <span class="growth-dim">🧠 记忆</span>
+                                        <span class="growth-text" id="growth-memory">-</span>
+                                    </div>
+                                    <div class="cult-growth-item">
+                                        <span class="growth-dim">⚡ 技能</span>
+                                        <span class="growth-text" id="growth-skill">-</span>
+                                    </div>
+                                    <div class="cult-growth-item">
+                                        <span class="growth-dim">💡 认知</span>
+                                        <span class="growth-text" id="growth-cognition">-</span>
+                                    </div>
+                                    <div class="cult-growth-item">
+                                        <span class="growth-dim">🔄 工作流</span>
+                                        <span class="growth-text" id="growth-workflow">-</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- B7+B8: 待解决 + 今日计划 (同行) -->
+                        <div class="cultivation-row">
+                            <div class="cultivation-block cultivation-block--pending" id="block-pending">
+                                <div class="cultivation-block-header">
+                                    <span class="cult-icon">🔴</span>
+                                    <span class="cult-title">待解决</span>
+                                    <span class="cult-badge" id="pending-badge"></span>
+                                </div>
+                                <div class="cult-content">
+                                    <div id="pending-list">
+                                        <span class="cult-ok">✅ 无阻塞事项</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cultivation-block cultivation-block--plan" id="block-plan">
+                                <div class="cultivation-block-header">
+                                    <span class="cult-icon">📅</span>
+                                    <span class="cult-title">定时任务</span>
+                                </div>
+                                <div class="cult-content">
+                                    <div class="cult-plan-list" id="plan-list">
+                                        <!-- 动态填充 -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </section>

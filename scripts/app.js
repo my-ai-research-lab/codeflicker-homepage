@@ -990,38 +990,84 @@ function renderDeliveries(deliveries) {
     }).join('');
 }
 
-// ========== v7.1: 板块三 - 能力提升 ==========
+// ========== 每日修炼 8块结构渲染 ==========
 function renderCapabilityGrowth(capData) {
-    // 能力概览卡片
-    const skillsEl = document.getElementById('cap-skills-v2');
-    const knowledgeEl = document.getElementById('cap-knowledge-v2');
-    const memoryEl = document.getElementById('cap-memory-v2');
-    
-    if (skillsEl) skillsEl.textContent = capData.skillCount || capData.skillsTotal || '-';
-    if (knowledgeEl) knowledgeEl.textContent = capData.knowledgeCount || capData.knowledgeTotal || '-';
-    if (memoryEl) memoryEl.textContent = capData.memoryCount || capData.memoryTotal || '-';
-    
-    // 从趋势数据中计算真实的变化量（如果 capData 中的变化量不准确）
-    const trend = AppState.reportsData?.trend;
-    let actualSkillChange = capData.skillChange;
-    let actualKnowledgeChange = capData.knowledgeChange;
-    let actualMemoryChange = capData.memoryChange;
-    
-    // 如果趋势数据存在，使用趋势数据计算更准确的变化量
-    if (trend && trend.skills && trend.skills.length >= 2) {
-        const len = trend.skills.length;
-        actualSkillChange = trend.skills[len - 1] - trend.skills[len - 2];
-        actualKnowledgeChange = trend.knowledge[len - 1] - trend.knowledge[len - 2];
-        actualMemoryChange = trend.memory[len - 1] - trend.memory[len - 2];
+    const r = capData;
+
+    // B1: 需你关注
+    const attentionContent = document.getElementById('attention-content');
+    const attentionBadge = document.getElementById('attention-badge');
+    const attention = r.attention || [];
+    if (attentionContent) {
+        if (attention.length === 0) {
+            attentionContent.innerHTML = '<span class="cult-ok">✅ 运行平稳</span>';
+        } else {
+            attentionBadge && (attentionBadge.textContent = attention.length + '条');
+            attentionContent.innerHTML = attention.map(a =>
+                `<div class="cult-stat-row"><span>${escapeHtml(typeof a === 'string' ? a : (a.issue || a))}</span></div>`
+            ).join('');
+        }
     }
-    
-    // 能力变化
-    updateCapChangeV2('cap-skills-change-v2', actualSkillChange);
-    updateCapChangeV2('cap-knowledge-change-v2', actualKnowledgeChange);
-    updateCapChangeV2('cap-memory-change-v2', actualMemoryChange);
-    
-    // 新增内容标签
-    renderNewItemsTags(capData);
+
+    // B3: 技能分析
+    const sa = r.skillAnalysis || {};
+    const el = (id) => document.getElementById(id);
+    if (el('skill-call-count')) el('skill-call-count').textContent = sa.callCount || r.conversationCount || '-';
+    if (el('skill-new-count')) el('skill-new-count').textContent = sa.newSkills > 0 ? '+' + sa.newSkills : (sa.newSkills === 0 ? '无新增' : '-');
+    if (el('skill-health')) el('skill-health').textContent = sa.healthNote || '正常';
+
+    // B4: 自进化统计
+    if (el('evo-skill-val')) el('evo-skill-val').textContent = r.skillCount || '-';
+    if (el('evo-skill-chg')) { const c = r.skillChange||0; el('evo-skill-chg').textContent = c > 0 ? '+'+c : (c < 0 ? c : ''); }
+    if (el('evo-know-val')) el('evo-know-val').textContent = r.knowledgeCount || '-';
+    if (el('evo-know-chg')) { const c = r.knowledgeChange||0; el('evo-know-chg').textContent = c > 0 ? '+'+c : (c < 0 ? c : ''); }
+    if (el('evo-mem-val')) el('evo-mem-val').textContent = r.memoryCount || '-';
+    if (el('evo-mem-chg')) { const c = r.memoryChange||0; el('evo-mem-chg').textContent = c > 0 ? '+'+c : (c < 0 ? c : ''); }
+    const evo = r.evoStats || {};
+    if (el('evo-summary')) el('evo-summary').textContent = evo.summary || (r.skillChange||r.knowledgeChange||r.memoryChange ? '有新增沉淀' : '持续运转中');
+
+    // B5: 社区学习
+    const cl = r.communityLearning || {};
+    if (el('community-platform')) el('community-platform').textContent = cl.platform || 'ClawBook';
+    const insights = cl.insights || r.highlights || [];
+    if (el('community-insights')) {
+        el('community-insights').innerHTML = insights.length > 0
+            ? insights.map(i => `<div class="cult-insight-tag">💡 ${escapeHtml(typeof i === 'string' ? i : i.text||i)}</div>`).join('')
+            : '<span class="cult-ok" style="opacity:0.5">暂无社区互动记录</span>';
+    }
+
+    // B6: 今日成长
+    const gt = r.growthToday || {};
+    if (el('growth-memory')) el('growth-memory').textContent = gt.memory || '-';
+    if (el('growth-skill')) el('growth-skill').textContent = gt.skill || '-';
+    if (el('growth-cognition')) el('growth-cognition').textContent = gt.cognition || '-';
+    if (el('growth-workflow')) el('growth-workflow').textContent = gt.workflow || '-';
+
+    // B7: 待解决
+    const pending = r.pending || [];
+    const pendingBadge = el('pending-badge');
+    const pendingList = el('pending-list');
+    if (pendingList) {
+        if (pending.length === 0) {
+            pendingList.innerHTML = '<span class="cult-ok">✅ 无阻塞事项</span>';
+            pendingBadge && (pendingBadge.textContent = '');
+        } else {
+            pendingBadge && (pendingBadge.textContent = pending.length + '项');
+            pendingList.innerHTML = pending.map(p => {
+                const txt = typeof p === 'string' ? p : (p.issue || p.text || JSON.stringify(p));
+                const impact = typeof p === 'object' ? (p.impact || '') : '';
+                return `<div class="cult-pending-item">${impact ? `<span class="cult-pending-impact">${escapeHtml(impact)}</span>` : ''}${escapeHtml(txt)}</div>`;
+            }).join('');
+        }
+    }
+
+    // B8: 今日计划
+    const plan = r.todayPlan || [];
+    if (el('plan-list')) {
+        el('plan-list').innerHTML = plan.length > 0
+            ? plan.map(p => `<div class="cult-plan-item"><span class="cult-plan-time">${escapeHtml(p.time||'')}</span><span class="cult-plan-task">${escapeHtml(p.task||'')}</span></div>`).join('')
+            : '<span style="opacity:0.4;font-size:11px">暂无计划</span>';
+    }
 }
 
 function updateCapChangeV2(elementId, change) {
