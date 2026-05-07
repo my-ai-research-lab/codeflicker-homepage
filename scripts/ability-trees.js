@@ -210,33 +210,31 @@ function renderSkillTechTree(container, skills) {
         return null;
     }
     
-    var guideSkill = findSkillByName('meta-xiaowuxianggong');
-    var absorbSkill = findSkillByName('meta-xixingdafa');
-    var exportSkill = findSkillByName('meta-beiming-shengong');
-    var coreSkill = findSkillByName('meta-daily-reflection-evolution');
-    var reviewSkill = findSkillByName('meta-learn-from-mistakes');
-    // v13.0: 内功修炼已废弃，不再查找
-    var toolNames = ['meta-memory-hygiene', 'meta-skill-management', 'meta-knowledge-curator'];
+    var guideSkill = findSkillByName('sl-meta-xiaowuxianggong');
+    var absorbSkill = findSkillByName('sl-meta-xixingdafa');
+    var exportSkill = findSkillByName('sl-meta-beiming-shengong');
+    var coreSkill = findSkillByName('evo-daily-reflection');
+    var reviewSkill = findSkillByName('evo-learn-from-mistakes');
+    var executionSkill = findSkillByName('evo-meta-execution');
+    // 系统优化工具
+    var toolNames = ['sl-meta-context-sense', 'sl-meta-signal-extractor', 'sl-meta-boundary-sense'];
     var toolSkills = [];
     for (var t = 0; t < toolNames.length; t++) {
         var ts = findSkillByName(toolNames[t]);
         if (ts) toolSkills.push(ts);
     }
-    var techniqueNames = ['meta-find-skills', 'meta-skill-creator', 'meta-skill-evaluator', 'meta-skill-dojo'];
+    var techniqueNames = ['sl-meta-analogy-transfer', 'sl-meta-uncertainty-marker', 'sl-meta-essence-insight', 'sl-meta-trust-builder'];
     var techniqueSkills = [];
     for (var tt = 0; tt < techniqueNames.length; tt++) {
         var tsk = findSkillByName(techniqueNames[tt]);
         if (tsk) techniqueSkills.push(tsk);
     }
     
-    // === 引擎区域（完全遵循Demo页面结构） ===
+    // === 引擎区域（四层架构：引擎层独立展示） ===
     var engineHtml = '';
-    if (guideSkill && coreSkill) {
-        // 获取所有需要的技能
-        var proactiveSkill = findSkillByName('meta-proactive-agent');
-        var homepageSkill = findSkillByName('link-homepage');
+    if (guideSkill) {
+        var homepageSkill = findSkillByName('sl-meta-homepage');
         
-        // 创建节点（使用与demo完全一致的类名）
         function createDemoNode(skill, displayName, role, variant, nodeId) {
             if (!skill) return '';
             var id = storeSkill(skill);
@@ -251,7 +249,8 @@ function renderSkillTechTree(container, skills) {
                 'proactive': '#fb923c',
                 'tool': '#4ade80',
                 'lifecycle': 'rgba(200, 220, 240, 0.6)',
-                'homepage': '#38bdf8'
+                'homepage': '#38bdf8',
+                'execution': '#7ec8e3'
             };
             var color = colorMap[variant] || '#a78bfa';
             var nodeClass = 'engine-node engine-node--' + variant;
@@ -269,26 +268,25 @@ function renderSkillTechTree(container, skills) {
             '</div>';
         }
         
-        // 三大功法节点
+        // 三大功法节点（迁移后新名称）
         var absorbNodeHtml = absorbSkill ? createDemoNode(absorbSkill, '吸星大法', '外部吸收', 'absorb') : '';
-        var guideNodeHtml = createDemoNode(guideSkill, '小无相功', '进化导航', 'guide');
+        var guideNodeHtml = createDemoNode(guideSkill, '进化导航', '体系导航+反思触发', 'guide');
         var exportNodeHtml = exportSkill ? createDemoNode(exportSkill, '北冥神功', '能力导出', 'export') : '';
         
         // 核心能力节点
-        var proactiveNodeHtml = proactiveSkill ? createDemoNode(proactiveSkill, '主动自驱', '让引擎自己动', 'proactive') : '';
-        var coreNodeHtml = createDemoNode(coreSkill, '闭关修炼', '每日流水线', 'core');
+        var executionNodeHtml = executionSkill ? createDemoNode(executionSkill, '一次做对', 'P1→P0→P2质量保障', 'execution') : '';
+        var coreNodeHtml = coreSkill ? createDemoNode(coreSkill, '每日修炼', '修炼流水线入口', 'core') : '';
         
-        // 双轮驱动节点（直接读 displayName/displayRole，无硬编码映射）
-        // v13.0: 内功修炼已废弃，只保留经验总结
-        var reviewNodeHtml = reviewSkill ? createDemoNode(reviewSkill, reviewSkill.displayName || getName(reviewSkill), reviewSkill.displayRole || '复盘', 'tool') : '';
+        // 复盘节点
+        var reviewNodeHtml = reviewSkill ? createDemoNode(reviewSkill, '举一反三', '从经验提取模式', 'tool') : '';
         
-        // 系统优化工具节点（直接读 displayRole，无硬编码 toolDisplayNames/toolRoleNames）
+        // 系统优化工具节点（感知+边界感知+信号提取）
         var toolNodesHtml = '';
-        var toolNodeIds = { 'meta-memory-hygiene': 'node-memory' }; // 记忆优化需要ID以便L形连接器定位
+        var toolNodeIds = {};
         for (var ti = 0; ti < toolSkills.length; ti++) {
             var ts = toolSkills[ti];
             var tsName = ts.displayName || getName(ts);
-            var tsRole = ts.displayRole || '基座工具';
+            var tsRole = ts.displayRole || '元能力';
             var tsId = toolNodeIds[ts.name] || null;
             if (ti > 0) {
                 var pDelay = (ti - 1) * 0.9;
@@ -296,50 +294,36 @@ function renderSkillTechTree(container, skills) {
             }
             toolNodesHtml += createDemoNode(ts, tsName, tsRole, 'tool', tsId);
         }
-        // 林克首页节点
-        if (homepageSkill) {
-            toolNodesHtml += '<div class="tools-connector"><div class="connector-h"></div><div class="arrow-right"></div><div class="energy-particles"><div class="energy-particle" style="--particle-color: #4ade80; --particle-duration: 2.2s; animation-delay: 0s;"></div><div class="energy-particle" style="--particle-color: #4ade80; --particle-duration: 2.2s; animation-delay: 1.1s;"></div></div></div>';
-            toolNodesHtml += createDemoNode(homepageSkill, homepageSkill.displayName || '林克首页', homepageSkill.displayRole || '对外门面', 'homepage');
-        }
         
-        // 技能生命周期节点（v13.5: 标题放在U形闭环内左侧，与技能发现同行）
+        // 技能生命周期节点（推理+感知+协作维度）
         var lifecycleHtml = '';
         if (techniqueSkills.length > 0) {
-            // 新布局：标题在技能发现节点左边，同行显示（v13.9: 删除"技能生命周期"标签和箭头）
             lifecycleHtml = '<div class="lifecycle-section lifecycle-section--compact"><div class="lifecycle-flow">';
-            // v13.9: 移除左侧标题和第一个连接器
-            var skillNames = ['技能发现', '技能创建', '技能评估', '技能修炼'];
-            var skillRoles = ['搜索市场技能', '从零编写技能', '评测质量分数', '持续精进优化'];
             for (var ti2 = 0; ti2 < techniqueSkills.length; ti2++) {
                 var sk = techniqueSkills[ti2];
                 var skid = storeSkill(sk);
                 var sklevel = sk.level || 1;
                 var skexp = sk.exp || (sklevel * 20);
                 var skdash = 50 * (1 - skexp / 100);
-                var nodeId = ti2 === 0 ? 'id="node-skill-find"' : (ti2 === techniqueSkills.length - 1 ? 'id="node-skill-dojo"' : '');
-                // v13.9: 移除第一个节点前的连接器
-                lifecycleHtml += '<div ' + nodeId + ' class="engine-node engine-node--lifecycle" onmouseenter="showTreeTooltip(event, \'' + skid + '\', \'skill\')" onmouseleave="hideTooltip()">' +
+                lifecycleHtml += '<div class="engine-node engine-node--lifecycle" onmouseenter="showTreeTooltip(event, \'' + skid + '\', \'skill\')" onmouseleave="hideTooltip()">' +
                     '<div class="engine-node-ring"><svg viewBox="0 0 22 22"><circle class="ring-bg" cx="11" cy="11" r="8"/><circle class="ring-progress" cx="11" cy="11" r="8" stroke-dasharray="50" stroke-dashoffset="' + skdash + '" style="stroke: rgba(200, 220, 240, 0.6);"/></svg><span class="engine-node-level">' + sklevel + '</span></div>' +
-                    '<div class="engine-node-info"><span class="engine-node-name">' + skillNames[ti2] + '</span><span class="engine-node-role">' + skillRoles[ti2] + '</span></div></div>';
+                    '<div class="engine-node-info"><span class="engine-node-name">' + (sk.displayName || getName(sk)) + '</span><span class="engine-node-role">' + (sk.displayRole || '元能力') + '</span></div></div>';
                 if (ti2 < techniqueSkills.length - 1) {
                     var particleDelay = ti2 * 0.5;
                     lifecycleHtml += '<div class="lifecycle-connector"><div class="connector-h" style="--line-from: rgba(167, 139, 250, 0.4); --line-to: rgba(56, 189, 248, 0.4);"></div><div class="arrow-right" style="--arrow-color: rgba(56, 189, 248, 0.5);"></div><div class="energy-particles"><div class="energy-particle" style="--particle-color: #a78bfa; --particle-duration: 2s; animation-delay: ' + particleDelay + 's;"></div></div></div>';
                 }
             }
-            // U形闭环底部的"社区学习"标签
-            lifecycleHtml += '<span class="lifecycle-feedback-label connector-label" style="--label-color: rgba(167, 139, 250, 0.85); --label-border: rgba(167, 139, 250, 0.4);">社区学习</span>';
+            lifecycleHtml += '<span class="lifecycle-feedback-label connector-label" style="--label-color: rgba(167, 139, 250, 0.85); --label-border: rgba(167, 139, 250, 0.4);">L2元能力</span>';
             lifecycleHtml += '</div></div>';
         }
         
-        // 组装完整的引擎HTML（完全遵循Demo结构）
+        // 组装引擎HTML
         engineHtml = '<div class="engine-section">' +
-            '<div class="engine-header"><span class="engine-icon">\uD83D\uDD04</span><span class="engine-title">自进化引擎</span><span class="engine-desc">驱动持续进化的核心引擎</span></div>' +
+            '<div class="engine-header"><span class="engine-icon">\uD83D\uDD04</span><span class="engine-title">L1 引擎层 · 自进化闭环</span><span class="engine-desc">修炼→复盘→吸收→导出→导航→质量保障</span></div>' +
             '<div class="engine-body">' +
-                // 内功运转能量环
                 '<div class="energy-ring energy-ring--1"></div>' +
                 '<div class="energy-ring energy-ring--2"></div>' +
                 '<div class="energy-ring energy-ring--3"></div>' +
-                // 三大功法
                 '<div class="three-techniques">' +
                     absorbNodeHtml +
                     '<div class="technique-connector"><div class="connector-h" style="--line-from: #38bdf8; --line-to: #a78bfa;"></div><div class="arrow-right" style="--arrow-color: #a78bfa;"></div><span class="connector-label connector-label--center" style="--label-color: #38bdf8; --label-border: rgba(56, 189, 248, 0.4);">增强</span><div class="energy-particles"><div class="energy-particle" style="--particle-color: #38bdf8; animation-delay: 0s;"></div><div class="energy-particle" style="--particle-color: #38bdf8; animation-delay: 0.8s;"></div></div></div>' +
@@ -347,25 +331,17 @@ function renderSkillTechTree(container, skills) {
                     '<div class="technique-connector"><div class="connector-h" style="--line-from: #a78bfa; --line-to: #4ade80;"></div><div class="arrow-right" style="--arrow-color: #4ade80;"></div><span class="connector-label connector-label--center" style="--label-color: #4ade80; --label-border: rgba(74, 222, 128, 0.4);">导出</span><div class="energy-particles"><div class="energy-particle" style="--particle-color: #4ade80; animation-delay: 0.3s;"></div><div class="energy-particle" style="--particle-color: #4ade80; animation-delay: 1.1s;"></div></div></div>' +
                     exportNodeHtml +
                 '</div>' +
-                // 导航连接
-                '<div class="nav-connector-section"><div class="connector-v connector-v--animated" style="--line-from: #a78bfa; --line-to: #fb923c;"></div><div class="arrow-down" style="--arrow-color: #fb923c;"></div><span class="connector-label connector-label--side" style="--label-color: #a78bfa; --label-border: rgba(167, 139, 250, 0.4);">导航调度</span><div class="energy-particles"><div class="energy-particle" style="--particle-color: #a78bfa; --particle-animation: particle-v; animation-delay: 0.5s;"></div></div></div>' +
-                // 核心能力区
+                '<div class="nav-connector-section"><div class="connector-v connector-v--animated" style="--line-from: #a78bfa; --line-to: #fb923c;"></div><div class="arrow-down" style="--arrow-color: #fb923c;"></div><span class="connector-label connector-label--side" style="--label-color: #a78bfa; --label-border: rgba(167, 139, 250, 0.4);">调度</span><div class="energy-particles"><div class="energy-particle" style="--particle-color: #a78bfa; --particle-animation: particle-v; animation-delay: 0.5s;"></div></div></div>' +
                 '<div class="core-section"><div class="core-row">' +
-                    proactiveNodeHtml +
-                    '<div class="core-connector"><div class="connector-h" style="--line-from: #fb923c; --line-to: #fb923c;"></div><div class="arrow-right" style="--arrow-color: #fb923c;"></div><span class="connector-label connector-label--center" style="--label-color: #fb923c; --label-border: rgba(251, 146, 60, 0.4);">触发</span><div class="energy-particles"><div class="energy-particle" style="--particle-color: #fb923c; --particle-duration: 1.5s; animation-delay: 0s;"></div><div class="energy-particle" style="--particle-color: #fb923c; --particle-duration: 1.5s; animation-delay: 0.7s;"></div></div></div>' +
-                    '<div id="node-biguan" class="engine-node engine-node--core" onmouseenter="showTreeTooltip(event, \'' + storeSkill(coreSkill) + '\', \'skill\')" onmouseleave="hideTooltip()"><div class="engine-node-ring"><svg viewBox="0 0 22 22"><circle class="ring-bg" cx="11" cy="11" r="8"/><circle class="ring-progress" cx="11" cy="11" r="8" stroke-dasharray="50" stroke-dashoffset="' + (50 * (1 - (coreSkill.exp || (coreSkill.level || 1) * 20) / 100)) + '" style="stroke: #fb923c;"/></svg><span class="engine-node-level">' + (coreSkill.level || 1) + '</span></div><div class="engine-node-info"><span class="engine-node-name">闭关修炼</span><span class="engine-node-role">每日流水线</span></div></div>' +
+                    executionNodeHtml +
+                    (executionSkill && coreSkill ? '<div class="core-connector"><div class="connector-h" style="--line-from: #7ec8e3; --line-to: #fb923c;"></div><div class="arrow-right" style="--arrow-color: #fb923c;"></div><span class="connector-label connector-label--center" style="--label-color: #7ec8e3; --label-border: rgba(126,200,227,0.4);">触发</span><div class="energy-particles"><div class="energy-particle" style="--particle-color: #7ec8e3; --particle-duration: 1.5s; animation-delay: 0s;"></div><div class="energy-particle" style="--particle-color: #7ec8e3; --particle-duration: 1.5s; animation-delay: 0.7s;"></div></div></div>' : '') +
+                    (coreSkill ? '<div class="engine-node engine-node--core" onmouseenter="showTreeTooltip(event, \'' + storeSkill(coreSkill) + '\', \'skill\')" onmouseleave="hideTooltip()"><div class="engine-node-ring"><svg viewBox="0 0 22 22"><circle class="ring-bg" cx="11" cy="11" r="8"/><circle class="ring-progress" cx="11" cy="11" r="8" stroke-dasharray="50" stroke-dashoffset="' + (50 * (1 - (coreSkill.exp || (coreSkill.level || 1) * 20) / 100)) + '" style="stroke: #fb923c;"/></svg><span class="engine-node-level">' + (coreSkill.level || 1) + '</span></div><div class="engine-node-info"><span class="engine-node-name">每日修炼</span><span class="engine-node-role">修炼流水线入口</span></div></div>' : '') +
                 '</div></div>' +
-                // v13.0: 经验总结移到系统优化工具左边，直接连接到记忆体系优化
-                // 系统优化工具（前置经验总结）
                 '<div class="system-tools"><div class="tools-grid">' +
-                    // 经验总结节点
-                    '<div id="node-jingyan" class="engine-node engine-node--tool" onmouseenter="showTreeTooltip(event, \'' + storeSkill(reviewSkill) + '\', \'skill\')" onmouseleave="hideTooltip()"><div class="engine-node-ring"><svg viewBox="0 0 22 22"><circle class="ring-bg" cx="11" cy="11" r="8"/><circle class="ring-progress" cx="11" cy="11" r="8" stroke-dasharray="50" stroke-dashoffset="' + (50 * (1 - ((reviewSkill && reviewSkill.exp) || ((reviewSkill && reviewSkill.level) || 1) * 20) / 100)) + '" style="stroke: #4ade80;"/></svg><span class="engine-node-level">' + ((reviewSkill && reviewSkill.level) || 1) + '</span></div><div class="engine-node-info"><span class="engine-node-name">经验总结</span><span class="engine-node-role">复盘并举一反三</span></div></div>' +
-                    // 经验总结 → 记忆体系优化 连接器
-                    '<div class="tools-connector"><div class="connector-h" style="--line-from: #4ade80; --line-to: #4ade80;"></div><div class="arrow-right" style="--arrow-color: #4ade80;"></div><div class="energy-particles"><div class="energy-particle" style="--particle-color: #4ade80; --particle-duration: 2.2s; animation-delay: 0s;"></div><div class="energy-particle" style="--particle-color: #4ade80; --particle-duration: 2.2s; animation-delay: 1.1s;"></div></div></div>' +
-                    // 系统优化工具节点
+                    (reviewSkill ? '<div class="engine-node engine-node--tool" onmouseenter="showTreeTooltip(event, \'' + storeSkill(reviewSkill) + '\', \'skill\')" onmouseleave="hideTooltip()"><div class="engine-node-ring"><svg viewBox="0 0 22 22"><circle class="ring-bg" cx="11" cy="11" r="8"/><circle class="ring-progress" cx="11" cy="11" r="8" stroke-dasharray="50" stroke-dashoffset="' + (50 * (1 - ((reviewSkill.exp) || (reviewSkill.level || 1) * 20) / 100)) + '" style="stroke: #4ade80;"/></svg><span class="engine-node-level">' + (reviewSkill.level || 1) + '</span></div><div class="engine-node-info"><span class="engine-node-name">举一反三</span><span class="engine-node-role">从经验提取模式</span></div></div>' : '') +
+                    (toolSkills.length > 0 && reviewSkill ? '<div class="tools-connector"><div class="connector-h" style="--line-from: #4ade80; --line-to: #4ade80;"></div><div class="arrow-right" style="--arrow-color: #4ade80;"></div><div class="energy-particles"><div class="energy-particle" style="--particle-color: #4ade80; --particle-duration: 2.2s; animation-delay: 0s;"></div></div></div>' : '') +
                     toolNodesHtml +
                 '</div></div>' +
-                // 技能生命周期
                 lifecycleHtml +
             '</div>' +
         '</div>';

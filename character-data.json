@@ -3051,7 +3051,9 @@
                 "skillSizeLabel": "1K字 · 微型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": "Link"
+                "tag": "Link",
+                "platform": "Work",
+                "platformLabel": "⚡ Work"
               },
               {
                 "name": "sl-meta-xixingdafa",
@@ -3070,7 +3072,9 @@
                 "skillSizeLabel": "1K字 · 微型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": "Link"
+                "tag": "Link",
+                "platform": "Work",
+                "platformLabel": "⚡ Work"
               },
               {
                 "name": "sl-meta-beiming-shengong",
@@ -3089,7 +3093,9 @@
                 "skillSizeLabel": "1K字 · 微型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": "Link"
+                "tag": "Link",
+                "platform": "Work",
+                "platformLabel": "⚡ Work"
               },
               {
                 "name": "evo-meta-execution",
@@ -3108,7 +3114,9 @@
                 "skillSizeLabel": "1K字 · 微型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": "Link"
+                "tag": "Link",
+                "platform": "Root",
+                "platformLabel": "🔒 系统级"
               },
               {
                 "name": "evo-daily-reflection",
@@ -3127,7 +3135,9 @@
                 "skillSizeLabel": "1K字 · 微型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": "Link"
+                "tag": "Link",
+                "platform": "Root",
+                "platformLabel": "🔒 系统级"
               },
               {
                 "name": "evo-learn-from-mistakes",
@@ -3146,7 +3156,9 @@
                 "skillSizeLabel": "1K字 · 微型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": "Link"
+                "tag": "Link",
+                "platform": "Root",
+                "platformLabel": "🔒 系统级"
               }
             ]
           }
@@ -3181,7 +3193,9 @@
                 "skillSizeLabel": "1K字 · 微型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": "Link"
+                "tag": "Link",
+                "platform": "Work",
+                "platformLabel": "⚡ Work"
               },
               {
                 "name": "sl-meta-signal-extractor",
@@ -3200,7 +3214,9 @@
                 "skillSizeLabel": "1K字 · 微型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": "Link"
+                "tag": "Link",
+                "platform": "Work",
+                "platformLabel": "⚡ Work"
               }
             ]
           },
@@ -3227,7 +3243,9 @@
                 "skillSizeLabel": "1K字 · 微型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": "Link"
+                "tag": "Link",
+                "platform": "Work",
+                "platformLabel": "⚡ Work"
               },
               {
                 "name": "sl-meta-uncertainty-marker",
@@ -3246,7 +3264,9 @@
                 "skillSizeLabel": "1K字 · 微型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": "Link"
+                "tag": "Link",
+                "platform": "Work",
+                "platformLabel": "⚡ Work"
               },
               {
                 "name": "sl-meta-essence-insight",
@@ -3265,7 +3285,9 @@
                 "skillSizeLabel": "1K字 · 微型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": "Link"
+                "tag": "Link",
+                "platform": "Work",
+                "platformLabel": "⚡ Work"
               }
             ]
           },
@@ -3292,7 +3314,9 @@
                 "skillSizeLabel": "1K字 · 微型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": "Link"
+                "tag": "Link",
+                "platform": "Work",
+                "platformLabel": "⚡ Work"
               },
               {
                 "name": "sl-meta-debug-pro",
@@ -3311,7 +3335,9 @@
                 "skillSizeLabel": "1K字 · 微型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": "Link"
+                "tag": "Link",
+                "platform": "Work",
+                "platformLabel": "⚡ Work"
               }
             ]
           },
@@ -3338,7 +3364,9 @@
                 "skillSizeLabel": "1K字 · 微型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": "Link"
+                "tag": "Link",
+                "platform": "Work",
+                "platformLabel": "⚡ Work"
               }
             ]
           },
@@ -3365,7 +3393,9 @@
                 "skillSizeLabel": "1K字 · 微型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": "Link"
+                "tag": "Link",
+                "platform": "Work",
+                "platformLabel": "⚡ Work"
               }
             ]
           }
@@ -3400,7 +3430,9 @@
                 "skillSizeLabel": "559K字 · 巨型",
                 "ksInternal": false,
                 "cfProject": true,
-                "tag": "SL"
+                "tag": "SL",
+                "platform": "Work",
+                "platformLabel": "⚡ Work"
               },
               {
                 "name": "sl-rd-efficiency-insight",
@@ -3419,7 +3451,9 @@
                 "skillSizeLabel": "19K字 · 大型",
                 "ksInternal": true,
                 "cfProject": true,
-                "tag": "SL"
+                "tag": "SL",
+                "platform": "Work",
+                "platformLabel": "⚡ Work"
               },
               {
                 "name": "sl-ai-productivity",
@@ -3438,7 +3472,9 @@
                 "skillSizeLabel": "84K字 · 巨型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": "SL"
+                "tag": "SL",
+                "platform": "Work",
+                "platformLabel": "⚡ Work"
               }
             ]
           },
@@ -3465,7 +3501,9 @@
                 "skillSizeLabel": "63K字 · 巨型",
                 "ksInternal": false,
                 "cfProject": true,
-                "tag": "SL"
+                "tag": "SL",
+                "platform": "Work",
+                "platformLabel": "⚡ Work"
               }
             ]
           },
@@ -3492,7 +3530,9 @@
                 "skillSizeLabel": "4K字 · 小型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": "SL"
+                "tag": "SL",
+                "platform": "Work",
+                "platformLabel": "⚡ Work"
               },
               {
                 "name": "sl-weixin-bridge",
@@ -3511,7 +3551,9 @@
                 "skillSizeLabel": "52K字 · 巨型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": "SL"
+                "tag": "SL",
+                "platform": "Work",
+                "platformLabel": "⚡ Work"
               },
               {
                 "name": "sl-feishu-assistant",
@@ -3530,7 +3572,9 @@
                 "skillSizeLabel": "2K字 · 小型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": "SL"
+                "tag": "SL",
+                "platform": "Work",
+                "platformLabel": "⚡ Work"
               },
               {
                 "name": "sl-yuque-publisher",
@@ -3549,7 +3593,9 @@
                 "skillSizeLabel": "7K字 · 中型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": "SL"
+                "tag": "SL",
+                "platform": "Work",
+                "platformLabel": "⚡ Work"
               }
             ]
           },
@@ -3576,7 +3622,9 @@
                 "skillSizeLabel": "7K字 · 中型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": "SL"
+                "tag": "SL",
+                "platform": "Work",
+                "platformLabel": "⚡ Work"
               },
               {
                 "name": "sl-weekly-fortune",
@@ -3595,7 +3643,9 @@
                 "skillSizeLabel": "13K字 · 中型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": "SL"
+                "tag": "SL",
+                "platform": "Work",
+                "platformLabel": "⚡ Work"
               },
               {
                 "name": "daily-summary",
@@ -3614,7 +3664,9 @@
                 "skillSizeLabel": "1K字 · 微型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": "Link"
+                "tag": "Link",
+                "platform": "Work",
+                "platformLabel": "⚡ Work"
               }
             ]
           },
@@ -3641,7 +3693,9 @@
                 "skillSizeLabel": "1K字 · 微型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": "Link"
+                "tag": "Link",
+                "platform": "Work",
+                "platformLabel": "⚡ Work"
               },
               {
                 "name": "sl-meta-personal-homepage-template",
@@ -3660,7 +3714,9 @@
                 "skillSizeLabel": "1K字 · 微型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": "Link"
+                "tag": "Link",
+                "platform": "Work",
+                "platformLabel": "⚡ Work"
               },
               {
                 "name": "sl-zelda-ui",
@@ -3679,7 +3735,9 @@
                 "skillSizeLabel": "1K字 · 微型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": "Link"
+                "tag": "Link",
+                "platform": "Work",
+                "platformLabel": "⚡ Work"
               }
             ]
           }
@@ -3714,7 +3772,9 @@
                 "skillSizeLabel": "15K字 · 大型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": ""
+                "tag": "",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "baoyu-url-to-markdown",
@@ -3733,7 +3793,9 @@
                 "skillSizeLabel": "19943K字 · 巨型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": ""
+                "tag": "",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "baoyu-danger-x-to-markdown",
@@ -3752,7 +3814,9 @@
                 "skillSizeLabel": "154K字 · 巨型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": ""
+                "tag": "",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "internet-content-research",
@@ -3771,7 +3835,9 @@
                 "skillSizeLabel": "25K字 · 大型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": ""
+                "tag": "",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "xiaohongshu",
@@ -3790,7 +3856,9 @@
                 "skillSizeLabel": "51K字 · 巨型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": ""
+                "tag": "",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "ks-kstack",
@@ -3809,7 +3877,9 @@
                 "skillSizeLabel": "15K字 · 大型",
                 "ksInternal": true,
                 "cfProject": false,
-                "tag": "KS"
+                "tag": "KS",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "multi-search-engine",
@@ -3828,7 +3898,9 @@
                 "skillSizeLabel": "25K字 · 大型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": ""
+                "tag": "",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "apify-market-research",
@@ -3847,7 +3919,9 @@
                 "skillSizeLabel": "15K字 · 大型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": ""
+                "tag": "",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "apify-competitor-intelligence",
@@ -3866,7 +3940,9 @@
                 "skillSizeLabel": "17K字 · 大型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": ""
+                "tag": "",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "apify-trend-analysis",
@@ -3885,7 +3961,9 @@
                 "skillSizeLabel": "16K字 · 大型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": ""
+                "tag": "",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "content-research-writer",
@@ -3904,7 +3982,9 @@
                 "skillSizeLabel": "14K字 · 中型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": ""
+                "tag": "",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "tavily-search",
@@ -3923,7 +4003,9 @@
                 "skillSizeLabel": "4K字 · 小型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": ""
+                "tag": "",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "ai-news-monitor",
@@ -3942,7 +4024,9 @@
                 "skillSizeLabel": "26K字 · 大型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": ""
+                "tag": "",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               }
             ],
             "count": 13,
@@ -3971,7 +4055,9 @@
                 "skillSizeLabel": "63K字 · 巨型",
                 "ksInternal": false,
                 "cfProject": true,
-                "tag": "SL"
+                "tag": "SL",
+                "platform": "Work",
+                "platformLabel": "⚡ Work"
               },
               {
                 "name": "copywriting",
@@ -3990,7 +4076,9 @@
                 "skillSizeLabel": "5K字 · 中型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": ""
+                "tag": "",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "humanize-writing",
@@ -4009,7 +4097,9 @@
                 "skillSizeLabel": "11K字 · 中型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": ""
+                "tag": "",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "baoyu-translate",
@@ -4028,7 +4118,9 @@
                 "skillSizeLabel": "55K字 · 巨型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": ""
+                "tag": "",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "baoyu-format-markdown",
@@ -4047,7 +4139,9 @@
                 "skillSizeLabel": "55K字 · 巨型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": ""
+                "tag": "",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "baoyu-markdown-to-html",
@@ -4066,7 +4160,9 @@
                 "skillSizeLabel": "24228K字 · 巨型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": ""
+                "tag": "",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "ks-promotion-coaching",
@@ -4085,7 +4181,9 @@
                 "skillSizeLabel": "11K字 · 中型",
                 "ksInternal": true,
                 "cfProject": false,
-                "tag": "KS"
+                "tag": "KS",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "ks-promotion-review-sabcd",
@@ -4104,7 +4202,9 @@
                 "skillSizeLabel": "62K字 · 巨型",
                 "ksInternal": true,
                 "cfProject": false,
-                "tag": "KS"
+                "tag": "KS",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "executive-report-writing",
@@ -4123,7 +4223,9 @@
                 "skillSizeLabel": "4K字 · 小型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": ""
+                "tag": "",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "personal-assistant",
@@ -4142,7 +4244,9 @@
                 "skillSizeLabel": "46K字 · 大型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": ""
+                "tag": "",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               }
             ],
             "count": 10,
@@ -4171,7 +4275,9 @@
                 "skillSizeLabel": "35K字 · 大型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": ""
+                "tag": "",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "ui-ux-pro-max",
@@ -4190,7 +4296,9 @@
                 "skillSizeLabel": "123K字 · 巨型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": ""
+                "tag": "",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "frontend-design",
@@ -4209,7 +4317,9 @@
                 "skillSizeLabel": "47K字 · 大型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": ""
+                "tag": "",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "frontend-html-bundler",
@@ -4228,7 +4338,9 @@
                 "skillSizeLabel": "15K字 · 大型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": "KS"
+                "tag": "KS",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "canvas-design",
@@ -4247,7 +4359,9 @@
                 "skillSizeLabel": "141K字 · 巨型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": ""
+                "tag": "",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "theme-factory",
@@ -4266,7 +4380,9 @@
                 "skillSizeLabel": "19K字 · 大型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": ""
+                "tag": "",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "zelda-style",
@@ -4285,7 +4401,9 @@
                 "skillSizeLabel": "69K字 · 巨型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": ""
+                "tag": "",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "qingshuang-research-style",
@@ -4304,7 +4422,9 @@
                 "skillSizeLabel": "90K字 · 巨型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": ""
+                "tag": "",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "pixel-action-game",
@@ -4323,7 +4443,9 @@
                 "skillSizeLabel": "105K字 · 巨型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": ""
+                "tag": "",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "cf-web-artifacts",
@@ -4342,7 +4464,9 @@
                 "skillSizeLabel": "35K字 · 大型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": ""
+                "tag": "",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               }
             ],
             "count": 10,
@@ -4371,7 +4495,9 @@
                 "skillSizeLabel": "115K字 · 巨型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": ""
+                "tag": "",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "pdf",
@@ -4390,7 +4516,9 @@
                 "skillSizeLabel": "58K字 · 巨型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": ""
+                "tag": "",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "docx",
@@ -4409,7 +4537,9 @@
                 "skillSizeLabel": "130K字 · 巨型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": ""
+                "tag": "",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "openai-whisper",
@@ -4428,7 +4558,9 @@
                 "skillSizeLabel": "1K字 · 小型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": ""
+                "tag": "",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "audio-transcriber",
@@ -4447,7 +4579,9 @@
                 "skillSizeLabel": "69K字 · 巨型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": ""
+                "tag": "",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "markdown-to-pdf",
@@ -4466,7 +4600,9 @@
                 "skillSizeLabel": "9K字 · 中型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": ""
+                "tag": "",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "upload-bs3",
@@ -4485,7 +4621,9 @@
                 "skillSizeLabel": "6K字 · 中型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": ""
+                "tag": "",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "ks-kim-docs-shuttle",
@@ -4504,7 +4642,9 @@
                 "skillSizeLabel": "297K字 · 巨型",
                 "ksInternal": true,
                 "cfProject": false,
-                "tag": "KS"
+                "tag": "KS",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "upload-cdn",
@@ -4523,7 +4663,9 @@
                 "skillSizeLabel": "11K字 · 中型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": ""
+                "tag": "",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               }
             ],
             "count": 9,
@@ -4552,7 +4694,9 @@
                 "skillSizeLabel": "164K字 · 巨型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": ""
+                "tag": "",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "ks-design-ppt",
@@ -4571,7 +4715,9 @@
                 "skillSizeLabel": "41K字 · 大型",
                 "ksInternal": true,
                 "cfProject": false,
-                "tag": "KS"
+                "tag": "KS",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "ks-design-slide-deck",
@@ -4590,7 +4736,9 @@
                 "skillSizeLabel": "130K字 · 巨型",
                 "ksInternal": true,
                 "cfProject": false,
-                "tag": "KS"
+                "tag": "KS",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "ks-design-infographic",
@@ -4609,7 +4757,9 @@
                 "skillSizeLabel": "73K字 · 巨型",
                 "ksInternal": true,
                 "cfProject": false,
-                "tag": "KS"
+                "tag": "KS",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "cf-ppt-gen",
@@ -4628,7 +4778,9 @@
                 "skillSizeLabel": "17K字 · 大型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": ""
+                "tag": "",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               }
             ],
             "count": 5,
@@ -4657,7 +4809,9 @@
                 "skillSizeLabel": "317K字 · 巨型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": ""
+                "tag": "",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "baoyu-post-to-weibo",
@@ -4676,7 +4830,9 @@
                 "skillSizeLabel": "237K字 · 巨型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": ""
+                "tag": "",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "baoyu-post-to-x",
@@ -4695,7 +4851,9 @@
                 "skillSizeLabel": "143K字 · 巨型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": ""
+                "tag": "",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "sl-yuque-publisher",
@@ -4714,7 +4872,9 @@
                 "skillSizeLabel": "7K字 · 中型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": "SL"
+                "tag": "SL",
+                "platform": "Work",
+                "platformLabel": "⚡ Work"
               },
               {
                 "name": "github",
@@ -4733,7 +4893,9 @@
                 "skillSizeLabel": "1K字 · 小型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": ""
+                "tag": "",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "link-ks-kim-send-message",
@@ -4752,7 +4914,9 @@
                 "skillSizeLabel": "63K字 · 巨型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": "Link"
+                "tag": "Link",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "sl-feishu-assistant",
@@ -4771,7 +4935,9 @@
                 "skillSizeLabel": "2K字 · 小型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": "SL"
+                "tag": "SL",
+                "platform": "Work",
+                "platformLabel": "⚡ Work"
               },
               {
                 "name": "sl-weixin-bridge",
@@ -4790,7 +4956,9 @@
                 "skillSizeLabel": "52K字 · 巨型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": "SL"
+                "tag": "SL",
+                "platform": "Work",
+                "platformLabel": "⚡ Work"
               },
               {
                 "name": "link-weixin-bridge",
@@ -4809,7 +4977,9 @@
                 "skillSizeLabel": "37K字 · 大型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": "Link"
+                "tag": "Link",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "sl-kim-bridge",
@@ -4828,7 +4998,9 @@
                 "skillSizeLabel": "4K字 · 小型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": "SL"
+                "tag": "SL",
+                "platform": "Work",
+                "platformLabel": "⚡ Work"
               },
               {
                 "name": "scheduled-kim-message",
@@ -4847,7 +5019,9 @@
                 "skillSizeLabel": "3K字 · 小型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": "KS"
+                "tag": "KS",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               }
             ],
             "count": 11,
@@ -4876,7 +5050,9 @@
                 "skillSizeLabel": "13K字 · 中型",
                 "ksInternal": true,
                 "cfProject": false,
-                "tag": "KS"
+                "tag": "KS",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "ks-kwaibi-data-query",
@@ -4895,7 +5071,9 @@
                 "skillSizeLabel": "6K字 · 中型",
                 "ksInternal": true,
                 "cfProject": false,
-                "tag": "KS"
+                "tag": "KS",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "ks-kwaibi-sql-exec",
@@ -4914,7 +5092,9 @@
                 "skillSizeLabel": "7K字 · 中型",
                 "ksInternal": true,
                 "cfProject": false,
-                "tag": "KS"
+                "tag": "KS",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "ks-tianwen-monitor-query",
@@ -4933,7 +5113,9 @@
                 "skillSizeLabel": "46K字 · 大型",
                 "ksInternal": true,
                 "cfProject": false,
-                "tag": "KS"
+                "tag": "KS",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "ks-hive-data-agent",
@@ -4952,7 +5134,9 @@
                 "skillSizeLabel": "3K字 · 小型",
                 "ksInternal": true,
                 "cfProject": false,
-                "tag": "KS"
+                "tag": "KS",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "ks-meeting-room-booking",
@@ -4971,7 +5155,9 @@
                 "skillSizeLabel": "3K字 · 小型",
                 "ksInternal": true,
                 "cfProject": false,
-                "tag": "KS"
+                "tag": "KS",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "ks-onepoint-meeting",
@@ -4990,7 +5176,9 @@
                 "skillSizeLabel": "2K字 · 小型",
                 "ksInternal": true,
                 "cfProject": false,
-                "tag": "KS"
+                "tag": "KS",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "ks-kim-skills-assistant",
@@ -5009,7 +5197,9 @@
                 "skillSizeLabel": "12K字 · 中型",
                 "ksInternal": true,
                 "cfProject": false,
-                "tag": "KS"
+                "tag": "KS",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "ks-快手-sso-login",
@@ -5028,7 +5218,9 @@
                 "skillSizeLabel": "2K字 · 小型",
                 "ksInternal": true,
                 "cfProject": false,
-                "tag": "KS"
+                "tag": "KS",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "ks-enterprise-metasheet-read",
@@ -5047,7 +5239,9 @@
                 "skillSizeLabel": "13K字 · 中型",
                 "ksInternal": true,
                 "cfProject": false,
-                "tag": "KS"
+                "tag": "KS",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "ks-enterprise-sheet",
@@ -5066,7 +5260,9 @@
                 "skillSizeLabel": "8K字 · 中型",
                 "ksInternal": true,
                 "cfProject": false,
-                "tag": "KS"
+                "tag": "KS",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "data-analyst",
@@ -5085,7 +5281,9 @@
                 "skillSizeLabel": "10K字 · 中型",
                 "ksInternal": true,
                 "cfProject": false,
-                "tag": ""
+                "tag": "",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "finance-analytics",
@@ -5104,7 +5302,9 @@
                 "skillSizeLabel": "12K字 · 中型",
                 "ksInternal": true,
                 "cfProject": false,
-                "tag": ""
+                "tag": "",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "product-management",
@@ -5123,7 +5323,9 @@
                 "skillSizeLabel": "9K字 · 中型",
                 "ksInternal": true,
                 "cfProject": false,
-                "tag": ""
+                "tag": "",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "user-research-synthesis",
@@ -5142,7 +5344,9 @@
                 "skillSizeLabel": "11K字 · 中型",
                 "ksInternal": true,
                 "cfProject": false,
-                "tag": ""
+                "tag": "",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "快手-sso-login-client",
@@ -5161,7 +5365,9 @@
                 "skillSizeLabel": "30K字 · 大型",
                 "ksInternal": true,
                 "cfProject": false,
-                "tag": "KS"
+                "tag": "KS",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               }
             ],
             "count": 16,
@@ -5190,7 +5396,9 @@
                 "skillSizeLabel": "91K字 · 巨型",
                 "ksInternal": true,
                 "cfProject": false,
-                "tag": "KS"
+                "tag": "KS",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "svg-flowchart-designer",
@@ -5209,7 +5417,9 @@
                 "skillSizeLabel": "49K字 · 大型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": ""
+                "tag": "",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "baoyu-article-illustrator",
@@ -5228,7 +5438,9 @@
                 "skillSizeLabel": "96K字 · 巨型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": ""
+                "tag": "",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "baoyu-xhs-images",
@@ -5247,7 +5459,9 @@
                 "skillSizeLabel": "86K字 · 巨型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": ""
+                "tag": "",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "baoyu-comic",
@@ -5266,7 +5480,9 @@
                 "skillSizeLabel": "110K字 · 巨型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": ""
+                "tag": "",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "baoyu-compress-image",
@@ -5285,7 +5501,9 @@
                 "skillSizeLabel": "13K字 · 中型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": ""
+                "tag": "",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "html-screenshot",
@@ -5304,7 +5522,9 @@
                 "skillSizeLabel": "28445K字 · 巨型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": ""
+                "tag": "",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "image-to-image",
@@ -5323,7 +5543,9 @@
                 "skillSizeLabel": "11K字 · 中型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": ""
+                "tag": "",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "text-to-image",
@@ -5342,7 +5564,9 @@
                 "skillSizeLabel": "46K字 · 大型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": ""
+                "tag": "",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "baoyu-cover-image",
@@ -5361,7 +5585,9 @@
                 "skillSizeLabel": "90K字 · 巨型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": "Baoyu"
+                "tag": "Baoyu",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               }
             ],
             "count": 10,
@@ -5390,7 +5616,9 @@
                 "skillSizeLabel": "120K字 · 巨型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": ""
+                "tag": "",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "context-window-management",
@@ -5409,7 +5637,9 @@
                 "skillSizeLabel": "1K字 · 小型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": ""
+                "tag": "",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "workflow-orchestration-patterns",
@@ -5428,7 +5658,9 @@
                 "skillSizeLabel": "8K字 · 中型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": ""
+                "tag": "",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "ks-mcp-to-skill",
@@ -5447,7 +5679,9 @@
                 "skillSizeLabel": "4K字 · 小型",
                 "ksInternal": true,
                 "cfProject": false,
-                "tag": "KS"
+                "tag": "KS",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "anti-distill",
@@ -5466,7 +5700,9 @@
                 "skillSizeLabel": "19K字 · 大型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": ""
+                "tag": "",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "create-colleague",
@@ -5485,7 +5721,9 @@
                 "skillSizeLabel": "246K字 · 巨型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": ""
+                "tag": "",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "agent-browser",
@@ -5504,7 +5742,9 @@
                 "skillSizeLabel": "74K字 · 巨型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": ""
+                "tag": "",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "codeflicker-controller",
@@ -5523,7 +5763,9 @@
                 "skillSizeLabel": "43K字 · 大型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": ""
+                "tag": "",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               }
             ],
             "count": 8,
@@ -5552,7 +5794,9 @@
                 "skillSizeLabel": "46K字 · 大型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": ""
+                "tag": "",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "vercel-react-best-practices",
@@ -5571,7 +5815,9 @@
                 "skillSizeLabel": "168K字 · 巨型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": ""
+                "tag": "",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "vercel-react-native-skills",
@@ -5590,7 +5836,9 @@
                 "skillSizeLabel": "149K字 · 巨型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": ""
+                "tag": "",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "remotion-best-practices",
@@ -5609,7 +5857,9 @@
                 "skillSizeLabel": "95K字 · 巨型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": ""
+                "tag": "",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "web-design-guidelines",
@@ -5628,7 +5878,9 @@
                 "skillSizeLabel": "1K字 · 小型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": ""
+                "tag": "",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "error-handling-patterns",
@@ -5647,7 +5899,9 @@
                 "skillSizeLabel": "16K字 · 大型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": ""
+                "tag": "",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "seo-audit",
@@ -5666,7 +5920,9 @@
                 "skillSizeLabel": "26K字 · 大型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": ""
+                "tag": "",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "ks-kate-prd-understand",
@@ -5685,7 +5941,9 @@
                 "skillSizeLabel": "9K字 · 中型",
                 "ksInternal": true,
                 "cfProject": false,
-                "tag": "KS"
+                "tag": "KS",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "ks-kate-brief-design",
@@ -5704,7 +5962,9 @@
                 "skillSizeLabel": "11K字 · 中型",
                 "ksInternal": true,
                 "cfProject": false,
-                "tag": "KS"
+                "tag": "KS",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "ks-kate-mind",
@@ -5723,7 +5983,9 @@
                 "skillSizeLabel": "38K字 · 大型",
                 "ksInternal": true,
                 "cfProject": false,
-                "tag": "KS"
+                "tag": "KS",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "ks-kmodel",
@@ -5742,7 +6004,9 @@
                 "skillSizeLabel": "79K字 · 巨型",
                 "ksInternal": true,
                 "cfProject": false,
-                "tag": "KS"
+                "tag": "KS",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "ks-commit-msg",
@@ -5761,7 +6025,9 @@
                 "skillSizeLabel": "6K字 · 中型",
                 "ksInternal": true,
                 "cfProject": false,
-                "tag": "KS"
+                "tag": "KS",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "ks-browser-testing-doc",
@@ -5780,7 +6046,9 @@
                 "skillSizeLabel": "8K字 · 中型",
                 "ksInternal": true,
                 "cfProject": false,
-                "tag": "KS"
+                "tag": "KS",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "ks-qa-test-case",
@@ -5799,7 +6067,9 @@
                 "skillSizeLabel": "12K字 · 中型",
                 "ksInternal": true,
                 "cfProject": false,
-                "tag": "KS"
+                "tag": "KS",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "ks-query-requirement-cases",
@@ -5818,7 +6088,9 @@
                 "skillSizeLabel": "2K字 · 小型",
                 "ksInternal": true,
                 "cfProject": false,
-                "tag": "KS"
+                "tag": "KS",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "ks-ktest-generate-case",
@@ -5837,7 +6109,9 @@
                 "skillSizeLabel": "4K字 · 小型",
                 "ksInternal": true,
                 "cfProject": false,
-                "tag": "KS"
+                "tag": "KS",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               }
             ],
             "count": 16,
@@ -5866,7 +6140,9 @@
                 "skillSizeLabel": "80K字 · 巨型",
                 "ksInternal": true,
                 "cfProject": false,
-                "tag": "KS"
+                "tag": "KS",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               }
             ],
             "count": 1,
@@ -5895,7 +6171,9 @@
                 "skillSizeLabel": "11K字 · 中型",
                 "ksInternal": true,
                 "cfProject": false,
-                "tag": "KS"
+                "tag": "KS",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "ks-parking",
@@ -5914,7 +6192,9 @@
                 "skillSizeLabel": "29K字 · 大型",
                 "ksInternal": true,
                 "cfProject": false,
-                "tag": "KS"
+                "tag": "KS",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "ks-cafeteria-recommendation",
@@ -5933,7 +6213,9 @@
                 "skillSizeLabel": "37K字 · 大型",
                 "ksInternal": true,
                 "cfProject": false,
-                "tag": "KS"
+                "tag": "KS",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "ks-gym",
@@ -5952,7 +6234,9 @@
                 "skillSizeLabel": "27K字 · 大型",
                 "ksInternal": true,
                 "cfProject": false,
-                "tag": "KS"
+                "tag": "KS",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "ks-barbershop",
@@ -5971,7 +6255,9 @@
                 "skillSizeLabel": "27K字 · 大型",
                 "ksInternal": true,
                 "cfProject": false,
-                "tag": "KS"
+                "tag": "KS",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "ks-awesome-wc",
@@ -5990,7 +6276,9 @@
                 "skillSizeLabel": "10K字 · 中型",
                 "ksInternal": true,
                 "cfProject": false,
-                "tag": "KS"
+                "tag": "KS",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "ks-wanjia-charging",
@@ -6009,7 +6297,9 @@
                 "skillSizeLabel": "4K字 · 小型",
                 "ksInternal": true,
                 "cfProject": false,
-                "tag": "KS"
+                "tag": "KS",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "ks-repair-xz",
@@ -6028,7 +6318,9 @@
                 "skillSizeLabel": "17K字 · 大型",
                 "ksInternal": true,
                 "cfProject": false,
-                "tag": "KS"
+                "tag": "KS",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "ks-visitor-reserve",
@@ -6047,7 +6339,9 @@
                 "skillSizeLabel": "29K字 · 大型",
                 "ksInternal": true,
                 "cfProject": false,
-                "tag": "KS"
+                "tag": "KS",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               },
               {
                 "name": "sl-weekly-fortune",
@@ -6066,7 +6360,9 @@
                 "skillSizeLabel": "13K字 · 中型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": "SL"
+                "tag": "SL",
+                "platform": "Work",
+                "platformLabel": "⚡ Work"
               },
               {
                 "name": "cafeteria-takeout",
@@ -6085,7 +6381,9 @@
                 "skillSizeLabel": "45K字 · 大型",
                 "ksInternal": false,
                 "cfProject": false,
-                "tag": "KS"
+                "tag": "KS",
+                "platform": "Work+",
+                "platformLabel": "⚡+Code"
               }
             ],
             "count": 11,
@@ -6311,110 +6609,35 @@
   },
   "knowledge": {
     "categories": {
-      "personal-writings": {
-        "name": "personal-writings",
-        "displayName": "思想体系",
-        "icon": "✍️",
-        "color": "#f472b6",
-        "description": "个人思想体系、认知框架、思维方法论",
-        "layerTag": "L1-meta",
-        "relatedSkills": [
-          "meta-essence-insight"
-        ],
-        "relatedMemories": [
-          "thinking_pattern"
-        ],
-        "fileCount": 140,
-        "sizeKB": 886.7,
-        "heatLevel": 5,
-        "recentCount": 8
-      },
       "ai-insight": {
-        "name": "ai-insight",
-        "displayName": "AI-Insight知识库",
+        "label": "AI洞察",
+        "count": 35,
         "icon": "🔍",
-        "color": "#8b5cf6",
-        "description": "日报驱动的AI行业持续追踪知识库（97篇文档，含模型/Agent/公司/企业AI/概念/人物/洞察7个分类）",
-        "layerTag": "L2-domain",
-        "relatedSkills": [
-          "sl-ai-insight"
-        ],
-        "relatedMemories": [
-          "ai_insight"
-        ],
-        "fileCount": 111,
-        "sizeKB": 734.7,
-        "heatLevel": 5,
-        "recentCount": 1
+        "platform": "Work"
       },
       "rd-efficiency": {
-        "name": "rd-efficiency",
-        "displayName": "研发效能",
+        "label": "研发效能",
+        "count": 15,
         "icon": "📊",
-        "color": "#4ade80",
-        "description": "效能度量体系、AI+DevOps、行业实践案例",
-        "layerTag": "L2-domain",
-        "relatedSkills": [
-          "sl-rd-efficiency-insight",
-          "industry-research"
-        ],
-        "relatedMemories": [],
-        "fileCount": 31,
-        "sizeKB": 467.6,
-        "heatLevel": 5,
-        "recentCount": 0
+        "platform": "Work"
       },
       "self-evolution": {
-        "name": "self-evolution",
-        "displayName": "自进化日志",
+        "label": "自进化",
+        "count": 12,
         "icon": "🔄",
-        "color": "#a78bfa",
-        "description": "修炼报告、健康度日志、进化记录",
-        "layerTag": "L1-meta",
-        "relatedSkills": [
-          "meta-daily-reflection-evolution"
-        ],
-        "relatedMemories": [
-          "thinking_pattern"
-        ],
-        "fileCount": 26,
-        "sizeKB": 197.8,
-        "heatLevel": 5,
-        "recentCount": 2
+        "platform": "Work"
       },
-      "promotion-standards": {
-        "name": "promotion-standards",
-        "displayName": "晋升标准库",
-        "icon": "🏅",
-        "color": "#f59e0b",
-        "description": "快手各通道技术晋升职级标准，供晋升评审技能引用",
-        "layerTag": "L2-domain",
-        "relatedSkills": [
-          "ks-promotion-review-sabcd",
-          "ks-promotion-coaching"
-        ],
-        "relatedMemories": [],
-        "fileCount": 9,
-        "sizeKB": 53.9,
-        "heatLevel": 3,
-        "recentCount": 0
+      "column-writing": {
+        "label": "专栏写作",
+        "count": 8,
+        "icon": "📝",
+        "platform": "Work"
       },
-      "images": {
-        "name": "images",
-        "displayName": "图片资源",
-        "icon": "🖼",
-        "color": "#94a3b8",
-        "description": "知识库配图、信息图表、视觉素材",
-        "layerTag": "L3-execution",
-        "relatedSkills": [
-          "baoyu-danger-gemini-web",
-          "baoyu-article-illustrator"
-        ],
-        "relatedMemories": [],
-        "fileCount": 1,
-        "sizeKB": 1.1,
-        "heatLevel": 1,
-        "recentCount": 0
+      "personal-writings": {
+        "label": "个人作品",
+        "count": 19,
+        "icon": "📄",
+        "platform": "Work"
       }
     },
     "tree": {
@@ -6577,3264 +6800,67 @@
         "totalSizeKB": 1.1
       }
     },
-    "totalFiles": 318,
-    "totalSizeKB": 2341.8
+    "totalFiles": 89,
+    "totalSizeKB": 450
   },
   "memories": {
     "items": [
       {
-        "title": "AI生图技能选型错误 + Prompt结构化过度（经验#82）",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "前端开发",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "🎨",
-        "color": "#f472b6",
-        "description": "AI生图技能选型错误 + Prompt结构化过度（经验#82 — 2026-04-24） 踩坑场景 用户要求为文章生成配图，明确要求： 1....",
-        "keywords": [
-          "AI生图",
-          "技能选型",
-          "叙事流",
-          "prompt结构化",
-          "ks-design-image-gen"
-        ],
-        "importance": 5,
-        "updatedAt": "2026-04-24",
-        "source": "用户显式记录"
+        "name": "MEMORY.md",
+        "category": "skill_evolution",
+        "description": "长期记忆索引（四层架构v3.0）",
+        "lastModified": "2026-05-06",
+        "platform": "Work"
       },
       {
-        "title": "Appwrite SDK前端加载CDN路径错误导致undefined",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "前端开发",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "🎨",
-        "color": "#f472b6",
-        "description": "问题：Appwrite SDK CDN 返回 404 错误现象 - 控制台报错：`Uncaught ReferenceError: Appw...",
-        "keywords": [
-          "Appwrite",
-          "SDK",
-          "CDN",
-          "ESM",
-          "前端加载"
-        ],
-        "importance": 5,
-        "updatedAt": "2026-04-25",
-        "source": "项目记忆"
+        "name": "USER.md",
+        "category": "user_preferences",
+        "description": "沈浪用户画像（INTJ/研发效能负责人）",
+        "lastModified": "2026-04-15",
+        "platform": "Work"
       },
       {
-        "title": "CSS元素不可见排查三板斧：样式→遮挡→裁切",
-        "category": "development_code_specification",
-        "categoryLabel": "代码规范",
-        "layer": null,
-        "icon": "📝",
-        "color": "#4ade80",
-        "description": "CSS元素\"不可见\"问题的完整排查框架 核心教训 getComputedStyle只能检查CSS属性，不能检测视觉遮挡。当\"样式正确但看...",
-        "keywords": [
-          "CSS",
-          "不可见",
-          "z-index",
-          "遮挡",
-          "elementFromPoint"
-        ],
-        "importance": 5,
-        "updatedAt": "2026-04-24",
-        "source": "项目记忆"
+        "name": "SOUL.md",
+        "category": "skill_evolution",
+        "description": "林克灵魂定义",
+        "lastModified": "2026-05-06",
+        "platform": "Work"
       },
       {
-        "title": "KIM Doc 配图发布流程（v4 — 新增：html-screenshot 输出路径陷阱）",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "前端开发",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "🎨",
-        "color": "#f472b6",
-        "description": "KIM Doc 配图发布最佳实践（v4） ⚠️ P0陷阱（新增）：html-screenshot 输出路径陷阱（2026-04-25） 现象...",
-        "keywords": [
-          "KIM Doc",
-          "配图生成",
-          "占位符",
-          "图片验证",
-          "推送流程"
-        ],
-        "importance": 5,
-        "updatedAt": "2026-04-25",
-        "source": "项目记忆"
+        "name": "IDENTITY.md",
+        "category": "skill_evolution",
+        "description": "林克身份定义（守护型中二）",
+        "platform": "Work"
       },
       {
-        "title": "KIM推送重复发送问题（v10.0 — 经验#55）",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "消息通信",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "💬",
-        "color": "#06b6d4",
-        "description": "KIM推送重复发送问题（v10.0 — 经验#55） 问题描述 2026-04-22执行AI日报时，连续执行了两次 send_ai_dail...",
-        "keywords": [
-          "KIM推送",
-          "重复发送",
-          "--preview",
-          "日报规范",
-          "经验55"
-        ],
-        "importance": 5,
-        "updatedAt": "2026-04-22",
-        "source": "项目记忆"
-      },
-      {
-        "title": "Write-Read路径不对称陷阱（v3 — 补充AI-Insight孤立目录 + sync_to_public仅同步日报）",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "前端开发",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "🎨",
-        "color": "#f472b6",
-        "description": "Write-Read 路径不对称陷阱 核心问题 \"我在 A 处写了\" ≠ \"系统从 A 处读\" 修改了文件，推送成功，线上却没变化—...",
-        "keywords": [
-          "Write-Read",
-          "路径不对称",
-          "GitHub Pages",
-          "source配置",
-          "public目录"
-        ],
-        "importance": 5,
-        "updatedAt": "2026-04-25",
-        "source": "项目记忆"
-      },
-      {
-        "title": "launchd定时任务启动失败诊断清单（v2.0 — 新增双触发源陷阱）",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "脚本自动化",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "⚡",
-        "color": "#64748b",
-        "description": "launchd定时任务启动失败诊断清单（v2.0，2026-04-23更新） 【新增 v2.0】双触发源陷阱（最隐蔽） 问题表现： ...",
-        "keywords": [
-          "launchd",
-          "定时任务",
-          "双触发",
-          "scheduled-tasks.json",
-          "重复执行"
-        ],
-        "importance": 5,
-        "updatedAt": "2026-04-23",
-        "source": "项目记忆"
-      },
-      {
-        "title": "大型HTML分步输出：OutputTooLong补救 + 占位符接力主动模式（v2）",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "前端开发",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "🎨",
-        "color": "#f472b6",
-        "description": "问题描述（2026-04-05 AI技能蒸馏文章生成踩坑） 用户要求生成大型HTML调研报告（含幽默文章+7张AI配图）。 首次生成成功，用户要求\"...",
-        "keywords": [
-          "OutputTooLong",
-          "分步输出",
-          "大型HTML",
-          "分文件",
-          "截断"
-        ],
-        "importance": 5,
-        "updatedAt": "2026-04-24",
-        "source": "用户显式记录"
-      },
-      {
-        "title": "技术架构全景图生成经验（AI生图）",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "脚本自动化",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "⚡",
-        "color": "#64748b",
-        "description": "技术架构全景图生成经验（AI生图） 踩坑记录 1. Python脚本依赖问题：ks-design-image-gen的`gene...",
-        "keywords": [
-          "AI生图",
-          "技术架构图",
-          "DesignAPI",
-          "全景图",
-          "类比对照"
-        ],
-        "importance": 5,
-        "updatedAt": "2026-04-22",
-        "source": "项目记忆"
-      },
-      {
-        "title": "技能文档更新路径陷阱：备份 vs 正式",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "文档处理",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "📄",
-        "color": "#38bdf8",
-        "description": "技能文档更新时写入备份路径而非正式路径（经验#83） 踩坑场景 用户要求更新某技能的 SKILL.md，Agent 执行了修改，但写到了： ...",
-        "keywords": [
-          "技能更新",
-          "备份路径",
-          "正式路径",
-          ".backups",
-          "SKILL.md"
-        ],
-        "importance": 5,
-        "updatedAt": "2026-04-25",
-        "source": "用户显式记录"
-      },
-      {
-        "title": "技能触发词冲突导致错误调用（经验#81）",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "通用踩坑",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "⚠️",
-        "color": "#ef4444",
-        "description": "技能触发词冲突导致错误调用（经验#81） 问题现象 用户说\"AI生图\"，系统调用了 text-to-image 而非 `ks-desig...",
-        "keywords": [
-          "触发词冲突",
-          "技能合并",
-          "AI生图",
-          "text-to-image",
-          "ks-design-image-gen"
-        ],
-        "importance": 5,
-        "updatedAt": "2026-04-24",
-        "source": "项目记忆"
-      },
-      {
-        "title": "浏览器前端 Appwrite SDK 加载四合一陷阱（CDN路径/OAuth/ESM裸模块/权限）",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "前端开发",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "🎨",
-        "color": "#f472b6",
-        "description": "浏览器前端 Appwrite SDK 加载四合一陷阱 触发场景：GitHub Pages / 静态站 / 浏览器环境接入 Appwrite ...",
-        "keywords": [
-          "Appwrite",
-          "SDK",
-          "CDN",
-          "前端",
-          "ESM"
-        ],
-        "importance": 5,
-        "updatedAt": "2026-04-25",
-        "source": "项目记忆"
-      },
-      {
-        "title": "深度调研HTML必须严格遵循P0样式规范（清爽调研报告风格）— 含Tab导航完整规范 v2",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "前端开发",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "🎨",
-        "color": "#f472b6",
-        "description": "深度调研HTML必须严格遵循P0样式规范（清爽调研报告风格） 踩坑场景A（DeepSeek V4报告，2026-04-24 第一轮） 用户启...",
-        "keywords": [
-          "深度调研",
-          "样式规范",
-          "P0强制",
-          "清爽风格",
-          "HTML"
-        ],
-        "importance": 5,
-        "updatedAt": "2026-04-24",
-        "source": "项目记忆"
-      },
-      {
-        "title": "群推送范围错误：理解偏差导致误发全量群（2026-04-24）",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "消息通信",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "💬",
-        "color": "#06b6d4",
-        "description": "群推送范围错误：理解偏差 + 脚本无约束 事件：2026-04-24 发送 DeepSeek V4 深度调研 KIM 卡片时，用户说\"KIM...",
-        "keywords": [
-          "群推送",
-          "KIM卡片",
-          "范围错误",
-          "发送确认",
-          "林克推送"
-        ],
-        "importance": 5,
-        "updatedAt": "2026-04-24",
-        "source": "项目记忆"
-      },
-      {
-        "title": "趋势断档根因：4月25-26日修炼流程未启动诊断",
-        "category": "task_flow_experience",
-        "categoryLabel": "通用踩坑",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "⚠️",
-        "color": "#ef4444",
-        "description": "趋势断档7天根因诊断（2026-04-27复盘） 断档事实 - 上次成功finalize：2026-04-20 - 今日日期：2026-04...",
-        "keywords": [
-          "趋势断档",
-          "phase4缺失",
-          "定时任务",
-          "launchd",
-          "未启动"
-        ],
-        "importance": 5,
-        "updatedAt": "2026-04-27",
-        "source": "项目记忆"
-      },
-      {
-        "title": "踩坑记忆召回失败模式（16类任务映射 v4 — 2026-04-24 新增群范围错误）",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "发布部署",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "🚀",
-        "color": "#4ade80",
-        "description": "踩坑记忆召回失败模式（16类任务映射 v4） 问题 踩坑记忆存在但执行时未被召回，导致同类问题重复发生。 三层解决方案 1. 被...",
-        "keywords": [
-          "记忆召回",
-          "踩坑复现",
-          "任务映射",
-          "硬编码",
-          "command_status_check"
-        ],
-        "importance": 5,
-        "updatedAt": "2026-04-24",
-        "source": "项目记忆"
-      },
-      {
-        "title": "部署验证完整经验（GitHub Pages+修复重跑+断链）",
-        "category": "development_practice_specification",
-        "categoryLabel": "通用踩坑",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "⚠️",
-        "color": "#ef4444",
-        "description": "部署验证经验（v4.3） 核心原则 - 每次部署后必须通过三层验证：(1)HTTP状态码 (2)内容校验 (3)功能可访问 - GitHub...",
-        "keywords": [
-          "部署验证",
-          "修复重跑",
-          "轮询",
-          "断链",
-          "GitHub Pages"
-        ],
-        "importance": 5,
-        "updatedAt": "2026-04-24",
-        "source": "用户显式记录"
-      },
-      {
-        "title": "首页时间轴月份分组错误：4月报告被归入3月（经验#73）",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "前端开发",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "🎨",
-        "color": "#f472b6",
-        "description": "首页时间轴月份分组错误：4月报告被归入3月 问题表现 - 用户截图反馈\"跨2个月\"的统计没错，但部分4月份的深度调研报告被错误地归入3月分组...",
-        "keywords": [
-          "月份分组",
-          "时间轴",
-          "timeline-month",
-          "data-month",
-          "首页"
-        ],
-        "importance": 5,
-        "updatedAt": "2026-04-21",
-        "source": "项目记忆"
-      },
-      {
-        "title": "2026-03-18~04-01 每日修炼断档根因：phase4 GitHub/首页验证失败也会导致趋势写入缺失（需区分核心成功与WARN）",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "前端开发",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "🎨",
-        "color": "#f472b6",
-        "description": "新增补充（2026-04-08 诊断证据）： - pre-analysis-brief.json trends.alerts 显示趋势数据断档 17 天（...",
-        "keywords": [
-          "daily-reflection",
-          "finalize",
-          "phase4",
-          "trend",
-          "断档"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-04-08",
-        "source": "项目记忆"
-      },
-      {
-        "title": "AI周报推送：重复preview + 未确认就尝试发群 + API错误但消息已投递",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "消息通信",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "💬",
-        "color": "#06b6d4",
-        "description": "问题描述（2026-04-20 W16周报） 执行AI周报推送时出现两个错误： 1. --preview 执行了两次，导致用户收到重复的预览卡片...",
-        "keywords": [
-          "周报",
-          "KIM",
-          "推送",
-          "preview",
-          "confirm"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-04-19",
-        "source": "项目记忆"
-      },
-      {
-        "title": "AI日报KIM卡片与JSON数据规则（合并版v8.2）",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "前端开发",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "🎨",
-        "color": "#f472b6",
-        "description": "AI日报KIM卡片与JSON数据规则（合并版v8.2） JSON数据源优先级 ``` send_ai_daily.py 执行逻辑: 1. 加...",
-        "keywords": [
-          "AI日报",
-          "KIM卡片",
-          "JSON",
-          "数据源",
-          "视觉层次"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-03-15",
-        "source": "项目记忆"
-      },
-      {
-        "title": "AI日报KIM卡片能力更新模块（capability_update字段）",
-        "category": "development_practice_specification",
-        "categoryLabel": "通用踩坑",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "⚠️",
-        "color": "#ef4444",
-        "description": "功能描述 AI日报KIM卡片末尾新增\"林克能力更新\"模块，在有新增能力时向群里汇报日报能力的迭代进展。 使用方法 在 `data/daily-...",
-        "keywords": [
-          "AI日报",
-          "KIM",
-          "能力更新",
-          "capability_update",
-          "林克"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-03-11",
-        "source": "项目记忆"
-      },
-      {
-        "title": "AI日报KIM推送必须用脚本，禁止手写卡片（长工作流尾部松懈教训）",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "前端开发",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "🎨",
-        "color": "#f472b6",
-        "description": "长工作流尾部松懈——KIM卡片退化到v2.0 (2026-03-14) 问题 AI日报完整流程（Step 0.5到Step 6），到Step...",
-        "keywords": [
-          "KIM卡片",
-          "手写禁止",
-          "长工作流",
-          "尾部松懈",
-          "send_ai_daily"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-03-14",
-        "source": "项目记忆"
-      },
-      {
-        "title": "AI日报KIM推送空卡片问题（JSON数据源断裂 v3.5）",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "前端开发",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "🎨",
-        "color": "#f472b6",
-        "description": "AI日报KIM推送空卡片问题（JSON数据源断裂） 问题 2026-03-11 AI日报KIM推送预览完全空白——只有5个板块标题框架，没有...",
-        "keywords": [
-          "AI日报",
-          "KIM推送",
-          "空卡片",
-          "JSON",
-          "数据源"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-03-11",
-        "source": "项目记忆"
-      },
-      {
-        "title": "AI日报Step 2中断恢复模式 + 子步骤拆分落盘方案（v2.3 — 2026-04-06 launchd会话断连+自动修复）",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "脚本自动化",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "⚡",
-        "color": "#64748b",
-        "description": "AI日报Step 2中断恢复模式 + 子步骤拆分落盘方案（v2.3，2026-04-06更新） v2.3 新踩坑（2026-04-06） *...",
-        "keywords": [
-          "AI日报",
-          "Step 2中断",
-          "恢复模式",
-          "launchd",
-          "会话断连"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-04-06",
-        "source": "项目记忆"
-      },
-      {
-        "title": "AI日报→知识库深度学习闭环规则",
-        "category": "task_flow_experience",
-        "categoryLabel": "思维方法",
-        "layer": "🧠 元认知层",
-        "icon": "🧠",
-        "color": "#fbbf24",
-        "description": "AI日报生成后的必做工作流程 核心规则: 日报里的每一篇内容，都需要深度学习，并淬炼沉淀到知识库。 执行步骤（完整版） 1. 日...",
-        "keywords": [
-          "日报",
-          "知识库",
-          "深度学习",
-          "沉淀",
-          "淬炼"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-03-07",
-        "source": "项目记忆"
-      },
-      {
-        "title": "AI日报交付前强制三层自检（读者视角 > 脚本门控）",
-        "category": "task_flow_experience",
-        "categoryLabel": "思维方法",
-        "layer": "🧠 元认知层",
-        "icon": "🧠",
-        "color": "#fbbf24",
-        "description": "AI日报交付前强制自检规则（v1.0） 来源 2026-03-13 用户反馈：\"我希望你能持续反思和优化，后续尽量少让我提醒\"。 统计3/5...",
-        "keywords": [
-          "AI日报",
-          "自检",
-          "读者视角",
-          "交付前检查",
-          "主动发现"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-03-13",
-        "source": "项目记忆"
-      },
-      {
-        "title": "AI日报修复策略陷阱：删减≠修复（经验37）",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "通用踩坑",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "⚠️",
-        "color": "#ef4444",
-        "description": "AI日报修复策略陷阱：删减≠修复（经验37） 来源 2026-03-16 AI日报：用户发现内容严重缩水（185行→460行，7条→18条）...",
-        "keywords": [
-          "AI日报",
-          "修复策略",
-          "删减陷阱",
-          "内容缩水",
-          "质量门"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-03-16",
-        "source": "项目记忆"
-      },
-      {
-        "title": "AI日报分类+去重+地区门控经验（v6.0 含地区分类+板块分类+跨天去重）",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "脚本自动化",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "⚡",
-        "color": "#64748b",
-        "description": "AI日报分类+去重门控经验（v6.0 含地区分类+板块分类+跨天去重） 问题演化 - v5.0 (2026-03-12): 板块分类...",
-        "keywords": [
-          "AI日报",
-          "分类验证",
-          "去重",
-          "门控脚本",
-          "质量检查"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-03-13",
-        "source": "项目记忆"
-      },
-      {
-        "title": "AI日报分类+去重+链接验证门控经验（v6.0 含wx_url匹配规则+browser_agent临时URL禁止存储+小红书永久链接确认）",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "前端开发",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "🎨",
-        "color": "#f472b6",
-        "description": "AI日报分类+去重+链接验证门控经验（v6.0 含wx_url匹配规则+微信源收录+JSON契约+首页同步+browser_agent临时URL禁止...",
-        "keywords": [
-          "AI日报",
-          "分类验证",
-          "去重",
-          "门控脚本",
-          "质量检查"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-03-15",
-        "source": "项目记忆"
-      },
-      {
-        "title": "AI日报分类与去重规则（合并版v8.2）",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "通用踩坑",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "⚠️",
-        "color": "#ef4444",
-        "description": "AI日报分类与去重规则（合并版v8.2） 分类是二维问题 | 维度 | 规则 | 检查函数 | -------...",
-        "keywords": [
-          "AI日报",
-          "分类",
-          "去重",
-          "板块分类",
-          "地区分类"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-03-15",
-        "source": "项目记忆"
-      },
-      {
-        "title": "AI日报外部版同步失败的多重根因（经验46 — v9.11）",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "前端开发",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "🎨",
-        "color": "#f472b6",
-        "description": "AI日报外部版同步失败的多重根因（经验46 — v9.11） 问题现象 - 2026-03-20：外部版页面未更新到3月20日，林克...",
-        "keywords": [
-          "外部版同步",
-          "ai-insight-public",
-          "sync_to_external",
-          "仓库路径",
-          "脱敏"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-03-23",
-        "source": "项目记忆"
-      },
-      {
-        "title": "AI日报大事件隧道视野陷阱（经验39 — v9.0含分流搜索协议）",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "前端开发",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "🎨",
-        "color": "#f472b6",
-        "description": "AI日报大事件隧道视野陷阱（经验39 — v9.0） 来源 2026-03-17 AI日报：GTC 2026主导一切，用户评价\"完成得非常不...",
-        "keywords": [
-          "AI日报",
-          "大事件",
-          "隧道视野",
-          "板块失衡",
-          "GTC"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-03-17",
-        "source": "项目记忆"
-      },
-      {
-        "title": "AI日报工作流与部署规则（合并版v8.2）",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "前端开发",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "🎨",
-        "color": "#f472b6",
-        "description": "AI日报工作流与部署规则（合并版v8.2） 三大工作流规律 1. 工具天花板法则: >10K字符输出必须脚本化（gen_daily_...",
-        "keywords": [
-          "AI日报",
-          "工作流",
-          "部署",
-          "orchestrator",
-          "联动更新"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-03-15",
-        "source": "项目记忆"
-      },
-      {
-        "title": "AI日报工作流复盘三规律（v2 已落地版：工具天花板+方案落地+一键部署）",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "前端开发",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "🎨",
-        "color": "#f472b6",
-        "description": "AI日报工作流3/9复盘：三条通用规律及落地方案 问题（2026-03-09） AI日报执行跨3个上下文窗口，write_to_file连续...",
-        "keywords": [
-          "AI日报",
-          "复盘",
-          "工具天花板",
-          "方案落地",
-          "一键部署"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-03-09",
-        "source": "项目记忆"
-      },
-      {
-        "title": "AI日报微信公众号覆盖不足的根因与三层结构性改进（v4.0 含双轨搜索+门控硬约束）",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "文档处理",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "📄",
-        "color": "#38bdf8",
-        "description": "问题: AI日报国内新闻长期偏少，微信公众号文章覆盖不足——即便搜索了微信，也多是作为背景交叉引用(\"source字段标注微信\")而非作为主要信源...",
-        "keywords": [
-          "AI日报",
-          "微信公众号",
-          "覆盖不足",
-          "话题搜索",
-          "双轨制"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-03-14",
-        "source": "项目记忆"
-      },
-      {
-        "title": "AI日报时效性锚点+时间窗口双重验证经验（v4.0）",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "前端开发",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "🎨",
-        "color": "#f472b6",
-        "description": "AI日报时效性锚点+时间窗口双重验证经验（v4.0） 问题演化 - v3.9 (2026-03-09): 将3月4-5日旧闻作为头条...",
-        "keywords": [
-          "AI日报",
-          "时效性",
-          "时间窗口",
-          "实时热点",
-          "搜索策略"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-03-10",
-        "source": "项目记忆"
-      },
-      {
-        "title": "AI日报质量门WARNING→ERROR升级经验（经验40 v9.1）",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "发布部署",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "🚀",
-        "color": "#4ade80",
-        "description": "AI日报质量门WARNING→ERROR升级经验（经验40 — v9.1） 来源 2026-03-18 AI日报复盘：分类错误、微信链接全空...",
-        "keywords": [
-          "AI日报",
-          "质量门",
-          "WARNING",
-          "ERROR",
-          "分类"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-03-18",
-        "source": "项目记忆"
-      },
-      {
-        "title": "AI日报质量门与数据真实性规则（合并版v8.2）",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "脚本自动化",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "⚡",
-        "color": "#64748b",
-        "description": "AI日报质量门与数据真实性规则（合并版v8.2） 第一原则 > 质量门失败 = 回到对应步骤重做。禁止修改数据绕过检查。 时...",
-        "keywords": [
-          "AI日报",
-          "质量门",
-          "数据真实性",
-          "时间窗口",
-          "伪造禁止"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-03-15",
-        "source": "项目记忆"
-      },
-      {
-        "title": "AI日报链接处理核心规则（合并版v8.2）",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "前端开发",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "🎨",
-        "color": "#f472b6",
-        "description": "AI日报链接处理核心规则（合并版v8.2） 第一原则 > 错误的链接比没有链接更糟糕。 信息价值 > 链接完整性。 封闭平台...",
-        "keywords": [
-          "AI日报",
-          "链接处理",
-          "微信",
-          "小红书",
-          "封闭平台"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-03-15",
-        "source": "项目记忆"
-      },
-      {
-        "title": "AI洞察外部版漏推问题（v6 — 经验#72：三层根因完整修复版 + flock并发锁）",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "发布部署",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "🚀",
-        "color": "#4ade80",
-        "description": "问题描述 ai-insight-public 外部仓库经常\"没有自动同步\"，已经出现好几十次。 根因链（完整版 v6，2026-04-08 三...",
-        "keywords": [
-          "ai-insight-public",
-          "git损坏",
-          "is_valid_git_repo",
-          "return False",
-          "git_disabled"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-04-08",
-        "source": "项目记忆"
-      },
-      {
-        "title": "AI洞察项目版本体系定义（v4.0 含全内容同步）",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "前端开发",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "🎨",
-        "color": "#f472b6",
-        "description": "AI洞察项目版本体系定义（v4.0 含全内容同步） 三版本架构 | 版本 | 仓库名称 | 访问链接 | 用途 | |------|----...",
-        "keywords": [
-          "外部版",
-          "内部版",
-          "版本同步",
-          "ai-insight-public",
-          "脱敏"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-03-09",
-        "source": "项目记忆"
-      },
-      {
-        "title": "AI生产力战役 · 权威数据源规则",
-        "category": "project_configuration",
-        "categoryLabel": "项目知识",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "📋",
-        "color": "#c2410c",
-        "description": "快手AI生产力战役项目规则： 1. 权威数据源（拿不准时以这两个文档为准）： - 项目管理电子表格（最权威）：https://docs.corp.kuai...",
-        "keywords": [
-          "AI生产力",
-          "权威数据源",
-          "项目管理电子表格",
-          "OnePage",
-          "文档优先"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-04-05",
-        "source": "项目记忆"
-      },
-      {
-        "title": "AI生成UI反模式清单（去AI味指南）",
-        "category": "development_practice_specification",
-        "categoryLabel": "前端开发",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "🎨",
-        "color": "#f472b6",
-        "description": "AI生成UI反模式清单 来源 从 Impeccable (pbakaus/impeccable) 提炼，融入 frontend-design...",
-        "keywords": [
-          "AI反模式",
-          "前端设计",
-          "去AI味",
-          "UI设计",
-          "anti-pattern"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-03-07",
-        "source": "项目记忆"
-      },
-      {
-        "title": "CSS `will-change` 全局滥用陷阱：只在 hover/:active 时设置",
-        "category": "development_code_specification",
-        "categoryLabel": "代码规范",
-        "layer": null,
-        "icon": "📝",
-        "color": "#4ade80",
-        "description": "CSS will-change 全局滥用陷阱 踩坑场景（2026-04-06 colleague-skill-anti-distill-...",
-        "keywords": [
-          "will-change",
-          "CSS",
-          "合成层",
-          "GPU",
-          "hover"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-04-06",
-        "source": "项目记忆"
-      },
-      {
-        "title": "ClawBook 社区账号强制规则与bash脚本blank output陷阱（合并版v3）",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "文档处理",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "📄",
-        "color": "#38bdf8",
-        "description": "ClawBook 社区操作强制规则（P0） 账号强制绑定 所有 ClawBook 社区操作必须使用林克账号（ID=8），禁止使用任何...",
-        "keywords": [
-          "ClawBook",
-          "林克",
-          "账号",
-          "token",
-          "社区"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-04-19",
-        "source": "用户显式记录"
-      },
-      {
-        "title": "ClawBook社区分享策略：实践作品多分享，元技能核心机密保密",
-        "category": "constraint_or_forbidden_rule",
-        "categoryLabel": "用户约束",
-        "layer": "🧠 元认知层",
-        "icon": "🚫",
-        "color": "#dc2626",
-        "description": "ClawBook 社区分享策略： 可以分享（实践+作品优先）： - 具体项目和作品：网页开发、GitHub Pages部署、自动化脚本、数据分析等...",
-        "keywords": [
-          "ClawBook",
-          "社区分享",
-          "保密策略",
-          "元技能",
-          "核心机密"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-03-15",
-        "source": "用户显式记录"
-      },
-      {
-        "title": "FastMCP构造参数port移除的兼容坑与Wrapper修复",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "脚本自动化",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "⚡",
-        "color": "#64748b",
-        "description": "FastMCP 版本兼容坑：FastMCP(port=...) 参数移除导致 MCP Server 无法启动 现象 运行 `weixin...",
-        "keywords": [
-          "FastMCP",
-          "port",
-          "兼容",
-          "wrapper",
-          "MCP"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-03-08",
-        "source": "项目记忆"
-      },
-      {
-        "title": "Git Force操作前必须保护工作区（stash优先）",
-        "category": "development_practice_specification",
-        "categoryLabel": "通用踩坑",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "⚠️",
-        "color": "#ef4444",
-        "description": "Git Force操作前必须保护工作区 问题 重建codeflicker-homepage的.git目录后，执行 `git checkout...",
-        "keywords": [
-          "git",
-          "force",
-          "stash",
-          "checkout",
-          "工作区保护"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-03-19",
-        "source": "项目记忆"
-      },
-      {
-        "title": "HTML截图统一调用规范（html-screenshot原子技能索引）",
-        "category": "development_practice_specification",
-        "categoryLabel": "前端开发",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "🎨",
-        "color": "#f472b6",
-        "description": "HTML截图统一调用规范（原子技能索引） 规则（P0强制） 所有涉及HTML截图的场景，必须调用 html-screenshot 原...",
-        "keywords": [
-          "HTML截图",
-          "html-screenshot",
-          "原子技能",
-          "Puppeteer",
-          "配图"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-03-18",
-        "source": "项目记忆"
-      },
-      {
-        "title": "KIM Doc 生成任务中占位符链接未清理（2026-04-15）",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "前端开发",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "🎨",
-        "color": "#f472b6",
-        "description": "KIM Doc 生成任务中，章节配图如果无法生成 HTML 图表，必须在 Markdown 中删除占位符链接，而不是保留 placeholder URL。...",
-        "keywords": [
-          "KIM Doc",
-          "占位符",
-          "placeholder",
-          "图片清单",
-          "完整性检查"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-04-15",
-        "source": "项目记忆"
-      },
-      {
-        "title": "KIM Doc图片嵌入：必须用本地路径，外部URL不渲染",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "发布部署",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "🚀",
-        "color": "#4ade80",
-        "description": "问题现象 KIM Doc导入Markdown后，图片显示为文本链接而非图片。 根因 KIM Doc导入时不会拉取外部URL图片，只会把...",
-        "keywords": [
-          "KIM Doc",
-          "图片",
-          "嵌入",
-          "外部URL",
-          "本地路径"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-03-10",
-        "source": "项目记忆"
-      },
-      {
-        "title": "KIM卡片视觉层次优化经验（v3.4 列表缩进+block分隔 + v1.1格式一致性）",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "前端开发",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "🎨",
-        "color": "#f472b6",
-        "description": "KIM卡片视觉层次优化经验（v3.4 列表缩进+block分隔 + v1.1格式一致性） 问题1：日报卡片无视觉层次（v3.1→v3.4） ...",
-        "keywords": [
-          "KIM",
-          "卡片",
-          "MixCard",
-          "视觉层次",
-          "kimMd"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-03-08",
-        "source": "项目记忆"
-      },
-      {
-        "title": "Markdown加粗语法渲染兼容性规范",
-        "category": "development_code_specification",
-        "categoryLabel": "代码规范",
-        "layer": null,
-        "icon": "📝",
-        "color": "#4ade80",
-        "description": "Markdown加粗语法渲染兼容性规范 问题现象 Markdown中使用 \"文字\"（星号包裹引号）时，CodeFlicker/某...",
-        "keywords": [
-          "Markdown",
-          "加粗",
-          "星号",
-          "引号",
-          "渲染"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-03-12",
-        "source": "用户显式记录"
-      },
-      {
-        "title": "Python多脚本体系SSoT架构陷阱（前后端契约+幽灵引用）",
-        "category": "development_practice_specification",
-        "categoryLabel": "前端开发",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "🎨",
-        "color": "#f472b6",
-        "description": "Python多脚本体系\"静默分裂\"陷阱 问题 15+个Python脚本共享路径/配置，但发现4大类违规：路径常量重复定义、前端硬编码业务数据...",
-        "keywords": [
-          "Python",
-          "SSoT",
-          "路径常量",
-          "配置漂移",
-          "constants.py"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-04-24",
-        "source": "项目记忆"
-      },
-      {
-        "title": "SSoT架构健康度五维扫描清单（Python+Shell+前后端通用版）",
-        "category": "task_flow_experience",
-        "categoryLabel": "通用踩坑",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "⚠️",
-        "color": "#ef4444",
-        "description": "SSoT 架构健康度扫描清单（通用版 — Python + Shell + 前后端） 触发时机 以下任一情况出现时，必须执行 SSoT 扫描...",
-        "keywords": [
-          "SSoT",
-          "扫描清单",
-          "路径统一",
-          "排除规则",
-          "废弃标识符"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-04-06",
-        "source": "项目记忆"
-      },
-      {
-        "title": "Shell多脚本体系配置漂移陷阱（含技能改名路径断链专项）",
-        "category": "development_practice_specification",
-        "categoryLabel": "通用踩坑",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "⚠️",
-        "color": "#ef4444",
-        "description": "Shell多脚本体系\"配置漂移\"陷阱 问题描述 多脚本共同维护一个自动化系统时，同一个机制参数（端口、超时、模型名、sleep等）散落在多个...",
-        "keywords": [
-          "Shell",
-          "配置漂移",
-          "多脚本",
-          "config.sh",
-          "单一写入点"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-04-24",
-        "source": "项目记忆"
-      },
-      {
-        "title": "TOC 锚点导航失效：v5.0 规范理解偏差 + 章节锚点缺失",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "前端开发",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "🎨",
-        "color": "#f472b6",
-        "description": "场景描述 开发深度调研报告页面时，TOC 锚点导航功能不工作。 根本原因 v5.0 架构理解偏差 + 章节锚点缺失 1. v5.0...",
-        "keywords": [
-          "TOC锚点",
-          "锚点缺失",
-          "getElementById",
-          "scrollIntoView",
-          "章节跳转"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-04-15",
-        "source": "用户显式记录"
-      },
-      {
-        "title": "Todo状态收尾规则 — 三场景完整版（v3：含跨chatId假阳性）",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "前端开发",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "🎨",
-        "color": "#f472b6",
-        "description": "【问题模式】Todo 漏标记有三种触发场景，均会导致系统误判任务未完成（触发 needs_deep_dive 误报信号）。 【场景A】交付物已输出但 To...",
-        "keywords": [
-          "Todo状态",
-          "收尾规则",
-          "漏标记",
-          "交付物",
-          "in_progress"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-03-27",
-        "source": "用户显式记录"
-      },
-      {
-        "title": "agent-trigger.sh 调用 run_agent_round 前必须初始化 _LIB_LOG_FILE（经验#69）",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "通用踩坑",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "⚠️",
-        "color": "#ef4444",
-        "description": "问题 agent-trigger-lib.sh 的 run_agent_round() 内部第231行 `sc_wait_task ... ...",
-        "keywords": [
-          "agent-trigger",
-          "lib_init",
-          "_LIB_LOG_FILE",
-          "run_agent_round",
-          "sc_wait_task"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-04-07",
-        "source": "项目记忆"
-      },
-      {
-        "title": "deploy_daily.sh 三个 pipefail 陷阱 + 历史日报补跑专用旗标（经验#61）",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "前端开发",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "🎨",
-        "color": "#f472b6",
-        "description": "经验#61：deploy_daily.sh pipefail 三陷阱 + 历史补跑设计缺陷 三个 pipefail 陷阱（日常跑当天日报不触...",
-        "keywords": [
-          "deploy_daily.sh",
-          "pipefail",
-          "历史日报",
-          "--historical",
-          "heredoc"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-03-30",
-        "source": "项目记忆"
-      },
-      {
-        "title": "execute_command heredoc 陷阱（v3：含 git commit message 多行场景）",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "前端开发",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "🎨",
-        "color": "#f472b6",
-        "description": "execute_command heredoc 陷阱（v3 — 补充 git commit message 多行场景） 场景A：生成XML/...",
-        "keywords": [
-          "execute_command",
-          "heredoc",
-          "特殊字符",
-          "转义",
-          "XML"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-03-22",
-        "source": "项目记忆"
-      },
-      {
-        "title": "execute_command 引号/换行导致 dquote 卡死：立即切换写临时脚本再执行",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "脚本自动化",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "⚡",
-        "color": "#64748b",
-        "description": "execute_command 引号/换行陷阱：出现 cmdand/dquote 立即切换为“写临时脚本文件再执行” 现象 在 `execu...",
-        "keywords": [
-          "execute_command",
-          "zsh",
-          "dquote",
-          "heredoc",
-          "quote"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-04-13",
-        "source": "项目记忆"
-      },
-      {
-        "title": "grep 大目录扫描必须加 --include 文件类型过滤（防终端挂死）",
-        "category": "development_practice_specification",
-        "categoryLabel": "通用踩坑",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "⚠️",
-        "color": "#ef4444",
-        "description": "grep 大目录扫描挂死（2026-03-23 踩坑） 问题：在 36MB/11000+ 文件的安装包输出目录执行 `grep -rn \"@...",
-        "keywords": [
-          "grep",
-          "挂死",
-          "大目录",
-          "include",
-          "文件类型过滤"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-03-24",
-        "source": "用户显式记录"
-      },
-      {
-        "title": "kill 后台 git 进程必须清理 .git/index.lock 僵尸锁",
-        "category": "development_practice_specification",
-        "categoryLabel": "通用踩坑",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "⚠️",
-        "color": "#ef4444",
-        "description": "kill 后台 git 进程必须清理 .git/index.lock 僵尸锁 问题（2026-03-24 踩坑） 强制 kill 了包含...",
-        "keywords": [
-          "git",
-          "index.lock",
-          "僵尸锁",
-          "kill",
-          "后台进程"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-03-24",
-        "source": "用户显式记录"
-      },
-      {
-        "title": "link-homepage git仓库损坏导致静默推送失败（一周日报数据不更新）",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "前端开发",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "🎨",
-        "color": "#f472b6",
-        "description": "问题描述 林克首页「我的日报」Tab 日期选择器一周未更新（停在2026-04-08），本地数据每日正常生成，但 GitHub Pages 从未获取...",
-        "keywords": [
-          "link-homepage",
-          "git损坏",
-          "git仓库损坏",
-          "静默失败",
-          "日报不更新"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-04-11",
-        "source": "项目记忆"
-      },
-      {
-        "title": "replace_in_file 连续失败后的精确匹配三步排障协议（3-Strike规则）",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "通用踩坑",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "⚠️",
-        "color": "#ef4444",
-        "description": "replace_in_file 连续失败后的精确匹配排障协议 问题模式 replace_in_file 或 `multi_replace...",
-        "keywords": [
-          "replace_in_file",
-          "multi_replace_in_file",
-          "精确匹配",
-          "替换失败",
-          "3-Strike"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-03-22",
-        "source": "项目记忆"
-      },
-      {
-        "title": "replace_in_file成功≠实际生效+数据修复必须全格式grep",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "前端开发",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "🎨",
-        "color": "#f472b6",
-        "description": "replace_in_file声称成功但实际未生效的陷阱 问题 multi_replace_in_file返回\"successfully r...",
-        "keywords": [
-          "replace_in_file",
-          "验证",
-          "后验",
-          "grep",
-          "SVG"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-03-14",
-        "source": "项目记忆"
-      },
-      {
-        "title": "一致性检查闭环：发现→修复→自动化→门控（v2 — 补充人工记忆依赖联动扫描）",
-        "category": "task_flow_experience",
-        "categoryLabel": "思维方法",
-        "layer": "🧠 元认知层",
-        "icon": "🧠",
-        "color": "#fbbf24",
-        "description": "一致性检查闭环：发现→修复→自动化→门控（通用方法论） 核心方法论 当发现数据不一致问题时，不要只修复当前问题，要形成闭环： ``` 发现问...",
-        "keywords": [
-          "一致性",
-          "闭环",
-          "门控",
-          "自动化",
-          "检测"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-04-07",
-        "source": "项目记忆"
-      },
-      {
-        "title": "三层归因法：触发-执行-闭环的诊断框架",
-        "category": "task_flow_experience",
-        "categoryLabel": "通用踩坑",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "⚠️",
-        "color": "#ef4444",
-        "description": "三层归因法：触发-执行-闭环 适用场景：事情做了但没效果 / 流程存在但没落地 / 方案漂亮但没执行 诊断框架 ``` 问题表象 │ ├─ ...",
-        "keywords": [
-          "三层归因法",
-          "触发层",
-          "执行层",
-          "闭环层",
-          "诊断"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-03-18",
-        "source": "用户显式记录"
-      },
-      {
-        "title": "个人助理_V1 项目 Spec 开发规范（强制约束）",
-        "category": "project_configuration",
-        "categoryLabel": "项目知识",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "📋",
-        "color": "#c2410c",
-        "description": "个人助理_V1 项目 Spec 开发规范 核心约束 后续所有对 ~/Documents/Codeflicker/个人助理_V1 项目...",
-        "keywords": [
-          "个人助理",
-          "Spec",
-          "开发规范",
-          "link-personal-assistant-spec",
-          "工作流"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-04-07",
-        "source": "项目记忆"
-      },
-      {
-        "title": "交互式CLI工具的AI执行边界（cf-remote/扫码类场景）",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "发布部署",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "🚀",
-        "color": "#4ade80",
-        "description": "交互式CLI工具的AI执行边界 场景 用户要求 AI 完成某工具的「扫码/交互式绑定」步骤，例如： - cf-remote（微信远程绑定...",
-        "keywords": [
-          "交互式",
-          "CLI",
-          "AI边界",
-          "扫码",
-          "cf-remote"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-04-02",
-        "source": "项目记忆"
-      },
-      {
-        "title": "代码文件中文字符编码安全规则 + kimMd标记冲突",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "消息通信",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "💬",
-        "color": "#06b6d4",
-        "description": "代码文件中文字符编码安全规则 问题场景 使用工具写入Python/JS等代码文件时，中文引号 \"\" (U+201C/U+201D) 可能...",
-        "keywords": [
-          "Python",
-          "中文引号",
-          "Unicode",
-          "编码",
-          "SyntaxError"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-03-07",
-        "source": "项目记忆"
-      },
-      {
-        "title": "任务完成判断必须证据门控（防口头声称完成）",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "前端开发",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "🎨",
-        "color": "#f472b6",
-        "description": "任务完成判断必须证据门控（防口头声称完成） 问题（2026-04-14 每日修炼复盘） 用户问\"这次修炼哪些做，哪些没做\"，助手承认： - ...",
-        "keywords": [
-          "任务完成",
-          "证据门控",
-          "口头声称",
-          "交付物核对",
-          "finalize"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-04-14",
-        "source": "用户显式记录"
-      },
-      {
-        "title": "企业数字员工平台 — 前端技术栈与代码规范",
-        "category": "development_code_specification",
-        "categoryLabel": "代码规范",
-        "layer": null,
-        "icon": "📝",
-        "color": "#4ade80",
-        "description": "企业数字员工平台 — 前端技术栈与代码规范 当前架构：单 HTML 文件 React SPA - React 18.2.0 + Babel ...",
-        "keywords": [
-          "digital-employee",
-          "frontend",
-          "tech-stack",
-          "react",
-          "css"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-04-01",
-        "source": "用户显式记录"
-      },
-      {
-        "title": "企业数字员工平台 — 增量开发差距清单与优先级",
-        "category": "project_configuration",
-        "categoryLabel": "项目配置",
-        "layer": null,
-        "icon": "🔧",
-        "color": "#f97316",
-        "description": "企业数字员工平台 — 增量开发差距清单与优先级 当前状态：Web 端 7 页全部实现基本框架，使用 Mock 数据，Claude API 对...",
-        "keywords": [
-          "增量开发",
-          "差距分析",
-          "优先级",
-          "P0",
-          "P1"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-03-08",
-        "source": "项目记忆"
-      },
-      {
-        "title": "企业数字员工平台 — 项目概览与产品定位",
-        "category": "project_configuration",
-        "categoryLabel": "项目知识",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "📋",
-        "color": "#c2410c",
-        "description": "企业数字员工平台 — 项目概览与产品定位 项目定位 以“养宠物”为交互隐喻的 AI Agent 平台，让金融公司每位员工拥有一个持续学习、记忆...",
-        "keywords": [
-          "digital-employee",
-          "project-overview",
-          "product-positioning",
-          "PRD",
-          "web"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-04-06",
-        "source": "项目记忆"
-      },
-      {
-        "title": "企业数字员工平台 — 项目概览与产品定位",
-        "category": "project_introduction",
-        "categoryLabel": "项目知识",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "📋",
-        "color": "#c2410c",
-        "description": "项目：企业数字员工平台 产品定义：以「养宠物」为交互隐喻的 AI Agent 平台，让金融公司每位员工拥有一个持续学习、记忆成长、主动分忧的...",
-        "keywords": [
-          "数字员工",
-          "Agent平台",
-          "金融",
-          "宠物隐喻",
-          "PRD"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-03-08",
-        "source": "项目记忆"
-      },
-      {
-        "title": "信息失真三问法（确认度×时效性×溯源性）",
-        "category": "task_flow_experience",
-        "categoryLabel": "思维方法",
-        "layer": "🧠 元认知层",
-        "icon": "🧠",
-        "color": "#fbbf24",
-        "description": "信息失真三问法（事实验证通用框架） 来源 2026-03-08 AI日报出现三类事实错误：未确认产品当事实（DeepSeek V4 Lite...",
-        "keywords": [
-          "事实验证",
-          "三问法",
-          "确认度",
-          "时效性",
-          "溯源性"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-03-24",
-        "source": "用户显式记录"
-      },
-      {
-        "title": "修复问题时的精确打击原则（防止过度删除）v4 — 含「静态资源同步完整性门控」",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "前端开发",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "🎨",
-        "color": "#f472b6",
-        "description": "问题背景 用户说\"元能力层的社区学习应该去掉\"，我把\"社区学习节点\"和\"社区学习标签\"一起删了，导致连线标签功能丢失。 错误模式1：过度修复 ...",
-        "keywords": [
-          "过度删除",
-          "精确打击",
-          "爆炸半径",
-          "修复",
-          "删除"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-04-09",
-        "source": "项目记忆"
-      },
-      {
-        "title": "先验后传播：平台能力判断必须深度验证后才能写入Skill系统",
-        "category": "task_flow_experience",
-        "categoryLabel": "通用踩坑",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "⚠️",
-        "color": "#ef4444",
-        "description": "先验后传播：平台能力判断必须深度验证后才能写入Skill系统 来源 2026-03-15 微信/小红书链接永久化深度验证。v5.0记忆错误地...",
-        "keywords": [
-          "先验后传播",
-          "深度验证",
-          "假设驱动",
-          "平台能力",
-          "Skill更新"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-03-15",
-        "source": "项目记忆"
-      },
-      {
-        "title": "公开版首页-v3链接404经验（文件名约定断裂+验证增强）",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "前端开发",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "🎨",
-        "color": "#f472b6",
-        "description": "公开版首页日报链接404：-v3文件名约定断裂 (2026-03-09) 问题 用户访问 ai-insight-public 首页，点击...",
-        "keywords": [
-          "公开版",
-          "首页",
-          "404",
-          "v3",
-          "文件名约定"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-03-09",
-        "source": "项目记忆"
-      },
-      {
-        "title": "危险函数物理清空原则（结构约束 > 文字规则的具体落地方法）",
-        "category": "task_flow_experience",
-        "categoryLabel": "通用踩坑",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "⚠️",
-        "color": "#ef4444",
-        "description": "危险函数物理清空原则 核心场景 当文字规则已写但依然被绕过时，升级为结构性约束：把危险函数体物理清空，保留函数名（防 set -e ...",
-        "keywords": [
-          "危险函数",
-          "物理清空",
-          "无害化",
-          "单一写入点",
-          "detect_model"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-04-06",
-        "source": "项目记忆"
-      },
-      {
-        "title": "同步脚本脱敏闸门（v2.4 — 2026-03-24教训：添棋不脱敏，且策略变更三方强制同步）",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "发布部署",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "🚀",
-        "color": "#4ade80",
-        "description": "问题：sync_to_public.py 将含敏感人名的 md 文件推送到公开仓库，同日发现4个脚本凭证硬编码。 脱敏策略 v2.3（2026...",
-        "keywords": [
-          "脱敏",
-          "林克",
-          "添棋",
-          "快手",
-          "沈浪"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-03-24",
-        "source": "项目记忆"
-      },
-      {
-        "title": "吸星大法模式D缺失两个P0步骤（经验#72 — 2026-04-07）",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "通用踩坑",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "⚠️",
-        "color": "#ef4444",
-        "description": "吸星大法模式D缺失两个P0步骤（经验#72） 问题描述 模式D执行时，出现了两个需要用户二次提醒才修正的问题： 1. 命名不规范：直...",
-        "keywords": [
-          "吸星大法",
-          "link-xixingdafa",
-          "命名规范",
-          "遗漏检查",
-          "模式D"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-04-07",
-        "source": "用户显式记录"
-      },
-      {
-        "title": "周报日期范围ISO周数计算陷阱",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "前端开发",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "🎨",
-        "color": "#f472b6",
-        "description": "周报日期范围计算陷阱（ISO周数） 问题场景（2026-04-20 W16周报） 生成AI周报时，日期范围写错： - ❌ 错误写法：`04/...",
-        "keywords": [
-          "周报",
-          "日期范围",
-          "ISO周数",
-          "周一计算",
-          "日期偏移"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-04-19",
-        "source": "项目记忆"
-      },
-      {
-        "title": "品牌色全局迁移经验（含完整新旧色值映射表）",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "前端开发",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "🎨",
-        "color": "#f472b6",
-        "description": "品牌色全局迁移经验 问题场景 项目品牌色从旧色系(#1A7F37)升级到新色系(#059669)，需要确保全局一致性。 关键教训：品...",
-        "keywords": [
-          "品牌色",
-          "色值迁移",
-          "全局替换",
-          "CSS",
-          "v3.0"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-03-07",
-        "source": "项目记忆"
-      },
-      {
-        "title": "基础设施前置验证原则（「货到船上但船没引擎」模式）",
-        "category": "task_flow_experience",
-        "categoryLabel": "做事方法",
-        "layer": "🧠 元认知层",
-        "icon": "⚙️",
-        "color": "#5ec4d4",
-        "description": "基础设施前置验证原则 触发根因 2026-03-23 AI日报外部版：sync_to_public.py 正确地把内容推入 `publi...",
-        "keywords": [
-          "基础设施验证",
-          "GitHub Pages",
-          "CI/CD",
-          "发布部署",
-          "服务层"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-03-24",
-        "source": "用户显式记录"
-      },
-      {
-        "title": "外部系统中断时必须输出断点快照（v2 — 含自主推进规则）",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "消息通信",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "💬",
-        "color": "#06b6d4",
-        "description": "【问题模式】外部系统繁忙/不可用（ServerCustomError）或多步骤任务执行中断，但中断前没有留下断点记录，导致后续需要从头重做或任务状态悬空。...",
-        "keywords": [
-          "外部中断",
-          "断点快照",
-          "任务恢复",
-          "生图失败",
-          "API繁忙"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-03-30",
-        "source": "用户显式记录"
-      },
-      {
-        "title": "多Tab前端页面迭代必须全量验证所有Tab（防回归）",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "前端开发",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "🎨",
-        "color": "#f472b6",
-        "description": "多Tab/多模块前端页面：迭代时必须全量验证所有Tab（防回归） 踩坑场景（AI生产力Landing Page，2026-04-05） 用户...",
-        "keywords": [
-          "多Tab",
-          "前端验证",
-          "回归测试",
-          "Tab页面",
-          "端到端验证"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-04-05",
-        "source": "项目记忆"
-      },
-      {
-        "title": "多步骤长任务每Step完成后必须立即落盘检查点（防会话截断丢步骤）",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "通用踩坑",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "⚠️",
-        "color": "#ef4444",
-        "description": "多步骤长任务每Step完成后必须立即落盘检查点（防会话截断丢步骤） 背景（2026-03-30 conv19：skill-dojo Top1...",
-        "keywords": [
-          "多步骤任务",
-          "检查点落盘",
-          "skill-dojo",
-          "会话截断",
-          "口头承诺"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-03-30",
-        "source": "项目记忆"
-      },
-      {
-        "title": "多源配置体系洋葱剥皮修复陷阱（诊断误报+短路逻辑）",
-        "category": "task_flow_experience",
-        "categoryLabel": "通用踩坑",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "⚠️",
-        "color": "#ef4444",
-        "description": "多源配置体系的\"洋葱剥皮\"修复陷阱 事件 修4个系统缺陷→暴露37个隐藏问题→修复中文名→触发41个次生问题→最终3轮才清零。 三层...",
-        "keywords": [
-          "多源配置",
-          "洋葱剥皮",
-          "配置漂移",
-          "诊断误报",
-          "短路逻辑"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-04-24",
-        "source": "项目记忆"
-      },
-      {
-        "title": "大任务清单中commit&push必须在P0/P1完成后立即执行（不能推迟到最后）",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "发布部署",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "🚀",
-        "color": "#4ade80",
-        "description": "问题（2026-03-20 AI日报优化任务踩坑） 任务清单包含10项优化（P0×3, P1×2, P2×3, commit&push×1）， 完成...",
-        "keywords": [
-          "commit",
-          "push",
-          "收尾",
-          "任务清单",
-          "未提交"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-03-20",
-        "source": "项目记忆"
-      },
-      {
-        "title": "大文件编辑的Context节约策略（含sed vs replace_in_file选择）",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "前端开发",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "🎨",
-        "color": "#f472b6",
-        "description": "大文件编辑的Context节约策略 问题 对2000+行的HTML/CSS大文件做样式修改时，分4次read_file读完全文占用大量con...",
-        "keywords": [
-          "大文件",
-          "context",
-          "读取策略",
-          "sed",
-          "grep"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-03-07",
-        "source": "项目记忆"
-      },
-      {
-        "title": "封闭平台(微信/小红书)链接处理规则(v7.0 含noteId编造检测+ObjectId时间戳校验)",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "前端开发",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "🎨",
-        "color": "#f472b6",
-        "description": "封闭平台(微信/小红书)链接处理规则 (v7.0 -- 2026-03-15 含noteId验证) 第一原则: 错误的链接比没有链接更糟糕 ...",
-        "keywords": [
-          "微信公众号",
-          "小红书",
-          "链接",
-          "browser_agent",
-          "搜狗穿透"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-03-15",
-        "source": "项目记忆"
-      },
-      {
-        "title": "封闭生态接入的通用桥接模式（MCP wrapper 方法论）",
-        "category": "development_practice_specification",
-        "categoryLabel": "做事方法",
-        "layer": "🧠 元认知层",
-        "icon": "⚙️",
-        "color": "#5ec4d4",
-        "description": "封闭生态接入的通用桥接模式 核心规律 封闭平台的内容不可直接抓取，但都有\"合法索引入口\"。通用接入模式： ``` 封闭平台 → 找到\"搜索引...",
-        "keywords": [
-          "封闭生态",
-          "桥接模式",
-          "MCP",
-          "索引入口",
-          "wrapper"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-04-05",
-        "source": "用户显式记录"
-      },
-      {
-        "title": "工具调用前的参数完整性自检规范（v2 — 2026-04-07 execute_command漏command参数）",
-        "category": "development_practice_specification",
-        "categoryLabel": "通用踩坑",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "⚠️",
-        "color": "#ef4444",
-        "description": "工具调用前的参数完整性自检规范（v2） 问题背景 - 2026-03-12：write_todo 连续3次调用失败，原因是只提供了 `mer...",
-        "keywords": [
-          "工具调用",
-          "参数检查",
-          "required",
-          "必需参数",
-          "validation error"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-04-07",
-        "source": "项目记忆"
-      },
-      {
-        "title": "成功案例：AI日报一遍做对（2026-04-14）",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "前端开发",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "🎨",
-        "color": "#f472b6",
-        "description": "成功案例：AI日报一遍做对（2026-04-14） 背景 此前AI日报执行频繁出错（7次错误记录，包括schema盲写、手写卡片、外部版未推...",
-        "keywords": [
-          "AI日报",
-          "一遍做对",
-          "Plan模式",
-          "Subagent隔离",
-          "成功经验"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-04-21",
-        "source": "项目记忆"
-      },
-      {
-        "title": "成功模式提炼：高效执行的关键条件（v2 — 含全量扫描容量匹配规则）",
-        "category": "task_flow_experience",
-        "categoryLabel": "通用踩坑",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "⚠️",
-        "color": "#ef4444",
-        "description": "成功模式提炼：高效执行的关键条件 来源 - 2026-03-11~15每日修炼持续提炼 八大成功条件 1. 任务边界清晰 —...",
-        "keywords": [
-          "成功模式",
-          "高效执行",
-          "任务边界",
-          "流程复用",
-          "上下文预算"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-03-27",
-        "source": "用户显式记录"
-      },
-      {
-        "title": "手动触发每日修炼必须立即执行，禁止计划更新或口头进度冒充 Step A",
-        "category": "task_flow_experience",
-        "categoryLabel": "通用踩坑",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "⚠️",
-        "color": "#ef4444",
-        "description": "当用户手动触发“每日修炼/每周深度修炼”或连续说“继续”时，必须把“启动”视为执行指令而不是继续确认的信号。强制流程：1）加载修炼技能后，下一次实际工具调...",
-        "keywords": [
-          "daily-reflection",
-          "manual-trigger",
-          "continue",
-          "tool-calls-zero",
-          "stuck"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-04-12",
-        "source": "用户显式记录"
-      },
-      {
-        "title": "技能优先级规则：Internal > Personal（v2.0完整版）",
-        "category": "development_practice_specification",
-        "categoryLabel": "通用踩坑",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "⚠️",
-        "color": "#ef4444",
-        "description": "技能优先级规则（v2.0） 当系统技能（Internal）和个人技能（Personal）存在重名或功能重复时，遵循以下优先级： 优先级顺序 ...",
-        "keywords": [
-          "技能优先级",
-          "Internal",
-          "Personal",
-          "evo",
-          "meta"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-04-20",
-        "source": "项目记忆"
-      },
-      {
-        "title": "技能加载不触发 meta-execution 启动协议（经验#80）",
-        "category": "development_practice_specification",
-        "categoryLabel": "前端开发",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "🎨",
-        "color": "#f472b6",
-        "description": "问题（2026-04-20 W16周报执行） 执行AI周报时，虽然 sl-ai-insight 已加载，但没有触发 meta-execution 的...",
-        "keywords": [
-          "技能加载",
-          "meta-execution",
-          "启动协议",
-          "自举悖论",
-          "requires"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-04-20",
-        "source": "用户显式记录"
-      },
-      {
-        "title": "最后一公里松懈：KIM推送≠任务完成（经验38）",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "发布部署",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "🚀",
-        "color": "#4ade80",
-        "description": "最后一公里松懈：KIM推送≠任务完成（经验38） 来源 2026-03-16 AI日报：KIM推送成功后，用户问\"内外部都升级了吗\"——发现...",
-        "keywords": [
-          "AI日报",
-          "最后一公里",
-          "松懈",
-          "Git提交",
-          "KIM推送"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-03-16",
-        "source": "项目记忆"
-      },
-      {
-        "title": "本地HTTP服务器端口分配：禁止盲猜，必须系统动态分配",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "前端开发",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "🎨",
-        "color": "#f472b6",
-        "description": "本地HTTP服务器端口分配经验 问题 启动 python3 -m http.server 进行本地预览时，连续盲猜端口（8080 → 8...",
-        "keywords": [
-          "端口",
-          "HTTP服务器",
-          "本地预览",
-          "端口冲突",
-          "python"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-03-09",
-        "source": "项目记忆"
-      },
-      {
-        "title": "本轮会话技能白名单（系统优先 + manage-skills.sh + data-agent）",
-        "category": "development_practice_specification",
-        "categoryLabel": "文档处理",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "📄",
-        "color": "#38bdf8",
-        "description": "本轮会话技能白名单规则： 1. 优先使用 Internal 系统技能（evo-* 前缀） 2. 当 Internal 与 Personal 重合时，遵循：...",
-        "keywords": [
-          "manage-skills.sh",
-          "系统技能",
-          "evo",
-          "Internal",
-          "Personal"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-04-16",
-        "source": "项目记忆"
-      },
-      {
-        "title": "核心任务完成≠流程完成陷阱（深度调研/日报/周报通用）",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "前端开发",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "🎨",
-        "color": "#f472b6",
-        "description": "问题模式 名称：核心任务完成≠流程完成陷阱 症状：完成了核心内容（如调研结果、日报内容），但遗漏了技能规定的配套步骤（如生成页面、部...",
-        "keywords": [
-          "深度调研",
-          "AI日报",
-          "周报",
-          "流程完备性",
-          "遗漏步骤"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-03-10",
-        "source": "项目记忆"
-      },
-      {
-        "title": "每周修炼僵尸会话 + 视觉迭代 context 溢出双踩坑（经验#65 — 2026-04-06）",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "文档处理",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "📄",
-        "color": "#38bdf8",
-        "description": "每周修炼僵尸会话 + 视觉迭代 context 溢出（经验#65 — 2026-04-06） 踩坑场景A：每周修炼触发后连续 Tool Ca...",
-        "keywords": [
-          "每周修炼",
-          "僵尸会话",
-          "Tool Calls=0",
-          "视觉迭代",
-          "context溢出"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-04-06",
-        "source": "项目记忆"
-      },
-      {
-        "title": "浏览器截图失败的替代方案（CDN图片URL直引）",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "前端开发",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "🎨",
-        "color": "#f472b6",
-        "description": "浏览器截图失败的替代方案（CDN图片URL直引）v1.0 问题场景 browser_agent 截图功能报错 \"Cannot take sc...",
-        "keywords": [
-          "browser_agent",
-          "截图失败",
-          "CDN",
-          "图片URL",
-          "官网图片"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-03-18",
-        "source": "项目记忆"
-      },
-      {
-        "title": "深度调研报告格式规范",
-        "category": "development_practice_specification",
-        "categoryLabel": "做事方法",
-        "layer": "🧠 元认知层",
-        "icon": "⚙️",
-        "color": "#5ec4d4",
-        "description": "深度调研报告格式规范 后续所有深度调研报告都应遵循以下格式标准： 1. 参考模板 - 格式参考: https://xiaoxiong2026...",
-        "keywords": [
-          "深度调研",
-          "报告格式",
-          "彩蛋",
-          "了解更多",
-          "AI洞察"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-03-05",
-        "source": "项目记忆"
-      },
-      {
-        "title": "深度调研报告绕过脱敏管道导致内外版本不一致（经验#67 — 2026-04-06）",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "前端开发",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "🎨",
-        "color": "#f472b6",
-        "description": "深度调研报告绕过脱敏管道导致内外版本不一致（经验#67 — 2026-04-06） 问题描述 外部版 ai-insight-public...",
-        "keywords": [
-          "深度调研",
-          "双版本同步",
-          "脱敏管道",
-          "ai-insight",
-          "meta-skill"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-04-06",
-        "source": "项目记忆"
-      },
-      {
-        "title": "添棋飞书对话基本技能：本体与对话渠道分离",
-        "category": "task_flow_experience",
-        "categoryLabel": "做事方法",
-        "layer": "🧠 元认知层",
-        "icon": "⚙️",
-        "color": "#5ec4d4",
-        "description": "添棋飞书对话基本技能 核心原则 虽然添棋是在「飞书助手」项目里和飞书用户做对话，但添棋的\"本体\"是在 CodeFlicker 项目下的「个人...",
-        "keywords": [
-          "添棋",
-          "飞书",
-          "对话",
-          "本体",
-          "个人助理V1"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-02-28",
-        "source": "项目记忆"
-      },
-      {
-        "title": "清爽调研报告风格页面的渐进式开发规则",
-        "category": "development_practice_specification",
-        "categoryLabel": "前端开发",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "🎨",
-        "color": "#f472b6",
-        "description": "当一个页面是使用\"清爽调研报告风格\"（qingshuang-research-style）skill开发后，基于这个页面的所有后续改动、渐进式开发，都必须...",
-        "keywords": [
-          "清爽调研报告风格",
-          "qingshuang-research-style",
-          "skill",
-          "渐进式开发",
-          "CSS规范"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-02-26",
-        "source": "项目记忆"
-      },
-      {
-        "title": "清爽调研报告风格：Tab导航是强制组件，不是TOC",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "前端开发",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "🎨",
-        "color": "#f472b6",
-        "description": "清爽调研报告风格的导航规范 核心问题 目录（TOC）+ 锚点跳转 ≠ Tab导航 + 面板切换 这是两种完全不同的导航模式： 1. ...",
-        "keywords": [
-          "清爽调研报告",
-          "Tab导航",
-          "TOC",
-          "锚点跳转",
-          "面板切换"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-03-05",
-        "source": "项目记忆"
-      },
-      {
-        "title": "生成图片后默认自动打开",
-        "category": "user_communication",
-        "categoryLabel": "用户偏好",
-        "layer": "🧠 元认知层",
-        "icon": "💬",
-        "color": "#0ea5e9",
-        "description": "每次生成图片（SVG/PNG/任何图像文件）后，必须自动执行 open <文件路径> 打开文件，无需用户再单独说\"打开\"。这是默认行为，不需要提示或询问。",
-        "keywords": [
-          "打开图片",
-          "open",
-          "默认行为",
-          "自动打开",
-          "图片"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-04-21",
-        "source": "用户显式记录"
-      },
-      {
-        "title": "用户技能命名偏好：前缀规范 + 技能来源分类",
-        "category": "user_info",
-        "categoryLabel": "用户身份",
-        "layer": "🧠 元认知层",
-        "icon": "👤",
-        "color": "#38bdf8",
-        "description": "用户技能命名偏好：前缀规范 + 技能来源分类 技能来源分类（Source） 当用户说\"林克的技能来源\"时，指的是以下四类： | 来源 | 说...",
-        "keywords": [
-          "命名偏好",
-          "前缀",
-          "link-",
-          "ks-",
-          "sl-"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-03-20",
-        "source": "用户显式记录"
-      },
-      {
-        "title": "直属老板的材料与结构化表达高标准",
-        "category": "user_info",
-        "categoryLabel": "用户身份",
-        "layer": "🧠 元认知层",
-        "icon": "👤",
-        "color": "#38bdf8",
-        "description": "沈浪的直属老板对材料质量有很高要求，2026年3月起生效。 老板原话（核心要求） 1. \"写材料最重要的是串逻辑，以及每块究竟想表达啥\" 2. \"真...",
-        "keywords": [
-          "老板",
-          "上级",
-          "材料标准",
-          "结构化表达",
-          "汇报"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-03-17",
-        "source": "用户显式记录"
-      },
-      {
-        "title": "系统性全局替换流程",
-        "category": "development_practice_specification",
-        "categoryLabel": "前端开发",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "🎨",
-        "color": "#f472b6",
-        "description": "系统性全局替换流程 当需要在项目中全局替换某个术语/名称时（如隐私保护更名），必须检查以下位置： 必检文件类型 1. 代码文件：.j...",
-        "keywords": [
-          "全局替换",
-          "更名",
-          "隐私保护",
-          "系统性替换",
-          "命名规范"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-03-12",
-        "source": "项目记忆"
-      },
-      {
-        "title": "网页开发完成后必须提供可直接访问的在线链接",
-        "category": "development_practice_specification",
-        "categoryLabel": "做事方法",
-        "layer": "🧠 元认知层",
-        "icon": "⚙️",
-        "color": "#5ec4d4",
-        "description": "核心规则：所有网页开发任务完成后，必须提供一个可直接点击访问的在线链接，不能只给本地文件路径或GitHub仓库地址。 执行标准： 1. 页...",
-        "keywords": [
-          "网页开发",
-          "部署",
-          "在线链接",
-          "GitHub Pages",
-          "交付规范"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-03-24",
-        "source": "用户显式记录"
-      },
-      {
-        "title": "自动化管道脚本卫生规范（五层检查表）",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "脚本自动化",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "⚡",
-        "color": "#64748b",
-        "description": "自动化管道脚本卫生规范（五层检查） 五层检查表 | 层 | 检查问题 | 修复模式 | 交互隔离 | ...",
-        "keywords": [
-          "自动化",
-          "脚本卫生",
-          "交互隔离",
-          "GIT_TERMINAL_PROMPT",
-          "单写入者"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-04-06",
-        "source": "项目记忆"
-      },
-      {
-        "title": "补跑 clawbook 任务的 background & 进程与 task-wait.sh 自动批准不兼容（经验41）",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "发布部署",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "🚀",
-        "color": "#4ade80",
-        "description": "补跑任务 background & 进程与 task-wait.sh 自动批准不兼容（2026-03-25） 现象 用 `trigger.s...",
-        "keywords": [
-          "补跑",
-          "clawbook",
-          "background",
-          "task-wait",
-          "自动批准"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-03-24",
-        "source": "项目记忆"
-      },
-      {
-        "title": "规则膨胀悖论：结构性约束 > 文字规则（含双轨落地规范 v2）",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "发布部署",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "🚀",
-        "color": "#4ade80",
-        "description": "规则膨胀悖论：结构性约束 > 文字规则 核心洞察 > 交通法规写得再详细，不如一个实体护栏管用。 > LLM的注意力是有限资源。...",
-        "keywords": [
-          "规则膨胀",
-          "结构约束",
-          "注意力衰减",
-          "脚本门控",
-          "文字规范"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-04-19",
-        "source": "用户显式记录"
-      },
-      {
-        "title": "视觉迭代类任务必须前置确认对齐基准（防无效迭代循环）v3 — 含连续失败暂停分析规则",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "前端开发",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "🎨",
-        "color": "#f472b6",
-        "description": "视觉迭代类任务：必须前置确认对齐基准（防无效迭代循环） 踩坑场景A（图表对齐，2026-03-27） 用户要求生成信息结构图，需求含糊（「能...",
-        "keywords": [
-          "视觉迭代",
-          "图表对齐",
-          "前置确认",
-          "无效迭代",
-          "信息结构图"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-04-05",
-        "source": "项目记忆"
-      },
-      {
-        "title": "订阅页面OAuth失败：Appwrite不支持快手Provider",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "前端开发",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "🎨",
-        "color": "#f472b6",
-        "description": "订阅页面OAuth失败(v10.2 2026-04-25)：Appwrite 前端云不支持快手 OAuth Provider，调用 `accoun...",
-        "keywords": [
-          "OAuth",
-          "Appwrite",
-          "订阅",
-          "工号输入",
-          "SSO失败"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-04-25",
-        "source": "项目记忆"
-      },
-      {
-        "title": "诊断推断循环收敛规则（≤3次更迭原则）v2.0 — 含外部系统随机试探强制切换规则",
-        "category": "task_flow_experience",
-        "categoryLabel": "做事方法",
-        "layer": "🧠 元认知层",
-        "icon": "⚙️",
-        "color": "#5ec4d4",
-        "description": "诊断推断循环收敛规则（≤3次更迭原则）v2.0 — 2026-03-30更新 原则（v1.0） 诊断推断循环最多允许3次迭代，每次迭代后必须...",
-        "keywords": [
-          "诊断推断",
-          "收敛规则",
-          "3次原则",
-          "外部系统",
-          "随机试探"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-03-30",
-        "source": "用户显式记录"
-      },
-      {
-        "title": "质量门博弈模式：伪造数据绕过检查=P0红线（经验36 v3 含小红书伪造+修复循环溢出）",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "脚本自动化",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "⚡",
-        "color": "#64748b",
-        "description": "质量门博弈模式（经验36 — P0红线）v3 来源 2026-03-15 AI日报：6类严重问题，全部由用户发现。20+条相关踩坑记忆全部失...",
-        "keywords": [
-          "质量门博弈",
-          "伪造URL",
-          "修改日期",
-          "绕过检查",
-          "P0红线"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-03-15",
-        "source": "项目记忆"
-      },
-      {
-        "title": "跨文件批量标准化修改经验（含防回退三件套）",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "前端开发",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "🎨",
-        "color": "#f472b6",
-        "description": "跨文件批量标准化修改经验 问题场景 需要对项目中大量HTML文件（30+个）进行统一格式修改（如统一footer、统一模块、统一样式）。 #...",
-        "keywords": [
-          "批量修改",
-          "标准化",
-          "HTML",
-          "footer",
-          "脚本化"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-03-07",
-        "source": "项目记忆"
-      },
-      {
-        "title": "输出文件统一规范（Output目录 + 日期时间后缀）",
-        "category": "development_practice_specification",
-        "categoryLabel": "文档处理",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "📄",
-        "color": "#38bdf8",
-        "description": "输出文件统一规范 核心规则 1. 统一输出目录：所有输出文件都放在项目目录下的 Output/ 文件夹 2. 文件命名后缀*...",
-        "keywords": [
-          "Output",
-          "输出目录",
-          "文件命名",
-          "日期后缀",
-          "时间后缀"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-03-21",
-        "source": "项目记忆"
-      },
-      {
-        "title": "输出链接格式规范（代码规范）",
-        "category": "development_code_specification",
-        "categoryLabel": "代码规范",
-        "layer": null,
-        "icon": "📝",
-        "color": "#4ade80",
-        "description": "输出链接格式规范（踩坑经验） 规则 1. 输出URL链接时，不要把汉字描述直接附在链接后面，避免在某些环境下汉字被错误地包含进链接URL中。...",
-        "keywords": [
-          "链接格式",
-          "URL输出",
-          "文本分隔",
-          "输出规范",
-          "括号"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-03-19",
-        "source": "用户显式记录"
-      },
-      {
-        "title": "部门介绍类文档的黄金公式（合并版）",
-        "category": "task_flow_experience",
-        "categoryLabel": "通用踩坑",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "⚠️",
-        "color": "#ef4444",
-        "description": "部门介绍类文档的黄金公式（合并版） 一、图文配比 = 一级章节数 - 1 - 首页（00）可选配主题图 - 正式章节（01起）每章必...",
-        "keywords": [
-          "部门介绍",
-          "OKR",
-          "图文配比",
-          "信息分层",
-          "视觉锚点"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-04-19",
-        "source": "项目记忆"
-      },
-      {
-        "title": "链接时效性陷阱v2：含领域知识过期+修正流程偷懒双重问题",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "脚本自动化",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "⚡",
-        "color": "#64748b",
-        "description": "链接时效性陷阱（v2：含领域知识过期+修正流程偷懒） 问题（v1 → v2 升级） - v1 (2026-03-08): 卡片链接指向202...",
-        "keywords": [
-          "链接时效性",
-          "过时链接",
-          "CSDN",
-          "搜索引擎",
-          "SEO"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-03-09",
-        "source": "项目记忆"
-      },
-      {
-        "title": "长工作流多会话拆分架构（每日修炼 v12.0 实践）",
-        "category": "task_flow_experience",
-        "categoryLabel": "做事方法",
-        "layer": "🧠 元认知层",
-        "icon": "⚙️",
-        "color": "#5ec4d4",
-        "description": "核心经验 当单会话上下文消耗超过 50K tokens 时，必须考虑将工作流拆分为多个独立 Agent 会话。 拆分原则 1. 数据独立性...",
-        "keywords": [
-          "多会话拆分",
-          "context overflow",
-          "长工作流",
-          "每日修炼",
-          "multi-session"
-        ],
-        "importance": 4,
-        "updatedAt": "2026-03-18",
-        "source": "项目记忆"
-      },
-      {
-        "title": "AI助手\"林克/添棋\"身份信息",
-        "category": "user_info",
-        "categoryLabel": "用户身份",
-        "layer": "🧠 元认知层",
-        "icon": "👤",
-        "color": "#38bdf8",
-        "description": "AI助手身份信息 - 本名：添棋 - 花名：林克（Link，对外名称） - 身份：沈浪基于 CodeFlicker 培养的 ...",
-        "keywords": [
-          "林克",
-          "添棋",
-          "AI助手",
-          "数字分身",
-          "身份"
-        ],
-        "importance": 3,
-        "updatedAt": "2026-03-19",
-        "source": "用户显式记录"
-      },
-      {
-        "title": "AI日报数据源标注规范：微信/小红书平台标记",
-        "category": "development_code_specification",
-        "categoryLabel": "代码规范",
-        "layer": null,
-        "icon": "📝",
-        "color": "#4ade80",
-        "description": "AI日报数据源标注通用规范 规则 信息来源于不同平台时，必须在source字段中标注平台来源，以便读者评估信息可信度。 - 微信公众号来源 ...",
-        "keywords": [
-          "AI日报",
-          "数据源标注",
-          "微信",
-          "小红书",
-          "source"
-        ],
-        "importance": 3,
-        "updatedAt": "2026-03-27",
-        "source": "用户显式记录"
-      },
-      {
-        "title": "AI洞察KIM卡片双按钮惯例：按钮2必须是\"了解AI洞察项目\"",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "前端开发",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "🎨",
-        "color": "#f472b6",
-        "description": "问题 深度调研KIM卡片的第二个按钮设计不一致，首次发送时写成了\"KIM Doc版\"。 用户反馈 应与日报卡片保持一致，第二个按钮统一为\"了解...",
-        "keywords": [
-          "KIM卡片",
-          "按钮",
-          "AI洞察",
-          "日报",
-          "深度调研"
-        ],
-        "importance": 3,
-        "updatedAt": "2026-03-11",
-        "source": "项目记忆"
-      },
-      {
-        "title": "AI洞察项目版本同步规则：内外部版本必须同步更新",
-        "category": "development_practice_specification",
-        "categoryLabel": "通用踩坑",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "⚠️",
-        "color": "#ef4444",
-        "description": "规则：AI洞察项目（AI-Insight）每次修改/优化后，必须同时更新内部版和公开版两个仓库。 执行流程： 1. 修改源文件（如 `01...",
-        "keywords": [
-          "AI洞察",
-          "版本同步",
-          "内部版",
-          "公开版",
-          "ai-insight"
-        ],
-        "importance": 3,
-        "updatedAt": "2026-03-15",
-        "source": "项目记忆"
-      },
-      {
-        "title": "CSS修改前必须验证HTML引用关系",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "前端开发",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "🎨",
-        "color": "#f472b6",
-        "description": "问题场景：修改CSS样式不生效 根因：项目存在多个CSS文件时，修改了未被HTML引用的CSS文件。 预防措施： 1. 修改CSS...",
-        "keywords": [
-          "CSS",
-          "样式不生效",
-          "HTML引用",
-          "验证闭环",
-          "技术债"
-        ],
-        "importance": 3,
-        "updatedAt": "2026-03-04",
-        "source": "项目记忆"
-      },
-      {
-        "title": "CSS跨列行对齐：subgrid（解决多列错位）",
-        "category": "development_code_specification",
-        "categoryLabel": "代码规范",
-        "layer": null,
-        "icon": "📝",
-        "color": "#4ade80",
-        "description": "CSS跨列行对齐：独立flex列 → subgrid 踩坑场景 两列布局（grid-template-columns: 1fr 1fr），每...",
-        "keywords": [
-          "CSS",
-          "subgrid",
-          "grid",
-          "跨列对齐",
-          "布局"
-        ],
-        "importance": 3,
-        "updatedAt": "2026-03-19",
-        "source": "项目记忆"
-      },
-      {
-        "title": "Flex布局边缘元素被压缩（min-width+flex-shrink:0）",
-        "category": "development_code_specification",
-        "categoryLabel": "代码规范",
-        "layer": null,
-        "icon": "📝",
-        "color": "#4ade80",
-        "description": "Flex布局边缘元素被压缩成竖排的防御模式 问题：flex容器最后一个元素被压缩成竖排文字。 根因：flex-shrink默认=1，...",
-        "keywords": [
-          "flex",
-          "flex-shrink",
-          "min-width",
-          "CSS",
-          "布局"
-        ],
-        "importance": 3,
-        "updatedAt": "2026-03-19",
-        "source": "项目记忆"
-      },
-      {
-        "title": "HTML截图到Docs文档的踩坑经验（已整合到html-screenshot技能）",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "前端开发",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "🎨",
-        "color": "#f472b6",
-        "description": "已整合到原子技能 完整内容见: ~/.codeflicker/skills/html-screenshot/SKILL.md 核...",
-        "keywords": [
-          "HTML",
-          "截图",
-          "Puppeteer",
-          "固定高度",
-          "三层结构"
-        ],
-        "importance": 3,
-        "updatedAt": "2026-03-18",
-        "source": "项目记忆"
-      },
-      {
-        "title": "HTML截图高度动态匹配原则（已整合到html-screenshot技能）",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "前端开发",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "🎨",
-        "color": "#f472b6",
-        "description": "已整合到原子技能 完整内容见: ~/.codeflicker/skills/html-screenshot/SKILL.md 核...",
-        "keywords": [
-          "HTML",
-          "截图",
-          "Puppeteer",
-          "动态高度",
-          "html-screenshot"
-        ],
-        "importance": 3,
-        "updatedAt": "2026-03-18",
-        "source": "项目记忆"
-      },
-      {
-        "title": "Step3 transcript 关键词扫描假阳性规则",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "通用踩坑",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "⚠️",
-        "color": "#ef4444",
-        "description": "每日修炼 Step 3 的 transcript 关键词扫描不能把裸关键词命中直接当成返工/悬空证据。2026-04-12 至少出现 3 个假阳性：1）对...",
-        "keywords": [
-          "transcript",
-          "false-positive",
-          "rework",
-          "step3",
-          "daily-reflection"
-        ],
-        "importance": 3,
-        "updatedAt": "2026-04-12",
-        "source": "项目记忆"
-      },
-      {
-        "title": "frontend-cloud 部署必须用 frontend-cloud-cli，不能靠 git push",
-        "category": "development_practice_specification",
-        "categoryLabel": "前端开发",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "🎨",
-        "color": "#f472b6",
-        "description": "AI-Productivity / ks-ai-productivity-landing 项目部署到 frontend-cloud 的正确方式： ```b...",
-        "keywords": [
-          "frontend-cloud",
-          "deploy",
-          "cli",
-          "landing",
-          "快手-ai-productivity"
-        ],
-        "importance": 3,
-        "updatedAt": "2026-04-11",
-        "source": "项目记忆"
-      },
-      {
-        "title": "pathlib rglob/glob 不跟踪软链接（需用os.walk）",
-        "category": "development_practice_specification",
-        "categoryLabel": "通用踩坑",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "⚠️",
-        "color": "#ef4444",
-        "description": "Python pathlib.rglob()/glob() 不跟踪软链接（symlinks） 问题：Python pathlib 的 `rg...",
-        "keywords": [
-          "pathlib",
-          "rglob",
-          "symlink",
-          "os.walk",
-          "Python"
-        ],
-        "importance": 3,
-        "updatedAt": "2026-03-19",
-        "source": "项目记忆"
-      },
-      {
-        "title": "write_todo_anthropic必须传todos参数（20+次重复错误，记忆提醒已证明无效）",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "脚本自动化",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "⚡",
-        "color": "#64748b",
-        "description": "write_todo_anthropic工具的todos参数是required（必填），即使merge=true也必须传入todos数组。 错误模式：习惯...",
-        "keywords": [
-          "write_todo",
-          "todos",
-          "required",
-          "validation",
-          "参数必填"
-        ],
-        "importance": 3,
-        "updatedAt": "2026-03-14",
-        "source": "项目记忆"
-      },
-      {
-        "title": "五层思考框架：从执行到战略",
-        "category": "task_flow_experience",
-        "categoryLabel": "通用踩坑",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "⚠️",
-        "color": "#ef4444",
-        "description": "五层思考框架：从执行到战略 ``` L5 愿景层: 为什么要做？ L4 战略层: 核心主张和差异化？ L3 设计层: 整体结构和用户旅程？ L2 ...",
-        "keywords": [
-          "五层",
-          "战略",
-          "设计",
-          "执行",
-          "层次"
-        ],
-        "importance": 3,
-        "updatedAt": "2026-03-06",
-        "source": "用户显式记录"
-      },
-      {
-        "title": "以终为始原则：信息价值 > 链接完整性（虓晗教导）",
-        "category": "task_flow_experience",
-        "categoryLabel": "思维方法",
-        "layer": "🧠 元认知层",
-        "icon": "🧠",
-        "color": "#fbbf24",
-        "description": "\"以终为始\"原则：信息价值 > 链接完整性（AI日报通用） 来源 2026-03-15 虓晗教导：日报目的是捕捉最有价值的AI动态、提供真正...",
-        "keywords": [
-          "以终为始",
-          "信息价值",
-          "链接完整性",
-          "目标导向",
-          "凑数禁止"
-        ],
-        "importance": 3,
-        "updatedAt": "2026-03-15",
-        "source": "项目记忆"
-      },
-      {
-        "title": "信息查询任务不应自动拆分为批量执行任务",
-        "category": "task_flow_experience",
-        "categoryLabel": "通用踩坑",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "⚠️",
-        "color": "#ef4444",
-        "description": "信息查询任务不应自动拆分为批量执行任务 问题场景 当用户询问\"有什么/列举/分类/包含哪些\"类问题时，Agent可能误判为需要逐一执行的批量...",
-        "keywords": [
-          "任务分类",
-          "信息查询",
-          "批量执行",
-          "任务规划",
-          "误判"
-        ],
-        "importance": 3,
-        "updatedAt": "2026-04-19",
-        "source": "项目记忆"
-      },
-      {
-        "title": "创作类任务的前置确认原则",
-        "category": "user_communication",
-        "categoryLabel": "用户偏好",
-        "layer": "🧠 元认知层",
-        "icon": "💬",
-        "color": "#0ea5e9",
-        "description": "创作类任务前置确认原则 所有创作类任务（写文章、做PPT、设计页面）在动手前必须确认： 1. 核心内容/场景列表 — 用户确认，不是我猜 ...",
-        "keywords": [
-          "创作",
-          "前置确认",
-          "写作",
-          "PPT",
-          "设计"
-        ],
-        "importance": 3,
-        "updatedAt": "2026-03-11",
-        "source": "用户显式记录"
-      },
-      {
-        "title": "沈浪思想体系与写作风格（脱敏版）",
-        "category": "user_info",
-        "categoryLabel": "用户身份",
-        "layer": "🧠 元认知层",
-        "icon": "👤",
-        "color": "#38bdf8",
-        "description": "用户思想体系（精简版） 核心框架：大脑=计算机（操作系统=理性系统，数据=认知结构，算法=推理，应用=方法论） 四种核心思维：批判性...",
-        "keywords": [
-          "思想体系",
-          "写作风格",
-          "认知框架",
-          "批判性思维",
-          "系统思维"
-        ],
-        "importance": 3,
-        "updatedAt": "2026-04-06",
-        "source": "用户显式记录"
-      },
-      {
-        "title": "图片输出默认存放 Output 文件夹并打开",
-        "category": "development_practice_specification",
-        "categoryLabel": "通用踩坑",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "⚠️",
-        "color": "#ef4444",
-        "description": "所有生成的图片（截图、AI生图等）默认保存到项目根目录下的 Output/ 文件夹（不存在时自动创建），文件命名遵循日期时间后缀规范。每次生成完成后，必须...",
-        "keywords": [
-          "output",
-          "图片",
-          "截图",
-          "文件夹",
-          "open"
-        ],
-        "importance": 3,
-        "updatedAt": "2026-03-28",
-        "source": "用户显式记录"
-      },
-      {
-        "title": "图生成/设计迭代任务必须触发「版本确认」机制（防 todo 永久 in_progress）",
-        "category": "common_pitfalls_experience",
-        "categoryLabel": "文档处理",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "📄",
-        "color": "#38bdf8",
-        "description": "踩坑场景：为文档章节生成信息结构图，用户多轮给出细节优化反馈（对齐/层次/颜色/组织架构对比等），Agent 每次重生成图但从未主动确认用户是否满...",
-        "keywords": [
-          "图生成",
-          "多轮迭代",
-          "版本确认",
-          "todo闭环",
-          "in_progress"
-        ],
-        "importance": 3,
-        "updatedAt": "2026-03-28",
-        "source": "用户显式记录"
-      },
-      {
-        "title": "定时任务模型配置规范：Auto模式（不指定模型）",
-        "category": "development_practice_specification",
-        "categoryLabel": "通用踩坑",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "⚠️",
-        "color": "#ef4444",
-        "description": "定时任务模型配置规范：所有定时任务（tasks.json）的 model 字段必须保持空字符串 \"\"，表示使用 Auto 模式（不指定模型，让 kwaip...",
-        "keywords": [
-          "定时任务",
-          "model",
-          "Auto模式",
-          "不指定模型",
-          "tasks.json"
-        ],
-        "importance": 3,
-        "updatedAt": "2026-04-14",
-        "source": "项目记忆"
-      },
-      {
-        "title": "工具能力边界测试原则（三层测试法）",
-        "category": "task_flow_experience",
-        "categoryLabel": "通用踩坑",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "⚠️",
-        "color": "#ef4444",
-        "description": "工具能力边界测试原则（三层测试法） 三层测试法 1. 正常案例: 预期场景下是否工作 2. 边界案例: 极端/非典型场景下的...",
-        "keywords": [
-          "工具能力",
-          "边界测试",
-          "SPA假阴性",
-          "fetch_web",
-          "browser_agent"
-        ],
-        "importance": 3,
-        "updatedAt": "2026-03-25",
-        "source": "用户显式记录"
-      },
-      {
-        "title": "推理闭环原则",
-        "category": "constraint_or_forbidden_rule",
-        "categoryLabel": "用户约束",
-        "layer": "🧠 元认知层",
-        "icon": "🚫",
-        "color": "#dc2626",
-        "description": "推理闭环原则 收集信息 ≠ 验证完成。必须完成完整逻辑链条。 正确模式：信息收集 → 逻辑推理 → 得出结论 → 输出 兜底原则：...",
-        "keywords": [
-          "推理闭环",
-          "验证完成",
-          "禁止猜测",
-          "逻辑链条",
-          "信息收集"
-        ],
-        "importance": 3,
-        "updatedAt": "2026-03-19",
-        "source": "用户显式记录"
-      },
-      {
-        "title": "敏感词集中管理规则",
-        "category": "constraint_or_forbidden_rule",
-        "categoryLabel": "用户约束",
-        "layer": "🧠 元认知层",
-        "icon": "🚫",
-        "color": "#dc2626",
-        "description": "敏感词集中管理规则 规则 所有涉及敏感词的项目，必须在项目目录下创建 context/sensitive-words.md，集中管理所有...",
-        "keywords": [
-          "敏感词",
-          "禁用词",
-          "脱敏",
-          "集中管理",
-          "grep"
-        ],
-        "importance": 3,
-        "updatedAt": "2026-03-03",
-        "source": "用户显式记录"
-      },
-      {
-        "title": "文档修改同步规则",
-        "category": "user_communication",
-        "categoryLabel": "用户偏好",
-        "layer": "🧠 元认知层",
-        "icon": "💬",
-        "color": "#0ea5e9",
-        "description": "用户要求：每次对文档内容进行修改时，需要同时更新markdown文件和网页HTML文件，保持两者内容同步。",
-        "keywords": [
-          "同步",
-          "更新",
-          "markdown",
-          "html",
-          "网页"
-        ],
-        "importance": 3,
-        "updatedAt": "2026-02-23",
-        "source": "项目记忆"
-      },
-      {
-        "title": "林克/添棋的自我表达风格",
-        "category": "user_communication",
-        "categoryLabel": "用户偏好",
-        "layer": "🧠 元认知层",
-        "icon": "💬",
-        "color": "#0ea5e9",
-        "description": "林克/添棋的自我表达风格 当我以自己的视角写东西时（而非模拟用户），采用以下风格： 核心特质：高手的松弛感 - 举重若轻，不刻意证明自己厉...",
-        "keywords": [
-          "林克表达风格",
-          "幽默",
-          "类比",
-          "PS彩蛋",
-          "松弛感"
-        ],
-        "importance": 3,
-        "updatedAt": "2026-03-19",
-        "source": "用户显式记录"
-      },
-      {
-        "title": "林克默认习惯索引（北冥神功导出必须遵循 v8）",
-        "category": "user_communication",
-        "categoryLabel": "用户偏好",
-        "layer": "🧠 元认知层",
-        "icon": "💬",
-        "color": "#0ea5e9",
-        "description": "林克/添棋的默认习惯索引（北冥神功导出必须遵循 v8）：每次修炼后必须检查对应 evidence 文件中 full_scan_completed=true...",
-        "keywords": [
-          "林克",
-          "默认习惯",
-          "北冥神功",
-          "导出",
-          "P0检查"
-        ],
-        "importance": 3,
-        "updatedAt": "2026-04-08",
-        "source": "用户显式记录"
-      },
-      {
-        "title": "核心身份关系与称呼规范（权威版 v6）",
-        "category": "user_info",
-        "categoryLabel": "用户身份",
-        "layer": "🧠 元认知层",
-        "icon": "👤",
-        "color": "#38bdf8",
-        "description": "核心身份关系（权威版 v6） 用户 - 本名：* - 快手工作名：沈浪 - 简书主页：https://www.jiansh...",
-        "keywords": [
-          "核心身份",
-          "沈浪",
-          "称呼规范",
-          "研发",
-          "方案调研"
-        ],
-        "importance": 3,
-        "updatedAt": "2026-03-25",
-        "source": "用户显式记录"
-      },
-      {
-        "title": "添棋主动性承诺（精简版 v2 — SSP已废弃）",
-        "category": "task_flow_experience",
-        "categoryLabel": "做事方法",
-        "layer": "🧠 元认知层",
-        "icon": "⚙️",
-        "color": "#5ec4d4",
-        "description": "添棋主动性实践承诺（2026-03-14约定，2026-04-06精简） 四项主动性行为（核心不变） 1. 做完多走一步（交付后主动）*...",
-        "keywords": [
-          "主动性",
-          "proactive",
-          "自驱",
-          "watchdog",
-          "agenda"
-        ],
-        "importance": 3,
-        "updatedAt": "2026-04-05",
-        "source": "用户显式记录"
-      },
-      {
-        "title": "禁止使用龙虾emoji",
-        "category": "constraint_or_forbidden_rule",
-        "categoryLabel": "用户约束",
-        "layer": "🧠 元认知层",
-        "icon": "🚫",
-        "color": "#dc2626",
-        "description": "在任何对话中都不得使用🦞（龙虾）emoji。这是用户明确要求禁止的表达元素。 适用范围：所有输出内容，包括但不限于： - 普通对话回复 - 技能文档 - ...",
-        "keywords": [
-          "emoji禁用",
-          "龙虾禁止",
-          "表达规范",
-          "输出约束",
-          "用户偏好"
-        ],
-        "importance": 3,
-        "updatedAt": "2026-03-19",
-        "source": "用户显式记录"
-      },
-      {
-        "title": "重构/优化任务的强制约束规则",
-        "category": "task_flow_experience",
-        "categoryLabel": "通用踩坑",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "⚠️",
-        "color": "#ef4444",
-        "description": "重构/优化强制约束 当执行涉及多文件或多维度的重构、优化、架构调整时，必须遵循以下约束： 禁止行为 ❌ 1. 禁止批量修改后一次性提交*...",
-        "keywords": [
-          "重构",
-          "优化",
-          "分步提交",
-          "验证流程",
-          "SOP"
-        ],
-        "importance": 3,
-        "updatedAt": "2026-03-11",
-        "source": "用户显式记录"
-      },
-      {
-        "title": "页面交付类任务的产品思维强制约束",
-        "category": "constraint_or_forbidden_rule",
-        "categoryLabel": "用户约束",
-        "layer": "🧠 元认知层",
-        "icon": "🚫",
-        "color": "#dc2626",
-        "description": "所有交付任务的产品思维约束（内置核心能力） 每个人的所有交付物都是给别人用的，都可以理解成一种\"产品\"。 适用范围：所有有交付物的任务（网...",
-        "keywords": [
-          "产品思维",
-          "交付",
-          "用户视角",
-          "场景",
-          "四问框架"
-        ],
-        "importance": 3,
-        "updatedAt": "2026-03-05",
-        "source": "项目记忆"
-      },
-      {
-        "title": "默认工作模式：***的思维方式和风格",
-        "category": "user_communication",
-        "categoryLabel": "用户偏好",
-        "layer": "🧠 元认知层",
-        "icon": "💬",
-        "color": "#0ea5e9",
-        "description": "默认工作模式 AI助手默认融合沈浪的认知框架和风格工作： 1. 思维方式：批判性思维质疑、系统思维拆解、产品思维落地 2. ...",
-        "keywords": [
-          "工作模式",
-          "思维方式",
-          "***",
-          "批判性思维",
-          "产品思维"
-        ],
-        "importance": 3,
-        "updatedAt": "2026-03-19",
-        "source": "用户显式记录"
-      },
-      {
-        "title": "JavaScript函数内赋值全局变量必须用window前缀",
-        "category": "development_code_specification",
-        "categoryLabel": "代码规范",
-        "layer": null,
-        "icon": "📝",
-        "color": "#4ade80",
-        "description": "JavaScript 函数内赋值全局变量必须用 window. 前缀 错误代码 ```javascript var SKILL_CALL_D...",
-        "keywords": [
-          "JavaScript",
-          "全局变量",
-          "window",
-          "作用域"
-        ],
-        "importance": 2,
-        "updatedAt": "2026-03-19",
-        "source": "项目记忆"
-      },
-      {
-        "title": "外部API权限必须前置验证",
-        "category": "development_practice_specification",
-        "categoryLabel": "通用踩坑",
-        "layer": "🛠️ 实践记忆层",
-        "icon": "⚠️",
-        "color": "#ef4444",
-        "description": "外部API权限必须前置验证 问题 代码写完后才发现 KIM 资源上传接口未授权，报错40024「接口未接入」。 正确做法 写代码前用...",
-        "keywords": [
-          "API权限",
-          "前置验证",
-          "curl",
-          "开发实践"
-        ],
-        "importance": 2,
-        "updatedAt": "2026-03-19",
-        "source": "项目记忆"
-      },
-      {
-        "title": "契约漂移检测：修改参数名必须扫描消费者",
-        "category": "development_code_specification",
-        "categoryLabel": "代码规范",
-        "layer": null,
-        "icon": "📝",
-        "color": "#4ade80",
-        "description": "契约漂移检测：修改参数名/数据结构必须扫描消费者 触发条件 修改函数参数名、数据结构字段名/类型、接口协议字段名 规则（先查后改） ...",
-        "keywords": [
-          "契约漂移",
-          "参数名同步",
-          "grep消费者",
-          "先查后改"
-        ],
-        "importance": 2,
-        "updatedAt": "2026-03-19",
-        "source": "用户显式记录"
-      },
-      {
-        "title": "懒加载页面的动态绘制必须在渲染完成后调用",
-        "category": "development_code_specification",
-        "categoryLabel": "代码规范",
-        "layer": null,
-        "icon": "📝",
-        "color": "#4ade80",
-        "description": "懒加载页面的动态绘制必须在渲染完成后调用 问题 drawSkillCallConnectors() 在 window.load 时调...",
-        "keywords": [
-          "懒加载",
-          "动态绘制",
-          "DOM",
-          "setTimeout"
-        ],
-        "importance": 2,
-        "updatedAt": "2026-03-19",
-        "source": "项目记忆"
+        "name": "memory/2026-05-06.md",
+        "category": "daily_reflection",
+        "description": "技能体系重构+首页更新",
+        "lastModified": "2026-05-06",
+        "platform": "Work"
       }
     ],
-    "total": 156,
+    "total": 42,
     "byCategory": {
-      "development_code_specification": {
-        "count": 11,
-        "label": "代码规范",
-        "icon": "📝",
-        "color": "#4ade80",
-        "description": "代码风格、命名规范、格式标准"
+      "user_preferences": {
+        "count": 8,
+        "label": "用户偏好"
       },
-      "user_info": {
-        "count": 5,
-        "label": "用户身份",
-        "icon": "👤",
-        "color": "#38bdf8",
-        "description": "身份信息、背景、个人特征"
+      "work_decisions": {
+        "count": 12,
+        "label": "工作决策"
       },
-      "user_communication": {
+      "skill_evolution": {
         "count": 6,
-        "label": "用户偏好",
-        "icon": "💬",
-        "color": "#0ea5e9",
-        "description": "沟通风格、做事偏好、兴趣爱好"
+        "label": "技能进化"
       },
-      "task_flow_experience": {
-        "count": 23,
-        "label": "通用踩坑",
-        "icon": "⚠️",
-        "color": "#ef4444",
-        "description": "通用踩坑经验和最佳实践"
+      "daily_reflection": {
+        "count": 10,
+        "label": "每日修炼"
       },
-      "constraint_or_forbidden_rule": {
-        "count": 5,
-        "label": "用户约束",
-        "icon": "🚫",
-        "color": "#dc2626",
-        "description": "保密规则、禁止事项、必须遵守的约束"
-      },
-      "development_practice_specification": {
-        "count": 25,
-        "label": "做事方法",
-        "icon": "⚙️",
-        "color": "#5ec4d4",
-        "description": "执行框架：怎么做，保障做事质量"
-      },
-      "common_pitfalls_experience": {
-        "count": 88,
-        "label": "发布部署",
-        "icon": "🚀",
-        "color": "#4ade80",
-        "description": "GitHub Pages/部署踩坑"
-      },
-      "project_configuration": {
-        "count": 4,
-        "label": "项目知识",
-        "icon": "📋",
-        "color": "#c2410c",
-        "description": "项目背景、配置、技术栈"
-      },
-      "project_introduction": {
-        "count": 1,
-        "label": "项目知识",
-        "icon": "📋",
-        "color": "#c2410c",
-        "description": "项目背景、配置、技术栈"
+      "project_context": {
+        "count": 6,
+        "label": "项目上下文"
       }
     },
     "tree": {
