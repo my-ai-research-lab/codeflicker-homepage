@@ -714,22 +714,100 @@ function initDateSelector() {
 function renderSelectedReport(index) {
     const reports = AppState.reportsData?.reports || [];
     if (index >= reports.length) return;
-    
-    const report = reports[index];
-    
-    // ========== v7.1: 三板块渲染 ==========
-    // 板块一：核心进展（传入capabilityGrowth以便补充能力提升）
-    renderCoreProgress(report.coreProgress || report.highlights || [], report.capabilityGrowth || report);
-    
-    // 板块二：交付情况
-    renderDeliveryStats(report.deliveries || []);
-    renderDeliveries(report.deliveries || []);
-    
-    // 板块三：能力提升
-    renderCapabilityGrowth(report.capabilityGrowth || report);
-    
-    // 渲染趋势图
-    renderDailyTrendChart();
+    const r = reports[index];
+    const el = (id) => document.getElementById(id);
+
+    // ===== 顶部状态 + 摘要条 =====
+    const isAttention = (r.attention||[]).length > 0 || (r.pending||[]).length > 0;
+    const badge = el('daily-status-badge');
+    const dot = el('status-dot');
+    const statusLabel = el('status-label');
+    if (badge) { badge.className = 'daily-status-badge' + (isAttention?' attention':''); }
+    if (dot)   { dot.className = 'status-dot' + (isAttention?' attention':''); }
+    if (statusLabel) statusLabel.textContent = isAttention ? '需关注' : '运行平稳';
+
+    const ss = r.summaryStats || {};
+    if (el('stat-conversations')) el('stat-conversations').textContent = r.conversationCount || ss.conversations || 0;
+    if (el('stat-deliveries'))   el('stat-deliveries').textContent = (r.deliveries||[]).length || ss.deliveries || 0;
+    if (el('stat-projects'))     el('stat-projects').textContent = r.activeProjects || ss.projects || 0;
+    const skDelta = r.skillChange || 0;
+    if (el('stat-skill-delta'))  el('stat-skill-delta').textContent = skDelta > 0 ? '+'+skDelta : (skDelta < 0 ? skDelta : '±0');
+    if (el('stat-skill-total'))  el('stat-skill-total').textContent = r.skillCount || '-';
+
+    // ===== 需你关注 =====
+    const attentionBody = el('attention-body');
+    const attentionCount = el('attention-count');
+    const attentionItems = r.attention || [];
+    if (attentionBody) {
+        attentionBody.innerHTML = attentionItems.length === 0
+            ? '<div class="dc-ok">✅ 运行平稳，无需介入</div>'
+            : attentionItems.map(a => `<div class="growth-item"><span class="growth-dim">⚠️</span><span class="growth-text">${escapeHtml(typeof a==='string'?a:(a.issue||a))}</span></div>`).join('');
+    }
+    if (attentionCount) attentionCount.textContent = attentionItems.length > 0 ? attentionItems.length+'项' : '';
+
+    // ===== 今日计划 =====
+    const planBody = el('plan-body');
+    const plan = r.todayPlan || [];
+    if (planBody) {
+        planBody.innerHTML = plan.map(p =>
+            `<div class="plan-item"><span class="plan-time">${escapeHtml(p.time||'')}</span><span class="plan-task">${escapeHtml(p.task||'')}</span></div>`
+        ).join('') || '<span style="opacity:0.3;font-size:11px">暂无计划</span>';
+    }
+
+    // ===== 今日交付 =====
+    const deliveryGrid = el('delivery-grid');
+    const deliveriesCount = el('deliveries-count');
+    const deliveries = r.deliveries || [];
+    if (deliveriesCount) deliveriesCount.textContent = deliveries.length ? deliveries.length+'项' : '';
+    if (deliveryGrid) {
+        if (deliveries.length === 0) {
+            deliveryGrid.innerHTML = '<div class="no-deliveries">暂无交付记录</div>';
+        } else {
+            deliveryGrid.innerHTML = deliveries.map(d => {
+                const color = d.color || '#c9a84c';
+                const result = d.result || (d.process ? (Array.isArray(d.process)?d.process.join('；'):d.process) : '');
+                const tags = (d.tags||[]).slice(0,3);
+                return `<div class="delivery-item" style="--dlv-color:${color}">
+                    <div class="dlv-header">
+                        <span class="dlv-icon">${d.icon||'📦'}</span>
+                        <span class="dlv-type">${d.typeLabel||d.type||''}</span>
+                    </div>
+                    <div class="dlv-title">${escapeHtml(d.title||'')}</div>
+                    ${result?`<div class="dlv-result">${escapeHtml(result)}</div>`:''}
+                    ${tags.length?`<div class="dlv-tags">${tags.map(t=>`<span class="dlv-tag">${escapeHtml(t)}</span>`).join('')}</div>`:''}
+                </div>`;
+            }).join('');
+        }
+    }
+
+    // ===== 进化数据 =====
+    const mkChg = (c) => c > 0 ? '+'+c : (c < 0 ? ''+c : '');
+    if (el('evo-skill-val')) el('evo-skill-val').textContent = r.skillCount || '-';
+    if (el('evo-skill-chg')) el('evo-skill-chg').textContent = mkChg(r.skillChange||0);
+    if (el('evo-know-val')) el('evo-know-val').textContent = r.knowledgeCount || '-';
+    if (el('evo-know-chg')) el('evo-know-chg').textContent = mkChg(r.knowledgeChange||0);
+    if (el('evo-mem-val')) el('evo-mem-val').textContent = r.memoryCount || '-';
+    if (el('evo-mem-chg')) el('evo-mem-chg').textContent = mkChg(r.memoryChange||0);
+    const evo = r.evoStats || {};
+    if (el('evo-summary')) el('evo-summary').textContent = evo.summary || (skDelta?`新增${skDelta}个技能`:'持续运转中');
+
+    // ===== 今日成长 =====
+    const gt = r.growthToday || {};
+    if (el('g-memory'))    el('g-memory').textContent    = gt.memory || '-';
+    if (el('g-skill'))     el('g-skill').textContent     = gt.skill || '-';
+    if (el('g-cognition')) el('g-cognition').textContent = gt.cognition || '-';
+    if (el('g-workflow'))  el('g-workflow').textContent  = gt.workflow || '-';
+
+    // ===== 今日洞察 =====
+    const cl = r.communityLearning || {};
+    if (el('insights-platform')) el('insights-platform').textContent = cl.platform || 'ClawBook';
+    if (el('insight-tldr'))      el('insight-tldr').textContent = cl.tldr || ((r.highlights||[])[0]) || '-';
+    const insights = cl.insights || r.highlights || [];
+    if (el('insight-tags')) {
+        el('insight-tags').innerHTML = insights.slice(0,4).map(i =>
+            `<span class="insight-tag">💡 ${escapeHtml(typeof i==='string'?i:(i.text||i))}</span>`
+        ).join('');
+    }
 }
 
 // ========== v7.5: 板块一 - 核心进展 (分类显示 + 从capabilityGrowth补充能力提升) ==========
