@@ -2247,78 +2247,39 @@
 .engine-node--meta-expression .engine-node-level { color: #5ec4d4; }
 
 /* 子维度块 — 紧凑版 */
-.subdim-block {
-    background: rgba(0, 0, 0, 0.15);
-    border: 1px solid rgba(167, 139, 250, 0.1);
-    border-radius: 8px;
-    padding: 8px 10px 10px;
-    margin-bottom: 6px;
-}
-.subdim-block:last-child { margin-bottom: 0; }
-.subdim-header {
+/* L2 五维平铺行 */
+.dim-row {
     display: flex;
     align-items: center;
-    gap: 5px;
-    margin-bottom: 8px;
-    padding-bottom: 5px;
-    border-bottom: 1px solid rgba(167, 139, 250, 0.06);
+    gap: 8px;
+    padding: 6px 10px;
+    background: rgba(0, 0, 0, 0.12);
+    border: 1px solid rgba(167, 139, 250, 0.08);
+    border-radius: 8px;
+    margin-bottom: 5px;
 }
-.subdim-icon { font-size: 14px; }
-.subdim-title {
+.dim-row:last-child { margin-bottom: 0; }
+.dim-label {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    min-width: 52px;
+    flex-shrink: 0;
+}
+.dim-icon { font-size: 15px; }
+.dim-name {
     font-family: var(--font-title);
     font-size: 12px;
     font-weight: 700;
     color: rgba(200, 220, 240, 0.85);
     letter-spacing: 0.3px;
 }
-.subdim-skills {
+.dim-skills {
     display: flex;
     flex-wrap: wrap;
     gap: 6px;
+    flex: 1;
 }
-.subdim-arrow {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 3px 0 5px;
-    gap: 1px;
-}
-.subdim-arrow-line { width: 1px; height: 10px; background: rgba(167, 139, 250, 0.2); }
-.subdim-arrow-tip { font-size: 8px; color: rgba(167, 139, 250, 0.35); }
-.subdim-arrow-label { font-size: 9px; color: rgba(200, 220, 240, 0.3); font-family: var(--font-mono); }
-
-/* 双栏布局 — 紧凑版 */
-.meta-bifurcated-layout {
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
-    gap: 0;
-    align-items: start;
-}
-.meta-col { padding: 0 4px; }
-.meta-col-header {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    margin-bottom: 8px;
-    padding: 6px 10px;
-    background: rgba(167, 139, 250, 0.06);
-    border-radius: 6px;
-    border: 1px solid rgba(167, 139, 250, 0.1);
-}
-.meta-col-icon { font-size: 14px; }
-.meta-col-title { font-family: var(--font-title); font-size: 13px; font-weight: 700; color: #c4b5fd; }
-.meta-col-desc { font-size: 10px; color: rgba(200, 220, 240, 0.4); margin-left: auto; font-family: var(--font-mono); }
-.meta-col-divider {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 0 6px;
-    gap: 3px;
-    margin-top: 28px;
-}
-.meta-col-divider .divider-line { width: 1px; height: 20px; background: rgba(167, 139, 250, 0.12); }
-.meta-col-divider .divider-label { font-size: 12px; color: rgba(167, 139, 250, 0.25); font-weight: 700; }
 
 /* ==================== 响应式调整 ==================== */
 @media (max-width: 768px) {

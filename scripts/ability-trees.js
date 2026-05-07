@@ -437,41 +437,20 @@ function renderSkillTechTree(container, skills) {
         return html;
     }
 
-    function renderSubDim(cat, icon, title, dimRole, flowLabel, isFirst) {
+    function renderDimRow(cat, icon, title, dimRole) {
         if (!cat || !cat.skills || !cat.skills.length) return '';
-        var arrow = isFirst ? '' :
-            '<div class="subdim-arrow"><div class="subdim-arrow-line"></div><div class="subdim-arrow-tip">▼</div><div class="subdim-arrow-label">' + flowLabel + '</div></div>';
-        return arrow +
-            '<div class="subdim-block">' +
-                '<div class="subdim-header"><span class="subdim-icon">' + icon + '</span><span class="subdim-title">' + title + '</span></div>' +
-                '<div class="subdim-skills">' + renderSkillNodes(cat.skills, dimRole) + '</div>' +
+        return '<div class="dim-row">' +
+                '<div class="dim-label"><span class="dim-icon">' + icon + '</span><span class="dim-name">' + title + '</span></div>' +
+                '<div class="dim-skills">' + renderSkillNodes(cat.skills, dimRole) + '</div>' +
             '</div>';
     }
 
-    var thinkingCol = '';
-    thinkingCol += renderSubDim(perceptionCat, '👁️', '感知', 'perception', '', true);
-    thinkingCol += renderSubDim(reasoningCat, '🧠', '推理', 'reasoning', '感知→推理', false);
-
-    var actingCol = '';
-    actingCol += renderSubDim(executionCat, '🎯', '执行', 'execution', '', true);
-    actingCol += renderSubDim(collaborationCat, '🤝', '协作', 'collaboration', '执行→协作', false);
-    actingCol += renderSubDim(expressionCat, '📝', '表达', 'expression', '协作→表达', false);
-
-    var metaDimSections = '';
-    if (thinkingCol || actingCol) {
-        metaDimSections =
-            '<div class="meta-bifurcated-layout">' +
-                '<div class="meta-col meta-col--thinking">' +
-                    '<div class="meta-col-header"><span class="meta-col-icon">💡</span><span class="meta-col-title">思维方法</span><span class="meta-col-desc">How to Think</span></div>' +
-                    '<div class="meta-col-body">' + thinkingCol + '</div>' +
-                '</div>' +
-                '<div class="meta-col-divider"><div class="divider-line"></div><div class="divider-label">×</div><div class="divider-line"></div></div>' +
-                '<div class="meta-col meta-col--acting">' +
-                    '<div class="meta-col-header"><span class="meta-col-icon">⚙️</span><span class="meta-col-title">做事方法</span><span class="meta-col-desc">How to Act</span></div>' +
-                    '<div class="meta-col-body">' + actingCol + '</div>' +
-                '</div>' +
-            '</div>';
-    }
+    var dimRows = '';
+    dimRows += renderDimRow(perceptionCat, '👁️', '感知', 'perception');
+    dimRows += renderDimRow(reasoningCat, '🧠', '推理', 'reasoning');
+    dimRows += renderDimRow(executionCat, '🎯', '执行', 'execution');
+    dimRows += renderDimRow(collaborationCat, '🤝', '协作', 'collaboration');
+    dimRows += renderDimRow(expressionCat, '📝', '表达', 'expression');
     
     function renderLayerTransition(text) {
         return '<div class="layer-transition"><div class="transition-line"></div><span class="transition-label">' + text + '</span><div class="transition-line"></div><div class="transition-arrow">\u25BC</div></div>';
@@ -539,7 +518,7 @@ function renderSkillTechTree(container, skills) {
     container.innerHTML = '<div class="skill-architecture">' +
         engineHtml +
         renderLayerTransition('引擎驱动元能力') +
-        '<div class="meta-layer"><div class="meta-layer-label"><span class="meta-label-icon">\uD83E\uDDE0</span><span class="meta-label-text">L2 元能力层</span><span class="meta-label-desc">思维方法（感知+推理）× 做事方法（执行+协作+表达）· 10技能</span></div><div class="meta-layer-content">' + metaDimSections + '</div></div>' +
+        '<div class="meta-layer"><div class="meta-layer-label"><span class="meta-label-icon">🧠</span><span class="meta-label-text">L2 元能力层</span><span class="meta-label-desc">六维分型 · 感知×推理×执行×协作×表达 · 10技能</span></div><div class="meta-layer-content">' + dimRows + '</div></div>' +
         renderLayerTransition('元能力驱动领域能力') +
         domainHtml +
         renderLayerTransition('领域可调用工具技能') +
