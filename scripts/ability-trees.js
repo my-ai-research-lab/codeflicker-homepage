@@ -445,12 +445,22 @@ function renderSkillTechTree(container, skills) {
             '</div>';
     }
 
-    var dimRows = '';
-    dimRows += renderDimRow(perceptionCat, '👁️', '感知', 'perception');
-    dimRows += renderDimRow(reasoningCat, '🧠', '推理', 'reasoning');
-    dimRows += renderDimRow(executionCat, '🎯', '执行', 'execution');
-    dimRows += renderDimRow(collaborationCat, '🤝', '协作', 'collaboration');
-    dimRows += renderDimRow(expressionCat, '📝', '表达', 'expression');
+    // 思维方法（感知+推理）
+    var thinkingRows = '';
+    thinkingRows += renderDimRow(perceptionCat, '👁️', '感知', 'perception');
+    thinkingRows += renderDimRow(reasoningCat, '🧠', '推理', 'reasoning');
+
+    // 做事方法（执行+协作+表达）
+    var actionRows = '';
+    actionRows += renderDimRow(executionCat, '🎯', '执行', 'execution');
+    actionRows += renderDimRow(collaborationCat, '🤝', '协作', 'collaboration');
+    actionRows += renderDimRow(expressionCat, '📝', '表达', 'expression');
+
+    var dimHtml = '<div class="l2-bifurcated">' +
+        '<div class="l2-col"><div class="l2-col-title"><span>💭 思维方法</span><span class="l2-col-count">2维 · 4技能</span></div>' + thinkingRows + '</div>' +
+        '<div class="l2-divider"></div>' +
+        '<div class="l2-col"><div class="l2-col-title"><span>⚡ 做事方法</span><span class="l2-col-count">3维 · 6技能</span></div>' + actionRows + '</div>' +
+    '</div>';
     
     function renderLayerTransition(text) {
         return '<div class="layer-transition"><div class="transition-line"></div><span class="transition-label">' + text + '</span><div class="transition-line"></div><div class="transition-arrow">\u25BC</div></div>';
@@ -518,7 +528,7 @@ function renderSkillTechTree(container, skills) {
     container.innerHTML = '<div class="skill-architecture">' +
         engineHtml +
         renderLayerTransition('引擎驱动元能力') +
-        '<div class="meta-layer"><div class="meta-layer-label"><span class="meta-label-icon">🧠</span><span class="meta-label-text">L2 元能力层</span><span class="meta-label-desc">六维分型 · 感知×推理×执行×协作×表达 · 10技能</span></div><div class="meta-layer-content">' + dimRows + '</div></div>' +
+        '<div class="meta-layer"><div class="meta-layer-label"><span class="meta-label-icon">🧠</span><span class="meta-label-text">L2 元能力层</span><span class="meta-label-desc">思维方法 · 做事方法 · 10技能</span></div><div class="meta-layer-content">' + dimHtml + '</div></div>' +
         renderLayerTransition('元能力驱动领域能力') +
         domainHtml +
         renderLayerTransition('领域可调用工具技能') +

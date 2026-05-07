@@ -2252,6 +2252,41 @@
 
 /* 子维度块 — 紧凑版 */
 /* L2 五维平铺行 */
+/* L2 双栏布局：思维方法 | 做事方法 */
+.l2-bifurcated {
+    display: flex;
+    gap: 6px;
+    align-items: stretch;
+}
+.l2-col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.l2-col-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3px 8px;
+    margin-bottom: 2px;
+    font-family: var(--font-title);
+    font-size: 11px;
+    font-weight: 700;
+    color: #c4b5fd;
+    border-bottom: 1px solid rgba(167, 139, 250, 0.15);
+}
+.l2-col-count {
+    font-size: 9px;
+    font-weight: 400;
+    color: rgba(200, 220, 240, 0.45);
+}
+.l2-divider {
+    width: 1px;
+    background: linear-gradient(180deg, transparent, rgba(167, 139, 250, 0.3), transparent);
+    flex-shrink: 0;
+}
+
 .l2-dim-row {
     display: flex;
     align-items: center;
