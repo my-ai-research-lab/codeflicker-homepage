@@ -457,9 +457,9 @@ function renderSkillTechTree(container, skills) {
     actionRows += renderDimRow(expressionCat, '📝', '表达', 'expression');
 
     var dimHtml = '<div class="l2-bifurcated">' +
-        '<div class="l2-col"><div class="l2-col-title"><span>💭 思维方法</span><span class="l2-col-count">2维 · 4技能</span></div>' + thinkingRows + '</div>' +
+        '<div class="l2-col"><div class="l2-col-title"><span>💡 思维方法</span><span class="l2-col-count">感知 · 推理 · 5技能</span></div>' + thinkingRows + '</div>' +
         '<div class="l2-divider"></div>' +
-        '<div class="l2-col"><div class="l2-col-title"><span>⚡ 做事方法</span><span class="l2-col-count">3维 · 6技能</span></div>' + actionRows + '</div>' +
+        '<div class="l2-col"><div class="l2-col-title"><span>⚡ 做事方法</span><span class="l2-col-count">执行 · 协作 · 表达 · 5技能</span></div>' + actionRows + '</div>' +
     '</div>';
     
     function renderLayerTransition(text) {
