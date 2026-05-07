@@ -122,7 +122,9 @@ function renderSkillTechTree(container, skills) {
         return '#64748b'; // 平台技能库
     }
     
-    function createSkillChip(skill) {
+    function createSkillChip(skillOrName) {
+        // Support both skill objects and string skill names (from tree data)
+        var skill = typeof skillOrName === 'string' ? (findSkillByName(skillOrName) || { name: skillOrName, displayName: skillOrName, level: 1, source: '技能库', tag: 'Link' }) : skillOrName;
         var id = storeSkill(skill);
         var name = getName(skill);
         var level = skill.level || 1;
@@ -483,7 +485,7 @@ function renderSkillTechTree(container, skills) {
             var domId = storeGeneric(dInfo.icon || '\uD83C\uDFAF', dClean, (dInfo.description || '') + '\n包含 ' + dSkills.length + ' 个技能', '');
             domainCards += '<div class="domain-card" style="--domain-color:' + (dInfo.color || '#8b5cf6') + ';" onmouseenter="showTreeTooltip(event, \'' + domId + '\', \'skill\')" onmouseleave="hideTooltip()"><div class="domain-card-header"><span class="domain-card-icon">' + (dInfo.icon || '\uD83C\uDFAF') + '</span><span class="domain-card-name">' + dClean + '</span></div><div class="domain-card-desc">' + (dInfo.description || '') + '</div><div class="domain-card-skills">' + dChips + '</div></div>';
         }
-        domainHtml = '<div class="domain-layer"><div class="domain-layer-header"><span class="domain-layer-icon">\uD83C\uDFAF</span><span class="domain-layer-title">L3 领域层</span><span class="domain-layer-desc">五域能力 · 洞察·写作·通信·生活·视觉 · ' + domain_total_count + '技能</span></div><div class="domain-cards-grid">' + domainCards + '</div></div>';
+        domainHtml = '<div class="domain-layer"><div class="domain-layer-header"><span class="domain-layer-icon">\uD83C\uDFAF</span><span class="domain-layer-title">L3 领域层</span><span class="domain-layer-desc">六域能力 · 洞察·写作·通信·生活·视觉·产品 · ' + domain_total_count + '技能</span></div><div class="domain-cards-grid">' + domainCards + '</div></div>';
     }
     
     // === L4 工具层 — 可折叠展示（默认收起）===

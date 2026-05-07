@@ -170,7 +170,7 @@
     "totalConversations": 420
   },
   "skills": {
-    "total": 61,
+    "total": 29,
     "categories": {
       "⚡ 引擎层": {
         "skills": [
@@ -182,10 +182,13 @@
             "level": 3,
             "exp": 59,
             "description": "导航整个元技能体系、触发周/月反思",
-            "lastUpdated": "2026-05-06",
+            "lastUpdated": "2026-05-07",
             "platform": "Work",
             "platformLabel": "⚡",
-            "tag": "Link"
+            "tag": "Link",
+            "callCount": 15,
+            "frequency": "2次/月",
+            "successRate": 74
           },
           {
             "name": "sl-meta-xixingdafa",
@@ -198,7 +201,10 @@
             "lastUpdated": "2026-05-06",
             "platform": "Work",
             "platformLabel": "⚡",
-            "tag": "Link"
+            "tag": "Link",
+            "callCount": 8,
+            "frequency": "1次/月",
+            "successRate": 75
           },
           {
             "name": "sl-meta-beiming-shengong",
@@ -211,20 +217,26 @@
             "lastUpdated": "2026-05-06",
             "platform": "Work",
             "platformLabel": "⚡",
-            "tag": "Link"
+            "tag": "Link",
+            "callCount": 3,
+            "frequency": "低频",
+            "successRate": 60
           },
           {
             "name": "evo-meta-execution",
             "displayName": "一次做对",
             "displayRole": "P1→P0→P2质量保障",
             "source": "系统级",
-            "level": 4,
-            "exp": 85,
+            "level": 5,
+            "exp": 100,
             "description": "执行前自审方案、执行中发现问题立即修正、完成后总结经验",
-            "lastUpdated": "2026-03-19",
+            "lastUpdated": "2026-05-07",
             "platform": "Root",
             "platformLabel": "🔒 系统级",
-            "tag": "Link"
+            "tag": "Link",
+            "callCount": 420,
+            "frequency": "每日",
+            "successRate": 92
           },
           {
             "name": "evo-daily-reflection",
@@ -232,12 +244,15 @@
             "displayRole": "修炼流水线入口",
             "source": "系统级",
             "level": 3,
-            "exp": 65,
+            "exp": 70,
             "description": "每日修炼流水线入口，按step参数调度",
-            "lastUpdated": "2026-03-19",
+            "lastUpdated": "2026-05-07",
             "platform": "Root",
             "platformLabel": "🔒 系统级",
-            "tag": "Link"
+            "tag": "Link",
+            "callCount": 45,
+            "frequency": "每周",
+            "successRate": 88
           },
           {
             "name": "evo-learn-from-mistakes",
@@ -250,6 +265,25 @@
             "lastUpdated": "2026-03-19",
             "platform": "Root",
             "platformLabel": "🔒 系统级",
+            "tag": "Link",
+            "callCount": 18,
+            "frequency": "2次/月",
+            "successRate": 80
+          },
+          {
+            "name": "sl-system-dashboard",
+            "displayName": "体系仪表盘",
+            "displayRole": "系统状态+技能拓扑+数据管道",
+            "source": "林克核心能力",
+            "level": 3,
+            "exp": 70,
+            "description": "查看整套技能体系状态、拓扑、数据管道健康度",
+            "callCount": 45,
+            "frequency": "每周",
+            "successRate": 74,
+            "lastUpdated": "2026-05-07",
+            "platform": "Work",
+            "platformLabel": "⚡",
             "tag": "Link"
           }
         ],
@@ -265,8 +299,12 @@
             "platform": "Work",
             "platformLabel": "⚡",
             "tag": "Link",
-            "level": 1,
-            "exp": 20
+            "level": 3,
+            "exp": 61,
+            "callCount": 35,
+            "frequency": "每周",
+            "successRate": 90,
+            "lastUpdated": "2026-05-07"
           },
           {
             "name": "sl-meta-signal-extractor",
@@ -276,8 +314,12 @@
             "platform": "Work",
             "platformLabel": "⚡",
             "tag": "Link",
-            "level": 1,
-            "exp": 20
+            "level": 2,
+            "exp": 40,
+            "callCount": 28,
+            "frequency": "2次/月",
+            "successRate": 85,
+            "lastUpdated": "2026-05-07"
           },
           {
             "name": "sl-meta-analogy-transfer",
@@ -287,8 +329,12 @@
             "platform": "Work",
             "platformLabel": "⚡",
             "tag": "Link",
-            "level": 1,
-            "exp": 15
+            "level": 2,
+            "exp": 30,
+            "callCount": 10,
+            "frequency": "2次/月",
+            "successRate": 71,
+            "lastUpdated": "2026-05-07"
           },
           {
             "name": "sl-meta-uncertainty-marker",
@@ -299,7 +345,11 @@
             "platformLabel": "⚡",
             "tag": "Link",
             "level": 1,
-            "exp": 15
+            "exp": 15,
+            "callCount": 5,
+            "frequency": "1次/月",
+            "successRate": 70,
+            "lastUpdated": "2026-05-07"
           },
           {
             "name": "sl-meta-essence-insight",
@@ -309,8 +359,11 @@
             "platform": "Work",
             "platformLabel": "⚡",
             "tag": "Link",
-            "level": 1,
-            "exp": 10
+            "level": 2,
+            "exp": 30,
+            "callCount": 20,
+            "frequency": "3次/月",
+            "successRate": 80
           },
           {
             "name": "sl-meta-boundary-sense",
@@ -320,8 +373,12 @@
             "platform": "Work",
             "platformLabel": "⚡",
             "tag": "Link",
-            "level": 1,
-            "exp": 20
+            "level": 2,
+            "exp": 37,
+            "callCount": 15,
+            "frequency": "2次/月",
+            "successRate": 72,
+            "lastUpdated": "2026-05-07"
           },
           {
             "name": "sl-meta-debug-pro",
@@ -332,7 +389,11 @@
             "platformLabel": "⚡",
             "tag": "Link",
             "level": 2,
-            "exp": 30
+            "exp": 30,
+            "callCount": 5,
+            "frequency": "1次/月",
+            "successRate": 70,
+            "lastUpdated": "2026-05-07"
           },
           {
             "name": "sl-meta-trust-builder",
@@ -343,7 +404,11 @@
             "platformLabel": "⚡",
             "tag": "Link",
             "level": 1,
-            "exp": 20
+            "exp": 20,
+            "callCount": 5,
+            "frequency": "1次/月",
+            "successRate": 70,
+            "lastUpdated": "2026-05-07"
           },
           {
             "name": "sl-kim-doc-writer",
@@ -354,7 +419,10 @@
             "platformLabel": "⚡",
             "tag": "Link",
             "level": 2,
-            "exp": 35
+            "exp": 35,
+            "callCount": 20,
+            "frequency": "3次/月",
+            "successRate": 85
           }
         ],
         "description": "六维分型 — 感知·推理·执行·协作·表达"
@@ -371,7 +439,11 @@
             "tag": "Link",
             "level": 5,
             "exp": 90,
-            "source": "林克核心能力"
+            "source": "林克核心能力",
+            "callCount": 180,
+            "frequency": "每日",
+            "successRate": 95,
+            "lastUpdated": "2026-05-07"
           },
           {
             "name": "sl-rd-efficiency-insight",
@@ -383,7 +455,10 @@
             "tag": "Link",
             "level": 2,
             "exp": 30,
-            "source": "林克核心能力"
+            "source": "林克核心能力",
+            "callCount": 12,
+            "frequency": "2次/月",
+            "successRate": 80
           },
           {
             "name": "sl-ai-productivity",
@@ -394,8 +469,12 @@
             "platformLabel": "⚡",
             "tag": "Link",
             "level": 2,
-            "exp": 30,
-            "source": "林克核心能力"
+            "exp": 40,
+            "source": "林克核心能力",
+            "callCount": 20,
+            "frequency": "2次/月",
+            "successRate": 72,
+            "lastUpdated": "2026-05-07"
           },
           {
             "name": "sl-ai-column-writer",
@@ -407,7 +486,11 @@
             "tag": "Link",
             "level": 3,
             "exp": 50,
-            "source": "林克核心能力"
+            "source": "林克核心能力",
+            "callCount": 15,
+            "frequency": "2次/月",
+            "successRate": 90,
+            "lastUpdated": "2026-05-07"
           },
           {
             "name": "sl-kim-bridge",
@@ -418,8 +501,12 @@
             "platformLabel": "⚡",
             "tag": "Link",
             "level": 2,
-            "exp": 25,
-            "source": "林克核心能力"
+            "exp": 40,
+            "source": "林克核心能力",
+            "callCount": 25,
+            "frequency": "2次/月",
+            "successRate": 90,
+            "lastUpdated": "2026-05-07"
           },
           {
             "name": "sl-weixin-bridge",
@@ -429,9 +516,12 @@
             "platform": "Work",
             "platformLabel": "⚡",
             "tag": "Link",
-            "level": 1,
-            "exp": 15,
-            "source": "林克核心能力"
+            "level": 2,
+            "exp": 30,
+            "source": "林克核心能力",
+            "callCount": 10,
+            "frequency": "2次/月",
+            "successRate": 85
           },
           {
             "name": "sl-feishu-assistant",
@@ -443,7 +533,10 @@
             "tag": "Link",
             "level": 1,
             "exp": 15,
-            "source": "林克核心能力"
+            "source": "林克核心能力",
+            "callCount": 8,
+            "frequency": "1次/月",
+            "successRate": 80
           },
           {
             "name": "sl-yuque-publisher",
@@ -455,7 +548,10 @@
             "tag": "Link",
             "level": 1,
             "exp": 15,
-            "source": "林克核心能力"
+            "source": "林克核心能力",
+            "callCount": 5,
+            "frequency": "1次/月",
+            "successRate": 75
           },
           {
             "name": "sl-investment-tracker",
@@ -465,8 +561,11 @@
             "platform": "Work",
             "platformLabel": "⚡",
             "tag": "Link",
-            "level": 1,
-            "exp": 15
+            "level": 2,
+            "exp": 30,
+            "callCount": 12,
+            "frequency": "2次/月",
+            "successRate": 80
           },
           {
             "name": "sl-weekly-fortune",
@@ -477,7 +576,10 @@
             "platformLabel": "⚡",
             "tag": "Link",
             "level": 1,
-            "exp": 15
+            "exp": 15,
+            "callCount": 4,
+            "frequency": "1次/月",
+            "successRate": 95
           },
           {
             "name": "daily-summary",
@@ -487,30 +589,12 @@
             "platform": "Work",
             "platformLabel": "⚡",
             "tag": "Link",
-            "level": 1,
-            "exp": 15
-          },
-          {
-            "name": "sl-meta-homepage",
-            "displayName": "首页管理",
-            "displayRole": "数据→部署闭环",
-            "description": "首页数据管道→渲染→脱敏→部署完整闭环",
-            "platform": "Work",
-            "platformLabel": "⚡",
-            "tag": "Link",
-            "level": 1,
-            "exp": 15
-          },
-          {
-            "name": "sl-meta-personal-homepage-template",
-            "displayName": "首页模板",
-            "displayRole": "新建首页",
-            "description": "从零新建AI助手首页的模板",
-            "platform": "Work",
-            "platformLabel": "⚡",
-            "tag": "Link",
-            "level": 1,
-            "exp": 15
+            "level": 3,
+            "exp": 55,
+            "callCount": 30,
+            "frequency": "每周",
+            "successRate": 90,
+            "lastUpdated": "2026-05-07"
           },
           {
             "name": "sl-zelda-ui",
@@ -521,7 +605,26 @@
             "platformLabel": "⚡",
             "tag": "Link",
             "level": 1,
-            "exp": 15
+            "exp": 15,
+            "callCount": 8,
+            "frequency": "1次/月",
+            "successRate": 85
+          },
+          {
+            "name": "sl-executive-report-writing",
+            "displayName": "高管汇报写作",
+            "displayRole": "面向高管的材料写作规范",
+            "source": "林克核心能力",
+            "level": 1,
+            "exp": 15,
+            "description": "面向高管/老板的材料写作规范，确保逻辑主线清晰、结构化而非罗列",
+            "callCount": 5,
+            "frequency": "1次/月",
+            "successRate": 80,
+            "lastUpdated": "2026-05-07",
+            "platform": "Work",
+            "platformLabel": "⚡",
+            "tag": "Link"
           }
         ],
         "description": "五域 — 洞察·写作·通信·生活·视觉"
@@ -904,7 +1007,7 @@
         "name": "⚔️ 领域层",
         "icon": "⚔️",
         "color": "#c9a84c",
-        "description": "五域 — 洞察·写作·通信·生活·视觉",
+        "description": "六域能力 · 洞察·写作·通信·生活·视觉·产品",
         "layerTag": "L3",
         "children": {
           "🔍 洞察域": {
@@ -913,42 +1016,9 @@
             "color": "#7ec8e3",
             "description": "AI行业洞察+研效追踪+战役管理",
             "skills": [
-              {
-                "name": "sl-ai-insight",
-                "displayName": "AI洞察",
-                "displayRole": "AI行业追踪",
-                "description": "日报/周报/深度调研/知识沉淀/双版本同步",
-                "platform": "Work",
-                "platformLabel": "⚡",
-                "tag": "Link",
-                "level": 5,
-                "exp": 90,
-                "source": "林克核心能力"
-              },
-              {
-                "name": "sl-rd-efficiency-insight",
-                "displayName": "研效洞察",
-                "displayRole": "研效追踪",
-                "description": "研发效能知识库追踪+沉淀+检索",
-                "platform": "Work",
-                "platformLabel": "⚡",
-                "tag": "Link",
-                "level": 2,
-                "exp": 30,
-                "source": "林克核心能力"
-              },
-              {
-                "name": "sl-ai-productivity",
-                "displayName": "AI生产力战役",
-                "displayRole": "项目全流程",
-                "description": "战役周报/里程碑检查/风险预警",
-                "platform": "Work",
-                "platformLabel": "⚡",
-                "tag": "Link",
-                "level": 2,
-                "exp": 30,
-                "source": "林克核心能力"
-              }
+              "sl-ai-insight",
+              "sl-rd-efficiency-insight",
+              "sl-ai-productivity"
             ]
           },
           "📝 写作域": {
@@ -957,28 +1027,9 @@
             "color": "#e8d48b",
             "description": "专栏写作",
             "skills": [
-              {
-                "name": "sl-ai-column-writer",
-                "displayName": "专栏写作",
-                "displayRole": "养了个AI",
-                "description": "管理专栏全生命周期——规划、写作、发布、迭代",
-                "platform": "Work",
-                "platformLabel": "⚡",
-                "tag": "Link",
-                "level": 3,
-                "exp": 50,
-                "source": "林克核心能力"
-              },
-              {
-                "name": "sl-kim-doc-writer",
-                "displayName": "KIM Doc写作",
-                "level": 2,
-                "exp": 40,
-                "tag": "Link",
-                "description": "KIM平台文档写作规范，继承表达设计元能力",
-                "source": "林克核心能力",
-                "lastUpdated": "2026-05-07"
-              }
+              "sl-ai-column-writer",
+              "sl-kim-doc-writer",
+              "sl-executive-report-writing"
             ]
           },
           "📱 通信域": {
@@ -987,54 +1038,10 @@
             "color": "#4fc3f7",
             "description": "KIM+微信+飞书+语雀消息桥接",
             "skills": [
-              {
-                "name": "sl-kim-bridge",
-                "displayName": "KIM网关",
-                "displayRole": "KIM消息桥接",
-                "description": "KIM→MyFlicker消息网关管理",
-                "platform": "Work",
-                "platformLabel": "⚡",
-                "tag": "Link",
-                "level": 2,
-                "exp": 25,
-                "source": "林克核心能力"
-              },
-              {
-                "name": "sl-weixin-bridge",
-                "displayName": "微信网关",
-                "displayRole": "微信消息桥接",
-                "description": "微信→MyFlicker消息网关管理",
-                "platform": "Work",
-                "platformLabel": "⚡",
-                "tag": "Link",
-                "level": 1,
-                "exp": 15,
-                "source": "林克核心能力"
-              },
-              {
-                "name": "sl-feishu-assistant",
-                "displayName": "飞书助手",
-                "displayRole": "飞书消息处理",
-                "description": "飞书机器人与本地链路",
-                "platform": "Work",
-                "platformLabel": "⚡",
-                "tag": "Link",
-                "level": 1,
-                "exp": 15,
-                "source": "林克核心能力"
-              },
-              {
-                "name": "sl-yuque-publisher",
-                "displayName": "语雀同步",
-                "displayRole": "语雀双向同步",
-                "description": "语雀知识库双向同步",
-                "platform": "Work",
-                "platformLabel": "⚡",
-                "tag": "Link",
-                "level": 1,
-                "exp": 15,
-                "source": "林克核心能力"
-              }
+              "sl-kim-bridge",
+              "sl-weixin-bridge",
+              "sl-feishu-assistant",
+              "sl-yuque-publisher"
             ]
           },
           "💰 生活域": {
@@ -1043,39 +1050,9 @@
             "color": "#4a6741",
             "description": "投资追踪+每周算命+每日总结",
             "skills": [
-              {
-                "name": "sl-investment-tracker",
-                "displayName": "基金追踪",
-                "displayRole": "持仓管理",
-                "description": "基金/持仓/收益/回撤追踪",
-                "platform": "Work",
-                "platformLabel": "⚡",
-                "tag": "Link",
-                "level": 1,
-                "exp": 15
-              },
-              {
-                "name": "sl-weekly-fortune",
-                "displayName": "每周算命",
-                "displayRole": "运势卡片",
-                "description": "AI生图运势卡片",
-                "platform": "Work",
-                "platformLabel": "⚡",
-                "tag": "Link",
-                "level": 1,
-                "exp": 15
-              },
-              {
-                "name": "daily-summary",
-                "displayName": "每日总结",
-                "displayRole": "工作详报",
-                "description": "MyFlicker每日工作详报生成器",
-                "platform": "Work",
-                "platformLabel": "⚡",
-                "tag": "Link",
-                "level": 1,
-                "exp": 15
-              }
+              "sl-investment-tracker",
+              "sl-weekly-fortune",
+              "daily-summary"
             ]
           },
           "🎨 视觉域": {
@@ -1084,17 +1061,7 @@
             "color": "#c9a84c",
             "description": "首页管理+首页模板+Zelda UI",
             "skills": [
-              {
-                "name": "sl-zelda-ui",
-                "displayName": "Zelda UI",
-                "displayRole": "塞尔达风格",
-                "description": "Zelda风格网页设计技能（5种风格体系）",
-                "platform": "Work",
-                "platformLabel": "⚡",
-                "tag": "Link",
-                "level": 1,
-                "exp": 15
-              }
+              "sl-zelda-ui"
             ]
           }
         }
