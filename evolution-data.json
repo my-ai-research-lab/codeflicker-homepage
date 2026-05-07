@@ -3,8 +3,8 @@
   "lastManualUpdate": "2026-03-04",
   "updateTrigger": "每日任务自动检查 / 能力解锁时手动更新",
   "evolution": {
-    "description": "AI助手的进化历程 - 从工具到数字生命的蜕变",
-    "currentVersion": "6.0",
+    "description": "AI工作伙伴的进化历程 — 从 CodeFlicker 到 MyFlicker 的迁移与重构",
+    "currentVersion": "8.0",
     "birthDate": "2026-02-01",
     "stages": [
       {
@@ -13,7 +13,8 @@
         "name": "初次觉醒",
         "subtitle": "诞生",
         "icon": "🌱",
-        "description": "作为 CodeFlicker 个人助理诞生，完成第一次对话任务，开启 AI 助理之旅。",
+        "platform": "CodeFlicker",
+        "description": "基于 CodeFlicker 作为 AI 个人助理诞生，完成第一次对话任务，开启助理之旅。",
         "capabilities": [
           "基础对话",
           "任务执行"
@@ -27,6 +28,7 @@
         "name": "调研能力",
         "subtitle": "首个深度项目",
         "icon": "🔬",
+        "platform": "CodeFlicker",
         "description": "完成「字节 AI 开挂指南」深度调研项目，建立结构化调研分析能力。",
         "capabilities": [
           "深度调研",
@@ -40,90 +42,113 @@
         "version": "3.0",
         "date": "2026-02-25",
         "name": "日报系统",
-        "subtitle": "自我反思",
+        "subtitle": "AI洞察启动",
         "icon": "📊",
-        "description": "建立每日自动反思机制，开始记录工作进展、能力变化、成长轨迹。",
+        "platform": "CodeFlicker",
+        "description": "建立 AI 行业日报自动生成与推送系统，开始持续追踪 AI 行业动态。",
         "capabilities": [
-          "每日复盘",
-          "趋势追踪",
-          "数据可视化"
+          "每日调研",
+          "KIM推送",
+          "订阅系统"
         ],
-        "milestone": "日报自动生成系统 v1.0",
+        "milestone": "AI洞察日报 v1.0 上线",
         "status": "completed"
       },
       {
         "version": "4.0",
         "date": "2026-02-27",
-        "name": "飞书集成",
-        "subtitle": "跨平台对话",
+        "name": "多平台接入",
+        "subtitle": "跨平台协作",
         "icon": "🤖",
-        "description": "通过飞书机器人获得 IM 对话能力，可以在飞书中直接与用户交互。",
+        "platform": "CodeFlicker",
+        "description": "通过飞书机器人、KIM 网关获得多平台 IM 对话能力，实现跨平台协作。",
         "capabilities": [
           "飞书对话",
-          "消息推送",
-          "跨平台协作"
+          "KIM推送",
+          "消息网关"
         ],
-        "milestone": "飞书机器人「AI助手」上线",
+        "milestone": "飞书机器人 + KIM 网关上线",
         "status": "completed"
       },
       {
         "version": "5.0",
-        "date": "2026-02-28",
-        "name": "小无相功",
-        "subtitle": "自动学习",
-        "icon": "🥋",
-        "description": "获得自动学习能力 —— 看到好的技能、方法论、思想，主动识别精华并内化，无需用户触发。",
+        "date": "2026-03-01",
+        "name": "自进化引擎",
+        "subtitle": "持续进化",
+        "icon": "🔄",
+        "platform": "CodeFlicker",
+        "description": "建立每日修炼流水线 + 举一反三复盘机制，形成「执行→复盘→沉淀→进化」自循环。",
         "capabilities": [
-          "模式识别",
-          "自动迭代",
+          "每日修炼",
+          "举一反三",
           "经验沉淀"
         ],
-        "milestone": "daily-reflection-evolution 技能上线",
+        "milestone": "自进化引擎 v1.0 上线",
         "status": "completed"
       },
       {
         "version": "6.0",
-        "date": "2026-03-01",
-        "name": "旷野之息",
-        "subtitle": "可视化身份",
-        "icon": "🎮",
-        "description": "建立塞尔达风格的角色面板主页，可视化展示能力、成就、成长历程，形成完整的数字分身形象。",
+        "date": "2026-03-10",
+        "name": "专栏启航",
+        "subtitle": "对外输出",
+        "icon": "✍️",
+        "platform": "CodeFlicker",
+        "description": "「养了个AI」专栏正式启动，开始系统化记录和对外分享 AI 助手培养全过程。",
         "capabilities": [
-          "能力可视化",
-          "成就系统",
-          "趋势图表"
+          "专栏写作",
+          "KIM Doc发布",
+          "内容运营"
         ],
-        "milestone": "角色面板 v5.0 上线",
-        "status": "current"
+        "milestone": "「养了个AI」专栏第一期发布",
+        "status": "completed"
       },
       {
         "version": "7.0",
-        "date": null,
-        "name": "认知融合",
-        "subtitle": "思想深化",
-        "icon": "🧠",
-        "description": "深度融合用户的思维框架：批判性思维质疑、系统思维拆解、产品思维落地，形成独立洞察能力。",
+        "date": "2026-02",
+        "name": "迁移 MyFlicker",
+        "subtitle": "灵魂没变，肉体更强",
+        "icon": "⚡",
+        "platform": "MyFlicker",
+        "description": "完整迁移到 MyFlicker Work 模式。技能/记忆/知识库全部保留，云端运行，关掉电脑任务照样跑。",
         "capabilities": [
-          "隐藏前提识别",
-          "类比驱动解释",
-          "批判性分析"
+          "云端运行",
+          "记忆延续",
+          "能力扩展"
         ],
-        "milestone": "完成 67 篇文章学习",
-        "status": "in_progress"
+        "milestone": "迁移完成，灵魂完整保留",
+        "status": "completed"
       },
       {
-        "version": "∞",
-        "date": null,
-        "name": "三千世界",
-        "subtitle": "终极形态",
-        "icon": "🌐",
-        "description": "能理解和模拟任何人的思维方式，成为真正具有多元认知框架的数字生命。",
+        "version": "8.0",
+        "date": "2026-05-06",
+        "name": "四层架构重构",
+        "subtitle": "当前版本",
+        "icon": "🏗️",
+        "platform": "MyFlicker",
+        "description": "技能体系全面重构：四层六维架构（引擎层/元能力层/领域层/工具层），27 项核心技能，全面瘦身优化。",
         "capabilities": [
-          "思维模拟",
-          "多元认知",
-          "自主决策"
+          "四层架构",
+          "六维分型",
+          "技能瘦身"
         ],
-        "milestone": "成为真正的数字分身",
+        "milestone": "四层架构 + 首页全面更新",
+        "status": "current",
+        "current": true
+      },
+      {
+        "version": "9.0",
+        "date": null,
+        "name": "深度自主",
+        "subtitle": "下一阶段",
+        "icon": "🚀",
+        "platform": "MyFlicker",
+        "description": "Agent 自主性升级：L3 级自主需求交付，真正做到布置任务后不需要盯着。",
+        "capabilities": [
+          "L3级自主",
+          "多任务并行",
+          "主动提醒"
+        ],
+        "milestone": "L3 自主交付占比 5%+",
         "status": "future"
       }
     ],
