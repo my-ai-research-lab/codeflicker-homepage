@@ -109,10 +109,11 @@ function renderSkillTechTree(container, skills) {
         var recent = isRecentlyUsed(skill.lastUpdated);
         var tierClass = tier === 'guide' ? 'engine-node--guide' : tier === 'core' ? 'engine-node--core' : 'engine-node--tool';
         
+        var freqBadge = skill.frequency ? '<span class="engine-node-freq">' + skill.frequency + '</span>' : '';
         return '<div class="engine-node ' + tierClass + '" data-skill="' + skill.name + '" style="--node-color: ' + color + ';" onmouseenter="showTreeTooltip(event, \'' + id + '\', \'skill\')" onmouseleave="hideTooltip()">' +
             (recent ? '<span class="skill-recent-badge"></span>' : '') +
             '<div class="engine-node-ring"><svg viewBox="0 0 22 22"><circle class="ring-bg" cx="11" cy="11" r="8"/><circle class="ring-progress" cx="11" cy="11" r="8" stroke-dasharray="50" stroke-dashoffset="' + dashOffset + '" style="stroke:' + color + ';"/></svg><span class="engine-node-level">' + level + '</span></div>' +
-            '<div class="engine-node-info"><span class="engine-node-name">' + name + '</span><span class="engine-node-role">' + role + '</span></div></div>';
+            '<div class="engine-node-info"><span class="engine-node-name">' + name + '</span><span class="engine-node-role">' + role + '</span>' + freqBadge + '</div></div>';
     }
     
     function getSourceColor(source) {
@@ -144,8 +145,9 @@ function renderSkillTechTree(container, skills) {
             ownerTag = '<span class="skill-chip-link">Link</span>';
         }
         var sizeTag = skill.skillSizeLabel ? '<span class="skill-chip-size">' + Math.round(skill.skillSize / 1000) + 'K</span>' : '';
-        // 标签顺序：级别 → 归属标签 → 名称 → 规模
-        return '<div class="skill-chip" data-skill-name="' + skill.name + '" style="--chip-color:' + color + ';--chip-source-color:' + sourceColor + ';" onmouseenter="showTreeTooltip(event, \'' + id + '\', \'skill\')" onmouseleave="hideTooltip()"><span class="skill-chip-level">' + level + '</span>' + ownerTag + '<span class="skill-chip-name">' + name + '</span>' + sizeTag + '</div>';
+        var freqTag = skill.frequency ? '<span class="skill-chip-freq">' + skill.frequency + '</span>' : '';
+        // 标签顺序：级别 → 归属标签 → 名称 → 频率 → 规模
+        return '<div class="skill-chip" data-skill-name="' + skill.name + '" style="--chip-color:' + color + ';--chip-source-color:' + sourceColor + ';" onmouseenter="showTreeTooltip(event, \'' + id + '\', \'skill\')" onmouseleave="hideTooltip()"><span class="skill-chip-level">' + level + '</span>' + ownerTag + '<span class="skill-chip-name">' + name + '</span>' + freqTag + sizeTag + '</div>';
     }
     
     // ========== 渲染 ==========
@@ -431,9 +433,10 @@ function renderSkillTechTree(container, skills) {
             };
             var roleText = s.displayRole || roleMap[s.role] || '元能力';
             
+            var freqBadge = s.frequency ? '<span class="engine-node-freq">' + s.frequency + '</span>' : '';
             html += '<div class="engine-node ' + dimClass + '" style="--node-color:' + dimColor + ';" onmouseenter="showTreeTooltip(event, \'' + id + '\', \'skill\')" onmouseleave="hideTooltip()">' +
                 '<div class="engine-node-ring"><svg viewBox="0 0 22 22"><circle class="ring-bg" cx="11" cy="11" r="8"/><circle class="ring-progress" cx="11" cy="11" r="8" stroke-dasharray="50" stroke-dashoffset="' + dash + '" style="stroke:' + dimColor + ';"/></svg><span class="engine-node-level">' + level + '</span></div>' +
-                '<div class="engine-node-info"><span class="engine-node-name">' + name + '</span><span class="engine-node-role">' + roleText + '</span></div>' +
+                '<div class="engine-node-info"><span class="engine-node-name">' + name + '</span><span class="engine-node-role">' + roleText + '</span>' + freqBadge + '</div>' +
             '</div>';
         }
         return html;

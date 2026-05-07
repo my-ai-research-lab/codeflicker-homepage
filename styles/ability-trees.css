@@ -373,6 +373,16 @@
     color: rgba(200, 220, 240, 0.6);
     font-family: var(--font-mono);
 }
+.engine-node-freq {
+    font-size: 7px;
+    color: rgba(200, 220, 240, 0.45);
+    font-family: var(--font-mono);
+    margin-left: 4px;
+    padding: 0 3px;
+    border-radius: 3px;
+    background: rgba(200, 220, 240, 0.08);
+    white-space: nowrap;
+}
 .engine-node--tool {
     padding: 4px 10px;
     border-color: rgba(74, 222, 128, 0.2);
@@ -735,6 +745,17 @@
     font-size: 11px;
     color: rgba(200, 220, 240, 0.85);
     white-space: nowrap;
+}
+/* 频率标签 */
+.skill-chip-freq {
+    font-family: var(--font-mono);
+    font-size: 7px;
+    color: rgba(200, 220, 240, 0.5);
+    background: rgba(200, 220, 240, 0.08);
+    padding: 1px 3px;
+    border-radius: 2px;
+    margin-left: 2px;
+    flex-shrink: 0;
 }
 /* 快手内部标记 */
 .skill-chip-ks {
