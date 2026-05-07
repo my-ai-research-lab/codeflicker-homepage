@@ -156,6 +156,7 @@ function renderSkillTechTree(container, skills) {
     var metaLayer = tree.meta || {};
     var domainLayer = tree.domain || {};
     var toolLayer = tree.tool || {};
+    // L4 工具层已从数据中移除，这里只检查是否存在
     var engineRoles = relationships.engine_roles || {};
     
     // L1引擎层子分类 — 从 engineLayer.children 读取
@@ -399,63 +400,31 @@ function renderSkillTechTree(container, skills) {
         domainHtml = '<div class="domain-layer"><div class="domain-layer-header"><span class="domain-layer-icon">\uD83C\uDFAF</span><span class="domain-layer-title">领域能力层</span><span class="domain-layer-desc">特定领域的完整解决方案</span></div><div class="domain-cards-grid">' + domainCards + '</div></div>';
     }
     
-    // === 工具层 ===
-    var execHtml = '';
+    // === L4 工具层概览卡片（不展开具体技能）===
+    var toolSummaryHtml = '';
     if (toolLayer.children && Object.keys(toolLayer.children).length > 0) {
-        var execGroups = '';
-        var eEntries = Object.entries(toolLayer.children);
-        for (var ei = 0; ei < eEntries.length; ei++) {
-            var eName = eEntries[ei][0];
-            var eInfo = eEntries[ei][1];
-            var eClean = eName.replace(/^[\u{1F300}-\u{1F9FF}\u{2600}-\u{26FF}\u{2700}-\u{27BF}\u{FE0F}\u{200D}]+\s*/gu, '').trim();
-            // 按 tag 分四层：Link（林克定制）→ KS（快手定制）→ SL（个人定制）→ 共同（无标记）
-            var eSkills = eInfo.skills || [];
-            var linkSkills = [], ksSkills = [], slSkills = [], genericSkills = [];
-            for (var es = 0; es < eSkills.length; es++) {
-                var sk = eSkills[es];
-                var skTag = sk.tag || (sk.ksInternal ? 'KS' : (sk.cfProject ? 'Link' : ''));
-                if (skTag === 'Link') linkSkills.push(sk);
-                else if (skTag === 'KS') ksSkills.push(sk);
-                else if (skTag === 'SL') slSkills.push(sk);
-                else genericSkills.push(sk);
-            }
-            // 构建分层 chips（顺序：林克定制 → 快手定制 → 个人定制 → 共同）
-            var eChips = '';
-            if (linkSkills.length > 0) {
-                var linkChips = '';
-                for (var li = 0; li < linkSkills.length; li++) linkChips += createSkillChip(linkSkills[li]);
-                eChips += '<div class="exec-sublayer exec-sublayer-link"><span class="exec-sublayer-label">林克定制</span><div class="exec-sublayer-chips">' + linkChips + '</div></div>';
-            }
-            if (ksSkills.length > 0) {
-                var ksChips = '';
-                for (var ki = 0; ki < ksSkills.length; ki++) ksChips += createSkillChip(ksSkills[ki]);
-                eChips += '<div class="exec-sublayer exec-sublayer-ks"><span class="exec-sublayer-label">快手定制</span><div class="exec-sublayer-chips">' + ksChips + '</div></div>';
-            }
-            if (slSkills.length > 0) {
-                var slChips = '';
-                for (var si = 0; si < slSkills.length; si++) slChips += createSkillChip(slSkills[si]);
-                eChips += '<div class="exec-sublayer exec-sublayer-sl"><span class="exec-sublayer-label">个人定制</span><div class="exec-sublayer-chips">' + slChips + '</div></div>';
-            }
-            if (genericSkills.length > 0) {
-                var gChips = '';
-                for (var gi = 0; gi < genericSkills.length; gi++) gChips += createSkillChip(genericSkills[gi]);
-                eChips += '<div class="exec-sublayer exec-sublayer-generic"><span class="exec-sublayer-label">通用</span><div class="exec-sublayer-chips">' + gChips + '</div></div>';
-            }
-            var execId = storeGeneric(eInfo.icon || '\uD83D\uDEE0\uFE0F', eClean, '包含 ' + (eInfo.count || 0) + ' 个技能', '');
-            execGroups += '<div class="exec-group" onmouseenter="showTreeTooltip(event, \'' + execId + '\', \'skill\')" onmouseleave="hideTooltip()"><div class="exec-group-header"><span class="exec-group-icon">' + (eInfo.icon || '\uD83D\uDEE0\uFE0F') + '</span><span class="exec-group-name">' + eClean + '</span><span class="exec-group-count">' + (eInfo.count || 0) + '</span></div><div class="exec-group-chips">' + eChips + '</div></div>';
+        var toolCount = 0;
+        var toolCategories = Object.keys(toolLayer.children).length;
+        for (var ek2 = 0; ek2 < Object.keys(toolLayer.children).length; ek2++) {
+            var tc = toolLayer.children[Object.keys(toolLayer.children)[ek2]];
+            toolCount += (tc.skills || []).length;
         }
-        execHtml = '<div class="exec-layer" id="exec-layer-toggle"><div class="exec-layer-header" onclick="toggleExecLayer()"><span class="exec-layer-icon">\uD83D\uDEE0\uFE0F</span><span class="exec-layer-title">工具层</span><span class="exec-layer-desc">平台提供，拿来就用，不维护</span><span class="exec-layer-count">' + (toolLayer.count || 0) + '</span><span class="exec-layer-toggle-icon">\u25BC</span></div><div class="exec-layer-content"><div class="exec-groups-grid">' + execGroups + '</div></div></div>';
+        toolSummaryHtml = '<div class="tool-summary-card">' +
+            '<div class="tool-summary-header"><span class="tool-summary-icon">🔧</span><span class="tool-summary-title">L4 工具层</span><span class="tool-summary-desc">平台提供，拿来就用，不维护</span></div>' +
+            '<div class="tool-summary-stats"><div class="tool-stat"><span class="tool-stat-value">' + toolCount + '</span><span class="tool-stat-label">个工具技能</span></div><div class="tool-stat"><span class="tool-stat-value">' + toolCategories + '</span><span class="tool-stat-label">个分类</span></div></div>' +
+            '<div class="tool-summary-note">信息获取·内容写作·网页开发·文件处理·演示制作·发布推送·办公协作·图像生成·AI工程·生活服务等分类的工具技能，按需调用，不属于林克核心体系。</div>' +
+        '</div>';
     }
     
     // ========== 组装 ==========
     container.innerHTML = '<div class="skill-architecture">' +
-        '<div class="meta-layer"><div class="meta-layer-label"><span class="meta-label-icon">\uD83D\uDD04</span><span class="meta-label-text">引擎层</span><span class="meta-label-desc">自进化闭环</span></div><div class="meta-layer-content">' + engineHtml + '</div></div>' +
+        '<div class="meta-layer"><div class="meta-layer-label"><span class="meta-label-icon">\uD83D\uDD04</span><span class="meta-label-text">L1 引擎层</span><span class="meta-label-desc">自进化闭环</span></div><div class="meta-layer-content">' + engineHtml + '</div></div>' +
         renderLayerTransition('引擎驱动元能力') +
-        '<div class="meta-layer"><div class="meta-layer-label"><span class="meta-label-icon">\uD83E\uDDE0</span><span class="meta-label-text">元能力层</span><span class="meta-label-desc">六维分型 — 感知·推理·执行·协作·表达</span></div><div class="meta-layer-content">' + metaDimSections + '</div></div>' +
+        '<div class="meta-layer"><div class="meta-layer-label"><span class="meta-label-icon">\uD83E\uDDE0</span><span class="meta-label-text">L2 元能力层</span><span class="meta-label-desc">六维分型 · 感知·推理·执行·协作·表达</span></div><div class="meta-layer-content">' + metaDimSections + '</div></div>' +
         renderLayerTransition('元能力驱动领域能力') +
         domainHtml +
-        renderLayerTransition('领域调用工具技能') +
-        execHtml +
+        renderLayerTransition('领域可调用工具技能') +
+        toolSummaryHtml +
     '</div>';
     
     // 渲染完成后绘制所有动态连线
