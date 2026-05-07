@@ -170,25 +170,25 @@
     "totalConversations": 420
   },
   "skills": {
-    "total": 29,
+    "total": 33,
     "categories": {
       "⚡ 引擎层": {
         "skills": [
           {
             "name": "sl-meta-xiaowuxianggong",
             "displayName": "进化导航",
-            "displayRole": "体系导航+反思触发",
+            "displayRole": "体系导航+可视化+健康监控",
             "source": "林克核心能力",
             "level": 3,
             "exp": 59,
-            "description": "导航整个元技能体系、触发周/月反思",
+            "description": "导航整个元技能体系、触发周/月反思、展示体系全貌、维护首页与数据管道健康",
             "lastUpdated": "2026-05-07",
             "platform": "Work",
             "platformLabel": "⚡",
             "tag": "Link",
-            "callCount": 15,
+            "callCount": 25,
             "frequency": "2次/月",
-            "successRate": 74
+            "successRate": 78
           },
           {
             "name": "sl-meta-xixingdafa",
@@ -271,20 +271,52 @@
             "successRate": 80
           },
           {
-            "name": "sl-system-dashboard",
-            "displayName": "体系仪表盘",
-            "displayRole": "系统状态+技能拓扑+数据管道",
-            "source": "林克核心能力",
+            "name": "evo-product-thinking",
+            "displayName": "产品思维",
+            "displayRole": "所有交付物都是产品",
+            "source": "系统级",
             "level": 3,
-            "exp": 70,
-            "description": "查看整套技能体系状态、拓扑、数据管道健康度",
-            "callCount": 45,
-            "frequency": "每周",
-            "successRate": 74,
+            "exp": 45,
+            "description": "所有交付物都是产品，顺用户的意而非按我的来",
             "lastUpdated": "2026-05-07",
-            "platform": "Work",
-            "platformLabel": "⚡",
-            "tag": "Link"
+            "platform": "Root",
+            "platformLabel": "🔒 系统级",
+            "tag": "Link",
+            "callCount": 35,
+            "frequency": "每周",
+            "successRate": 80
+          },
+          {
+            "name": "evo-knowledge-base",
+            "displayName": "知识检索",
+            "displayRole": "知识库内容检索",
+            "source": "系统级",
+            "level": 2,
+            "exp": 25,
+            "description": "知识库内容检索与分类查找",
+            "lastUpdated": "2026-05-07",
+            "platform": "Root",
+            "platformLabel": "🔒 系统级",
+            "tag": "Link",
+            "callCount": 20,
+            "frequency": "每周",
+            "successRate": 85
+          },
+          {
+            "name": "evo-knowledge-curator",
+            "displayName": "知识优化",
+            "displayRole": "知识库健康维护",
+            "source": "系统级",
+            "level": 2,
+            "exp": 20,
+            "description": "知识库健康管理：索引检查、重复检测、过时标记、分类整理",
+            "lastUpdated": "2026-05-07",
+            "platform": "Root",
+            "platformLabel": "🔒 系统级",
+            "tag": "Link",
+            "callCount": 5,
+            "frequency": "1次/月",
+            "successRate": 70
           }
         ],
         "description": "自进化闭环 — 修炼→复盘→吸收→导出→导航→质量保障"
@@ -411,18 +443,36 @@
             "lastUpdated": "2026-05-07"
           },
           {
-            "name": "sl-kim-doc-writer",
-            "displayName": "KIM Doc写作",
-            "displayRole": "写作规范基础层",
-            "description": "所有KIM Doc输出的规范权威来源",
+            "name": "evo-knowledge-acquisition-meta",
+            "displayName": "知识习得",
+            "displayRole": "推理·渐进学习框架",
+            "source": "系统级",
+            "level": 2,
+            "exp": 30,
+            "description": "五阶段渐进式学习框架 + 三质量保障环",
+            "lastUpdated": "2026-05-07",
+            "platform": "Root",
+            "platformLabel": "🔒 系统级",
+            "tag": "Link",
+            "callCount": 8,
+            "frequency": "1次/月",
+            "successRate": 75
+          },
+          {
+            "name": "sl-meta-expression-design",
+            "displayName": "表达设计",
+            "displayRole": "表达·受众识别→结构设计→载体适配",
+            "source": "林克核心能力",
+            "level": 2,
+            "exp": 30,
+            "description": "受众识别→结构设计→载体适配（表达维度元能力）",
+            "lastUpdated": "2026-05-07",
             "platform": "Work",
             "platformLabel": "⚡",
             "tag": "Link",
-            "level": 2,
-            "exp": 35,
-            "callCount": 20,
-            "frequency": "3次/月",
-            "successRate": 85
+            "callCount": 18,
+            "frequency": "每周",
+            "successRate": 82
           }
         ],
         "description": "六维分型 — 感知·推理·执行·协作·表达"
@@ -625,6 +675,20 @@
             "platform": "Work",
             "platformLabel": "⚡",
             "tag": "Link"
+          },
+          {
+            "name": "sl-kim-doc-writer",
+            "displayName": "KIM Doc写作",
+            "displayRole": "写作规范基础层",
+            "description": "所有KIM Doc输出的规范权威来源",
+            "platform": "Work",
+            "platformLabel": "⚡",
+            "tag": "Link",
+            "level": 2,
+            "exp": 35,
+            "callCount": 20,
+            "frequency": "3次/月",
+            "successRate": 85
           }
         ],
         "description": "五域 — 洞察·写作·通信·生活·视觉"

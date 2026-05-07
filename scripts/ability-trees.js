@@ -250,7 +250,7 @@ function renderSkillTechTree(container, skills) {
     // === 引擎区域（四层架构：引擎层独立展示） ===
     var engineHtml = '';
     if (guideSkill) {
-        var dashboardSkill = findSkillByName('sl-system-dashboard');
+        // 仪表盘功能已合并进进化导航
         
         function createDemoNode(skill, displayName, role, variant, nodeId) {
             if (!skill) return '';
@@ -287,7 +287,7 @@ function renderSkillTechTree(container, skills) {
         
         // 三大功法节点（迁移后新名称）
         var absorbNodeHtml = absorbSkill ? createDemoNode(absorbSkill, '吸星大法', '外部吸收', 'absorb') : '';
-        var guideNodeHtml = createDemoNode(guideSkill, '进化导航', '体系导航+反思触发', 'guide');
+        var guideNodeHtml = createDemoNode(guideSkill, '进化导航', '体系导航+可视化+健康监控', 'guide');
         var exportNodeHtml = exportSkill ? createDemoNode(exportSkill, '北冥神功', '能力导出', 'export') : '';
         
         // 核心能力节点
@@ -345,15 +345,15 @@ function renderSkillTechTree(container, skills) {
             '<div class="engine-node-ring"><svg viewBox="0 0 22 22"><circle class="ring-bg" cx="11" cy="11" r="8"/><circle class="ring-progress" cx="11" cy="11" r="8" stroke-dasharray="50" stroke-dashoffset="' + (50*(1-(coreSkill.exp||(coreSkill.level||1)*20)/100)) + '" style="stroke:#fb923c;"/></svg><span class="engine-node-level">' + (coreSkill.level||1) + '</span></div>' +
             '<div class="engine-node-info"><span class="engine-node-name">每日修炼</span><span class="engine-node-role">修炼流水线</span></div></div>' : '';
 
-        // 系统仪表盘节点（L1引擎层新增）
-        var dashboardNodeHtml = dashboardSkill ? createDemoNode(dashboardSkill, '系统仪表盘', '体系状态+数据管道', 'homepage') : '';
+        // 仪表盘功能已合并进进化导航，不再独立展示
+        var dashboardNodeHtml = ''; // 合并进进化导航
 
         var reviewNodeHtml2 = reviewSkill ? '<div class="engine-node engine-node--tool" onmouseenter="showTreeTooltip(event, \'' + storeSkill(reviewSkill) + '\', \'skill\')" onmouseleave="hideTooltip()">' +
             '<div class="engine-node-ring"><svg viewBox="0 0 22 22"><circle class="ring-bg" cx="11" cy="11" r="8"/><circle class="ring-progress" cx="11" cy="11" r="8" stroke-dasharray="50" stroke-dashoffset="' + (50*(1-((reviewSkill.exp)||(reviewSkill.level||1)*20)/100)) + '" style="stroke:#4ade80;"/></svg><span class="engine-node-level">' + (reviewSkill.level||1) + '</span></div>' +
             '<div class="engine-node-info"><span class="engine-node-name">举一反三</span><span class="engine-node-role">经验→模式</span></div></div>' : '';
 
         engineHtml = '<div class="engine-section">' +
-            '<div class="engine-header"><span class="engine-icon">\uD83D\uDD04</span><span class="engine-title">L1 引擎层 · 自进化内核</span><span class="engine-desc">导航→修炼→复盘→吸收→导出→仪表盘，6步闭环</span></div>' +
+            '<div class="engine-header"><span class="engine-icon">\uD83D\uDD04</span><span class="engine-title">L1 引擎层 · 自进化内核</span><span class="engine-desc">导航→修炼→复盘→吸收→导出，5步闭环+可视化</span></div>' +
             '<div class="engine-body">' +
                 // 能量环背景
                 '<div class="energy-ring energy-ring--1"></div>' +
@@ -385,8 +385,7 @@ function renderSkillTechTree(container, skills) {
                 // 感知类工具（可选，感知维度技能）
                 (toolNodesHtml ? '<div class="system-tools"><div class="tools-grid">' + toolNodesHtml + '</div></div>' : '') +
 
-                // 系统仪表盘节点
-                (dashboardNodeHtml ? '<div class="dashboard-node-wrapper">' + dashboardNodeHtml + '</div>' : '') +
+                // 仪表盘功能已合并进进化导航，不再独立展示
                 lifecycleHtml +
             '</div>' +
         '</div>';
