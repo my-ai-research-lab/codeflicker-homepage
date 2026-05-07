@@ -1,8 +1,10 @@
-/* ==================== 能力树样式 v3.0 ====================
- * 三棵树各有独特风格：
- * - 技能树：系统架构图（三层架构 + 引擎内核 + 连接线）
- * - 知识树：档案馆卡片风格（网格布局、文件夹样式）
- * - 记忆树：神经网络径向布局（中心扩散、脉冲动画）
+/* ==================== 能力树样式 v4.1 — 统一设计规范 ====================
+ * 全页面一致性规范：
+ * - 层级标题：icon 18px, title 14px/700, desc 10px, count 13px/700
+ * - 节点样式：ring 20px, name 11px/600, role 8px — 全层统一
+ * - 层间过渡：transition-label 10px
+ * - 卡片标题：icon 16px, name 13px/600
+ * - 芯片/标签：name 10px, badge 8px
  * 
  * CSS变量已统一到 zelda-theme.css，此处不再重复定义
  */
@@ -77,16 +79,16 @@
     background: rgba(10, 8, 22, 0.9);
     border-bottom: 1px solid rgba(167, 139, 250, 0.08);
 }
-.meta-label-icon { font-size: 14px; }
+.meta-label-icon { font-size: 18px; }
 .meta-label-text {
     font-family: var(--font-title);
-    font-size: 11px;
+    font-size: 14px;
     font-weight: 700;
     color: #c4b5fd;
 }
 .meta-label-desc {
-    font-size: 9px;
-    color: rgba(200, 220, 240, 0.45);
+    font-size: 10px;
+    color: rgba(200, 220, 240, 0.5);
     margin-left: 3px;
 }
 .meta-layer-content {
@@ -126,10 +128,10 @@
     border-bottom: 1px solid rgba(167, 139, 250, 0.15);
     border-radius: 16px 16px 0 0;
 }
-.engine-icon { font-size: 20px; }
+.engine-icon { font-size: 18px; }
 @keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
-.engine-title { font-size: 15px; font-weight: 700; color: #c4b5fd; }
-.engine-desc { font-size: 11px; color: rgba(200, 220, 240, 0.5); margin-left: auto; }
+.engine-title { font-size: 14px; font-weight: 700; color: #c4b5fd; }
+.engine-desc { font-size: 10px; color: rgba(200, 220, 240, 0.5); margin-left: auto; }
 /* Demo风格内容区 */
 .engine-body {
     padding: 16px 32px 12px;
@@ -291,12 +293,12 @@
     border-style: solid;
 }
 
-/* 引擎节点 */
+/* 引擎节点 — 全层统一规范：ring 20px, name 11px, role 8px */
 .engine-node {
     display: flex;
     align-items: center;
-    gap: 8px;
-    padding: 6px 12px;
+    gap: 6px;
+    padding: 5px 10px;
     background: rgba(15, 12, 28, 0.95);
     border: 1.5px solid rgba(200, 220, 240, 0.15);
     border-radius: 8px;
@@ -328,7 +330,7 @@
     50% { opacity: 0.8; border-color: rgba(167, 139, 250, 0.4); }
 }
 .engine-node-ring {
-    width: 22px; height: 22px;
+    width: 20px; height: 20px;
     position: relative;
     flex-shrink: 0;
 }
@@ -362,12 +364,12 @@
     gap: 1px;
 }
 .engine-node-name {
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 600;
     color: rgba(200, 220, 240, 0.95);
 }
 .engine-node-role {
-    font-size: 9px;
+    font-size: 8px;
     color: rgba(200, 220, 240, 0.6);
     font-family: var(--font-mono);
 }
@@ -701,7 +703,7 @@
     background: rgba(94, 196, 212, 0.08);
 }
 
-/* === 通用技能芯片 === */
+/* === 通用技能芯片 — 统一规范 === */
 .skill-chip {
     display: inline-flex;
     align-items: center;
@@ -730,7 +732,7 @@
     text-align: center;
 }
 .skill-chip-name {
-    font-size: 10px;
+    font-size: 11px;
     color: rgba(200, 220, 240, 0.85);
     white-space: nowrap;
 }
@@ -805,7 +807,7 @@
 }
 .transition-label {
     font-size: 10px;
-    color: rgba(200, 220, 240, 0.55);
+    color: rgba(200, 220, 240, 0.5);
     font-family: var(--font-mono);
     padding: 2px 12px;
     background: rgba(0, 0, 0, 0.35);
@@ -909,19 +911,19 @@
     margin-bottom: 8px;
 }
 .domain-card-icon {
-    font-size: 18px;
+    font-size: 16px;
     filter: drop-shadow(0 0 6px var(--domain-color, rgba(139, 92, 246, 0.5)));
 }
 .domain-card-name {
     font-family: var(--font-title);
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 700;
     color: var(--domain-color, #c4b5fd);
     text-shadow: 0 0 10px rgba(var(--domain-rgb, 139, 92, 246), 0.3);
 }
 .domain-card-desc {
-    font-size: 10px;
-    color: rgba(200, 220, 240, 0.5);
+    font-size: 11px;
+    color: rgba(200, 220, 240, 0.55);
     margin-bottom: 10px;
     line-height: 1.5;
 }
@@ -980,7 +982,7 @@
 }
 .exec-layer-count {
     font-family: var(--font-mono);
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 700;
     color: #4ade80;
     text-shadow: 0 0 8px rgba(74, 222, 128, 0.4);
@@ -1042,7 +1044,7 @@
     filter: drop-shadow(0 0 4px rgba(74, 222, 128, 0.3));
 }
 .exec-group-name {
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 600;
     color: rgba(200, 220, 240, 0.85);
     flex: 1;
@@ -1175,14 +1177,14 @@
 }
 .kn-label-text {
     font-family: var(--font-title);
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 700;
     color: var(--kn-color, rgba(200, 220, 240, 0.9));
     text-shadow: 0 0 10px var(--kn-color, rgba(200,220,240,0.3));
 }
 .kn-label-desc {
-    font-size: 12px;
-    color: rgba(200, 220, 240, 0.65);
+    font-size: 11px;
+    color: rgba(200, 220, 240, 0.55);
     margin-left: 4px;
     font-family: var(--font-body);
 }
@@ -1246,7 +1248,7 @@
     margin-bottom: 8px;
 }
 .kn-card-icon {
-    font-size: 24px;
+    font-size: 16px;
     filter: drop-shadow(0 0 6px var(--kn-color, rgba(200, 220, 240, 0.3)));
 }
 .kn-card-info {
@@ -1255,7 +1257,7 @@
 }
 .kn-card-name {
     font-family: var(--font-title);
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 700;
     color: rgba(200, 220, 240, 0.95);
     white-space: nowrap;
@@ -1263,14 +1265,14 @@
     text-overflow: ellipsis;
 }
 .kn-card-meta {
-    font-size: 12px;
-    color: rgba(200, 220, 240, 0.65);
+    font-size: 11px;
+    color: rgba(200, 220, 240, 0.55);
     margin-top: 2px;
 }
 .kn-card-count {
     font-family: var(--font-mono);
     font-weight: 700;
-    font-size: 16px;
+    font-size: 13px;
     color: var(--kn-color, rgba(200, 220, 240, 0.8));
     text-shadow: 0 0 6px var(--kn-color, rgba(200,220,240,0.3));
 }
@@ -1314,8 +1316,8 @@
     gap: 4px;
 }
 .kn-skill-tag {
-    font-size: 9px;
-    padding: 1px 6px;
+    font-size: 10px;
+    padding: 2px 7px;
     background: rgba(0, 0, 0, 0.3);
     border: 1px solid rgba(200, 220, 240, 0.15);
     border-radius: 8px;
@@ -1371,14 +1373,14 @@
 }
 .mem-label-text {
     font-family: var(--font-title);
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 700;
     color: var(--mem-layer-color, rgba(200, 220, 240, 0.9));
     text-shadow: 0 0 10px var(--mem-layer-color, rgba(200,220,240,0.3));
 }
 .mem-label-desc {
-    font-size: 12px;
-    color: rgba(200, 220, 240, 0.65);
+    font-size: 11px;
+    color: rgba(200, 220, 240, 0.55);
     margin-left: 4px;
     font-family: var(--font-body);
 }
@@ -1447,12 +1449,12 @@
     gap: 10px;
 }
 .mem-cat-icon {
-    font-size: 18px;
+    font-size: 16px;
     filter: drop-shadow(0 0 4px var(--mem-cat-color, rgba(200, 220, 240, 0.3)));
 }
 .mem-cat-name {
     font-family: var(--font-title);
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 600;
     color: rgba(200, 220, 240, 0.9);
     flex: 1;
@@ -1509,7 +1511,7 @@
 }
 .mem-item-icon { font-size: 14px; flex-shrink: 0; }
 .mem-item-title {
-    font-size: 13px;
+    font-size: 11px;
     color: rgba(200, 220, 240, 0.85);
     max-width: 180px;
     overflow: hidden;
@@ -2154,25 +2156,13 @@
     overflow: visible;
 }
 
-/* ==================== L2 元能力层 — 紧凑统一风格 ==================== */
-/* L2 节点与 L1 引擎层保持一致视觉 */
+/* ==================== L2 元能力层 — 统一节点风格 ==================== */
+/* L2 节点继承 engine-node 基础样式（ring 20px, name 11px, role 8px），
+ * 仅通过 CSS 变体添加维度专属颜色 */
 .engine-node--meta {
-    padding: 4px 8px;
-    border: 1px solid rgba(200, 220, 240, 0.12);
-    background: rgba(15, 12, 28, 0.95);
-    border-radius: 6px;
     --node-color: #a78bfa;
     --node-glow: rgba(167, 139, 250, 0.4);
     flex-shrink: 0;
-}
-.engine-node--meta .engine-node-ring svg { width: 18px; height: 18px; }
-.engine-node--meta .engine-node-name { font-size: 10px; }
-.engine-node--meta .engine-node-role { font-size: 8px; }
-.engine-node--meta:hover {
-    border-color: var(--node-color, #a78bfa);
-    background: rgba(167, 139, 250, 0.12);
-    transform: translateY(-1px);
-    box-shadow: 0 2px 10px rgba(167, 139, 250, 0.15);
 }
 
 /* 感知维度 — 金色 */
@@ -2268,18 +2258,18 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 3px 8px;
+    padding: 4px 10px;
     margin-bottom: 2px;
     font-family: var(--font-title);
-    font-size: 11px;
+    font-size: 13px;
     font-weight: 700;
     color: #c4b5fd;
     border-bottom: 1px solid rgba(167, 139, 250, 0.15);
 }
 .l2-col-count {
-    font-size: 9px;
+    font-size: 10px;
     font-weight: 400;
-    color: rgba(200, 220, 240, 0.45);
+    color: rgba(200, 220, 240, 0.5);
 }
 .l2-divider {
     width: 1px;
@@ -2305,7 +2295,7 @@
     min-width: 42px;
     flex-shrink: 0;
 }
-.l2-dim-icon { font-size: 13px; }
+.l2-dim-icon { font-size: 14px; }
 .l2-dim-name {
     font-family: var(--font-title);
     font-size: 11px;
