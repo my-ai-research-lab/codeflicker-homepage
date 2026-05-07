@@ -236,7 +236,7 @@ function renderSkillTechTree(container, skills) {
         var ts = findSkillByName(toolNames[t]);
         if (ts) toolSkills.push(ts);
     }
-    var techniqueNames = ['sl-meta-analogy-transfer', 'sl-meta-uncertainty-marker', 'sl-meta-essence-insight', 'sl-meta-trust-builder'];
+    var techniqueNames = ['sl-meta-analogy-transfer', 'sl-meta-uncertainty-marker', 'evo-essence-insight', 'sl-meta-trust-builder'];
     var techniqueSkills = [];
     for (var tt = 0; tt < techniqueNames.length; tt++) {
         var tsk = findSkillByName(techniqueNames[tt]);
@@ -246,7 +246,7 @@ function renderSkillTechTree(container, skills) {
     // === 引擎区域（四层架构：引擎层独立展示） ===
     var engineHtml = '';
     if (guideSkill) {
-        var homepageSkill = findSkillByName('sl-meta-homepage');
+        var dashboardSkill = findSkillByName('sl-system-dashboard');
         
         function createDemoNode(skill, displayName, role, variant, nodeId) {
             if (!skill) return '';
@@ -318,12 +318,16 @@ function renderSkillTechTree(container, skills) {
                 var sklevel = sk.level || 1;
                 var skexp = sk.exp || (sklevel * 20);
                 var skdash = 50 * (1 - skexp / 100);
+                // 系统仪表盘节点
+                (dashboardNodeHtml ? '<div class="dashboard-node-wrapper">' + dashboardNodeHtml + '</div>' : '') +
                 lifecycleHtml += '<div class="engine-node engine-node--lifecycle" onmouseenter="showTreeTooltip(event, \'' + skid + '\', \'skill\')" onmouseleave="hideTooltip()">' +
                     '<div class="engine-node-ring"><svg viewBox="0 0 22 22"><circle class="ring-bg" cx="11" cy="11" r="8"/><circle class="ring-progress" cx="11" cy="11" r="8" stroke-dasharray="50" stroke-dashoffset="' + skdash + '" style="stroke: rgba(200, 220, 240, 0.6);"/></svg><span class="engine-node-level">' + sklevel + '</span></div>' +
                     '<div class="engine-node-info"><span class="engine-node-name">' + (sk.displayName || getName(sk)) + '</span><span class="engine-node-role">' + (sk.displayRole || '元能力') + '</span></div></div>';
                 if (ti2 < techniqueSkills.length - 1) {
                     var particleDelay = ti2 * 0.5;
-                    lifecycleHtml += '<div class="lifecycle-connector"><div class="connector-h" style="--line-from: rgba(167, 139, 250, 0.4); --line-to: rgba(56, 189, 248, 0.4);"></div><div class="arrow-right" style="--arrow-color: rgba(56, 189, 248, 0.5);"></div><div class="energy-particles"><div class="energy-particle" style="--particle-color: #a78bfa; --particle-duration: 2s; animation-delay: ' + particleDelay + 's;"></div></div></div>';
+                    // 系统仪表盘节点
+                (dashboardNodeHtml ? '<div class="dashboard-node-wrapper">' + dashboardNodeHtml + '</div>' : '') +
+                lifecycleHtml += '<div class="lifecycle-connector"><div class="connector-h" style="--line-from: rgba(167, 139, 250, 0.4); --line-to: rgba(56, 189, 248, 0.4);"></div><div class="arrow-right" style="--arrow-color: rgba(56, 189, 248, 0.5);"></div><div class="energy-particles"><div class="energy-particle" style="--particle-color: #a78bfa; --particle-duration: 2s; animation-delay: ' + particleDelay + 's;"></div></div></div>';
                 }
             }
             lifecycleHtml += '<span class="lifecycle-feedback-label connector-label" style="--label-color: rgba(167, 139, 250, 0.85); --label-border: rgba(167, 139, 250, 0.4);">L2元能力</span>';
@@ -341,12 +345,15 @@ function renderSkillTechTree(container, skills) {
             '<div class="engine-node-ring"><svg viewBox="0 0 22 22"><circle class="ring-bg" cx="11" cy="11" r="8"/><circle class="ring-progress" cx="11" cy="11" r="8" stroke-dasharray="50" stroke-dashoffset="' + (50*(1-(coreSkill.exp||(coreSkill.level||1)*20)/100)) + '" style="stroke:#fb923c;"/></svg><span class="engine-node-level">' + (coreSkill.level||1) + '</span></div>' +
             '<div class="engine-node-info"><span class="engine-node-name">每日修炼</span><span class="engine-node-role">修炼流水线</span></div></div>' : '';
 
+        // 系统仪表盘节点（L1引擎层新增）
+        var dashboardNodeHtml = dashboardSkill ? createDemoNode(dashboardSkill, '系统仪表盘', '体系状态+数据管道', 'homepage') : '';
+
         var reviewNodeHtml2 = reviewSkill ? '<div class="engine-node engine-node--tool" onmouseenter="showTreeTooltip(event, \'' + storeSkill(reviewSkill) + '\', \'skill\')" onmouseleave="hideTooltip()">' +
             '<div class="engine-node-ring"><svg viewBox="0 0 22 22"><circle class="ring-bg" cx="11" cy="11" r="8"/><circle class="ring-progress" cx="11" cy="11" r="8" stroke-dasharray="50" stroke-dashoffset="' + (50*(1-((reviewSkill.exp)||(reviewSkill.level||1)*20)/100)) + '" style="stroke:#4ade80;"/></svg><span class="engine-node-level">' + (reviewSkill.level||1) + '</span></div>' +
             '<div class="engine-node-info"><span class="engine-node-name">举一反三</span><span class="engine-node-role">经验→模式</span></div></div>' : '';
 
         engineHtml = '<div class="engine-section">' +
-            '<div class="engine-header"><span class="engine-icon">\uD83D\uDD04</span><span class="engine-title">L1 引擎层 · 自进化内核</span><span class="engine-desc">导航→修炼→复盘→吸收→导出，5步闭环</span></div>' +
+            '<div class="engine-header"><span class="engine-icon">\uD83D\uDD04</span><span class="engine-title">L1 引擎层 · 自进化内核</span><span class="engine-desc">导航→修炼→复盘→吸收→导出→仪表盘，6步闭环</span></div>' +
             '<div class="engine-body">' +
                 // 能量环背景
                 '<div class="energy-ring energy-ring--1"></div>' +
@@ -378,6 +385,8 @@ function renderSkillTechTree(container, skills) {
                 // 感知类工具（可选，感知维度技能）
                 (toolNodesHtml ? '<div class="system-tools"><div class="tools-grid">' + toolNodesHtml + '</div></div>' : '') +
 
+                // 系统仪表盘节点
+                (dashboardNodeHtml ? '<div class="dashboard-node-wrapper">' + dashboardNodeHtml + '</div>' : '') +
                 lifecycleHtml +
             '</div>' +
         '</div>';

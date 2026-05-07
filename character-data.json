@@ -660,6 +660,16 @@
                 "exp": 56,
                 "source": "林克核心能力",
                 "lastUpdated": "2026-05-06"
+              },
+              {
+                "name": "sl-system-dashboard",
+                "displayName": "系统仪表盘",
+                "level": 2,
+                "exp": 40,
+                "tag": "Link",
+                "description": "技能体系仪表盘 — 查看整套系统的状态、技能拓扑、数据管道健康度",
+                "source": "林克核心能力",
+                "lastUpdated": "2026-05-07"
               }
             ]
           }
@@ -722,17 +732,14 @@
                 "flowLabel": "感知→推理",
                 "skills": [
                   {
-                    "name": "sl-meta-essence-insight",
+                    "name": "evo-essence-insight",
                     "displayName": "本质洞察",
-                    "displayRole": "五层洞察",
-                    "description": "L1表象→L2本质→L3映射→L4演变→L5预测",
-                    "platform": "Work",
-                    "platformLabel": "⚡",
+                    "level": 2,
+                    "exp": 40,
                     "tag": "Link",
-                    "level": 1,
-                    "exp": 10,
+                    "description": "L1表象→L2本质→L3映射→L4演变→L5预测。五层洞察闭环",
                     "source": "林克核心能力",
-                    "lastUpdated": "2026-05-06"
+                    "lastUpdated": "2026-05-07"
                   },
                   {
                     "name": "sl-meta-analogy-transfer",
@@ -849,17 +856,14 @@
                 "flowLabel": "协作→表达",
                 "skills": [
                   {
-                    "name": "sl-kim-doc-writer",
-                    "displayName": "KIM Doc写作",
-                    "displayRole": "写作规范基础层",
-                    "description": "所有KIM Doc输出的规范权威来源，供上层技能引用",
-                    "platform": "Work",
-                    "platformLabel": "⚡",
-                    "tag": "Link",
+                    "name": "sl-meta-expression-design",
+                    "displayName": "表达设计",
                     "level": 2,
-                    "exp": 35,
+                    "exp": 40,
+                    "tag": "Link",
+                    "description": "受众识别→结构设计→载体适配。表达维度元能力",
                     "source": "林克核心能力",
-                    "lastUpdated": "2026-05-06"
+                    "lastUpdated": "2026-05-07"
                   }
                 ]
               }
@@ -951,6 +955,16 @@
                 "level": 3,
                 "exp": 50,
                 "source": "林克核心能力"
+              },
+              {
+                "name": "sl-kim-doc-writer",
+                "displayName": "KIM Doc写作",
+                "level": 2,
+                "exp": 40,
+                "tag": "Link",
+                "description": "KIM平台文档写作规范，继承表达设计元能力",
+                "source": "林克核心能力",
+                "lastUpdated": "2026-05-07"
               }
             ]
           },
@@ -1057,28 +1071,6 @@
             "color": "#c9a84c",
             "description": "首页管理+首页模板+Zelda UI",
             "skills": [
-              {
-                "name": "sl-meta-homepage",
-                "displayName": "首页管理",
-                "displayRole": "数据→部署闭环",
-                "description": "首页数据管道→渲染→脱敏→部署完整闭环",
-                "platform": "Work",
-                "platformLabel": "⚡",
-                "tag": "Link",
-                "level": 1,
-                "exp": 15
-              },
-              {
-                "name": "sl-meta-personal-homepage-template",
-                "displayName": "首页模板",
-                "displayRole": "新建首页",
-                "description": "从零新建AI助手首页的模板",
-                "platform": "Work",
-                "platformLabel": "⚡",
-                "tag": "Link",
-                "level": 1,
-                "exp": 15
-              },
               {
                 "name": "sl-zelda-ui",
                 "displayName": "Zelda UI",

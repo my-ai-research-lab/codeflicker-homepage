@@ -1771,6 +1771,27 @@
     height: 10px;
 }
 
+/* 系统仪表盘节点容器 */
+.dashboard-node-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+    padding: 8px 0;
+    border-top: 1px solid rgba(56, 189, 248, 0.1);
+}
+.dashboard-node-wrapper .engine-node--homepage {
+    background: rgba(56, 189, 248, 0.08);
+    border: 1px solid rgba(56, 189, 248, 0.2);
+    border-radius: 10px;
+    padding: 10px 16px;
+    transition: all 0.2s ease;
+}
+.dashboard-node-wrapper .engine-node--homepage:hover {
+    background: rgba(56, 189, 248, 0.15);
+    border-color: rgba(56, 189, 248, 0.35);
+    box-shadow: 0 4px 16px rgba(56, 189, 248, 0.12);
+}
+
 /* ==================== Demo风格：底部思维方法+做事方法 ==================== */
 .bottom-row {
     display: flex;
