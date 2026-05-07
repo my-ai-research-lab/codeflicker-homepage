@@ -529,395 +529,358 @@
         "name": "⚡ 引擎层",
         "icon": "⚡",
         "color": "#7ec8e3",
-        "description": "自进化闭环 — 修炼→复盘→吸收→导出→导航→质量保障",
+        "description": "自进化内核 — 导航→修炼→复盘→吸收→导出，驱动持续进化",
         "layerTag": "L1",
-        "children": {
-          "🔄 自进化引擎": {
-            "role": "evolution",
-            "icon": "🔄",
-            "color": "#7ec8e3",
-            "description": "三法闭环 + 三个系统级核心能力",
-            "skills": [
-              {
-                "name": "sl-meta-xiaowuxianggong",
-                "displayName": "进化导航",
-                "displayRole": "体系导航+反思触发",
-                "source": "林克核心能力",
-                "level": 3,
-                "exp": 59,
-                "description": "导航整个元技能体系、触发周/月反思",
-                "lastUpdated": "2026-05-06",
-                "platform": "Work",
-                "platformLabel": "⚡",
-                "tag": "Link"
-              },
-              {
-                "name": "sl-meta-xixingdafa",
-                "displayName": "吸星大法",
-                "displayRole": "外部吸收",
-                "source": "林克核心能力",
-                "level": 3,
-                "exp": 56,
-                "description": "从外部生态搜索→评估→提取精华→融入体系",
-                "lastUpdated": "2026-05-06",
-                "platform": "Work",
-                "platformLabel": "⚡",
-                "tag": "Link"
-              },
-              {
-                "name": "sl-meta-beiming-shengong",
-                "displayName": "北冥神功",
-                "displayRole": "能力导出",
-                "source": "林克核心能力",
-                "level": 3,
-                "exp": 56,
-                "description": "技能/知识/记忆打包导出，能力可流动身份不流出",
-                "lastUpdated": "2026-05-06",
-                "platform": "Work",
-                "platformLabel": "⚡",
-                "tag": "Link"
-              },
-              {
-                "name": "evo-meta-execution",
-                "displayName": "一次做对",
-                "displayRole": "P1→P0→P2质量保障",
-                "source": "系统级",
-                "level": 4,
-                "exp": 85,
-                "description": "执行前自审方案、执行中发现问题立即修正、完成后总结经验",
-                "lastUpdated": "2026-03-19",
-                "platform": "Root",
-                "platformLabel": "🔒 系统级",
-                "tag": "Link"
-              },
-              {
-                "name": "evo-daily-reflection",
-                "displayName": "每日修炼",
-                "displayRole": "修炼流水线入口",
-                "source": "系统级",
-                "level": 3,
-                "exp": 65,
-                "description": "每日修炼流水线入口，按step参数调度",
-                "lastUpdated": "2026-03-19",
-                "platform": "Root",
-                "platformLabel": "🔒 系统级",
-                "tag": "Link"
-              },
-              {
-                "name": "evo-learn-from-mistakes",
-                "displayName": "举一反三",
-                "displayRole": "从经验提取模式",
-                "source": "系统级",
-                "level": 3,
-                "exp": 60,
-                "description": "从经验提取可复用模式，即时复盘沉淀",
-                "lastUpdated": "2026-03-19",
-                "platform": "Root",
-                "platformLabel": "🔒 系统级",
-                "tag": "Link"
-              }
-            ]
-          }
-        },
         "flow": {
           "type": "cycle",
-          "description": "自进化闭环：执行→复盘→沉淀→进化→更好的基线→再执行",
           "nodes": [
             {
               "id": "guide",
               "skill": "sl-meta-xiaowuxianggong",
-              "label": "进化导航",
-              "role": "看清全局,触发反思"
-            },
-            {
-              "id": "execute",
-              "skill": "evo-meta-execution",
-              "label": "一次做对",
-              "role": "质量保障,P1→P0→P2"
+              "label": "进化导航"
             },
             {
               "id": "cultivate",
               "skill": "evo-daily-reflection",
-              "label": "每日修炼",
-              "role": "修炼流水线入口"
+              "label": "每日修炼"
             },
             {
               "id": "review",
               "skill": "evo-learn-from-mistakes",
-              "label": "举一反三",
-              "role": "从经验提取模式"
+              "label": "举一反三"
             },
             {
               "id": "absorb",
               "skill": "sl-meta-xixingdafa",
-              "label": "吸星大法",
-              "role": "外部精华吸收"
+              "label": "吸星大法"
             },
             {
               "id": "export",
               "skill": "sl-meta-beiming-shengong",
-              "label": "北冥神功",
-              "role": "能力打包导出"
+              "label": "北冥神功"
             }
           ],
           "edges": [
             {
               "from": "guide",
               "to": "cultivate",
-              "label": "导航触发修炼"
+              "label": "触发修炼"
             },
             {
               "from": "cultivate",
-              "to": "execute",
-              "label": "修炼提升执行"
-            },
-            {
-              "from": "execute",
               "to": "review",
               "label": "执行后复盘"
             },
             {
               "from": "review",
               "to": "absorb",
-              "label": "发现不足→吸收外部"
+              "label": "发现缺口→吸收"
             },
             {
               "from": "absorb",
               "to": "export",
-              "label": "吸收后可导出"
+              "label": "沉淀后导出"
             },
             {
               "from": "export",
               "to": "guide",
-              "label": "导出后更新导航",
+              "label": "更新导航视图",
               "type": "feedback"
             }
           ]
+        },
+        "children": {
+          "🔄 自进化内核": {
+            "role": "evolution",
+            "icon": "🔄",
+            "color": "#7ec8e3",
+            "description": "导航→修炼→复盘→吸收→导出，5步闭环",
+            "skills": [
+              {
+                "name": "sl-meta-xiaowuxianggong",
+                "displayName": "进化导航",
+                "displayRole": "体系导航+反思触发",
+                "description": "导航整个元技能体系、触发周/月反思。只做导航，不做执行。",
+                "platform": "Work",
+                "platformLabel": "⚡",
+                "tag": "Link",
+                "level": 3,
+                "exp": 59,
+                "source": "林克核心能力",
+                "lastUpdated": "2026-05-06"
+              },
+              {
+                "name": "evo-daily-reflection",
+                "displayName": "每日修炼",
+                "displayRole": "修炼流水线入口",
+                "description": "每日修炼流水线入口，按step参数调度复盘→优化→沉淀。",
+                "platform": "Root",
+                "platformLabel": "🔒 系统级",
+                "tag": "Link",
+                "level": 3,
+                "exp": 65,
+                "source": "系统级",
+                "lastUpdated": "2026-03-19"
+              },
+              {
+                "name": "evo-learn-from-mistakes",
+                "displayName": "举一反三",
+                "displayRole": "经验提取→进化反馈",
+                "description": "从执行经验中提取可复用模式，反馈给修炼流水线，驱动进化。",
+                "platform": "Root",
+                "platformLabel": "🔒 系统级",
+                "tag": "Link",
+                "level": 3,
+                "exp": 60,
+                "source": "系统级",
+                "lastUpdated": "2026-03-19"
+              },
+              {
+                "name": "sl-meta-xixingdafa",
+                "displayName": "吸星大法",
+                "displayRole": "外部吸收",
+                "description": "从外部生态搜索→评估→提取精华→融入体系。",
+                "platform": "Work",
+                "platformLabel": "⚡",
+                "tag": "Link",
+                "level": 3,
+                "exp": 56,
+                "source": "林克核心能力",
+                "lastUpdated": "2026-05-06"
+              },
+              {
+                "name": "sl-meta-beiming-shengong",
+                "displayName": "北冥神功",
+                "displayRole": "能力导出",
+                "description": "技能/知识/记忆打包导出。能力可流动，身份不流出。",
+                "platform": "Work",
+                "platformLabel": "⚡",
+                "tag": "Link",
+                "level": 3,
+                "exp": 56,
+                "source": "林克核心能力",
+                "lastUpdated": "2026-05-06"
+              }
+            ]
+          }
         }
       },
       "meta": {
         "name": "🧠 元能力层",
         "icon": "🧠",
         "color": "#c9a84c",
-        "description": "六维分型 — 感知·推理·执行·协作·表达",
+        "description": "思维方法（感知+推理）× 做事方法（执行+协作+表达）",
         "layerTag": "L2",
         "children": {
-          "👁️ 感知维度": {
-            "role": "perception",
-            "icon": "👁️",
-            "color": "#4fc3f7",
-            "description": "看清输入 — 上下文质量和信号筛选",
-            "skills": [
-              {
-                "name": "sl-meta-context-sense",
-                "displayName": "上下文感知",
-                "displayRole": "防蒙眼开车",
-                "description": "感知上下文质量，解决蒙眼开车和重复发问",
-                "platform": "Work",
-                "platformLabel": "⚡",
-                "tag": "Link",
-                "level": 1,
-                "exp": 20
-              },
-              {
-                "name": "sl-meta-signal-extractor",
-                "displayName": "信号提取",
-                "displayRole": "四维信号评分",
-                "description": "四维信号评分：强度×时效×操作性×新鲜度",
-                "platform": "Work",
-                "platformLabel": "⚡",
-                "tag": "Link",
-                "level": 1,
-                "exp": 20
-              }
-            ]
-          },
-          "🧠 推理维度": {
-            "role": "reasoning",
-            "icon": "🧠",
+          "💡 思维方法": {
+            "role": "thinking",
+            "icon": "💡",
             "color": "#c9a84c",
-            "description": "深层判断 — 类比迁移、本质洞察、不确定性量化",
-            "skills": [
-              {
-                "name": "sl-meta-analogy-transfer",
-                "displayName": "类比迁移",
-                "displayRole": "跨域结构提取",
-                "description": "从已知领域提取结构，迁移到新领域加速理解",
-                "platform": "Work",
-                "platformLabel": "⚡",
-                "tag": "Link",
-                "level": 1,
-                "exp": 15
+            "description": "How to Think — 感知输入、推理判断",
+            "isGroup": true,
+            "subDimensions": {
+              "👁️ 感知": {
+                "role": "perception",
+                "icon": "👁️",
+                "color": "#4fc3f7",
+                "description": "看清输入 — 上下文质量与信号筛选",
+                "flowLabel": "感知输入",
+                "skills": [
+                  {
+                    "name": "sl-meta-context-sense",
+                    "displayName": "上下文感知",
+                    "displayRole": "防蒙眼开车",
+                    "description": "感知上下文质量，解决蒙眼开车和重复发问",
+                    "platform": "Work",
+                    "platformLabel": "⚡",
+                    "tag": "Link",
+                    "level": 1,
+                    "exp": 20,
+                    "source": "林克核心能力",
+                    "lastUpdated": "2026-05-06"
+                  },
+                  {
+                    "name": "sl-meta-signal-extractor",
+                    "displayName": "信号提取",
+                    "displayRole": "四维信号评分",
+                    "description": "四维信号评分：强度×时效×操作性×新鲜度",
+                    "platform": "Work",
+                    "platformLabel": "⚡",
+                    "tag": "Link",
+                    "level": 1,
+                    "exp": 20,
+                    "source": "林克核心能力",
+                    "lastUpdated": "2026-05-06"
+                  }
+                ]
               },
-              {
-                "name": "sl-meta-uncertainty-marker",
-                "displayName": "不确定性量化",
-                "displayRole": "置信度标注",
-                "description": "三级标注HIGH/MID/LOW，防过度自信",
-                "platform": "Work",
-                "platformLabel": "⚡",
-                "tag": "Link",
-                "level": 1,
-                "exp": 15
-              },
-              {
-                "name": "sl-meta-essence-insight",
-                "displayName": "本质洞察",
-                "displayRole": "五层洞察",
-                "description": "L1表象→L2本质→L3映射→L4演变→L5预测",
-                "platform": "Work",
-                "platformLabel": "⚡",
-                "tag": "Link",
-                "level": 1,
-                "exp": 10
+              "🧠 推理": {
+                "role": "reasoning",
+                "icon": "🧠",
+                "color": "#c9a84c",
+                "description": "深层判断 — 类比迁移、本质洞察、不确定性量化",
+                "flowLabel": "感知→推理",
+                "skills": [
+                  {
+                    "name": "sl-meta-essence-insight",
+                    "displayName": "本质洞察",
+                    "displayRole": "五层洞察",
+                    "description": "L1表象→L2本质→L3映射→L4演变→L5预测",
+                    "platform": "Work",
+                    "platformLabel": "⚡",
+                    "tag": "Link",
+                    "level": 1,
+                    "exp": 10,
+                    "source": "林克核心能力",
+                    "lastUpdated": "2026-05-06"
+                  },
+                  {
+                    "name": "sl-meta-analogy-transfer",
+                    "displayName": "类比迁移",
+                    "displayRole": "跨域结构提取",
+                    "description": "从已知领域提取结构，迁移到新领域加速理解",
+                    "platform": "Work",
+                    "platformLabel": "⚡",
+                    "tag": "Link",
+                    "level": 1,
+                    "exp": 15,
+                    "source": "林克核心能力",
+                    "lastUpdated": "2026-05-06"
+                  },
+                  {
+                    "name": "sl-meta-uncertainty-marker",
+                    "displayName": "不确定性量化",
+                    "displayRole": "置信度标注",
+                    "description": "三级标注HIGH/MID/LOW，防过度自信导致推理偏差",
+                    "platform": "Work",
+                    "platformLabel": "⚡",
+                    "tag": "Link",
+                    "level": 1,
+                    "exp": 15,
+                    "source": "林克核心能力",
+                    "lastUpdated": "2026-05-06"
+                  }
+                ]
               }
-            ]
+            }
           },
-          "⚙️ 执行维度": {
-            "role": "execution",
+          "⚙️ 做事方法": {
+            "role": "acting",
             "icon": "⚙️",
-            "color": "#4a6741",
-            "description": "精准落地 — 边界感知和调试诊断",
-            "skills": [
-              {
-                "name": "sl-meta-boundary-sense",
-                "displayName": "执行边界感知",
-                "displayRole": "何时停/问/升级",
-                "description": "防止在错误路径过度投入",
-                "platform": "Work",
-                "platformLabel": "⚡",
-                "tag": "Link",
-                "level": 1,
-                "exp": 20
+            "color": "#7ec8e3",
+            "description": "How to Act — 执行落地、人机协作、规范表达",
+            "isGroup": true,
+            "subDimensions": {
+              "🎯 执行": {
+                "role": "execution",
+                "icon": "🎯",
+                "color": "#7ec8e3",
+                "description": "精准落地 — 质量保障、边界感知、调试诊断",
+                "flowLabel": "推理→执行",
+                "skills": [
+                  {
+                    "name": "evo-meta-execution",
+                    "displayName": "一次做对",
+                    "displayRole": "P1→P0→P2质量保障",
+                    "description": "执行前自审(P1)→执行中保障→完成后总结(P2)。全程质量框架。",
+                    "platform": "Root",
+                    "platformLabel": "🔒 系统级",
+                    "tag": "Link",
+                    "level": 4,
+                    "exp": 85,
+                    "source": "系统级",
+                    "lastUpdated": "2026-03-19"
+                  },
+                  {
+                    "name": "sl-meta-boundary-sense",
+                    "displayName": "执行边界感知",
+                    "displayRole": "何时停/问/升级",
+                    "description": "防止在错误路径过度投入，知道何时STOP/ASK/ESCALATE",
+                    "platform": "Work",
+                    "platformLabel": "⚡",
+                    "tag": "Link",
+                    "level": 1,
+                    "exp": 20,
+                    "source": "林克核心能力",
+                    "lastUpdated": "2026-05-06"
+                  },
+                  {
+                    "name": "sl-meta-debug-pro",
+                    "displayName": "调试诊断",
+                    "displayRole": "错误闭环",
+                    "description": "IDENTIFY→MATCH→DIAGNOSE→FIX 四阶段自动诊断",
+                    "platform": "Work",
+                    "platformLabel": "⚡",
+                    "tag": "Link",
+                    "level": 2,
+                    "exp": 30,
+                    "source": "林克核心能力",
+                    "lastUpdated": "2026-05-06"
+                  }
+                ]
               },
-              {
-                "name": "sl-meta-debug-pro",
-                "displayName": "调试诊断",
-                "displayRole": "错误闭环",
-                "description": "IDENTIFY→MATCH→DIAGNOSE→FIX四阶段",
-                "platform": "Work",
-                "platformLabel": "⚡",
-                "tag": "Link",
-                "level": 2,
-                "exp": 30
+              "🤝 协作": {
+                "role": "collaboration",
+                "icon": "🤝",
+                "color": "#e8d48b",
+                "description": "人机对齐 — 信任建立、透明度、预期对齐",
+                "flowLabel": "执行→协作",
+                "skills": [
+                  {
+                    "name": "sl-meta-trust-builder",
+                    "displayName": "信任建立",
+                    "displayRole": "执行透明+进度可见",
+                    "description": "透明度+预期对齐+进度可见性。信任是可见的进程。",
+                    "platform": "Work",
+                    "platformLabel": "⚡",
+                    "tag": "Link",
+                    "level": 1,
+                    "exp": 20,
+                    "source": "林克核心能力",
+                    "lastUpdated": "2026-05-06"
+                  }
+                ]
+              },
+              "📝 表达": {
+                "role": "expression",
+                "icon": "📝",
+                "color": "#d4c4a0",
+                "description": "输出质量 — 写作规范基础层",
+                "flowLabel": "协作→表达",
+                "skills": [
+                  {
+                    "name": "sl-kim-doc-writer",
+                    "displayName": "KIM Doc写作",
+                    "displayRole": "写作规范基础层",
+                    "description": "所有KIM Doc输出的规范权威来源，供上层技能引用",
+                    "platform": "Work",
+                    "platformLabel": "⚡",
+                    "tag": "Link",
+                    "level": 2,
+                    "exp": 35,
+                    "source": "林克核心能力",
+                    "lastUpdated": "2026-05-06"
+                  }
+                ]
               }
-            ]
-          },
-          "🤝 协作维度": {
-            "role": "collaboration",
-            "icon": "🤝",
-            "color": "#e8d48b",
-            "description": "人机对齐 — 信任建立和透明度",
-            "skills": [
-              {
-                "name": "sl-meta-trust-builder",
-                "displayName": "信任建立",
-                "displayRole": "执行透明+进度可见",
-                "description": "透明度+预期对齐+进度可见性",
-                "platform": "Work",
-                "platformLabel": "⚡",
-                "tag": "Link",
-                "level": 1,
-                "exp": 20
-              }
-            ]
-          },
-          "📝 表达维度": {
-            "role": "expression",
-            "icon": "📝",
-            "color": "#d4c4a0",
-            "description": "输出质量 — 写作规范基础层",
-            "skills": [
-              {
-                "name": "sl-kim-doc-writer",
-                "displayName": "KIM Doc写作",
-                "displayRole": "写作规范基础层",
-                "description": "所有KIM Doc输出的规范权威来源",
-                "platform": "Work",
-                "platformLabel": "⚡",
-                "tag": "Link",
-                "level": 2,
-                "exp": 35
-              }
-            ]
+            }
           }
         },
         "flow": {
-          "type": "chain",
-          "description": "认知到行动的完整链路：感知输入→推理判断→执行落地→协作对齐→表达输出",
-          "dimensions": [
-            {
-              "key": "perception",
-              "label": "👁️ 感知",
-              "role": "看清输入",
-              "inputs": [
-                "上下文质量",
-                "信息信号"
-              ],
-              "outputs": [
-                "质量评估",
-                "核心信号"
-              ],
-              "feedsTo": "reasoning"
-            },
-            {
-              "key": "reasoning",
-              "label": "🧠 推理",
-              "role": "深层判断",
-              "inputs": [
-                "核心信号",
-                "领域知识"
-              ],
-              "outputs": [
-                "本质洞察",
-                "不确定性标注",
-                "类比映射"
-              ],
-              "feedsTo": "execution"
-            },
-            {
-              "key": "execution",
-              "label": "⚙️ 执行",
-              "role": "精准落地",
-              "inputs": [
-                "推理结论",
-                "任务要求"
-              ],
-              "outputs": [
-                "边界判断",
-                "错误修复"
-              ],
-              "feedsTo": "collaboration"
-            },
-            {
-              "key": "collaboration",
-              "label": "🤝 协作",
-              "role": "人机对齐",
-              "inputs": [
-                "执行结果",
-                "用户预期"
-              ],
-              "outputs": [
-                "信任建立",
-                "进度可见"
-              ],
-              "feedsTo": "expression"
-            },
-            {
-              "key": "expression",
-              "label": "📝 表达",
-              "role": "输出质量",
-              "inputs": [
-                "协作结论",
-                "交付要求"
-              ],
-              "outputs": [
-                "规范文档",
-                "KIM Doc"
-              ],
-              "feedsTo": null
-            }
-          ]
+          "type": "bifurcated",
+          "description": "思维方法驱动感知判断，做事方法驱动执行交付，两条路并行互补",
+          "branch1": {
+            "label": "思维方法",
+            "sub": [
+              "感知→推理"
+            ]
+          },
+          "branch2": {
+            "label": "做事方法",
+            "sub": [
+              "执行→协作→表达"
+            ]
+          }
         }
       },
       "domain": {

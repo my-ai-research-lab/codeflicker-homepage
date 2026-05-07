@@ -3032,6 +3032,46 @@
         /* 进化引擎区块样式 */
         /* 工具层概览卡片样式 */
         /* 维度间链路箭头样式 */
+        /* L2 二分类分组样式 */
+        .meta-group {
+            border: 1px solid rgba(201,168,76,0.1);
+            border-radius: 4px;
+            padding: 14px;
+            margin-bottom: 4px;
+        }
+        .meta-group--thinking { border-left: 3px solid rgba(201,168,76,0.4); }
+        .meta-group--acting   { border-left: 3px solid rgba(126,200,227,0.4); }
+        
+        .meta-group-label {
+            display: flex; align-items: center; gap: 8px;
+            margin-bottom: 12px; padding-bottom: 8px;
+            border-bottom: 1px solid rgba(201,168,76,0.08);
+        }
+        .meta-group-icon { font-size: 16px; }
+        .meta-group-title {
+            font-family: 'Cinzel', serif; font-weight: 700;
+            font-size: 13px; color: var(--hylian-gold);
+            letter-spacing: 0.08em;
+        }
+        .meta-group-desc {
+            font-size: 11px; color: var(--sheikah-blue);
+            opacity: 0.5; margin-left: 4px;
+        }
+        
+        /* 组间分隔 */
+        .meta-group-separator {
+            display: flex; align-items: center; gap: 10px;
+            padding: 8px 0; margin: 2px 0;
+        }
+        .separator-line {
+            flex: 1; height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(201,168,76,0.15), transparent);
+        }
+        .separator-label {
+            font-size: 10px; color: var(--hylian-gold);
+            opacity: 0.3; letter-spacing: 0.15em;
+            font-family: 'Cinzel', serif;
+        }
         .dim-flow-arrow {
             display: flex;
             align-items: center;

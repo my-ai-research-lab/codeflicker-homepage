@@ -168,18 +168,30 @@ function renderSkillTechTree(container, skills) {
         if (ec.role === 'evolution') engineCat = ec;
     }
 
-    // L2元能力层子分类 — 按 role 稳定标识符匹配（六维）
+    // L2元能力层：解析二分类结构（思维方法/做事方法）
+    // 支持新结构（group.isGroup + subDimensions）和旧结构（直接 role 字段）
     var metaChildren = metaLayer.children || {};
-    var perceptionCat = null, reasoningCat = null, executionCat = null, collaborationCat = null, expressionCat = null;
-    var metaKeys = Object.keys(metaChildren);
-    for (var mk = 0; mk < metaKeys.length; mk++) {
-        var mc = metaChildren[metaKeys[mk]];
-        if (mc.role === 'perception') perceptionCat = mc;
-        else if (mc.role === 'reasoning') reasoningCat = mc;
-        else if (mc.role === 'execution') executionCat = mc;
-        else if (mc.role === 'collaboration') collaborationCat = mc;
-        else if (mc.role === 'expression') expressionCat = mc;
+    
+    function getDimByRole(role) {
+        for (var gk in metaChildren) {
+            var grp = metaChildren[gk];
+            // 新结构：group 有 isGroup 和 subDimensions
+            if (grp.isGroup && grp.subDimensions) {
+                for (var sdk in grp.subDimensions) {
+                    if (grp.subDimensions[sdk].role === role) return grp.subDimensions[sdk];
+                }
+            }
+            // 旧结构兼容
+            if (grp.role === role) return grp;
+        }
+        return null;
     }
+    
+    var perceptionCat    = getDimByRole('perception');
+    var reasoningCat     = getDimByRole('reasoning');
+    var executionCat     = getDimByRole('execution');
+    var collaborationCat = getDimByRole('collaboration');
+    var expressionCat    = getDimByRole('expression');
     
     // 引擎技能映射 — 从 engineLayer 读取
     var engineSkillMap = {};
@@ -348,38 +360,55 @@ function renderSkillTechTree(container, skills) {
         '</div>';
     }
     
-    // === L2元能力层 — 六维分型（链路结构：感知→推理→执行→协作→表达）===
-    // 每个维度之间用链路箭头连接，表达认知到行动的完整链路
-    var metaDimSections = '';
-    var dimConfigs = [
-        { cat: perceptionCat, icon: '👁️', title: '感知维度', desc: '看清输入', role: '上下文质量+信号筛选', colorVar: 'var(--cognitive-yellow)', flowLabel: '输入→感知' },
-        { cat: reasoningCat, icon: '🧠', title: '推理维度', desc: '深层判断', role: '类比迁移+本质洞察+不确定性量化', colorVar: 'var(--cognitive-yellow)', flowLabel: '感知→推理' },
-        { cat: executionCat, icon: '⚙️', title: '执行维度', desc: '精准落地', role: '边界感知+调试诊断', colorVar: 'var(--system-teal)', flowLabel: '推理→执行' },
-        { cat: collaborationCat, icon: '🤝', title: '协作维度', desc: '人机对齐', role: '信任建立+进度可见性', colorVar: 'var(--cognitive-yellow)', flowLabel: '执行→协作' },
-        { cat: expressionCat, icon: '📝', title: '表达维度', desc: '输出质量', role: 'KIM Doc写作规范', colorVar: 'var(--cognitive-yellow)', flowLabel: '协作→表达' }
-    ];
-    for (var dc = 0; dc < dimConfigs.length; dc++) {
-        var dimCfg = dimConfigs[dc];
-        var dimCat = dimCfg.cat;
-        if (!dimCat || !dimCat.skills || dimCat.skills.length === 0) continue;
+    // === L2元能力层 — 二分类结构（思维方法 × 做事方法）===
+    // 思维方法：感知→推理（How to Think）
+    // 做事方法：执行→协作→表达（How to Act）
+    
+    function renderDimSection(cat, icon, title, desc, role, colorVar, flowLabel, isFirst) {
+        if (!cat || !cat.skills || cat.skills.length === 0) return '';
         var dimNodes = '';
-        for (var di = 0; di < dimCat.skills.length; di++) {
-            var ds = dimCat.skills[di];
+        for (var di = 0; di < cat.skills.length; di++) {
+            var ds = cat.skills[di];
             var did = storeSkill(ds);
             var dlevel = ds.level || 1;
             var dexp = ds.exp || (dlevel * 20);
             var ddash = 50 * (1 - dexp / 100);
             dimNodes += '<div class="engine-node" onmouseenter="showTreeTooltip(event, \'' + did + '\', \'skill\')" onmouseleave="hideTooltip()">' +
-                '<div class="engine-node-ring"><svg viewBox="0 0 22 22"><circle class="ring-bg" cx="11" cy="11" r="8"/><circle class="ring-progress" cx="11" cy="11" r="8" stroke-dasharray="50" stroke-dashoffset="' + ddash + '" style="stroke: ' + dimCfg.colorVar + ';"/></svg><span class="engine-node-level">' + dlevel + '</span></div>' +
-                '<div class="engine-node-info"><span class="engine-node-name">' + (ds.displayName || getName(ds)) + '</span><span class="engine-node-role">' + (ds.displayRole || '元能力') + '</span></div></div>';
+                '<div class="engine-node-ring"><svg viewBox="0 0 22 22"><circle class="ring-bg" cx="11" cy="11" r="8"/><circle class="ring-progress" cx="11" cy="11" r="8" stroke-dasharray="50" stroke-dashoffset="' + ddash + '" style="stroke: ' + colorVar + ';"/></svg><span class="engine-node-level">' + dlevel + '</span></div>' +
+                '<div class="engine-node-info"><span class="engine-node-name">' + (ds.displayName || getName(ds)) + '</span><span class="engine-node-role">' + (ds.displayRole || '') + '</span></div></div>';
         }
-        // Add flow arrow between dimensions
-        if (dc > 0) {
-            metaDimSections += '<div class="dim-flow-arrow"><div class="dim-flow-line"></div><div class="dim-flow-icon">→</div><div class="dim-flow-label">' + dimCfg.flowLabel + '</div></div>';
-        }
-        metaDimSections += '<div class="method-section method-section--cognitive">' +
-            '<div class="method-header"><span class="method-icon">' + dimCfg.icon + '</span><span class="method-title">' + dimCfg.title + '</span><span class="method-desc">' + dimCfg.desc + '</span><span class="method-role">' + dimCfg.role + '</span></div>' +
+        var arrow = !isFirst ? '<div class="dim-flow-arrow"><div class="dim-flow-line"></div><div class="dim-flow-icon">→</div><div class="dim-flow-label">' + flowLabel + '</div></div>' : '';
+        return arrow + '<div class="method-section method-section--cognitive">' +
+            '<div class="method-header"><span class="method-icon">' + icon + '</span><span class="method-title">' + title + '</span><span class="method-desc">' + desc + '</span><span class="method-role">' + role + '</span></div>' +
             '<div class="method-content"><div class="method-grid">' + dimNodes + '</div></div></div>';
+    }
+
+    var metaDimSections = '';
+
+    // 组一：思维方法
+    var thinkingHtml = '';
+    thinkingHtml += renderDimSection(perceptionCat, '👁️', '感知', '看清输入', '上下文质量+信号筛选', 'var(--cognitive-yellow)', '输入→感知', true);
+    thinkingHtml += renderDimSection(reasoningCat, '🧠', '推理', '深层判断', '本质洞察+类比迁移+不确定性量化', 'var(--cognitive-yellow)', '感知→推理', false);
+    if (thinkingHtml) {
+        metaDimSections += '<div class="meta-group meta-group--thinking">' +
+            '<div class="meta-group-label"><span class="meta-group-icon">💡</span><span class="meta-group-title">思维方法</span><span class="meta-group-desc">How to Think — 感知输入，推理判断</span></div>' +
+            thinkingHtml + '</div>';
+    }
+
+    // 组间分隔
+    if (thinkingHtml) {
+        metaDimSections += '<div class="meta-group-separator"><div class="separator-line"></div><div class="separator-label">思维→做事</div><div class="separator-line"></div></div>';
+    }
+
+    // 组二：做事方法
+    var actingHtml = '';
+    actingHtml += renderDimSection(executionCat, '🎯', '执行', '精准落地', '质量保障+边界感知+调试诊断', 'var(--system-teal)', '思维→执行', true);
+    actingHtml += renderDimSection(collaborationCat, '🤝', '协作', '人机对齐', '信任建立+透明度', 'var(--cognitive-yellow)', '执行→协作', false);
+    actingHtml += renderDimSection(expressionCat, '📝', '表达', '输出质量', 'KIM Doc写作规范', 'var(--cognitive-yellow)', '协作→表达', false);
+    if (actingHtml) {
+        metaDimSections += '<div class="meta-group meta-group--acting">' +
+            '<div class="meta-group-label"><span class="meta-group-icon">⚙️</span><span class="meta-group-title">做事方法</span><span class="meta-group-desc">How to Act — 执行落地，协作表达</span></div>' +
+            actingHtml + '</div>';
     }
     
     function renderLayerTransition(text) {
@@ -446,9 +475,9 @@ function renderSkillTechTree(container, skills) {
     
     // ========== 组装 ==========
     container.innerHTML = '<div class="skill-architecture">' +
-        '<div class="meta-layer"><div class="meta-layer-label"><span class="meta-label-icon">\uD83D\uDD04</span><span class="meta-label-text">L1 引擎层</span><span class="meta-label-desc">自进化闭环 · 6技能</span></div><div class="meta-layer-content">' + engineHtml + '</div></div>' +
+        '<div class="meta-layer"><div class="meta-layer-label"><span class="meta-label-icon">\uD83D\uDD04</span><span class="meta-label-text">L1 引擎层</span><span class="meta-label-desc">自进化内核 · 导航→修炼→复盘→吸收→导出 · 5技能</span></div><div class="meta-layer-content">' + engineHtml + '</div></div>' +
         renderLayerTransition('引擎驱动元能力') +
-        '<div class="meta-layer"><div class="meta-layer-label"><span class="meta-label-icon">\uD83E\uDDE0</span><span class="meta-label-text">L2 元能力层</span><span class="meta-label-desc">六维分型 · 感知·推理·执行·协作·表达 · 9技能</span></div><div class="meta-layer-content">' + metaDimSections + '</div></div>' +
+        '<div class="meta-layer"><div class="meta-layer-label"><span class="meta-label-icon">\uD83E\uDDE0</span><span class="meta-label-text">L2 元能力层</span><span class="meta-label-desc">思维方法（感知+推理）× 做事方法（执行+协作+表达）· 10技能</span></div><div class="meta-layer-content">' + metaDimSections + '</div></div>' +
         renderLayerTransition('元能力驱动领域能力') +
         domainHtml +
         renderLayerTransition('领域可调用工具技能') +
