@@ -3032,45 +3032,130 @@
         /* 进化引擎区块样式 */
         /* 工具层概览卡片样式 */
         /* 维度间链路箭头样式 */
-        /* L2 二分类分组样式 */
-        .meta-group {
-            border: 1px solid rgba(201,168,76,0.1);
-            border-radius: 4px;
-            padding: 14px;
-            margin-bottom: 4px;
+        /* L2 二分类左右布局 */
+        .meta-bifurcated-layout {
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            gap: 0;
+            align-items: stretch;
         }
-        .meta-group--thinking { border-left: 3px solid rgba(201,168,76,0.4); }
-        .meta-group--acting   { border-left: 3px solid rgba(126,200,227,0.4); }
-        
-        .meta-group-label {
-            display: flex; align-items: center; gap: 8px;
-            margin-bottom: 12px; padding-bottom: 8px;
+        .meta-col {
+            padding: 14px 16px;
+            border-radius: 4px;
+        }
+        .meta-col--thinking {
+            background: rgba(201,168,76,0.04);
+            border: 1px solid rgba(201,168,76,0.15);
+            border-right: none;
+            border-radius: 4px 0 0 4px;
+        }
+        .meta-col--acting {
+            background: rgba(126,200,227,0.04);
+            border: 1px solid rgba(126,200,227,0.15);
+            border-left: none;
+            border-radius: 0 4px 4px 0;
+        }
+        .meta-col-header {
+            display: flex; align-items: center; gap: 6px;
+            padding-bottom: 10px; margin-bottom: 10px;
             border-bottom: 1px solid rgba(201,168,76,0.08);
         }
-        .meta-group-icon { font-size: 16px; }
-        .meta-group-title {
+        .meta-col-icon { font-size: 16px; }
+        .meta-col-title {
             font-family: 'Cinzel', serif; font-weight: 700;
             font-size: 13px; color: var(--hylian-gold);
-            letter-spacing: 0.08em;
         }
-        .meta-group-desc {
-            font-size: 11px; color: var(--sheikah-blue);
-            opacity: 0.5; margin-left: 4px;
-        }
-        
-        /* 组间分隔 */
-        .meta-group-separator {
-            display: flex; align-items: center; gap: 10px;
-            padding: 8px 0; margin: 2px 0;
-        }
-        .separator-line {
-            flex: 1; height: 1px;
-            background: linear-gradient(90deg, transparent, rgba(201,168,76,0.15), transparent);
-        }
-        .separator-label {
-            font-size: 10px; color: var(--hylian-gold);
-            opacity: 0.3; letter-spacing: 0.15em;
+        .meta-col-desc {
+            font-size: 10px; color: var(--sheikah-blue);
+            opacity: 0.4; margin-left: 4px;
             font-family: 'Cinzel', serif;
+        }
+        .meta-col-body { display: flex; flex-direction: column; gap: 0; }
+
+        /* 中间竖线分隔 */
+        .meta-col-divider {
+            display: flex; flex-direction: column;
+            align-items: center; justify-content: center;
+            gap: 6px; padding: 0 8px;
+            position: relative;
+        }
+        .meta-col-divider .divider-line {
+            flex: 1; width: 1px;
+            background: linear-gradient(180deg, transparent, rgba(201,168,76,0.2), transparent);
+        }
+        .meta-col-divider .divider-label {
+            font-family: 'Cinzel', serif; font-size: 12px;
+            color: var(--hylian-gold); opacity: 0.3;
+        }
+
+        /* 子维度块 */
+        .subdim-block {
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(201,168,76,0.05);
+        }
+        .subdim-block:last-child { border-bottom: none; }
+        .subdim-header {
+            display: flex; align-items: center; gap: 5px;
+            margin-bottom: 6px;
+        }
+        .subdim-icon { font-size: 13px; }
+        .subdim-title {
+            font-family: 'Cinzel', serif; font-size: 11px;
+            color: var(--sheikah-blue); opacity: 0.7;
+            letter-spacing: 0.05em;
+        }
+        .subdim-skills { display: flex; flex-direction: column; gap: 4px; }
+
+        /* 子维度间箭头 */
+        .subdim-arrow {
+            display: flex; align-items: center; gap: 4px;
+            padding: 3px 0;
+        }
+        .subdim-arrow-line {
+            width: 1px; height: 14px;
+            background: rgba(201,168,76,0.2);
+            margin-left: 6px;
+        }
+        .subdim-arrow-tip {
+            font-size: 8px; color: var(--hylian-gold); opacity: 0.3;
+            margin-left: -10px;
+        }
+        .subdim-arrow-label {
+            font-size: 9px; color: var(--parchment-dark);
+            opacity: 0.3; margin-left: 6px;
+            font-family: 'Cinzel', serif;
+        }
+
+        /* 紧凑技能节点（L2用）*/
+        .skill-node-compact {
+            display: flex; align-items: center; gap: 6px;
+            padding: 3px 0; cursor: pointer;
+            transition: opacity 0.2s;
+            position: relative;
+        }
+        .skill-node-compact:hover { opacity: 0.85; }
+        .skill-node-badge {
+            font-size: 9px; position: absolute;
+            top: -2px; left: -2px;
+        }
+
+        /* L1修炼↔举一反三双向循环 */
+        .cultivation-cycle {
+            display: flex; align-items: center; gap: 0;
+        }
+        .cycle-connector {
+            display: flex; flex-direction: column;
+            align-items: center; gap: 2px;
+            min-width: 80px;
+        }
+        .cycle-arrow { display: flex; align-items: center; width: 100%; }
+        .cycle-arrow--forward { justify-content: flex-end; }
+        .cycle-arrow--feedback { justify-content: flex-start; }
+        .arrow-left {
+            width: 0; height: 0;
+            border-top: 4px solid transparent;
+            border-bottom: 4px solid transparent;
+            border-right: 6px solid var(--arrow-color, #4ade80);
         }
         .dim-flow-arrow {
             display: flex;

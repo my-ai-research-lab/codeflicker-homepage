@@ -331,84 +331,115 @@ function renderSkillTechTree(container, skills) {
         }
         
         // 组装引擎HTML
+        // ========== L1 引擎层：重新设计，每日修炼↔举一反三双向循环 ==========
+        // 布局：
+        //   上行：吸星大法 →[增强]→ 进化导航 →[导出]→ 北冥神功
+        //   中轴：进化导航 →[触发]→ 每日修炼 ←→[闭环] 举一反三
+        //   关系：每日修炼 →[执行后]→ 举一反三 →[经验反馈]→ 每日修炼
+
+        var coreNodeHtml2 = coreSkill ? '<div class="engine-node engine-node--core" onmouseenter="showTreeTooltip(event, \'' + storeSkill(coreSkill) + '\', \'skill\')" onmouseleave="hideTooltip()">' +
+            '<div class="engine-node-ring"><svg viewBox="0 0 22 22"><circle class="ring-bg" cx="11" cy="11" r="8"/><circle class="ring-progress" cx="11" cy="11" r="8" stroke-dasharray="50" stroke-dashoffset="' + (50*(1-(coreSkill.exp||(coreSkill.level||1)*20)/100)) + '" style="stroke:#fb923c;"/></svg><span class="engine-node-level">' + (coreSkill.level||1) + '</span></div>' +
+            '<div class="engine-node-info"><span class="engine-node-name">每日修炼</span><span class="engine-node-role">修炼流水线</span></div></div>' : '';
+
+        var reviewNodeHtml2 = reviewSkill ? '<div class="engine-node engine-node--tool" onmouseenter="showTreeTooltip(event, \'' + storeSkill(reviewSkill) + '\', \'skill\')" onmouseleave="hideTooltip()">' +
+            '<div class="engine-node-ring"><svg viewBox="0 0 22 22"><circle class="ring-bg" cx="11" cy="11" r="8"/><circle class="ring-progress" cx="11" cy="11" r="8" stroke-dasharray="50" stroke-dashoffset="' + (50*(1-((reviewSkill.exp)||(reviewSkill.level||1)*20)/100)) + '" style="stroke:#4ade80;"/></svg><span class="engine-node-level">' + (reviewSkill.level||1) + '</span></div>' +
+            '<div class="engine-node-info"><span class="engine-node-name">举一反三</span><span class="engine-node-role">经验→模式</span></div></div>' : '';
+
         engineHtml = '<div class="engine-section">' +
-            '<div class="engine-header"><span class="engine-icon">\uD83D\uDD04</span><span class="engine-title">L1 引擎层 · 自进化闭环</span><span class="engine-desc">修炼→复盘→吸收→导出→导航→质量保障</span></div>' +
+            '<div class="engine-header"><span class="engine-icon">\uD83D\uDD04</span><span class="engine-title">L1 引擎层 · 自进化内核</span><span class="engine-desc">导航→修炼→复盘→吸收→导出，5步闭环</span></div>' +
             '<div class="engine-body">' +
+                // 能量环背景
                 '<div class="energy-ring energy-ring--1"></div>' +
                 '<div class="energy-ring energy-ring--2"></div>' +
                 '<div class="energy-ring energy-ring--3"></div>' +
+
+                // === 上行：吸收 → 导航 → 导出 ===
                 '<div class="three-techniques">' +
                     absorbNodeHtml +
-                    '<div class="technique-connector"><div class="connector-h" style="--line-from: #38bdf8; --line-to: #a78bfa;"></div><div class="arrow-right" style="--arrow-color: #a78bfa;"></div><span class="connector-label connector-label--center" style="--label-color: #38bdf8; --label-border: rgba(56, 189, 248, 0.4);">增强</span><div class="energy-particles"><div class="energy-particle" style="--particle-color: #38bdf8; animation-delay: 0s;"></div><div class="energy-particle" style="--particle-color: #38bdf8; animation-delay: 0.8s;"></div></div></div>' +
+                    '<div class="technique-connector"><div class="connector-h" style="--line-from:#38bdf8;--line-to:#a78bfa;"></div><div class="arrow-right" style="--arrow-color:#a78bfa;"></div><span class="connector-label connector-label--center" style="--label-color:#38bdf8;--label-border:rgba(56,189,248,0.4);">增强</span><div class="energy-particles"><div class="energy-particle" style="--particle-color:#38bdf8;animation-delay:0s;"></div><div class="energy-particle" style="--particle-color:#38bdf8;animation-delay:0.8s;"></div></div></div>' +
                     guideNodeHtml +
-                    '<div class="technique-connector"><div class="connector-h" style="--line-from: #a78bfa; --line-to: #4ade80;"></div><div class="arrow-right" style="--arrow-color: #4ade80;"></div><span class="connector-label connector-label--center" style="--label-color: #4ade80; --label-border: rgba(74, 222, 128, 0.4);">导出</span><div class="energy-particles"><div class="energy-particle" style="--particle-color: #4ade80; animation-delay: 0.3s;"></div><div class="energy-particle" style="--particle-color: #4ade80; animation-delay: 1.1s;"></div></div></div>' +
+                    '<div class="technique-connector"><div class="connector-h" style="--line-from:#a78bfa;--line-to:#4ade80;"></div><div class="arrow-right" style="--arrow-color:#4ade80;"></div><span class="connector-label connector-label--center" style="--label-color:#4ade80;--label-border:rgba(74,222,128,0.4);">导出</span><div class="energy-particles"><div class="energy-particle" style="--particle-color:#4ade80;animation-delay:0.3s;"></div><div class="energy-particle" style="--particle-color:#4ade80;animation-delay:1.1s;"></div></div></div>' +
                     exportNodeHtml +
                 '</div>' +
-                '<div class="nav-connector-section"><div class="connector-v connector-v--animated" style="--line-from: #a78bfa; --line-to: #fb923c;"></div><div class="arrow-down" style="--arrow-color: #fb923c;"></div><span class="connector-label connector-label--side" style="--label-color: #a78bfa; --label-border: rgba(167, 139, 250, 0.4);">调度</span><div class="energy-particles"><div class="energy-particle" style="--particle-color: #a78bfa; --particle-animation: particle-v; animation-delay: 0.5s;"></div></div></div>' +
-                '<div class="core-section"><div class="core-row">' +
-                    executionNodeHtml +
-                    (executionSkill && coreSkill ? '<div class="core-connector"><div class="connector-h" style="--line-from: #7ec8e3; --line-to: #fb923c;"></div><div class="arrow-right" style="--arrow-color: #fb923c;"></div><span class="connector-label connector-label--center" style="--label-color: #7ec8e3; --label-border: rgba(126,200,227,0.4);">触发</span><div class="energy-particles"><div class="energy-particle" style="--particle-color: #7ec8e3; --particle-duration: 1.5s; animation-delay: 0s;"></div><div class="energy-particle" style="--particle-color: #7ec8e3; --particle-duration: 1.5s; animation-delay: 0.7s;"></div></div></div>' : '') +
-                    (coreSkill ? '<div class="engine-node engine-node--core" onmouseenter="showTreeTooltip(event, \'' + storeSkill(coreSkill) + '\', \'skill\')" onmouseleave="hideTooltip()"><div class="engine-node-ring"><svg viewBox="0 0 22 22"><circle class="ring-bg" cx="11" cy="11" r="8"/><circle class="ring-progress" cx="11" cy="11" r="8" stroke-dasharray="50" stroke-dashoffset="' + (50 * (1 - (coreSkill.exp || (coreSkill.level || 1) * 20) / 100)) + '" style="stroke: #fb923c;"/></svg><span class="engine-node-level">' + (coreSkill.level || 1) + '</span></div><div class="engine-node-info"><span class="engine-node-name">每日修炼</span><span class="engine-node-role">修炼流水线入口</span></div></div>' : '') +
+
+                // === 中轴：导航 → 修炼 ↔ 举一反三 ===
+                '<div class="nav-connector-section"><div class="connector-v connector-v--animated" style="--line-from:#a78bfa;--line-to:#fb923c;"></div><div class="arrow-down" style="--arrow-color:#fb923c;"></div><span class="connector-label connector-label--side" style="--label-color:#a78bfa;--label-border:rgba(167,139,250,0.4);">触发</span><div class="energy-particles"><div class="energy-particle" style="--particle-color:#a78bfa;--particle-animation:particle-v;animation-delay:0.5s;"></div></div></div>' +
+
+                // 修炼 ↔ 举一反三 双向闭环
+                '<div class="core-section"><div class="cultivation-cycle">' +
+                    coreNodeHtml2 +
+                    '<div class="cycle-connector">' +
+                        '<div class="cycle-arrow cycle-arrow--forward"><div class="connector-h" style="--line-from:#fb923c;--line-to:#4ade80;"></div><div class="arrow-right" style="--arrow-color:#4ade80;"></div><span class="connector-label connector-label--center" style="--label-color:#fb923c;--label-border:rgba(251,146,60,0.3);font-size:9px;">执行后复盘</span></div>' +
+                        '<div class="cycle-arrow cycle-arrow--feedback"><div class="connector-h" style="--line-from:#4ade80;--line-to:#fb923c;"></div><div class="arrow-left" style="--arrow-color:#fb923c;"></div><span class="connector-label connector-label--center" style="--label-color:#4ade80;--label-border:rgba(74,222,128,0.3);font-size:9px;">经验反馈</span></div>' +
+                    '</div>' +
+                    reviewNodeHtml2 +
                 '</div></div>' +
-                '<div class="system-tools"><div class="tools-grid">' +
-                    (reviewSkill ? '<div class="engine-node engine-node--tool" onmouseenter="showTreeTooltip(event, \'' + storeSkill(reviewSkill) + '\', \'skill\')" onmouseleave="hideTooltip()"><div class="engine-node-ring"><svg viewBox="0 0 22 22"><circle class="ring-bg" cx="11" cy="11" r="8"/><circle class="ring-progress" cx="11" cy="11" r="8" stroke-dasharray="50" stroke-dashoffset="' + (50 * (1 - ((reviewSkill.exp) || (reviewSkill.level || 1) * 20) / 100)) + '" style="stroke: #4ade80;"/></svg><span class="engine-node-level">' + (reviewSkill.level || 1) + '</span></div><div class="engine-node-info"><span class="engine-node-name">举一反三</span><span class="engine-node-role">从经验提取模式</span></div></div>' : '') +
-                    (toolSkills.length > 0 && reviewSkill ? '<div class="tools-connector"><div class="connector-h" style="--line-from: #4ade80; --line-to: #4ade80;"></div><div class="arrow-right" style="--arrow-color: #4ade80;"></div><div class="energy-particles"><div class="energy-particle" style="--particle-color: #4ade80; --particle-duration: 2.2s; animation-delay: 0s;"></div></div></div>' : '') +
-                    toolNodesHtml +
-                '</div></div>' +
+
+                // 感知类工具（可选，感知维度技能）
+                (toolNodesHtml ? '<div class="system-tools"><div class="tools-grid">' + toolNodesHtml + '</div></div>' : '') +
+
                 lifecycleHtml +
             '</div>' +
         '</div>';
     }
     
-    // === L2元能力层 — 二分类结构（思维方法 × 做事方法）===
-    // 思维方法：感知→推理（How to Think）
-    // 做事方法：执行→协作→表达（How to Act）
-    
-    function renderDimSection(cat, icon, title, desc, role, colorVar, flowLabel, isFirst) {
-        if (!cat || !cat.skills || cat.skills.length === 0) return '';
-        var dimNodes = '';
-        for (var di = 0; di < cat.skills.length; di++) {
-            var ds = cat.skills[di];
-            var did = storeSkill(ds);
-            var dlevel = ds.level || 1;
-            var dexp = ds.exp || (dlevel * 20);
-            var ddash = 50 * (1 - dexp / 100);
-            dimNodes += '<div class="engine-node" onmouseenter="showTreeTooltip(event, \'' + did + '\', \'skill\')" onmouseleave="hideTooltip()">' +
-                '<div class="engine-node-ring"><svg viewBox="0 0 22 22"><circle class="ring-bg" cx="11" cy="11" r="8"/><circle class="ring-progress" cx="11" cy="11" r="8" stroke-dasharray="50" stroke-dashoffset="' + ddash + '" style="stroke: ' + colorVar + ';"/></svg><span class="engine-node-level">' + dlevel + '</span></div>' +
-                '<div class="engine-node-info"><span class="engine-node-name">' + (ds.displayName || getName(ds)) + '</span><span class="engine-node-role">' + (ds.displayRole || '') + '</span></div></div>';
+    // === L2元能力层 — 左右双栏布局（思维方法 | 做事方法）===
+
+    function renderSkillNodes(skills, colorVar) {
+        var html = '';
+        for (var ni = 0; ni < skills.length; ni++) {
+            var s = skills[ni];
+            var sid = storeSkill(s);
+            var lv = s.level || 1;
+            var exp = s.exp || (lv * 20);
+            var dash = 50 * (1 - exp / 100);
+            var badge = s.platform === 'Root' ? '<span class="skill-node-badge">🔒</span>' : '';
+            html += '<div class="skill-node-compact" onmouseenter="showTreeTooltip(event,\'' + sid + '\',\'skill\')" onmouseleave="hideTooltip()">' +
+                badge +
+                '<div class="engine-node-ring" style="width:20px;height:20px;">' +
+                    '<svg viewBox="0 0 22 22"><circle class="ring-bg" cx="11" cy="11" r="8"/><circle class="ring-progress" cx="11" cy="11" r="8" stroke-dasharray="50" stroke-dashoffset="' + dash + '" style="stroke:' + colorVar + ';"/></svg>' +
+                    '<span class="engine-node-level">' + lv + '</span>' +
+                '</div>' +
+                '<div class="engine-node-info"><span class="engine-node-name">' + (s.displayName || getName(s)) + '</span><span class="engine-node-role">' + (s.displayRole || '') + '</span></div>' +
+            '</div>';
         }
-        var arrow = !isFirst ? '<div class="dim-flow-arrow"><div class="dim-flow-line"></div><div class="dim-flow-icon">→</div><div class="dim-flow-label">' + flowLabel + '</div></div>' : '';
-        return arrow + '<div class="method-section method-section--cognitive">' +
-            '<div class="method-header"><span class="method-icon">' + icon + '</span><span class="method-title">' + title + '</span><span class="method-desc">' + desc + '</span><span class="method-role">' + role + '</span></div>' +
-            '<div class="method-content"><div class="method-grid">' + dimNodes + '</div></div></div>';
+        return html;
     }
+
+    function renderSubDim(cat, icon, title, colorVar, flowLabel, isFirst) {
+        if (!cat || !cat.skills || !cat.skills.length) return '';
+        var arrow = isFirst ? '' :
+            '<div class="subdim-arrow"><div class="subdim-arrow-line"></div><div class="subdim-arrow-tip">▼</div><div class="subdim-arrow-label">' + flowLabel + '</div></div>';
+        return arrow +
+            '<div class="subdim-block">' +
+                '<div class="subdim-header"><span class="subdim-icon">' + icon + '</span><span class="subdim-title">' + title + '</span></div>' +
+                '<div class="subdim-skills">' + renderSkillNodes(cat.skills, colorVar) + '</div>' +
+            '</div>';
+    }
+
+    var thinkingCol = '';
+    thinkingCol += renderSubDim(perceptionCat, '👁️', '感知', 'var(--cognitive-yellow)', '', true);
+    thinkingCol += renderSubDim(reasoningCat, '🧠', '推理', 'var(--cognitive-yellow)', '感知→推理', false);
+
+    var actingCol = '';
+    actingCol += renderSubDim(executionCat, '🎯', '执行', 'var(--system-teal)', '', true);
+    actingCol += renderSubDim(collaborationCat, '🤝', '协作', 'var(--cognitive-yellow)', '执行→协作', false);
+    actingCol += renderSubDim(expressionCat, '📝', '表达', 'var(--cognitive-yellow)', '协作→表达', false);
 
     var metaDimSections = '';
-
-    // 组一：思维方法
-    var thinkingHtml = '';
-    thinkingHtml += renderDimSection(perceptionCat, '👁️', '感知', '看清输入', '上下文质量+信号筛选', 'var(--cognitive-yellow)', '输入→感知', true);
-    thinkingHtml += renderDimSection(reasoningCat, '🧠', '推理', '深层判断', '本质洞察+类比迁移+不确定性量化', 'var(--cognitive-yellow)', '感知→推理', false);
-    if (thinkingHtml) {
-        metaDimSections += '<div class="meta-group meta-group--thinking">' +
-            '<div class="meta-group-label"><span class="meta-group-icon">💡</span><span class="meta-group-title">思维方法</span><span class="meta-group-desc">How to Think — 感知输入，推理判断</span></div>' +
-            thinkingHtml + '</div>';
-    }
-
-    // 组间分隔
-    if (thinkingHtml) {
-        metaDimSections += '<div class="meta-group-separator"><div class="separator-line"></div><div class="separator-label">思维→做事</div><div class="separator-line"></div></div>';
-    }
-
-    // 组二：做事方法
-    var actingHtml = '';
-    actingHtml += renderDimSection(executionCat, '🎯', '执行', '精准落地', '质量保障+边界感知+调试诊断', 'var(--system-teal)', '思维→执行', true);
-    actingHtml += renderDimSection(collaborationCat, '🤝', '协作', '人机对齐', '信任建立+透明度', 'var(--cognitive-yellow)', '执行→协作', false);
-    actingHtml += renderDimSection(expressionCat, '📝', '表达', '输出质量', 'KIM Doc写作规范', 'var(--cognitive-yellow)', '协作→表达', false);
-    if (actingHtml) {
-        metaDimSections += '<div class="meta-group meta-group--acting">' +
-            '<div class="meta-group-label"><span class="meta-group-icon">⚙️</span><span class="meta-group-title">做事方法</span><span class="meta-group-desc">How to Act — 执行落地，协作表达</span></div>' +
-            actingHtml + '</div>';
+    if (thinkingCol || actingCol) {
+        metaDimSections =
+            '<div class="meta-bifurcated-layout">' +
+                '<div class="meta-col meta-col--thinking">' +
+                    '<div class="meta-col-header"><span class="meta-col-icon">💡</span><span class="meta-col-title">思维方法</span><span class="meta-col-desc">How to Think</span></div>' +
+                    '<div class="meta-col-body">' + thinkingCol + '</div>' +
+                '</div>' +
+                '<div class="meta-col-divider"><div class="divider-line"></div><div class="divider-label">×</div><div class="divider-line"></div></div>' +
+                '<div class="meta-col meta-col--acting">' +
+                    '<div class="meta-col-header"><span class="meta-col-icon">⚙️</span><span class="meta-col-title">做事方法</span><span class="meta-col-desc">How to Act</span></div>' +
+                    '<div class="meta-col-body">' + actingCol + '</div>' +
+                '</div>' +
+            '</div>';
     }
     
     function renderLayerTransition(text) {
