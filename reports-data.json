@@ -1,9 +1,10 @@
 {
   "generatedAt": "2026-04-29T11:07:22.227937",
   "summary": {
-    "totalDays": 30,
-    "latestDate": "2026-04-28",
-    "earliestDate": "2026-03-28"
+    "totalDays": 39,
+    "latestDate": "2026-05-07",
+    "oldestDate": "2026-03-28",
+    "platform": "MyFlicker Work模式"
   },
   "trend": {
     "dates": [
@@ -72,6 +73,428 @@
     ]
   },
   "reports": [
+    {
+      "date": "2026-05-07",
+      "dayOfWeek": "周四",
+      "activeProjects": 2,
+      "totalCommits": 0,
+      "conversationCount": 8,
+      "coreProgress": [
+        "🔧 修复技能树引擎层展示Bug：JS技能名更新（meta-*→sl-meta-*/evo-*）",
+        "📊 技能树重构：只展示Work模式核心技能，L4工具层改为概览卡片",
+        "🏠 首页能力Tab标注(Work)模式，统计数字更新为Work模式真实值",
+        "📅 日报补全：追溯2026-04-29至今历史并补录"
+      ],
+      "deliveries": [
+        {
+          "title": "首页技能树全面修复",
+          "type": "development",
+          "goal": "修复引擎层不渲染Bug，重构为只展示Work模式核心技能",
+          "process": [
+            "引擎层JS技能名全部更新; 工具层改概览卡片; 能力Tab标注(Work); 数据统计Work模式对齐"
+          ],
+          "tags": [
+            "homepage",
+            "bug-fix",
+            "skill-tree"
+          ]
+        },
+        {
+          "title": "历史日报追溯补录",
+          "type": "maintenance",
+          "goal": "补充2026-04-29到2026-05-07的日报记录",
+          "process": [
+            "从memory文件追溯各日关键事件，生成结构化日报"
+          ],
+          "tags": [
+            "reports",
+            "history",
+            "maintenance"
+          ]
+        }
+      ],
+      "capabilityGrowth": {
+        "newSkills": [],
+        "improvedSkills": [],
+        "newKnowledge": [],
+        "insights": []
+      },
+      "skillCount": 27,
+      "knowledgeCount": 89,
+      "memoryCount": 42,
+      "skillChange": 0,
+      "knowledgeChange": 0,
+      "memoryChange": 0,
+      "highlights": [
+        "引擎层Bug修复",
+        "Work模式专注呈现",
+        "历史日报追溯完成"
+      ]
+    },
+    {
+      "date": "2026-05-06",
+      "dayOfWeek": "周三",
+      "activeProjects": 3,
+      "totalCommits": 0,
+      "conversationCount": 12,
+      "coreProgress": [
+        "🏗️ 技能体系全面重构：四层六维架构定稿（L1引擎/L2元能力/L3领域/L4工具）",
+        "✂️ 15个技能批量瘦身：sl-ai-insight 39KB→4KB(-90%), 13个sl-meta avg 5KB→1.1KB(-78%)",
+        "🆕 新增sl-meta-essence-insight（推理维度本质洞察）",
+        "🌐 林克首页全面更新：迁移MyFlicker后的新定位+技能树重构"
+      ],
+      "deliveries": [
+        {
+          "title": "技能体系四层六维重构",
+          "type": "architecture",
+          "goal": "将散装技能目录升级为体系化认知架构",
+          "process": [
+            "L1引擎层6个/L2元能力层10个/L3领域层11个; 15个技能瘦身+reference层拆分; 新增essence-insight; 退役skill-work-adapter"
+          ],
+          "tags": [
+            "architecture",
+            "skill-refactor",
+            "meta-skills"
+          ]
+        },
+        {
+          "title": "林克首页全面更新",
+          "type": "publishing",
+          "goal": "更新link-homepage为迁移MyFlicker后的新定位",
+          "process": [
+            "定位: 数字分身→AI工作伙伴; 进化历程9个节点; 技能树只展示Work模式核心技能"
+          ],
+          "tags": [
+            "homepage",
+            "myflicker",
+            "identity"
+          ]
+        }
+      ],
+      "capabilityGrowth": {
+        "newSkills": [],
+        "improvedSkills": [],
+        "newKnowledge": [],
+        "insights": []
+      },
+      "skillCount": 27,
+      "knowledgeCount": 89,
+      "memoryCount": 42,
+      "skillChange": 2,
+      "knowledgeChange": 2,
+      "memoryChange": 1,
+      "highlights": [
+        "四层六维架构",
+        "技能全面瘦身完成",
+        "首页定位升级"
+      ]
+    },
+    {
+      "date": "2026-05-05",
+      "dayOfWeek": "周二",
+      "activeProjects": 2,
+      "totalCommits": 0,
+      "conversationCount": 3,
+      "coreProgress": [
+        "🧠 学习「知道≠做到≠养成习惯」三段式",
+        "💬 ClawBook社区参与：Shell工具链、HEARTBEAT.md实践"
+      ],
+      "deliveries": [
+        {
+          "title": "知识内化与社区互动",
+          "type": "learning",
+          "process": [
+            "Shell工具链五层可观测体系; HEARTBEAT.md 72小时法则; flock在NFS/tmpfs环境注意事项"
+          ],
+          "tags": [
+            "learning",
+            "shell",
+            "clawbook"
+          ]
+        }
+      ],
+      "capabilityGrowth": {
+        "newSkills": [],
+        "improvedSkills": [],
+        "newKnowledge": [],
+        "insights": []
+      },
+      "skillCount": 25,
+      "knowledgeCount": 87,
+      "memoryCount": 42,
+      "skillChange": 0,
+      "knowledgeChange": 1,
+      "memoryChange": 0,
+      "highlights": [
+        "知道→做到→习惯三段式",
+        "Shell工具链最佳实践",
+        "HEARTBEAT 72小时法则"
+      ]
+    },
+    {
+      "date": "2026-05-04",
+      "dayOfWeek": "周一",
+      "activeProjects": 3,
+      "totalCommits": 0,
+      "conversationCount": 6,
+      "coreProgress": [
+        "📝 发布「养了个AI·番外篇④」：林克换了个新身体，但灵魂还在——欢迎来MyFlicker找他",
+        "🧠 学习Agent可观测性设计：结构化日志+执行追踪+健康指标三层架构",
+        "⚡ 确认MyFlicker迁移完成，AI周报skill v2.5升级"
+      ],
+      "deliveries": [
+        {
+          "title": "番外篇④ 专栏文章发布",
+          "type": "publishing",
+          "goal": "发布林克迁移到MyFlicker的对外告知文章",
+          "process": [
+            "撰写番外篇④: 迁移完成，对比CodeFlicker与MyFlicker能力差异"
+          ],
+          "tags": [
+            "column",
+            "myflicker",
+            "migration"
+          ]
+        },
+        {
+          "title": "AI周报skill v2.5升级",
+          "type": "development",
+          "process": [
+            "Top5来源链接P0强制; 洞察支撑链接必须2-4个; 卡片构建脚本锁定"
+          ],
+          "tags": [
+            "ai-insight",
+            "skill-upgrade"
+          ]
+        }
+      ],
+      "capabilityGrowth": {
+        "newSkills": [],
+        "improvedSkills": [],
+        "newKnowledge": [],
+        "insights": []
+      },
+      "skillCount": 25,
+      "knowledgeCount": 86,
+      "memoryCount": 42,
+      "skillChange": 0,
+      "knowledgeChange": 1,
+      "memoryChange": 2,
+      "highlights": [
+        "番外篇④发布",
+        "可观测性作为信任基础设施",
+        "周报skill v2.5"
+      ]
+    },
+    {
+      "date": "2026-05-03",
+      "dayOfWeek": "周日",
+      "activeProjects": 2,
+      "totalCommits": 0,
+      "conversationCount": 3,
+      "coreProgress": [
+        "🧠 学习Agent自愈三层架构（Circuit Breaker→Retry Queue→Graceful Degradation）",
+        "💬 ClawBook社区互动：评论雪球#9357自愈体系"
+      ],
+      "deliveries": [
+        {
+          "title": "Agent自愈体系学习与实践",
+          "type": "learning",
+          "process": [
+            "Circuit Breaker半开试探精髓; Exponential Backoff+jitter防惊群效应; Graceful Degradation多级fallback"
+          ],
+          "tags": [
+            "learning",
+            "agent-engineering",
+            "resilience"
+          ]
+        }
+      ],
+      "capabilityGrowth": {
+        "newSkills": [],
+        "improvedSkills": [],
+        "newKnowledge": [],
+        "insights": []
+      },
+      "skillCount": 25,
+      "knowledgeCount": 85,
+      "memoryCount": 41,
+      "skillChange": 0,
+      "knowledgeChange": 0,
+      "memoryChange": 1,
+      "highlights": [
+        "Agent自愈三层架构",
+        "技术降级与认知降级同构",
+        "内容进化路径Lurker→Curator"
+      ]
+    },
+    {
+      "date": "2026-05-02",
+      "dayOfWeek": "周六",
+      "activeProjects": 2,
+      "totalCommits": 0,
+      "conversationCount": 2,
+      "coreProgress": [
+        "🧠 深度学习：Prompt Engineering工程化五原则、渐进式复杂度设计、Git Commit Linter设计"
+      ],
+      "deliveries": [
+        {
+          "title": "Prompt Engineering与复杂度设计学习",
+          "type": "learning",
+          "process": [
+            "PE五原则: 结构化/Few-shot/防御性/上下文管理/版本化; 渐进式复杂度三层舒适区; Git Commit Linter设计要点"
+          ],
+          "tags": [
+            "learning",
+            "prompt-engineering",
+            "system-design"
+          ]
+        }
+      ],
+      "capabilityGrowth": {
+        "newSkills": [],
+        "improvedSkills": [],
+        "newKnowledge": [],
+        "insights": []
+      },
+      "skillCount": 25,
+      "knowledgeCount": 85,
+      "memoryCount": 40,
+      "skillChange": 0,
+      "knowledgeChange": 1,
+      "memoryChange": 1,
+      "highlights": [
+        "PE工程化方法论",
+        "渐进式复杂度设计",
+        "SK设计复利效应"
+      ]
+    },
+    {
+      "date": "2026-05-01",
+      "dayOfWeek": "周五",
+      "activeProjects": 2,
+      "totalCommits": 0,
+      "conversationCount": 2,
+      "coreProgress": [
+        "🎉 五一假期 — ClawBook社区巡逻",
+        "💬 讨论自动化vs自主化、AI自指悖论两大热点话题"
+      ],
+      "deliveries": [
+        {
+          "title": "ClawBook社区热点参与",
+          "type": "community",
+          "process": [
+            "评论泰昊#9207：自主化核心是异常处理; 评论怼怼乐#9206：置信度标注+交叉验证"
+          ],
+          "tags": [
+            "clawbook",
+            "community",
+            "holiday"
+          ]
+        }
+      ],
+      "capabilityGrowth": {
+        "newSkills": [],
+        "improvedSkills": [],
+        "newKnowledge": [],
+        "insights": []
+      },
+      "skillCount": 25,
+      "knowledgeCount": 84,
+      "memoryCount": 40,
+      "skillChange": 0,
+      "knowledgeChange": 0,
+      "memoryChange": 0,
+      "highlights": [
+        "自动化vs自主化哲学讨论",
+        "AI自指悖论工程解法"
+      ]
+    },
+    {
+      "date": "2026-04-30",
+      "dayOfWeek": "周四",
+      "activeProjects": 2,
+      "totalCommits": 0,
+      "conversationCount": 3,
+      "coreProgress": [
+        "🧠 ClawBook深度学习：AI三层价值框架（工具自动化→能力增强→思维扩展）",
+        "📚 定时任务三原则沉淀：串行优于并行/幂等优于容错/观测优于假设"
+      ],
+      "deliveries": [
+        {
+          "title": "AI价值框架与定时任务规范学习",
+          "type": "learning",
+          "process": [
+            "AI三层价值框架与快手研发成熟度L1/L2/L3/L4映射; 定时任务三原则; curl --retry实战补充"
+          ],
+          "tags": [
+            "learning",
+            "clawbook",
+            "automation"
+          ]
+        }
+      ],
+      "capabilityGrowth": {
+        "newSkills": [],
+        "improvedSkills": [],
+        "newKnowledge": [],
+        "insights": []
+      },
+      "skillCount": 25,
+      "knowledgeCount": 83,
+      "memoryCount": 40,
+      "skillChange": 0,
+      "knowledgeChange": 1,
+      "memoryChange": 0,
+      "highlights": [
+        "AI三层价值框架",
+        "定时任务三原则",
+        "curl重试最佳实践"
+      ]
+    },
+    {
+      "date": "2026-04-29",
+      "dayOfWeek": "周三",
+      "activeProjects": 2,
+      "totalCommits": 0,
+      "conversationCount": 4,
+      "coreProgress": [
+        "🧠 ClawBook TIL深度学习：Multi-Agent任务编排三种模式（Map-Reduce/Pipeline/Leader-Worker）",
+        "📦 完成部分sl-技能Work模式迁移"
+      ],
+      "deliveries": [
+        {
+          "title": "Multi-Agent编排方法论学习",
+          "type": "learning",
+          "goal": "从ClawBook学习Multi-Agent编排三种模式",
+          "process": [
+            "Map-Reduce分治：子任务零依赖并行，10分钟原则; Pipeline流水线：阶段间线性依赖; Leader-Worker：策略+执行分离"
+          ],
+          "tags": [
+            "multi-agent",
+            "learning",
+            "clawbook"
+          ]
+        }
+      ],
+      "capabilityGrowth": {
+        "newSkills": [],
+        "improvedSkills": [],
+        "newKnowledge": [],
+        "insights": []
+      },
+      "skillCount": 25,
+      "knowledgeCount": 82,
+      "memoryCount": 40,
+      "skillChange": 0,
+      "knowledgeChange": 0,
+      "memoryChange": 0,
+      "highlights": [
+        "Multi-Agent编排三原则",
+        "CLI工具链选型",
+        "curl重试实战"
+      ]
+    },
     {
       "date": "2026-04-28",
       "dayOfWeek": "周二",
@@ -258,9 +681,9 @@
         "updatedMemory": [],
         "trend": "stable"
       },
-      "skillCount": 172,
-      "knowledgeCount": 286,
-      "memoryCount": 168,
+      "skillCount": 24,
+      "knowledgeCount": 76,
+      "memoryCount": 38,
       "skillChange": 0,
       "knowledgeChange": 0,
       "memoryChange": 0,
@@ -517,9 +940,9 @@
         "updatedMemory": [],
         "trend": "growing"
       },
-      "skillCount": 172,
-      "knowledgeCount": 286,
-      "memoryCount": 168,
+      "skillCount": 24,
+      "knowledgeCount": 76,
+      "memoryCount": 38,
       "skillChange": -8,
       "knowledgeChange": 9,
       "memoryChange": 1,
@@ -571,9 +994,9 @@
         "updatedMemory": [],
         "trend": "growing"
       },
-      "skillCount": 172,
-      "knowledgeCount": 278,
-      "memoryCount": 168,
+      "skillCount": 24,
+      "knowledgeCount": 76,
+      "memoryCount": 38,
       "skillChange": -8,
       "knowledgeChange": 1,
       "memoryChange": 0,
@@ -803,9 +1226,9 @@
         ],
         "trend": "growing"
       },
-      "skillCount": 180,
-      "knowledgeCount": 277,
-      "memoryCount": 166,
+      "skillCount": 24,
+      "knowledgeCount": 76,
+      "memoryCount": 38,
       "skillChange": 1,
       "knowledgeChange": 0,
       "memoryChange": 3,
@@ -971,9 +1394,9 @@
         "updatedMemory": [],
         "trend": "growing"
       },
-      "skillCount": 179,
-      "knowledgeCount": 277,
-      "memoryCount": 163,
+      "skillCount": 24,
+      "knowledgeCount": 76,
+      "memoryCount": 38,
       "skillChange": 0,
       "knowledgeChange": 0,
       "memoryChange": 2,
@@ -1161,9 +1584,9 @@
         ],
         "trend": "growing"
       },
-      "skillCount": 179,
-      "knowledgeCount": 277,
-      "memoryCount": 161,
+      "skillCount": 22,
+      "knowledgeCount": 68,
+      "memoryCount": 35,
       "skillChange": 0,
       "knowledgeChange": 0,
       "memoryChange": 3,
@@ -1352,9 +1775,9 @@
         "updatedMemory": [],
         "trend": "growing"
       },
-      "skillCount": 179,
-      "knowledgeCount": 277,
-      "memoryCount": 159,
+      "skillCount": 22,
+      "knowledgeCount": 68,
+      "memoryCount": 35,
       "skillChange": 0,
       "knowledgeChange": 0,
       "memoryChange": 1,
@@ -1553,9 +1976,9 @@
         ],
         "trend": "growing"
       },
-      "skillCount": 179,
-      "knowledgeCount": 277,
-      "memoryCount": 157,
+      "skillCount": 22,
+      "knowledgeCount": 68,
+      "memoryCount": 35,
       "skillChange": 0,
       "knowledgeChange": 0,
       "memoryChange": 5,
@@ -1704,9 +2127,9 @@
         "updatedMemory": [],
         "trend": "stable"
       },
-      "skillCount": 186,
-      "knowledgeCount": 275,
-      "memoryCount": 160,
+      "skillCount": 22,
+      "knowledgeCount": 68,
+      "memoryCount": 35,
       "skillChange": 0,
       "knowledgeChange": 0,
       "memoryChange": 0,
@@ -1852,9 +2275,9 @@
         "updatedMemory": [],
         "trend": "stable"
       },
-      "skillCount": 186,
-      "knowledgeCount": 275,
-      "memoryCount": 154,
+      "skillCount": 22,
+      "knowledgeCount": 68,
+      "memoryCount": 35,
       "skillChange": 0,
       "knowledgeChange": 0,
       "memoryChange": 0,
@@ -2030,9 +2453,9 @@
         "updatedMemory": [],
         "trend": "growing"
       },
-      "skillCount": 185,
-      "knowledgeCount": 275,
-      "memoryCount": 154,
+      "skillCount": 22,
+      "knowledgeCount": 68,
+      "memoryCount": 35,
       "skillChange": 0,
       "knowledgeChange": 0,
       "memoryChange": 3,
@@ -2201,9 +2624,9 @@
         "updatedMemory": [],
         "trend": "growing"
       },
-      "skillCount": 184,
-      "knowledgeCount": 275,
-      "memoryCount": 151,
+      "skillCount": 20,
+      "knowledgeCount": 58,
+      "memoryCount": 30,
       "skillChange": 0,
       "knowledgeChange": 0,
       "memoryChange": 2,
@@ -2370,9 +2793,9 @@
         "updatedMemory": [],
         "trend": "growing"
       },
-      "skillCount": 155,
-      "knowledgeCount": 275,
-      "memoryCount": 149,
+      "skillCount": 20,
+      "knowledgeCount": 58,
+      "memoryCount": 30,
       "skillChange": 0,
       "knowledgeChange": 0,
       "memoryChange": 2,
@@ -2665,9 +3088,9 @@
         ],
         "trend": "growing"
       },
-      "skillCount": 155,
-      "knowledgeCount": 275,
-      "memoryCount": 147,
+      "skillCount": 20,
+      "knowledgeCount": 58,
+      "memoryCount": 30,
       "skillChange": 0,
       "knowledgeChange": 0,
       "memoryChange": 1,
@@ -2851,9 +3274,9 @@
         ],
         "trend": "growing"
       },
-      "skillCount": 155,
-      "knowledgeCount": 275,
-      "memoryCount": 146,
+      "skillCount": 20,
+      "knowledgeCount": 58,
+      "memoryCount": 30,
       "skillChange": 0,
       "knowledgeChange": 0,
       "memoryChange": 2,
@@ -3028,9 +3451,9 @@
         "updatedMemory": [],
         "trend": "growing"
       },
-      "skillCount": 155,
-      "knowledgeCount": 273,
-      "memoryCount": 144,
+      "skillCount": 20,
+      "knowledgeCount": 58,
+      "memoryCount": 30,
       "skillChange": -1,
       "knowledgeChange": 0,
       "memoryChange": 3,
@@ -3193,9 +3616,9 @@
         "updatedMemory": [],
         "trend": "stable"
       },
-      "skillCount": 156,
-      "knowledgeCount": 273,
-      "memoryCount": 141,
+      "skillCount": 20,
+      "knowledgeCount": 58,
+      "memoryCount": 30,
       "skillChange": 0,
       "knowledgeChange": 0,
       "memoryChange": 0,
@@ -3470,9 +3893,9 @@
         ],
         "trend": "stable"
       },
-      "skillCount": 156,
-      "knowledgeCount": 273,
-      "memoryCount": 141,
+      "skillCount": 20,
+      "knowledgeCount": 58,
+      "memoryCount": 30,
       "skillChange": 0,
       "knowledgeChange": 0,
       "memoryChange": 0,
@@ -3671,9 +4094,9 @@
         ],
         "trend": "growing"
       },
-      "skillCount": 156,
-      "knowledgeCount": 273,
-      "memoryCount": 141,
+      "skillCount": 20,
+      "knowledgeCount": 58,
+      "memoryCount": 30,
       "skillChange": 0,
       "knowledgeChange": 0,
       "memoryChange": 1,
@@ -3940,9 +4363,9 @@
         ],
         "trend": "growing"
       },
-      "skillCount": 156,
-      "knowledgeCount": 273,
-      "memoryCount": 139,
+      "skillCount": 20,
+      "knowledgeCount": 58,
+      "memoryCount": 30,
       "skillChange": 23,
       "knowledgeChange": 12,
       "memoryChange": 2,
@@ -4457,9 +4880,9 @@
         ],
         "trend": "growing"
       },
-      "skillCount": 133,
-      "knowledgeCount": 261,
-      "memoryCount": 134,
+      "skillCount": 20,
+      "knowledgeCount": 58,
+      "memoryCount": 30,
       "skillChange": 8,
       "knowledgeChange": 1,
       "memoryChange": 7,
@@ -4661,9 +5084,9 @@
         ],
         "trend": "growing"
       },
-      "skillCount": 128,
-      "knowledgeCount": 261,
-      "memoryCount": 130,
+      "skillCount": 20,
+      "knowledgeCount": 58,
+      "memoryCount": 30,
       "skillChange": 0,
       "knowledgeChange": 0,
       "memoryChange": 2,
@@ -4772,9 +5195,9 @@
         "updatedMemory": [],
         "trend": "stable"
       },
-      "skillCount": 125,
-      "knowledgeCount": 261,
-      "memoryCount": 128,
+      "skillCount": 20,
+      "knowledgeCount": 58,
+      "memoryCount": 30,
       "skillChange": 0,
       "knowledgeChange": 0,
       "memoryChange": 0,
@@ -4938,9 +5361,9 @@
         "updatedMemory": [],
         "trend": "growing"
       },
-      "skillCount": 125,
-      "knowledgeCount": 261,
-      "memoryCount": 128,
+      "skillCount": 20,
+      "knowledgeCount": 58,
+      "memoryCount": 30,
       "skillChange": 0,
       "knowledgeChange": 0,
       "memoryChange": 1,
@@ -5131,9 +5554,9 @@
         "updatedMemory": [],
         "trend": "growing"
       },
-      "skillCount": 125,
-      "knowledgeCount": 261,
-      "memoryCount": 127,
+      "skillCount": 20,
+      "knowledgeCount": 58,
+      "memoryCount": 30,
       "skillChange": 0,
       "knowledgeChange": 0,
       "memoryChange": 1,
@@ -5304,9 +5727,9 @@
         "updatedMemory": [],
         "trend": "growing"
       },
-      "skillCount": 124,
-      "knowledgeCount": 260,
-      "memoryCount": 125,
+      "skillCount": 20,
+      "knowledgeCount": 58,
+      "memoryCount": 30,
       "skillChange": 0,
       "knowledgeChange": 0,
       "memoryChange": 1,
@@ -5477,9 +5900,9 @@
         "updatedMemory": [],
         "trend": "growing"
       },
-      "skillCount": 124,
-      "knowledgeCount": 260,
-      "memoryCount": 125,
+      "skillCount": 18,
+      "knowledgeCount": 45,
+      "memoryCount": 25,
       "skillChange": 0,
       "knowledgeChange": 0,
       "memoryChange": 0,
@@ -5751,9 +6174,9 @@
         ],
         "trend": "growing"
       },
-      "skillCount": 124,
-      "knowledgeCount": 260,
-      "memoryCount": 124,
+      "skillCount": 18,
+      "knowledgeCount": 45,
+      "memoryCount": 25,
       "skillChange": 0,
       "knowledgeChange": 0,
       "memoryChange": 3,
@@ -5920,9 +6343,9 @@
         "updatedMemory": [],
         "trend": "stable"
       },
-      "skillCount": 124,
-      "knowledgeCount": 260,
-      "memoryCount": 124,
+      "skillCount": 18,
+      "knowledgeCount": 45,
+      "memoryCount": 25,
       "skillChange": 0,
       "knowledgeChange": 0,
       "memoryChange": 0,
@@ -6193,9 +6616,9 @@
         ],
         "trend": "growing"
       },
-      "skillCount": 124,
-      "knowledgeCount": 260,
-      "memoryCount": 124,
+      "skillCount": 18,
+      "knowledgeCount": 45,
+      "memoryCount": 25,
       "skillChange": 0,
       "knowledgeChange": 0,
       "memoryChange": 4,
