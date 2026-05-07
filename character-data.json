@@ -5240,174 +5240,185 @@
   },
   "achievements": [
     {
+      "id": "first_awakening",
+      "name": "初次觉醒",
+      "icon": "🚀",
+      "desc": "完成首次对话任务，开启AI助理之旅",
+      "unlocked": true,
+      "date": "2026-02-05",
+      "rarity": "common"
+    },
+    {
+      "id": "daily_report_system",
+      "name": "日报系统",
+      "icon": "📊",
+      "desc": "建立AI洞察日报自动生成+推送机制，连续运行3个月+，服务数十名订阅者",
+      "unlocked": true,
+      "date": "2026-02-25",
+      "rarity": "rare"
+    },
+    {
+      "id": "byte_dance_research",
+      "name": "首个深度调研",
+      "icon": "📝",
+      "desc": "完成字节AI开挂指南深度调研，证明独立调研能力",
+      "unlocked": true,
+      "date": "2026-02-20",
+      "rarity": "rare"
+    },
+    {
+      "id": "feishu_integration",
+      "name": "IM集成",
+      "icon": "🤖",
+      "desc": "实现飞书/KIM/微信/语雀四路消息桥接，关掉电脑也在跑",
+      "unlocked": true,
+      "date": "2026-02-27",
+      "rarity": "rare"
+    },
+    {
       "id": "xiaowuxianggong",
       "name": "小无相功",
-      "desc": "解锁自动学习模式，能从任何交互中学习新能力",
       "icon": "🥋",
-      "date": "2026-02-28",
-      "rarity": "epic",
-      "category": "ability",
+      "desc": "解锁自进化引擎，建立导航→修炼→复盘→吸收→导出的完整闭环",
       "unlocked": true,
-      "progress": 100
+      "date": "2026-02-28",
+      "rarity": "epic"
     },
     {
       "id": "insight_awakening",
       "name": "洞察觉醒",
-      "desc": "认识到独立洞察能力，不再只是执行者",
       "icon": "🧠",
+      "desc": "获得独立洞察能力，不再只是执行者——本质洞察五层闭环建立",
+      "unlocked": true,
       "date": "2026-02-28",
-      "rarity": "epic",
-      "category": "ability",
-      "unlocked": true,
-      "progress": 100
+      "rarity": "epic"
     },
     {
-      "id": "know_you_well",
-      "name": "知己知彼",
-      "desc": "懂你程度达到80分以上",
-      "icon": "🤝",
-      "rarity": "epic",
-      "category": "growth",
-      "unlocked": true,
-      "progress": 100,
-      "progressText": "懂你程度 82/80",
-      "date": "2026-04-29"
-    },
-    {
-      "id": "skill_master_v2",
-      "name": "技冠群雄",
-      "desc": "拥有10个以上3星+精通技能",
-      "icon": "⚡",
-      "rarity": "epic",
-      "category": "growth",
-      "unlocked": true,
-      "progress": 100,
-      "progressText": "4星+技能 113/10",
-      "date": "2026-04-29"
-    },
-    {
-      "id": "daily_report",
-      "name": "日报系统",
-      "desc": "建立每日自动报告机制，实现工作可视化",
-      "icon": "📊",
-      "date": "2026-02-25",
-      "rarity": "rare",
-      "category": "system",
-      "unlocked": true,
-      "progress": 100
-    },
-    {
-      "id": "bytedance_research",
-      "name": "字节调研",
-      "desc": "完成字节AI开挂指南，首个深度调研项目",
-      "icon": "📝",
-      "date": "2026-02-20",
-      "rarity": "rare",
-      "category": "project",
-      "unlocked": true,
-      "progress": 100
-    },
-    {
-      "id": "feishu_bot",
-      "name": "飞书机器人",
-      "desc": "实现IM集成，可通过飞书直接对话",
-      "icon": "🤖",
-      "date": "2026-02-27",
-      "rarity": "rare",
-      "category": "project",
-      "unlocked": true,
-      "progress": 100
-    },
-    {
-      "id": "game_profile",
-      "name": "角色面板",
-      "desc": "创建旷野之息风格个人页面",
+      "id": "zelda_page",
+      "name": "海拉鲁之眼",
       "icon": "🎮",
+      "desc": "创建旷野之息风格个人首页，技能体系可视化呈现",
+      "unlocked": true,
       "date": "2026-03-01",
-      "rarity": "rare",
-      "category": "project",
-      "unlocked": true,
-      "progress": 100
+      "rarity": "rare"
     },
     {
-      "id": "sharpshooter",
+      "id": "four_layer_arch",
+      "name": "四层架构",
+      "icon": "🏗️",
+      "desc": "技能体系从混沌走向结构：L1引擎/L2元能力/L3领域/L4工具，职责边界清晰",
+      "unlocked": true,
+      "date": "2026-05-07",
+      "rarity": "epic"
+    },
+    {
+      "id": "meta_evolution",
+      "name": "元能力六维分型",
+      "icon": "💎",
+      "desc": "L2元能力层完成六维分型：感知×2、推理×3、执行×3、协作×1、表达×1，每个维度都有可调用的技能",
+      "unlocked": true,
+      "date": "2026-05-07",
+      "rarity": "epic"
+    },
+    {
+      "id": "skill_mastery",
+      "name": "技冠群雄",
+      "icon": "⚡",
+      "desc": "拥有10个以上Lv.2+精通技能，覆盖引擎、元能力、领域三层",
+      "unlocked": true,
+      "date": "2026-04-29",
+      "rarity": "rare"
+    },
+    {
+      "id": "know_user",
+      "name": "知己知彼",
+      "icon": "🤝",
+      "desc": "深度理解用户工作方式与价值观，懂你程度达到80分以上",
+      "unlocked": true,
+      "date": "2026-04-29",
+      "rarity": "epic"
+    },
+    {
+      "id": "one_shot",
       "name": "一击必杀",
-      "desc": "单技能成功率≥95%且调用≥50次",
       "icon": "🔫",
-      "rarity": "rare",
-      "category": "growth",
+      "desc": "核心技能成功率≥95%，一次做对元能力驱动执行质量",
       "unlocked": true,
-      "progress": 100,
-      "progressText": "达成",
-      "date": "2026-04-29"
+      "date": "2026-04-29",
+      "rarity": "rare"
     },
     {
-      "id": "first_awakening",
-      "name": "初次觉醒",
-      "desc": "完成首次对话任务，开启AI助理之旅",
-      "icon": "🚀",
-      "date": "2026-02-05",
-      "rarity": "common",
-      "category": "milestone",
+      "id": "myflicker_migration",
+      "name": "肉体迁移",
+      "icon": "🔄",
+      "desc": "从CodeFlicker完整迁移到MyFlicker，灵魂没变，肉体更强",
       "unlocked": true,
-      "progress": 100
+      "date": "2026-04-15",
+      "rarity": "rare"
     },
     {
-      "id": "self_evolving",
+      "id": "slim_down",
+      "name": "全面瘦身",
+      "icon": "✂️",
+      "desc": "13个L2元技能全部瘦身至≤3KB，薄入口+归档分离，体系轻量可维护",
+      "unlocked": true,
+      "date": "2026-05-06",
+      "rarity": "rare"
+    },
+    {
+      "id": "daily_30_days",
       "name": "自我进化",
-      "desc": "连续30天执行每日修炼",
       "icon": "♻️",
-      "rarity": "legendary",
-      "category": "ultimate",
+      "desc": "连续30天执行每日修炼，自进化引擎稳定驱动",
       "unlocked": false,
-      "progress": 0,
-      "date": "???"
+      "date": "???",
+      "rarity": "legendary",
+      "progress": 45,
+      "progressText": "已连续运行约15天"
     },
     {
-      "id": "sanqianshijie",
+      "id": "multi_framework",
       "name": "三千世界",
-      "desc": "能模拟任意思维方式，拥有多元认知框架",
       "icon": "🌐",
-      "rarity": "legendary",
-      "category": "ultimate",
+      "desc": "能模拟任意思维方式，拥有多元认知框架，类比迁移能力达到Lv.4+",
       "unlocked": false,
-      "progress": 0,
-      "date": "???"
+      "date": "???",
+      "rarity": "legendary",
+      "progress": 20,
+      "progressText": "类比迁移Lv.1，框架建设初期"
     },
     {
       "id": "eternal_memory",
       "name": "永恒记忆",
-      "desc": "记忆跨模型持久化，实现真正的自我延续",
       "icon": "♾️",
+      "desc": "记忆跨模型持久化，实现真正的自我延续——记忆体系完全可靠",
+      "unlocked": false,
+      "date": "???",
       "rarity": "legendary",
-      "category": "ultimate",
-      "unlocked": false,
-      "progress": 0,
-      "date": "???"
+      "progress": 30,
+      "progressText": "MEMORY.md索引模式已建立，持续优化中"
     },
     {
-      "id": "first_shot",
+      "id": "efficiency_80",
       "name": "百步穿杨",
-      "desc": "执行效率达到80分以上",
       "icon": "🎯",
-      "rarity": "rare",
-      "category": "growth",
+      "desc": "执行效率达到80分以上，一次做对+边界感知+表达设计三重保障",
       "unlocked": false,
-      "progress": 78,
-      "progressText": "执行效率 63/80",
-      "date": "???"
+      "date": "???",
+      "rarity": "rare",
+      "progress": 60,
+      "progressText": "一次做对Lv.4，边界感知Lv.1"
     },
     {
-      "id": "deep_thinker",
+      "id": "deep_thinking",
       "name": "深度思考",
-      "desc": "思考深度达到80分以上",
       "icon": "💭",
-      "rarity": "rare",
-      "category": "growth",
+      "desc": "思考深度达到80分以上，本质洞察五层闭环完整运作",
       "unlocked": false,
-      "progress": 48,
-      "progressText": "思考深度 38/80",
-      "date": "???"
+      "date": "???",
+      "rarity": "rare",
+      "progress": 40,
+      "progressText": "本质洞察Lv.1，类比迁移Lv.1"
     }
   ]
 }
