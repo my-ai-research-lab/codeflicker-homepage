@@ -390,8 +390,27 @@ function renderSkillTechTree(container, skills) {
     
     // === L2元能力层 — 左右双栏布局（思维方法 | 做事方法）===
 
-    function renderSkillNodes(skills, colorVar) {
+    // 维度→CSS变体映射
+    var dimClassMap = {
+        'perception': 'engine-node--meta-perception',
+        'reasoning': 'engine-node--meta-reasoning',
+        'execution': 'engine-node--meta-execution',
+        'collaboration': 'engine-node--meta-collaboration',
+        'expression': 'engine-node--meta-expression'
+    };
+    // 维度→颜色映射（与CSS变体一致）
+    var dimColorMap = {
+        'perception': '#fbbf24',
+        'reasoning': '#a78bfa',
+        'execution': '#5ec4d4',
+        'collaboration': '#fbbf24',
+        'expression': '#5ec4d4'
+    };
+
+    function renderSkillNodes(skills, dimRole) {
         var html = '';
+        var dimClass = dimClassMap[dimRole] || 'engine-node--meta';
+        var dimColor = dimColorMap[dimRole] || '#a78bfa';
         for (var ni = 0; ni < skills.length; ni++) {
             var s = skills[ni];
             var id = storeSkill(s);
@@ -399,22 +418,6 @@ function renderSkillTechTree(container, skills) {
             var level = s.level || 1;
             var exp = s.exp || (level * 20);
             var dash = 50 * (1 - exp / 100);
-            var colorMap = {
-                'var(--cognitive-yellow)': '#fbbf24',
-                'var(--system-teal)': '#38bdf8',
-                'absorb': '#38bdf8',
-                'guide': '#a78bfa', 
-                'export': '#4ade80',
-                'core': '#fb923c',
-                'tool': '#4ade80',
-                'lifecycle': 'rgba(200, 220, 240, 0.6)',
-                'homepage': '#38bdf8',
-                'execution': '#7ec8e3'
-            };
-            var resolvedColor = colorMap[colorVar] || colorVar;
-            // Resolve CSS variable to actual color
-            if (colorVar === 'var(--cognitive-yellow)') resolvedColor = '#fbbf24';
-            if (colorVar === 'var(--system-teal)') resolvedColor = '#38bdf8';
             
             // Role label from skill's displayRole or role field
             var roleMap = {
@@ -426,33 +429,33 @@ function renderSkillTechTree(container, skills) {
             };
             var roleText = s.displayRole || roleMap[s.role] || '元能力';
             
-            html += '<div class="engine-node engine-node--lifecycle" style="--node-color:' + resolvedColor + ';" onmouseenter="showTreeTooltip(event, \'' + id + '\', \'skill\')" onmouseleave="hideTooltip()">' +
-                '<div class="engine-node-ring"><svg viewBox="0 0 22 22" width="22" height="22"><circle class="ring-bg" cx="11" cy="11" r="8"/><circle class="ring-progress" cx="11" cy="11" r="8" stroke-dasharray="50" stroke-dashoffset="' + dash + '" style="stroke:' + resolvedColor + ';"/></svg><span class="engine-node-level">' + level + '</span></div>' +
+            html += '<div class="engine-node ' + dimClass + '" style="--node-color:' + dimColor + ';" onmouseenter="showTreeTooltip(event, \'' + id + '\', \'skill\')" onmouseleave="hideTooltip()">' +
+                '<div class="engine-node-ring"><svg viewBox="0 0 22 22" width="22" height="22"><circle class="ring-bg" cx="11" cy="11" r="8"/><circle class="ring-progress" cx="11" cy="11" r="8" stroke-dasharray="50" stroke-dashoffset="' + dash + '" style="stroke:' + dimColor + ';"/></svg><span class="engine-node-level">' + level + '</span></div>' +
                 '<div class="engine-node-info"><span class="engine-node-name">' + name + '</span><span class="engine-node-role">' + roleText + '</span></div>' +
             '</div>';
         }
         return html;
     }
 
-    function renderSubDim(cat, icon, title, colorVar, flowLabel, isFirst) {
+    function renderSubDim(cat, icon, title, dimRole, flowLabel, isFirst) {
         if (!cat || !cat.skills || !cat.skills.length) return '';
         var arrow = isFirst ? '' :
             '<div class="subdim-arrow"><div class="subdim-arrow-line"></div><div class="subdim-arrow-tip">▼</div><div class="subdim-arrow-label">' + flowLabel + '</div></div>';
         return arrow +
             '<div class="subdim-block">' +
                 '<div class="subdim-header"><span class="subdim-icon">' + icon + '</span><span class="subdim-title">' + title + '</span></div>' +
-                '<div class="subdim-skills">' + renderSkillNodes(cat.skills, colorVar) + '</div>' +
+                '<div class="subdim-skills">' + renderSkillNodes(cat.skills, dimRole) + '</div>' +
             '</div>';
     }
 
     var thinkingCol = '';
-    thinkingCol += renderSubDim(perceptionCat, '👁️', '感知', 'var(--cognitive-yellow)', '', true);
-    thinkingCol += renderSubDim(reasoningCat, '🧠', '推理', 'var(--cognitive-yellow)', '感知→推理', false);
+    thinkingCol += renderSubDim(perceptionCat, '👁️', '感知', 'perception', '', true);
+    thinkingCol += renderSubDim(reasoningCat, '🧠', '推理', 'reasoning', '感知→推理', false);
 
     var actingCol = '';
-    actingCol += renderSubDim(executionCat, '🎯', '执行', 'var(--system-teal)', '', true);
-    actingCol += renderSubDim(collaborationCat, '🤝', '协作', 'var(--cognitive-yellow)', '执行→协作', false);
-    actingCol += renderSubDim(expressionCat, '📝', '表达', 'var(--cognitive-yellow)', '协作→表达', false);
+    actingCol += renderSubDim(executionCat, '🎯', '执行', 'execution', '', true);
+    actingCol += renderSubDim(collaborationCat, '🤝', '协作', 'collaboration', '执行→协作', false);
+    actingCol += renderSubDim(expressionCat, '📝', '表达', 'expression', '协作→表达', false);
 
     var metaDimSections = '';
     if (thinkingCol || actingCol) {

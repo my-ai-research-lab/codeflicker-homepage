@@ -54,7 +54,7 @@
 }
 .arch-stat-sep { opacity: 0.4; }
 
-/* === 元能力层 === */
+/* === 元能力层 — 紧凑版 === */
 .meta-layer {
     background: linear-gradient(180deg, rgba(20, 18, 35, 0.95) 0%, rgba(15, 14, 28, 0.92) 100%);
     border: 1px solid rgba(167, 139, 250, 0.25);
@@ -72,28 +72,28 @@
 .meta-layer-label {
     display: flex;
     align-items: center;
-    gap: 8px;
-    padding: 8px 16px;
+    gap: 6px;
+    padding: 6px 14px;
     background: rgba(10, 8, 22, 0.9);
-    border-bottom: 1px solid rgba(167, 139, 250, 0.15);
+    border-bottom: 1px solid rgba(167, 139, 250, 0.12);
 }
-.meta-label-icon { font-size: 18px; }
+.meta-label-icon { font-size: 16px; }
 .meta-label-text {
     font-family: var(--font-title);
-    font-size: 14px;
-    font-weight: 600;
+    font-size: 13px;
+    font-weight: 700;
     color: #c4b5fd;
 }
 .meta-label-desc {
-    font-size: 11px;
-    color: rgba(200, 220, 240, 0.5);
+    font-size: 10px;
+    color: rgba(200, 220, 240, 0.45);
     margin-left: 4px;
 }
 .meta-layer-content {
-    padding: 10px;
+    padding: 8px;
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 6px;
 }
 /* 底部并排行（认知框架+系统工具） */
 .meta-bottom-row {
@@ -2154,77 +2154,171 @@
     overflow: visible;
 }
 
-/* ==================== L2 元能力层 子维度布局 ==================== */
+/* ==================== L2 元能力层 — 紧凑统一风格 ==================== */
+/* L2 节点与 L1 引擎层保持一致视觉 */
+.engine-node--meta {
+    padding: 6px 12px;
+    border: 1.5px solid rgba(200, 220, 240, 0.15);
+    background: rgba(15, 12, 28, 0.95);
+    border-radius: 8px;
+    --node-color: #a78bfa;
+    --node-glow: rgba(167, 139, 250, 0.4);
+}
+.engine-node--meta:hover {
+    border-color: var(--node-color, #a78bfa);
+    background: rgba(167, 139, 250, 0.12);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(167, 139, 250, 0.2);
+}
+
+/* 感知维度 — 金色 */
+.engine-node--meta-perception {
+    --node-color: #fbbf24;
+    --node-glow: rgba(251, 191, 36, 0.4);
+    border-color: rgba(251, 191, 36, 0.3);
+    background: linear-gradient(135deg, rgba(30, 24, 10, 0.95) 0%, rgba(18, 14, 8, 0.92) 100%);
+}
+.engine-node--meta-perception:hover {
+    border-color: rgba(251, 191, 36, 0.55);
+    background: rgba(251, 191, 36, 0.12);
+    box-shadow: 0 4px 16px rgba(251, 191, 36, 0.2);
+}
+.engine-node--meta-perception .ring-progress { stroke: #fbbf24; }
+.engine-node--meta-perception .engine-node-level { color: #fbbf24; }
+
+/* 推理维度 — 紫色 */
+.engine-node--meta-reasoning {
+    --node-color: #a78bfa;
+    --node-glow: rgba(167, 139, 250, 0.4);
+    border-color: rgba(167, 139, 250, 0.3);
+    background: linear-gradient(135deg, rgba(22, 18, 40, 0.95) 0%, rgba(15, 12, 28, 0.92) 100%);
+}
+.engine-node--meta-reasoning:hover {
+    border-color: rgba(167, 139, 250, 0.55);
+    background: rgba(167, 139, 250, 0.12);
+    box-shadow: 0 4px 16px rgba(167, 139, 250, 0.2);
+}
+.engine-node--meta-reasoning .ring-progress { stroke: #a78bfa; }
+.engine-node--meta-reasoning .engine-node-level { color: #a78bfa; }
+
+/* 执行维度 — 青色 */
+.engine-node--meta-execution {
+    --node-color: #5ec4d4;
+    --node-glow: rgba(94, 196, 212, 0.4);
+    border-color: rgba(94, 196, 212, 0.3);
+    background: linear-gradient(135deg, rgba(12, 25, 28, 0.95) 0%, rgba(8, 18, 22, 0.92) 100%);
+}
+.engine-node--meta-execution:hover {
+    border-color: rgba(94, 196, 212, 0.55);
+    background: rgba(94, 196, 212, 0.12);
+    box-shadow: 0 4px 16px rgba(94, 196, 212, 0.2);
+}
+.engine-node--meta-execution .ring-progress { stroke: #5ec4d4; }
+.engine-node--meta-execution .engine-node-level { color: #5ec4d4; }
+
+/* 协作维度 — 金色（感知同色系） */
+.engine-node--meta-collaboration {
+    --node-color: #fbbf24;
+    --node-glow: rgba(251, 191, 36, 0.4);
+    border-color: rgba(251, 191, 36, 0.3);
+    background: linear-gradient(135deg, rgba(30, 24, 10, 0.95) 0%, rgba(18, 14, 8, 0.92) 100%);
+}
+.engine-node--meta-collaboration:hover {
+    border-color: rgba(251, 191, 36, 0.55);
+    background: rgba(251, 191, 36, 0.12);
+    box-shadow: 0 4px 16px rgba(251, 191, 36, 0.2);
+}
+.engine-node--meta-collaboration .ring-progress { stroke: #fbbf24; }
+.engine-node--meta-collaboration .engine-node-level { color: #fbbf24; }
+
+/* 表达维度 — 青色（执行同色系） */
+.engine-node--meta-expression {
+    --node-color: #5ec4d4;
+    --node-glow: rgba(94, 196, 212, 0.4);
+    border-color: rgba(94, 196, 212, 0.3);
+    background: linear-gradient(135deg, rgba(12, 25, 28, 0.95) 0%, rgba(8, 18, 22, 0.92) 100%);
+}
+.engine-node--meta-expression:hover {
+    border-color: rgba(94, 196, 212, 0.55);
+    background: rgba(94, 196, 212, 0.12);
+    box-shadow: 0 4px 16px rgba(94, 196, 212, 0.2);
+}
+.engine-node--meta-expression .ring-progress { stroke: #5ec4d4; }
+.engine-node--meta-expression .engine-node-level { color: #5ec4d4; }
+
+/* 子维度块 — 紧凑版 */
 .subdim-block {
-    background: rgba(0, 0, 0, 0.2);
-    border: 1px solid rgba(0, 212, 255, 0.1);
-    border-radius: 10px;
-    padding: 12px 14px 14px;
-    margin-bottom: 10px;
+    background: rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(167, 139, 250, 0.1);
+    border-radius: 8px;
+    padding: 8px 10px 10px;
+    margin-bottom: 6px;
 }
 .subdim-block:last-child { margin-bottom: 0; }
 .subdim-header {
     display: flex;
     align-items: center;
-    gap: 6px;
-    margin-bottom: 12px;
-    padding-bottom: 8px;
-    border-bottom: 1px solid rgba(0, 212, 255, 0.08);
+    gap: 5px;
+    margin-bottom: 8px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(167, 139, 250, 0.06);
 }
-.subdim-icon { font-size: 16px; }
+.subdim-icon { font-size: 14px; }
 .subdim-title {
     font-family: var(--font-title);
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 700;
     color: rgba(200, 220, 240, 0.85);
-    letter-spacing: 0.5px;
+    letter-spacing: 0.3px;
 }
 .subdim-skills {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 6px;
 }
 .subdim-arrow {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 4px 0 8px;
-    gap: 2px;
+    margin: 3px 0 5px;
+    gap: 1px;
 }
-.subdim-arrow-line { width: 1px; height: 16px; background: rgba(0, 212, 255, 0.25); }
-.subdim-arrow-tip { font-size: 10px; color: rgba(0, 212, 255, 0.4); }
-.subdim-arrow-label { font-size: 10px; color: rgba(200, 220, 240, 0.35); font-family: var(--font-mono); }
+.subdim-arrow-line { width: 1px; height: 10px; background: rgba(167, 139, 250, 0.2); }
+.subdim-arrow-tip { font-size: 8px; color: rgba(167, 139, 250, 0.35); }
+.subdim-arrow-label { font-size: 9px; color: rgba(200, 220, 240, 0.3); font-family: var(--font-mono); }
+
+/* 双栏布局 — 紧凑版 */
 .meta-bifurcated-layout {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
     gap: 0;
     align-items: start;
 }
-.meta-col { padding: 0 8px; }
+.meta-col { padding: 0 4px; }
 .meta-col-header {
     display: flex;
     align-items: center;
-    gap: 6px;
-    margin-bottom: 12px;
-    padding: 8px 12px;
-    background: rgba(0, 212, 255, 0.06);
-    border-radius: 8px;
-    border: 1px solid rgba(0, 212, 255, 0.1);
+    gap: 5px;
+    margin-bottom: 8px;
+    padding: 6px 10px;
+    background: rgba(167, 139, 250, 0.06);
+    border-radius: 6px;
+    border: 1px solid rgba(167, 139, 250, 0.1);
 }
-.meta-col-icon { font-size: 16px; }
-.meta-col-title { font-family: var(--font-title); font-size: 14px; font-weight: 700; color: var(--sheikah-blue-light); }
-.meta-col-desc { font-size: 11px; color: rgba(200, 220, 240, 0.45); margin-left: auto; font-family: var(--font-mono); }
+.meta-col-icon { font-size: 14px; }
+.meta-col-title { font-family: var(--font-title); font-size: 13px; font-weight: 700; color: #c4b5fd; }
+.meta-col-desc { font-size: 10px; color: rgba(200, 220, 240, 0.4); margin-left: auto; font-family: var(--font-mono); }
 .meta-col-divider {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0 8px;
-    gap: 4px;
-    margin-top: 40px;
+    padding: 0 6px;
+    gap: 3px;
+    margin-top: 28px;
 }
-.meta-col-divider .divider-line { width: 1px; height: 30px; background: rgba(0, 212, 255, 0.15); }
-.meta-col-divider .divider-label { font-size: 14px; color: rgba(0, 212, 255, 0.3); font-weight: 700; }
+.meta-col-divider .divider-line { width: 1px; height: 20px; background: rgba(167, 139, 250, 0.12); }
+.meta-col-divider .divider-label { font-size: 12px; color: rgba(167, 139, 250, 0.25); font-weight: 700; }
 
 /* ==================== 响应式调整 ==================== */
 @media (max-width: 768px) {
