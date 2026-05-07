@@ -394,18 +394,41 @@ function renderSkillTechTree(container, skills) {
         var html = '';
         for (var ni = 0; ni < skills.length; ni++) {
             var s = skills[ni];
-            var sid = storeSkill(s);
-            var lv = s.level || 1;
-            var exp = s.exp || (lv * 20);
+            var id = storeSkill(s);
+            var name = s.displayName || getName(s);
+            var level = s.level || 1;
+            var exp = s.exp || (level * 20);
             var dash = 50 * (1 - exp / 100);
-            var badge = s.platform === 'Root' ? '<span class="skill-node-badge">🔒</span>' : '';
-            html += '<div class="skill-node-compact" onmouseenter="showTreeTooltip(event,\'' + sid + '\',\'skill\')" onmouseleave="hideTooltip()">' +
-                badge +
-                '<div class="engine-node-ring" style="width:20px;height:20px;">' +
-                    '<svg viewBox="0 0 22 22"><circle class="ring-bg" cx="11" cy="11" r="8"/><circle class="ring-progress" cx="11" cy="11" r="8" stroke-dasharray="50" stroke-dashoffset="' + dash + '" style="stroke:' + colorVar + ';"/></svg>' +
-                    '<span class="engine-node-level">' + lv + '</span>' +
-                '</div>' +
-                '<div class="engine-node-info"><span class="engine-node-name">' + (s.displayName || getName(s)) + '</span><span class="engine-node-role">' + (s.displayRole || '') + '</span></div>' +
+            var colorMap = {
+                'var(--cognitive-yellow)': '#fbbf24',
+                'var(--system-teal)': '#38bdf8',
+                'absorb': '#38bdf8',
+                'guide': '#a78bfa', 
+                'export': '#4ade80',
+                'core': '#fb923c',
+                'tool': '#4ade80',
+                'lifecycle': 'rgba(200, 220, 240, 0.6)',
+                'homepage': '#38bdf8',
+                'execution': '#7ec8e3'
+            };
+            var resolvedColor = colorMap[colorVar] || colorVar;
+            // Resolve CSS variable to actual color
+            if (colorVar === 'var(--cognitive-yellow)') resolvedColor = '#fbbf24';
+            if (colorVar === 'var(--system-teal)') resolvedColor = '#38bdf8';
+            
+            // Role label from skill's displayRole or role field
+            var roleMap = {
+                'perception': '感知维度',
+                'reasoning': '推理维度',
+                'execution': '执行维度',
+                'collaboration': '协作维度',
+                'expression': '表达维度'
+            };
+            var roleText = s.displayRole || roleMap[s.role] || '元能力';
+            
+            html += '<div class="engine-node engine-node--lifecycle" style="--node-color:' + resolvedColor + ';" onmouseenter="showTreeTooltip(event, \'' + id + '\', \'skill\')" onmouseleave="hideTooltip()">' +
+                '<div class="engine-node-ring"><svg viewBox="0 0 22 22" width="22" height="22"><circle class="ring-bg" cx="11" cy="11" r="8"/><circle class="ring-progress" cx="11" cy="11" r="8" stroke-dasharray="50" stroke-dashoffset="' + dash + '" style="stroke:' + resolvedColor + ';"/></svg><span class="engine-node-level">' + level + '</span></div>' +
+                '<div class="engine-node-info"><span class="engine-node-name">' + name + '</span><span class="engine-node-role">' + roleText + '</span></div>' +
             '</div>';
         }
         return html;
@@ -511,7 +534,7 @@ function renderSkillTechTree(container, skills) {
     
     // ========== 组装 ==========
     container.innerHTML = '<div class="skill-architecture">' +
-        '<div class="meta-layer"><div class="meta-layer-label"><span class="meta-label-icon">\uD83D\uDD04</span><span class="meta-label-text">L1 引擎层</span><span class="meta-label-desc">自进化内核 · 导航→修炼→复盘→吸收→导出 · 5技能</span></div><div class="meta-layer-content">' + engineHtml + '</div></div>' +
+        engineHtml +
         renderLayerTransition('引擎驱动元能力') +
         '<div class="meta-layer"><div class="meta-layer-label"><span class="meta-label-icon">\uD83E\uDDE0</span><span class="meta-label-text">L2 元能力层</span><span class="meta-label-desc">思维方法（感知+推理）× 做事方法（执行+协作+表达）· 10技能</span></div><div class="meta-layer-content">' + metaDimSections + '</div></div>' +
         renderLayerTransition('元能力驱动领域能力') +
