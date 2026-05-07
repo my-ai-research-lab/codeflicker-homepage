@@ -57,8 +57,8 @@
 /* === 元能力层 — 紧凑版 === */
 .meta-layer {
     background: linear-gradient(180deg, rgba(20, 18, 35, 0.95) 0%, rgba(15, 14, 28, 0.92) 100%);
-    border: 1px solid rgba(167, 139, 250, 0.25);
-    border-radius: 12px;
+    border: 1px solid rgba(167, 139, 250, 0.18);
+    border-radius: 8px;
     overflow: visible;
     position: relative;
 }
@@ -66,34 +66,34 @@
     content: '';
     position: absolute;
     top: 0; left: 0; right: 0;
-    height: 2px;
+    height: 1px;
     background: linear-gradient(90deg, transparent, #a78bfa, transparent);
 }
 .meta-layer-label {
     display: flex;
     align-items: center;
-    gap: 6px;
-    padding: 6px 14px;
+    gap: 4px;
+    padding: 4px 10px;
     background: rgba(10, 8, 22, 0.9);
-    border-bottom: 1px solid rgba(167, 139, 250, 0.12);
+    border-bottom: 1px solid rgba(167, 139, 250, 0.08);
 }
-.meta-label-icon { font-size: 16px; }
+.meta-label-icon { font-size: 14px; }
 .meta-label-text {
     font-family: var(--font-title);
-    font-size: 13px;
+    font-size: 11px;
     font-weight: 700;
     color: #c4b5fd;
 }
 .meta-label-desc {
-    font-size: 10px;
+    font-size: 9px;
     color: rgba(200, 220, 240, 0.45);
-    margin-left: 4px;
+    margin-left: 3px;
 }
 .meta-layer-content {
-    padding: 8px;
+    padding: 5px 6px;
     display: flex;
     flex-direction: column;
-    gap: 6px;
+    gap: 2px;
 }
 /* 底部并排行（认知框架+系统工具） */
 .meta-bottom-row {
@@ -2157,18 +2157,22 @@
 /* ==================== L2 元能力层 — 紧凑统一风格 ==================== */
 /* L2 节点与 L1 引擎层保持一致视觉 */
 .engine-node--meta {
-    padding: 6px 12px;
-    border: 1.5px solid rgba(200, 220, 240, 0.15);
+    padding: 4px 8px;
+    border: 1px solid rgba(200, 220, 240, 0.12);
     background: rgba(15, 12, 28, 0.95);
-    border-radius: 8px;
+    border-radius: 6px;
     --node-color: #a78bfa;
     --node-glow: rgba(167, 139, 250, 0.4);
+    flex-shrink: 0;
 }
+.engine-node--meta .engine-node-ring svg { width: 18px; height: 18px; }
+.engine-node--meta .engine-node-name { font-size: 10px; }
+.engine-node--meta .engine-node-role { font-size: 8px; }
 .engine-node--meta:hover {
     border-color: var(--node-color, #a78bfa);
     background: rgba(167, 139, 250, 0.12);
-    transform: translateY(-2px);
-    box-shadow: 0 4px 16px rgba(167, 139, 250, 0.2);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 10px rgba(167, 139, 250, 0.15);
 }
 
 /* 感知维度 — 金色 */
@@ -2248,36 +2252,36 @@
 
 /* 子维度块 — 紧凑版 */
 /* L2 五维平铺行 */
-.dim-row {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    padding: 6px 10px;
-    background: rgba(0, 0, 0, 0.12);
-    border: 1px solid rgba(167, 139, 250, 0.08);
-    border-radius: 8px;
-    margin-bottom: 5px;
-}
-.dim-row:last-child { margin-bottom: 0; }
-.dim-label {
+.l2-dim-row {
     display: flex;
     align-items: center;
     gap: 4px;
-    min-width: 52px;
+    padding: 3px 6px;
+    border: 1px solid rgba(167, 139, 250, 0.06);
+    border-radius: 6px;
+    margin-bottom: 3px;
+    background: transparent;
+}
+.l2-dim-row:last-child { margin-bottom: 0; }
+.l2-dim-label {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    min-width: 42px;
     flex-shrink: 0;
 }
-.dim-icon { font-size: 15px; }
-.dim-name {
+.l2-dim-icon { font-size: 13px; }
+.l2-dim-name {
     font-family: var(--font-title);
-    font-size: 12px;
-    font-weight: 700;
-    color: rgba(200, 220, 240, 0.85);
-    letter-spacing: 0.3px;
+    font-size: 11px;
+    font-weight: 600;
+    color: rgba(200, 220, 240, 0.7);
+    letter-spacing: 0.2px;
 }
-.dim-skills {
+.l2-dim-skills {
     display: flex;
-    flex-wrap: wrap;
-    gap: 6px;
+    flex-wrap: nowrap;
+    gap: 4px;
     flex: 1;
 }
 

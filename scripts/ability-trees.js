@@ -439,9 +439,9 @@ function renderSkillTechTree(container, skills) {
 
     function renderDimRow(cat, icon, title, dimRole) {
         if (!cat || !cat.skills || !cat.skills.length) return '';
-        return '<div class="dim-row">' +
-                '<div class="dim-label"><span class="dim-icon">' + icon + '</span><span class="dim-name">' + title + '</span></div>' +
-                '<div class="dim-skills">' + renderSkillNodes(cat.skills, dimRole) + '</div>' +
+        return '<div class="l2-dim-row">' +
+                '<div class="l2-dim-label"><span class="l2-dim-icon">' + icon + '</span><span class="l2-dim-name">' + title + '</span></div>' +
+                '<div class="l2-dim-skills">' + renderSkillNodes(cat.skills, dimRole) + '</div>' +
             '</div>';
     }
 

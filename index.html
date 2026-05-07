@@ -25,7 +25,7 @@
     <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> 已改为按需动态加载 -->
     <link rel="stylesheet" href="styles/zelda-theme.css?v=22">
     <link rel="stylesheet" href="styles/main.css?v=23">
-    <link rel="stylesheet" href="styles/ability-trees.css?v=37">
+    <link rel="stylesheet" href="styles/ability-trees.css?v=39">
     <style>
         /* ==================== 关键首屏样式（内联以避免FOUC） ==================== */
         /* 仅保留最小必要样式，详细样式在外部CSS中 */
@@ -3034,112 +3034,7 @@
         /* 进化引擎区块样式 */
         /* 工具层概览卡片样式 */
         /* 维度间链路箭头样式 */
-        /* L2 二分类左右布局 */
-        .meta-bifurcated-layout {
-            display: grid;
-            grid-template-columns: 1fr auto 1fr;
-            gap: 0;
-            align-items: stretch;
-        }
-        .meta-col {
-            padding: 14px 16px;
-            border-radius: 4px;
-        }
-        .meta-col--thinking {
-            background: rgba(201,168,76,0.04);
-            border: 1px solid rgba(201,168,76,0.15);
-            border-right: none;
-            border-radius: 4px 0 0 4px;
-        }
-        .meta-col--acting {
-            background: rgba(126,200,227,0.04);
-            border: 1px solid rgba(126,200,227,0.15);
-            border-left: none;
-            border-radius: 0 4px 4px 0;
-        }
-        .meta-col-header {
-            display: flex; align-items: center; gap: 6px;
-            padding-bottom: 10px; margin-bottom: 10px;
-            border-bottom: 1px solid rgba(201,168,76,0.08);
-        }
-        .meta-col-icon { font-size: 16px; }
-        .meta-col-title {
-            font-family: 'Cinzel', serif; font-weight: 700;
-            font-size: 13px; color: var(--hylian-gold);
-        }
-        .meta-col-desc {
-            font-size: 10px; color: var(--sheikah-blue);
-            opacity: 0.4; margin-left: 4px;
-            font-family: 'Cinzel', serif;
-        }
-        .meta-col-body { display: flex; flex-direction: column; gap: 0; }
-
-        /* 中间竖线分隔 */
-        .meta-col-divider {
-            display: flex; flex-direction: column;
-            align-items: center; justify-content: center;
-            gap: 6px; padding: 0 8px;
-            position: relative;
-        }
-        .meta-col-divider .divider-line {
-            flex: 1; width: 1px;
-            background: linear-gradient(180deg, transparent, rgba(201,168,76,0.2), transparent);
-        }
-        .meta-col-divider .divider-label {
-            font-family: 'Cinzel', serif; font-size: 12px;
-            color: var(--hylian-gold); opacity: 0.3;
-        }
-
-        /* 子维度块 */
-        .subdim-block {
-            padding: 8px 0;
-            border-bottom: 1px solid rgba(201,168,76,0.05);
-        }
-        .subdim-block:last-child { border-bottom: none; }
-        .subdim-header {
-            display: flex; align-items: center; gap: 5px;
-            margin-bottom: 6px;
-        }
-        .subdim-icon { font-size: 13px; }
-        .subdim-title {
-            font-family: 'Cinzel', serif; font-size: 11px;
-            color: var(--sheikah-blue); opacity: 0.7;
-            letter-spacing: 0.05em;
-        }
-        .subdim-skills { display: flex; flex-direction: column; gap: 4px; }
-
-        /* 子维度间箭头 */
-        .subdim-arrow {
-            display: flex; align-items: center; gap: 4px;
-            padding: 3px 0;
-        }
-        .subdim-arrow-line {
-            width: 1px; height: 14px;
-            background: rgba(201,168,76,0.2);
-            margin-left: 6px;
-        }
-        .subdim-arrow-tip {
-            font-size: 8px; color: var(--hylian-gold); opacity: 0.3;
-            margin-left: -10px;
-        }
-        .subdim-arrow-label {
-            font-size: 9px; color: var(--parchment-dark);
-            opacity: 0.3; margin-left: 6px;
-            font-family: 'Cinzel', serif;
-        }
-
-        /* 紧凑技能节点（L2用）*/
-        .skill-node-compact {
-            display: flex; align-items: center; gap: 6px;
-            padding: 3px 0; cursor: pointer;
-            transition: opacity 0.2s;
-            position: relative;
-        }
-        .skill-node-compact:hover { opacity: 0.85; }
-        .skill-node-badge {
-            font-size: 9px; position: absolute;
-            top: -2px; left: -2px;
-        }
+        
 
         /* L1修炼↔举一反三双向循环 */
         .cultivation-cycle {
@@ -5467,7 +5362,7 @@
             initMouseGlow();
         });
     </script>
-    <script src="scripts/ability-trees.js?v=30" defer></script>
+    <script src="scripts/ability-trees.js?v=31" defer></script>
     <script src="scripts/app.js?v=27" defer></script>
 </body>
 </html>
