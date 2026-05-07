@@ -348,15 +348,15 @@ function renderSkillTechTree(container, skills) {
         '</div>';
     }
     
-    // === L2元能力层 — 六维分型 ===
-    // 渲染每个维度为一个 method-section
+    // === L2元能力层 — 六维分型（链路结构：感知→推理→执行→协作→表达）===
+    // 每个维度之间用链路箭头连接，表达认知到行动的完整链路
     var metaDimSections = '';
     var dimConfigs = [
-        { cat: perceptionCat, icon: '👁️', title: '感知维度', desc: '看清输入 — 上下文质量和信号筛选', colorVar: 'var(--cognitive-yellow)' },
-        { cat: reasoningCat, icon: '🧠', title: '推理维度', desc: '深层判断 — 类比迁移、本质洞察、不确定性量化', colorVar: 'var(--cognitive-yellow)' },
-        { cat: executionCat, icon: '⚙️', title: '执行维度', desc: '精准落地 — 边界感知和调试诊断', colorVar: 'var(--system-teal)' },
-        { cat: collaborationCat, icon: '🤝', title: '协作维度', desc: '人机对齐 — 信任建立和透明度', colorVar: 'var(--cognitive-yellow)' },
-        { cat: expressionCat, icon: '📝', title: '表达维度', desc: '输出质量 — 写作规范基础层', colorVar: 'var(--cognitive-yellow)' }
+        { cat: perceptionCat, icon: '👁️', title: '感知维度', desc: '看清输入', role: '上下文质量+信号筛选', colorVar: 'var(--cognitive-yellow)', flowLabel: '输入→感知' },
+        { cat: reasoningCat, icon: '🧠', title: '推理维度', desc: '深层判断', role: '类比迁移+本质洞察+不确定性量化', colorVar: 'var(--cognitive-yellow)', flowLabel: '感知→推理' },
+        { cat: executionCat, icon: '⚙️', title: '执行维度', desc: '精准落地', role: '边界感知+调试诊断', colorVar: 'var(--system-teal)', flowLabel: '推理→执行' },
+        { cat: collaborationCat, icon: '🤝', title: '协作维度', desc: '人机对齐', role: '信任建立+进度可见性', colorVar: 'var(--cognitive-yellow)', flowLabel: '执行→协作' },
+        { cat: expressionCat, icon: '📝', title: '表达维度', desc: '输出质量', role: 'KIM Doc写作规范', colorVar: 'var(--cognitive-yellow)', flowLabel: '协作→表达' }
     ];
     for (var dc = 0; dc < dimConfigs.length; dc++) {
         var dimCfg = dimConfigs[dc];
@@ -373,8 +373,12 @@ function renderSkillTechTree(container, skills) {
                 '<div class="engine-node-ring"><svg viewBox="0 0 22 22"><circle class="ring-bg" cx="11" cy="11" r="8"/><circle class="ring-progress" cx="11" cy="11" r="8" stroke-dasharray="50" stroke-dashoffset="' + ddash + '" style="stroke: ' + dimCfg.colorVar + ';"/></svg><span class="engine-node-level">' + dlevel + '</span></div>' +
                 '<div class="engine-node-info"><span class="engine-node-name">' + (ds.displayName || getName(ds)) + '</span><span class="engine-node-role">' + (ds.displayRole || '元能力') + '</span></div></div>';
         }
+        // Add flow arrow between dimensions
+        if (dc > 0) {
+            metaDimSections += '<div class="dim-flow-arrow"><div class="dim-flow-line"></div><div class="dim-flow-icon">→</div><div class="dim-flow-label">' + dimCfg.flowLabel + '</div></div>';
+        }
         metaDimSections += '<div class="method-section method-section--cognitive">' +
-            '<div class="method-header"><span class="method-icon">' + dimCfg.icon + '</span><span class="method-title">' + dimCfg.title + '</span><span class="method-desc">' + dimCfg.desc + '</span></div>' +
+            '<div class="method-header"><span class="method-icon">' + dimCfg.icon + '</span><span class="method-title">' + dimCfg.title + '</span><span class="method-desc">' + dimCfg.desc + '</span><span class="method-role">' + dimCfg.role + '</span></div>' +
             '<div class="method-content"><div class="method-grid">' + dimNodes + '</div></div></div>';
     }
     

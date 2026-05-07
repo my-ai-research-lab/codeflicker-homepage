@@ -3031,6 +3031,38 @@
 
         /* 进化引擎区块样式 */
         /* 工具层概览卡片样式 */
+        /* 维度间链路箭头样式 */
+        .dim-flow-arrow {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 8px 0;
+            gap: 6px;
+        }
+        .dim-flow-line {
+            width: 40px; height: 2px;
+            background: linear-gradient(90deg, rgba(167,139,250,0.3), rgba(126,200,227,0.3));
+        }
+        .dim-flow-icon {
+            font-size: 18px;
+            color: var(--hylian-gold);
+            opacity: 0.5;
+        }
+        .dim-flow-label {
+            font-size: 10px;
+            color: var(--sheikah-blue);
+            opacity: 0.4;
+            letter-spacing: 0.05em;
+            font-family: 'Cinzel', serif;
+        }
+        /* 维度header role标签 */
+        .method-role {
+            font-size: 10px;
+            color: var(--parchment-dark);
+            opacity: 0.4;
+            margin-left: 8px;
+            font-family: 'Noto Serif SC', serif;
+        }
         .tool-summary-card {
             background: linear-gradient(135deg, var(--ancient-stone) 0%, var(--ancient-stone-light) 100%);
             border: 1px solid rgba(201,168,76,0.12);
