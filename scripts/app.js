@@ -534,6 +534,9 @@ function renderSidebar() {
     if (statKnowledge) { statKnowledge.textContent = knowledge.totalFiles; statKnowledge.className = 'stat-value rarity-epic'; }
     if (statMemory) { statMemory.textContent = memories.total; statMemory.className = 'stat-value rarity-rare'; }
     if (statProjects && projects?.summary) { statProjects.textContent = projects.summary.total; statProjects.className = 'stat-value rarity-common'; }
+    // v4.4: 作品数量 — stat-works-count 也要赋值（之前遗漏）
+    const statWorksCount = document.getElementById('stat-works-count');
+    if (statWorksCount) { statWorksCount.textContent = char?.worksCount || projects?.summary?.total || 0; statWorksCount.className = 'stat-value rarity-common'; }
     
     // 存储侧边栏数据供气泡使用
     // v4.3: 从 knowledge.categories (后端实际字段) 提取目录列表（修复 directories 幽灵字段）

@@ -196,6 +196,7 @@ function renderSkillTechTree(container, skills) {
     var executionCat     = getDimByRole('execution');
     var collaborationCat = getDimByRole('collaboration');
     var expressionCat    = getDimByRole('expression');
+    var guardianCat      = getDimByRole('guardian');
     
     // 引擎技能映射 — 从 engineLayer 读取
     var engineSkillMap = {};
@@ -227,9 +228,7 @@ function renderSkillTechTree(container, skills) {
         return null;
     }
     
-    var guideSkill = findSkillByName('sl-meta-xiaowuxianggong');
-    var absorbSkill = findSkillByName('sl-meta-xixingdafa');
-    var exportSkill = findSkillByName('sl-meta-beiming-shengong');
+    var guideSkill = findSkillByName('formless-power');
     var coreSkill = findSkillByName('evo-daily-reflection');
     var reviewSkill = findSkillByName('evo-learn-from-mistakes');
     var executionSkill = findSkillByName('evo-meta-execution');
@@ -285,10 +284,12 @@ function renderSkillTechTree(container, skills) {
             '</div>';
         }
         
-        // 三大功法节点（迁移后新名称）
-        var absorbNodeHtml = absorbSkill ? createDemoNode(absorbSkill, '吸星大法', '外部吸收', 'absorb') : '';
-        var guideNodeHtml = createDemoNode(guideSkill, '进化导航', '体系导航+可视化+健康监控', 'guide');
-        var exportNodeHtml = exportSkill ? createDemoNode(exportSkill, '北冥神功', '能力导出', 'export') : '';
+        // 三大功法节点 — 吸收/导出作为formless-power的内嵌子模块虚拟节点
+        var absorbSkill = findSkillByName('xixingdafa') || {name:'xixingdafa', displayName:'吸星大法', level:2, callCount:18, exp:40, displayRole:'外→内吸收'};
+        var exportSkill = findSkillByName('beiming-shengong') || {name:'beiming-shengong', displayName:'北冥神功', level:2, callCount:12, exp:35, displayRole:'内→外导出'};
+        var absorbNodeHtml = createDemoNode(absorbSkill, '吸星大法', '外部技能吸收·内化', 'absorb');
+        var guideNodeHtml = guideSkill ? createDemoNode(guideSkill, '小无相功', '功法合一：导航·修炼·详报·进化', 'guide') : createDemoNode({name:'formless-power',displayName:'小无相功',level:3,callCount:25}, '小无相功', '功法合一：导航·修炼·详报·进化', 'guide');
+        var exportNodeHtml = createDemoNode(exportSkill, '北冥神功', '能力打包·身份融合导出', 'export');
         
         // 核心能力节点
         var executionNodeHtml = executionSkill ? createDemoNode(executionSkill, '一次做对', 'P1→P0→P2质量保障', 'execution') : '';
@@ -399,7 +400,8 @@ function renderSkillTechTree(container, skills) {
         'reasoning': 'engine-node--meta-reasoning',
         'execution': 'engine-node--meta-execution',
         'collaboration': 'engine-node--meta-collaboration',
-        'expression': 'engine-node--meta-expression'
+        'expression': 'engine-node--meta-expression',
+        'guardian': 'engine-node--meta-guardian'
     };
     // 维度→颜色映射（与CSS变体一致）
     var dimColorMap = {
@@ -407,7 +409,8 @@ function renderSkillTechTree(container, skills) {
         'reasoning': '#a78bfa',
         'execution': '#5ec4d4',
         'collaboration': '#fbbf24',
-        'expression': '#5ec4d4'
+        'expression': '#5ec4d4',
+        'guardian': '#f87171'
     };
 
     function renderSkillNodes(skills, dimRole) {
@@ -428,14 +431,15 @@ function renderSkillTechTree(container, skills) {
                 'reasoning': '推理维度',
                 'execution': '执行维度',
                 'collaboration': '协作维度',
-                'expression': '表达维度'
+                'expression': '表达维度',
+                'guardian': '守护维度'
             };
             var roleText = s.displayRole || roleMap[s.role] || '元能力';
             
-            var freqBadge = s.frequency ? '<span class="engine-node-freq">' + s.frequency + '</span>' : '';
+            // L2元能力层不显示频率标签（保持节点高度一致）
             html += '<div class="engine-node ' + dimClass + '" style="--node-color:' + dimColor + ';" onmouseenter="showTreeTooltip(event, \'' + id + '\', \'skill\')" onmouseleave="hideTooltip()">' +
                 '<div class="engine-node-ring"><svg viewBox="0 0 22 22"><circle class="ring-bg" cx="11" cy="11" r="8"/><circle class="ring-progress" cx="11" cy="11" r="8" stroke-dasharray="50" stroke-dashoffset="' + dash + '" style="stroke:' + dimColor + ';"/></svg><span class="engine-node-level">' + level + '</span></div>' +
-                '<div class="engine-node-info"><span class="engine-node-name">' + name + '</span><span class="engine-node-role">' + roleText + '</span>' + freqBadge + '</div>' +
+                '<div class="engine-node-info"><span class="engine-node-name">' + name + '</span><span class="engine-node-role">' + roleText + '</span></div>' +
             '</div>';
         }
         return html;
@@ -454,16 +458,17 @@ function renderSkillTechTree(container, skills) {
     thinkingRows += renderDimRow(perceptionCat, '👁️', '感知', 'perception');
     thinkingRows += renderDimRow(reasoningCat, '🧠', '推理', 'reasoning');
 
-    // 做事方法（执行+协作+表达）
+    // 做事方法（执行+协作+表达+守护）
     var actionRows = '';
     actionRows += renderDimRow(executionCat, '🎯', '执行', 'execution');
     actionRows += renderDimRow(collaborationCat, '🤝', '协作', 'collaboration');
     actionRows += renderDimRow(expressionCat, '📝', '表达', 'expression');
+    actionRows += renderDimRow(guardianCat, '🛡️', '守护', 'guardian');
 
     var dimHtml = '<div class="l2-bifurcated">' +
-        '<div class="l2-col"><div class="l2-col-title"><span>💡 思维方法</span><span class="l2-col-count">感知 · 推理 · 5技能</span></div>' + thinkingRows + '</div>' +
+        '<div class="l2-col"><div class="l2-col-title"><span>💡 思维方法</span><span class="l2-col-count">感知 · 推理 · 6技能</span></div>' + thinkingRows + '</div>' +
         '<div class="l2-divider"></div>' +
-        '<div class="l2-col"><div class="l2-col-title"><span>⚡ 做事方法</span><span class="l2-col-count">执行 · 协作 · 表达 · 5技能</span></div>' + actionRows + '</div>' +
+        '<div class="l2-col"><div class="l2-col-title"><span>⚡ 做事方法</span><span class="l2-col-count">执行 · 协作 · 表达 · 守护 · 7技能</span></div>' + actionRows + '</div>' +
     '</div>';
     
     function renderLayerTransition(text) {
@@ -532,7 +537,7 @@ function renderSkillTechTree(container, skills) {
     container.innerHTML = '<div class="skill-architecture">' +
         engineHtml +
         renderLayerTransition('引擎驱动元能力') +
-        '<div class="meta-layer"><div class="meta-layer-label"><span class="meta-label-icon">🧠</span><span class="meta-label-text">L2 元能力层</span><span class="meta-label-desc">思维方法 · 做事方法 · 10技能</span></div><div class="meta-layer-content">' + dimHtml + '</div></div>' +
+        '<div class="meta-layer"><div class="meta-layer-label"><span class="meta-label-icon">🧠</span><span class="meta-label-text">L2 元能力层</span><span class="meta-label-desc">思维方法 · 做事方法 · 12技能</span></div><div class="meta-layer-content">' + dimHtml + '</div></div>' +
         renderLayerTransition('元能力驱动领域能力') +
         domainHtml +
         renderLayerTransition('领域可调用工具技能') +

@@ -2261,6 +2261,18 @@
 .engine-node--meta-expression .ring-progress { stroke: #5ec4d4; }
 .engine-node--meta-expression .engine-node-level { color: #5ec4d4; }
 
+/* 守护维度 */
+.engine-node--meta-guardian {
+    border-color: rgba(248, 113, 113, 0.35);
+    background: linear-gradient(135deg, rgba(248, 113, 113, 0.08), rgba(16, 12, 28, 0.95));
+}
+.engine-node--meta-guardian:hover {
+    border-color: rgba(248, 113, 113, 0.7);
+    box-shadow: 0 0 12px rgba(248, 113, 113, 0.25), 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+.engine-node--meta-guardian .ring-progress { stroke: #f87171; }
+.engine-node--meta-guardian .engine-node-level { color: #f87171; }
+
 /* 子维度块 — 紧凑版 */
 /* L2 五维平铺行 */
 /* L2 双栏布局：思维方法 | 做事方法 */

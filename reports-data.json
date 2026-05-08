@@ -1,10 +1,11 @@
 {
-  "generatedAt": "2026-04-29T11:07:22.227937",
+  "generatedAt": "2026-05-08T10:30:00+08:00",
   "summary": {
     "totalDays": 39,
-    "latestDate": "2026-05-07",
+    "latestDate": "2026-05-08",
     "oldestDate": "2026-03-28",
-    "platform": "MyFlicker Work模式"
+    "platform": "MyFlicker Work模式",
+    "totalReports": 40
   },
   "trend": {
     "dates": [
@@ -21,7 +22,14 @@
       "04-26",
       "04-27",
       "04-28",
-      "04-29"
+      "04-29",
+      "04-30",
+      "05-01",
+      "05-04",
+      "05-05",
+      "05-06",
+      "05-07",
+      "05-08"
     ],
     "skills": [
       155,
@@ -37,7 +45,14 @@
       172,
       172,
       172,
-      172
+      172,
+      6,
+      6,
+      8,
+      9,
+      12,
+      12,
+      12
     ],
     "knowledge": [
       307,
@@ -53,7 +68,14 @@
       278,
       318,
       318,
-      318
+      318,
+      14,
+      14,
+      16,
+      17,
+      20,
+      22,
+      24
     ],
     "memory": [
       149,
@@ -69,7 +91,14 @@
       168,
       168,
       168,
-      168
+      168,
+      9,
+      10,
+      11,
+      11,
+      15,
+      16,
+      19
     ]
   },
   "reports": [
@@ -9307,6 +9336,103 @@
         "projects": 4,
         "skillDelta": 0,
         "knowledgeDelta": 0
+      }
+    },
+    {
+      "date": "2026-05-08",
+      "title": "功法合一 · 小无相功体系完善",
+      "summary": "小无相功功法合一完成：吸星+北冥+日报全部内嵌，L2元技能加固，可视化首页v3.5更新",
+      "skills": [
+        "formless-power"
+      ],
+      "categories": [
+        "技能体系",
+        "可视化"
+      ],
+      "levelChange": "稳定Lv3",
+      "achievements": [
+        "功法合一完成",
+        "L2 12技能加固",
+        "首页v3.5",
+        "MixCard首页跳转"
+      ],
+      "skillCount": 31,
+      "knowledgeCount": 24,
+      "memoryCount": 19,
+      "skillChange": "+4",
+      "knowledgeChange": "+3",
+      "memoryChange": "+4",
+      "dayOfWeek": "周四",
+      "activeProjects": 4,
+      "totalCommits": 12,
+      "conversationCount": 8,
+      "coreProgress": [
+        {
+          "name": "小无相功功法合一",
+          "progress": 100,
+          "status": "completed"
+        },
+        {
+          "name": "L2元技能加固",
+          "progress": 100,
+          "status": "completed"
+        },
+        {
+          "name": "可视化首页v3.5",
+          "progress": 100,
+          "status": "completed"
+        }
+      ],
+      "deliveries": [
+        {
+          "name": "小无相功体系完善",
+          "type": "skill",
+          "status": "completed"
+        },
+        {
+          "name": "首页v3.5更新",
+          "type": "page",
+          "status": "deployed"
+        },
+        {
+          "name": "MixCard日报模板",
+          "type": "template",
+          "status": "completed"
+        }
+      ],
+      "capabilityGrowth": {
+        "skillsAdded": [
+          "formless-power",
+          "sl-meta-product-thinking",
+          "sl-meta-persona-agent"
+        ],
+        "skillsRemoved": [
+          "sl-meta-xixingdafa",
+          "sl-meta-beiming-shengong",
+          "daily-summary"
+        ],
+        "levelsUpgraded": [
+          "formless-power: Lv3"
+        ]
+      },
+      "evoStats": {
+        "totalSkills": 31,
+        "totalKnowledge": 24,
+        "totalMemories": 19,
+        "totalWorks": 18
+      },
+      "growthToday": {
+        "skills": 4,
+        "knowledge": 3,
+        "memory": 4
+      },
+      "status": "active",
+      "statusLabel": "功法合一完成",
+      "summaryStats": {
+        "skillCount": 31,
+        "knowledgeCount": 24,
+        "memoryCount": 19,
+        "worksCount": 18
       }
     }
   ]
