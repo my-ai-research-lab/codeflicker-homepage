@@ -170,57 +170,26 @@
     "totalConversations": 420
   },
   "skills": {
-    "total": 33,
+    "total": 31,
     "categories": {
       "⚡ 引擎层": {
         "skills": [
           {
-            "name": "sl-meta-xiaowuxianggong",
-            "displayName": "进化导航",
+            "name": "formless-power",
+            "displayName": "Formless Power",
             "displayRole": "体系导航+可视化+健康监控",
             "source": "林克核心能力",
             "level": 3,
             "exp": 59,
-            "description": "导航整个元技能体系、触发周/月反思、展示体系全貌、维护首页与数据管道健康",
+            "description": "Formless Power · 功法合一：导航·吸收·导出·修炼·详报",
             "lastUpdated": "2026-05-07",
             "platform": "Work",
             "platformLabel": "⚡",
             "tag": "Link",
             "callCount": 25,
             "frequency": "2次/月",
-            "successRate": 78
-          },
-          {
-            "name": "sl-meta-xixingdafa",
-            "displayName": "吸星大法",
-            "displayRole": "外部吸收",
-            "source": "林克核心能力",
-            "level": 3,
-            "exp": 56,
-            "description": "从外部生态搜索→评估→提取精华→融入体系",
-            "lastUpdated": "2026-05-06",
-            "platform": "Work",
-            "platformLabel": "⚡",
-            "tag": "Link",
-            "callCount": 8,
-            "frequency": "1次/月",
-            "successRate": 75
-          },
-          {
-            "name": "sl-meta-beiming-shengong",
-            "displayName": "北冥神功",
-            "displayRole": "能力导出",
-            "source": "林克核心能力",
-            "level": 3,
-            "exp": 56,
-            "description": "技能/知识/记忆打包导出，能力可流动身份不流出",
-            "lastUpdated": "2026-05-06",
-            "platform": "Work",
-            "platformLabel": "⚡",
-            "tag": "Link",
-            "callCount": 3,
-            "frequency": "低频",
-            "successRate": 60
+            "successRate": 78,
+            "id": "formless-power"
           },
           {
             "name": "evo-meta-execution",
@@ -271,22 +240,6 @@
             "successRate": 80
           },
           {
-            "name": "evo-product-thinking",
-            "displayName": "产品思维",
-            "displayRole": "所有交付物都是产品",
-            "source": "系统级",
-            "level": 3,
-            "exp": 45,
-            "description": "所有交付物都是产品，顺用户的意而非按我的来",
-            "lastUpdated": "2026-05-07",
-            "platform": "Root",
-            "platformLabel": "🔒 系统级",
-            "tag": "Link",
-            "callCount": 35,
-            "frequency": "每周",
-            "successRate": 80
-          },
-          {
             "name": "evo-knowledge-base",
             "displayName": "知识检索",
             "displayRole": "知识库内容检索",
@@ -319,7 +272,7 @@
             "successRate": 70
           }
         ],
-        "description": "自进化闭环 — 修炼→复盘→吸收→导出→导航→质量保障"
+        "description": "驱动自进化循环的核心引擎 · 6技能"
       },
       "🧠 元能力层": {
         "skills": [
@@ -336,7 +289,9 @@
             "callCount": 35,
             "frequency": "每周",
             "successRate": 90,
-            "lastUpdated": "2026-05-07"
+            "lastUpdated": "2026-05-07",
+            "dimension": "感知",
+            "dimensionIcon": "👁️"
           },
           {
             "name": "sl-meta-signal-extractor",
@@ -351,7 +306,9 @@
             "callCount": 28,
             "frequency": "2次/月",
             "successRate": 85,
-            "lastUpdated": "2026-05-07"
+            "lastUpdated": "2026-05-07",
+            "dimension": "感知",
+            "dimensionIcon": "👁️"
           },
           {
             "name": "sl-meta-analogy-transfer",
@@ -366,7 +323,9 @@
             "callCount": 10,
             "frequency": "2次/月",
             "successRate": 71,
-            "lastUpdated": "2026-05-07"
+            "lastUpdated": "2026-05-07",
+            "dimension": "推理",
+            "dimensionIcon": "🧠"
           },
           {
             "name": "sl-meta-uncertainty-marker",
@@ -381,21 +340,26 @@
             "callCount": 5,
             "frequency": "1次/月",
             "successRate": 70,
-            "lastUpdated": "2026-05-07"
+            "lastUpdated": "2026-05-07",
+            "dimension": "守护",
+            "dimensionIcon": "🛡️"
           },
           {
-            "name": "sl-meta-essence-insight",
+            "name": "evo-essence-insight",
             "displayName": "本质洞察",
-            "displayRole": "五层洞察",
+            "displayRole": "推理·五层洞察闭环",
             "description": "L1表象→L2本质→L3映射→L4演变→L5预测",
-            "platform": "Work",
-            "platformLabel": "⚡",
+            "platform": "Root",
+            "platformLabel": "🔒 系统级",
             "tag": "Link",
             "level": 2,
             "exp": 30,
             "callCount": 20,
             "frequency": "3次/月",
-            "successRate": 80
+            "successRate": 80,
+            "dimension": "推理",
+            "dimensionIcon": "🧠",
+            "source": "系统级"
           },
           {
             "name": "sl-meta-boundary-sense",
@@ -410,7 +374,9 @@
             "callCount": 15,
             "frequency": "2次/月",
             "successRate": 72,
-            "lastUpdated": "2026-05-07"
+            "lastUpdated": "2026-05-07",
+            "dimension": "执行",
+            "dimensionIcon": "⚙️"
           },
           {
             "name": "sl-meta-debug-pro",
@@ -425,7 +391,9 @@
             "callCount": 5,
             "frequency": "1次/月",
             "successRate": 70,
-            "lastUpdated": "2026-05-07"
+            "lastUpdated": "2026-05-07",
+            "dimension": "执行",
+            "dimensionIcon": "⚙️"
           },
           {
             "name": "sl-meta-trust-builder",
@@ -440,7 +408,9 @@
             "callCount": 5,
             "frequency": "1次/月",
             "successRate": 70,
-            "lastUpdated": "2026-05-07"
+            "lastUpdated": "2026-05-07",
+            "dimension": "协作",
+            "dimensionIcon": "🤝"
           },
           {
             "name": "evo-knowledge-acquisition-meta",
@@ -456,7 +426,9 @@
             "tag": "Link",
             "callCount": 8,
             "frequency": "1次/月",
-            "successRate": 75
+            "successRate": 75,
+            "dimension": "推理",
+            "dimensionIcon": "🧠"
           },
           {
             "name": "sl-meta-expression-design",
@@ -472,10 +444,60 @@
             "tag": "Link",
             "callCount": 18,
             "frequency": "每周",
-            "successRate": 82
+            "successRate": 82,
+            "dimension": "表达",
+            "dimensionIcon": "📝"
+          },
+          {
+            "id": "sl-meta-product-thinking",
+            "name": "sl-meta-product-thinking",
+            "level": 3,
+            "dimension": "推理",
+            "dimensionIcon": "🧠",
+            "description": "元技能-产品思维 | 从能做到→该做吗·登楼撤梯·边界感",
+            "tags": [
+              "元技能",
+              "推理",
+              "产品"
+            ],
+            "displayName": "产品思维",
+            "displayRole": "推理·从能做到→该做吗",
+            "platform": "Work",
+            "platformLabel": "⚡",
+            "tag": "Link",
+            "exp": 45,
+            "callCount": 12,
+            "frequency": "2次/月",
+            "successRate": 78,
+            "lastUpdated": "2026-05-08",
+            "source": "林克核心能力"
+          },
+          {
+            "id": "sl-meta-persona-agent",
+            "name": "sl-meta-persona-agent",
+            "level": 1,
+            "dimension": "协作",
+            "dimensionIcon": "🤝",
+            "description": "元技能-人格化Agent | 多视角碰撞·模拟审阅·专项教练",
+            "tags": [
+              "元技能",
+              "协作",
+              "人格化"
+            ],
+            "displayName": "人格化Agent",
+            "displayRole": "协作·多视角碰撞·模拟审阅",
+            "platform": "Work",
+            "platformLabel": "⚡",
+            "tag": "Link",
+            "exp": 15,
+            "callCount": 3,
+            "frequency": "1次/月",
+            "successRate": 70,
+            "lastUpdated": "2026-05-08",
+            "source": "林克核心能力"
           }
         ],
-        "description": "六维分型 — 感知·推理·执行·协作·表达"
+        "description": "跨场景复用的元能力框架 · 六维12技能"
       },
       "⚔️ 领域层": {
         "skills": [
@@ -632,21 +654,6 @@
             "successRate": 95
           },
           {
-            "name": "daily-summary",
-            "displayName": "每日总结",
-            "displayRole": "工作详报",
-            "description": "MyFlicker每日工作详报生成器",
-            "platform": "Work",
-            "platformLabel": "⚡",
-            "tag": "Link",
-            "level": 3,
-            "exp": 55,
-            "callCount": 30,
-            "frequency": "每周",
-            "successRate": 90,
-            "lastUpdated": "2026-05-07"
-          },
-          {
             "name": "sl-zelda-ui",
             "displayName": "Zelda UI",
             "displayRole": "塞尔达风格",
@@ -691,7 +698,7 @@
             "successRate": 85
           }
         ],
-        "description": "五域 — 洞察·写作·通信·生活·视觉"
+        "description": "垂直题域的专业技能包 · 13技能"
       }
     },
     "tree": {
@@ -699,15 +706,15 @@
         "name": "⚡ 引擎层",
         "icon": "⚡",
         "color": "#7ec8e3",
-        "description": "自进化内核 — 导航→修炼→复盘→吸收→导出，驱动持续进化",
+        "description": "自进化内核 — 导航→修炼→复盘→吸收→导出→详报，6步闭环",
         "layerTag": "L1",
         "flow": {
           "type": "cycle",
           "nodes": [
             {
               "id": "guide",
-              "skill": "sl-meta-xiaowuxianggong",
-              "label": "进化导航"
+              "skill": "formless-power",
+              "label": "小无相功(功法合一)"
             },
             {
               "id": "cultivate",
@@ -721,13 +728,18 @@
             },
             {
               "id": "absorb",
-              "skill": "sl-meta-xixingdafa",
-              "label": "吸星大法"
+              "skill": "formless-power",
+              "label": "吸收(吸星大法)"
             },
             {
               "id": "export",
-              "skill": "sl-meta-beiming-shengong",
-              "label": "北冥神功"
+              "skill": "formless-power",
+              "label": "导出(北冥神功)"
+            },
+            {
+              "id": "report",
+              "skill": "formless-power",
+              "label": "每日详报"
             }
           ],
           "edges": [
@@ -754,23 +766,35 @@
             {
               "from": "export",
               "to": "guide",
-              "label": "更新导航视图",
+              "label": "更新导航+首页",
+              "type": "feedback"
+            },
+            {
+              "from": "export",
+              "to": "report",
+              "label": "导出后详报"
+            },
+            {
+              "from": "report",
+              "to": "guide",
+              "label": "详报→更新首页",
               "type": "feedback"
             }
-          ]
+          ],
+          "description": "导航→修炼→复盘→吸收→导出→详报，6步闭环驱动持续进化"
         },
         "children": {
           "🔄 自进化内核": {
             "role": "evolution",
             "icon": "🔄",
             "color": "#7ec8e3",
-            "description": "导航→修炼→复盘→吸收→导出，5步闭环",
+            "description": "导航→修炼→复盘→吸收→导出→详报，6步闭环",
             "skills": [
               {
-                "name": "sl-meta-xiaowuxianggong",
-                "displayName": "进化导航",
-                "displayRole": "体系导航+反思触发",
-                "description": "导航整个元技能体系、触发周/月反思。只做导航，不做执行。",
+                "name": "formless-power",
+                "displayName": "小无相功",
+                "displayRole": "功法合一：导航·吸收·导出·修炼·详报",
+                "description": "导航·吸收·导出·修炼·详报，一功统摄。功法合一后的唯一入口。",
                 "platform": "Work",
                 "platformLabel": "⚡",
                 "tag": "Link",
@@ -806,10 +830,10 @@
                 "lastUpdated": "2026-03-19"
               },
               {
-                "name": "sl-meta-xixingdafa",
-                "displayName": "吸星大法",
-                "displayRole": "外部吸收",
-                "description": "从外部生态搜索→评估→提取精华→融入体系。",
+                "name": "formless-power",
+                "displayName": "吸星大法(内嵌)",
+                "displayRole": "外部吸收模块",
+                "description": "从外部生态搜索→评估→提取精华→融入体系。作为小无相功的内嵌子模块。",
                 "platform": "Work",
                 "platformLabel": "⚡",
                 "tag": "Link",
@@ -819,10 +843,10 @@
                 "lastUpdated": "2026-05-06"
               },
               {
-                "name": "sl-meta-beiming-shengong",
-                "displayName": "北冥神功",
-                "displayRole": "能力导出",
-                "description": "技能/知识/记忆打包导出。能力可流动，身份不流出。",
+                "name": "formless-power",
+                "displayName": "北冥神功(内嵌)",
+                "displayRole": "能力导出模块",
+                "description": "技能打包导出，能力可流动，身份不流出。作为小无相功的内嵌子模块。",
                 "platform": "Work",
                 "platformLabel": "⚡",
                 "tag": "Link",
@@ -832,14 +856,28 @@
                 "lastUpdated": "2026-05-06"
               },
               {
-                "name": "sl-system-dashboard",
-                "displayName": "系统仪表盘",
+                "name": "formless-power",
+                "displayName": "可视化首页(内嵌)",
                 "level": 2,
                 "exp": 40,
                 "tag": "Link",
-                "description": "技能体系仪表盘 — 查看整套系统的状态、技能拓扑、数据管道健康度",
+                "description": "游戏风格RPG首页，展示技能等级、日报、进化日志。作为小无相功的内嵌子模块。",
                 "source": "林克核心能力",
-                "lastUpdated": "2026-05-07"
+                "lastUpdated": "2026-05-07",
+                "displayRole": "状态可视化模块"
+              },
+              {
+                "name": "formless-power",
+                "displayName": "每日详报(内嵌)",
+                "displayRole": "日报推送+首页同步模块",
+                "description": "每日定时推送日报MixCard(含首页按钮)，同步更新可视化首页。",
+                "platform": "Work",
+                "platformLabel": "⚡",
+                "tag": "Link",
+                "level": 2,
+                "exp": 30,
+                "source": "林克核心能力",
+                "lastUpdated": "2026-05-08"
               }
             ]
           }
@@ -1116,7 +1154,7 @@
             "skills": [
               "sl-investment-tracker",
               "sl-weekly-fortune",
-              "daily-summary"
+              "formless-power-report"
             ]
           },
           "🎨 视觉域": {
@@ -1487,7 +1525,7 @@
     "relationships": {
       "engine_flow": [
         {
-          "from": "meta-xiaowuxianggong",
+          "from": "meta-formless-power",
           "to": "meta-daily-reflection-evolution",
           "label": "导航",
           "type": "navigate"
@@ -1541,23 +1579,19 @@
           "type": "delegate"
         },
         {
-          "from": "meta-xiaowuxianggong",
-          "to": "meta-xixingdafa",
+          "from": "meta-formless-power",
+          "to": "formless-power-absorb",
           "label": "外部吸收",
           "type": "navigate"
         },
         {
-          "from": "meta-xiaowuxianggong",
-          "to": "meta-beiming-shengong",
+          "from": "meta-formless-power",
+          "to": "formless-power-export",
           "label": "能力导出",
           "type": "navigate"
         }
       ],
       "engine_roles": {
-        "meta-xiaowuxianggong": {
-          "role": "Bootloader",
-          "tier": "guide"
-        },
         "meta-daily-reflection-evolution": {
           "role": "Core",
           "tier": "core"
@@ -1594,13 +1628,11 @@
           "role": "技能修炼",
           "tier": "technique"
         },
-        "meta-xixingdafa": {
-          "role": "外部吸收",
-          "tier": "technique"
-        },
-        "meta-beiming-shengong": {
-          "role": "能力导出",
-          "tier": "technique"
+        "formless-power": {
+          "role": "中枢导航",
+          "tier": "guide",
+          "name": "小无相功(功法合一)",
+          "description": "导航·吸收·导出·修炼·详报，一功统摄"
         }
       },
       "cognitive_note": "独立的认知框架，贯穿所有任务",
@@ -4537,7 +4569,7 @@
                 "description": "吸星大法模式D缺失两个P0步骤（经验#72） 问题描述 模式D执行时，出现了两个需要用户二次提醒才修正的问题： 1. 命名不规范：直...",
                 "keywords": [
                   "吸星大法",
-                  "link-xixingdafa",
+                  "link-formless-power-absorb",
                   "命名规范",
                   "遗漏检查",
                   "模式D"
@@ -5342,7 +5374,7 @@
       "rarity": "rare"
     },
     {
-      "id": "xiaowuxianggong",
+      "id": "formless-power",
       "name": "小无相功",
       "icon": "🥋",
       "desc": "解锁自进化引擎，建立导航→修炼→复盘→吸收→导出的完整闭环",

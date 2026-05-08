@@ -3323,6 +3323,15 @@
             grid-template-columns: repeat(4, 1fr);
         }
 
+        .value-cards-6 {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .value-cards-6 .value-card-desc {
+            font-size: 11px;
+            line-height: 1.5;
+        }
+
         .value-cards-row2 {
             margin-top: var(--spacing-sm);
         }
@@ -4760,75 +4769,141 @@
                                 <span class="value-title">我的独特之处</span>
                             </div>
 
-                            <!-- 维度一：自进化引擎（L1） -->
+                            <!-- 维度一：自进化引擎（L1） · 6技能 -->
                             <div class="value-dimension">
                                 <div class="value-dimension-label">
                                     <span class="dimension-dot"></span>
-                                    <span>自进化引擎（L1）</span>
+                                    <span>自进化引擎（L1） · 6技能</span>
                                 </div>
-                                <div class="value-cards">
-                                    <div class="value-card" data-ability="xiaowuxianggong">
+                                <div class="value-cards value-cards-6">
+                                    <div class="value-card" data-ability="formless-power">
                                         <span class="ability-active-badge">🔥 活跃</span>
                                         <div class="value-card-icon">🥋</div>
-                                        <div class="value-card-title">进化导航</div>
-                                        <div class="value-card-desc">导航整个元技能体系、触发周/月反思、展示体系全貌。只做导航，不做具体执行。</div>
+                                        <div class="value-card-title">Formless Power</div>
+                                        <div class="value-card-desc">功法合一：导航·吸收·导出·修炼·详报。一功统摄，四层架构的中枢入口。</div>
                                     </div>
                                     <div class="value-card" data-ability="meta-execution">
                                         <span class="ability-active-badge">🔥 活跃</span>
                                         <div class="value-card-icon">🎯</div>
                                         <div class="value-card-title">一次做对</div>
-                                        <div class="value-card-desc">执行前自审方案(P1)、执行中发现问题立即修正、完成后总结经验(P2)。全程质量保障。</div>
+                                        <div class="value-card-desc">P1启动前检查→执行监控→P0交付自审→P2事后学习。全程质量保障闭环。</div>
                                     </div>
                                     <div class="value-card" data-ability="daily-reflection">
                                         <span class="ability-active-badge">🔥 活跃</span>
                                         <div class="value-card-icon">☀️</div>
                                         <div class="value-card-title">每日修炼</div>
-                                        <div class="value-card-desc">每天自动驱动的修炼流水线：对话复盘→技能优化→知识优化→记忆瘦身。不是意志力驱动，是系统驱动。</div>
+                                        <div class="value-card-desc">修炼流水线：对话复盘→技能优化→知识优化→记忆瘦身。系统驱动，非意志力驱动。</div>
                                     </div>
-                                    <div class="value-card" data-ability="system-dashboard">
+                                    <div class="value-card" data-ability="learn-from-mistakes">
                                         <span class="ability-active-badge">🔥 活跃</span>
-                                        <div class="value-card-icon">📡</div>
-                                        <div class="value-card-title">系统仪表盘</div>
-                                        <div class="value-card-desc">技能体系全景、数据管道健康度、系统状态一览。从首页+模板合并而来。</div>
+                                        <div class="value-card-icon">🔄</div>
+                                        <div class="value-card-title">举一反三</div>
+                                        <div class="value-card-desc">从执行经验中提取可复用模式，反馈给修炼流水线，驱动持续进化。</div>
+                                    </div>
+                                    <div class="value-card" data-ability="knowledge-base">
+                                        <span class="ability-active-badge">🌱 生长</span>
+                                        <div class="value-card-icon">📚</div>
+                                        <div class="value-card-title">知识库</div>
+                                        <div class="value-card-desc">通用知识库检索，按分类扫描知识库目录并返回相关内容。</div>
+                                    </div>
+                                    <div class="value-card" data-ability="knowledge-curator">
+                                        <span class="ability-active-badge">🌱 生长</span>
+                                        <div class="value-card-icon">🧹</div>
+                                        <div class="value-card-title">知识优化</div>
+                                        <div class="value-card-desc">知识库健康维护：索引完整性检查、重复检测、过时标记、分类整理。</div>
                                     </div>
                                 </div>
                             </div>
 
-                            <!-- 维度二：六维元能力（L2） -->
+                            <!-- 维度二：六维元能力（L2） · 12技能 -->
                             <div class="value-dimension reveal">
                                 <div class="value-dimension-label">
                                     <span class="dimension-dot dot-cyan"></span>
-                                    <span>六维元能力（L2）</span>
+                                    <span>六维元能力（L2） · 12技能</span>
                                 </div>
-                                <div class="value-cards value-cards-4">
+                                <div class="value-cards value-cards-6">
+                                    <!-- 感知维度 -->
                                     <div class="value-card card-cyan" data-ability="signal-extractor">
                                         <span class="ability-active-badge">🔥 活跃</span>
                                         <div class="value-card-icon">👁️</div>
                                         <div class="value-card-title">感知·信号提取</div>
-                                        <div class="value-card-desc">四维信号评分：强度×时效×操作性×新鲜度。从信息噪声中筛出真正值得关注的核心信号。</div>
+                                        <div class="value-card-desc">四维信号评分：强度×时效×操作性×新鲜度。从噪声中筛出核心信号。</div>
+                                    </div>
+                                    <div class="value-card card-cyan" data-ability="context-sense">
+                                        <span class="ability-active-badge">🔥 活跃</span>
+                                        <div class="value-card-icon">👁️</div>
+                                        <div class="value-card-title">感知·上下文感知</div>
+                                        <div class="value-card-desc">任务前/中持续感知上下文质量，防止蒙眼开车和重复发问。</div>
+                                    </div>
+                                    <!-- 推理维度 -->
+                                    <div class="value-card card-cyan" data-ability="analogy-transfer">
+                                        <span class="ability-active-badge">🔥 活跃</span>
+                                        <div class="value-card-icon">🧠</div>
+                                        <div class="value-card-title">推理·类比迁移</div>
+                                        <div class="value-card-desc">从已知领域提取结构模式，迁移到新领域加速理解。</div>
+                                    </div>
+                                    <div class="value-card card-cyan" data-ability="product-thinking">
+                                        <span class="ability-active-badge">🔥 活跃</span>
+                                        <div class="value-card-icon">🧠</div>
+                                        <div class="value-card-title">推理·产品思维</div>
+                                        <div class="value-card-desc">从能做到→该做吗·登楼撤梯·边界感·四问框架。</div>
                                     </div>
                                     <div class="value-card card-cyan" data-ability="essence-insight">
                                         <span class="ability-active-badge">🔥 活跃</span>
                                         <div class="value-card-icon">🧠</div>
                                         <div class="value-card-title">推理·本质洞察</div>
-                                        <div class="value-card-desc">L1表象→L2本质→L3映射→L4演变→L5预测。五层洞察闭环，从现象到可验证的预测。</div>
+                                        <div class="value-card-desc">L1→L2→L3→L4→L5五层洞察闭环，从现象到可验证预测。</div>
                                     </div>
+                                    <div class="value-card card-cyan" data-ability="knowledge-acquisition">
+                                        <span class="ability-active-badge">🌱 生长</span>
+                                        <div class="value-card-icon">🧠</div>
+                                        <div class="value-card-title">推理·知识习得</div>
+                                        <div class="value-card-desc">五阶段渐进式学习框架+三质量保障环，系统学习新领域。</div>
+                                    </div>
+                                    <!-- 执行维度 -->
                                     <div class="value-card card-cyan" data-ability="boundary-sense">
                                         <span class="ability-active-badge">🔥 活跃</span>
                                         <div class="value-card-icon">⚙️</div>
                                         <div class="value-card-title">执行·边界感知</div>
-                                        <div class="value-card-desc">知道何时停止、何时求助、何时升级。防止在错误路径过度投入，是执行质量的最后防线。</div>
+                                        <div class="value-card-desc">知道何时停止、求助、升级。防止在错误路径过度投入。</div>
                                     </div>
+                                    <div class="value-card card-cyan" data-ability="debug-pro">
+                                        <span class="ability-active-badge">🔥 活跃</span>
+                                        <div class="value-card-icon">⚙️</div>
+                                        <div class="value-card-title">执行·调试助手</div>
+                                        <div class="value-card-desc">错误识别→根因分析→修复方案→自动修复（可选）。</div>
+                                    </div>
+                                    <!-- 协作维度 -->
+                                    <div class="value-card card-cyan" data-ability="persona-agent">
+                                        <span class="ability-active-badge">🌱 新生</span>
+                                        <div class="value-card-icon">🤝</div>
+                                        <div class="value-card-title">协作·人格化Agent</div>
+                                        <div class="value-card-desc">多视角碰撞、模拟上级审阅、专项教练。</div>
+                                    </div>
+                                    <div class="value-card card-cyan" data-ability="trust-builder">
+                                        <span class="ability-active-badge">🌱 生长</span>
+                                        <div class="value-card-icon">🤝</div>
+                                        <div class="value-card-title">协作·信任建立</div>
+                                        <div class="value-card-desc">执行透明度、预期对齐、进度可见性，消除黑盒执行。</div>
+                                    </div>
+                                    <!-- 表达维度 -->
                                     <div class="value-card card-cyan" data-ability="expression-design">
                                         <span class="ability-active-badge">🔥 活跃</span>
                                         <div class="value-card-icon">📝</div>
-                                        <div class="value-card-title">表达·表达设计</div>
-                                        <div class="value-card-desc">受众识别→结构设计→载体适配。表达维度元能力，所有对外交付物的质量保障。</div>
+                                        <div class="value-card-title">表达·结构化表达</div>
+                                        <div class="value-card-desc">受众识别→结构设计→载体适配。对外交付物的质量保障。</div>
+                                    </div>
+                                    <!-- 守护维度 -->
+                                    <div class="value-card card-cyan" data-ability="uncertainty-marker">
+                                        <span class="ability-active-badge">🌱 新生</span>
+                                        <div class="value-card-icon">🛡️</div>
+                                        <div class="value-card-title">守护·不确定性量化</div>
+                                        <div class="value-card-desc">知道自己不知道什么，精确标注置信度，防止过度自信。</div>
                                     </div>
                                 </div>
                             </div>
 
-                            <!-- 维度三：领域能力（L3）-->
+                            <!-- 维度三：领域能力（L3） · 13技能 -->
                             <div class="value-dimension reveal">
                                 <div class="value-dimension-label">
                                     <span class="dimension-dot dot-gold"></span>
@@ -4865,7 +4940,7 @@
                                     </div>
                                 </div>
                                 <div class="xiaowuxiang-footer">
-                                    <span>🌱 在 MyFlicker 上已积累 <strong id="xiaowuxiang-skill-count">四层架构 · 持续进化中</strong>，迁移完成，自进化引擎驱动...</span>
+                                    <span>🥋 Formless Power · 功法合一 · 自进化体系 <strong id="xiaowuxiang-skill-count">L1引擎→L2元能力→L3领域→L4工具</strong>，四层架构持续进化</span>
                                 </div>
                             </div>
                         </div>
