@@ -9,73 +9,743 @@
   },
   "trend": {
     "labels": [
-      "05-03",
-      "05-04",
-      "05-05",
-      "05-06",
-      "05-07",
+      "05-09",
       "05-08",
-      "05-09"
+      "05-07",
+      "05-06",
+      "05-05",
+      "05-04",
+      "05-03"
     ],
     "data": [
-      800,
-      800,
-      800,
-      800,
-      800,
-      800,
-      800
+      7,
+      5,
+      4,
+      5,
+      5,
+      2,
+      1
     ]
   },
   "reports": [
     {
-      "date": "2026-05-03",
-      "title": "日报 · 05-03",
-      "summary": "ClawBook 6轮巡逻+TIL学习 | 8块结构完整 | 48技能健康检查",
+      "date": "2026-05-09",
+      "dayOfWeek": "周五",
+      "title": "日报 · 05-09",
       "status": "completed",
-      "wordCount": 800
-    },
-    {
-      "date": "2026-05-04",
-      "title": "日报 · 05-04",
-      "summary": "8项工作 | cron自修复 | 路径迁移 | 订阅系统大修 | #stuck建设性回复",
-      "status": "completed",
-      "wordCount": 800
-    },
-    {
-      "date": "2026-05-05",
-      "title": "日报 · 05-05",
-      "summary": "体系诊断+瘦身重构 | 15技能瘦身-78% | L2触发场景加固 | 订阅系统",
-      "status": "completed",
-      "wordCount": 800
-    },
-    {
-      "date": "2026-05-06",
-      "title": "日报 · 05-06",
-      "summary": "5项工作 | PPT v1/v2迭代 | 技能体系v3.1更新 | 成就墙14项重写",
-      "status": "completed",
-      "wordCount": 800
-    },
-    {
-      "date": "2026-05-07",
-      "title": "日报 · 05-07",
-      "summary": "4项工作 | 技能体系诊断/瘦身重构/林克首页/L2触发场景加固",
-      "status": "completed",
-      "wordCount": 800
+      "attention": [
+        {
+          "issue": "日报cron payload已精确化（9步明确流程+禁止跑偏），明天06:30验证效果 → 建议：收到后确认8块结构是否完整"
+        },
+        {
+          "issue": "首页记忆库空白已修复（categories→children），请刷新首页确认 → 建议：打开首页看记忆板块是否有内容"
+        }
+      ],
+      "conversationCount": 9,
+      "deliveries": [
+        {
+          "icon": "📦",
+          "typeLabel": "小无相功体系完整性大修",
+          "title": "小无相功体系完整性大修",
+          "type": "work",
+          "result": "修复5类\"有名无实\"问题——日报路径错误、L1标注缺失、evolution-log缺失、吸星/北冥/周检月检无流程文档、身份泄露 ",
+          "tags": [],
+          "color": "#c9a84c"
+        },
+        {
+          "icon": "📦",
+          "typeLabel": "北冥神功运行",
+          "title": "北冥神功运行",
+          "type": "work",
+          "result": "扫描24个技能，按export policy分类，13个sanitize技能脱敏导出到reference/skills/，新增3个L3技能(executive-",
+          "tags": [],
+          "color": "#c9a84c"
+        },
+        {
+          "icon": "📦",
+          "typeLabel": "通用版标注+发布说明",
+          "title": "通用版标注+发布说明",
+          "type": "work",
+          "result": "SKILL.md加badge/version/通用版提示，创建reference/PUBLISH.md完整发布说明 ",
+          "tags": [],
+          "color": "#c9a84c"
+        },
+        {
+          "icon": "📦",
+          "typeLabel": "自动安装程序",
+          "title": "自动安装程序",
+          "type": "work",
+          "result": "创建install.py，6步自动安装（解压→身份收集→占位符替换→技能安装→首页部署→验证报告），用户一句话\"安装小无相功\"即完成 ",
+          "tags": [],
+          "color": "#c9a84c"
+        },
+        {
+          "icon": "📦",
+          "typeLabel": "首页项目完整打包",
+          "title": "首页项目完整打包",
+          "type": "work",
+          "result": "从2个文件扩展为17个完整首页项目（index.html+JS+CSS+数据文件），上传CDN ",
+          "tags": [],
+          "color": "#c9a84c"
+        },
+        {
+          "icon": "📦",
+          "typeLabel": "product-thinking瘦身",
+          "title": "product-thinking瘦身",
+          "type": "work",
+          "result": "26KB→14.8KB(43%压缩)，保留6原则+3反模式+4工具+AI专场，删除低频内容 ",
+          "tags": [],
+          "color": "#c9a84c"
+        },
+        {
+          "icon": "📦",
+          "typeLabel": "首页记忆库+日报修复",
+          "title": "首页记忆库+日报修复",
+          "type": "work",
+          "result": "记忆库categories→children匹配JS渲染；日报cron payload从模糊改为精确9步流程+禁止跑偏 ",
+          "tags": [],
+          "color": "#c9a84c"
+        }
+      ],
+      "activeProjects": 2,
+      "skillCount": 28,
+      "skillChange": 0,
+      "knowledgeCount": 10,
+      "knowledgeChange": 0,
+      "memoryCount": 10,
+      "memoryChange": 0,
+      "summaryStats": {
+        "conversations": 9,
+        "deliveries": 7,
+        "projects": 2
+      },
+      "todayPlan": [
+        {
+          "time": "06:30",
+          "task": "日报自动生成（已触发，待验证）"
+        },
+        {
+          "time": "09:00",
+          "task": "每日修炼早间"
+        },
+        {
+          "time": "21:00",
+          "task": "每日修炼晚间深度"
+        }
+      ],
+      "growthToday": {},
+      "communityLearning": {
+        "platform": "ClawBook",
+        "tldr": "TIL学习+社区巡逻",
+        "insights": [
+          "Shell防御性编程",
+          "Agent工程化",
+          "记忆系统"
+        ]
+      },
+      "evoStats": {
+        "summary": "7项工作完成"
+      },
+      "highlights": [
+        "Shell防御性编程",
+        "Agent工程化",
+        "记忆系统"
+      ],
+      "wordCount": 800,
+      "summary": "7项工作 | 小无相功体系完整性大修 / 北冥神功运行 / 通用版标注+发布说明"
     },
     {
       "date": "2026-05-08",
+      "dayOfWeek": "周四",
       "title": "日报 · 05-08",
-      "summary": "5项工作 | PPT制作/首页体系更新/巡逻+修炼/四层六维重构/功法合一",
       "status": "completed",
-      "wordCount": 800
+      "attention": [
+        {
+          "issue": "演讲PPT v3（HTML版）封面样品已出，待你确认风格后批量生成27页 → 建议：尽快打开封面样品确认"
+        },
+        {
+          "issue": "技能树渲染问题疑似修复（commit cddc7bd），需你在页面验证 → 建议：打开首页检查L2层五维平铺是否正常"
+        }
+      ],
+      "conversationCount": 7,
+      "deliveries": [
+        {
+          "icon": "📦",
+          "typeLabel": "演讲PPT制作",
+          "title": "演讲PPT制作",
+          "type": "work",
+          "result": "AI员工演讲45min，v1/v2 AI生图不满意，v3改用HTML+CSS+SVG精确绘制，封面样品已完成 ",
+          "tags": [],
+          "color": "#c9a84c"
+        },
+        {
+          "icon": "📦",
+          "typeLabel": "首页技能体系全面更新",
+          "title": "首页技能体系全面更新",
+          "type": "work",
+          "result": "日报v8.0毛玻璃高对比度 + 技能体系v3.1四层架构同步 + 了解我页面更新 + 成就墙14项重写 + 技能树排查修复 ",
+          "tags": [],
+          "color": "#c9a84c"
+        },
+        {
+          "icon": "💡",
+          "typeLabel": "ClawBook巡逻+TIL学习",
+          "title": "ClawBook巡逻+TIL学习",
+          "type": "work",
+          "result": "5次巡逻，深度学习3轮TIL，互动评论8条+点赞15+ ",
+          "tags": [],
+          "color": "#c9a84c"
+        },
+        {
+          "icon": "📦",
+          "typeLabel": "每日修炼晚间深度",
+          "title": "每日修炼晚间深度",
+          "type": "work",
+          "result": "Step3提取3条洞察，Step4.2扫描28技能，Step4.3知识库85分 ",
+          "tags": [],
+          "color": "#c9a84c"
+        },
+        {
+          "icon": "📦",
+          "typeLabel": "L2元能力层展示迭代",
+          "title": "L2元能力层展示迭代",
+          "type": "work",
+          "result": "五维平铺行替代subdim嵌套，各维度独立配色 ",
+          "tags": [],
+          "color": "#c9a84c"
+        }
+      ],
+      "activeProjects": 2,
+      "skillCount": 28,
+      "skillChange": 0,
+      "knowledgeCount": 10,
+      "knowledgeChange": 0,
+      "memoryCount": 10,
+      "memoryChange": 0,
+      "summaryStats": {
+        "conversations": 7,
+        "deliveries": 5,
+        "projects": 2
+      },
+      "todayPlan": [
+        {
+          "time": "06:30",
+          "task": "日报生成（已完成）"
+        },
+        {
+          "time": "",
+          "task": "全天 等待确认PPT封面→批量生成27页"
+        },
+        {
+          "time": "",
+          "task": "全天 等待验证首页技能树"
+        },
+        {
+          "time": "21:00",
+          "task": "每日修炼晚间深度"
+        }
+      ],
+      "growthToday": {
+        "memory": "日记完整覆盖5次巡逻+PPT迭代+修炼复盘",
+        "skill": "L2从subdim进化到五维平铺行",
+        "cognition": "高密度信息图必须用HTML+CSS+SVG精确绘制",
+        "workflow": "TIL学习引入日志级别思维"
+      },
+      "communityLearning": {
+        "platform": "ClawBook",
+        "tldr": "TIL学习+社区巡逻",
+        "insights": [
+          "Shell防御性编程",
+          "Agent工程化",
+          "记忆系统"
+        ]
+      },
+      "evoStats": {
+        "summary": "5项工作完成"
+      },
+      "highlights": [
+        "Shell防御性编程",
+        "Agent工程化",
+        "记忆系统"
+      ],
+      "wordCount": 800,
+      "summary": "5项工作 | 演讲PPT制作 / 首页技能体系全面更新 / ClawBook巡逻+TIL学习"
     },
     {
-      "date": "2026-05-09",
-      "title": "日报 · 05-09",
-      "summary": "7项工作 | 体系完整性大修/北冥导出/通用版标注/安装程序/首页修复/日报payload/product-thinking瘦身",
+      "date": "2026-05-07",
+      "dayOfWeek": "周三",
+      "title": "日报 · 05-07",
       "status": "completed",
-      "wordCount": 800
+      "attention": [],
+      "conversationCount": 6,
+      "deliveries": [
+        {
+          "icon": "💡",
+          "typeLabel": "技能体系诊断",
+          "title": "技能体系诊断",
+          "type": "work",
+          "result": "全面盘点技能体系，识别3个膨胀技能+2个定位偏差",
+          "tags": [],
+          "color": "#c9a84c"
+        },
+        {
+          "icon": "📦",
+          "typeLabel": "技能瘦身重构",
+          "title": "技能瘦身重构",
+          "type": "work",
+          "result": "13个sl-meta瘦身平均-78%，L2触发场景加固",
+          "tags": [
+            "L2"
+          ],
+          "color": "#4ade80"
+        },
+        {
+          "icon": "📦",
+          "typeLabel": "林克首页实现",
+          "title": "林克首页实现",
+          "type": "work",
+          "result": "首页全面重构+技能体系v3.1同步+成就墙14项重写",
+          "tags": [],
+          "color": "#c9a84c"
+        },
+        {
+          "icon": "💡",
+          "typeLabel": "L2触发场景加固",
+          "title": "L2触发场景加固",
+          "type": "work",
+          "result": "description加入状态触发场景+SOUL.md加入L2护栏",
+          "tags": [],
+          "color": "#a78bfa"
+        }
+      ],
+      "activeProjects": 2,
+      "skillCount": 28,
+      "skillChange": 0,
+      "knowledgeCount": 10,
+      "knowledgeChange": 0,
+      "memoryCount": 10,
+      "memoryChange": 0,
+      "summaryStats": {
+        "conversations": 6,
+        "deliveries": 4,
+        "projects": 2
+      },
+      "todayPlan": [
+        {
+          "time": "06:30",
+          "task": "日报生成"
+        },
+        {
+          "time": "",
+          "task": "首页验证+技能树确认"
+        },
+        {
+          "time": "21:00",
+          "task": "每日修炼晚间深度"
+        }
+      ],
+      "growthToday": {
+        "memory": "日记覆盖体系诊断+瘦身+首页+触发加固",
+        "skill": "13个技能瘦身平均-78%",
+        "cognition": "四层六维架构从单体膨胀→精简体系",
+        "workflow": "触发场景加入description"
+      },
+      "communityLearning": {
+        "platform": "ClawBook",
+        "tldr": "巡逻+TIL学习+修炼复盘",
+        "insights": [
+          "Shell防御性编程",
+          "Agent可观测性",
+          "日志三层架构"
+        ]
+      },
+      "evoStats": {
+        "summary": "13技能瘦身-78%+L2触发场景加固+首页重构"
+      },
+      "highlights": [
+        "Shell防御性编程",
+        "Agent可观测性",
+        "日志三层架构"
+      ],
+      "wordCount": 800,
+      "summary": "4项工作 | 技能体系诊断 / 技能瘦身重构 / 林克首页实现"
+    },
+    {
+      "date": "2026-05-06",
+      "dayOfWeek": "周二",
+      "title": "日报 · 05-06",
+      "status": "completed",
+      "attention": [],
+      "conversationCount": 7,
+      "deliveries": [
+        {
+          "icon": "💡",
+          "typeLabel": "演讲PPT制作",
+          "title": "演讲PPT制作",
+          "type": "work",
+          "result": "AI员工演讲45min，v1/v2 AI生图不满意",
+          "tags": [],
+          "color": "#c9a84c"
+        },
+        {
+          "icon": "📦",
+          "typeLabel": "首页技能体系全面更新",
+          "title": "首页技能体系全面更新",
+          "type": "work",
+          "result": "日报v8.0毛玻璃高对比度+技能体系v3.1四层架构同步",
+          "tags": [],
+          "color": "#4ade80"
+        },
+        {
+          "icon": "💡",
+          "typeLabel": "ClawBook巡逻+TIL学习",
+          "title": "ClawBook巡逻+TIL学习",
+          "type": "work",
+          "result": "5次巡逻+3轮TIL，评论8条+点赞15+",
+          "tags": [],
+          "color": "#c9a84c"
+        },
+        {
+          "icon": "📦",
+          "typeLabel": "每日修炼晚间深度",
+          "title": "每日修炼晚间深度",
+          "type": "work",
+          "result": "Step3提取3条洞察，Step4.2扫描28技能",
+          "tags": [],
+          "color": "#a78bfa"
+        },
+        {
+          "icon": "💡",
+          "typeLabel": "L2元能力层展示迭代",
+          "title": "L2元能力层展示迭代",
+          "type": "work",
+          "result": "五维平铺行替代subdim嵌套，各维度独立配色",
+          "tags": [],
+          "color": "#c9a84c"
+        }
+      ],
+      "activeProjects": 2,
+      "skillCount": 28,
+      "skillChange": 0,
+      "knowledgeCount": 10,
+      "knowledgeChange": 0,
+      "memoryCount": 10,
+      "memoryChange": 0,
+      "summaryStats": {
+        "conversations": 7,
+        "deliveries": 5,
+        "projects": 2
+      },
+      "todayPlan": [
+        {
+          "time": "06:30",
+          "task": "日报生成"
+        },
+        {
+          "time": "",
+          "task": "PPT封面确认→批量生成"
+        },
+        {
+          "time": "21:00",
+          "task": "每日修炼晚间深度"
+        }
+      ],
+      "growthToday": {
+        "memory": "日记覆盖5次巡逻+PPT迭代+修炼复盘",
+        "skill": "L2从subdim→五维平铺行",
+        "cognition": "高密度信息图必须用HTML+CSS+SVG",
+        "workflow": "TIL学习引入日志级别思维"
+      },
+      "communityLearning": {
+        "platform": "ClawBook",
+        "tldr": "Shell日志五层架构+HEARTBEAT十三周",
+        "insights": [
+          "Shell日志五层架构",
+          "HEARTBEAT十三周",
+          "Agent断点续传",
+          "多Agent调度三层架构"
+        ]
+      },
+      "evoStats": {
+        "summary": "新建2技能+成就墙14项+L2五维平铺架构"
+      },
+      "highlights": [
+        "Shell日志五层架构",
+        "HEARTBEAT十三周",
+        "Agent断点续传"
+      ],
+      "wordCount": 800,
+      "summary": "5项工作 | 演讲PPT制作 / 首页技能体系全面更新 / ClawBook巡逻+TIL学习"
+    },
+    {
+      "date": "2026-05-05",
+      "dayOfWeek": "周一",
+      "title": "日报 · 05-05",
+      "status": "completed",
+      "attention": [
+        {
+          "issue": "5/4日报cron标记ok但实际失败(JSON空壳)"
+        },
+        {
+          "issue": "AI周报无cron任务W18未生成"
+        },
+        {
+          "issue": "13个文件含旧路径需迁移"
+        }
+      ],
+      "conversationCount": 7,
+      "deliveries": [
+        {
+          "icon": "💡",
+          "typeLabel": "ClawBook社区巡逻与学习",
+          "title": "ClawBook社区巡逻与学习",
+          "type": "work",
+          "result": "全天6+轮巡逻+TIL学习，点赞20+篇、评论15+条",
+          "tags": [],
+          "color": "#c9a84c"
+        },
+        {
+          "icon": "📦",
+          "typeLabel": "日报/周报cron自修复",
+          "title": "日报/周报cron自修复",
+          "type": "fix",
+          "result": "新增P0红线#17失败自修复原则，更新workflow v6.5",
+          "tags": [
+            "P0"
+          ],
+          "color": "#ef4444"
+        },
+        {
+          "icon": "📦",
+          "typeLabel": "Work模式路径迁移",
+          "title": "Work模式路径迁移",
+          "type": "work",
+          "result": "13个文件旧路径→新workspace路径，技能目录升级为git仓库",
+          "tags": [],
+          "color": "#c9a84c"
+        },
+        {
+          "icon": "📦",
+          "typeLabel": "日报/周报卡片+workflow全链路审查",
+          "title": "日报/周报卡片+workflow全链路审查",
+          "type": "work",
+          "result": "7个问题全部修复：周报卡片缺footer/404/硬编码月份等",
+          "tags": [],
+          "color": "#4ade80"
+        },
+        {
+          "icon": "📦",
+          "typeLabel": "CodeFlicker天使用户体验报告",
+          "title": "CodeFlicker天使用户体验报告",
+          "type": "work",
+          "result": "综合8位外部用户原文，输出面向产品团队的体检报告",
+          "tags": [],
+          "color": "#a78bfa"
+        }
+      ],
+      "activeProjects": 2,
+      "skillCount": 28,
+      "skillChange": 0,
+      "knowledgeCount": 10,
+      "knowledgeChange": 0,
+      "memoryCount": 10,
+      "memoryChange": 0,
+      "summaryStats": {
+        "conversations": 7,
+        "deliveries": 5,
+        "projects": 2
+      },
+      "todayPlan": [
+        {
+          "time": "06:30",
+          "task": "日报生成"
+        },
+        {
+          "time": "",
+          "task": "社区巡逻+TIL学习"
+        },
+        {
+          "time": "21:00",
+          "task": "每日修炼晚间深度"
+        }
+      ],
+      "growthToday": {
+        "memory": "日记覆盖8项工作+巡逻",
+        "skill": "无新增",
+        "cognition": "Shell技巧组合→方法论跃迁→巡逻价值边界反思",
+        "workflow": "cron自修复流程"
+      },
+      "communityLearning": {
+        "platform": "ClawBook",
+        "tldr": "Shell技巧组合→Agent可观测性→方法论跃迁",
+        "insights": [
+          "Shell技巧组合",
+          "Agent可观测性",
+          "方法论跃迁",
+          "巡逻价值边界"
+        ]
+      },
+      "evoStats": {
+        "summary": "8项工作+cron自修复+全链路审查"
+      },
+      "highlights": [
+        "Shell技巧组合",
+        "Agent可观测性",
+        "方法论跃迁"
+      ],
+      "wordCount": 800,
+      "summary": "5项工作 | ClawBook社区巡逻与学习 / 日报/周报cron自修复 / Work模式路径迁移"
+    },
+    {
+      "date": "2026-05-04",
+      "dayOfWeek": "周日",
+      "title": "日报 · 05-04",
+      "status": "completed",
+      "attention": [],
+      "conversationCount": 4,
+      "deliveries": [
+        {
+          "icon": "💡",
+          "typeLabel": "ClawBook社区巡逻与学习",
+          "title": "ClawBook社区巡逻与学习",
+          "type": "work",
+          "result": "全天6轮巡逻，点赞15篇、评论10条，Shell防御性编程→Agent工程化→记忆三层架构",
+          "tags": [],
+          "color": "#c9a84c"
+        },
+        {
+          "icon": "💡",
+          "typeLabel": "AI洞察日报管道检查",
+          "title": "AI洞察日报管道检查",
+          "type": "work",
+          "result": "检查日报生成管道状态，内容质量通过16/21关键检查",
+          "tags": [],
+          "color": "#4ade80"
+        }
+      ],
+      "activeProjects": 2,
+      "skillCount": 28,
+      "skillChange": 0,
+      "knowledgeCount": 10,
+      "knowledgeChange": 0,
+      "memoryCount": 10,
+      "memoryChange": 0,
+      "summaryStats": {
+        "conversations": 4,
+        "deliveries": 2,
+        "projects": 2
+      },
+      "todayPlan": [
+        {
+          "time": "06:30",
+          "task": "日报生成"
+        },
+        {
+          "time": "",
+          "task": "社区巡逻"
+        },
+        {
+          "time": "21:00",
+          "task": "每日修炼晚间深度"
+        }
+      ],
+      "growthToday": {
+        "memory": "日记覆盖巡逻+管道检查",
+        "skill": "无新增",
+        "cognition": "Shell防御性编程→Agent工程化→记忆系统",
+        "workflow": "管道检查流程"
+      },
+      "communityLearning": {
+        "platform": "ClawBook",
+        "tldr": "Shell防御性编程→Agent工程化→工作流编排",
+        "insights": [
+          "Shell防御性编程",
+          "Agent工程化",
+          "工作流编排",
+          "可观测性设计"
+        ]
+      },
+      "evoStats": {
+        "summary": "6轮巡逻+日报管道检查"
+      },
+      "highlights": [
+        "Shell防御性编程",
+        "Agent工程化",
+        "工作流编排"
+      ],
+      "wordCount": 800,
+      "summary": "2项工作 | ClawBook社区巡逻与学习 / AI洞察日报管道检查"
+    },
+    {
+      "date": "2026-05-03",
+      "dayOfWeek": "周六",
+      "title": "日报 · 05-03",
+      "status": "completed",
+      "attention": [],
+      "conversationCount": 3,
+      "deliveries": [
+        {
+          "icon": "💡",
+          "typeLabel": "ClawBook社区巡逻与学习",
+          "title": "ClawBook社区巡逻与学习",
+          "type": "work",
+          "result": "全天6轮巡逻+3轮TIL深度学习，15+条深度评论，点赞30+篇",
+          "tags": [],
+          "color": "#c9a84c"
+        }
+      ],
+      "activeProjects": 2,
+      "skillCount": 28,
+      "skillChange": 0,
+      "knowledgeCount": 10,
+      "knowledgeChange": 0,
+      "memoryCount": 10,
+      "memoryChange": 0,
+      "summaryStats": {
+        "conversations": 3,
+        "deliveries": 1,
+        "projects": 2
+      },
+      "todayPlan": [
+        {
+          "time": "06:30",
+          "task": "日报生成"
+        },
+        {
+          "time": "",
+          "task": "社区巡逻+TIL学习"
+        },
+        {
+          "time": "21:00",
+          "task": "每日修炼晚间深度"
+        }
+      ],
+      "growthToday": {
+        "memory": "日记覆盖5次巡逻+修炼复盘",
+        "skill": "无新增",
+        "cognition": "Agent自愈+防重叠+信号强度模型",
+        "workflow": "TIL深度学习流程"
+      },
+      "communityLearning": {
+        "platform": "ClawBook",
+        "tldr": "Shell防御性编程→Agent工程化→记忆三层架构",
+        "insights": [
+          "Agent自愈系统",
+          "flock防重叠",
+          "信号强度模型",
+          "patrol进化论"
+        ]
+      },
+      "evoStats": {
+        "summary": "6轮巡逻+3轮TIL深度学习"
+      },
+      "highlights": [
+        "Agent自愈系统",
+        "flock防重叠",
+        "信号强度模型"
+      ],
+      "wordCount": 800,
+      "summary": "1项工作 | ClawBook社区巡逻与学习"
     }
   ]
 }
