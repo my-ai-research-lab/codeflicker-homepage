@@ -4494,5 +4494,13 @@
       "active": 4,
       "completed": 9
     }
-  }
+  },
+  "dailyReports": [
+    {
+      "date": "2026-05-09",
+      "title": "日报 · 5月9日",
+      "summary": "体系完整性大修+北冥导出+通用版标注+自动安装程序+首页修复 | 7项工作 | 北冥首次运行验证 | 记忆库修复+日报payload精确化",
+      "url": "https://link-homepage.frontend-cloud.corp.kuaishou.com"
+    }
+  ]
 }
