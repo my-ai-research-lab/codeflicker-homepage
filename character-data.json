@@ -3831,14 +3831,74 @@
             "layerTag": "L1-meta"
           }
         },
-        "count": 5
+        "count": 5,
+        "children": {
+          "user_identity": {
+            "label": "用户身份",
+            "icon": "👤",
+            "count": 1,
+            "items": [
+              {
+                "title": "用户画像",
+                "summary": "INTJ研发效能负责人，战略导向",
+                "category": "user_identity"
+              }
+            ],
+            "layerTag": "L1-meta"
+          },
+          "user_preferences": {
+            "label": "用户偏好",
+            "icon": "💡",
+            "count": 2,
+            "items": [
+              {
+                "title": "沟通偏好",
+                "summary": "简单坦诚高效，增量信息兴奋",
+                "category": "user_preferences"
+              },
+              {
+                "title": "产品思维偏好",
+                "summary": "登楼撤梯+Day0交付+边界感",
+                "category": "user_preferences"
+              }
+            ],
+            "layerTag": "L1-meta"
+          },
+          "methodology": {
+            "label": "思维方法",
+            "icon": "🧠",
+            "count": 1,
+            "items": [
+              {
+                "title": "以终为始+换位思考",
+                "summary": "价值→目标→方案→过程→细节",
+                "category": "methodology"
+              }
+            ],
+            "layerTag": "L1-meta"
+          },
+          "work_methods": {
+            "label": "做事方法",
+            "icon": "⚙️",
+            "count": 1,
+            "items": [
+              {
+                "title": "透明化+统合综效+ROI最大化",
+                "summary": "阳谋、多方诉求同时满足、一份时间多目标",
+                "category": "work_methods"
+              }
+            ],
+            "layerTag": "L1-meta"
+          }
+        }
       },
       "L2-domain": {
         "layerTag": "L2-domain",
         "label": "领域记忆层",
         "icon": "🎯",
         "categories": {},
-        "count": 0
+        "count": 0,
+        "children": {}
       },
       "L3-execution": {
         "layerTag": "L3-execution",
@@ -3898,7 +3958,61 @@
             "layerTag": "L3-execution"
           }
         },
-        "count": 4
+        "count": 4,
+        "children": {
+          "shell_defense": {
+            "label": "Shell防御编程",
+            "icon": "🛡️",
+            "count": 1,
+            "items": [
+              {
+                "title": "防御性脚本",
+                "summary": "引号包裹+错误处理+重试机制",
+                "category": "shell_defense"
+              }
+            ],
+            "layerTag": "L3-execution"
+          },
+          "publish_deploy": {
+            "label": "发布部署",
+            "icon": "🚀",
+            "count": 1,
+            "items": [
+              {
+                "title": "Git Credentials+SSH Key备份恢复",
+                "summary": "workspace备份→容器重建后恢复",
+                "category": "publish_deploy"
+              }
+            ],
+            "layerTag": "L3-execution"
+          },
+          "ai_insight_mem": {
+            "label": "AI洞察项目",
+            "icon": "🔍",
+            "count": 1,
+            "items": [
+              {
+                "title": "workflow v6.3+周报v3.0+踩坑v1.8",
+                "summary": "日报/周报完整生产链路",
+                "category": "ai_insight_mem"
+              }
+            ],
+            "layerTag": "L3-execution"
+          },
+          "community_mem": {
+            "label": "社区洞察",
+            "icon": "🌐",
+            "count": 1,
+            "items": [
+              {
+                "title": "三层知识流转+巡逻三境界",
+                "summary": "Tool→Method→Meta 知识流转结构",
+                "category": "community_mem"
+              }
+            ],
+            "layerTag": "L3-execution"
+          }
+        }
       }
     },
     "categories": {
