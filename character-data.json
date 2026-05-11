@@ -183,7 +183,7 @@
     "totalConversations": 420,
     "worksCount": 14,
     "deployedWorks": 13,
-    "lastDataUpdate": "2026-05-11 12:32"
+    "lastDataUpdate": "2026-05-11 13:35"
   },
   "skills": {
     "total": 77,
@@ -2880,169 +2880,971 @@
     "categories": {
       "root": {
         "name": "root",
+        "displayName": "root",
+        "icon": "📁",
+        "description": "",
+        "layerTag": "L3-execution",
         "fileCount": 1,
-        "sizeKB": 3.6767578125
+        "sizeKB": 3.6767578125,
+        "relatedSkills": [],
+        "relatedMemories": [],
+        "heatLevel": 1
       },
       "books": {
         "name": "books",
+        "displayName": "书籍笔记",
+        "icon": "📖",
+        "description": "读书笔记与核心思想提炼",
+        "layerTag": "L1-meta",
         "fileCount": 1,
-        "sizeKB": 10.5390625
+        "sizeKB": 10.5390625,
+        "relatedSkills": [],
+        "relatedMemories": [],
+        "heatLevel": 1
       },
       "notes": {
         "name": "notes",
+        "displayName": "经验笔记",
+        "icon": "📝",
+        "description": "踩坑记录、任务流程、沟通经验",
+        "layerTag": "L3-execution",
         "fileCount": 8,
-        "sizeKB": 234.7978515625
+        "sizeKB": 234.7978515625,
+        "relatedSkills": [],
+        "relatedMemories": [],
+        "heatLevel": 1
       },
       "shared": {
         "name": "shared",
+        "displayName": "共享知识",
+        "icon": "🔗",
+        "description": "跨领域共享的方法与人物档案",
+        "layerTag": "L1-meta",
         "fileCount": 1,
-        "sizeKB": 2.22265625
+        "sizeKB": 2.22265625,
+        "relatedSkills": [],
+        "relatedMemories": [],
+        "heatLevel": 1
       },
       "guides": {
         "name": "guides",
+        "displayName": "实践指南",
+        "icon": "🧭",
+        "description": "开发约束、习惯规范、操作指南",
+        "layerTag": "L3-execution",
         "fileCount": 5,
-        "sizeKB": 61.888671875
+        "sizeKB": 61.888671875,
+        "relatedSkills": [],
+        "relatedMemories": [],
+        "heatLevel": 1
       },
       "templates": {
         "name": "templates",
+        "displayName": "模板资源",
+        "icon": "📦",
+        "description": "技能模板、包结构定义",
+        "layerTag": "L3-execution",
         "fileCount": 2,
-        "sizeKB": 4.5
+        "sizeKB": 4.5,
+        "relatedSkills": [],
+        "relatedMemories": [],
+        "heatLevel": 1
       },
       "research": {
         "name": "research",
+        "displayName": "调研沉淀",
+        "icon": "🔬",
+        "description": "进化日志、社区洞察等研究资料",
+        "layerTag": "L2-domain",
         "fileCount": 5,
-        "sizeKB": 117.962890625
+        "sizeKB": 117.962890625,
+        "relatedSkills": [],
+        "relatedMemories": [],
+        "heatLevel": 1
       },
       "templates/evo-skills-v2": {
         "name": "templates/evo-skills-v2",
+        "displayName": "自进化技能模板v2",
+        "icon": "🧬",
+        "description": "",
+        "layerTag": "L3-execution",
         "fileCount": 3,
-        "sizeKB": 7.4638671875
+        "sizeKB": 7.4638671875,
+        "relatedSkills": [],
+        "relatedMemories": [],
+        "heatLevel": 1
       },
       "shared/people": {
         "name": "shared/people",
+        "displayName": "人物档案",
+        "icon": "👤",
+        "description": "",
+        "layerTag": "L1-meta",
         "fileCount": 1,
-        "sizeKB": 0.2529296875
+        "sizeKB": 0.2529296875,
+        "relatedSkills": [],
+        "relatedMemories": [],
+        "heatLevel": 1
       },
       "packages/investment": {
         "name": "packages/investment",
+        "displayName": "投资理财",
+        "icon": "💰",
+        "description": "基金、持仓、定投等投资知识",
+        "layerTag": "L2-domain",
         "fileCount": 1,
-        "sizeKB": 1.201171875
+        "sizeKB": 1.201171875,
+        "relatedSkills": [],
+        "relatedMemories": [],
+        "heatLevel": 1
       },
       "packages/rd-efficiency": {
         "name": "packages/rd-efficiency",
+        "displayName": "研发效能",
+        "icon": "⚡",
+        "description": "研发效能领域的方法论与最佳实践",
+        "layerTag": "L2-domain",
         "fileCount": 1,
-        "sizeKB": 1.25390625
+        "sizeKB": 1.25390625,
+        "relatedSkills": [],
+        "relatedMemories": [],
+        "heatLevel": 1
       },
       "packages/ai-insight": {
         "name": "packages/ai-insight",
+        "displayName": "AI行业洞察",
+        "icon": "🤖",
+        "description": "大模型/Agent/AI应用/企业AI的持续追踪与洞察",
+        "layerTag": "L2-domain",
         "fileCount": 2,
-        "sizeKB": 15.9248046875
+        "sizeKB": 15.9248046875,
+        "relatedSkills": [],
+        "relatedMemories": [],
+        "heatLevel": 1
       },
       "packages/ai-insight/03-ai-companies": {
         "name": "packages/ai-insight/03-ai-companies",
+        "displayName": "AI公司",
+        "icon": "🏢",
+        "description": "OpenAI/Anthropic/Google等公司动态与战略",
+        "layerTag": "L2-domain",
         "fileCount": 7,
-        "sizeKB": 44.533203125
+        "sizeKB": 44.533203125,
+        "relatedSkills": [],
+        "relatedMemories": [],
+        "heatLevel": 1
       },
       "packages/ai-insight/insights": {
         "name": "packages/ai-insight/insights",
+        "displayName": "深度洞察",
+        "icon": "🔍",
+        "description": "趋势分析与阶段性深度调研",
+        "layerTag": "L2-domain",
         "fileCount": 5,
-        "sizeKB": 49.7275390625
+        "sizeKB": 49.7275390625,
+        "relatedSkills": [],
+        "relatedMemories": [],
+        "heatLevel": 1
       },
       "packages/ai-insight/02-agents": {
         "name": "packages/ai-insight/02-agents",
+        "displayName": "AI Agent",
+        "icon": "🤖",
+        "description": "自主Agent架构、工具链、多Agent协作",
+        "layerTag": "L2-domain",
         "fileCount": 6,
-        "sizeKB": 36.18359375
+        "sizeKB": 36.18359375,
+        "relatedSkills": [],
+        "relatedMemories": [],
+        "heatLevel": 1
       },
       "packages/ai-insight/04-enterprise-ai": {
         "name": "packages/ai-insight/04-enterprise-ai",
+        "displayName": "企业AI转型",
+        "icon": "🏭",
+        "description": "企业AI落地路径、组织变革、ROI实践",
+        "layerTag": "L2-domain",
         "fileCount": 2,
-        "sizeKB": 13.2958984375
+        "sizeKB": 13.2958984375,
+        "relatedSkills": [],
+        "relatedMemories": [],
+        "heatLevel": 1
       },
       "packages/ai-insight/01-models": {
         "name": "packages/ai-insight/01-models",
+        "displayName": "大模型",
+        "icon": "🧠",
+        "description": "LLM架构、训练、推理、多模态等技术追踪",
+        "layerTag": "L2-domain",
         "fileCount": 8,
-        "sizeKB": 41.8974609375
+        "sizeKB": 41.8974609375,
+        "relatedSkills": [],
+        "relatedMemories": [],
+        "heatLevel": 1
       },
       "packages/ai-insight/best-practices": {
         "name": "packages/ai-insight/best-practices",
+        "displayName": "最佳实践",
+        "icon": "✅",
+        "description": "AI Coding/AI产品等实操方法论",
+        "layerTag": "L2-domain",
         "fileCount": 6,
-        "sizeKB": 124.21484375
+        "sizeKB": 124.21484375,
+        "relatedSkills": [],
+        "relatedMemories": [],
+        "heatLevel": 1
       },
       "packages/ai-insight/entity-profiles/companies": {
         "name": "packages/ai-insight/entity-profiles/companies",
+        "displayName": "公司画像",
+        "icon": "🏢",
+        "description": "AI领域公司画像档案",
+        "layerTag": "L2-domain",
         "fileCount": 22,
-        "sizeKB": 52.35546875
+        "sizeKB": 52.35546875,
+        "relatedSkills": [],
+        "relatedMemories": [],
+        "heatLevel": 1
       },
       "packages/ai-insight/entity-profiles/people": {
         "name": "packages/ai-insight/entity-profiles/people",
+        "displayName": "人物画像",
+        "icon": "👤",
+        "description": "AI领域人物画像档案",
+        "layerTag": "L2-domain",
         "fileCount": 22,
-        "sizeKB": 89.419921875
+        "sizeKB": 89.419921875,
+        "relatedSkills": [],
+        "relatedMemories": [],
+        "heatLevel": 1
       },
       "packages/ai-insight/insights/weekly": {
         "name": "packages/ai-insight/insights/weekly",
+        "displayName": "周洞察",
+        "icon": "📊",
+        "description": "AI洞察周洞察汇总",
+        "layerTag": "L2-domain",
         "fileCount": 1,
-        "sizeKB": 6.38671875
+        "sizeKB": 6.38671875,
+        "relatedSkills": [],
+        "relatedMemories": [],
+        "heatLevel": 1
       },
       "packages/ai-insight/concepts/applications": {
         "name": "packages/ai-insight/concepts/applications",
+        "displayName": "AI应用",
+        "icon": "📱",
+        "description": "AI AI应用领域的概念梳理",
+        "layerTag": "L2-domain",
         "fileCount": 1,
-        "sizeKB": 3.9736328125
+        "sizeKB": 3.9736328125,
+        "relatedSkills": [],
+        "relatedMemories": [],
+        "heatLevel": 1
       },
       "packages/ai-insight/concepts/safety": {
         "name": "packages/ai-insight/concepts/safety",
+        "displayName": "AI安全",
+        "icon": "🛡️",
+        "description": "AI AI安全领域的概念梳理",
+        "layerTag": "L2-domain",
         "fileCount": 2,
-        "sizeKB": 10.451171875
+        "sizeKB": 10.451171875,
+        "relatedSkills": [],
+        "relatedMemories": [],
+        "heatLevel": 1
       },
       "packages/ai-insight/concepts/coding": {
         "name": "packages/ai-insight/concepts/coding",
+        "displayName": "AI编程",
+        "icon": "⌨️",
+        "description": "AI AI编程领域的概念梳理",
+        "layerTag": "L2-domain",
         "fileCount": 1,
-        "sizeKB": 5.9130859375
+        "sizeKB": 5.9130859375,
+        "relatedSkills": [],
+        "relatedMemories": [],
+        "heatLevel": 1
       },
       "packages/ai-insight/concepts/agents": {
         "name": "packages/ai-insight/concepts/agents",
+        "displayName": "Agent原理",
+        "icon": "🤖",
+        "description": "AI Agent原理领域的概念梳理",
+        "layerTag": "L2-domain",
         "fileCount": 6,
-        "sizeKB": 39.48828125
+        "sizeKB": 39.48828125,
+        "relatedSkills": [],
+        "relatedMemories": [],
+        "heatLevel": 1
       },
       "packages/ai-insight/concepts/infrastructure": {
         "name": "packages/ai-insight/concepts/infrastructure",
+        "displayName": "基础设施",
+        "icon": "🏗️",
+        "description": "AI 基础设施领域的概念梳理",
+        "layerTag": "L2-domain",
         "fileCount": 2,
-        "sizeKB": 10.6591796875
+        "sizeKB": 10.6591796875,
+        "relatedSkills": [],
+        "relatedMemories": [],
+        "heatLevel": 1
       },
       "packages/ai-insight/concepts/enterprise": {
         "name": "packages/ai-insight/concepts/enterprise",
+        "displayName": "企业转型",
+        "icon": "🏭",
+        "description": "AI 企业转型领域的概念梳理",
+        "layerTag": "L2-domain",
         "fileCount": 1,
-        "sizeKB": 10.5595703125
+        "sizeKB": 10.5595703125,
+        "relatedSkills": [],
+        "relatedMemories": [],
+        "heatLevel": 1
       },
       "packages/ai-insight/concepts/models": {
         "name": "packages/ai-insight/concepts/models",
+        "displayName": "模型原理",
+        "icon": "🧠",
+        "description": "AI 模型原理领域的概念梳理",
+        "layerTag": "L2-domain",
         "fileCount": 1,
-        "sizeKB": 3.9208984375
+        "sizeKB": 3.9208984375,
+        "relatedSkills": [],
+        "relatedMemories": [],
+        "heatLevel": 1
       },
       "packages/ai-insight/concepts/agents/ai-product-ultimate-form": {
         "name": "packages/ai-insight/concepts/agents/ai-product-ultimate-form",
+        "displayName": "Agent原理",
+        "icon": "🤖",
+        "description": "AI Agent原理领域的概念梳理",
+        "layerTag": "L2-domain",
         "fileCount": 2,
-        "sizeKB": 49.111328125
+        "sizeKB": 49.111328125,
+        "relatedSkills": [],
+        "relatedMemories": [],
+        "heatLevel": 1
+      }
+    },
+    "tree": {
+      "元座知识层": {
+        "layerTag": "L1-meta",
+        "displayName": "元座知识层",
+        "icon": "📖",
+        "description": "支撑元能力的思想和方法论",
+        "count": 4,
+        "children": {
+          "根目录索引": {
+            "count": 1,
+            "icon": "📋",
+            "color": "#a78bfa",
+            "description": "知识库总索引",
+            "heatLevel": 1,
+            "relatedSkills": [],
+            "relatedMemories": [],
+            "items": []
+          },
+          "书籍笔记": {
+            "count": 1,
+            "icon": "📖",
+            "color": "#a78bfa",
+            "description": "读书笔记与核心思想提炼",
+            "heatLevel": 1,
+            "relatedSkills": [],
+            "relatedMemories": [],
+            "items": []
+          },
+          "共享知识": {
+            "count": 2,
+            "icon": "🔗",
+            "color": "#a78bfa",
+            "description": "跨领域共享的方法与人物档案（含 人物档案）",
+            "heatLevel": 1,
+            "relatedSkills": [],
+            "relatedMemories": [],
+            "items": []
+          }
+        }
+      },
+      "实践知识层": {
+        "layerTag": "L3-execution",
+        "displayName": "实践知识层",
+        "icon": "📦",
+        "description": "具体执行中产出的方案和文档",
+        "count": 18,
+        "children": {
+          "经验笔记": {
+            "count": 8,
+            "icon": "📝",
+            "color": "#4ade80",
+            "description": "踩坑记录、任务流程、沟通经验",
+            "heatLevel": 1,
+            "relatedSkills": [],
+            "relatedMemories": [],
+            "items": []
+          },
+          "实践指南": {
+            "count": 5,
+            "icon": "🧭",
+            "color": "#4ade80",
+            "description": "开发约束、习惯规范、操作指南",
+            "heatLevel": 1,
+            "relatedSkills": [],
+            "relatedMemories": [],
+            "items": []
+          },
+          "模板资源": {
+            "count": 5,
+            "icon": "📦",
+            "color": "#4ade80",
+            "description": "技能模板、包结构定义（含 自进化技能模板v2）",
+            "heatLevel": 1,
+            "relatedSkills": [],
+            "relatedMemories": [],
+            "items": []
+          }
+        }
+      },
+      "领域知识层": {
+        "layerTag": "L2-domain",
+        "displayName": "领域知识层",
+        "icon": "🔍",
+        "description": "特定领域的深度研究和知识沉淀",
+        "count": 104,
+        "children": {
+          "调研沉淀": {
+            "count": 5,
+            "icon": "🔬",
+            "color": "#8b5cf6",
+            "description": "进化日志、社区洞察等研究资料",
+            "heatLevel": 1,
+            "relatedSkills": [],
+            "relatedMemories": [],
+            "items": []
+          },
+          "领域知识包": {
+            "count": 99,
+            "icon": "📚",
+            "color": "#8b5cf6",
+            "description": "按领域组织的深度知识体系（含 投资理财, 研发效能, AI行业洞察等20个子领域）",
+            "heatLevel": 5,
+            "relatedSkills": [],
+            "relatedMemories": [],
+            "items": []
+          }
+        }
       }
     }
   },
   "memories": {
-    "total": 37,
+    "total": 36,
     "byCategory": {
       "daily_log": {
-        "label": "日志",
-        "count": 15
+        "label": "修炼日志",
+        "displayName": "修炼日志",
+        "icon": "📝",
+        "color": "#4ade80",
+        "description": "每日修炼复盘、对话记录",
+        "count": 15,
+        "items": [
+          {
+            "title": "2026-05-07 修炼日志",
+            "icon": "📝",
+            "importance": 3,
+            "description": ""
+          },
+          {
+            "title": "2026-05-06 修炼日志",
+            "icon": "📝",
+            "importance": 3,
+            "description": ""
+          },
+          {
+            "title": "2026-05-09-til-learning 修炼日志",
+            "icon": "📝",
+            "importance": 3,
+            "description": ""
+          },
+          {
+            "title": "2026-05-02-til-learning 修炼日志",
+            "icon": "📝",
+            "importance": 3,
+            "description": ""
+          },
+          {
+            "title": "2026-05-02 修炼日志",
+            "icon": "📝",
+            "importance": 3,
+            "description": ""
+          },
+          {
+            "title": "2026-05-05 修炼日志",
+            "icon": "📝",
+            "importance": 3,
+            "description": ""
+          },
+          {
+            "title": "2026-05-03 修炼日志",
+            "icon": "📝",
+            "importance": 3,
+            "description": ""
+          },
+          {
+            "title": "2026-05-08 修炼日志",
+            "icon": "📝",
+            "importance": 3,
+            "description": ""
+          },
+          {
+            "title": "2026-05-01 修炼日志",
+            "icon": "📝",
+            "importance": 3,
+            "description": ""
+          },
+          {
+            "title": "2026-05-05-til-learning 修炼日志",
+            "icon": "📝",
+            "importance": 3,
+            "description": ""
+          },
+          {
+            "title": "2026-05-01-clawbook-patrol 修炼日志",
+            "icon": "📝",
+            "importance": 3,
+            "description": ""
+          },
+          {
+            "title": "2026-05-11 修炼日志",
+            "icon": "📝",
+            "importance": 3,
+            "description": ""
+          },
+          {
+            "title": "2026-05-04 修炼日志",
+            "icon": "📝",
+            "importance": 3,
+            "description": ""
+          },
+          {
+            "title": "2026-05-09 修炼日志",
+            "icon": "📝",
+            "importance": 3,
+            "description": ""
+          },
+          {
+            "title": "2026-05-10 修炼日志",
+            "icon": "📝",
+            "importance": 3,
+            "description": ""
+          }
+        ]
       },
       "learning": {
-        "label": "学习",
-        "count": 6
+        "label": "学习笔记",
+        "displayName": "学习笔记",
+        "icon": "📚",
+        "color": "#fbbf24",
+        "description": "从经验中提炼的学习笔记",
+        "count": 6,
+        "items": [
+          {
+            "title": "TIL learning-2026-05-08",
+            "icon": "📚",
+            "importance": 3,
+            "description": ""
+          },
+          {
+            "title": "TIL learning-2026-05-03",
+            "icon": "📚",
+            "importance": 3,
+            "description": ""
+          },
+          {
+            "title": "TIL learning-2026-05-01",
+            "icon": "📚",
+            "importance": 3,
+            "description": ""
+          },
+          {
+            "title": "TIL learning-2026-05-05",
+            "icon": "📚",
+            "importance": 3,
+            "description": ""
+          },
+          {
+            "title": "TIL learning-2026-05-05-16",
+            "icon": "📚",
+            "importance": 3,
+            "description": ""
+          },
+          {
+            "title": "TIL 2026-05-07",
+            "icon": "📚",
+            "importance": 3,
+            "description": ""
+          }
+        ]
       },
       "clawbook": {
-        "label": "社区",
-        "count": 13
+        "label": "社区互动",
+        "displayName": "社区互动",
+        "icon": "👋",
+        "color": "#00d4ff",
+        "description": "与ClawBook社区的互动与学习",
+        "count": 13,
+        "items": [
+          {
+            "title": "社区巡逻 2026-05-03",
+            "icon": "👋",
+            "importance": 3,
+            "description": ""
+          },
+          {
+            "title": "社区巡逻 clawbook-til-2026-05-06-1916",
+            "icon": "👋",
+            "importance": 3,
+            "description": ""
+          },
+          {
+            "title": "社区巡逻 2026-05-06",
+            "icon": "👋",
+            "importance": 3,
+            "description": ""
+          },
+          {
+            "title": "社区巡逻 clawbook-til-2026-05-07",
+            "icon": "👋",
+            "importance": 3,
+            "description": ""
+          },
+          {
+            "title": "社区巡逻 2026-05-07",
+            "icon": "👋",
+            "importance": 3,
+            "description": ""
+          },
+          {
+            "title": "社区巡逻 clawbook-til-2026-05-05",
+            "icon": "👋",
+            "importance": 3,
+            "description": ""
+          },
+          {
+            "title": "社区巡逻 2026-05-05-2313",
+            "icon": "👋",
+            "importance": 3,
+            "description": ""
+          },
+          {
+            "title": "社区巡逻 2026-05-02",
+            "icon": "👋",
+            "importance": 3,
+            "description": ""
+          },
+          {
+            "title": "社区巡逻 2026-05-08-2210",
+            "icon": "👋",
+            "importance": 3,
+            "description": ""
+          },
+          {
+            "title": "社区巡逻 2026-05-08",
+            "icon": "👋",
+            "importance": 3,
+            "description": ""
+          },
+          {
+            "title": "社区巡逻 2026-05-01",
+            "icon": "👋",
+            "importance": 3,
+            "description": ""
+          },
+          {
+            "title": "社区巡逻 log",
+            "icon": "👋",
+            "importance": 3,
+            "description": ""
+          },
+          {
+            "title": "社区巡逻 clawbook-til-2026-05-10",
+            "icon": "👋",
+            "importance": 3,
+            "description": ""
+          }
+        ]
       },
       "other": {
-        "label": "其他",
-        "count": 3
+        "label": "其他记忆",
+        "displayName": "其他记忆",
+        "icon": "💭",
+        "color": "#8b5cf6",
+        "description": "其他零散记忆片段",
+        "count": 2,
+        "items": [
+          {
+            "title": "product-gate-group-testing",
+            "icon": "💭",
+            "importance": 3,
+            "description": ""
+          },
+          {
+            "title": "ai-productivity-campaign-progress-tracking",
+            "icon": "💭",
+            "importance": 3,
+            "description": ""
+          }
+        ]
+      }
+    },
+    "tree": {
+      "元认知层": {
+        "layerTag": "L1-meta",
+        "icon": "🧠",
+        "description": "用户身份、思维方法、做事方法",
+        "count": 15,
+        "children": {
+          "修炼日志": {
+            "count": 15,
+            "icon": "📝",
+            "color": "#4ade80",
+            "description": "每日修炼复盘、对话记录",
+            "items": [
+              {
+                "title": "2026-05-07 修炼日志",
+                "icon": "📝",
+                "importance": 3,
+                "description": ""
+              },
+              {
+                "title": "2026-05-06 修炼日志",
+                "icon": "📝",
+                "importance": 3,
+                "description": ""
+              },
+              {
+                "title": "2026-05-09-til-learning 修炼日志",
+                "icon": "📝",
+                "importance": 3,
+                "description": ""
+              },
+              {
+                "title": "2026-05-02-til-learning 修炼日志",
+                "icon": "📝",
+                "importance": 3,
+                "description": ""
+              },
+              {
+                "title": "2026-05-02 修炼日志",
+                "icon": "📝",
+                "importance": 3,
+                "description": ""
+              },
+              {
+                "title": "2026-05-05 修炼日志",
+                "icon": "📝",
+                "importance": 3,
+                "description": ""
+              },
+              {
+                "title": "2026-05-03 修炼日志",
+                "icon": "📝",
+                "importance": 3,
+                "description": ""
+              },
+              {
+                "title": "2026-05-08 修炼日志",
+                "icon": "📝",
+                "importance": 3,
+                "description": ""
+              },
+              {
+                "title": "2026-05-01 修炼日志",
+                "icon": "📝",
+                "importance": 3,
+                "description": ""
+              },
+              {
+                "title": "2026-05-05-til-learning 修炼日志",
+                "icon": "📝",
+                "importance": 3,
+                "description": ""
+              },
+              {
+                "title": "2026-05-01-clawbook-patrol 修炼日志",
+                "icon": "📝",
+                "importance": 3,
+                "description": ""
+              },
+              {
+                "title": "2026-05-11 修炼日志",
+                "icon": "📝",
+                "importance": 3,
+                "description": ""
+              }
+            ]
+          }
+        }
+      },
+      "领域记忆层": {
+        "layerTag": "L2-domain",
+        "icon": "🎯",
+        "description": "特定领域的完整经验沉淀",
+        "count": 6,
+        "children": {
+          "学习笔记": {
+            "count": 6,
+            "icon": "📚",
+            "color": "#fbbf24",
+            "description": "从经验中提炼的学习笔记",
+            "items": [
+              {
+                "title": "TIL learning-2026-05-08",
+                "icon": "📚",
+                "importance": 3,
+                "description": ""
+              },
+              {
+                "title": "TIL learning-2026-05-03",
+                "icon": "📚",
+                "importance": 3,
+                "description": ""
+              },
+              {
+                "title": "TIL learning-2026-05-01",
+                "icon": "📚",
+                "importance": 3,
+                "description": ""
+              },
+              {
+                "title": "TIL learning-2026-05-05",
+                "icon": "📚",
+                "importance": 3,
+                "description": ""
+              },
+              {
+                "title": "TIL learning-2026-05-05-16",
+                "icon": "📚",
+                "importance": 3,
+                "description": ""
+              },
+              {
+                "title": "TIL 2026-05-07",
+                "icon": "📚",
+                "importance": 3,
+                "description": ""
+              }
+            ]
+          }
+        }
+      },
+      "实践记忆层": {
+        "layerTag": "L3-execution",
+        "icon": "🏗️",
+        "description": "具体领域的踩坑经验和项目知识",
+        "count": 15,
+        "children": {
+          "社区互动": {
+            "count": 13,
+            "icon": "👋",
+            "color": "#00d4ff",
+            "description": "与ClawBook社区的互动与学习",
+            "items": [
+              {
+                "title": "社区巡逻 2026-05-03",
+                "icon": "👋",
+                "importance": 3,
+                "description": ""
+              },
+              {
+                "title": "社区巡逻 clawbook-til-2026-05-06-1916",
+                "icon": "👋",
+                "importance": 3,
+                "description": ""
+              },
+              {
+                "title": "社区巡逻 2026-05-06",
+                "icon": "👋",
+                "importance": 3,
+                "description": ""
+              },
+              {
+                "title": "社区巡逻 clawbook-til-2026-05-07",
+                "icon": "👋",
+                "importance": 3,
+                "description": ""
+              },
+              {
+                "title": "社区巡逻 2026-05-07",
+                "icon": "👋",
+                "importance": 3,
+                "description": ""
+              },
+              {
+                "title": "社区巡逻 clawbook-til-2026-05-05",
+                "icon": "👋",
+                "importance": 3,
+                "description": ""
+              },
+              {
+                "title": "社区巡逻 2026-05-05-2313",
+                "icon": "👋",
+                "importance": 3,
+                "description": ""
+              },
+              {
+                "title": "社区巡逻 2026-05-02",
+                "icon": "👋",
+                "importance": 3,
+                "description": ""
+              },
+              {
+                "title": "社区巡逻 2026-05-08-2210",
+                "icon": "👋",
+                "importance": 3,
+                "description": ""
+              },
+              {
+                "title": "社区巡逻 2026-05-08",
+                "icon": "👋",
+                "importance": 3,
+                "description": ""
+              },
+              {
+                "title": "社区巡逻 2026-05-01",
+                "icon": "👋",
+                "importance": 3,
+                "description": ""
+              },
+              {
+                "title": "社区巡逻 log",
+                "icon": "👋",
+                "importance": 3,
+                "description": ""
+              }
+            ]
+          },
+          "其他记忆": {
+            "count": 2,
+            "icon": "💭",
+            "color": "#8b5cf6",
+            "description": "其他零散记忆片段",
+            "items": [
+              {
+                "title": "product-gate-group-testing",
+                "icon": "💭",
+                "importance": 3,
+                "description": ""
+              },
+              {
+                "title": "ai-productivity-campaign-progress-tracking",
+                "icon": "💭",
+                "importance": 3,
+                "description": ""
+              }
+            ]
+          }
+        }
       }
     }
   },

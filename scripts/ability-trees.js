@@ -593,8 +593,9 @@ function renderKnowledgeArchive(container, knowledge) {
         Object.keys(knowledge.tree).forEach(function(layerName) {
             var li = knowledge.tree[layerName];
             var tag = li.layerTag || 'L3-execution';
-            var cats = li.categories || {};
-            Object.keys(cats).forEach(function(k) { var c = cats[k]; c._key = k; if (!layerCats[tag]) layerCats[tag] = []; layerCats[tag].push(c); });
+            // v4.2 修复：tree 里 children 是中文卡片（如"书籍笔记"、"领域知识包"），不是 categories
+            var cats = li.children || li.categories || {};
+            Object.keys(cats).forEach(function(k) { var c = cats[k]; c._key = k; if (!layerCats[tag]) layerCats[tag] = []; layerCats[tag].push(Object.assign({}, c, { displayName: c.displayName || k, name: c._key || k })); });
         });
     } else if (knowledge.categories) {
         Object.keys(knowledge.categories).forEach(function(k) { var c = knowledge.categories[k]; c._key = k; var t = c.layerTag || 'L3-execution'; if (!layerCats[t]) layerCats[t] = []; layerCats[t].push(c); });
@@ -629,7 +630,7 @@ function renderKnowledgeArchive(container, knowledge) {
             var cat = cats[ci];
             var name = cat.displayName || cat.name || cat._key || '?';
             var icon = cat.icon || '\uD83D\uDCC1';
-            var count = cat.fileCount || 0;
+            var count = cat.fileCount || cat.count || 0;
             var size = cat.sizeKB || 0;
             var heat = cat.heatLevel || 1;
             var skills = cat.relatedSkills || [];
