@@ -1870,7 +1870,7 @@ function showSkillDetailPanel(skillId) {
             </div>
             <div class="skill-panel-row">
                 <span class="skill-panel-label">分类</span>
-                <span class="skill-panel-value"><span class="tip-source-badge" data-type="${data.sourceLabel === '林克定制' ? 'link' : data.sourceLabel === '快手定制' ? 'ks' : data.sourceLabel === '个人定制' ? 'sl' : data.sourceLabel === '通用' ? 'generic' : 'other'}" style="display:inline">${escapeHtml(data.sourceLabel || '未知')}</span></span>
+                <span class="skill-panel-value"><span class="tip-source-badge" data-type="${data.sourceLabel === '专属定制' ? 'self' : data.sourceLabel === '快手定制' ? 'ks' : data.sourceLabel === '个人定制' ? 'sl' : data.sourceLabel === '通用' ? 'generic' : 'other'}" style="display:inline">${escapeHtml(data.sourceLabel || '未知')}</span></span>
             </div>
             <div class="skill-panel-row">
                 <span class="skill-panel-label">调用次数</span>

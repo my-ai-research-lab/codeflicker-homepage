@@ -39,15 +39,15 @@ function renderSkillTechTree(container, skills) {
     }
     
     var _idx = 0;
-    // 根据 tag 字段返回四类标签：林克定制/快手定制/个人定制/通用
+    // 根据 tag 字段返回四类标签：专属定制/快手定制/个人定制/通用
     function classifyByTag(tag, ksInternal, cfProject) {
         // 优先使用 tag 字段
-        if (tag === 'Link') return { label: '林克定制', badge: '🔗' };
+        if (tag === 'Link' || tag === 'Self') return { label: '专属定制', badge: '🔗' };
         if (tag === 'KS') return { label: '快手定制', badge: '🚀' };
         if (tag === 'SL') return { label: '个人定制', badge: '👤' };
         // 兼容旧标志
         if (ksInternal) return { label: '快手定制', badge: '🚀' };
-        if (cfProject) return { label: '林克定制', badge: '🔗' };
+        if (cfProject) return { label: '专属定制', badge: '🔗' };
         // 无标签为通用
         return { label: '通用', badge: '📦' };
     }
@@ -118,31 +118,31 @@ function renderSkillTechTree(container, skills) {
     
     function getSourceColor(source) {
         if (!source) return 'rgba(200, 220, 240, 0.2)';
-        if (source === '林克核心能力' || source === 'AI核心能力') return '#a78bfa';
+        if (source === '专属核心能力' || source === '林克核心能力' || source === 'AI核心能力') return '#a78bfa';
         if (source === '用户自定义') return '#38bdf8';
         return '#64748b'; // 平台技能库
     }
     
     function createSkillChip(skillOrName) {
         // Support both skill objects and string skill names (from tree data)
-        var skill = typeof skillOrName === 'string' ? (findSkillByName(skillOrName) || { name: skillOrName, displayName: skillOrName, level: 1, source: '技能库', tag: 'Link' }) : skillOrName;
+        var skill = typeof skillOrName === 'string' ? (findSkillByName(skillOrName) || { name: skillOrName, displayName: skillOrName, level: 1, source: '技能库', tag: 'Self' }) : skillOrName;
         var id = storeSkill(skill);
         var name = getName(skill);
         var level = skill.level || 1;
         var color = getLevelColor(level);
         var sourceColor = getSourceColor(skill.source);
-        // 归属标签：优先用 tag 字段（KS/SL/Link），兼容旧 ksInternal/cfProject 标志
+        // 归属标签：优先用 tag 字段（KS/SL/Self），兼容旧 ksInternal/cfProject 标志
         var ownerTag = '';
         if (skill.tag === 'KS') {
             ownerTag = '<span class="skill-chip-ks">KS</span>';
         } else if (skill.tag === 'SL') {
             ownerTag = '<span class="skill-chip-sl">SL</span>';
-        } else if (skill.tag === 'Link') {
-            ownerTag = '<span class="skill-chip-link">Link</span>';
+        } else if (skill.tag === 'Link' || skill.tag === 'Self') {
+            ownerTag = '<span class="skill-chip-link">专属</span>';
         } else if (skill.ksInternal) {
             ownerTag = '<span class="skill-chip-ks">KS</span>';
         } else if (skill.cfProject) {
-            ownerTag = '<span class="skill-chip-link">Link</span>';
+            ownerTag = '<span class="skill-chip-link">专属</span>';
         }
         var sizeTag = skill.skillSizeLabel ? '<span class="skill-chip-size">' + Math.round(skill.skillSize / 1000) + 'K</span>' : '';
         var freqTag = skill.frequency ? '<span class="skill-chip-freq">' + skill.frequency + '</span>' : '';
