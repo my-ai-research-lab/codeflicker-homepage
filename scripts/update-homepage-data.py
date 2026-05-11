@@ -213,41 +213,156 @@ def update_knowledge():
             categories_flat[cat_key]["sizeKB"] += size
 
     # ── 第二遍：构建三层树结构 ──
-    # 聚合策略：
-    # - 一级目录（books/guides/notes 等）直接作为卡片
-    # - packages 作为大卡片，子分类合并为 internal detail（不单独展开）
-    # - 避免同一层出现 20 个细碎卡片
+    # 聚合策略 v4.0（沈浪要求：领域知识包拆分为独立卡片）：
+    # - 一级目录（books/guides/notes 等）→ 一个卡片
+    # - packages 下的每个子包 → 独立卡片（不再合并成"领域知识包"）
+    # - ai-insight 下的每个二级目录 → 独立卡片
+    # - 四级目录文件合并回对应三级卡片（concepts→概念体系、entity-profiles→实体档案）
 
-    # 先按一级目录聚合
-    top_level_data = {}
+    # Step 1: 合并四级目录文件数到对应三级
+    # 四级目录: packages/ai-insight/concepts/* → 合并到 concepts
+    #           packages/ai-insight/entity-profiles/* → 合并到 entity-profiles
+    #           packages/ai-insight/insights/weekly → 合并到 insights
+    #           packages/ai-insight/concepts/agents/ai-product-ultimate-form → 合并到 concepts/agents
+    merged_flat = {}
     for cat_key, cat_data in categories_flat.items():
         parts = cat_key.split("/")
-        top = parts[0] if parts[0] != "root" else "root"
+        # 四级目录 → 合并回三级
+        if len(parts) >= 4 and parts[0] == "packages" and parts[1] == "ai-insight":
+            parent_key = "packages/ai-insight/" + parts[2]
+            if parts[2] in ("concepts", "entity-profiles", "insights"):
+                # 合并到二级父目录的 key（如 concepts→概念体系）
+                # 但我们想让 concepts/* 和 entity-profiles/* 合并回 concepts/entity-profiles 三级卡片
+                # 而不是拆成一个个四级卡片
+                if parent_key not in merged_flat:
+                    merged_flat[parent_key] = dict(categories_flat.get(parent_key, cat_data))
+                    merged_flat[parent_key]["fileCount"] = 0
+                    merged_flat[parent_key]["sizeKB"] = 0
+                merged_flat[parent_key]["fileCount"] += cat_data["fileCount"]
+                merged_flat[parent_key]["sizeKB"] += cat_data.get("sizeKB", 0)
+                continue
+        # 三级目录（如果被四级合并覆盖，后面会重新赋值）
+        if cat_key not in merged_flat:
+            merged_flat[cat_key] = dict(cat_data)
 
-        top_meta = _meta_for_path(top if top != "root" else ".")
-        if top not in top_level_data:
-            top_level_data[top] = {
-                "layerTag": top_meta.get("layerTag", "L3-execution"),
+    # 确保 concepts/entity-profiles/insights 三级卡片包含自身+所有四级文件
+    for special_key in ["packages/ai-insight/concepts", "packages/ai-insight/entity-profiles", "packages/ai-insight/insights"]:
+        if special_key in categories_flat and special_key in merged_flat:
+            # 如果三级本身也有文件，加上
+            base = categories_flat[special_key]
+            if base["fileCount"] > 0 and merged_flat[special_key]["fileCount"] == 0:
+                merged_flat[special_key] = dict(base)
+
+    # Step 2: 构建卡片列表
+    cards = []
+
+    # 非packages的一级目录 → 按一级目录聚合
+    non_pkg_cats = {}
+    for cat_key, cat_data in merged_flat.items():
+        parts = cat_key.split("/")
+        if parts[0] == "packages" or parts[0] == "root":
+            continue
+        top = parts[0]
+        if top not in non_pkg_cats:
+            top_meta = _meta_for_path(top)
+            non_pkg_cats[top] = {
                 "displayName": top_meta.get("displayName", top),
                 "icon": top_meta.get("icon", "📁"),
+                "layerTag": top_meta.get("layerTag", "L3-execution"),
                 "description": top_meta.get("desc", ""),
                 "totalFiles": 0,
-                "subCategories": [],  # 子分类信息（只用于展示 detail）
+                "subCategories": [],
             }
-        top_level_data[top]["totalFiles"] += cat_data["fileCount"]
-        if cat_key != top and cat_key != "root":
-            # 子分类信息作为 detail
-            top_level_data[top]["subCategories"].append({
+        non_pkg_cats[top]["totalFiles"] += cat_data["fileCount"]
+        if cat_key != top:
+            non_pkg_cats[top]["subCategories"].append({
                 "displayName": cat_data.get("displayName", cat_key),
                 "icon": cat_data.get("icon", "📁"),
                 "fileCount": cat_data["fileCount"],
             })
 
+    for top_name, top_data in non_pkg_cats.items():
+        sub_cats = top_data.get("subCategories", [])
+        sub_summary = ""
+        if sub_cats:
+            top3 = sub_cats[:3]
+            names = [sc["displayName"] for sc in top3]
+            more = f"等{len(sub_cats)}个子领域" if len(sub_cats) > 3 else ""
+            sub_summary = f"（含 {', '.join(names)}{more}）"
+        cards.append({
+            "displayName": top_data["displayName"],
+            "icon": top_data["icon"],
+            "count": top_data["totalFiles"],
+            "layerTag": top_data["layerTag"],
+            "description": top_data["description"] + sub_summary,
+            "heatLevel": min(5, max(1, (top_data["totalFiles"] // 10) + 1)),
+        })
+
+    # root → 小卡片（归入元座知识层——知识库总索引是元认知性质的）
+    root_data = merged_flat.get("root")
+    if root_data:
+        cards.append({
+            "displayName": "知识库总索引",
+            "icon": "📋",
+            "count": root_data["fileCount"],
+            "layerTag": "L1-meta",  # 强制归入元座知识层
+            "description": "知识库总索引与导航文件",
+            "heatLevel": 1,
+        })
+
+    # packages 子包 → 独立卡片
+    for cat_key, cat_data in merged_flat.items():
+        parts = cat_key.split("/")
+        if parts[0] != "packages":
+            continue
+        if len(parts) == 2:
+            pkg = parts[1]
+            if pkg == "ai-insight":
+                # 根目录只有 INDEX+README，合并到大模型卡片
+                continue
+            pkg_meta = PKG_DIR_MAP.get(pkg, {"displayName": pkg, "icon": "📁", "desc": ""})
+            cards.append({
+                "displayName": pkg_meta.get("displayName", pkg),
+                "icon": pkg_meta.get("icon", "📁"),
+                "count": cat_data["fileCount"],
+                "layerTag": "L2-domain",
+                "description": pkg_meta.get("desc", ""),
+                "heatLevel": min(5, max(1, (cat_data["fileCount"] // 10) + 1)),
+            })
+        elif len(parts) == 3 and parts[1] == "ai-insight":
+            sub = parts[2]
+            sub_meta = AIINSIGHT_DIR_MAP.get(sub, {"displayName": sub, "icon": "📁", "desc": ""})
+            # 特殊处理：concepts 和 entity-profiles 合并了四级文件
+            desc = sub_meta.get("desc", "")
+            if sub == "concepts":
+                desc = "AI领域核心概念梳理：模型原理、Agent原理、AI应用、AI编程、企业转型、基础设施、AI安全"
+            elif sub == "entity-profiles":
+                desc = "AI领域关键公司与人物画像：22家公司档案+22位人物档案"
+            elif sub == "insights":
+                desc = "趋势分析与阶段性深度调研，含周洞察汇总"
+            cards.append({
+                "displayName": sub_meta.get("displayName", sub),
+                "icon": sub_meta.get("icon", "📁"),
+                "count": cat_data["fileCount"],
+                "layerTag": "L2-domain",
+                "description": desc,
+                "heatLevel": min(5, max(1, (cat_data["fileCount"] // 10) + 1)),
+            })
+
+    # ai-insight 根目录文件合并到大模型
+    ai_root = categories_flat.get("packages/ai-insight")
+    if ai_root and ai_root["fileCount"] > 0:
+        for c in cards:
+            if c.get("displayName") == "大模型":
+                c["count"] += ai_root["fileCount"]
+                break
+
     # 构建 tree
     tree = {}
     LAYER_ICONS = {"L1-meta": "📖", "L2-domain": "🔍", "L3-execution": "📦"}
-    for top_name, top_data in top_level_data.items():
-        layer_tag = top_data["layerTag"]
+    LAYER_COLORS = {"L1-meta": "#a78bfa", "L2-domain": "#8b5cf6", "L3-execution": "#4ade80"}
+    for card in cards:
+        layer_tag = card["layerTag"]
         layer_label = next((l["label"] for l in LAYER_DEF if l["tag"] == layer_tag), "实践知识层")
         if layer_label not in tree:
             layer_def_entry = next((l for l in LAYER_DEF if l["tag"] == layer_tag), None)
@@ -259,27 +374,13 @@ def update_knowledge():
                 "count": 0,
                 "children": {}
             }
-        tree[layer_label]["count"] += top_data["totalFiles"]
-
-        # 每个一级目录作为一个卡片
-        # description 里有子分类汇总（如"含6个子领域：大模型、Agent…"）
-        sub_cats = top_data.get("subCategories", [])
-        sub_summary = ""
-        if sub_cats:
-            top3 = sub_cats[:3]
-            names = [sc["displayName"] for sc in top3]
-            more = f"等{len(sub_cats)}个子领域" if len(sub_cats) > 3 else ""
-            sub_summary = f"（含 {', '.join(names)}{more}）"
-
-        card_desc = top_data["description"] + sub_summary
-        heat = min(5, max(1, (top_data["totalFiles"] // 10) + 1))
-
-        tree[layer_label]["children"][top_data["displayName"]] = {
-            "count": top_data["totalFiles"],
-            "icon": top_data["icon"],
-            "color": {"L1-meta": "#a78bfa", "L2-domain": "#8b5cf6", "L3-execution": "#4ade80"}[layer_tag],
-            "description": card_desc,
-            "heatLevel": heat,
+        tree[layer_label]["count"] += card["count"]
+        tree[layer_label]["children"][card["displayName"]] = {
+            "count": card["count"],
+            "icon": card["icon"],
+            "color": LAYER_COLORS[layer_tag],
+            "description": card.get("description", ""),
+            "heatLevel": card.get("heatLevel", 1),
             "relatedSkills": [],
             "relatedMemories": [],
             "items": [],

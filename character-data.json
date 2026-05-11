@@ -183,7 +183,7 @@
     "totalConversations": 420,
     "worksCount": 14,
     "deployedWorks": 13,
-    "lastDataUpdate": "2026-05-11 13:35"
+    "lastDataUpdate": "2026-05-11 14:03"
   },
   "skills": {
     "total": 77,
@@ -3235,16 +3235,6 @@
         "description": "支撑元能力的思想和方法论",
         "count": 4,
         "children": {
-          "根目录索引": {
-            "count": 1,
-            "icon": "📋",
-            "color": "#a78bfa",
-            "description": "知识库总索引",
-            "heatLevel": 1,
-            "relatedSkills": [],
-            "relatedMemories": [],
-            "items": []
-          },
           "书籍笔记": {
             "count": 1,
             "icon": "📖",
@@ -3260,6 +3250,16 @@
             "icon": "🔗",
             "color": "#a78bfa",
             "description": "跨领域共享的方法与人物档案（含 人物档案）",
+            "heatLevel": 1,
+            "relatedSkills": [],
+            "relatedMemories": [],
+            "items": []
+          },
+          "知识库总索引": {
+            "count": 1,
+            "icon": "📋",
+            "color": "#a78bfa",
+            "description": "知识库总索引与导航文件",
             "heatLevel": 1,
             "relatedSkills": [],
             "relatedMemories": [],
@@ -3323,12 +3323,102 @@
             "relatedMemories": [],
             "items": []
           },
-          "领域知识包": {
-            "count": 99,
-            "icon": "📚",
+          "投资理财": {
+            "count": 1,
+            "icon": "💰",
             "color": "#8b5cf6",
-            "description": "按领域组织的深度知识体系（含 投资理财, 研发效能, AI行业洞察等20个子领域）",
+            "description": "基金、持仓、定投等投资知识",
+            "heatLevel": 1,
+            "relatedSkills": [],
+            "relatedMemories": [],
+            "items": []
+          },
+          "研发效能": {
+            "count": 1,
+            "icon": "⚡",
+            "color": "#8b5cf6",
+            "description": "研发效能领域的方法论与最佳实践",
+            "heatLevel": 1,
+            "relatedSkills": [],
+            "relatedMemories": [],
+            "items": []
+          },
+          "AI公司": {
+            "count": 7,
+            "icon": "🏢",
+            "color": "#8b5cf6",
+            "description": "OpenAI/Anthropic/Google等公司动态与战略",
+            "heatLevel": 1,
+            "relatedSkills": [],
+            "relatedMemories": [],
+            "items": []
+          },
+          "深度洞察": {
+            "count": 6,
+            "icon": "🔍",
+            "color": "#8b5cf6",
+            "description": "趋势分析与阶段性深度调研，含周洞察汇总",
+            "heatLevel": 1,
+            "relatedSkills": [],
+            "relatedMemories": [],
+            "items": []
+          },
+          "AI Agent": {
+            "count": 6,
+            "icon": "🤖",
+            "color": "#8b5cf6",
+            "description": "自主Agent架构、工具链、多Agent协作",
+            "heatLevel": 1,
+            "relatedSkills": [],
+            "relatedMemories": [],
+            "items": []
+          },
+          "企业AI转型": {
+            "count": 2,
+            "icon": "🏭",
+            "color": "#8b5cf6",
+            "description": "企业AI落地路径、组织变革、ROI实践",
+            "heatLevel": 1,
+            "relatedSkills": [],
+            "relatedMemories": [],
+            "items": []
+          },
+          "大模型": {
+            "count": 10,
+            "icon": "🧠",
+            "color": "#8b5cf6",
+            "description": "LLM架构、训练、推理、多模态等技术追踪",
+            "heatLevel": 1,
+            "relatedSkills": [],
+            "relatedMemories": [],
+            "items": []
+          },
+          "最佳实践": {
+            "count": 6,
+            "icon": "✅",
+            "color": "#8b5cf6",
+            "description": "AI Coding/AI产品等实操方法论",
+            "heatLevel": 1,
+            "relatedSkills": [],
+            "relatedMemories": [],
+            "items": []
+          },
+          "实体档案": {
+            "count": 44,
+            "icon": "📇",
+            "color": "#8b5cf6",
+            "description": "AI领域关键公司与人物画像：22家公司档案+22位人物档案",
             "heatLevel": 5,
+            "relatedSkills": [],
+            "relatedMemories": [],
+            "items": []
+          },
+          "概念体系": {
+            "count": 16,
+            "icon": "💡",
+            "color": "#8b5cf6",
+            "description": "AI领域核心概念梳理：模型原理、Agent原理、AI应用、AI编程、企业转型、基础设施、AI安全",
+            "heatLevel": 2,
             "relatedSkills": [],
             "relatedMemories": [],
             "items": []
