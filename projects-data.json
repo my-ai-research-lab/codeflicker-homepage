@@ -1,8 +1,8 @@
 {
   "generatedAt": "2026-04-29T11:07:36.360875",
   "summary": {
-    "total": 14,
-    "deployed": 13,
+    "total": 33,
+    "deployed": 32,
     "featured": 4,
     "inDevelopment": 0
   },
@@ -18,14 +18,14 @@
       "name": "工具",
       "icon": "🛠️",
       "color": "#4ade80",
-      "count": 5,
+      "count": 18,
       "description": "自进化引擎与自动化系统"
     },
     "research": {
       "name": "调研",
       "icon": "🔬",
       "color": "#a78bfa",
-      "count": 7,
+      "count": 10,
       "description": "深度调研与技能沉淀"
     },
     "docs": {
@@ -33,7 +33,7 @@
       "icon": "📄",
       "color": "#fbbf24",
       "description": "知识沉淀与文档",
-      "count": 0
+      "count": 3
     }
   },
   "projects": [
@@ -400,6 +400,310 @@
       "url": "https://xiaoxiong20260206.github.io/ai-insight-public/",
       "usedSkills": [
         "sl-ai-insight"
+      ]
+    },
+    {
+      "id": "sl-meta-signal-extractor",
+      "name": "sl-meta-signal-extractor",
+      "icon": "👁️",
+      "status": "deployed",
+      "category": "research",
+      "completedAt": "2026-05-11",
+      "quality": {
+        "level": "standard"
+      },
+      "subtitle": "元技能-信号提取 — 从信息噪声中识别核心信号",
+      "url": "",
+      "usedSkills": [
+        "sl-meta-signal-extractor"
+      ]
+    },
+    {
+      "id": "sl-feishu-assistant",
+      "name": "sl-feishu-assistant",
+      "icon": "📦",
+      "status": "deployed",
+      "category": "tools",
+      "completedAt": "2026-05-11",
+      "quality": {
+        "level": "standard"
+      },
+      "subtitle": "沈浪飞书助手——飞书机器人与CodeFlicker的本地链路",
+      "url": "",
+      "usedSkills": [
+        "sl-feishu-assistant"
+      ]
+    },
+    {
+      "id": "sl-kim-doc-writer",
+      "name": "sl-kim-doc-writer",
+      "icon": "📄",
+      "status": "deployed",
+      "category": "docs",
+      "completedAt": "2026-05-11",
+      "quality": {
+        "level": "standard"
+      },
+      "subtitle": "KIM Doc写作规范 — L3领域层·写作域实例",
+      "url": "",
+      "usedSkills": [
+        "sl-kim-doc-writer"
+      ]
+    },
+    {
+      "id": "sl-weixin-bridge",
+      "name": "sl-weixin-bridge",
+      "icon": "📦",
+      "status": "deployed",
+      "category": "tools",
+      "completedAt": "2026-05-11",
+      "quality": {
+        "level": "standard"
+      },
+      "subtitle": "微信→CodeFlicker AI消息网关技能（沈浪专属）",
+      "url": "",
+      "usedSkills": [
+        "sl-weixin-bridge"
+      ]
+    },
+    {
+      "id": "sl-meta-uncertainty-marker",
+      "name": "sl-meta-uncertainty-marker",
+      "icon": "🎯",
+      "status": "deployed",
+      "category": "tools",
+      "completedAt": "2026-05-11",
+      "quality": {
+        "level": "standard"
+      },
+      "subtitle": "元技能-不确定性量化 — 知道自己不知道什么",
+      "url": "",
+      "usedSkills": [
+        "sl-meta-uncertainty-marker"
+      ]
+    },
+    {
+      "id": "sl-meta-trust-builder",
+      "name": "sl-meta-trust-builder",
+      "icon": "🤝",
+      "status": "deployed",
+      "category": "tools",
+      "completedAt": "2026-05-11",
+      "quality": {
+        "level": "standard"
+      },
+      "subtitle": "元技能-信任建立机制 — 通过执行透明度、预期对齐、进度可见性建立信任",
+      "url": "",
+      "usedSkills": [
+        "sl-meta-trust-builder"
+      ]
+    },
+    {
+      "id": "sl-yuque-publisher",
+      "name": "sl-yuque-publisher",
+      "icon": "📦",
+      "status": "deployed",
+      "category": "tools",
+      "completedAt": "2026-05-11",
+      "quality": {
+        "level": "standard"
+      },
+      "subtitle": "语雀知识库双向同步技能",
+      "url": "",
+      "usedSkills": [
+        "sl-yuque-publisher"
+      ]
+    },
+    {
+      "id": "sl-meta-analogy-transfer",
+      "name": "sl-meta-analogy-transfer",
+      "icon": "🔄",
+      "status": "deployed",
+      "category": "research",
+      "completedAt": "2026-05-11",
+      "quality": {
+        "level": "standard"
+      },
+      "subtitle": "元技能-类比迁移 — 从已知领域的模式/规律中提取结构",
+      "url": "",
+      "usedSkills": [
+        "sl-meta-analogy-transfer"
+      ]
+    },
+    {
+      "id": "sl-zelda-ui",
+      "name": "sl-zelda-ui",
+      "icon": "🎨",
+      "status": "deployed",
+      "category": "docs",
+      "completedAt": "2026-05-11",
+      "quality": {
+        "level": "standard"
+      },
+      "subtitle": "{{OWNER_NAME}}专属塞尔达风格网页设计技能",
+      "url": "",
+      "usedSkills": [
+        "sl-zelda-ui"
+      ]
+    },
+    {
+      "id": "sl-meta-context-sense",
+      "name": "sl-meta-context-sense",
+      "icon": "👁️",
+      "status": "deployed",
+      "category": "tools",
+      "completedAt": "2026-05-11",
+      "quality": {
+        "level": "standard"
+      },
+      "subtitle": "元技能-上下文感知 — 在任务开始前和执行中持续感知上下文质量",
+      "url": "",
+      "usedSkills": [
+        "sl-meta-context-sense"
+      ]
+    },
+    {
+      "id": "sl-investment-tracker",
+      "name": "sl-investment-tracker",
+      "icon": "📦",
+      "status": "deployed",
+      "category": "tools",
+      "completedAt": "2026-05-11",
+      "quality": {
+        "level": "standard"
+      },
+      "subtitle": "沈浪投资理财追踪技能",
+      "url": "",
+      "usedSkills": [
+        "sl-investment-tracker"
+      ]
+    },
+    {
+      "id": "sl-meta-boundary-sense",
+      "name": "sl-meta-boundary-sense",
+      "icon": "🛡️",
+      "status": "deployed",
+      "category": "tools",
+      "completedAt": "2026-05-11",
+      "quality": {
+        "level": "standard"
+      },
+      "subtitle": "元技能-执行边界感知 — 知道何时停止、求助、升级",
+      "url": "",
+      "usedSkills": [
+        "sl-meta-boundary-sense"
+      ]
+    },
+    {
+      "id": "sl-meta-debug-pro",
+      "name": "sl-meta-debug-pro",
+      "icon": "🔧",
+      "status": "deployed",
+      "category": "tools",
+      "completedAt": "2026-05-11",
+      "quality": {
+        "level": "standard"
+      },
+      "subtitle": "元技能-调试助手 — 自动诊断错误并提供修复方案",
+      "url": "",
+      "usedSkills": [
+        "sl-meta-debug-pro"
+      ]
+    },
+    {
+      "id": "sl-executive-report-writing",
+      "name": "sl-executive-report-writing",
+      "icon": "📄",
+      "status": "deployed",
+      "category": "docs",
+      "completedAt": "2026-05-11",
+      "quality": {
+        "level": "standard"
+      },
+      "subtitle": "高管汇报材料写作 — 面向高管/老板的材料写作规范",
+      "url": "",
+      "usedSkills": [
+        "sl-executive-report-writing"
+      ]
+    },
+    {
+      "id": "sl-meta-expression-design",
+      "name": "sl-meta-expression-design",
+      "icon": "📝",
+      "status": "deployed",
+      "category": "research",
+      "completedAt": "2026-05-11",
+      "quality": {
+        "level": "standard"
+      },
+      "subtitle": "元技能-结构化表达设计 — 把想法变成对方能高效接收的信息",
+      "url": "",
+      "usedSkills": [
+        "sl-meta-expression-design"
+      ]
+    },
+    {
+      "id": "sl-ai-column-writer",
+      "name": "sl-ai-column-writer",
+      "icon": "📦",
+      "status": "deployed",
+      "category": "tools",
+      "completedAt": "2026-05-11",
+      "quality": {
+        "level": "standard"
+      },
+      "subtitle": "CodeFlicker「养了个AI」专栏写作技能",
+      "url": "",
+      "usedSkills": [
+        "sl-ai-column-writer"
+      ]
+    },
+    {
+      "id": "sl-weekly-fortune",
+      "name": "sl-weekly-fortune",
+      "icon": "📦",
+      "status": "deployed",
+      "category": "tools",
+      "completedAt": "2026-05-11",
+      "quality": {
+        "level": "standard"
+      },
+      "subtitle": "每周AI算命——用AI生图生成命运大图",
+      "url": "",
+      "usedSkills": [
+        "sl-weekly-fortune"
+      ]
+    },
+    {
+      "id": "sl-kim-bridge",
+      "name": "sl-kim-bridge",
+      "icon": "📦",
+      "status": "deployed",
+      "category": "tools",
+      "completedAt": "2026-05-11",
+      "quality": {
+        "level": "standard"
+      },
+      "subtitle": "KIM→CodeFlicker AI消息网关技能（沈浪专属）",
+      "url": "",
+      "usedSkills": [
+        "sl-kim-bridge"
+      ]
+    },
+    {
+      "id": "sl-rd-efficiency-insight",
+      "name": "sl-rd-efficiency-insight",
+      "icon": "📦",
+      "status": "deployed",
+      "category": "tools",
+      "completedAt": "2026-05-11",
+      "quality": {
+        "level": "standard"
+      },
+      "subtitle": "研发效能洞察专属技能",
+      "url": "",
+      "usedSkills": [
+        "sl-rd-efficiency-insight"
       ]
     }
   ]

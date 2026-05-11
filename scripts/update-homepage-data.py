@@ -34,7 +34,7 @@ def _find_workspace():
         current = current.parent
     return current
 
-WORKSPACE = _find_workspace().resolve()
+WORKSPACE = _find_workspace()
 HOMEPAGE_DIR = Path(__file__).parent.parent
 DATA_FILE = HOMEPAGE_DIR / "character-data.json"
 PROJECTS_FILE = HOMEPAGE_DIR / "projects-data.json"
@@ -59,384 +59,37 @@ TIERS = [
 
 
 def update_knowledge():
-    """扫描知识库目录 — v3.0 结构化三层知识库（中文展示）"""
-
-    # ── 知识库三层定义 + 中文映射 ──
-    LAYER_DEF = [
-        {"tag": "L1-meta",   "label": "元座知识层", "desc": "支撑元能力的思想和方法论"},
-        {"tag": "L2-domain", "label": "领域知识层", "desc": "特定领域的深度研究和知识沉淀"},
-        {"tag": "L3-execution", "label": "实践知识层", "desc": "具体执行中产出的方案和文档"},
-    ]
-
-    # 一级目录 → (中文名, 图层归属, icon, 描述)
-    TOP_DIR_MAP = {
-        "books":       {"displayName": "书籍笔记",     "layerTag": "L1-meta",   "icon": "📖", "desc": "读书笔记与核心思想提炼"},
-        "guides":      {"displayName": "实践指南",     "layerTag": "L3-execution", "icon": "🧭", "desc": "开发约束、习惯规范、操作指南"},
-        "notes":       {"displayName": "经验笔记",     "layerTag": "L3-execution", "icon": "📝", "desc": "踩坑记录、任务流程、沟通经验"},
-        "research":    {"displayName": "调研沉淀",     "layerTag": "L2-domain", "icon": "🔬", "desc": "进化日志、社区洞察等研究资料"},
-        "shared":      {"displayName": "共享知识",     "layerTag": "L1-meta",   "icon": "🔗", "desc": "跨领域共享的方法与人物档案"},
-        "templates":   {"displayName": "模板资源",     "layerTag": "L3-execution", "icon": "📦", "desc": "技能模板、包结构定义"},
-        "packages":    {"displayName": "领域知识包",   "layerTag": "L2-domain", "icon": "📚", "desc": "按领域组织的深度知识体系"},
-    }
-
-    # packages 二级目录 → 中文映射
-    PKG_DIR_MAP = {
-        "ai-insight":         {"displayName": "AI行业洞察",     "icon": "🤖", "desc": "大模型/Agent/AI应用/企业AI的持续追踪与洞察"},
-        "investment":         {"displayName": "投资理财",       "icon": "💰", "desc": "基金、持仓、定投等投资知识"},
-        "rd-efficiency":      {"displayName": "研发效能",       "icon": "⚡", "desc": "研发效能领域的方法论与最佳实践"},
-    }
-
-    # ai-insight 三级目录 → 中文映射
-    AIINSIGHT_DIR_MAP = {
-        "01-models":          {"displayName": "大模型",         "icon": "🧠", "desc": "LLM架构、训练、推理、多模态等技术追踪"},
-        "02-agents":          {"displayName": "AI Agent",      "icon": "🤖", "desc": "自主Agent架构、工具链、多Agent协作"},
-        "03-ai-companies":    {"displayName": "AI公司",         "icon": "🏢", "desc": "OpenAI/Anthropic/Google等公司动态与战略"},
-        "04-enterprise-ai":   {"displayName": "企业AI转型",    "icon": "🏭", "desc": "企业AI落地路径、组织变革、ROI实践"},
-        "best-practices":    {"displayName": "最佳实践",       "icon": "✅", "desc": "AI Coding/AI产品等实操方法论"},
-        "concepts":           {"displayName": "概念体系",       "icon": "💡", "desc": "AI领域的核心概念与框架梳理"},
-        "entity-profiles":    {"displayName": "实体档案",       "icon": "📇", "desc": "AI领域关键人物与公司画像"},
-        "insights":           {"displayName": "深度洞察",       "icon": "🔍", "desc": "趋势分析与阶段性深度调研"},
-        "deep-research":      {"displayName": "专题调研",       "icon": "🔎", "desc": "针对特定主题的深度调研报告"},
-        "tracking-registry":  {"displayName": "追踪注册表",    "icon": "📋", "desc": "AI领域动态追踪的注册与索引"},
-    }
-
-    # concepts 四级目录 → 中文映射
-    CONCEPTS_DIR_MAP = {
-        "models":              {"displayName": "模型原理",     "icon": "🧠"},
-        "agents":              {"displayName": "Agent原理",   "icon": "🤖"},
-        "applications":        {"displayName": "AI应用",      "icon": "📱"},
-        "coding":              {"displayName": "AI编程",      "icon": "⌨️"},
-        "enterprise":          {"displayName": "企业转型",    "icon": "🏭"},
-        "infrastructure":      {"displayName": "基础设施",    "icon": "🏗️"},
-        "safety":              {"displayName": "AI安全",      "icon": "🛡️"},
-    }
-
-    # entity-profiles 四级目录 → 中文映射
-    ENTITY_DIR_MAP = {
-        "companies":           {"displayName": "公司画像",     "icon": "🏢"},
-        "people":              {"displayName": "人物画像",     "icon": "👤"},
-    }
-
-    # insights 四级目录
-    INSIGHTS_DIR_MAP = {
-        "weekly":              {"displayName": "周洞察",       "icon": "📊"},
-    }
-
-    # templates 四级目录
-    TEMPLATES_DIR_MAP = {
-        "evo-skills-v2":       {"displayName": "自进化技能模板v2", "icon": "🧬"},
-    }
-
-    # shared 四级目录
-    SHARED_DIR_MAP = {
-        "people":              {"displayName": "人物档案",     "icon": "👤"},
-    }
-
+    """扫描知识库目录"""
     knowledge_dir = WORKSPACE / "knowledge"
     total_files = 0
     total_size_kb = 0
-    # 扁平统计（保留给旧代码兼容）
-    categories_flat = {}
-    # 结构化树（三层架构）
-    tree = {}
+    categories = {}
 
-    # ── 辅助函数 ──
-    def _meta_for_path(rel_path_str):
-        """根据文件相对路径返回中文元数据"""
-        parts = rel_path_str.split("/") if rel_path_str != "." else []
-
-        if len(parts) == 0:
-            return {"displayName": "根目录索引", "icon": "📋", "desc": "知识库总索引", "layerTag": "L1-meta"}
-        if parts[0] == "packages" and len(parts) >= 2:
-            pkg = parts[1]
-            pkg_meta = PKG_DIR_MAP.get(pkg, {"displayName": pkg, "icon": "📁", "desc": ""})
-            if len(parts) == 2:
-                return {**pkg_meta, "layerTag": "L2-domain"}
-            sub = parts[2]
-            if pkg == "ai-insight":
-                # ai-insight 的三级
-                sub_meta = AIINSIGHT_DIR_MAP.get(sub, {"displayName": sub, "icon": "📁", "desc": ""})
-                if len(parts) == 3:
-                    return {**sub_meta, "layerTag": "L2-domain", "desc": sub_meta.get("desc", "")}
-                # 四级: concepts/entity-profiles/insights 下
-                level4 = parts[3]
-                if sub == "concepts":
-                    l4_meta = CONCEPTS_DIR_MAP.get(level4, {"displayName": level4, "icon": "📁"})
-                    return {**l4_meta, "layerTag": "L2-domain", "desc": f"AI {l4_meta.get('displayName', level4)}领域的概念梳理"}
-                elif sub == "entity-profiles":
-                    l4_meta = ENTITY_DIR_MAP.get(level4, {"displayName": level4, "icon": "📁"})
-                    return {**l4_meta, "layerTag": "L2-domain", "desc": f"AI领域{l4_meta.get('displayName', level4)}档案"}
-                elif sub == "insights":
-                    l4_meta = INSIGHTS_DIR_MAP.get(level4, {"displayName": level4, "icon": "📁"})
-                    return {**l4_meta, "layerTag": "L2-domain", "desc": f"AI洞察{l4_meta.get('displayName', level4)}汇总"}
-                elif sub == "agents" and level4 == "ai-product-ultimate-form":
-                    return {"displayName": "AI产品终极形态", "icon": "🚀", "layerTag": "L2-domain", "desc": "AI产品的终极形态探讨"}
-                else:
-                    return {"displayName": level4, "icon": "📁", "layerTag": "L2-domain", "desc": ""}
-            else:
-                return {"displayName": sub, "icon": "📁", "layerTag": "L2-domain", "desc": ""}
-        if parts[0] == "templates" and len(parts) >= 2:
-            base_meta = TOP_DIR_MAP.get("templates", {})
-            l2_meta = TEMPLATES_DIR_MAP.get(parts[1], {"displayName": parts[1], "icon": "📁"})
-            return {**l2_meta, "layerTag": base_meta.get("layerTag", "L3-execution"), "desc": l2_meta.get("desc", "")}
-        if parts[0] == "shared" and len(parts) >= 2:
-            base_meta = TOP_DIR_MAP.get("shared", {})
-            l2_meta = SHARED_DIR_MAP.get(parts[1], {"displayName": parts[1], "icon": "📁"})
-            return {**l2_meta, "layerTag": base_meta.get("layerTag", "L1-meta"), "desc": l2_meta.get("desc", "")}
-        # 一级目录
-        top = parts[0]
-        return TOP_DIR_MAP.get(top, {"displayName": top, "icon": "📁", "desc": "", "layerTag": "L3-execution"})
-
-    # ── 第一遍：扫描所有文件，构建扁平统计 ──
     if knowledge_dir.exists():
         for f in knowledge_dir.rglob("*.md"):
             total_files += 1
             size = os.path.getsize(f) / 1024
             total_size_kb += size
-            rel = f.parent.relative_to(knowledge_dir)
-            cat_key = str(rel) if str(rel) != "." else "root"
-            if cat_key not in categories_flat:
-                meta = _meta_for_path(cat_key)
-                categories_flat[cat_key] = {
-                    "name": cat_key,
-                    "displayName": meta.get("displayName", cat_key),
-                    "icon": meta.get("icon", "📁"),
-                    "description": meta.get("desc", ""),
-                    "layerTag": meta.get("layerTag", "L3-execution"),
-                    "fileCount": 0,
-                    "sizeKB": 0,
-                    "relatedSkills": [],
-                    "relatedMemories": [],
-                    "heatLevel": 1,
-                }
-            categories_flat[cat_key]["fileCount"] += 1
-            categories_flat[cat_key]["sizeKB"] += size
+            parent = f.parent.relative_to(knowledge_dir)
+            cat_name = str(parent) if str(parent) != "." else "root"
+            if cat_name not in categories:
+                categories[cat_name] = {"name": cat_name, "fileCount": 0, "sizeKB": 0}
+            categories[cat_name]["fileCount"] += 1
+            categories[cat_name]["sizeKB"] += size
 
-    # ── 第二遍：构建三层树结构 ──
-    # 聚合策略 v4.0（沈浪要求：领域知识包拆分为独立卡片）：
-    # - 一级目录（books/guides/notes 等）→ 一个卡片
-    # - packages 下的每个子包 → 独立卡片（不再合并成"领域知识包"）
-    # - ai-insight 下的每个二级目录 → 独立卡片
-    # - 四级目录文件合并回对应三级卡片（concepts→概念体系、entity-profiles→实体档案）
-
-    # Step 1: 合并四级目录文件数到对应三级
-    # 四级目录: packages/ai-insight/concepts/* → 合并到 concepts
-    #           packages/ai-insight/entity-profiles/* → 合并到 entity-profiles
-    #           packages/ai-insight/insights/weekly → 合并到 insights
-    #           packages/ai-insight/concepts/agents/ai-product-ultimate-form → 合并到 concepts/agents
-    merged_flat = {}
-    for cat_key, cat_data in categories_flat.items():
-        parts = cat_key.split("/")
-        # 四级目录 → 合并回三级
-        if len(parts) >= 4 and parts[0] == "packages" and parts[1] == "ai-insight":
-            parent_key = "packages/ai-insight/" + parts[2]
-            if parts[2] in ("concepts", "entity-profiles", "insights"):
-                # 合并到二级父目录的 key（如 concepts→概念体系）
-                # 但我们想让 concepts/* 和 entity-profiles/* 合并回 concepts/entity-profiles 三级卡片
-                # 而不是拆成一个个四级卡片
-                if parent_key not in merged_flat:
-                    merged_flat[parent_key] = dict(categories_flat.get(parent_key, cat_data))
-                    merged_flat[parent_key]["fileCount"] = 0
-                    merged_flat[parent_key]["sizeKB"] = 0
-                merged_flat[parent_key]["fileCount"] += cat_data["fileCount"]
-                merged_flat[parent_key]["sizeKB"] += cat_data.get("sizeKB", 0)
-                continue
-        # 三级目录（如果被四级合并覆盖，后面会重新赋值）
-        if cat_key not in merged_flat:
-            merged_flat[cat_key] = dict(cat_data)
-
-    # 确保 concepts/entity-profiles/insights 三级卡片包含自身+所有四级文件
-    for special_key in ["packages/ai-insight/concepts", "packages/ai-insight/entity-profiles", "packages/ai-insight/insights"]:
-        if special_key in categories_flat and special_key in merged_flat:
-            # 如果三级本身也有文件，加上
-            base = categories_flat[special_key]
-            if base["fileCount"] > 0 and merged_flat[special_key]["fileCount"] == 0:
-                merged_flat[special_key] = dict(base)
-
-    # Step 2: 构建卡片列表
-    cards = []
-
-    # 非packages的一级目录 → 按一级目录聚合
-    non_pkg_cats = {}
-    for cat_key, cat_data in merged_flat.items():
-        parts = cat_key.split("/")
-        if parts[0] == "packages" or parts[0] == "root":
-            continue
-        top = parts[0]
-        if top not in non_pkg_cats:
-            top_meta = _meta_for_path(top)
-            non_pkg_cats[top] = {
-                "displayName": top_meta.get("displayName", top),
-                "icon": top_meta.get("icon", "📁"),
-                "layerTag": top_meta.get("layerTag", "L3-execution"),
-                "description": top_meta.get("desc", ""),
-                "totalFiles": 0,
-                "subCategories": [],
-            }
-        non_pkg_cats[top]["totalFiles"] += cat_data["fileCount"]
-        if cat_key != top:
-            non_pkg_cats[top]["subCategories"].append({
-                "displayName": cat_data.get("displayName", cat_key),
-                "icon": cat_data.get("icon", "📁"),
-                "fileCount": cat_data["fileCount"],
-            })
-
-    for top_name, top_data in non_pkg_cats.items():
-        sub_cats = top_data.get("subCategories", [])
-        sub_summary = ""
-        if sub_cats:
-            top3 = sub_cats[:3]
-            names = [sc["displayName"] for sc in top3]
-            more = f"等{len(sub_cats)}个子领域" if len(sub_cats) > 3 else ""
-            sub_summary = f"（含 {', '.join(names)}{more}）"
-        cards.append({
-            "displayName": top_data["displayName"],
-            "icon": top_data["icon"],
-            "count": top_data["totalFiles"],
-            "layerTag": top_data["layerTag"],
-            "description": top_data["description"] + sub_summary,
-            "heatLevel": min(5, max(1, (top_data["totalFiles"] // 10) + 1)),
-        })
-
-    # root → 小卡片（归入元座知识层——知识库总索引是元认知性质的）
-    root_data = merged_flat.get("root")
-    if root_data:
-        cards.append({
-            "displayName": "知识库总索引",
-            "icon": "📋",
-            "count": root_data["fileCount"],
-            "layerTag": "L1-meta",  # 强制归入元座知识层
-            "description": "知识库总索引与导航文件",
-            "heatLevel": 1,
-        })
-
-    # packages 子包 → 独立卡片
-    for cat_key, cat_data in merged_flat.items():
-        parts = cat_key.split("/")
-        if parts[0] != "packages":
-            continue
-        if len(parts) == 2:
-            pkg = parts[1]
-            if pkg == "ai-insight":
-                # 根目录只有 INDEX+README，合并到大模型卡片
-                continue
-            pkg_meta = PKG_DIR_MAP.get(pkg, {"displayName": pkg, "icon": "📁", "desc": ""})
-            cards.append({
-                "displayName": pkg_meta.get("displayName", pkg),
-                "icon": pkg_meta.get("icon", "📁"),
-                "count": cat_data["fileCount"],
-                "layerTag": "L2-domain",
-                "description": pkg_meta.get("desc", ""),
-                "heatLevel": min(5, max(1, (cat_data["fileCount"] // 10) + 1)),
-            })
-        elif len(parts) == 3 and parts[1] == "ai-insight":
-            sub = parts[2]
-            sub_meta = AIINSIGHT_DIR_MAP.get(sub, {"displayName": sub, "icon": "📁", "desc": ""})
-            # 特殊处理：concepts 和 entity-profiles 合并了四级文件
-            desc = sub_meta.get("desc", "")
-            if sub == "concepts":
-                desc = "AI领域核心概念梳理：模型原理、Agent原理、AI应用、AI编程、企业转型、基础设施、AI安全"
-            elif sub == "entity-profiles":
-                desc = "AI领域关键公司与人物画像：22家公司档案+22位人物档案"
-            elif sub == "insights":
-                desc = "趋势分析与阶段性深度调研，含周洞察汇总"
-            cards.append({
-                "displayName": sub_meta.get("displayName", sub),
-                "icon": sub_meta.get("icon", "📁"),
-                "count": cat_data["fileCount"],
-                "layerTag": "L2-domain",
-                "description": desc,
-                "heatLevel": min(5, max(1, (cat_data["fileCount"] // 10) + 1)),
-            })
-
-    # ai-insight 根目录文件合并到大模型
-    ai_root = categories_flat.get("packages/ai-insight")
-    if ai_root and ai_root["fileCount"] > 0:
-        for c in cards:
-            if c.get("displayName") == "大模型":
-                c["count"] += ai_root["fileCount"]
-                break
-
-    # 构建 tree
-    tree = {}
-    LAYER_ICONS = {"L1-meta": "📖", "L2-domain": "🔍", "L3-execution": "📦"}
-    LAYER_COLORS = {"L1-meta": "#a78bfa", "L2-domain": "#8b5cf6", "L3-execution": "#4ade80"}
-    for card in cards:
-        layer_tag = card["layerTag"]
-        layer_label = next((l["label"] for l in LAYER_DEF if l["tag"] == layer_tag), "实践知识层")
-        if layer_label not in tree:
-            layer_def_entry = next((l for l in LAYER_DEF if l["tag"] == layer_tag), None)
-            tree[layer_label] = {
-                "layerTag": layer_tag,
-                "displayName": layer_label,
-                "icon": LAYER_ICONS.get(layer_tag, "📁"),
-                "description": layer_def_entry["desc"] if layer_def_entry else "",
-                "count": 0,
-                "children": {}
-            }
-        tree[layer_label]["count"] += card["count"]
-        tree[layer_label]["children"][card["displayName"]] = {
-            "count": card["count"],
-            "icon": card["icon"],
-            "color": LAYER_COLORS[layer_tag],
-            "description": card.get("description", ""),
-            "heatLevel": card.get("heatLevel", 1),
-            "relatedSkills": [],
-            "relatedMemories": [],
-            "items": [],
-        }
-
-    return {
-        "totalFiles": total_files,
-        "totalSizeKB": round(total_size_kb, 1),
-        "categories": categories_flat,  # 扁平统计（兼容）
-        "tree": tree,                    # 三层结构（前端渲染用）
-    }
+    return {"totalFiles": total_files, "totalSizeKB": round(total_size_kb, 1), "categories": categories}
 
 
 def update_memories():
-    """扫描记忆目录 — v2.0 结构化记忆树（中文展示）"""
+    """扫描记忆目录"""
     memory_dir = WORKSPACE / "memory"
     total = 0
     by_category = {}
 
-    MEM_CAT_LABELS = {
-        "daily_log": "修炼日志",
-        "clawbook": "社区互动",
-        "learning": "学习笔记",
-        "other": "其他记忆",
-    }
-    MEM_CAT_ICONS = {
-        "daily_log": "📝",
-        "clawbook": "👋",
-        "learning": "📚",
-        "other": "💭",
-    }
-    MEM_CAT_COLORS = {
-        "daily_log": "#4ade80",
-        "clawbook": "#00d4ff",
-        "learning": "#fbbf24",
-        "other": "#8b5cf6",
-    }
-    MEM_CAT_DESCS = {
-        "daily_log": "每日修炼复盘、对话记录",
-        "clawbook": "与ClawBook社区的互动与学习",
-        "learning": "从经验中提炼的学习笔记",
-        "other": "其他零散记忆片段",
-    }
-
-    # L1/L2/L3 映射
-    MEM_CAT_LAYER = {
-        "daily_log": "L1-meta",
-        "clawbook": "L3-execution",
-        "learning": "L2-domain",
-        "other": "L3-execution",
-    }
-
     if memory_dir.exists():
         for f in memory_dir.glob("*.md"):
             name = f.stem
-            if name in ("INDEX", "skill_calls", "memory-maintenance", "feedback", "binding-list-batch4", "heartbeat-state"):
+            if name in ("INDEX", "skill_calls", "memory-maintenance", "feedback"):
                 continue
             total += 1
             if re.match(r"^\d{4}-\d{2}-\d{2}", name):
@@ -448,60 +101,10 @@ def update_memories():
             else:
                 cat = "other"
             if cat not in by_category:
-                by_category[cat] = {
-                    "label": MEM_CAT_LABELS[cat],
-                    "displayName": MEM_CAT_LABELS[cat],
-                    "icon": MEM_CAT_ICONS[cat],
-                    "color": MEM_CAT_COLORS[cat],
-                    "description": MEM_CAT_DESCS[cat],
-                    "count": 0,
-                    "items": []
-                }
+                by_category[cat] = {"label": {"daily_log": "日志", "clawbook": "社区", "learning": "学习", "other": "其他"}[cat], "count": 0}
             by_category[cat]["count"] += 1
-            # 收集条目（截取标题）
-            title = name
-            if re.match(r"^\d{4}-\d{2}-\d{2}", name):
-                title = f"{name} 修炼日志"
-            elif "clawbook" in name:
-                title = f"社区巡逻 {name.replace('clawbook-patrol-', '').replace('clawbook_', '')}"
-            elif "til" in name:
-                title = f"TIL {name.replace('til-', '')}"
-            by_category[cat]["items"].append({
-                "title": title,
-                "icon": MEM_CAT_ICONS[cat],
-                "importance": 3,
-                "description": ""
-            })
 
-    # 构建 tree（三层架构）
-    tree = {}
-    for cat, cat_data in by_category.items():
-        layer_tag = MEM_CAT_LAYER.get(cat, "L3-execution")
-        layer_label = {"L1-meta": "元认知层", "L2-domain": "领域记忆层", "L3-execution": "实践记忆层", "SYSTEM": "系统约束层"}[layer_tag]
-        if layer_label not in tree:
-            layer_def = {
-                "L1-meta": {"icon": "🧠", "desc": "用户身份、思维方法、做事方法"},
-                "L2-domain": {"icon": "🎯", "desc": "特定领域的完整经验沉淀"},
-                "L3-execution": {"icon": "🏗️", "desc": "具体领域的踩坑经验和项目知识"},
-                "SYSTEM": {"icon": "⚙️", "desc": "系统自动提取的背景约束"},
-            }
-            tree[layer_label] = {
-                "layerTag": layer_tag,
-                "icon": layer_def[layer_tag]["icon"],
-                "description": layer_def[layer_tag]["desc"],
-                "count": 0,
-                "children": {}
-            }
-        tree[layer_label]["count"] += cat_data["count"]
-        tree[layer_label]["children"][cat_data["displayName"]] = {
-            "count": cat_data["count"],
-            "icon": cat_data["icon"],
-            "color": cat_data["color"],
-            "description": cat_data["description"],
-            "items": cat_data["items"][:12],  # 最多展示12条
-        }
-
-    return {"total": total, "byCategory": by_category, "tree": tree}
+    return {"total": total, "byCategory": by_category}
 
 
 def check_achievements(char_data):
@@ -572,41 +175,47 @@ def detect_new_projects():
 
     # ── 检测项目 ──
     
-    # 1. 首页项目（link-homepage）
-    homepage_dir = WORKSPACE / "link-homepage"
-    if homepage_dir.exists() and "link-homepage" not in known_projects:
-        known_projects["link-homepage"] = {
-            "id": "link-homepage",
-            "name": "林克进化首页",
+    # 1. 首页项目（动态检测 my-homepage 或 link-homepage）
+    # 从 character-data.json 读取首页URL（如果有的话）
+    homepage_url = ""
+    if DATA_FILE.exists():
+        with open(DATA_FILE, "r", encoding="utf-8") as f:
+            cdata = json.load(f)
+        homepage_url = cdata.get("character", {}).get("homepage", "") or cdata.get("character", {}).get("url", "")
+    
+    homepage_dirs = [WORKSPACE / "my-homepage", WORKSPACE / "link-homepage"]
+    homepage_id = None
+    actual_homepage_dir = None
+    for hdir in homepage_dirs:
+        if hdir.exists():
+            homepage_id = hdir.name
+            actual_homepage_dir = hdir
+            break
+    
+    if homepage_id and homepage_id not in known_projects:
+        # 从 character-data.json 读取用户名来动态命名
+        owner_name = cdata.get("character", {}).get("name", "AI伙伴") if DATA_FILE.exists() else "AI伙伴"
+        # 去掉"的AI伙伴"后缀，只保留用户名
+        owner_name = owner_name.replace("的AI伙伴", "").replace("的ai伙伴", "")
+        known_projects[homepage_id] = {
+            "id": homepage_id,
+            "name": f"{owner_name}进化首页",
             "icon": "🏠",
             "status": "deployed",
             "category": "homepage",
             "completedAt": date.today().strftime("%Y-%m-%d"),
-            "url": "https://link-homepage.frontend-cloud.corp.kuaishou.com",
+            "url": homepage_url,
             "quality": {"level": "featured"},
             "subtitle": "自进化体系可视化仪表盘",
             "goal": "让体系状态可观测、成长可追踪",
             "deliverables": ["首页HTML", "character-data.json", "4维数据可视化"],
             "highlights": ["四维等级体系", "30天成长趋势", "技能拓扑图"],
             "techStack": ["HTML/CSS/JS", "Chart.js", "frontend-cloud"],
-            "usedSkills": ["ui-ux-pro-max", "website-builder"]
+            "usedSkills": ["formless-power", "website-builder"]
         }
 
-    # 2. 技能项目（user-skills下的定制技能包）
+    # 2. 技能项目（动态扫描 user-skills/ 下的 SKILL.md，自动提取项目信息）
     skills_dir = WORKSPACE / "user-skills"
-    skill_projects_map = {
-        "sl-ai-insight": {"name": "AI持续洞察平台", "icon": "🔬", "category": "research",
-                         "quality": {"level": "featured"}, "subtitle": "AI行业日报/周报自动生成",
-                         "url": "https://xiaoxiong20260206.github.io/ai-insight-public/"},
-        "sl-ai-productivity": {"name": "AI生产力战役系统", "icon": "⚔️", "category": "tools",
-                              "quality": {"level": "excellent"}, "subtitle": "战役周报+成本追踪+里程碑管理"},
-        "sl-meta-product-thinking": {"name": "产品思维技能v3.0", "icon": "🧠", "category": "research",
-                                    "quality": {"level": "excellent"}, "subtitle": "登楼撤梯/匪兵甲/四问框架等产品方法论"},
-        "formless-power": {"name": "小无相功体系", "icon": "🧬", "category": "homepage",
-                          "quality": {"level": "featured"}, "subtitle": "自进化框架通用版+安装程序+首页"},
-        "sl-meta-persona-agent": {"name": "人格化Agent(七十二变)", "icon": "🎭", "category": "research",
-                                 "quality": {"level": "excellent"}, "subtitle": "多视角碰撞+成长加速器"},
-    }
     
     if skills_dir.exists():
         for skill_dir in skills_dir.glob("*/"):
@@ -615,22 +224,72 @@ def detect_new_projects():
             if not skill_file.exists():
                 continue
             if skill_id in known_projects:
-                continue  # 已知项目，不重复添加
-            if skill_id in skill_projects_map:
-                # 有预定义信息的项目
-                info = skill_projects_map[skill_id]
-                known_projects[skill_id] = {
-                    "id": skill_id,
-                    "name": info["name"],
-                    "icon": info["icon"],
-                    "status": "deployed",
-                    "category": info["category"],
-                    "completedAt": date.today().strftime("%Y-%m-%d"),
-                    "quality": info["quality"],
-                    "subtitle": info["subtitle"],
-                    "url": info.get("url", ""),
-                    "usedSkills": [skill_id]
+                continue
+            
+            # 从 SKILL.md 动态提取 name 和 description
+            skill_name = skill_id
+            skill_desc = ""
+            skill_icon = "📦"
+            skill_category = "tools"
+            
+            try:
+                with open(skill_file, "r", encoding="utf-8") as f:
+                    content = f.read(2000)  # 只读前2000字符
+                
+                # 提取 name
+                name_match = re.search(r'^name:\s*(.+)', content, re.MULTILINE)
+                if name_match:
+                    skill_name = name_match.group(1).strip()
+                
+                # 提取 description（取第一句）
+                desc_match = re.search(r'^description:\s*(.+)', content, re.MULTILINE)
+                if desc_match:
+                    full_desc = desc_match.group(1).strip()
+                    # 去掉引号和换行
+                    full_desc = full_desc.replace('"', '').replace("'", '').strip()
+                    # 取第一句（句号或逗号前的部分）
+                    first_sentence = re.split(r'[。，,;；]', full_desc)[0].strip()
+                    skill_desc = first_sentence if first_sentence else full_desc[:60]
+                
+                # 根据skill_id推断分类和图标
+                category_icon_map = {
+                    "formless-power": ("homepage", "🧬"),
+                    "sl-meta-persona-agent": ("research", "🎭"),
+                    "sl-meta-product-thinking": ("research", "🧠"),
+                    "sl-meta-signal-extractor": ("research", "👁️"),
+                    "sl-meta-expression-design": ("research", "📝"),
+                    "sl-meta-analogy-transfer": ("research", "🔄"),
+                    "sl-meta-boundary-sense": ("tools", "🛡️"),
+                    "sl-meta-context-sense": ("tools", "👁️"),
+                    "sl-meta-debug-pro": ("tools", "🔧"),
+                    "sl-meta-trust-builder": ("tools", "🤝"),
+                    "sl-meta-uncertainty-marker": ("tools", "🎯"),
+                    "sl-executive-report-writing": ("docs", "📄"),
+                    "sl-kim-doc-writer": ("docs", "📄"),
+                    "sl-zelda-ui": ("docs", "🎨"),
                 }
+                if skill_id in category_icon_map:
+                    skill_category, skill_icon = category_icon_map[skill_id]
+                elif "meta-" in skill_id or "evo-" in skill_id:
+                    skill_category = "research"
+                    skill_icon = "🧠"
+                elif skill_id.startswith("sl-"):
+                    skill_category = "tools"
+            except Exception:
+                pass
+            
+            known_projects[skill_id] = {
+                "id": skill_id,
+                "name": skill_name,
+                "icon": skill_icon,
+                "status": "deployed",
+                "category": skill_category,
+                "completedAt": date.today().strftime("%Y-%m-%d"),
+                "quality": {"level": "standard"},
+                "subtitle": skill_desc,
+                "url": "",
+                "usedSkills": [skill_id]
+            }
 
     # ── 构建 projects-data ──
     
@@ -812,6 +471,87 @@ def update_homepage_data():
     # 8. 更新日期标记
     data["character"]["lastDataUpdate"] = datetime.now().strftime("%Y-%m-%d %H:%M")
 
+    # 9. 自动从 personas/ 目录读取分身数据
+    personas = []
+    personas_dir = WORKSPACE / "personas"
+    if personas_dir.exists():
+        # 预设顺序和分身颜色/图标
+        PERSONA_ORDER = ["liangge", "liangning", "titi", "shenlang"]
+        preset = {
+            "liangge":   {"color": "#fbbf24", "icon": "💡"},
+            "liangning": {"color": "#f472b6", "icon": "🌸"},
+            "titi":      {"color": "#4ade80", "icon": "📊"},
+            "shenlang":  {"color": "#00d4ff", "icon": "⚔️"},
+        }
+        all_dirs = sorted(personas_dir.iterdir(), key=lambda d: (
+            PERSONA_ORDER.index(d.name) if d.name in PERSONA_ORDER else 999
+        ))
+        for persona_dir in all_dirs:
+            if not persona_dir.is_dir() or persona_dir.name.startswith("_"):
+                continue
+            soul_file = persona_dir / "SOUL.md"
+            readme_file = persona_dir / "README.md"
+            if not soul_file.exists():
+                continue
+            soul_content = soul_file.read_text(encoding="utf-8")
+            readme_content = readme_file.read_text(encoding="utf-8") if readme_file.exists() else ""
+
+            # 从 SOUL.md frontmatter 提取 name / description
+            name_match = re.search(r'^name:\s*(.+)$', soul_content, re.MULTILINE)
+            skill_name = name_match.group(1).strip() if name_match else persona_dir.name
+
+            # 第一个 ## 标题作为 fullName
+            fullname_match = re.search(r'^# (.+)$', soul_content, re.MULTILINE)
+            full_name = fullname_match.group(1).strip() if fullname_match else skill_name
+
+            # 角色
+            role_match = re.search(r'\*\*角色\*\*[：:]\s*(.+)', soul_content)
+            role = role_match.group(1).strip() if role_match else ""
+
+            # 定位
+            position_match = re.search(r'\*\*定位\*\*[：:]\s*(.+)', soul_content)
+            description = position_match.group(1).strip() if position_match else ""
+
+            # 核心使命
+            mission_match = re.search(r'\*\*核心使命\*\*[：:]\s*(.+)', soul_content)
+            mission = mission_match.group(1).strip() if mission_match else ""
+
+            # skills 目录下的子技能名
+            skills_dir = persona_dir / "skills"
+            skill_list = []
+            if skills_dir.exists():
+                for sk in skills_dir.iterdir():
+                    if sk.is_dir() and not sk.name.startswith("_") and sk.name != "experience-refinery":
+                        sk_md = sk / "SKILL.md"
+                        if sk_md.exists():
+                            sk_content = sk_md.read_text(encoding="utf-8")
+                            dn_match = re.search(r'^description:\s*"?(.{4,50})', sk_content, re.MULTILINE)
+                            skill_list.append(dn_match.group(1).strip('"\n').split('—')[0].strip()[:20] if dn_match else sk.name)
+
+            # 触发词（从 README 里提取代码块内容）
+            trigger_words = []
+            trigger_block = re.search(r'```\n(.+?)\n```', readme_content, re.DOTALL)
+            if trigger_block:
+                trigger_words = [t.strip().rstrip('...').strip() for t in trigger_block.group(1).strip().splitlines() if t.strip()][:4]
+
+            p = preset.get(persona_dir.name, {"color": "#a78bfa", "icon": "🤖"})
+            personas.append({
+                "name": persona_dir.name,
+                "fullName": full_name,
+                "icon": p["icon"],
+                "role": role,
+                "color": p["color"],
+                "description": description,
+                "mission": mission,
+                "thinkingStyle": "",
+                "tone": "",
+                "skills": skill_list[:6],
+                "triggerWords": trigger_words,
+                "tag": "Self"
+            })
+
+    data["personas"] = personas
+
     # ── 写回所有文件 ──
     with open(DATA_FILE, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
@@ -830,6 +570,7 @@ def update_homepage_data():
     print(f"  成就: {unlocked}/{len(achievements)} 已解锁, 新解锁: {newly_unlocked}")
     print(f"  作品: {pdata['summary']['total']} 个 ({pdata['summary']['deployed']} 已部署)")
     print(f"  里程碑: {len(mdata['milestones'])} 个, 新增: {new_milestones}")
+    print(f"  分身: {len(personas)} 个 ({', '.join(p['name'] for p in personas) or '无'})")
 
     if new_milestones > 0 or newly_unlocked:
         print(f"\n🎉 本次更新有变化！")
