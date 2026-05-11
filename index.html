@@ -5029,6 +5029,11 @@
                         <span class="tab-icon">📈</span>
                         <span>成长趋势</span>
                     </button>
+                    <button class="ability-tab-btn" data-ability-tab="personas" onclick="switchAbilityTab('personas')">
+                        <span class="tab-icon">👥</span>
+                        <span>分身</span>
+                        <span class="tab-count" id="tab-persona-count">-</span>
+                    </button>
                 </div>
 
                 <!-- 技能树 Tab -->
@@ -5150,6 +5155,13 @@
                         <div id="growth-bars"></div>
                     </div>
                 </div>
+                </div>
+
+                <!-- 分身 Tab -->
+                <div class="ability-tab-content" id="ability-tab-personas">
+                    <div class="persona-grid" id="persona-grid">
+                        <div class="loading">加载中...</div>
+                    </div>
                 </div>
             </section>
 

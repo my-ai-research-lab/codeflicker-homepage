@@ -1757,6 +1757,53 @@ function renderWorksGrid(projects) {
     container.innerHTML = categoriesHtml || '<div class="no-data">暂无作品数据</div>';
 }
 
+// ==================== 分身卡片渲染 ====================
+function renderPersonaCards() {
+    const personas = AppState.characterData?.personas || [];
+    const grid = document.getElementById('persona-grid');
+    const tabCount = document.getElementById('tab-persona-count');
+    
+    if (tabCount) tabCount.textContent = personas.length;
+    if (!grid || personas.length === 0) {
+        if (grid) grid.innerHTML = '<div style="text-align:center;padding:40px;color:var(--text-muted);"><div style="font-size:48px;margin-bottom:10px;">👥</div><div>暂无分身数据</div></div>';
+        return;
+    }
+    
+    grid.innerHTML = personas.map(p => {
+        const skillsHtml = (p.skills || []).map(s => `<span class="persona-skill-tag">${s}</span>`).join('');
+        const triggersHtml = (p.triggerWords || []).map(t => `<span class="persona-trigger-tag">${t}</span>`).join('');
+        return `
+        <div class="persona-card" style="--persona-color: ${p.color || '#00d4ff'};">
+            <div class="persona-card-header">
+                <div class="persona-icon">${p.icon || '🤖'}</div>
+                <div>
+                    <div class="persona-card-name">${p.fullName || p.name}</div>
+                    <div class="persona-card-role">${p.role || ''}</div>
+                </div>
+            </div>
+            <div class="persona-card-desc">${p.description || ''}</div>
+            <div class="persona-card-mission">${p.mission || ''}</div>
+            <div class="persona-card-section">
+                <div class="persona-card-section-label">思维风格</div>
+                <div class="persona-card-thinking">${p.thinkingStyle || ''}</div>
+            </div>
+            <div class="persona-card-section">
+                <div class="persona-card-section-label">语气特点</div>
+                <div class="persona-card-tone">${p.tone || ''}</div>
+            </div>
+            <div class="persona-card-section">
+                <div class="persona-card-section-label">核心技能</div>
+                <div class="persona-card-skills">${skillsHtml}</div>
+            </div>
+            <div class="persona-card-section">
+                <div class="persona-card-section-label">唤醒方式</div>
+                <div class="persona-card-triggers">${triggersHtml}</div>
+            </div>
+        </div>`;
+    }).join('');
+}
+window.renderPersonaCards = renderPersonaCards;
+
 // ==================== 我的能力Section（合并技能树+关于我） ====================
 function renderAbilitiesSection() {
     const skills = AppState.characterData?.skills;
@@ -1796,6 +1843,9 @@ function renderAbilitiesSection() {
     if (tabSkillCount) tabSkillCount.textContent = skills.total;
     if (tabMemoryCount) tabMemoryCount.textContent = memories.total;
     if (tabKnowledgeCount) tabKnowledgeCount.textContent = knowledge.totalFiles;
+    
+    // 渲染分身卡片
+    renderPersonaCards();
     
     // 使用新的渲染函数（来自 ability-trees.js）
     const skillContainer = document.getElementById('skill-tree');

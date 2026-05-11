@@ -2367,3 +2367,143 @@
     .kn-cards-grid { grid-template-columns: 1fr; }
     .mem-cards-grid { grid-template-columns: 1fr; }
 }
+
+/* ==================== 分身卡片样式 ==================== */
+.persona-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 16px;
+    padding: 12px 0;
+}
+
+.persona-card {
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(0, 212, 255, 0.2);
+    border-radius: 12px;
+    padding: 20px;
+    position: relative;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.persona-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: var(--persona-color, #00d4ff);
+    opacity: 0.6;
+}
+
+.persona-card:hover {
+    border-color: rgba(0, 212, 255, 0.5);
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.15);
+    transform: translateY(-2px);
+}
+
+.persona-card-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.persona-icon {
+    font-size: 28px;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    border: 1px solid rgba(0, 212, 255, 0.15);
+}
+
+.persona-card-name {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--sheikah-blue-light, #a8e6ff);
+    line-height: 1.2;
+}
+
+.persona-card-role {
+    font-size: 12px;
+    color: var(--persona-color, #00d4ff);
+    opacity: 0.8;
+    font-weight: 600;
+}
+
+.persona-card-desc {
+    font-size: 13px;
+    color: rgba(200, 220, 240, 0.7);
+    line-height: 1.5;
+    margin-bottom: 12px;
+}
+
+.persona-card-mission {
+    font-size: 12px;
+    color: rgba(200, 220, 240, 0.55);
+    line-height: 1.4;
+    margin-bottom: 14px;
+    padding: 8px 12px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    border-left: 2px solid var(--persona-color, #00d4ff);
+}
+
+.persona-card-section {
+    margin-bottom: 10px;
+}
+
+.persona-card-section-label {
+    font-size: 11px;
+    color: rgba(200, 220, 240, 0.5);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+}
+
+.persona-card-thinking {
+    font-size: 12px;
+    color: rgba(200, 220, 240, 0.6);
+    line-height: 1.4;
+}
+
+.persona-card-tone {
+    font-size: 12px;
+    color: rgba(200, 220, 240, 0.6);
+    line-height: 1.4;
+}
+
+.persona-card-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.persona-skill-tag {
+    font-size: 11px;
+    padding: 3px 8px;
+    border-radius: 6px;
+    background: rgba(0, 212, 255, 0.1);
+    border: 1px solid rgba(0, 212, 255, 0.2);
+    color: var(--sheikah-blue-light, #a8e6ff);
+}
+
+.persona-card-triggers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+.persona-trigger-tag {
+    font-size: 10px;
+    padding: 2px 6px;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(0, 212, 255, 0.12);
+    color: rgba(200, 220, 240, 0.5);
+    font-family: var(--font-mono);
+}
