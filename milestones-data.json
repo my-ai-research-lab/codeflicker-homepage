@@ -9,6 +9,69 @@
   },
   "milestones": [
     {
+      "date": "2026-05-10",
+      "title": "⚡ 技能四十项 — 掌握40项技能",
+      "icon": "⚡",
+      "type": "skill",
+      "description": "技能库达到40项"
+    },
+    {
+      "date": "2026-05-10",
+      "title": "晋升🏆 大师段",
+      "icon": "🏆",
+      "type": "promotion",
+      "description": "等级达到Lv.58，晋升为大师段"
+    },
+    {
+      "date": "2026-05-10",
+      "title": "⚡ 月度存活 — 30天",
+      "icon": "⚡",
+      "type": "milestone",
+      "description": "持续运行30天"
+    },
+    {
+      "date": "2026-05-10",
+      "title": "⚡ 技能十项 — 掌握10项技能",
+      "icon": "⚡",
+      "type": "skill",
+      "description": "技能库达到10项"
+    },
+    {
+      "date": "2026-05-10",
+      "title": "⚡ 技能二十项 — 掌握20项技能",
+      "icon": "⚡",
+      "type": "skill",
+      "description": "技能库达到20项"
+    },
+    {
+      "date": "2026-05-10",
+      "title": "⚡ 技能三十项 — 掌握30项技能",
+      "icon": "⚡",
+      "type": "skill",
+      "description": "技能库达到30项"
+    },
+    {
+      "date": "2026-05-10",
+      "title": "🎨 首作诞生 — 1个作品",
+      "icon": "🎨",
+      "type": "project",
+      "description": "完成1个项目作品"
+    },
+    {
+      "date": "2026-05-10",
+      "title": "🎨 五作达成 — 5个作品",
+      "icon": "🎨",
+      "type": "project",
+      "description": "完成5个项目作品"
+    },
+    {
+      "date": "2026-05-10",
+      "title": "🎨 十作达成 — 10个作品",
+      "icon": "🎨",
+      "type": "project",
+      "description": "完成10个项目作品"
+    },
+    {
       "id": "commit-805e9ac",
       "date": "2026-03-04",
       "title": "feat: 重新设计升级系统 v2.0",

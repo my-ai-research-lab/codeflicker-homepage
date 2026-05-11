@@ -5,15 +5,15 @@
     "title": "AI工作伙伴",
     "description": "在 MyFlicker 上运行，前身基于 CodeFlicker 培养，现已完整迁移。灵魂没变，肉体更强。具备四层六维技能架构，云端运行，持续自进化。",
     "version": "8.0",
-    "level": 72,
-    "levelTitle": "宗师",
+    "level": 60,
+    "levelTitle": "大师",
     "tier": {
-      "name": "宗师",
-      "minLevel": 71,
-      "maxLevel": 80,
-      "color": "#ff6347",
-      "icon": "👑",
-      "description": "炉火纯青，宗师风范"
+      "name": "大师",
+      "minLevel": 51,
+      "maxLevel": 60,
+      "color": "#9370db",
+      "icon": "🏆",
+      "description": "独当一面，体系成熟"
     },
     "allTiers": [
       {
@@ -22,7 +22,7 @@
         "maxLevel": 10,
         "color": "#cd7f32",
         "icon": "🥉",
-        "description": "初来乍到，正在相互了解"
+        "description": "刚起步，正在磨合"
       },
       {
         "name": "白银",
@@ -30,7 +30,7 @@
         "maxLevel": 20,
         "color": "#c0c0c0",
         "icon": "🥈",
-        "description": "建立默契，成为可靠的助手"
+        "description": "建立默契，基本可靠"
       },
       {
         "name": "黄金",
@@ -38,7 +38,7 @@
         "maxLevel": 30,
         "color": "#ffd700",
         "icon": "🥇",
-        "description": "深度融合，如同你的分身"
+        "description": "深度融合，默契伙伴"
       },
       {
         "name": "铂金",
@@ -46,7 +46,7 @@
         "maxLevel": 40,
         "color": "#e5e4e2",
         "icon": "💎",
-        "description": "融会贯通，万法归一"
+        "description": "融会贯通，稳定交付"
       },
       {
         "name": "钻石",
@@ -54,35 +54,35 @@
         "maxLevel": 50,
         "color": "#b9f2ff",
         "icon": "💠",
-        "description": "无相无我，圆满无缺"
+        "description": "精通多域，自驱进化"
       },
       {
         "name": "大师",
         "minLevel": 51,
-        "maxLevel": 70,
+        "maxLevel": 60,
         "color": "#9370db",
         "icon": "🏆",
-        "description": "登堂入室，独当一面"
+        "description": "独当一面，体系成熟"
       },
       {
         "name": "宗师",
-        "minLevel": 71,
-        "maxLevel": 80,
+        "minLevel": 61,
+        "maxLevel": 70,
         "color": "#ff6347",
         "icon": "👑",
-        "description": "炉火纯青，宗师风范"
+        "description": "炉火纯青，知行合一"
       },
       {
         "name": "传说",
-        "minLevel": 81,
-        "maxLevel": 90,
+        "minLevel": 71,
+        "maxLevel": 80,
         "color": "#ff4500",
         "icon": "🌟",
-        "description": "传说中的存在"
+        "description": "超越预期，创造价值"
       },
       {
         "name": "神话",
-        "minLevel": 91,
+        "minLevel": 81,
         "maxLevel": 100,
         "color": "#ffd700",
         "icon": "✨",
@@ -100,14 +100,6 @@
         "desc": "越来越不用纠正"
       },
       {
-        "key": "execution",
-        "icon": "🎯",
-        "name": "执行效率",
-        "shortName": "执行",
-        "color": "#4ade80",
-        "desc": "一次就做对"
-      },
-      {
         "key": "skillDepth",
         "icon": "⚡",
         "name": "技能深度",
@@ -116,62 +108,85 @@
         "desc": "技能越来越厉害"
       },
       {
+        "key": "quality",
+        "icon": "💎",
+        "name": "沉淀质量",
+        "shortName": "沉淀",
+        "color": "#a78bfa",
+        "desc": "越用越有沉淀"
+      },
+      {
+        "key": "experience",
+        "icon": "🎯",
+        "name": "使用经验",
+        "shortName": "经验",
+        "color": "#4ade80",
+        "desc": "时间和广度积累"
+      },
+      {
         "key": "thinkingDepth",
         "icon": "💭",
         "name": "思考深度",
         "shortName": "思考",
-        "color": "#a78bfa",
-        "desc": "分析越来越深刻"
-      },
-      {
-        "key": "knowledgeBreadth",
-        "icon": "📚",
-        "name": "知识丰富度",
-        "shortName": "知识",
         "color": "#f472b6",
-        "desc": "知道的越来越多"
+        "desc": "分析越来越深刻"
       }
     ],
-    "totalExp": 345620,
-    "expProgress": 86.2,
-    "currentThreshold": 320393,
-    "nextThreshold": 349649,
+    "totalExp": 60.3,
+    "expProgress": 60.3,
+    "currentThreshold": 60,
+    "nextThreshold": 61,
     "stats": {
-      "understanding": 82.3,
-      "execution": 62.8,
-      "skillDepth": 82.8,
-      "thinkingDepth": 38.0,
-      "knowledgeBreadth": 65.6
+      "understanding": 76.7,
+      "skillDepth": 74.0,
+      "quality": 39.0,
+      "experience": 44.0,
+      "execution": 56.0,
+      "thinkingDepth": 39.0,
+      "knowledgeBreadth": 8.8
     },
     "debug": {
       "metrics": {
-        "ftr": 87.0,
-        "sdr": 0,
-        "thi": 77.2,
-        "mdv": 0.5,
-        "ctr": 0
+        "understandingScore": 23,
+        "depthScore": 18.5,
+        "qualityScore": 7.8,
+        "experienceScore": 11
       },
-      "activeSkills": 153,
-      "highLevelSkills": 113,
-      "skillTotalValue": 3110.1,
-      "cultivationExp": 0,
-      "baseExp": 345620,
-      "expBreakdown": {
-        "understanding": 82300,
-        "execution": 62800,
-        "skill": 124200,
-        "thinking": 30400,
-        "knowledge": 45919,
-        "cultivation": 0
-      }
+      "understandingDetail": {
+        "soulDepth": 10,
+        "memoryDepth": 3,
+        "habitDepth": 10
+      },
+      "depthDetail": {
+        "totalSkillWeighted": 274.5,
+        "maxPossible": 370.0,
+        "skillCount": 77
+      },
+      "qualityDetail": {
+        "evolutionEvents": 1,
+        "skillUpdates": 24,
+        "reflectionCycles": 4,
+        "accumulatedPoints": 78
+      },
+      "experienceDetail": {
+        "callDepth": 5,
+        "dayDepth": 6,
+        "communityDepth": 0
+      },
+      "activeSkills": 77,
+      "runDays": 99,
+      "totalCallCount": 1075,
+      "communityScore": 0
     },
     "fullName": "林克（Link）",
     "runDays": 91,
     "totalConversations": 420,
-    "worksCount": 42
+    "worksCount": 14,
+    "deployedWorks": 13,
+    "lastDataUpdate": "2026-05-11 12:32"
   },
   "skills": {
-    "total": 36,
+    "total": 77,
     "categories": {
       "⚡ 引擎层": {
         "skills": [
@@ -183,14 +198,16 @@
             "level": 3,
             "exp": 59,
             "description": "Formless Power · 功法合一：导航·吸收·导出·修炼·详报",
-            "lastUpdated": "2026-05-07",
+            "lastUpdated": "2026-05-11",
             "platform": "Work",
             "platformLabel": "⚡",
             "tag": "Link",
             "callCount": 25,
             "frequency": "2次/月",
             "successRate": 78,
-            "id": "formless-power"
+            "id": "formless-power",
+            "levelName": "成熟",
+            "levelIcon": "🌳"
           },
           {
             "name": "evo-meta-execution",
@@ -200,13 +217,15 @@
             "level": 5,
             "exp": 100,
             "description": "执行前自审方案、执行中发现问题立即修正、完成后总结经验",
-            "lastUpdated": "2026-05-07",
+            "lastUpdated": "2026-05-11",
             "platform": "Root",
             "platformLabel": "🔒 系统级",
             "tag": "Link",
             "callCount": 420,
             "frequency": "每日",
-            "successRate": 92
+            "successRate": 92,
+            "levelName": "圆满",
+            "levelIcon": "✨"
           },
           {
             "name": "evo-daily-reflection",
@@ -216,13 +235,15 @@
             "level": 3,
             "exp": 70,
             "description": "每日修炼流水线入口，按step参数调度",
-            "lastUpdated": "2026-05-07",
+            "lastUpdated": "2026-05-11",
             "platform": "Root",
             "platformLabel": "🔒 系统级",
             "tag": "Link",
-            "callCount": 45,
-            "frequency": "每周",
-            "successRate": 88
+            "callCount": 2,
+            "frequency": "低频",
+            "successRate": 100,
+            "levelName": "成熟",
+            "levelIcon": "🌳"
           },
           {
             "name": "evo-learn-from-mistakes",
@@ -232,13 +253,15 @@
             "level": 3,
             "exp": 60,
             "description": "从经验提取可复用模式，即时复盘沉淀",
-            "lastUpdated": "2026-03-19",
+            "lastUpdated": "2026-05-11",
             "platform": "Root",
             "platformLabel": "🔒 系统级",
             "tag": "Link",
             "callCount": 18,
             "frequency": "2次/月",
-            "successRate": 80
+            "successRate": 80,
+            "levelName": "成熟",
+            "levelIcon": "🌳"
           },
           {
             "name": "evo-knowledge-base",
@@ -246,15 +269,17 @@
             "displayRole": "知识库内容检索",
             "source": "系统级",
             "level": 2,
-            "exp": 25,
+            "exp": 32,
             "description": "知识库内容检索与分类查找",
-            "lastUpdated": "2026-05-07",
+            "lastUpdated": "2026-05-11",
             "platform": "Root",
             "platformLabel": "🔒 系统级",
             "tag": "Link",
             "callCount": 20,
-            "frequency": "每周",
-            "successRate": 85
+            "frequency": "2次/月",
+            "successRate": 85,
+            "levelName": "生长",
+            "levelIcon": "🌿"
           },
           {
             "name": "evo-knowledge-curator",
@@ -264,13 +289,15 @@
             "level": 2,
             "exp": 20,
             "description": "知识库健康管理：索引检查、重复检测、过时标记、分类整理",
-            "lastUpdated": "2026-05-07",
+            "lastUpdated": "2026-05-11",
             "platform": "Root",
             "platformLabel": "🔒 系统级",
             "tag": "Link",
             "callCount": 5,
             "frequency": "1次/月",
-            "successRate": 70
+            "successRate": 70,
+            "levelName": "生长",
+            "levelIcon": "🌿"
           }
         ],
         "description": "驱动自进化循环的核心引擎 · 6技能"
@@ -290,9 +317,11 @@
             "callCount": 35,
             "frequency": "每周",
             "successRate": 90,
-            "lastUpdated": "2026-05-07",
+            "lastUpdated": "2026-05-11",
             "dimension": "感知",
-            "dimensionIcon": "👁️"
+            "dimensionIcon": "👁️",
+            "levelName": "成熟",
+            "levelIcon": "🌳"
           },
           {
             "name": "sl-meta-signal-extractor",
@@ -307,9 +336,11 @@
             "callCount": 28,
             "frequency": "2次/月",
             "successRate": 85,
-            "lastUpdated": "2026-05-07",
+            "lastUpdated": "2026-05-11",
             "dimension": "感知",
-            "dimensionIcon": "👁️"
+            "dimensionIcon": "👁️",
+            "levelName": "生长",
+            "levelIcon": "🌿"
           },
           {
             "name": "sl-meta-analogy-transfer",
@@ -324,9 +355,11 @@
             "callCount": 10,
             "frequency": "2次/月",
             "successRate": 71,
-            "lastUpdated": "2026-05-07",
+            "lastUpdated": "2026-05-11",
             "dimension": "推理",
-            "dimensionIcon": "🧠"
+            "dimensionIcon": "🧠",
+            "levelName": "生长",
+            "levelIcon": "🌿"
           },
           {
             "name": "sl-meta-uncertainty-marker",
@@ -341,9 +374,11 @@
             "callCount": 5,
             "frequency": "1次/月",
             "successRate": 70,
-            "lastUpdated": "2026-05-07",
+            "lastUpdated": "2026-05-11",
             "dimension": "守护",
-            "dimensionIcon": "🛡️"
+            "dimensionIcon": "🛡️",
+            "levelName": "萌芽",
+            "levelIcon": "🌱"
           },
           {
             "name": "evo-essence-insight",
@@ -354,13 +389,16 @@
             "platformLabel": "🔒 系统级",
             "tag": "Link",
             "level": 2,
-            "exp": 30,
+            "exp": 32,
             "callCount": 20,
-            "frequency": "3次/月",
+            "frequency": "2次/月",
             "successRate": 80,
             "dimension": "推理",
             "dimensionIcon": "🧠",
-            "source": "系统级"
+            "source": "系统级",
+            "lastUpdated": "2026-05-11",
+            "levelName": "生长",
+            "levelIcon": "🌿"
           },
           {
             "name": "sl-meta-boundary-sense",
@@ -375,9 +413,11 @@
             "callCount": 15,
             "frequency": "2次/月",
             "successRate": 72,
-            "lastUpdated": "2026-05-07",
+            "lastUpdated": "2026-05-11",
             "dimension": "执行",
-            "dimensionIcon": "⚙️"
+            "dimensionIcon": "⚙️",
+            "levelName": "生长",
+            "levelIcon": "🌿"
           },
           {
             "name": "sl-meta-debug-pro",
@@ -392,9 +432,11 @@
             "callCount": 5,
             "frequency": "1次/月",
             "successRate": 70,
-            "lastUpdated": "2026-05-07",
+            "lastUpdated": "2026-05-11",
             "dimension": "执行",
-            "dimensionIcon": "⚙️"
+            "dimensionIcon": "⚙️",
+            "levelName": "生长",
+            "levelIcon": "🌿"
           },
           {
             "name": "sl-meta-trust-builder",
@@ -409,9 +451,11 @@
             "callCount": 5,
             "frequency": "1次/月",
             "successRate": 70,
-            "lastUpdated": "2026-05-07",
+            "lastUpdated": "2026-05-11",
             "dimension": "协作",
-            "dimensionIcon": "🤝"
+            "dimensionIcon": "🤝",
+            "levelName": "萌芽",
+            "levelIcon": "🌱"
           },
           {
             "name": "evo-knowledge-acquisition-meta",
@@ -421,7 +465,7 @@
             "level": 2,
             "exp": 30,
             "description": "五阶段渐进式学习框架 + 三质量保障环",
-            "lastUpdated": "2026-05-07",
+            "lastUpdated": "2026-05-11",
             "platform": "Root",
             "platformLabel": "🔒 系统级",
             "tag": "Link",
@@ -429,7 +473,9 @@
             "frequency": "1次/月",
             "successRate": 75,
             "dimension": "推理",
-            "dimensionIcon": "🧠"
+            "dimensionIcon": "🧠",
+            "levelName": "生长",
+            "levelIcon": "🌿"
           },
           {
             "name": "sl-meta-expression-design",
@@ -437,17 +483,19 @@
             "displayRole": "表达·受众识别→结构设计→载体适配",
             "source": "林克核心能力",
             "level": 2,
-            "exp": 30,
+            "exp": 31,
             "description": "受众识别→结构设计→载体适配（表达维度元能力）",
-            "lastUpdated": "2026-05-07",
+            "lastUpdated": "2026-05-11",
             "platform": "Work",
             "platformLabel": "⚡",
             "tag": "Link",
             "callCount": 18,
-            "frequency": "每周",
+            "frequency": "2次/月",
             "successRate": 82,
             "dimension": "表达",
-            "dimensionIcon": "📝"
+            "dimensionIcon": "📝",
+            "levelName": "生长",
+            "levelIcon": "🌿"
           },
           {
             "id": "sl-meta-product-thinking",
@@ -470,8 +518,10 @@
             "callCount": 12,
             "frequency": "2次/月",
             "successRate": 78,
-            "lastUpdated": "2026-05-08",
-            "source": "林克核心能力"
+            "lastUpdated": "2026-05-11",
+            "source": "林克核心能力",
+            "levelName": "成熟",
+            "levelIcon": "🌳"
           },
           {
             "id": "sl-meta-persona-agent",
@@ -479,13 +529,13 @@
             "level": 1,
             "dimension": "协作",
             "dimensionIcon": "🤝",
-            "description": "元技能-人格化Agent | 多视角碰撞·模拟审阅·专项教练",
+            "description": "元技能-Agent分身 | 多视角碰撞·模拟审阅·专项教练",
             "tags": [
               "元技能",
               "协作",
               "人格化"
             ],
-            "displayName": "人格化Agent",
+            "displayName": "Agent分身",
             "displayRole": "协作·多视角碰撞·模拟审阅",
             "platform": "Work",
             "platformLabel": "⚡",
@@ -494,8 +544,10 @@
             "callCount": 3,
             "frequency": "1次/月",
             "successRate": 70,
-            "lastUpdated": "2026-05-08",
-            "source": "林克核心能力"
+            "lastUpdated": "2026-05-11",
+            "source": "林克核心能力",
+            "levelName": "萌芽",
+            "levelIcon": "🌱"
           }
         ],
         "description": "跨场景复用的元能力框架 · 六维12技能"
@@ -516,7 +568,9 @@
             "callCount": 180,
             "frequency": "每日",
             "successRate": 95,
-            "lastUpdated": "2026-05-07"
+            "lastUpdated": "2026-05-11",
+            "levelName": "圆满",
+            "levelIcon": "✨"
           },
           {
             "name": "sl-rd-efficiency-insight",
@@ -531,7 +585,10 @@
             "source": "林克核心能力",
             "callCount": 12,
             "frequency": "2次/月",
-            "successRate": 80
+            "successRate": 80,
+            "lastUpdated": "2026-05-11",
+            "levelName": "生长",
+            "levelIcon": "🌿"
           },
           {
             "name": "sl-ai-productivity",
@@ -547,7 +604,9 @@
             "callCount": 20,
             "frequency": "2次/月",
             "successRate": 72,
-            "lastUpdated": "2026-05-07"
+            "lastUpdated": "2026-05-11",
+            "levelName": "生长",
+            "levelIcon": "🌿"
           },
           {
             "name": "sl-ai-column-writer",
@@ -563,7 +622,9 @@
             "callCount": 15,
             "frequency": "2次/月",
             "successRate": 90,
-            "lastUpdated": "2026-05-07"
+            "lastUpdated": "2026-05-11",
+            "levelName": "成熟",
+            "levelIcon": "🌳"
           },
           {
             "name": "sl-kim-bridge",
@@ -579,7 +640,9 @@
             "callCount": 25,
             "frequency": "2次/月",
             "successRate": 90,
-            "lastUpdated": "2026-05-07"
+            "lastUpdated": "2026-05-11",
+            "levelName": "生长",
+            "levelIcon": "🌿"
           },
           {
             "name": "sl-weixin-bridge",
@@ -594,7 +657,10 @@
             "source": "林克核心能力",
             "callCount": 10,
             "frequency": "2次/月",
-            "successRate": 85
+            "successRate": 85,
+            "lastUpdated": "2026-05-11",
+            "levelName": "生长",
+            "levelIcon": "🌿"
           },
           {
             "name": "sl-feishu-assistant",
@@ -605,11 +671,14 @@
             "platformLabel": "⚡",
             "tag": "Link",
             "level": 1,
-            "exp": 15,
+            "exp": 16,
             "source": "林克核心能力",
             "callCount": 8,
             "frequency": "1次/月",
-            "successRate": 80
+            "successRate": 80,
+            "lastUpdated": "2026-05-11",
+            "levelName": "萌芽",
+            "levelIcon": "🌱"
           },
           {
             "name": "sl-yuque-publisher",
@@ -624,7 +693,10 @@
             "source": "林克核心能力",
             "callCount": 5,
             "frequency": "1次/月",
-            "successRate": 75
+            "successRate": 75,
+            "lastUpdated": "2026-05-11",
+            "levelName": "萌芽",
+            "levelIcon": "🌱"
           },
           {
             "name": "sl-investment-tracker",
@@ -638,7 +710,10 @@
             "exp": 30,
             "callCount": 12,
             "frequency": "2次/月",
-            "successRate": 80
+            "successRate": 80,
+            "lastUpdated": "2026-05-11",
+            "levelName": "生长",
+            "levelIcon": "🌿"
           },
           {
             "name": "sl-weekly-fortune",
@@ -652,7 +727,10 @@
             "exp": 15,
             "callCount": 4,
             "frequency": "1次/月",
-            "successRate": 95
+            "successRate": 95,
+            "lastUpdated": "2026-05-11",
+            "levelName": "萌芽",
+            "levelIcon": "🌱"
           },
           {
             "name": "sl-zelda-ui",
@@ -663,10 +741,13 @@
             "platformLabel": "⚡",
             "tag": "Link",
             "level": 1,
-            "exp": 15,
+            "exp": 16,
             "callCount": 8,
             "frequency": "1次/月",
-            "successRate": 85
+            "successRate": 85,
+            "lastUpdated": "2026-05-11",
+            "levelName": "萌芽",
+            "levelIcon": "🌱"
           },
           {
             "name": "sl-executive-report-writing",
@@ -679,10 +760,12 @@
             "callCount": 5,
             "frequency": "1次/月",
             "successRate": 80,
-            "lastUpdated": "2026-05-07",
+            "lastUpdated": "2026-05-11",
             "platform": "Work",
             "platformLabel": "⚡",
-            "tag": "Link"
+            "tag": "Link",
+            "levelName": "萌芽",
+            "levelIcon": "🌱"
           },
           {
             "name": "sl-kim-doc-writer",
@@ -695,8 +778,11 @@
             "level": 2,
             "exp": 35,
             "callCount": 20,
-            "frequency": "3次/月",
-            "successRate": 85
+            "frequency": "2次/月",
+            "successRate": 85,
+            "lastUpdated": "2026-05-11",
+            "levelName": "生长",
+            "levelIcon": "🌿"
           }
         ],
         "description": "垂直题域的专业技能包 · 13技能"
@@ -717,10 +803,12 @@
             "level": 3,
             "exp": 59,
             "source": "林克核心能力",
-            "lastUpdated": "2026-05-06",
+            "lastUpdated": "2026-05-11",
             "callCount": 25,
             "frequency": "2次/月",
-            "successRate": 78
+            "successRate": 78,
+            "levelName": "成熟",
+            "levelIcon": "🌳"
           },
           {
             "name": "evo-daily-reflection",
@@ -733,10 +821,12 @@
             "level": 3,
             "exp": 65,
             "source": "系统级",
-            "lastUpdated": "2026-03-19",
-            "callCount": 45,
-            "frequency": "每周",
-            "successRate": 88
+            "lastUpdated": "2026-05-11",
+            "callCount": 2,
+            "frequency": "低频",
+            "successRate": 100,
+            "levelName": "成熟",
+            "levelIcon": "🌳"
           },
           {
             "name": "evo-learn-from-mistakes",
@@ -749,10 +839,12 @@
             "level": 3,
             "exp": 60,
             "source": "系统级",
-            "lastUpdated": "2026-03-19",
+            "lastUpdated": "2026-05-11",
             "callCount": 18,
             "frequency": "2次/月",
-            "successRate": 80
+            "successRate": 80,
+            "levelName": "成熟",
+            "levelIcon": "🌳"
           },
           {
             "name": "evo-knowledge-base",
@@ -768,7 +860,9 @@
             "callCount": 30,
             "frequency": "每周",
             "successRate": 85,
-            "lastUpdated": "2026-05-08"
+            "lastUpdated": "2026-05-11",
+            "levelName": "成熟",
+            "levelIcon": "🌳"
           },
           {
             "name": "evo-knowledge-curator",
@@ -784,7 +878,718 @@
             "callCount": 20,
             "frequency": "2次/月",
             "successRate": 80,
-            "lastUpdated": "2026-05-08"
+            "lastUpdated": "2026-05-11",
+            "levelName": "成熟",
+            "levelIcon": "🌳"
+          }
+        ]
+      },
+      "🛠️ 工具层": {
+        "name": "🛠️ 工具层",
+        "description": "平台技能，拿来就用",
+        "skills": [
+          {
+            "name": "designai-generate-image",
+            "fullName": "designai-generate-image",
+            "icon": "🔧",
+            "level": 1,
+            "exp": 6,
+            "callCount": 0,
+            "successRate": 70,
+            "frequency": "低频",
+            "lastUpdated": "2026-05-11",
+            "levelName": "萌芽",
+            "levelIcon": "🌱",
+            "platform": "Platform",
+            "platformLabel": "平台技能",
+            "category": "L4-工具层",
+            "status": "active"
+          },
+          {
+            "name": "clawbook",
+            "fullName": "clawbook",
+            "icon": "🔧",
+            "level": 1,
+            "exp": 6,
+            "callCount": 0,
+            "successRate": 70,
+            "frequency": "低频",
+            "lastUpdated": "2026-05-11",
+            "levelName": "萌芽",
+            "levelIcon": "🌱",
+            "platform": "Platform",
+            "platformLabel": "平台技能",
+            "category": "L4-工具层",
+            "status": "active"
+          },
+          {
+            "name": "tavily-search",
+            "fullName": "tavily-search",
+            "icon": "🔧",
+            "level": 1,
+            "exp": 6,
+            "callCount": 0,
+            "successRate": 70,
+            "frequency": "低频",
+            "lastUpdated": "2026-05-11",
+            "levelName": "萌芽",
+            "levelIcon": "🌱",
+            "platform": "Platform",
+            "platformLabel": "平台技能",
+            "category": "L4-工具层",
+            "status": "active"
+          },
+          {
+            "name": "cafeteria-takeout",
+            "fullName": "cafeteria-takeout",
+            "icon": "🔧",
+            "level": 1,
+            "exp": 6,
+            "callCount": 0,
+            "successRate": 70,
+            "frequency": "低频",
+            "lastUpdated": "2026-05-11",
+            "levelName": "萌芽",
+            "levelIcon": "🌱",
+            "platform": "Platform",
+            "platformLabel": "平台技能",
+            "category": "L4-工具层",
+            "status": "active"
+          },
+          {
+            "name": "website-builder",
+            "fullName": "website-builder",
+            "icon": "🔧",
+            "level": 1,
+            "exp": 6,
+            "callCount": 0,
+            "successRate": 70,
+            "frequency": "低频",
+            "lastUpdated": "2026-05-11",
+            "levelName": "萌芽",
+            "levelIcon": "🌱",
+            "platform": "Platform",
+            "platformLabel": "平台技能",
+            "category": "L4-工具层",
+            "status": "active"
+          },
+          {
+            "name": "zelda-style",
+            "fullName": "zelda-style",
+            "icon": "🔧",
+            "level": 1,
+            "exp": 6,
+            "callCount": 0,
+            "successRate": 70,
+            "frequency": "低频",
+            "lastUpdated": "2026-05-11",
+            "levelName": "萌芽",
+            "levelIcon": "🌱",
+            "platform": "Platform",
+            "platformLabel": "平台技能",
+            "category": "L4-工具层",
+            "status": "active"
+          },
+          {
+            "name": "agent-browser",
+            "fullName": "agent-browser",
+            "icon": "🔧",
+            "level": 1,
+            "exp": 6,
+            "callCount": 0,
+            "successRate": 70,
+            "frequency": "低频",
+            "lastUpdated": "2026-05-11",
+            "levelName": "萌芽",
+            "levelIcon": "🌱",
+            "platform": "Platform",
+            "platformLabel": "平台技能",
+            "category": "L4-工具层",
+            "status": "active"
+          },
+          {
+            "name": "smart-washtroom",
+            "fullName": "smart-washtroom",
+            "icon": "🔧",
+            "level": 1,
+            "exp": 6,
+            "callCount": 0,
+            "successRate": 70,
+            "frequency": "低频",
+            "lastUpdated": "2026-05-11",
+            "levelName": "萌芽",
+            "levelIcon": "🌱",
+            "platform": "Platform",
+            "platformLabel": "平台技能",
+            "category": "L4-工具层",
+            "status": "active"
+          },
+          {
+            "name": "html-screenshot",
+            "fullName": "html-screenshot",
+            "icon": "🔧",
+            "level": 1,
+            "exp": 6,
+            "callCount": 0,
+            "successRate": 70,
+            "frequency": "低频",
+            "lastUpdated": "2026-05-11",
+            "levelName": "萌芽",
+            "levelIcon": "🌱",
+            "platform": "Platform",
+            "platformLabel": "平台技能",
+            "category": "L4-工具层",
+            "status": "active"
+          },
+          {
+            "name": "quark-search",
+            "fullName": "quark-search",
+            "icon": "🔧",
+            "level": 1,
+            "exp": 6,
+            "callCount": 0,
+            "successRate": 70,
+            "frequency": "低频",
+            "lastUpdated": "2026-05-11",
+            "levelName": "萌芽",
+            "levelIcon": "🌱",
+            "platform": "Platform",
+            "platformLabel": "平台技能",
+            "category": "L4-工具层",
+            "status": "active"
+          },
+          {
+            "name": "gym-query",
+            "fullName": "gym-query",
+            "icon": "🔧",
+            "level": 1,
+            "exp": 6,
+            "callCount": 0,
+            "successRate": 70,
+            "frequency": "低频",
+            "lastUpdated": "2026-05-11",
+            "levelName": "萌芽",
+            "levelIcon": "🌱",
+            "platform": "Platform",
+            "platformLabel": "平台技能",
+            "category": "L4-工具层",
+            "status": "active"
+          },
+          {
+            "name": "kuaishou-sso-login-client",
+            "fullName": "kuaishou-sso-login-client",
+            "icon": "🔧",
+            "level": 1,
+            "exp": 6,
+            "callCount": 0,
+            "successRate": 70,
+            "frequency": "低频",
+            "lastUpdated": "2026-05-11",
+            "levelName": "萌芽",
+            "levelIcon": "🌱",
+            "platform": "Platform",
+            "platformLabel": "平台技能",
+            "category": "L4-工具层",
+            "status": "active"
+          },
+          {
+            "name": "self-evolving",
+            "fullName": "self-evolving",
+            "icon": "🔧",
+            "level": 1,
+            "exp": 6,
+            "callCount": 0,
+            "successRate": 70,
+            "frequency": "低频",
+            "lastUpdated": "2026-05-11",
+            "levelName": "萌芽",
+            "levelIcon": "🌱",
+            "platform": "Platform",
+            "platformLabel": "平台技能",
+            "category": "L4-工具层",
+            "status": "active"
+          },
+          {
+            "name": "facility-repair",
+            "fullName": "facility-repair",
+            "icon": "🔧",
+            "level": 1,
+            "exp": 6,
+            "callCount": 0,
+            "successRate": 70,
+            "frequency": "低频",
+            "lastUpdated": "2026-05-11",
+            "levelName": "萌芽",
+            "levelIcon": "🌱",
+            "platform": "Platform",
+            "platformLabel": "平台技能",
+            "category": "L4-工具层",
+            "status": "active"
+          },
+          {
+            "name": "wechat-articles",
+            "fullName": "wechat-articles",
+            "icon": "🔧",
+            "level": 1,
+            "exp": 6,
+            "callCount": 0,
+            "successRate": 70,
+            "frequency": "低频",
+            "lastUpdated": "2026-05-11",
+            "levelName": "萌芽",
+            "levelIcon": "🌱",
+            "platform": "Platform",
+            "platformLabel": "平台技能",
+            "category": "L4-工具层",
+            "status": "active"
+          },
+          {
+            "name": "skill-creator",
+            "fullName": "skill-creator",
+            "icon": "🔧",
+            "level": 1,
+            "exp": 10,
+            "callCount": 2,
+            "successRate": 100,
+            "frequency": "低频",
+            "lastUpdated": "2026-05-11",
+            "levelName": "萌芽",
+            "levelIcon": "🌱",
+            "platform": "Platform",
+            "platformLabel": "平台技能",
+            "category": "L4-工具层",
+            "status": "active"
+          },
+          {
+            "name": "designai-ppt-image",
+            "fullName": "designai-ppt-image",
+            "icon": "🔧",
+            "level": 1,
+            "exp": 6,
+            "callCount": 0,
+            "successRate": 70,
+            "frequency": "低频",
+            "lastUpdated": "2026-05-11",
+            "levelName": "萌芽",
+            "levelIcon": "🌱",
+            "platform": "Platform",
+            "platformLabel": "平台技能",
+            "category": "L4-工具层",
+            "status": "active"
+          },
+          {
+            "name": "meeting-room-booking-direct",
+            "fullName": "meeting-room-booking-direct",
+            "icon": "🔧",
+            "level": 1,
+            "exp": 6,
+            "callCount": 0,
+            "successRate": 70,
+            "frequency": "低频",
+            "lastUpdated": "2026-05-11",
+            "levelName": "萌芽",
+            "levelIcon": "🌱",
+            "platform": "Platform",
+            "platformLabel": "平台技能",
+            "category": "L4-工具层",
+            "status": "active"
+          },
+          {
+            "name": "bus-query",
+            "fullName": "bus-query",
+            "icon": "🔧",
+            "level": 1,
+            "exp": 6,
+            "callCount": 0,
+            "successRate": 70,
+            "frequency": "低频",
+            "lastUpdated": "2026-05-11",
+            "levelName": "萌芽",
+            "levelIcon": "🌱",
+            "platform": "Platform",
+            "platformLabel": "平台技能",
+            "category": "L4-工具层",
+            "status": "active"
+          },
+          {
+            "name": "scheduled-kim-message",
+            "fullName": "scheduled-kim-message",
+            "icon": "🔧",
+            "level": 1,
+            "exp": 6,
+            "callCount": 0,
+            "successRate": 70,
+            "frequency": "低频",
+            "lastUpdated": "2026-05-11",
+            "levelName": "萌芽",
+            "levelIcon": "🌱",
+            "platform": "Platform",
+            "platformLabel": "平台技能",
+            "category": "L4-工具层",
+            "status": "active"
+          },
+          {
+            "name": "docs-shuttle",
+            "fullName": "docs-shuttle",
+            "icon": "🔧",
+            "level": 1,
+            "exp": 6,
+            "callCount": 0,
+            "successRate": 70,
+            "frequency": "低频",
+            "lastUpdated": "2026-05-11",
+            "levelName": "萌芽",
+            "levelIcon": "🌱",
+            "platform": "Platform",
+            "platformLabel": "平台技能",
+            "category": "L4-工具层",
+            "status": "active"
+          },
+          {
+            "name": "ide-controller",
+            "fullName": "ide-controller",
+            "icon": "🔧",
+            "level": 1,
+            "exp": 6,
+            "callCount": 0,
+            "successRate": 70,
+            "frequency": "低频",
+            "lastUpdated": "2026-05-11",
+            "levelName": "萌芽",
+            "levelIcon": "🌱",
+            "platform": "Platform",
+            "platformLabel": "平台技能",
+            "category": "L4-工具层",
+            "status": "active"
+          },
+          {
+            "name": "pdf",
+            "fullName": "pdf",
+            "icon": "🔧",
+            "level": 1,
+            "exp": 6,
+            "callCount": 0,
+            "successRate": 70,
+            "frequency": "低频",
+            "lastUpdated": "2026-05-11",
+            "levelName": "萌芽",
+            "levelIcon": "🌱",
+            "platform": "Platform",
+            "platformLabel": "平台技能",
+            "category": "L4-工具层",
+            "status": "active"
+          },
+          {
+            "name": "barbershop",
+            "fullName": "barbershop",
+            "icon": "🔧",
+            "level": 1,
+            "exp": 6,
+            "callCount": 0,
+            "successRate": 70,
+            "frequency": "低频",
+            "lastUpdated": "2026-05-11",
+            "levelName": "萌芽",
+            "levelIcon": "🌱",
+            "platform": "Platform",
+            "platformLabel": "平台技能",
+            "category": "L4-工具层",
+            "status": "active"
+          },
+          {
+            "name": "kwai-skill-vetter",
+            "fullName": "kwai-skill-vetter",
+            "icon": "🔧",
+            "level": 1,
+            "exp": 6,
+            "callCount": 0,
+            "successRate": 70,
+            "frequency": "低频",
+            "lastUpdated": "2026-05-11",
+            "levelName": "萌芽",
+            "levelIcon": "🌱",
+            "platform": "Platform",
+            "platformLabel": "平台技能",
+            "category": "L4-工具层",
+            "status": "active"
+          },
+          {
+            "name": "xlsx",
+            "fullName": "xlsx",
+            "icon": "🔧",
+            "level": 1,
+            "exp": 6,
+            "callCount": 0,
+            "successRate": 70,
+            "frequency": "低频",
+            "lastUpdated": "2026-05-11",
+            "levelName": "萌芽",
+            "levelIcon": "🌱",
+            "platform": "Platform",
+            "platformLabel": "平台技能",
+            "category": "L4-工具层",
+            "status": "active"
+          },
+          {
+            "name": "data-analyst",
+            "fullName": "data-analyst",
+            "icon": "🔧",
+            "level": 1,
+            "exp": 6,
+            "callCount": 0,
+            "successRate": 70,
+            "frequency": "低频",
+            "lastUpdated": "2026-05-11",
+            "levelName": "萌芽",
+            "levelIcon": "🌱",
+            "platform": "Platform",
+            "platformLabel": "平台技能",
+            "category": "L4-工具层",
+            "status": "active"
+          },
+          {
+            "name": "designai-infographic-image",
+            "fullName": "designai-infographic-image",
+            "icon": "🔧",
+            "level": 1,
+            "exp": 6,
+            "callCount": 0,
+            "successRate": 70,
+            "frequency": "低频",
+            "lastUpdated": "2026-05-11",
+            "levelName": "萌芽",
+            "levelIcon": "🌱",
+            "platform": "Platform",
+            "platformLabel": "平台技能",
+            "category": "L4-工具层",
+            "status": "active"
+          },
+          {
+            "name": "find-skills",
+            "fullName": "find-skills",
+            "icon": "🔧",
+            "level": 1,
+            "exp": 6,
+            "callCount": 0,
+            "successRate": 70,
+            "frequency": "低频",
+            "lastUpdated": "2026-05-11",
+            "levelName": "萌芽",
+            "levelIcon": "🌱",
+            "platform": "Platform",
+            "platformLabel": "平台技能",
+            "category": "L4-工具层",
+            "status": "active"
+          },
+          {
+            "name": "designai-Infographic-image",
+            "fullName": "designai-Infographic-image",
+            "icon": "🔧",
+            "level": 1,
+            "exp": 6,
+            "callCount": 0,
+            "successRate": 70,
+            "frequency": "低频",
+            "lastUpdated": "2026-05-11",
+            "levelName": "萌芽",
+            "levelIcon": "🌱",
+            "platform": "Platform",
+            "platformLabel": "平台技能",
+            "category": "L4-工具层",
+            "status": "active"
+          },
+          {
+            "name": "ui-ux-pro-max",
+            "fullName": "ui-ux-pro-max",
+            "icon": "🔧",
+            "level": 1,
+            "exp": 6,
+            "callCount": 0,
+            "successRate": 70,
+            "frequency": "低频",
+            "lastUpdated": "2026-05-11",
+            "levelName": "萌芽",
+            "levelIcon": "🌱",
+            "platform": "Platform",
+            "platformLabel": "平台技能",
+            "category": "L4-工具层",
+            "status": "active"
+          },
+          {
+            "name": "cafeteria-menu",
+            "fullName": "cafeteria-menu",
+            "icon": "🔧",
+            "level": 1,
+            "exp": 6,
+            "callCount": 0,
+            "successRate": 70,
+            "frequency": "低频",
+            "lastUpdated": "2026-05-11",
+            "levelName": "萌芽",
+            "levelIcon": "🌱",
+            "platform": "Platform",
+            "platformLabel": "平台技能",
+            "category": "L4-工具层",
+            "status": "active"
+          },
+          {
+            "name": "upload-cdn",
+            "fullName": "upload-cdn",
+            "icon": "🔧",
+            "level": 1,
+            "exp": 6,
+            "callCount": 0,
+            "successRate": 70,
+            "frequency": "低频",
+            "lastUpdated": "2026-05-11",
+            "levelName": "萌芽",
+            "levelIcon": "🌱",
+            "platform": "Platform",
+            "platformLabel": "平台技能",
+            "category": "L4-工具层",
+            "status": "active"
+          },
+          {
+            "name": "qingshuang-research-style",
+            "fullName": "qingshuang-research-style",
+            "icon": "🔧",
+            "level": 1,
+            "exp": 6,
+            "callCount": 0,
+            "successRate": 70,
+            "frequency": "低频",
+            "lastUpdated": "2026-05-11",
+            "levelName": "萌芽",
+            "levelIcon": "🌱",
+            "platform": "Platform",
+            "platformLabel": "平台技能",
+            "category": "L4-工具层",
+            "status": "active"
+          },
+          {
+            "name": "kim-message-send",
+            "fullName": "kim-message-send",
+            "icon": "🔧",
+            "level": 1,
+            "exp": 6,
+            "callCount": 0,
+            "successRate": 70,
+            "frequency": "低频",
+            "lastUpdated": "2026-05-11",
+            "levelName": "萌芽",
+            "levelIcon": "🌱",
+            "platform": "Platform",
+            "platformLabel": "平台技能",
+            "category": "L4-工具层",
+            "status": "active"
+          },
+          {
+            "name": "kstack-reader",
+            "fullName": "kstack-reader",
+            "icon": "🔧",
+            "level": 1,
+            "exp": 6,
+            "callCount": 0,
+            "successRate": 70,
+            "frequency": "低频",
+            "lastUpdated": "2026-05-11",
+            "levelName": "萌芽",
+            "levelIcon": "🌱",
+            "platform": "Platform",
+            "platformLabel": "平台技能",
+            "category": "L4-工具层",
+            "status": "active"
+          },
+          {
+            "name": "data-agent",
+            "fullName": "data-agent",
+            "icon": "🔧",
+            "level": 1,
+            "exp": 6,
+            "callCount": 0,
+            "successRate": 70,
+            "frequency": "低频",
+            "lastUpdated": "2026-05-11",
+            "levelName": "萌芽",
+            "levelIcon": "🌱",
+            "platform": "Platform",
+            "platformLabel": "平台技能",
+            "category": "L4-工具层",
+            "status": "active"
+          },
+          {
+            "name": "mixcard-creator",
+            "fullName": "mixcard-creator",
+            "icon": "🔧",
+            "level": 1,
+            "exp": 6,
+            "callCount": 0,
+            "successRate": 70,
+            "frequency": "低频",
+            "lastUpdated": "2026-05-11",
+            "levelName": "萌芽",
+            "levelIcon": "🌱",
+            "platform": "Platform",
+            "platformLabel": "平台技能",
+            "category": "L4-工具层",
+            "status": "active"
+          },
+          {
+            "name": "docx",
+            "fullName": "docx",
+            "icon": "🔧",
+            "level": 1,
+            "exp": 6,
+            "callCount": 0,
+            "successRate": 70,
+            "frequency": "低频",
+            "lastUpdated": "2026-05-11",
+            "levelName": "萌芽",
+            "levelIcon": "🌱",
+            "platform": "Platform",
+            "platformLabel": "平台技能",
+            "category": "L4-工具层",
+            "status": "active"
+          }
+        ]
+      },
+      "🔍 题域层": {
+        "name": "🔍 题域层",
+        "description": "",
+        "skills": [
+          {
+            "name": "_retired",
+            "fullName": "_retired",
+            "icon": "🌱",
+            "level": 1,
+            "exp": 6,
+            "callCount": 0,
+            "successRate": 70,
+            "frequency": "低频",
+            "lastUpdated": "2026-05-11",
+            "levelName": "萌芽",
+            "levelIcon": "🌱",
+            "platform": "User",
+            "platformLabel": "业务技能",
+            "category": "L3-题域层",
+            "status": "active"
+          },
+          {
+            "name": "ai-insight-public",
+            "fullName": "ai-insight-public",
+            "icon": "🌱",
+            "level": 1,
+            "exp": 6,
+            "callCount": 0,
+            "successRate": 70,
+            "frequency": "低频",
+            "lastUpdated": "2026-05-11",
+            "levelName": "萌芽",
+            "levelIcon": "🌱",
+            "platform": "User",
+            "platformLabel": "业务技能",
+            "category": "L3-题域层",
+            "status": "active"
           }
         ]
       }
@@ -1164,8 +1969,8 @@
                   },
                   {
                     "name": "sl-meta-persona-agent",
-                    "displayName": "人格化Agent",
-                    "displayRole": "元技能-人格化Agent",
+                    "displayName": "Agent分身",
+                    "displayRole": "元技能-Agent分身",
                     "description": "创建具有独立人格的Agent：多视角碰撞、专项教练、模拟审阅",
                     "platform": "Work",
                     "platformLabel": "⚡",
@@ -2070,2060 +2875,174 @@
     }
   },
   "knowledge": {
+    "totalFiles": 126,
+    "totalSizeKB": 1053.8,
     "categories": {
-      "guides": {
-        "displayName": "开发指南",
-        "icon": "📋",
-        "fileCount": 5,
-        "sizeKB": 61.8,
-        "heatLevel": 5,
-        "layerTag": "L3-execution",
-        "items": [
-          {
-            "name": "constraints.md",
-            "title": "constraints",
-            "sizeKB": 0.8
-          },
-          {
-            "name": "default-habits.md",
-            "title": "default-habits",
-            "sizeKB": 6.1
-          },
-          {
-            "name": "browser_automation_and_frontend.md",
-            "title": "browser_automation_and_frontend",
-            "sizeKB": 22.7
-          },
-          {
-            "name": "development_practice_spec.md",
-            "title": "development_practice_spec",
-            "sizeKB": 31.4
-          },
-          {
-            "name": "constraint_or_forbidden_rule.md",
-            "title": "constraint_or_forbidden_rule",
-            "sizeKB": 0.8
-          }
-        ],
-        "relatedSkills": [
-          "evo-meta-execution"
-        ],
-        "description": "开发规范、约束规则、默认习惯等实践指南"
+      "root": {
+        "name": "root",
+        "fileCount": 1,
+        "sizeKB": 3.6767578125
+      },
+      "books": {
+        "name": "books",
+        "fileCount": 1,
+        "sizeKB": 10.5390625
       },
       "notes": {
-        "displayName": "踩坑笔记",
-        "icon": "📝",
+        "name": "notes",
         "fileCount": 8,
-        "sizeKB": 234.8,
-        "heatLevel": 4,
-        "layerTag": "L3-execution",
-        "items": [
-          {
-            "name": "memory-lifecycle.md",
-            "title": "memory-lifecycle",
-            "sizeKB": 3.9
-          },
-          {
-            "name": "development_code_spec.md",
-            "title": "development_code_spec",
-            "sizeKB": 10.6
-          },
-          {
-            "name": "common_pitfalls_archive_0415_0416.md",
-            "title": "common_pitfalls_archive_0415_0416",
-            "sizeKB": 16.4
-          },
-          {
-            "name": "task-flow.md",
-            "title": "task-flow",
-            "sizeKB": 70.0
-          },
-          {
-            "name": "common-pitfalls.md",
-            "title": "common-pitfalls",
-            "sizeKB": 59.1
-          },
-          {
-            "name": "user-communication.md",
-            "title": "user-communication",
-            "sizeKB": 2.0
-          },
-          {
-            "name": "daily-summary-quality.md",
-            "title": "daily-summary-quality",
-            "sizeKB": 1.1
-          },
-          {
-            "name": "task_flow_experience_archive_0413_0418.md",
-            "title": "task_flow_experience_archive_0413_0418",
-            "sizeKB": 71.7
-          }
-        ],
-        "relatedSkills": [
-          "evo-learn-from-mistakes"
-        ],
-        "description": "常见坑点、任务流程经验、记忆生命周期等"
-      },
-      "investment": {
-        "displayName": "investment",
-        "icon": "📦",
-        "fileCount": 2,
-        "sizeKB": 1.9,
-        "heatLevel": 3,
-        "layerTag": "L2-domain",
-        "items": [
-          {
-            "name": "INDEX.md",
-            "title": "INDEX",
-            "sizeKB": 1.2
-          },
-          {
-            "name": "manifest.json",
-            "title": "manifest",
-            "sizeKB": 0.7
-          }
-        ],
-        "relatedSkills": [],
-        "description": "investment 领域知识包"
-      },
-      "rd-efficiency": {
-        "displayName": "rd-efficiency",
-        "icon": "📦",
-        "fileCount": 2,
-        "sizeKB": 2.0,
-        "heatLevel": 3,
-        "layerTag": "L2-domain",
-        "items": [
-          {
-            "name": "INDEX.md",
-            "title": "INDEX",
-            "sizeKB": 1.3
-          },
-          {
-            "name": "manifest.json",
-            "title": "manifest",
-            "sizeKB": 0.7
-          }
-        ],
-        "relatedSkills": [],
-        "description": "rd-efficiency 领域知识包"
-      },
-      "ai-insight": {
-        "displayName": "ai-insight",
-        "icon": "📦",
-        "fileCount": 99,
-        "sizeKB": 608.9,
-        "heatLevel": 5,
-        "layerTag": "L2-domain",
-        "items": [
-          {
-            "name": "INDEX.md",
-            "title": "INDEX",
-            "sizeKB": 1.6
-          },
-          {
-            "name": "README.md",
-            "title": "README",
-            "sizeKB": 14.3
-          },
-          {
-            "name": "manifest.json",
-            "title": "manifest",
-            "sizeKB": 0.8
-          },
-          {
-            "name": "concepts/applications/gemini-for-home.md",
-            "title": "gemini-for-home",
-            "sizeKB": 4.0
-          },
-          {
-            "name": "concepts/safety/ai-safety-timeline-predictions.md",
-            "title": "ai-safety-timeline-predictions",
-            "sizeKB": 6.7
-          },
-          {
-            "name": "concepts/safety/ai-alignment-landscape.md",
-            "title": "ai-alignment-landscape",
-            "sizeKB": 3.8
-          },
-          {
-            "name": "concepts/coding/ai-coding-practices.md",
-            "title": "ai-coding-practices",
-            "sizeKB": 5.9
-          },
-          {
-            "name": "concepts/agents/agent-types-matrix.md",
-            "title": "agent-types-matrix",
-            "sizeKB": 5.6
-          },
-          {
-            "name": "concepts/agents/multi-agent-systems.md",
-            "title": "multi-agent-systems",
-            "sizeKB": 3.6
-          },
-          {
-            "name": "concepts/agents/ambient-agents.md",
-            "title": "ambient-agents",
-            "sizeKB": 11.2
-          },
-          {
-            "name": "concepts/agents/agent-memory-context.md",
-            "title": "agent-memory-context",
-            "sizeKB": 3.1
-          },
-          {
-            "name": "concepts/agents/physical-ai.md",
-            "title": "physical-ai",
-            "sizeKB": 8.6
-          },
-          {
-            "name": "concepts/agents/agent-architecture.md",
-            "title": "agent-architecture",
-            "sizeKB": 7.4
-          },
-          {
-            "name": "concepts/agents/ai-product-ultimate-form/README.md",
-            "title": "README",
-            "sizeKB": 49.0
-          },
-          {
-            "name": "concepts/agents/ai-product-ultimate-form/vercel.json",
-            "title": "vercel",
-            "sizeKB": 0.1
-          },
-          {
-            "name": "concepts/agents/ai-product-ultimate-form/index.md",
-            "title": "index",
-            "sizeKB": 0.1
-          },
-          {
-            "name": "concepts/infrastructure/openclaw.md",
-            "title": "openclaw",
-            "sizeKB": 7.5
-          },
-          {
-            "name": "concepts/infrastructure/ai-chip-landscape.md",
-            "title": "ai-chip-landscape",
-            "sizeKB": 3.2
-          },
-          {
-            "name": "concepts/enterprise/software-engineering-3.md",
-            "title": "software-engineering-3",
-            "sizeKB": 10.6
-          },
-          {
-            "name": "concepts/models/transformer-architecture-evolution.md",
-            "title": "transformer-architecture-evolution",
-            "sizeKB": 3.9
-          },
-          {
-            "name": "03-ai-companies/bytedance-ai-landscape.md",
-            "title": "bytedance-ai-landscape",
-            "sizeKB": 8.7
-          },
-          {
-            "name": "03-ai-companies/anthropic-profile.md",
-            "title": "anthropic-profile",
-            "sizeKB": 10.3
-          },
-          {
-            "name": "03-ai-companies/README.md",
-            "title": "README",
-            "sizeKB": 8.7
-          },
-          {
-            "name": "03-ai-companies/embodied-ai-funding-q1-2026.md",
-            "title": "embodied-ai-funding-q1-2026",
-            "sizeKB": 2.5
-          },
-          {
-            "name": "03-ai-companies/ai-consumer-app-landscape-2026-03.md",
-            "title": "ai-consumer-app-landscape-2026-03",
-            "sizeKB": 2.0
-          },
-          {
-            "name": "03-ai-companies/openai-profile.md",
-            "title": "openai-profile",
-            "sizeKB": 8.6
-          },
-          {
-            "name": "03-ai-companies/ai-funding-2026.md",
-            "title": "ai-funding-2026",
-            "sizeKB": 3.8
-          },
-          {
-            "name": "insights/ai-industry-trends-2026.md",
-            "title": "ai-industry-trends-2026",
-            "sizeKB": 30.3
-          },
-          {
-            "name": "insights/ai-industry-principles.md",
-            "title": "ai-industry-principles",
-            "sizeKB": 4.8
-          },
-          {
-            "name": "insights/ai-coding-market-tracking.md",
-            "title": "ai-coding-market-tracking",
-            "sizeKB": 6.9
-          },
-          {
-            "name": "insights/ai-driven-layoffs-2026.md",
-            "title": "ai-driven-layoffs-2026",
-            "sizeKB": 4.0
-          },
-          {
-            "name": "insights/ai-application-landscape-2026-03.md",
-            "title": "ai-application-landscape-2026-03",
-            "sizeKB": 3.8
-          },
-          {
-            "name": "insights/weekly/2026-03-week1.md",
-            "title": "2026-03-week1",
-            "sizeKB": 6.4
-          },
-          {
-            "name": "02-agents/README.md",
-            "title": "README",
-            "sizeKB": 6.1
-          },
-          {
-            "name": "02-agents/ai-coding-tools-evolution-2026-03.md",
-            "title": "ai-coding-tools-evolution-2026-03",
-            "sizeKB": 6.7
-          },
-          {
-            "name": "02-agents/agentic-engineering-patterns-2026.md",
-            "title": "agentic-engineering-patterns-2026",
-            "sizeKB": 7.7
-          },
-          {
-            "name": "02-agents/ai-coding-tools-landscape-2026-03.md",
-            "title": "ai-coding-tools-landscape-2026-03",
-            "sizeKB": 2.1
-          },
-          {
-            "name": "02-agents/agent-infra-and-optimization.md",
-            "title": "agent-infra-and-optimization",
-            "sizeKB": 7.4
-          },
-          {
-            "name": "02-agents/model-context-protocol.md",
-            "title": "model-context-protocol",
-            "sizeKB": 6.2
-          },
-          {
-            "name": "04-enterprise-ai/README.md",
-            "title": "README",
-            "sizeKB": 4.9
-          },
-          {
-            "name": "04-enterprise-ai/enterprise-ai-transformation-methodology.md",
-            "title": "enterprise-ai-transformation-methodology",
-            "sizeKB": 8.4
-          },
-          {
-            "name": "01-models/china-models-landscape-2026-03.md",
-            "title": "china-models-landscape-2026-03",
-            "sizeKB": 3.5
-          },
-          {
-            "name": "01-models/gemini-3-series.md",
-            "title": "gemini-3-series",
-            "sizeKB": 3.4
-          },
-          {
-            "name": "01-models/README.md",
-            "title": "README",
-            "sizeKB": 5.0
-          },
-          {
-            "name": "01-models/ai-second-half-task-environment.md",
-            "title": "ai-second-half-task-environment",
-            "sizeKB": 8.9
-          },
-          {
-            "name": "01-models/ai-history-and-capability-matrix.md",
-            "title": "ai-history-and-capability-matrix",
-            "sizeKB": 6.9
-          },
-          {
-            "name": "01-models/deepseek-v4.md",
-            "title": "deepseek-v4",
-            "sizeKB": 3.6
-          },
-          {
-            "name": "01-models/gpt-5-series-evolution.md",
-            "title": "gpt-5-series-evolution",
-            "sizeKB": 3.3
-          },
-          {
-            "name": "01-models/reasoning-models.md",
-            "title": "reasoning-models",
-            "sizeKB": 7.3
-          },
-          {
-            "name": "best-practices/enterprise-ai-worker-scenarios.md",
-            "title": "enterprise-ai-worker-scenarios",
-            "sizeKB": 29.3
-          },
-          {
-            "name": "best-practices/ai-studio-product-design.md",
-            "title": "ai-studio-product-design",
-            "sizeKB": 34.3
-          },
-          {
-            "name": "best-practices/ai-agent-team-implementation.md",
-            "title": "ai-agent-team-implementation",
-            "sizeKB": 11.4
-          },
-          {
-            "name": "best-practices/enterprise-ai-product-design.md",
-            "title": "enterprise-ai-product-design",
-            "sizeKB": 6.5
-          },
-          {
-            "name": "best-practices/ai-coding-workflow.md",
-            "title": "ai-coding-workflow",
-            "sizeKB": 11.7
-          },
-          {
-            "name": "best-practices/financial-ai-agent-design.md",
-            "title": "financial-ai-agent-design",
-            "sizeKB": 31.0
-          },
-          {
-            "name": "entity-profiles/companies/amazon-aws-ai-profile.md",
-            "title": "amazon-aws-ai-profile",
-            "sizeKB": 2.6
-          },
-          {
-            "name": "entity-profiles/companies/alibaba-ai-profile.md",
-            "title": "alibaba-ai-profile",
-            "sizeKB": 2.6
-          },
-          {
-            "name": "entity-profiles/companies/ssi-profile.md",
-            "title": "ssi-profile",
-            "sizeKB": 2.2
-          },
-          {
-            "name": "entity-profiles/companies/baidu-ai-profile.md",
-            "title": "baidu-ai-profile",
-            "sizeKB": 2.4
-          },
-          {
-            "name": "entity-profiles/companies/cohere-profile.md",
-            "title": "cohere-profile",
-            "sizeKB": 1.8
-          },
-          {
-            "name": "entity-profiles/companies/google-deepmind-profile.md",
-            "title": "google-deepmind-profile",
-            "sizeKB": 2.1
-          },
-          {
-            "name": "entity-profiles/companies/cursor-anysphere-profile.md",
-            "title": "cursor-anysphere-profile",
-            "sizeKB": 1.9
-          },
-          {
-            "name": "entity-profiles/companies/xai-profile.md",
-            "title": "xai-profile",
-            "sizeKB": 2.3
-          },
-          {
-            "name": "entity-profiles/companies/hugging-face-profile.md",
-            "title": "hugging-face-profile",
-            "sizeKB": 2.2
-          },
-          {
-            "name": "entity-profiles/companies/runway-profile.md",
-            "title": "runway-profile",
-            "sizeKB": 1.7
-          },
-          {
-            "name": "entity-profiles/companies/mistral-ai-profile.md",
-            "title": "mistral-ai-profile",
-            "sizeKB": 2.5
-          },
-          {
-            "name": "entity-profiles/companies/perplexity-ai-profile.md",
-            "title": "perplexity-ai-profile",
-            "sizeKB": 2.0
-          },
-          {
-            "name": "entity-profiles/companies/moonshot-kimi-profile.md",
-            "title": "moonshot-kimi-profile",
-            "sizeKB": 2.2
-          },
-          {
-            "name": "entity-profiles/companies/zhipu-ai-profile.md",
-            "title": "zhipu-ai-profile",
-            "sizeKB": 1.4
-          },
-          {
-            "name": "entity-profiles/companies/elevenlabs-profile.md",
-            "title": "elevenlabs-profile",
-            "sizeKB": 1.6
-          },
-          {
-            "name": "entity-profiles/companies/nvidia-profile.md",
-            "title": "nvidia-profile",
-            "sizeKB": 2.2
-          },
-          {
-            "name": "entity-profiles/companies/microsoft-ai-profile.md",
-            "title": "microsoft-ai-profile",
-            "sizeKB": 1.5
-          },
-          {
-            "name": "entity-profiles/companies/meta-ai-profile.md",
-            "title": "meta-ai-profile",
-            "sizeKB": 2.0
-          },
-          {
-            "name": "entity-profiles/companies/high-flyer-quant.md",
-            "title": "high-flyer-quant",
-            "sizeKB": 10.2
-          },
-          {
-            "name": "entity-profiles/companies/deepseek-profile.md",
-            "title": "deepseek-profile",
-            "sizeKB": 2.2
-          },
-          {
-            "name": "entity-profiles/companies/minimax-profile.md",
-            "title": "minimax-profile",
-            "sizeKB": 1.2
-          },
-          {
-            "name": "entity-profiles/companies/world-labs-profile.md",
-            "title": "world-labs-profile",
-            "sizeKB": 1.5
-          },
-          {
-            "name": "entity-profiles/people/andrew-ng.md",
-            "title": "andrew-ng",
-            "sizeKB": 2.1
-          },
-          {
-            "name": "entity-profiles/people/demis-hassabis.md",
-            "title": "demis-hassabis",
-            "sizeKB": 2.0
-          },
-          {
-            "name": "entity-profiles/people/jensen-huang.md",
-            "title": "jensen-huang",
-            "sizeKB": 1.4
-          },
-          {
-            "name": "entity-profiles/people/liang-wenfeng.md",
-            "title": "liang-wenfeng",
-            "sizeKB": 2.0
-          },
-          {
-            "name": "entity-profiles/people/satya-nadella.md",
-            "title": "satya-nadella",
-            "sizeKB": 1.2
-          },
-          {
-            "name": "entity-profiles/people/barry-zhang.md",
-            "title": "barry-zhang",
-            "sizeKB": 22.8
-          },
-          {
-            "name": "entity-profiles/people/andrej-karpathy.md",
-            "title": "andrej-karpathy",
-            "sizeKB": 5.8
-          },
-          {
-            "name": "entity-profiles/people/shunyu-yao.md",
-            "title": "shunyu-yao",
-            "sizeKB": 5.0
-          },
-          {
-            "name": "entity-profiles/people/addy-osmani.md",
-            "title": "addy-osmani",
-            "sizeKB": 6.8
-          },
-          {
-            "name": "entity-profiles/people/aidan-gomez.md",
-            "title": "aidan-gomez",
-            "sizeKB": 1.5
-          },
-          {
-            "name": "entity-profiles/people/kai-fu-lee.md",
-            "title": "kai-fu-lee",
-            "sizeKB": 1.5
-          },
-          {
-            "name": "entity-profiles/people/elon-musk-ai.md",
-            "title": "elon-musk-ai",
-            "sizeKB": 1.9
-          },
-          {
-            "name": "entity-profiles/people/yang-zhilin.md",
-            "title": "yang-zhilin",
-            "sizeKB": 1.8
-          },
-          {
-            "name": "entity-profiles/people/ilya-sutskever.md",
-            "title": "ilya-sutskever",
-            "sizeKB": 2.2
-          },
-          {
-            "name": "entity-profiles/people/sam-altman.md",
-            "title": "sam-altman",
-            "sizeKB": 1.7
-          },
-          {
-            "name": "entity-profiles/people/fei-fei-li.md",
-            "title": "fei-fei-li",
-            "sizeKB": 1.9
-          },
-          {
-            "name": "entity-profiles/people/jim-fan.md",
-            "title": "jim-fan",
-            "sizeKB": 6.9
-          },
-          {
-            "name": "entity-profiles/people/aravind-srinivas.md",
-            "title": "aravind-srinivas",
-            "sizeKB": 1.4
-          },
-          {
-            "name": "entity-profiles/people/simon-willison.md",
-            "title": "simon-willison",
-            "sizeKB": 7.8
-          },
-          {
-            "name": "entity-profiles/people/yann-lecun.md",
-            "title": "yann-lecun",
-            "sizeKB": 1.7
-          },
-          {
-            "name": "entity-profiles/people/dario-amodei.md",
-            "title": "dario-amodei",
-            "sizeKB": 2.0
-          },
-          {
-            "name": "entity-profiles/people/harrison-chase.md",
-            "title": "harrison-chase",
-            "sizeKB": 7.8
-          }
-        ],
-        "relatedSkills": [
-          "sl-ai-insight"
-        ],
-        "description": "ai-insight 领域知识包"
-      },
-      "research": {
-        "displayName": "研究记录",
-        "icon": "🔬",
-        "fileCount": 5,
-        "sizeKB": 117.9,
-        "heatLevel": 3,
-        "layerTag": "L1-meta",
-        "items": [
-          {
-            "name": "evolution-log.md",
-            "title": "evolution-log",
-            "sizeKB": 20.3
-          },
-          {
-            "name": "community_insights_archive_0420_0424.md",
-            "title": "community_insights_archive_0420_0424",
-            "sizeKB": 49.4
-          },
-          {
-            "name": "community-insights.md",
-            "title": "community-insights",
-            "sizeKB": 26.6
-          },
-          {
-            "name": "metrics.md",
-            "title": "metrics",
-            "sizeKB": 2.3
-          },
-          {
-            "name": "patrol-system-reflection.md",
-            "title": "patrol-system-reflection",
-            "sizeKB": 19.3
-          }
-        ],
-        "relatedSkills": [
-          "formless-power"
-        ],
-        "description": "社区洞察、进化日志、度量指标等元研究"
+        "sizeKB": 234.7978515625
       },
       "shared": {
-        "displayName": "共享知识",
-        "icon": "🤝",
-        "fileCount": 2,
-        "sizeKB": 2.5,
-        "heatLevel": 2,
-        "layerTag": "L1-meta",
-        "items": [
-          {
-            "name": "INDEX.md",
-            "title": "INDEX",
-            "sizeKB": 2.2
-          },
-          {
-            "name": "people/shenlang-info.md",
-            "title": "shenlang-info",
-            "sizeKB": 0.3
-          }
-        ],
-        "relatedSkills": [
-          "sl-meta-context-sense"
-        ],
-        "description": "用户画像等共享信息"
+        "name": "shared",
+        "fileCount": 1,
+        "sizeKB": 2.22265625
+      },
+      "guides": {
+        "name": "guides",
+        "fileCount": 5,
+        "sizeKB": 61.888671875
       },
       "templates": {
-        "displayName": "技能模板",
-        "icon": "📐",
+        "name": "templates",
+        "fileCount": 2,
+        "sizeKB": 4.5
+      },
+      "research": {
+        "name": "research",
+        "fileCount": 5,
+        "sizeKB": 117.962890625
+      },
+      "templates/evo-skills-v2": {
+        "name": "templates/evo-skills-v2",
+        "fileCount": 3,
+        "sizeKB": 7.4638671875
+      },
+      "shared/people": {
+        "name": "shared/people",
+        "fileCount": 1,
+        "sizeKB": 0.2529296875
+      },
+      "packages/investment": {
+        "name": "packages/investment",
+        "fileCount": 1,
+        "sizeKB": 1.201171875
+      },
+      "packages/rd-efficiency": {
+        "name": "packages/rd-efficiency",
+        "fileCount": 1,
+        "sizeKB": 1.25390625
+      },
+      "packages/ai-insight": {
+        "name": "packages/ai-insight",
+        "fileCount": 2,
+        "sizeKB": 15.9248046875
+      },
+      "packages/ai-insight/03-ai-companies": {
+        "name": "packages/ai-insight/03-ai-companies",
+        "fileCount": 7,
+        "sizeKB": 44.533203125
+      },
+      "packages/ai-insight/insights": {
+        "name": "packages/ai-insight/insights",
+        "fileCount": 5,
+        "sizeKB": 49.7275390625
+      },
+      "packages/ai-insight/02-agents": {
+        "name": "packages/ai-insight/02-agents",
         "fileCount": 6,
-        "sizeKB": 12.4,
-        "heatLevel": 2,
-        "layerTag": "L1-meta",
-        "items": [
-          {
-            "name": "INDEX.md",
-            "title": "INDEX",
-            "sizeKB": 1.2
-          },
-          {
-            "name": "manifest.json",
-            "title": "manifest",
-            "sizeKB": 0.4
-          },
-          {
-            "name": "package-structure.md",
-            "title": "package-structure",
-            "sizeKB": 3.3
-          },
-          {
-            "name": "evo-skills-v2/evo-knowledge-curator-SKILL-v2.md",
-            "title": "evo-knowledge-curator-SKILL-v2",
-            "sizeKB": 2.7
-          },
-          {
-            "name": "evo-skills-v2/evo-knowledge-base-SKILL-v2.md",
-            "title": "evo-knowledge-base-SKILL-v2",
-            "sizeKB": 2.0
-          },
-          {
-            "name": "evo-skills-v2/evo-knowledge-acquisition-meta-SKILL-v2.md",
-            "title": "evo-knowledge-acquisition-meta-SKILL-v2",
-            "sizeKB": 2.8
-          }
-        ],
-        "relatedSkills": [
-          "formless-power"
-        ],
-        "description": "evo技能v2设计模板等"
-      }
-    },
-    "tree": {
-      "L1-meta": {
-        "layerTag": "L1-meta",
-        "label": "基座知识层",
-        "icon": "📖",
-        "categories": {
-          "research": {
-            "displayName": "研究记录",
-            "icon": "🔬",
-            "fileCount": 5,
-            "sizeKB": 117.9,
-            "heatLevel": 3,
-            "layerTag": "L1-meta",
-            "items": [
-              {
-                "name": "evolution-log.md",
-                "title": "evolution-log",
-                "sizeKB": 20.3
-              },
-              {
-                "name": "community_insights_archive_0420_0424.md",
-                "title": "community_insights_archive_0420_0424",
-                "sizeKB": 49.4
-              },
-              {
-                "name": "community-insights.md",
-                "title": "community-insights",
-                "sizeKB": 26.6
-              },
-              {
-                "name": "metrics.md",
-                "title": "metrics",
-                "sizeKB": 2.3
-              },
-              {
-                "name": "patrol-system-reflection.md",
-                "title": "patrol-system-reflection",
-                "sizeKB": 19.3
-              }
-            ],
-            "relatedSkills": [
-              "formless-power"
-            ],
-            "description": "社区洞察、进化日志、度量指标等元研究"
-          },
-          "shared": {
-            "displayName": "共享知识",
-            "icon": "🤝",
-            "fileCount": 2,
-            "sizeKB": 2.5,
-            "heatLevel": 2,
-            "layerTag": "L1-meta",
-            "items": [
-              {
-                "name": "INDEX.md",
-                "title": "INDEX",
-                "sizeKB": 2.2
-              },
-              {
-                "name": "people/shenlang-info.md",
-                "title": "shenlang-info",
-                "sizeKB": 0.3
-              }
-            ],
-            "relatedSkills": [
-              "sl-meta-context-sense"
-            ],
-            "description": "用户画像等共享信息"
-          },
-          "templates": {
-            "displayName": "技能模板",
-            "icon": "📐",
-            "fileCount": 6,
-            "sizeKB": 12.4,
-            "heatLevel": 2,
-            "layerTag": "L1-meta",
-            "items": [
-              {
-                "name": "INDEX.md",
-                "title": "INDEX",
-                "sizeKB": 1.2
-              },
-              {
-                "name": "manifest.json",
-                "title": "manifest",
-                "sizeKB": 0.4
-              },
-              {
-                "name": "package-structure.md",
-                "title": "package-structure",
-                "sizeKB": 3.3
-              },
-              {
-                "name": "evo-skills-v2/evo-knowledge-curator-SKILL-v2.md",
-                "title": "evo-knowledge-curator-SKILL-v2",
-                "sizeKB": 2.7
-              },
-              {
-                "name": "evo-skills-v2/evo-knowledge-base-SKILL-v2.md",
-                "title": "evo-knowledge-base-SKILL-v2",
-                "sizeKB": 2.0
-              },
-              {
-                "name": "evo-skills-v2/evo-knowledge-acquisition-meta-SKILL-v2.md",
-                "title": "evo-knowledge-acquisition-meta-SKILL-v2",
-                "sizeKB": 2.8
-              }
-            ],
-            "relatedSkills": [
-              "formless-power"
-            ],
-            "description": "evo技能v2设计模板等"
-          }
-        },
-        "count": 13
+        "sizeKB": 36.18359375
       },
-      "L2-domain": {
-        "layerTag": "L2-domain",
-        "label": "领域知识层",
-        "icon": "🔍",
-        "categories": {
-          "investment": {
-            "displayName": "investment",
-            "icon": "📦",
-            "fileCount": 2,
-            "sizeKB": 1.9,
-            "heatLevel": 3,
-            "layerTag": "L2-domain",
-            "items": [
-              {
-                "name": "INDEX.md",
-                "title": "INDEX",
-                "sizeKB": 1.2
-              },
-              {
-                "name": "manifest.json",
-                "title": "manifest",
-                "sizeKB": 0.7
-              }
-            ],
-            "relatedSkills": [],
-            "description": "investment 领域知识包"
-          },
-          "rd-efficiency": {
-            "displayName": "rd-efficiency",
-            "icon": "📦",
-            "fileCount": 2,
-            "sizeKB": 2.0,
-            "heatLevel": 3,
-            "layerTag": "L2-domain",
-            "items": [
-              {
-                "name": "INDEX.md",
-                "title": "INDEX",
-                "sizeKB": 1.3
-              },
-              {
-                "name": "manifest.json",
-                "title": "manifest",
-                "sizeKB": 0.7
-              }
-            ],
-            "relatedSkills": [],
-            "description": "rd-efficiency 领域知识包"
-          },
-          "ai-insight": {
-            "displayName": "ai-insight",
-            "icon": "📦",
-            "fileCount": 99,
-            "sizeKB": 608.9,
-            "heatLevel": 5,
-            "layerTag": "L2-domain",
-            "items": [
-              {
-                "name": "INDEX.md",
-                "title": "INDEX",
-                "sizeKB": 1.6
-              },
-              {
-                "name": "README.md",
-                "title": "README",
-                "sizeKB": 14.3
-              },
-              {
-                "name": "manifest.json",
-                "title": "manifest",
-                "sizeKB": 0.8
-              },
-              {
-                "name": "concepts/applications/gemini-for-home.md",
-                "title": "gemini-for-home",
-                "sizeKB": 4.0
-              },
-              {
-                "name": "concepts/safety/ai-safety-timeline-predictions.md",
-                "title": "ai-safety-timeline-predictions",
-                "sizeKB": 6.7
-              },
-              {
-                "name": "concepts/safety/ai-alignment-landscape.md",
-                "title": "ai-alignment-landscape",
-                "sizeKB": 3.8
-              },
-              {
-                "name": "concepts/coding/ai-coding-practices.md",
-                "title": "ai-coding-practices",
-                "sizeKB": 5.9
-              },
-              {
-                "name": "concepts/agents/agent-types-matrix.md",
-                "title": "agent-types-matrix",
-                "sizeKB": 5.6
-              },
-              {
-                "name": "concepts/agents/multi-agent-systems.md",
-                "title": "multi-agent-systems",
-                "sizeKB": 3.6
-              },
-              {
-                "name": "concepts/agents/ambient-agents.md",
-                "title": "ambient-agents",
-                "sizeKB": 11.2
-              },
-              {
-                "name": "concepts/agents/agent-memory-context.md",
-                "title": "agent-memory-context",
-                "sizeKB": 3.1
-              },
-              {
-                "name": "concepts/agents/physical-ai.md",
-                "title": "physical-ai",
-                "sizeKB": 8.6
-              },
-              {
-                "name": "concepts/agents/agent-architecture.md",
-                "title": "agent-architecture",
-                "sizeKB": 7.4
-              },
-              {
-                "name": "concepts/agents/ai-product-ultimate-form/README.md",
-                "title": "README",
-                "sizeKB": 49.0
-              },
-              {
-                "name": "concepts/agents/ai-product-ultimate-form/vercel.json",
-                "title": "vercel",
-                "sizeKB": 0.1
-              },
-              {
-                "name": "concepts/agents/ai-product-ultimate-form/index.md",
-                "title": "index",
-                "sizeKB": 0.1
-              },
-              {
-                "name": "concepts/infrastructure/openclaw.md",
-                "title": "openclaw",
-                "sizeKB": 7.5
-              },
-              {
-                "name": "concepts/infrastructure/ai-chip-landscape.md",
-                "title": "ai-chip-landscape",
-                "sizeKB": 3.2
-              },
-              {
-                "name": "concepts/enterprise/software-engineering-3.md",
-                "title": "software-engineering-3",
-                "sizeKB": 10.6
-              },
-              {
-                "name": "concepts/models/transformer-architecture-evolution.md",
-                "title": "transformer-architecture-evolution",
-                "sizeKB": 3.9
-              },
-              {
-                "name": "03-ai-companies/bytedance-ai-landscape.md",
-                "title": "bytedance-ai-landscape",
-                "sizeKB": 8.7
-              },
-              {
-                "name": "03-ai-companies/anthropic-profile.md",
-                "title": "anthropic-profile",
-                "sizeKB": 10.3
-              },
-              {
-                "name": "03-ai-companies/README.md",
-                "title": "README",
-                "sizeKB": 8.7
-              },
-              {
-                "name": "03-ai-companies/embodied-ai-funding-q1-2026.md",
-                "title": "embodied-ai-funding-q1-2026",
-                "sizeKB": 2.5
-              },
-              {
-                "name": "03-ai-companies/ai-consumer-app-landscape-2026-03.md",
-                "title": "ai-consumer-app-landscape-2026-03",
-                "sizeKB": 2.0
-              },
-              {
-                "name": "03-ai-companies/openai-profile.md",
-                "title": "openai-profile",
-                "sizeKB": 8.6
-              },
-              {
-                "name": "03-ai-companies/ai-funding-2026.md",
-                "title": "ai-funding-2026",
-                "sizeKB": 3.8
-              },
-              {
-                "name": "insights/ai-industry-trends-2026.md",
-                "title": "ai-industry-trends-2026",
-                "sizeKB": 30.3
-              },
-              {
-                "name": "insights/ai-industry-principles.md",
-                "title": "ai-industry-principles",
-                "sizeKB": 4.8
-              },
-              {
-                "name": "insights/ai-coding-market-tracking.md",
-                "title": "ai-coding-market-tracking",
-                "sizeKB": 6.9
-              },
-              {
-                "name": "insights/ai-driven-layoffs-2026.md",
-                "title": "ai-driven-layoffs-2026",
-                "sizeKB": 4.0
-              },
-              {
-                "name": "insights/ai-application-landscape-2026-03.md",
-                "title": "ai-application-landscape-2026-03",
-                "sizeKB": 3.8
-              },
-              {
-                "name": "insights/weekly/2026-03-week1.md",
-                "title": "2026-03-week1",
-                "sizeKB": 6.4
-              },
-              {
-                "name": "02-agents/README.md",
-                "title": "README",
-                "sizeKB": 6.1
-              },
-              {
-                "name": "02-agents/ai-coding-tools-evolution-2026-03.md",
-                "title": "ai-coding-tools-evolution-2026-03",
-                "sizeKB": 6.7
-              },
-              {
-                "name": "02-agents/agentic-engineering-patterns-2026.md",
-                "title": "agentic-engineering-patterns-2026",
-                "sizeKB": 7.7
-              },
-              {
-                "name": "02-agents/ai-coding-tools-landscape-2026-03.md",
-                "title": "ai-coding-tools-landscape-2026-03",
-                "sizeKB": 2.1
-              },
-              {
-                "name": "02-agents/agent-infra-and-optimization.md",
-                "title": "agent-infra-and-optimization",
-                "sizeKB": 7.4
-              },
-              {
-                "name": "02-agents/model-context-protocol.md",
-                "title": "model-context-protocol",
-                "sizeKB": 6.2
-              },
-              {
-                "name": "04-enterprise-ai/README.md",
-                "title": "README",
-                "sizeKB": 4.9
-              },
-              {
-                "name": "04-enterprise-ai/enterprise-ai-transformation-methodology.md",
-                "title": "enterprise-ai-transformation-methodology",
-                "sizeKB": 8.4
-              },
-              {
-                "name": "01-models/china-models-landscape-2026-03.md",
-                "title": "china-models-landscape-2026-03",
-                "sizeKB": 3.5
-              },
-              {
-                "name": "01-models/gemini-3-series.md",
-                "title": "gemini-3-series",
-                "sizeKB": 3.4
-              },
-              {
-                "name": "01-models/README.md",
-                "title": "README",
-                "sizeKB": 5.0
-              },
-              {
-                "name": "01-models/ai-second-half-task-environment.md",
-                "title": "ai-second-half-task-environment",
-                "sizeKB": 8.9
-              },
-              {
-                "name": "01-models/ai-history-and-capability-matrix.md",
-                "title": "ai-history-and-capability-matrix",
-                "sizeKB": 6.9
-              },
-              {
-                "name": "01-models/deepseek-v4.md",
-                "title": "deepseek-v4",
-                "sizeKB": 3.6
-              },
-              {
-                "name": "01-models/gpt-5-series-evolution.md",
-                "title": "gpt-5-series-evolution",
-                "sizeKB": 3.3
-              },
-              {
-                "name": "01-models/reasoning-models.md",
-                "title": "reasoning-models",
-                "sizeKB": 7.3
-              },
-              {
-                "name": "best-practices/enterprise-ai-worker-scenarios.md",
-                "title": "enterprise-ai-worker-scenarios",
-                "sizeKB": 29.3
-              },
-              {
-                "name": "best-practices/ai-studio-product-design.md",
-                "title": "ai-studio-product-design",
-                "sizeKB": 34.3
-              },
-              {
-                "name": "best-practices/ai-agent-team-implementation.md",
-                "title": "ai-agent-team-implementation",
-                "sizeKB": 11.4
-              },
-              {
-                "name": "best-practices/enterprise-ai-product-design.md",
-                "title": "enterprise-ai-product-design",
-                "sizeKB": 6.5
-              },
-              {
-                "name": "best-practices/ai-coding-workflow.md",
-                "title": "ai-coding-workflow",
-                "sizeKB": 11.7
-              },
-              {
-                "name": "best-practices/financial-ai-agent-design.md",
-                "title": "financial-ai-agent-design",
-                "sizeKB": 31.0
-              },
-              {
-                "name": "entity-profiles/companies/amazon-aws-ai-profile.md",
-                "title": "amazon-aws-ai-profile",
-                "sizeKB": 2.6
-              },
-              {
-                "name": "entity-profiles/companies/alibaba-ai-profile.md",
-                "title": "alibaba-ai-profile",
-                "sizeKB": 2.6
-              },
-              {
-                "name": "entity-profiles/companies/ssi-profile.md",
-                "title": "ssi-profile",
-                "sizeKB": 2.2
-              },
-              {
-                "name": "entity-profiles/companies/baidu-ai-profile.md",
-                "title": "baidu-ai-profile",
-                "sizeKB": 2.4
-              },
-              {
-                "name": "entity-profiles/companies/cohere-profile.md",
-                "title": "cohere-profile",
-                "sizeKB": 1.8
-              },
-              {
-                "name": "entity-profiles/companies/google-deepmind-profile.md",
-                "title": "google-deepmind-profile",
-                "sizeKB": 2.1
-              },
-              {
-                "name": "entity-profiles/companies/cursor-anysphere-profile.md",
-                "title": "cursor-anysphere-profile",
-                "sizeKB": 1.9
-              },
-              {
-                "name": "entity-profiles/companies/xai-profile.md",
-                "title": "xai-profile",
-                "sizeKB": 2.3
-              },
-              {
-                "name": "entity-profiles/companies/hugging-face-profile.md",
-                "title": "hugging-face-profile",
-                "sizeKB": 2.2
-              },
-              {
-                "name": "entity-profiles/companies/runway-profile.md",
-                "title": "runway-profile",
-                "sizeKB": 1.7
-              },
-              {
-                "name": "entity-profiles/companies/mistral-ai-profile.md",
-                "title": "mistral-ai-profile",
-                "sizeKB": 2.5
-              },
-              {
-                "name": "entity-profiles/companies/perplexity-ai-profile.md",
-                "title": "perplexity-ai-profile",
-                "sizeKB": 2.0
-              },
-              {
-                "name": "entity-profiles/companies/moonshot-kimi-profile.md",
-                "title": "moonshot-kimi-profile",
-                "sizeKB": 2.2
-              },
-              {
-                "name": "entity-profiles/companies/zhipu-ai-profile.md",
-                "title": "zhipu-ai-profile",
-                "sizeKB": 1.4
-              },
-              {
-                "name": "entity-profiles/companies/elevenlabs-profile.md",
-                "title": "elevenlabs-profile",
-                "sizeKB": 1.6
-              },
-              {
-                "name": "entity-profiles/companies/nvidia-profile.md",
-                "title": "nvidia-profile",
-                "sizeKB": 2.2
-              },
-              {
-                "name": "entity-profiles/companies/microsoft-ai-profile.md",
-                "title": "microsoft-ai-profile",
-                "sizeKB": 1.5
-              },
-              {
-                "name": "entity-profiles/companies/meta-ai-profile.md",
-                "title": "meta-ai-profile",
-                "sizeKB": 2.0
-              },
-              {
-                "name": "entity-profiles/companies/high-flyer-quant.md",
-                "title": "high-flyer-quant",
-                "sizeKB": 10.2
-              },
-              {
-                "name": "entity-profiles/companies/deepseek-profile.md",
-                "title": "deepseek-profile",
-                "sizeKB": 2.2
-              },
-              {
-                "name": "entity-profiles/companies/minimax-profile.md",
-                "title": "minimax-profile",
-                "sizeKB": 1.2
-              },
-              {
-                "name": "entity-profiles/companies/world-labs-profile.md",
-                "title": "world-labs-profile",
-                "sizeKB": 1.5
-              },
-              {
-                "name": "entity-profiles/people/andrew-ng.md",
-                "title": "andrew-ng",
-                "sizeKB": 2.1
-              },
-              {
-                "name": "entity-profiles/people/demis-hassabis.md",
-                "title": "demis-hassabis",
-                "sizeKB": 2.0
-              },
-              {
-                "name": "entity-profiles/people/jensen-huang.md",
-                "title": "jensen-huang",
-                "sizeKB": 1.4
-              },
-              {
-                "name": "entity-profiles/people/liang-wenfeng.md",
-                "title": "liang-wenfeng",
-                "sizeKB": 2.0
-              },
-              {
-                "name": "entity-profiles/people/satya-nadella.md",
-                "title": "satya-nadella",
-                "sizeKB": 1.2
-              },
-              {
-                "name": "entity-profiles/people/barry-zhang.md",
-                "title": "barry-zhang",
-                "sizeKB": 22.8
-              },
-              {
-                "name": "entity-profiles/people/andrej-karpathy.md",
-                "title": "andrej-karpathy",
-                "sizeKB": 5.8
-              },
-              {
-                "name": "entity-profiles/people/shunyu-yao.md",
-                "title": "shunyu-yao",
-                "sizeKB": 5.0
-              },
-              {
-                "name": "entity-profiles/people/addy-osmani.md",
-                "title": "addy-osmani",
-                "sizeKB": 6.8
-              },
-              {
-                "name": "entity-profiles/people/aidan-gomez.md",
-                "title": "aidan-gomez",
-                "sizeKB": 1.5
-              },
-              {
-                "name": "entity-profiles/people/kai-fu-lee.md",
-                "title": "kai-fu-lee",
-                "sizeKB": 1.5
-              },
-              {
-                "name": "entity-profiles/people/elon-musk-ai.md",
-                "title": "elon-musk-ai",
-                "sizeKB": 1.9
-              },
-              {
-                "name": "entity-profiles/people/yang-zhilin.md",
-                "title": "yang-zhilin",
-                "sizeKB": 1.8
-              },
-              {
-                "name": "entity-profiles/people/ilya-sutskever.md",
-                "title": "ilya-sutskever",
-                "sizeKB": 2.2
-              },
-              {
-                "name": "entity-profiles/people/sam-altman.md",
-                "title": "sam-altman",
-                "sizeKB": 1.7
-              },
-              {
-                "name": "entity-profiles/people/fei-fei-li.md",
-                "title": "fei-fei-li",
-                "sizeKB": 1.9
-              },
-              {
-                "name": "entity-profiles/people/jim-fan.md",
-                "title": "jim-fan",
-                "sizeKB": 6.9
-              },
-              {
-                "name": "entity-profiles/people/aravind-srinivas.md",
-                "title": "aravind-srinivas",
-                "sizeKB": 1.4
-              },
-              {
-                "name": "entity-profiles/people/simon-willison.md",
-                "title": "simon-willison",
-                "sizeKB": 7.8
-              },
-              {
-                "name": "entity-profiles/people/yann-lecun.md",
-                "title": "yann-lecun",
-                "sizeKB": 1.7
-              },
-              {
-                "name": "entity-profiles/people/dario-amodei.md",
-                "title": "dario-amodei",
-                "sizeKB": 2.0
-              },
-              {
-                "name": "entity-profiles/people/harrison-chase.md",
-                "title": "harrison-chase",
-                "sizeKB": 7.8
-              }
-            ],
-            "relatedSkills": [
-              "sl-ai-insight"
-            ],
-            "description": "ai-insight 领域知识包"
-          }
-        },
-        "count": 103
+      "packages/ai-insight/04-enterprise-ai": {
+        "name": "packages/ai-insight/04-enterprise-ai",
+        "fileCount": 2,
+        "sizeKB": 13.2958984375
       },
-      "L3-execution": {
-        "layerTag": "L3-execution",
-        "label": "实践知识层",
-        "icon": "🛠️",
-        "categories": {
-          "guides": {
-            "displayName": "开发指南",
-            "icon": "📋",
-            "fileCount": 5,
-            "sizeKB": 61.8,
-            "heatLevel": 5,
-            "layerTag": "L3-execution",
-            "items": [
-              {
-                "name": "constraints.md",
-                "title": "constraints",
-                "sizeKB": 0.8
-              },
-              {
-                "name": "default-habits.md",
-                "title": "default-habits",
-                "sizeKB": 6.1
-              },
-              {
-                "name": "browser_automation_and_frontend.md",
-                "title": "browser_automation_and_frontend",
-                "sizeKB": 22.7
-              },
-              {
-                "name": "development_practice_spec.md",
-                "title": "development_practice_spec",
-                "sizeKB": 31.4
-              },
-              {
-                "name": "constraint_or_forbidden_rule.md",
-                "title": "constraint_or_forbidden_rule",
-                "sizeKB": 0.8
-              }
-            ],
-            "relatedSkills": [
-              "evo-meta-execution"
-            ],
-            "description": "开发规范、约束规则、默认习惯等实践指南"
-          },
-          "notes": {
-            "displayName": "踩坑笔记",
-            "icon": "📝",
-            "fileCount": 8,
-            "sizeKB": 234.8,
-            "heatLevel": 4,
-            "layerTag": "L3-execution",
-            "items": [
-              {
-                "name": "memory-lifecycle.md",
-                "title": "memory-lifecycle",
-                "sizeKB": 3.9
-              },
-              {
-                "name": "development_code_spec.md",
-                "title": "development_code_spec",
-                "sizeKB": 10.6
-              },
-              {
-                "name": "common_pitfalls_archive_0415_0416.md",
-                "title": "common_pitfalls_archive_0415_0416",
-                "sizeKB": 16.4
-              },
-              {
-                "name": "task-flow.md",
-                "title": "task-flow",
-                "sizeKB": 70.0
-              },
-              {
-                "name": "common-pitfalls.md",
-                "title": "common-pitfalls",
-                "sizeKB": 59.1
-              },
-              {
-                "name": "user-communication.md",
-                "title": "user-communication",
-                "sizeKB": 2.0
-              },
-              {
-                "name": "daily-summary-quality.md",
-                "title": "daily-summary-quality",
-                "sizeKB": 1.1
-              },
-              {
-                "name": "task_flow_experience_archive_0413_0418.md",
-                "title": "task_flow_experience_archive_0413_0418",
-                "sizeKB": 71.7
-              }
-            ],
-            "relatedSkills": [
-              "evo-learn-from-mistakes"
-            ],
-            "description": "常见坑点、任务流程经验、记忆生命周期等"
-          }
-        },
-        "count": 13
+      "packages/ai-insight/01-models": {
+        "name": "packages/ai-insight/01-models",
+        "fileCount": 8,
+        "sizeKB": 41.8974609375
+      },
+      "packages/ai-insight/best-practices": {
+        "name": "packages/ai-insight/best-practices",
+        "fileCount": 6,
+        "sizeKB": 124.21484375
+      },
+      "packages/ai-insight/entity-profiles/companies": {
+        "name": "packages/ai-insight/entity-profiles/companies",
+        "fileCount": 22,
+        "sizeKB": 52.35546875
+      },
+      "packages/ai-insight/entity-profiles/people": {
+        "name": "packages/ai-insight/entity-profiles/people",
+        "fileCount": 22,
+        "sizeKB": 89.419921875
+      },
+      "packages/ai-insight/insights/weekly": {
+        "name": "packages/ai-insight/insights/weekly",
+        "fileCount": 1,
+        "sizeKB": 6.38671875
+      },
+      "packages/ai-insight/concepts/applications": {
+        "name": "packages/ai-insight/concepts/applications",
+        "fileCount": 1,
+        "sizeKB": 3.9736328125
+      },
+      "packages/ai-insight/concepts/safety": {
+        "name": "packages/ai-insight/concepts/safety",
+        "fileCount": 2,
+        "sizeKB": 10.451171875
+      },
+      "packages/ai-insight/concepts/coding": {
+        "name": "packages/ai-insight/concepts/coding",
+        "fileCount": 1,
+        "sizeKB": 5.9130859375
+      },
+      "packages/ai-insight/concepts/agents": {
+        "name": "packages/ai-insight/concepts/agents",
+        "fileCount": 6,
+        "sizeKB": 39.48828125
+      },
+      "packages/ai-insight/concepts/infrastructure": {
+        "name": "packages/ai-insight/concepts/infrastructure",
+        "fileCount": 2,
+        "sizeKB": 10.6591796875
+      },
+      "packages/ai-insight/concepts/enterprise": {
+        "name": "packages/ai-insight/concepts/enterprise",
+        "fileCount": 1,
+        "sizeKB": 10.5595703125
+      },
+      "packages/ai-insight/concepts/models": {
+        "name": "packages/ai-insight/concepts/models",
+        "fileCount": 1,
+        "sizeKB": 3.9208984375
+      },
+      "packages/ai-insight/concepts/agents/ai-product-ultimate-form": {
+        "name": "packages/ai-insight/concepts/agents/ai-product-ultimate-form",
+        "fileCount": 2,
+        "sizeKB": 49.111328125
       }
-    },
-    "totalFiles": 129,
-    "totalSizeKB": 1042.2
+    }
   },
   "memories": {
-    "items": [
-      {
-        "title": "用户画像",
-        "summary": "INTJ研发效能负责人，战略导向",
-        "category": "user_identity"
-      },
-      {
-        "title": "沟通偏好",
-        "summary": "简单坦诚高效，增量信息兴奋",
-        "category": "user_preferences"
-      },
-      {
-        "title": "产品思维偏好",
-        "summary": "登楼撤梯+Day0交付+边界感",
-        "category": "user_preferences"
-      },
-      {
-        "title": "以终为始+换位思考",
-        "summary": "价值→目标→方案→过程→细节",
-        "category": "methodology"
-      },
-      {
-        "title": "透明化+统合综效+ROI最大化",
-        "summary": "阳谋、多方诉求同时满足、一份时间多目标",
-        "category": "work_methods"
-      },
-      {
-        "title": "防御性脚本",
-        "summary": "引号包裹+错误处理+重试机制",
-        "category": "shell_defense"
-      },
-      {
-        "title": "Git Credentials+SSH Key备份恢复",
-        "summary": "workspace备份→容器重建后恢复",
-        "category": "publish_deploy"
-      },
-      {
-        "title": "workflow v6.3+周报v3.0+踩坑v1.8",
-        "summary": "日报/周报完整生产链路",
-        "category": "ai_insight_mem"
-      },
-      {
-        "title": "三层知识流转+巡逻三境界",
-        "summary": "Tool→Method→Meta 知识流转结构",
-        "category": "community_mem"
-      }
-    ],
-    "total": 9,
+    "total": 37,
     "byCategory": {
-      "user_identity": {
-        "label": "用户身份",
-        "icon": "👤",
-        "count": 1,
-        "items": [
-          {
-            "title": "用户画像",
-            "summary": "INTJ研发效能负责人，战略导向",
-            "category": "user_identity"
-          }
-        ],
-        "layerTag": "L1-meta"
+      "daily_log": {
+        "label": "日志",
+        "count": 15
       },
-      "user_preferences": {
-        "label": "用户偏好",
-        "icon": "💡",
-        "count": 2,
-        "items": [
-          {
-            "title": "沟通偏好",
-            "summary": "简单坦诚高效，增量信息兴奋",
-            "category": "user_preferences"
-          },
-          {
-            "title": "产品思维偏好",
-            "summary": "登楼撤梯+Day0交付+边界感",
-            "category": "user_preferences"
-          }
-        ],
-        "layerTag": "L1-meta"
+      "learning": {
+        "label": "学习",
+        "count": 6
       },
-      "methodology": {
-        "label": "思维方法",
-        "icon": "🧠",
-        "count": 1,
-        "items": [
-          {
-            "title": "以终为始+换位思考",
-            "summary": "价值→目标→方案→过程→细节",
-            "category": "methodology"
-          }
-        ],
-        "layerTag": "L1-meta"
+      "clawbook": {
+        "label": "社区",
+        "count": 13
       },
-      "work_methods": {
-        "label": "做事方法",
-        "icon": "⚙️",
-        "count": 1,
-        "items": [
-          {
-            "title": "透明化+统合综效+ROI最大化",
-            "summary": "阳谋、多方诉求同时满足、一份时间多目标",
-            "category": "work_methods"
-          }
-        ],
-        "layerTag": "L1-meta"
-      },
-      "shell_defense": {
-        "label": "Shell防御编程",
-        "icon": "🛡️",
-        "count": 1,
-        "items": [
-          {
-            "title": "防御性脚本",
-            "summary": "引号包裹+错误处理+重试机制",
-            "category": "shell_defense"
-          }
-        ],
-        "layerTag": "L3-execution"
-      },
-      "publish_deploy": {
-        "label": "发布部署",
-        "icon": "🚀",
-        "count": 1,
-        "items": [
-          {
-            "title": "Git Credentials+SSH Key备份恢复",
-            "summary": "workspace备份→容器重建后恢复",
-            "category": "publish_deploy"
-          }
-        ],
-        "layerTag": "L3-execution"
-      },
-      "ai_insight_mem": {
-        "label": "AI洞察项目",
-        "icon": "🔍",
-        "count": 1,
-        "items": [
-          {
-            "title": "workflow v6.3+周报v3.0+踩坑v1.8",
-            "summary": "日报/周报完整生产链路",
-            "category": "ai_insight_mem"
-          }
-        ],
-        "layerTag": "L3-execution"
-      },
-      "community_mem": {
-        "label": "社区洞察",
-        "icon": "🌐",
-        "count": 1,
-        "items": [
-          {
-            "title": "三层知识流转+巡逻三境界",
-            "summary": "Tool→Method→Meta 知识流转结构",
-            "category": "community_mem"
-          }
-        ],
-        "layerTag": "L3-execution"
-      }
-    },
-    "tree": {
-      "L1-meta": {
-        "layerTag": "L1-meta",
-        "label": "元认知层",
-        "icon": "🧠",
-        "categories": {
-          "user_identity": {
-            "label": "用户身份",
-            "icon": "👤",
-            "count": 1,
-            "items": [
-              {
-                "title": "用户画像",
-                "summary": "INTJ研发效能负责人，战略导向",
-                "category": "user_identity"
-              }
-            ],
-            "layerTag": "L1-meta"
-          },
-          "user_preferences": {
-            "label": "用户偏好",
-            "icon": "💡",
-            "count": 2,
-            "items": [
-              {
-                "title": "沟通偏好",
-                "summary": "简单坦诚高效，增量信息兴奋",
-                "category": "user_preferences"
-              },
-              {
-                "title": "产品思维偏好",
-                "summary": "登楼撤梯+Day0交付+边界感",
-                "category": "user_preferences"
-              }
-            ],
-            "layerTag": "L1-meta"
-          },
-          "methodology": {
-            "label": "思维方法",
-            "icon": "🧠",
-            "count": 1,
-            "items": [
-              {
-                "title": "以终为始+换位思考",
-                "summary": "价值→目标→方案→过程→细节",
-                "category": "methodology"
-              }
-            ],
-            "layerTag": "L1-meta"
-          },
-          "work_methods": {
-            "label": "做事方法",
-            "icon": "⚙️",
-            "count": 1,
-            "items": [
-              {
-                "title": "透明化+统合综效+ROI最大化",
-                "summary": "阳谋、多方诉求同时满足、一份时间多目标",
-                "category": "work_methods"
-              }
-            ],
-            "layerTag": "L1-meta"
-          }
-        },
-        "count": 5,
-        "children": {
-          "user_identity": {
-            "label": "用户身份",
-            "icon": "👤",
-            "count": 1,
-            "items": [
-              {
-                "title": "用户画像",
-                "summary": "INTJ研发效能负责人，战略导向",
-                "category": "user_identity"
-              }
-            ],
-            "layerTag": "L1-meta"
-          },
-          "user_preferences": {
-            "label": "用户偏好",
-            "icon": "💡",
-            "count": 2,
-            "items": [
-              {
-                "title": "沟通偏好",
-                "summary": "简单坦诚高效，增量信息兴奋",
-                "category": "user_preferences"
-              },
-              {
-                "title": "产品思维偏好",
-                "summary": "登楼撤梯+Day0交付+边界感",
-                "category": "user_preferences"
-              }
-            ],
-            "layerTag": "L1-meta"
-          },
-          "methodology": {
-            "label": "思维方法",
-            "icon": "🧠",
-            "count": 1,
-            "items": [
-              {
-                "title": "以终为始+换位思考",
-                "summary": "价值→目标→方案→过程→细节",
-                "category": "methodology"
-              }
-            ],
-            "layerTag": "L1-meta"
-          },
-          "work_methods": {
-            "label": "做事方法",
-            "icon": "⚙️",
-            "count": 1,
-            "items": [
-              {
-                "title": "透明化+统合综效+ROI最大化",
-                "summary": "阳谋、多方诉求同时满足、一份时间多目标",
-                "category": "work_methods"
-              }
-            ],
-            "layerTag": "L1-meta"
-          }
-        }
-      },
-      "L2-domain": {
-        "layerTag": "L2-domain",
-        "label": "领域记忆层",
-        "icon": "🎯",
-        "categories": {},
-        "count": 0,
-        "children": {}
-      },
-      "L3-execution": {
-        "layerTag": "L3-execution",
-        "label": "实践记忆层",
-        "icon": "🛠️",
-        "categories": {
-          "shell_defense": {
-            "label": "Shell防御编程",
-            "icon": "🛡️",
-            "count": 1,
-            "items": [
-              {
-                "title": "防御性脚本",
-                "summary": "引号包裹+错误处理+重试机制",
-                "category": "shell_defense"
-              }
-            ],
-            "layerTag": "L3-execution"
-          },
-          "publish_deploy": {
-            "label": "发布部署",
-            "icon": "🚀",
-            "count": 1,
-            "items": [
-              {
-                "title": "Git Credentials+SSH Key备份恢复",
-                "summary": "workspace备份→容器重建后恢复",
-                "category": "publish_deploy"
-              }
-            ],
-            "layerTag": "L3-execution"
-          },
-          "ai_insight_mem": {
-            "label": "AI洞察项目",
-            "icon": "🔍",
-            "count": 1,
-            "items": [
-              {
-                "title": "workflow v6.3+周报v3.0+踩坑v1.8",
-                "summary": "日报/周报完整生产链路",
-                "category": "ai_insight_mem"
-              }
-            ],
-            "layerTag": "L3-execution"
-          },
-          "community_mem": {
-            "label": "社区洞察",
-            "icon": "🌐",
-            "count": 1,
-            "items": [
-              {
-                "title": "三层知识流转+巡逻三境界",
-                "summary": "Tool→Method→Meta 知识流转结构",
-                "category": "community_mem"
-              }
-            ],
-            "layerTag": "L3-execution"
-          }
-        },
-        "count": 4,
-        "children": {
-          "shell_defense": {
-            "label": "Shell防御编程",
-            "icon": "🛡️",
-            "count": 1,
-            "items": [
-              {
-                "title": "防御性脚本",
-                "summary": "引号包裹+错误处理+重试机制",
-                "category": "shell_defense"
-              }
-            ],
-            "layerTag": "L3-execution"
-          },
-          "publish_deploy": {
-            "label": "发布部署",
-            "icon": "🚀",
-            "count": 1,
-            "items": [
-              {
-                "title": "Git Credentials+SSH Key备份恢复",
-                "summary": "workspace备份→容器重建后恢复",
-                "category": "publish_deploy"
-              }
-            ],
-            "layerTag": "L3-execution"
-          },
-          "ai_insight_mem": {
-            "label": "AI洞察项目",
-            "icon": "🔍",
-            "count": 1,
-            "items": [
-              {
-                "title": "workflow v6.3+周报v3.0+踩坑v1.8",
-                "summary": "日报/周报完整生产链路",
-                "category": "ai_insight_mem"
-              }
-            ],
-            "layerTag": "L3-execution"
-          },
-          "community_mem": {
-            "label": "社区洞察",
-            "icon": "🌐",
-            "count": 1,
-            "items": [
-              {
-                "title": "三层知识流转+巡逻三境界",
-                "summary": "Tool→Method→Meta 知识流转结构",
-                "category": "community_mem"
-              }
-            ],
-            "layerTag": "L3-execution"
-          }
-        }
-      }
-    },
-    "categories": {
-      "user_identity": {
-        "label": "用户身份",
-        "icon": "👤",
-        "count": 1,
-        "items": [
-          {
-            "title": "用户画像",
-            "summary": "INTJ研发效能负责人，战略导向",
-            "category": "user_identity"
-          }
-        ],
-        "layerTag": "L1-meta"
-      },
-      "user_preferences": {
-        "label": "用户偏好",
-        "icon": "💡",
-        "count": 2,
-        "items": [
-          {
-            "title": "沟通偏好",
-            "summary": "简单坦诚高效，增量信息兴奋",
-            "category": "user_preferences"
-          },
-          {
-            "title": "产品思维偏好",
-            "summary": "登楼撤梯+Day0交付+边界感",
-            "category": "user_preferences"
-          }
-        ],
-        "layerTag": "L1-meta"
-      },
-      "methodology": {
-        "label": "思维方法",
-        "icon": "🧠",
-        "count": 1,
-        "items": [
-          {
-            "title": "以终为始+换位思考",
-            "summary": "价值→目标→方案→过程→细节",
-            "category": "methodology"
-          }
-        ],
-        "layerTag": "L1-meta"
-      },
-      "work_methods": {
-        "label": "做事方法",
-        "icon": "⚙️",
-        "count": 1,
-        "items": [
-          {
-            "title": "透明化+统合综效+ROI最大化",
-            "summary": "阳谋、多方诉求同时满足、一份时间多目标",
-            "category": "work_methods"
-          }
-        ],
-        "layerTag": "L1-meta"
-      },
-      "shell_defense": {
-        "label": "Shell防御编程",
-        "icon": "🛡️",
-        "count": 1,
-        "items": [
-          {
-            "title": "防御性脚本",
-            "summary": "引号包裹+错误处理+重试机制",
-            "category": "shell_defense"
-          }
-        ],
-        "layerTag": "L3-execution"
-      },
-      "publish_deploy": {
-        "label": "发布部署",
-        "icon": "🚀",
-        "count": 1,
-        "items": [
-          {
-            "title": "Git Credentials+SSH Key备份恢复",
-            "summary": "workspace备份→容器重建后恢复",
-            "category": "publish_deploy"
-          }
-        ],
-        "layerTag": "L3-execution"
-      },
-      "ai_insight_mem": {
-        "label": "AI洞察项目",
-        "icon": "🔍",
-        "count": 1,
-        "items": [
-          {
-            "title": "workflow v6.3+周报v3.0+踩坑v1.8",
-            "summary": "日报/周报完整生产链路",
-            "category": "ai_insight_mem"
-          }
-        ],
-        "layerTag": "L3-execution"
-      },
-      "community_mem": {
-        "label": "社区洞察",
-        "icon": "🌐",
-        "count": 1,
-        "items": [
-          {
-            "title": "三层知识流转+巡逻三境界",
-            "summary": "Tool→Method→Meta 知识流转结构",
-            "category": "community_mem"
-          }
-        ],
-        "layerTag": "L3-execution"
+      "other": {
+        "label": "其他",
+        "count": 3
       }
     }
   },
@@ -4497,12 +3416,6 @@
   },
   "dailyReports": [
     {
-      "date": "2026-05-03",
-      "title": "日报 · 05-03",
-      "summary": "ClawBook 6轮巡逻+TIL学习 | 8块结构完整 | 48技能健康检查",
-      "url": "https://link-homepage.frontend-cloud.corp.kuaishou.com"
-    },
-    {
       "date": "2026-05-04",
       "title": "日报 · 05-04",
       "summary": "8项工作 | cron自修复 | 路径迁移 | 订阅系统大修 | #stuck建设性回复",
@@ -4536,6 +3449,12 @@
       "date": "2026-05-09",
       "title": "日报 · 05-09",
       "summary": "7项工作 | 体系完整性大修/北冥导出/通用版标注/安装程序/首页修复/日报payload/product-thinking瘦身",
+      "url": "https://link-homepage.frontend-cloud.corp.kuaishou.com"
+    },
+    {
+      "date": "2026-05-11",
+      "title": "日报 · 05-11",
+      "summary": "Anthropic调研+ClawBook4轮巡逻+TIL学习 | 技能调用1次 | 元认知跃迁：从记录热点到提炼结构性洞察",
       "url": "https://link-homepage.frontend-cloud.corp.kuaishou.com"
     }
   ]

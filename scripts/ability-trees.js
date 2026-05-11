@@ -683,7 +683,36 @@ function renderKnowledgeArchive(container, knowledge) {
 function renderMemoryNeuralNetwork(container, memories) {
     if (!container) return;
     
+    // v4.1 修复：character-data.json 里 memories 可能只有 byCategory（无 tree）。
+    // 这里做一次兼容转换，确保记忆库不再空白。
     var tree = memories.tree;
+    if (!tree || Object.keys(tree).length === 0) {
+        var byCat = memories.byCategory || memories.categories || {};
+        var children = {};
+        Object.keys(byCat).forEach(function(k) {
+            var c = byCat[k] || {};
+            children[c.displayName || k] = {
+                count: c.count || 0,
+                icon: c.icon || '📁',
+                color: c.color || '#4ade80',
+                description: c.description || (c.displayName || k),
+                items: (c.items || []).map(function(it){
+                    return {
+                        title: it.title || it.name || '记忆',
+                        icon: it.icon || '💭',
+                        importance: it.importance || 3,
+                        description: it.description || ''
+                    };
+                })
+            };
+        });
+        var totalCount = memories.total || Object.keys(byCat).reduce(function(s, k){ return s + (byCat[k]?.count || 0); }, 0);
+        tree = {
+            meta: { layerTag: 'L1-meta', count: totalCount, children: children }
+        };
+        // 写回，便于其它逻辑复用
+        memories.tree = tree;
+    }
     var total = memories.total || 0;
     
     // 记忆树四层定义 — 按 layerTag 稳定标识符匹配（不依赖中文 key）

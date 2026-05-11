@@ -2725,7 +2725,7 @@
             margin-bottom: var(--spacing-md);
         }
 
-        /* ==================== 五维能力条形图 v3 ==================== */
+        /* ==================== 四维能力条形图 v3 ==================== */
         .dimension-bars-v2 {
             display: flex;
             flex-direction: column;
@@ -5115,6 +5115,22 @@
                                 <canvas class="growth-card-sparkline" id="sparkline-memory"></canvas>
                             </div>
                         </div>
+                        <div class="growth-card">
+                            <div class="growth-card-top">
+                                <div class="growth-card-label">
+                                    <span class="growth-card-icon">🤝</span>
+                                    <span class="growth-card-name">懂你程度</span>
+                                </div>
+                                <span class="growth-card-badge" id="growth-badge-understanding">-</span>
+                            </div>
+                            <div class="growth-card-body">
+                                <div>
+                                    <div class="growth-card-value" id="growth-value-understanding">-</div>
+                                    <div class="growth-card-rate" id="growth-rate-understanding"></div>
+                                </div>
+                                <canvas class="growth-card-sparkline" id="sparkline-understanding"></canvas>
+                            </div>
+                        </div>
                     </div>
 
                     <!-- 增长洞察 -->
@@ -5437,7 +5453,7 @@
             initMouseGlow();
         });
     </script>
-    <script src="scripts/ability-trees.js?v=33" defer></script>
-    <script src="scripts/app.js?v=27" defer></script>
+    <script src="scripts/ability-trees.js?v=34" defer></script>
+    <script src="scripts/app.js?v=28" defer></script>
 </body>
 </html>

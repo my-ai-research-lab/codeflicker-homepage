@@ -24,7 +24,7 @@ function getRelativeTime(dateStr) {
 }
 
 const RARITY_LABELS = { 'common': '普通', 'rare': '稀有', 'epic': '史诗', 'legendary': '传说' };
-const TREND_ICONS = { '技能': '⚡', '知识': '📚', '记忆': '🧠' };
+const TREND_ICONS = { '技能': '⚡', '知识': '📚', '记忆': '🧠', '懂你': '🤝', '懂你程度': '🤝' };
 // 计算记忆分类等级（全局工具函数，供多处复用）
 function getMemoryLevel(count) {
     if (count >= 10) return 5;
@@ -347,7 +347,7 @@ function renderAboutSection() {
     const today = new Date();
     const runDays = Math.max(30, Math.floor((today - firstDate) / (1000 * 60 * 60 * 24)));
     
-    // 渲染核心统计指标面板 — v3.0 五维能力展示
+    // 渲染核心统计指标面板 — v3.0 四维能力展示（懂你+技能+沉淀+经验）
     renderAboutCoreStats({
         character: char,
         skills: skills,
@@ -362,25 +362,25 @@ function renderAboutSection() {
     renderAchievements(achievements);
 }
 
-// 了解我 - 核心统计指标面板 v3.1（五维能力简洁版）
+// 了解我 - 核心统计指标面板 v3.1（四维能力简洁版）
 function renderAboutCoreStats(data) {
     const container = document.getElementById('about-stats');
     if (!container) return;
     
     const { character: char, skills, knowledge, memories, projects, runDays, achievements } = data;
     
-    // 五维能力数据
+    // 四维能力数据
     const stats = char?.stats || {};
 
     
-    // 五维能力定义（v4.2: 优先从数据源读取，硬编码仅作为 fallback — SSoT）
+    // 四维能力定义（v5.0: 优先从数据源读取，硬编码仅作为 fallback — SSoT）
     const injectedDims = char?.dimensionsMeta;
     const dimensions = (Array.isArray(injectedDims) && injectedDims.length > 0) ? injectedDims : [
         { key: 'understanding', icon: '🤝', name: '懂你程度', shortName: '懂你', color: '#00d4ff', desc: '越来越不用纠正' },
-        { key: 'execution', icon: '🎯', name: '执行效率', shortName: '执行', color: '#4ade80', desc: '一次就做对' },
         { key: 'skillDepth', icon: '⚡', name: '技能深度', shortName: '技能', color: '#fbbf24', desc: '技能越来越厉害' },
-        { key: 'thinkingDepth', icon: '💭', name: '思考深度', shortName: '思考', color: '#a78bfa', desc: '分析越来越深刻' },
-        { key: 'knowledgeBreadth', icon: '📚', name: '知识丰富度', shortName: '知识', color: '#f472b6', desc: '知道的越来越多' }
+        { key: 'quality', icon: '💎', name: '沉淀质量', shortName: '沉淀', color: '#a78bfa', desc: '越用越有沉淀' },
+        { key: 'experience', icon: '🎯', name: '使用经验', shortName: '经验', color: '#4ade80', desc: '时间和广度积累' },
+        { key: 'thinkingDepth', icon: '💭', name: '思考深度', shortName: '思考', color: '#f472b6', desc: '分析越来越深刻' }
     ];
     
     // 找出最弱维度
@@ -403,9 +403,9 @@ function renderAboutCoreStats(data) {
     const unlockedAchievements = (achievements || []).filter(a => a.unlocked).length;
     
     container.innerHTML = `
-        <div class="about-stats-title">📊 五维能力</div>
+        <div class="about-stats-title">📊 四维能力</div>
         
-        <!-- 五维能力横向条形图 -->
+        <!-- 四维能力横向条形图 -->
         <div class="dimension-bars-v2">
             ${dimensions.map(dim => {
                 const score = stats[dim.key] || 0;
@@ -435,11 +435,11 @@ function renderAboutCoreStats(data) {
             <div class="stat-mini"><span class="stat-mini-icon">📈</span><span class="stat-mini-value">${runDays}</span><span class="stat-mini-label">天</span></div>
         </div>
         
-        <!-- 总EXP和升级建议 -->
+        <!-- 总分数和升级建议 -->
         <div class="exp-summary-v2">
             <div class="exp-total-v2">
-                <span class="exp-label-v2">总经验</span>
-                <span class="exp-value-v2">${totalExp.toLocaleString()} EXP</span>
+                <span class="exp-label-v2">综合评分</span>
+                <span class="exp-value-v2">${totalExp.toFixed(1)} / 100</span>
             </div>
             <div class="upgrade-hint-v2">
                 💡 提升「${weakestDim.name}」最能加速升级
@@ -456,15 +456,15 @@ function renderTierRoadmap(currentLevel) {
     const injected = AppState.characterData?.character?.allTiers;
     const tiers = (Array.isArray(injected) && injected.length > 0) ? injected : [
         // Fallback（仅在数据未注入时使用，避免崩溃）
-        { name: '青铜', minLevel: 1, maxLevel: 10, color: '#cd7f32', icon: '🥉' },
-        { name: '白银', minLevel: 11, maxLevel: 20, color: '#c0c0c0', icon: '🥈' },
-        { name: '黄金', minLevel: 21, maxLevel: 30, color: '#ffd700', icon: '🥇' },
-        { name: '铂金', minLevel: 31, maxLevel: 40, color: '#e5e4e2', icon: '💎' },
-        { name: '钻石', minLevel: 41, maxLevel: 50, color: '#b9f2ff', icon: '💠' },
-        { name: '大师', minLevel: 51, maxLevel: 70, color: '#9370db', icon: '🏆' },
-        { name: '宗师', minLevel: 71, maxLevel: 80, color: '#ff6347', icon: '👑' },
-        { name: '传说', minLevel: 81, maxLevel: 90, color: '#ff4500', icon: '🌟' },
-        { name: '神话', minLevel: 91, maxLevel: 100, color: '#ffd700', icon: '✨' }
+        { name: '青铜', minLevel: 1, maxLevel: 10, color: '#cd7f32', icon: '🥉', description: '刚起步，正在磨合' },
+        { name: '白银', minLevel: 11, maxLevel: 20, color: '#c0c0c0', icon: '🥈', description: '建立默契，基本可靠' },
+        { name: '黄金', minLevel: 21, maxLevel: 30, color: '#ffd700', icon: '🥇', description: '深度融合，默契伙伴' },
+        { name: '铂金', minLevel: 31, maxLevel: 40, color: '#e5e4e2', icon: '💎', description: '融会贯通，稳定交付' },
+        { name: '钻石', minLevel: 41, maxLevel: 50, color: '#b9f2ff', icon: '💠', description: '精通多域，自驱进化' },
+        { name: '大师', minLevel: 51, maxLevel: 60, color: '#9370db', icon: '🏆', description: '独当一面，体系成熟' },
+        { name: '宗师', minLevel: 61, maxLevel: 70, color: '#ff6347', icon: '👑', description: '炉火纯青，知行合一' },
+        { name: '传说', minLevel: 71, maxLevel: 80, color: '#ff4500', icon: '🌟', description: '超越预期，创造价值' },
+        { name: '神话', minLevel: 81, maxLevel: 100, color: '#ffd700', icon: '✨', description: '三千世界，万法皆通' }
     ];
     
     return tiers.map(tier => {
@@ -595,8 +595,8 @@ function renderLevelProgress(char) {
     const level = char.level || 1;
     const totalExp = char.totalExp || 0;
     const expProgress = char.expProgress || 0;
-    const currentThreshold = char.currentThreshold || 0;
-    const nextThreshold = char.nextThreshold || (currentThreshold + 1000) || 1000;  // v4.2: 更合理的 fallback
+    
+    // v5.0: 四维分数体系 — totalExp 是四维之和(0-100)，expProgress 是百分比
     
     // 更新等级显示
     const levelCurrent = document.getElementById('level-current');
@@ -605,7 +605,6 @@ function renderLevelProgress(char) {
     
     const levelTitle = char.levelTitle || '';
     if (levelCurrent) levelCurrent.textContent = 'LV.' + level;
-    if (levelNext) levelNext.textContent = 'LV.' + (level + 1);
     if (levelPercent) levelPercent.textContent = expProgress.toFixed(1) + '%';
     
     // 显示等级称号（带hover气泡显示进阶路径）
@@ -641,17 +640,20 @@ function renderLevelProgress(char) {
     const expCurrent = document.getElementById('exp-current');
     const expNeeded = document.getElementById('exp-needed');
     
-    if (expCurrent) expCurrent.textContent = totalExp.toLocaleString() + ' EXP';
+    // v5.0: 四维分数展示，不再用「还需多少EXP」
+    const debug = char.debug || {};
+    const metrics = debug.metrics || {};
+    if (expCurrent) {
+        const u = metrics.understandingScore || 0;
+        const d = metrics.depthScore || 0;
+        const q = metrics.qualityScore || 0;
+        const e = metrics.experienceScore || 0;
+        expCurrent.textContent = `懂你${u}/30 + 深度${d}/25 + 质量${q}/20 + 经验${e}/25`;
+    }
     
-    const needed = nextThreshold - totalExp;
     if (expNeeded) {
-        if (needed <= 0) {
-            expNeeded.textContent = '即将升级!';
-            expNeeded.style.color = 'var(--zelda-gold)';
-        } else {
-            expNeeded.textContent = '还需 ' + needed.toLocaleString() + ' EXP';
-            expNeeded.style.color = '';
-        }
+        expNeeded.textContent = `总分 ${totalExp.toFixed(1)}/100 → Lv.${level}`;
+        expNeeded.style.color = '';
     }
 }
 
@@ -1229,10 +1231,12 @@ function renderDailyTrendChart() {
     const skillsNorm = normalizeChartData(trend.skills);
     const knowledgeNorm = normalizeChartData(trend.knowledge);
     const memoryNorm = normalizeChartData(trend.memory);
+    const understandingNorm = normalizeChartData(trend.understanding || trend.memory);
     
     const skillChange = getChartChange(trend.skills);
     const knowledgeChange = getChartChange(trend.knowledge);
     const memoryChange = getChartChange(trend.memory);
+    const understandingChange = getChartChange(trend.understanding || trend.memory);
     
     dailyTrendChartInstance = new Chart(ctx, {
         type: 'line',
@@ -1240,8 +1244,8 @@ function renderDailyTrendChart() {
             labels: trend.dates,
             datasets: [
                 {
-                    label: `技能 (${skillChange >= 0 ? '+' : ''}${skillChange})`,
-                    data: skillsNorm,
+                    label: `懂你 (${understandingChange >= 0 ? '+' : ''}${understandingChange})`,
+                    data: understandingNorm,
                     borderColor: '#00d4ff',
                     backgroundColor: 'rgba(0, 212, 255, 0.1)',
                     tension: 0.3,
@@ -1249,7 +1253,18 @@ function renderDailyTrendChart() {
                     pointRadius: 4,
                     pointBackgroundColor: '#00d4ff',
                     borderWidth: 2,
-                    // 存储原始数据用于tooltip
+                    originalData: trend.understanding || trend.memory
+                },
+                {
+                    label: `技能 (${skillChange >= 0 ? '+' : ''}${skillChange})`,
+                    data: skillsNorm,
+                    borderColor: '#0891b2',
+                    backgroundColor: 'rgba(8, 145, 178, 0.1)',
+                    tension: 0.3,
+                    fill: true,
+                    pointRadius: 4,
+                    pointBackgroundColor: '#0891b2',
+                    borderWidth: 2,
                     originalData: trend.skills
                 },
                 {
@@ -2449,14 +2464,14 @@ window.showAchievementTooltip = showAchievementTooltip;
 
 // ==================== Tooltip ====================
 
-// 升级建议配置 - 更具体的操作指南
+// 升级建议配置 - 与等级体系v3.0多条件升级对齐
 const upgradeAdvice = {
     skill: {
-        1: '💡 升级方法：在对话中主动调用这个技能，积累5次以上使用经验即可升级',
-        2: '💡 升级方法：在更多场景中使用，提高成功率。目标：调用30+次',
-        3: '💡 升级方法：处理更复杂的任务，保持90%+成功率，朝精通迈进',
-        4: '💡 升级方法：沉淀最佳实践，形成稳定的高成功率协作模式',
-        5: '🎉 已达满级！调用充分、成功率高，是核心能力之一'
+        1: '💡 升级到🌿生长：调用10次+成功率60%以上。在对话中主动使用这个技能',
+        2: '💡 升级到🌳成熟：调用50次+成功率75%+有沉淀记录。多场景使用并沉淀经验',
+        3: '💡 升级到⚙️精通：调用200次+成功率85%+3条沉淀。持续深耕，提炼可复用模式',
+        4: '💡 升级到✨圆满：调用500次+成功率90%+5条沉淀+2次进化。大师级深度',
+        5: '🎉 已达满级！调用充分、成功率高、沉淀丰富，是核心能力之一'
     },
     knowledge: {
         1: '💡 升级方法：在对话中分享更多这个领域的内容，如"帮我学习/整理XXX"',
@@ -2831,24 +2846,20 @@ function renderRadarChart() {
         chartInstances.radarChart.destroy();
     }
     
-    // v4.2: 雷达图标签从数据源读取（SSoT — 与五维能力定义保持一致）
+    // v5.0: 雷达图标签从数据源读取（SSoT — 与四维能力定义保持一致）
     const dimsMeta = AppState.characterData?.character?.dimensionsMeta;
     const radarLabels = (Array.isArray(dimsMeta) && dimsMeta.length > 0) 
         ? dimsMeta.map(d => d.shortName || d.name)
-        : ['懂你', '执行', '技能', '思考', '知识'];
+        : ['懂你', '技能', '沉淀', '经验', '思考'];
     
     chartInstances.radarChart = new Chart(canvas, {
         type: 'radar',
         data: {
             labels: radarLabels,
             datasets: [{
-                data: [
-                    stats.understanding || 0,
-                    stats.execution || 0,
-                    stats.skillDepth || 0,
-                    stats.thinkingDepth || 0,
-                    stats.knowledgeBreadth || 0
-                ],
+                data: dimsMeta && dimsMeta.length > 0
+                    ? dimsMeta.map(d => stats[d.key] || 0)
+                    : [stats.understanding || 0, stats.skillDepth || 0, stats.quality || 0, stats.experience || 0, stats.thinkingDepth || 0],
                 backgroundColor: 'rgba(0, 212, 255, 0.2)',
                 borderColor: '#00d4ff',
                 borderWidth: 2,
@@ -2947,20 +2958,16 @@ function renderAbilityRadarChart() {
     const dimsMeta2 = AppState.characterData?.character?.dimensionsMeta;
     const radarLabels2 = (Array.isArray(dimsMeta2) && dimsMeta2.length > 0)
         ? dimsMeta2.map(d => d.shortName || d.name)
-        : ['懂你', '执行', '技能', '思考', '知识'];
+        : ['懂你', '技能', '沉淀', '经验', '思考'];
     
     chartInstances.abilityRadarChart = new Chart(canvas, {
         type: 'radar',
         data: {
             labels: radarLabels2,
             datasets: [{
-                data: [
-                    stats.understanding || 0,
-                    stats.execution || 0,
-                    stats.skillDepth || 0,
-                    stats.thinkingDepth || 0,
-                    stats.knowledgeBreadth || 0
-                ],
+                data: dimsMeta2 && dimsMeta2.length > 0
+                    ? dimsMeta2.map(d => stats[d.key] || 0)
+                    : [stats.understanding || 0, stats.skillDepth || 0, stats.quality || 0, stats.experience || 0, stats.thinkingDepth || 0],
                 backgroundColor: 'rgba(0, 212, 255, 0.3)',
                 borderColor: '#00d4ff',
                 borderWidth: 2,
@@ -2995,22 +3002,27 @@ let _growthPeriod = 14;
 function getGrowthData(period) {
     const trend = AppState.reportsData?.trend;
     if (!trend || !trend.dates) return null;
-    
+
+    // v3.1 修复：understanding 可能缺失（旧数据/生成脚本未补齐），兜底到 memory，避免趋势Tab整块报错。
+    const understandingArr = trend.understanding && trend.understanding.length ? trend.understanding : trend.memory;
+
     const len = trend.dates.length;
     if (period === 0 || period >= len) {
-        return { dates: trend.dates, skills: trend.skills, knowledge: trend.knowledge, memory: trend.memory };
+        return { dates: trend.dates, skills: trend.skills, knowledge: trend.knowledge, memory: trend.memory, understanding: understandingArr };
     }
     const start = Math.max(0, len - period);
     return {
         dates: trend.dates.slice(start),
         skills: trend.skills.slice(start),
         knowledge: trend.knowledge.slice(start),
-        memory: trend.memory.slice(start)
+        memory: trend.memory.slice(start),
+        understanding: understandingArr.slice(start)
     };
 }
 
 function renderGrowthCards(data) {
     const dims = [
+        { key: 'understanding', icon: '🤝', name: '懂你', color: '#00d4ff' },
         { key: 'skills', icon: '⚡', name: '技能', color: '#0891b2' },
         { key: 'knowledge', icon: '📚', name: '知识', color: '#b8860b' },
         { key: 'memory', icon: '🧠', name: '记忆', color: '#8b5cf6' }
@@ -3108,6 +3120,7 @@ function renderGrowthInsight(data) {
     if (!el) return;
     
     const dims = [
+        { key: 'understanding', name: '懂你', icon: '🤝' },
         { key: 'skills', name: '技能', icon: '⚡' },
         { key: 'knowledge', name: '知识', icon: '📚' },
         { key: 'memory', name: '记忆', icon: '🧠' }
@@ -3171,8 +3184,9 @@ function renderTrendChart() {
     const skillsNorm = normalizeChartData(data.skills);
     const knowledgeNorm = normalizeChartData(data.knowledge);
     const memoryNorm = normalizeChartData(data.memory);
+    const understandingNorm = normalizeChartData(data.understanding);
     
-    const allNorm = [...skillsNorm, ...knowledgeNorm, ...memoryNorm];
+    const allNorm = [...skillsNorm, ...knowledgeNorm, ...memoryNorm, ...understandingNorm];
     const minN = Math.min(...allNorm);
     const maxN = Math.max(...allNorm);
     const pad = Math.max(5, Math.ceil((maxN - minN) * 0.25));
@@ -3217,6 +3231,18 @@ function renderTrendChart() {
                     pointBorderColor: 'rgba(255,255,255,0.9)', pointBorderWidth: 2,
                     borderWidth: 2.5,
                     originalData: data.memory
+                },
+                {
+                    label: `懂你程度 (+${getChartChange(data.understanding)})`,
+                    data: understandingNorm,
+                    borderColor: '#00d4ff',
+                    backgroundColor: 'rgba(0, 212, 255, 0.08)',
+                    fill: true, tension: 0.4,
+                    pointRadius: 4, pointHoverRadius: 8,
+                    pointBackgroundColor: '#00d4ff',
+                    pointBorderColor: 'rgba(255,255,255,0.9)', pointBorderWidth: 2,
+                    borderWidth: 2.5,
+                    originalData: data.understanding
                 }
             ]
         },
@@ -3287,6 +3313,7 @@ function renderGrowthBars(data) {
     if (!container) return;
     
     const dims = [
+        { key: 'understanding', icon: '🤝', name: '懂你', cls: 'understanding' },
         { key: 'skills', icon: '⚡', name: '技能', cls: 'skills' },
         { key: 'knowledge', icon: '📚', name: '知识', cls: 'knowledge' },
         { key: 'memory', icon: '🧠', name: '记忆', cls: 'memory' }
