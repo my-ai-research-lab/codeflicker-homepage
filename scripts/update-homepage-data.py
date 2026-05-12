@@ -65,6 +65,39 @@ def update_knowledge():
     total_size_kb = 0
     categories = {}
 
+    # 知识库分类描述映射（key = 目录相对路径）
+    KNOWLEDGE_META = {
+        "root": {"displayName": "根目录", "icon": "🏠", "description": "知识库顶层文档与索引"},
+        "books": {"displayName": "读书笔记", "icon": "📖", "description": "书籍阅读笔记与核心观点提炼"},
+        "notes": {"displayName": "学习笔记", "icon": "📝", "description": "日常学习笔记与技术积累"},
+        "shared": {"displayName": "共享知识", "icon": "🔗", "description": "跨项目共享的知识与模式"},
+        "guides": {"displayName": "指南手册", "icon": "📋", "description": "操作指南与最佳实践手册"},
+        "templates": {"displayName": "模板库", "icon": "🧩", "description": "可复用的文档模板与框架"},
+        "research": {"displayName": "调研报告", "icon": "🔬", "description": "深度调研报告与行业洞察"},
+        "shared/people": {"displayName": "人物画像", "icon": "👤", "description": "关键人物信息与关系图谱"},
+        "packages/investment": {"displayName": "投资理财", "icon": "💰", "description": "投资理财知识与策略记录"},
+        "packages/rd-efficiency": {"displayName": "研发效能", "icon": "⚡", "description": "研发效能方法论与实践洞察"},
+        "packages/ai-insight": {"displayName": "AI洞察", "icon": "🧠", "description": "AI行业动态与深度分析"},
+        "packages/ai-insight/01-models": {"displayName": "大模型", "icon": "🤖", "description": "大语言模型技术演进与评测"},
+        "packages/ai-insight/02-agents": {"displayName": "AI Agent", "icon": "🦾", "description": "Agent架构、自主性与工具链"},
+        "packages/ai-insight/03-ai-companies": {"displayName": "AI公司", "icon": "🏢", "description": "AI公司动态与竞争格局"},
+        "packages/ai-insight/04-enterprise-ai": {"displayName": "企业AI", "icon": "🏭", "description": "企业AI转型与落地实践"},
+        "packages/ai-insight/best-practices": {"displayName": "最佳实践", "icon": "🏆", "description": "AI应用最佳实践与案例"},
+        "packages/ai-insight/insights": {"displayName": "洞察提炼", "icon": "💡", "description": "从动态中提炼的结构性洞察"},
+        "packages/ai-insight/insights/weekly": {"displayName": "周洞察", "icon": "📅", "description": "每周AI行业洞察汇总"},
+        "packages/ai-insight/entity-profiles/companies": {"displayName": "公司画像", "icon": "🏢", "description": "AI公司详细档案与追踪"},
+        "packages/ai-insight/entity-profiles/people": {"displayName": "行业人物", "icon": "👤", "description": "AI领域关键人物档案"},
+        "packages/ai-insight/concepts/applications": {"displayName": "AI应用", "icon": "📱", "description": "AI应用场景与产品形态"},
+        "packages/ai-insight/concepts/safety": {"displayName": "AI安全", "icon": "🛡️", "description": "AI安全与对齐研究"},
+        "packages/ai-insight/concepts/coding": {"displayName": "AI Coding", "icon": "⌨️", "description": "AI辅助编程与开发范式"},
+        "packages/ai-insight/concepts/agents": {"displayName": "Agent架构", "icon": "🦾", "description": "Agent技术架构与自主性"},
+        "packages/ai-insight/concepts/infrastructure": {"displayName": "AI基础设施", "icon": "🏗️", "description": "训练/推理/部署基础设施"},
+        "packages/ai-insight/concepts/enterprise": {"displayName": "企业转型", "icon": "🔄", "description": "企业AI转型路径与策略"},
+        "packages/ai-insight/concepts/models": {"displayName": "模型技术", "icon": "🧪", "description": "模型架构与训练技术"},
+        "templates/evo-skills-v2": {"displayName": "技能模板v2", "icon": "🧩", "description": "自进化技能模板与规范"},
+        "packages/ai-insight/concepts/agents/ai-product-ultimate-form": {"displayName": "AI产品终极形态", "icon": "🎯", "description": "AI产品的终极形态探索与思考"},
+    }
+
     if knowledge_dir.exists():
         for f in knowledge_dir.rglob("*.md"):
             total_files += 1
@@ -73,7 +106,15 @@ def update_knowledge():
             parent = f.parent.relative_to(knowledge_dir)
             cat_name = str(parent) if str(parent) != "." else "root"
             if cat_name not in categories:
-                categories[cat_name] = {"name": cat_name, "fileCount": 0, "sizeKB": 0}
+                meta = KNOWLEDGE_META.get(cat_name, {})
+                categories[cat_name] = {
+                    "name": cat_name,
+                    "displayName": meta.get("displayName", cat_name),
+                    "icon": meta.get("icon", "📁"),
+                    "description": meta.get("description", f"{cat_name}相关文档"),
+                    "fileCount": 0,
+                    "sizeKB": 0
+                }
             categories[cat_name]["fileCount"] += 1
             categories[cat_name]["sizeKB"] += size
 
