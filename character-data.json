@@ -181,9 +181,9 @@
     "fullName": "林克（Link）",
     "runDays": 91,
     "totalConversations": 420,
-    "worksCount": 33,
-    "deployedWorks": 32,
-    "lastDataUpdate": "2026-05-11 23:46"
+    "worksCount": 34,
+    "deployedWorks": 33,
+    "lastDataUpdate": "2026-05-12 09:38"
   },
   "skills": {
     "total": 78,
@@ -3043,11 +3043,11 @@
     }
   },
   "memories": {
-    "total": 38,
+    "total": 40,
     "byCategory": {
       "daily_log": {
         "label": "日志",
-        "count": 15
+        "count": 17
       },
       "learning": {
         "label": "学习",

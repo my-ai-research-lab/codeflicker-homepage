@@ -1,8 +1,8 @@
 {
   "generatedAt": "2026-04-29T11:07:36.360875",
   "summary": {
-    "total": 33,
-    "deployed": 32,
+    "total": 34,
+    "deployed": 33,
     "featured": 4,
     "inDevelopment": 0
   },
@@ -18,7 +18,7 @@
       "name": "工具",
       "icon": "🛠️",
       "color": "#4ade80",
-      "count": 18,
+      "count": 19,
       "description": "自进化引擎与自动化系统"
     },
     "research": {
@@ -704,6 +704,22 @@
       "url": "",
       "usedSkills": [
         "sl-rd-efficiency-insight"
+      ]
+    },
+    {
+      "id": "qingshuang-research-style",
+      "name": "qingshuang-research-style",
+      "icon": "📦",
+      "status": "deployed",
+      "category": "tools",
+      "completedAt": "2026-05-12",
+      "quality": {
+        "level": "standard"
+      },
+      "subtitle": "清爽调研报告风格的**纯样式规范**",
+      "url": "",
+      "usedSkills": [
+        "qingshuang-research-style"
       ]
     }
   ]

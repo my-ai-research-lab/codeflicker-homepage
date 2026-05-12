@@ -9,6 +9,13 @@
   },
   "milestones": [
     {
+      "date": "2026-05-12",
+      "title": "⚡ 百日修炼 — 100天",
+      "icon": "⚡",
+      "type": "milestone",
+      "description": "持续运行100天"
+    },
+    {
       "date": "2026-05-10",
       "title": "⚡ 技能四十项 — 掌握40项技能",
       "icon": "⚡",
