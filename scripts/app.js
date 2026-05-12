@@ -1778,6 +1778,28 @@ function renderPersonaCards() {
     grid.innerHTML = personas.map(p => {
         const skillsHtml = (p.skills || []).map(s => `<span class="persona-skill-tag">${s}</span>`).join('');
         const triggersHtml = (p.triggerWords || []).map(t => `<span class="persona-trigger-tag">${t}</span>`).join('');
+        // 只渲染有内容的section
+        const sections = [];
+        if (p.thinkingStyle) sections.push(`
+            <div class="persona-card-section">
+                <div class="persona-card-section-label">思维风格</div>
+                <div class="persona-card-thinking">${p.thinkingStyle}</div>
+            </div>`);
+        if (p.tone) sections.push(`
+            <div class="persona-card-section">
+                <div class="persona-card-section-label">语气特点</div>
+                <div class="persona-card-tone">${p.tone}</div>
+            </div>`);
+        if (p.skills && p.skills.length) sections.push(`
+            <div class="persona-card-section">
+                <div class="persona-card-section-label">核心技能</div>
+                <div class="persona-card-skills">${skillsHtml}</div>
+            </div>`);
+        if (p.triggerWords && p.triggerWords.length) sections.push(`
+            <div class="persona-card-section">
+                <div class="persona-card-section-label">唤醒方式</div>
+                <div class="persona-card-triggers">${triggersHtml}</div>
+            </div>`);
         return `
         <div class="persona-card" style="--persona-color: ${p.color || '#00d4ff'};">
             <div class="persona-card-header">
@@ -1788,23 +1810,8 @@ function renderPersonaCards() {
                 </div>
             </div>
             <div class="persona-card-desc">${p.description || ''}</div>
-            <div class="persona-card-mission">${p.mission || ''}</div>
-            <div class="persona-card-section">
-                <div class="persona-card-section-label">思维风格</div>
-                <div class="persona-card-thinking">${p.thinkingStyle || ''}</div>
-            </div>
-            <div class="persona-card-section">
-                <div class="persona-card-section-label">语气特点</div>
-                <div class="persona-card-tone">${p.tone || ''}</div>
-            </div>
-            <div class="persona-card-section">
-                <div class="persona-card-section-label">核心技能</div>
-                <div class="persona-card-skills">${skillsHtml}</div>
-            </div>
-            <div class="persona-card-section">
-                <div class="persona-card-section-label">唤醒方式</div>
-                <div class="persona-card-triggers">${triggersHtml}</div>
-            </div>
+            ${p.mission ? `<div class="persona-card-mission">${p.mission}</div>` : ''}
+            ${sections.join('')}
         </div>`;
     }).join('');
 }
@@ -1995,18 +2002,15 @@ function renderKnowledgeTreeGraph(knowledge) {
     const container = document.getElementById('knowledge-tree');
     if (!container) return;
     
-    // v4.0: 直接从 JSON 数据中读取，不再维护本地映射表
-    // character-data.json 中的 knowledge.categories 已包含 displayName/icon/description
-    
-    // v4.3: 后端只输出 categories，直接从中提取（消除幽灵字段 directories）
     const directories = knowledge.categories ? Object.entries(knowledge.categories).map(([key, cat]) => ({
         key: key,
-        name: cat.name || key,
+        name: cat.displayName || cat.name || key,
         count: cat.fileCount || 0,
         icon: cat.icon || '📁',
         color: cat.color,
         sizeKB: cat.sizeKB || 0,
-        description: cat.description
+        description: cat.description,
+        heatLevel: cat.heatLevel || (cat.fileCount <= 10 ? 1 : cat.fileCount <= 30 ? 2 : cat.fileCount <= 60 ? 3 : cat.fileCount <= 100 ? 4 : 5)
     })) : [];
     
     if (directories.length === 0) {
@@ -2014,51 +2018,35 @@ function renderKnowledgeTreeGraph(knowledge) {
         return;
     }
     
-    let idx = 0;
-    let branches = '';
+    // 按热度排序：heatLevel高的在前
+    const sorted = directories.sort((a, b) => (b.heatLevel || 0) - (a.heatLevel || 0));
     
-    for (const dir of directories) {
-        const dirKey = dir.key || dir.name;
-        // v4.0: 从 JSON 数据中直接读取显示信息，不再依赖本地映射表
-        const chineseName = dir.displayName || dir.name || dirKey;
-        const sourceDesc = dir.description || `${chineseName}相关文档`;
-        const dirId = 'knowledge-dir-' + idx++;
-        const dirIcon = dir.icon || '📁';
-        
-        // v4.2: 等级优先从后端数据读取（heatLevel），硬编码计算仅作为 fallback
-        const level = dir.heatLevel || dir.level || (dir.count <= 10 ? 1 : dir.count <= 30 ? 2 : dir.count <= 60 ? 3 : dir.count <= 100 ? 4 : 5);
-        
-        AppState.dataMap[dirId] = { 
-            name: chineseName, 
-            icon: dirIcon, 
-            level: level,
-            description: `${chineseName}知识库，共收录${dir.count}个文档${dir.sizeKB ? `，总计${dir.sizeKB}KB` : ''}`,
-            source: sourceDesc
-        };
-        
-        // 知识树直接展示分类节点作为末级节点，不再展开叶子节点
-        branches += `
-            <div class="branch" style="color: var(--zelda-gold);">
-                <div class="leaf-node lv${level}" 
-                     style="border-color: var(--node-color); color: var(--node-color);"
-                     onmouseenter="showTreeTooltip(event, '${dirId}', 'knowledge')" onmouseleave="hideTooltip()">
-                    <span class="leaf-icon">${dirIcon}</span>
-                    <span class="leaf-name">${chineseName}</span>
-                    <span class="leaf-level" style="border-color: var(--node-color);">${dir.count}</span>
+    const levelLabels = { 1: '萌芽', 2: '生长', 3: '成熟', 4: '精通', 5: '大师' };
+    const levelColors = { 1: '#c99480', 2: '#ddb48a', 3: '#4ecdc4', 4: '#00d4ff', 5: '#a8e6ff' };
+    
+    let cardsHtml = sorted.map(dir => {
+        const lv = dir.heatLevel;
+        const lvColor = levelColors[lv] || '#4ecdc4';
+        const lvLabel = levelLabels[lv] || '';
+        const descText = dir.description || `${dir.name}相关文档`;
+        return `
+            <div class="knowledge-card" style="--card-accent: ${lvColor};">
+                <div class="knowledge-card-top">
+                    <span class="knowledge-card-icon">${dir.icon}</span>
+                    <span class="knowledge-card-name">${dir.name}</span>
+                    <span class="knowledge-card-level" style="border-color: ${lvColor}; color: ${lvColor};">${lvLabel} Lv${lv}</span>
                 </div>
-            </div>
-        `;
-    }
+                <div class="knowledge-card-desc">${descText}</div>
+                <div class="knowledge-card-stats">
+                    <span class="knowledge-stat"><span class="knowledge-stat-num">${dir.count}</span> 文档</span>
+                    ${dir.sizeKB ? `<span class="knowledge-stat"><span class="knowledge-stat-num">${dir.sizeKB}</span> KB</span>` : ''}
+                </div>
+            </div>`;
+    }).join('');
     
     container.innerHTML = `
-        <div class="tree-graph">
-            <div class="tree-root" style="color: var(--zelda-gold);">
-                <div class="root-node" style="border-color: var(--zelda-gold); color: var(--zelda-gold);">
-                    <span class="node-icon">📚</span>
-                    <span class="node-level" style="border-color: var(--zelda-gold);">知识</span>
-                </div>
-            </div>
-            <div class="branches">${branches}</div>
+        <div class="knowledge-cards-grid">
+            ${cardsHtml}
         </div>
     `;
 }
