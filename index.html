@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="styles/zelda-theme.css?v=22">
     <link rel="stylesheet" href="styles/main.css?v=23">
     <link rel="stylesheet" href="styles/ability-trees.css?v=41">
+    <link rel="stylesheet" href="styles/mobile-responsive.css?v=2">
     <style>
         /* ==================== 关键首屏样式（内联以避免FOUC） ==================== */
         /* 仅保留最小必要样式，详细样式在外部CSS中 */
@@ -50,6 +51,30 @@
         /* 隐藏未激活的Section */
         .content-section { display: none; }
         .content-section.active { display: block; }
+
+        /* 移动端关键布局覆盖 - 必须内联以保证首屏正确 */
+        @media (max-width: 900px) {
+            .sidebar {
+                position: relative;
+                width: 100%;
+                height: auto;
+                max-height: 0;
+                overflow: hidden;
+                left: 0;
+                top: 0;
+            }
+            .sidebar.open {
+                max-height: 3000px;
+                overflow-y: auto;
+            }
+            .main-content {
+                margin-left: 0;
+                max-width: 100vw;
+            }
+            .mobile-info-bar {
+                display: flex;
+            }
+        }
     </style>
     <style>
         /* ==================== 页面特定样式（非关键，可延迟） ==================== */
@@ -4235,8 +4260,6 @@
 
         /* 响应式 */
         @media (max-width: 1024px) {
-            .sidebar { display: none; }
-            .main-content { margin-left: 0; }
             .daily-overview { grid-template-columns: repeat(2, 1fr); }
             .capability-cards { grid-template-columns: 1fr; }
             .about-hero { flex-direction: column; align-items: center; text-align: center; }
@@ -4244,8 +4267,6 @@
         }
 
         @media (max-width: 600px) {
-            .top-nav { flex-wrap: wrap; }
-            .nav-text { display: none; }
             .daily-overview { grid-template-columns: 1fr 1fr; }
             .works-grid { grid-template-columns: 1fr; }
         }
@@ -4521,6 +4542,15 @@
     <!-- 移动端侧边栏遮罩 -->
     <div class="sidebar-overlay" id="sidebarOverlay"></div>
 
+    <!-- 移动端顶部信息条（桌面端隐藏） -->
+    <div class="mobile-info-bar" id="mobileInfoBar" style="display:none">
+        <button class="mobile-menu-btn" onclick="toggleSidebar()">☰</button>
+        <div class="mobile-info-avatar"><img src="link-avatar-small.webp" alt="AI助手"></div>
+        <span class="mobile-info-name" id="mobile-name">--</span>
+        <span class="mobile-info-level" id="mobile-level">Lv.--</span>
+        <button class="mobile-info-expand-btn" onclick="toggleSidebar()" id="mobile-expand-btn">展开详情 ▼</button>
+    </div>
+
     <div class="app-container">
         <!-- ===================== 左侧边栏 ===================== -->
         <aside class="sidebar">
@@ -4691,11 +4721,6 @@
         <main class="main-content">
             <!-- 导航栏 - 3个Tab + 移动端菜单 -->
             <nav class="top-nav">
-                <!-- 移动端汉堡菜单按钮 -->
-                <button class="mobile-menu-btn" id="mobileMenuBtn" onclick="toggleSidebar()">
-                    ☰
-                </button>
-
                 <!-- 三角力装饰 -->
                 <div class="triforce-decoration">
                     <div class="triforce"></div>
@@ -5451,8 +5476,13 @@
         function toggleSidebar() {
             const sidebar = document.querySelector('.sidebar');
             const overlay = document.getElementById('sidebarOverlay');
+            const expandBtn = document.getElementById('mobile-expand-btn');
+            const isOpen = sidebar.classList.contains('open');
             sidebar.classList.toggle('open');
             overlay.classList.toggle('active');
+            if (expandBtn) {
+                expandBtn.textContent = isOpen ? '展开详情 ▼' : '收起 ▲';
+            }
         }
 
         // 点击遮罩关闭侧边栏

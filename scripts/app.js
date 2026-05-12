@@ -515,6 +515,12 @@ function renderSidebar() {
     if (heroLevel) heroLevel.textContent = levelText;
     if (aboutLevel) aboutLevel.textContent = levelText;
     
+    // 移动端信息栏同步
+    const mobileName = document.getElementById('mobile-name');
+    const mobileLevel = document.getElementById('mobile-level');
+    if (mobileName) mobileName.textContent = char.name || 'MyFlicker';
+    if (mobileLevel) mobileLevel.textContent = levelText + ' ' + levelTitle;
+    
     // 更新等级称号
     const heroTitle = document.getElementById('hero-level-title');
     const aboutTitle = document.getElementById('about-level-title');

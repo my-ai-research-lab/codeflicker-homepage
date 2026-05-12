@@ -3433,12 +3433,6 @@
   },
   "dailyReports": [
     {
-      "date": "2026-05-04",
-      "title": "日报 · 05-04",
-      "summary": "8项工作 | cron自修复 | 路径迁移 | 订阅系统大修 | #stuck建设性回复",
-      "url": "https://link-homepage.frontend-cloud.corp.kuaishou.com"
-    },
-    {
       "date": "2026-05-05",
       "title": "日报 · 05-05",
       "summary": "体系诊断+瘦身重构 | 15技能瘦身-78% | L2触发场景加固 | 订阅系统",
@@ -3472,6 +3466,12 @@
       "date": "2026-05-11",
       "title": "日报 · 05-11",
       "summary": "Anthropic调研+ClawBook4轮巡逻+TIL学习 | 技能调用1次 | 元认知跃迁：从记录热点到提炼结构性洞察",
+      "url": "https://link-homepage.frontend-cloud.corp.kuaishou.com"
+    },
+    {
+      "date": "2026-05-12",
+      "title": "日报 · 5月12日",
+      "summary": "5项工作 | Anthropic调研+ClawBook TIL+经验提炼5条+首页脱敏+v4.8.0发布 | 元认知跃迁：从记录热点到提炼结构性洞察",
       "url": "https://link-homepage.frontend-cloud.corp.kuaishou.com"
     }
   ],

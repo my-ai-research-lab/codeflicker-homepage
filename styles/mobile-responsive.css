@@ -1,0 +1,1030 @@
+/* ==================== 移动端响应式优化 v2.0 ==================== */
+/*
+ * 核心思路：移动端不是"隐藏桌面版的侧边栏"，而是完全重构布局
+ * 侧边栏 → 顶部可折叠信息卡
+ * 固定宽度 → 流式宽度
+ * 复杂网格 → 简化列数
+ * v2.0: 视觉优化 - 卡片通透感、导航精致度、过渡流畅度
+ */
+
+/* ---- 移动端信息条：桌面端默认隐藏 ---- */
+.mobile-info-bar {
+    display: none;
+}
+
+/* ---- 移动端汉堡菜单按钮：桌面端默认隐藏 ---- */
+.mobile-menu-btn {
+    display: none;
+}
+
+/* ==================== 1. 大屏微调 (≤1200px) ==================== */
+@media (max-width: 1200px) {
+    .sidebar {
+        width: 260px;
+    }
+    .main-content {
+        margin-left: 260px;
+    }
+    .about-highlights {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .value-cards-6 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .value-cards-4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .howto-examples .examples-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .howto-channels {
+        flex-wrap: wrap;
+    }
+    .howto-channel {
+        min-width: 200px;
+    }
+    .config-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .daily-row--top {
+        grid-template-columns: 1fr;
+    }
+    .daily-row {
+        grid-template-columns: 1fr;
+    }
+    .delivery-grid {
+        grid-template-columns: 1fr;
+    }
+    .about-stats-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* ==================== 2. 平板/移动端切换 (≤900px) ==================== */
+@media (max-width: 900px) {
+    /* ---- 全局重置 ---- */
+    .app-container {
+        flex-direction: column;
+    }
+
+    /* ---- 侧边栏 → 可折叠区域 ---- */
+    .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        left: 0;
+        top: 0;
+        overflow-y: visible;
+        z-index: 50;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        padding: 0;
+        background: linear-gradient(180deg,
+            rgba(18, 22, 28, 0.92) 0%,
+            rgba(24, 28, 33, 0.88) 100%
+        );
+        backdrop-filter: blur(24px) saturate(1.2);
+        -webkit-backdrop-filter: blur(24px) saturate(1.2);
+        border-bottom: none;
+    }
+
+    .sidebar.open {
+        max-height: 3000px;
+        padding: 16px 14px;
+        overflow-y: auto;
+        border-bottom: 1px solid rgba(0, 212, 255, 0.1);
+    }
+
+    /* ---- 侧边栏内视觉优化 ---- */
+    .sidebar .avatar-section {
+        padding: 8px 0 4px;
+    }
+    .sidebar .stats-panel {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 6px;
+    }
+    .sidebar .radar-wrap,
+    .sidebar .trend-mini-wrap {
+        height: 140px;
+    }
+    .sidebar .sheikah-divider {
+        margin: 12px 0;
+    }
+
+    .main-content {
+        margin-left: 0;
+        max-width: 100vw;
+        padding: 12px;
+        min-height: auto;
+    }
+
+    /* ---- 移动端顶部信息条 v2 ---- */
+    .mobile-info-bar {
+        display: flex !important;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 16px;
+        background: linear-gradient(135deg,
+            rgba(18, 22, 28, 0.94) 0%,
+            rgba(28, 34, 42, 0.92) 100%
+        );
+        backdrop-filter: blur(24px) saturate(1.2);
+        -webkit-backdrop-filter: blur(24px) saturate(1.2);
+        border-bottom: 1px solid rgba(0, 212, 255, 0.08);
+        position: sticky;
+        top: 0;
+        z-index: 60;
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    .mobile-info-avatar {
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        border: 2px solid rgba(0, 212, 255, 0.5);
+        overflow: hidden;
+        flex-shrink: 0;
+        box-shadow: 0 0 8px rgba(0, 212, 255, 0.2);
+    }
+
+    .mobile-info-avatar img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    .mobile-info-name {
+        font-family: var(--font-title);
+        font-size: 16px;
+        color: var(--sheikah-blue-light);
+        font-weight: 600;
+        letter-spacing: 1.5px;
+        text-shadow: 0 0 12px rgba(0, 212, 255, 0.3);
+    }
+
+    .mobile-info-level {
+        font-family: var(--font-mono);
+        font-size: 11px;
+        color: var(--zelda-gold-light);
+        background: linear-gradient(135deg, rgba(201, 162, 39, 0.25), rgba(255, 215, 0, 0.15));
+        border: 1px solid rgba(201, 162, 39, 0.4);
+        padding: 3px 10px;
+        border-radius: 12px;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        box-shadow: 0 0 6px rgba(201, 162, 39, 0.15);
+    }
+
+    .mobile-info-expand-btn {
+        background: rgba(0, 212, 255, 0.08);
+        border: 1px solid rgba(0, 212, 255, 0.25);
+        border-radius: 8px;
+        color: var(--sheikah-blue-light);
+        font-size: 12px;
+        padding: 6px 14px;
+        cursor: pointer;
+        transition: all 0.25s ease;
+        font-weight: 600;
+        margin-left: auto;
+        white-space: nowrap;
+        letter-spacing: 0.3px;
+    }
+
+    .mobile-info-expand-btn:hover {
+        background: rgba(0, 212, 255, 0.18);
+        border-color: rgba(0, 212, 255, 0.5);
+        box-shadow: 0 0 12px rgba(0, 212, 255, 0.15);
+        transform: translateY(-1px);
+    }
+
+    /* ---- 导航栏 v2: 更精致的毛玻璃 ---- */
+    .top-nav {
+        position: relative;
+        padding: 8px 10px;
+        gap: 6px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        flex-wrap: nowrap;
+        background: linear-gradient(135deg,
+            rgba(18, 22, 28, 0.88) 0%,
+            rgba(28, 34, 42, 0.85) 100%
+        );
+        backdrop-filter: blur(20px) saturate(1.1);
+        -webkit-backdrop-filter: blur(20px) saturate(1.1);
+        border: 1px solid rgba(0, 212, 255, 0.08);
+        border-radius: 12px;
+        box-shadow: 0 2px 16px rgba(0, 0, 0, 0.2);
+    }
+    .top-nav::-webkit-scrollbar { display: none; }
+
+    .nav-tab {
+        padding: 12px 14px;
+        font-size: 14px;
+        min-width: 70px;
+        flex-shrink: 0;
+        border-radius: 10px;
+        transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .nav-tab.active {
+        background: rgba(0, 212, 255, 0.15);
+        border-color: rgba(0, 212, 255, 0.35);
+        color: var(--sheikah-blue-light);
+        box-shadow: 0 0 16px rgba(0, 212, 255, 0.12),
+                    inset 0 1px 0 rgba(0, 212, 255, 0.1);
+    }
+
+    .nav-text {
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+
+    /* ---- 卡片通透感优化 ---- */
+    /* 日报卡片 */
+    .daily-card {
+        background: rgba(24, 28, 33, 0.7);
+        backdrop-filter: blur(16px) saturate(1.1);
+        -webkit-backdrop-filter: blur(16px) saturate(1.1);
+        border: 1px solid rgba(0, 212, 255, 0.1);
+        border-radius: 12px;
+        padding: 16px;
+        margin-bottom: 12px;
+        transition: all 0.25s ease;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    }
+    .daily-card:hover {
+        border-color: rgba(0, 212, 255, 0.22);
+        box-shadow: 0 4px 20px rgba(0, 212, 255, 0.08),
+                    0 2px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    /* 日报汇总条 */
+    .daily-summary-bar {
+        background: linear-gradient(135deg,
+            rgba(18, 22, 28, 0.75) 0%,
+            rgba(28, 34, 42, 0.65) 100%
+        );
+        backdrop-filter: blur(20px) saturate(1.2);
+        -webkit-backdrop-filter: blur(20px) saturate(1.2);
+        border: 1px solid rgba(0, 212, 255, 0.12);
+        border-radius: 12px;
+        padding: 14px 16px;
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+    }
+    .summary-num {
+        font-size: 20px;
+    }
+
+    /* 进化历程 */
+    .evolution-section {
+        background: linear-gradient(135deg,
+            rgba(18, 22, 28, 0.92) 0%,
+            rgba(28, 36, 46, 0.88) 100%
+        );
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border: 1.5px solid rgba(0, 212, 255, 0.2);
+        border-radius: 14px;
+        padding: 16px;
+        box-shadow: 0 2px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    /* 关于我 hero */
+    .about-hero {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background: linear-gradient(135deg,
+            rgba(18, 22, 28, 0.92) 0%,
+            rgba(28, 36, 46, 0.88) 100%
+        );
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border: 1.5px solid rgba(0, 212, 255, 0.25);
+        border-radius: 14px;
+        padding: 20px 16px;
+        box-shadow: 0 4px 24px rgba(0, 212, 255, 0.1),
+                    0 2px 12px rgba(0, 0, 0, 0.2);
+    }
+    .about-avatar {
+        width: 90px;
+        height: 90px;
+    }
+    .about-name {
+        font-size: 24px;
+        text-shadow: 0 0 20px rgba(0, 212, 255, 0.4);
+    }
+    .about-name-en {
+        font-size: 14px;
+    }
+    .about-tags {
+        justify-content: center;
+    }
+
+    /* 价值主张 */
+    .value-proposition {
+        background: linear-gradient(135deg,
+            rgba(18, 22, 28, 0.92) 0%,
+            rgba(28, 36, 46, 0.88) 100%
+        );
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border: 1.5px solid rgba(201, 162, 39, 0.3);
+        border-radius: 14px;
+        padding: 16px;
+        box-shadow: 0 2px 16px rgba(0, 0, 0, 0.2);
+    }
+    .value-card {
+        background: rgba(0, 0, 0, 0.25);
+        border: 1px solid rgba(201, 162, 39, 0.15);
+        border-radius: 10px;
+        padding: 16px 14px;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .value-card:hover {
+        border-color: rgba(201, 162, 39, 0.4);
+        box-shadow: 0 0 20px rgba(201, 162, 39, 0.15);
+        transform: translateY(-3px);
+    }
+    .value-card.card-cyan {
+        border-color: rgba(94, 196, 212, 0.15);
+    }
+    .value-card.card-cyan:hover {
+        border-color: rgba(94, 196, 212, 0.4);
+        box-shadow: 0 0 20px rgba(94, 196, 212, 0.15);
+    }
+
+    /* 如何使用 */
+    .howto-section {
+        background: linear-gradient(135deg,
+            rgba(232, 220, 196, 0.92) 0%,
+            rgba(245, 235, 210, 0.88) 100%
+        );
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border: 1.5px solid rgba(107, 83, 68, 0.25);
+        border-radius: 14px;
+        padding: 16px;
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    /* 配置区块 */
+    .config-section {
+        background: linear-gradient(135deg,
+            rgba(18, 22, 28, 0.92) 0%,
+            rgba(28, 36, 46, 0.88) 100%
+        );
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border: 1.5px solid rgba(0, 212, 255, 0.2);
+        border-radius: 14px;
+        padding: 16px;
+        box-shadow: 0 2px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    /* 侧边栏核心数据面板 */
+    .about-core-stats {
+        background: linear-gradient(135deg,
+            rgba(18, 22, 28, 0.92) 0%,
+            rgba(30, 40, 50, 0.88) 100%
+        );
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border: 1.5px solid rgba(0, 212, 255, 0.25);
+        border-radius: 12px;
+    }
+
+    /* ---- 网格统一降级 ---- */
+    .daily-overview {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    .overview-card {
+        background: linear-gradient(160deg,
+            rgba(238, 228, 208, 0.95) 0%,
+            rgba(248, 238, 218, 0.92) 100%
+        );
+        border: 1.5px solid rgba(107, 83, 68, 0.2);
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    }
+    .capability-cards {
+        grid-template-columns: 1fr 1fr;
+    }
+    .capability-overview {
+        grid-template-columns: 1fr 1fr;
+    }
+    .about-highlights {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .highlight-card {
+        background: rgba(24, 28, 33, 0.85);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(0, 212, 255, 0.12);
+        border-radius: 10px;
+    }
+    .about-stats-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .skills-grid,
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+    .achievements-grid {
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    }
+    .value-cards-6 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .value-cards-4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .works-cards-grid {
+        grid-template-columns: 1fr;
+    }
+    .config-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* ---- 日报板块 ---- */
+    .daily-row--top { grid-template-columns: 1fr; }
+    .daily-row { grid-template-columns: 1fr; gap: 12px; }
+    .delivery-grid { grid-template-columns: 1fr; }
+    .delivery-stats-bar {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .delivery-item {
+        background: rgba(0, 0, 0, 0.22);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        border-radius: 10px;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    /* ---- 二级导航 v2: 精致滚动 ---- */
+    .section-sub-nav,
+    .ability-tabs,
+    .works-category-tabs {
+        overflow-x: auto;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        flex-wrap: nowrap;
+        background: linear-gradient(135deg,
+            rgba(18, 22, 28, 0.85) 0%,
+            rgba(28, 34, 42, 0.82) 100%
+        );
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border: 1px solid rgba(0, 212, 255, 0.1);
+        border-radius: 10px;
+        padding: 5px;
+    }
+    .section-sub-nav::-webkit-scrollbar,
+    .ability-tabs::-webkit-scrollbar,
+    .works-category-tabs::-webkit-scrollbar { display: none; }
+
+    .sub-nav-btn,
+    .ability-tab-btn,
+    .works-category-btn {
+        min-width: 80px;
+        flex-shrink: 0;
+        white-space: nowrap;
+        border-radius: 8px;
+        transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .sub-nav-btn.active,
+    .ability-tab-btn.active,
+    .works-category-btn.active {
+        background: rgba(0, 212, 255, 0.15);
+        border-color: rgba(0, 212, 255, 0.3);
+        box-shadow: 0 0 12px rgba(0, 212, 255, 0.1);
+    }
+
+    /* ---- 技能详情面板 ---- */
+    .skill-detail-panel {
+        bottom: 0;
+        right: 0;
+        left: 0;
+        width: 100%;
+        border-radius: 14px 14px 0 0;
+        max-height: 80vh;
+    }
+
+    /* ---- 成就弹窗 ---- */
+    .achievement-modal-content {
+        max-width: 90vw;
+        border-radius: 14px;
+    }
+
+    /* ---- 看板区块 ---- */
+    .howto-channels {
+        flex-direction: column;
+    }
+    .howto-channel {
+        min-width: 0;
+        background: rgba(255, 255, 255, 0.55);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        border: 1.5px solid rgba(107, 83, 68, 0.18);
+        border-radius: 10px;
+    }
+    .howto-examples .examples-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* ---- 内容基地按钮 ---- */
+    .content-hub-btn {
+        font-size: 10px;
+        padding: 5px 10px;
+    }
+
+    /* ---- 性能优化 ---- */
+    .topographic-layer { display: none; }
+    .cloud-layer { animation: none; }
+    .landscape-layer { height: 12vh; opacity: 0.5; }
+    .particles { display: none; }
+    .scanlines { opacity: 0.3; }
+
+    /* ---- 段位进阶气泡 - 移动端居中弹窗 ---- */
+    .tier-popup {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 280px;
+        margin: 0;
+        z-index: 2000;
+    }
+    .tier-popup::before {
+        display: none;
+    }
+
+    /* ---- 进化历程 ---- */
+    .evolution-item {
+        padding: 14px;
+        border-radius: 10px;
+        background: rgba(0, 0, 0, 0.25);
+        border: 1px solid rgba(0, 212, 255, 0.15);
+    }
+
+    /* ---- 日报修炼行 ---- */
+    .cultivation-row {
+        grid-template-columns: 1fr;
+    }
+    .cultivation-block {
+        border-radius: 10px;
+        background: rgba(0, 0, 0, 0.2);
+        border: 1px solid rgba(201, 168, 76, 0.1);
+    }
+
+    /* ---- 汉堡菜单按钮 v2 ---- */
+    .mobile-menu-btn {
+        display: flex !important;
+        width: 38px;
+        height: 38px;
+        background: rgba(0, 212, 255, 0.08);
+        border: 1px solid rgba(0, 212, 255, 0.25);
+        border-radius: 10px;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        font-size: 18px;
+        color: var(--sheikah-blue-light);
+        transition: all 0.25s ease;
+    }
+    .mobile-menu-btn:hover {
+        background: rgba(0, 212, 255, 0.18);
+        border-color: rgba(0, 212, 255, 0.45);
+        box-shadow: 0 0 12px rgba(0, 212, 255, 0.12);
+    }
+
+    /* ---- 遮罩层 v2 ---- */
+    .sidebar-overlay {
+        display: none;
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.6);
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        z-index: 40;
+        transition: opacity 0.3s ease;
+    }
+    .sidebar-overlay.active {
+        display: block;
+    }
+
+    /* ---- 作品树 ---- */
+    .tree-branch-content {
+        flex-wrap: wrap;
+    }
+    .work-card-mini {
+        min-width: 180px;
+        max-width: 100%;
+        flex: 1 1 100%;
+        background: rgba(0, 0, 0, 0.22);
+        border: 1px solid rgba(0, 212, 255, 0.15);
+        border-radius: 10px;
+        transition: all 0.25s ease;
+    }
+    .work-card-mini:hover {
+        border-color: rgba(0, 212, 255, 0.35);
+        box-shadow: 0 2px 12px rgba(0, 212, 255, 0.08);
+    }
+
+    .works-tree-section {
+        background: rgba(24, 28, 33, 0.75);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border: 1px solid rgba(0, 212, 255, 0.12);
+        border-radius: 12px;
+    }
+
+    /* ---- 四维能力条 ---- */
+    .dim-row {
+        grid-template-columns: 70px 1fr 40px;
+        gap: 8px;
+    }
+    .dim-row-name {
+        font-size: 11px;
+    }
+
+    /* ---- 日报计数器 ---- */
+    .evo-counters {
+        gap: 14px;
+        flex-wrap: wrap;
+    }
+    .evo-counter-val {
+        font-size: 22px;
+    }
+
+    /* ---- 成长仪表板 ---- */
+    .growth-dashboard {
+        background: linear-gradient(160deg,
+            rgba(238, 228, 208, 0.95) 0%,
+            rgba(248, 238, 218, 0.92) 100%
+        );
+        border: 1.5px solid rgba(107, 83, 68, 0.22);
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    }
+
+    /* ---- 成就区块 ---- */
+    .achievements-section {
+        background: linear-gradient(135deg,
+            rgba(232, 220, 196, 0.95) 0%,
+            rgba(245, 230, 200, 0.92) 100%
+        );
+        border: 1.5px solid rgba(107, 83, 68, 0.22);
+        border-radius: 12px;
+    }
+
+    /* ---- 作品介绍 ---- */
+    .works-intro {
+        background: linear-gradient(160deg,
+            rgba(238, 228, 208, 0.95) 0%,
+            rgba(248, 238, 218, 0.92) 100%
+        );
+        border: 1.5px solid rgba(107, 83, 68, 0.22);
+        border-radius: 12px;
+    }
+
+    /* ---- EXP面板 ---- */
+    .level-progress-panel {
+        background: rgba(0, 0, 0, 0.18);
+        border: 1px solid rgba(0, 212, 255, 0.08);
+        border-radius: 10px;
+    }
+
+    /* ---- 技能Tab内容 ---- */
+    #ability-tab-skills,
+    #ability-tab-memory,
+    #ability-tab-knowledge {
+        background: rgba(12, 14, 20, 0.5);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        border: 1px solid rgba(0, 212, 255, 0.1);
+        border-radius: 10px;
+    }
+}
+
+/* ==================== 3. 小屏手机 (≤600px) ==================== */
+@media (max-width: 600px) {
+    /* ---- 全局间距缩小 ---- */
+    :root {
+        --spacing-lg: 14px;
+        --spacing-md: 10px;
+        --spacing-sm: 6px;
+    }
+
+    .main-content {
+        padding: 8px;
+    }
+
+    /* ---- 顶部信息条更紧凑 ---- */
+    .mobile-info-bar {
+        padding: 8px 12px;
+        gap: 8px;
+    }
+    .mobile-info-avatar {
+        width: 30px;
+        height: 30px;
+        border-width: 1.5px;
+    }
+    .mobile-info-name {
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+    .mobile-info-level {
+        font-size: 10px;
+        padding: 2px 7px;
+    }
+    .mobile-info-expand-btn {
+        font-size: 11px;
+        padding: 5px 10px;
+        border-radius: 7px;
+    }
+
+    /* ---- 导航只显示图标 ---- */
+    .top-nav {
+        padding: 5px 6px;
+        gap: 3px;
+        border-radius: 10px;
+    }
+    .nav-tab {
+        padding: 10px 12px;
+        font-size: 12px;
+        min-width: 52px;
+        gap: 3px;
+        border-radius: 8px;
+    }
+    .nav-icon {
+        font-size: 18px;
+    }
+    .nav-text {
+        display: none;
+    }
+    .triforce-decoration {
+        display: none;
+    }
+
+    /* ---- 网格全部单列或两列 ---- */
+    .daily-overview {
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+    }
+    .overview-card {
+        padding: 10px 8px;
+    }
+    .ov-value {
+        font-size: 20px;
+    }
+    .ov-icon {
+        width: 36px;
+        height: 36px;
+        font-size: 18px;
+    }
+
+    .capability-cards,
+    .capability-overview {
+        grid-template-columns: 1fr;
+    }
+
+    .about-highlights {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .about-stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 6px;
+    }
+
+    .value-cards-6,
+    .value-cards-4 {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+    .stats-panel {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 6px;
+    }
+
+    .growth-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .achievements-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .howto-examples .examples-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .delivery-stats-bar {
+        grid-template-columns: 1fr 1fr;
+        gap: 6px;
+    }
+
+    /* ---- 侧边栏内布局 ---- */
+    .sidebar.open {
+        padding: 10px 12px;
+    }
+    .avatar-frame {
+        width: 80px;
+        height: 80px;
+    }
+    .character-name {
+        font-size: 20px;
+    }
+    .avatar-section {
+        padding: 6px 0;
+    }
+
+    /* ---- 二级导航紧凑 ---- */
+    .section-sub-nav,
+    .ability-tabs,
+    .works-category-tabs {
+        border-radius: 8px;
+        padding: 3px;
+    }
+    .sub-nav-btn,
+    .ability-tab-btn,
+    .works-category-btn {
+        padding: 8px 10px;
+        font-size: 12px;
+        min-width: 60px;
+        gap: 4px;
+        border-radius: 7px;
+    }
+    .sub-nav-btn .sub-nav-icon,
+    .ability-tab-btn .tab-icon,
+    .works-category-btn .tab-icon {
+        font-size: 14px;
+    }
+
+    /* ---- Section 标题 ---- */
+    .section-title {
+        font-size: 18px;
+    }
+    .content-section {
+        padding: 8px 0;
+    }
+
+    /* ---- 日报卡片 ---- */
+    .daily-card {
+        padding: 12px 14px;
+        border-radius: 10px;
+    }
+    .dc-body {
+        font-size: 13px;
+    }
+    .dc-title {
+        font-size: 14px;
+    }
+    .daily-summary-bar {
+        padding: 10px 12px;
+        border-radius: 10px;
+    }
+    .summary-num {
+        font-size: 17px;
+    }
+    .summary-label {
+        font-size: 10px;
+    }
+
+    /* ---- 关于我 ---- */
+    .about-hero {
+        padding: 14px 12px;
+        border-radius: 12px;
+    }
+    .about-name {
+        font-size: 20px;
+    }
+    .about-desc {
+        font-size: 12px;
+    }
+
+    /* ---- 价值卡片 ---- */
+    .value-proposition {
+        padding: 14px 12px;
+        border-radius: 12px;
+    }
+    .value-card {
+        padding: 12px 10px;
+        border-radius: 8px;
+    }
+    .value-card-title {
+        font-size: 14px;
+    }
+    .value-card-desc {
+        font-size: 11px;
+    }
+    .value-card-icon {
+        font-size: 22px;
+    }
+
+    /* ---- 作品卡片 ---- */
+    .work-card-mini {
+        padding: 8px 10px;
+        border-radius: 8px;
+    }
+    .work-name-mini {
+        font-size: 12px;
+    }
+
+    /* ---- 看板区块 ---- */
+    .howto-section,
+    .evolution-section,
+    .config-section,
+    .timeline-section {
+        padding: 14px 12px;
+        border-radius: 12px;
+    }
+
+    /* ---- 成长仪表板 ---- */
+    .growth-dashboard {
+        padding: 14px 12px;
+        border-radius: 12px;
+    }
+    .growth-card-value {
+        font-size: 24px;
+    }
+
+    /* ---- 进化历程 ---- */
+    .evolution-item {
+        padding: 12px;
+        border-radius: 8px;
+    }
+    .evolution-name {
+        font-size: 12px;
+    }
+    .evolution-desc {
+        font-size: 11px;
+    }
+
+    /* ---- 作品统计 ---- */
+    .works-stat-value {
+        font-size: 24px;
+    }
+
+    /* ---- 四维能力条 ---- */
+    .dim-row {
+        grid-template-columns: 56px 1fr 35px;
+        gap: 6px;
+    }
+    .dim-row-name {
+        font-size: 10px;
+    }
+    .dim-row-score {
+        font-size: 13px;
+    }
+
+    /* ---- EXP面板 ---- */
+    .level-progress-panel {
+        padding: 10px;
+        border-radius: 8px;
+    }
+    .level-current {
+        font-size: 14px;
+    }
+
+    /* ---- 侧边栏雷达/趋势 ---- */
+    .radar-wrap,
+    .trend-mini-wrap {
+        height: 120px;
+    }
+
+    /* ---- 技能树 ---- */
+    .layer-branches {
+        flex-direction: column !important;
+        overflow-x: visible;
+    }
+    .layer-branch.zelda-layer {
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    /* ---- 每日修炼 ---- */
+    .cultivation-block {
+        padding: 8px 10px;
+        border-radius: 8px;
+    }
+    .cult-stat-row {
+        font-size: 11px;
+    }
+
+    /* ---- 项目统计 ---- */
+    .project-stats {
+        flex-wrap: wrap;
+    }
+    .p-stat {
+        flex: 1 1 45%;
+    }
+}
